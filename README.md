@@ -38,7 +38,7 @@ The original release criteria remain unmet. Quarterback tail uncertainty, scorin
 
 Eligibility is restricted to verified/source-recorded combine participants or invitees, not every draft-eligible player. The actual historical baseline includes additional reference-only players. These unequal pools limit decision comparisons. Original publication timestamps are incomplete. Full net-touchdown tiebreaks, detailed overtime, contracts and future-pick trades are not implemented.
 
-[Hosted implementation checks](https://github.com/jviola1019/redraft/actions/runs/43323677851) passed, including Chromium and WebKit on desktop and iPhone-sized emulated viewports. Scouting, dialog dismissal and save/reload passed without runtime errors or horizontal overflow. Local Chromium remains blocked by environment socket restrictions. Neither emulation nor these smoke checks certify a physical iPhone, complete accessibility, the entire browser gameplay journey or visual quality. No approved visual-regression baseline or human recognition study exists.
+[Hosted implementation checks](https://github.com/jviola1019/redraft/actions/runs/43327098570) passed, including Chromium and WebKit on desktop and iPhone-sized emulated viewports. Scouting, dialog dismissal and save/reload passed without runtime errors or horizontal overflow. Local Chromium remains blocked by environment socket restrictions. Neither emulation nor these smoke checks certify a physical iPhone, complete accessibility, the entire browser gameplay journey or visual quality. No approved visual-regression baseline or human recognition study exists.
 
 ## Reproduce checks
 

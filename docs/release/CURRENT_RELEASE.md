@@ -22,7 +22,7 @@ Runtime source: `c0ae3640a03c941315d9ab17d0d1c1896e48ddc5` (local equivalent `ea
 | Recorded playoff backtest | Eight completed seasons 2018–2025 PASS | Qualification/matchups/reseeding, not predictive probability accuracy |
 | All-year distributions | All nine classes evaluated; adverse findings retained | Incomplete/future actuals remain null |
 | TypeScript and API | Passed | Current authoritative API and persistence tests |
-| Hosted build/browser follow-up | Pending run 43327098570 | Prior browser smoke tests passed; physical device and full UI journey remain unverified |
+| Hosted build/browser follow-up | Run 43327098570 PASS | Current engine: build, HTTP, Chromium/WebKit desktop/emulated phone; physical device and full UI journey remain unverified |
 
 ## Statistical disposition
 
@@ -41,3 +41,5 @@ The new pre-cutoff QB annual-transition candidate improves annual CRPS versus an
 - [Installation](../../INSTALL.md)
 
 Repository source delivery does not update the separate live Site. Public deployment, physical-iPhone checks, approved visual regression, full browser journeys and complete production security/operations remain open.
+
+Hosted [workflow 43327098570](https://github.com/jviola1019/redraft/actions/runs/43327098570) completed successfully. The [receipt](../../tests/results/hosted-browser/43327098570/receipt.json) records exact source, job, step conclusions and execution times. No frontend source changed in this remediation; prior visual inspection is retained rather than presented as a new visual baseline.
