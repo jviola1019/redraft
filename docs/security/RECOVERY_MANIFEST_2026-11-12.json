@@ -1995,6 +1995,11 @@
       "path": "docs/security/RECOVERED_README_2026-11-12.md",
       "source_blob_sha": "c2e67ff35dcfbde182e645a2a879556dc1ce2b40",
       "status": "original frozen README archived"
+    },
+    {
+      "path": "docs/security/RECOVERED_CI_SOURCE_2026-11-12.yml",
+      "blob_sha": "0c5998cdedd131f48af13d29eb17c8fafc8209e6",
+      "status": "original frozen CI source archived"
     }
   ]
 }

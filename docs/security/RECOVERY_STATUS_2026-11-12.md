@@ -2,11 +2,13 @@
 
 ## Scope
 
-This is a **partial evidence checkpoint** for frozen local commit `73755533c6a34cb3a3b1e1e4c76a40e87400881a`, parented on baseline commit `81cc2b89b8867c69a01e9ee71eb27fe80b0731e4`.
+This branch is a **partial evidence checkpoint** for frozen local commit `73755533c6a34cb3a3b1e1e4c76a40e87400881a`, parented on baseline commit `81cc2b89b8867c69a01e9ee71eb27fe80b0731e4`.
 
-The source environment became unavailable during transfer. 166 of 196 changed source paths are included; 30 paths (all test/evidence paths, 30 unique blobs) are missing. Critical production source, dependencies, security remediation, season scenario JSONs, and model files are preserved. The original README and CI file are archived; the top-level README has this notice and the CI workflow has a recovery edit that adds wider release checks.
+The source environment became unavailable during transfer. 166 of 196 changed source paths are represented; 30 paths (30 unique blobs) are absent. Critical production source, dependency changes, security remediation, season scenario JSONs, and model files are preserved. The top-level README has a recovery notice; its exact frozen source is archived at [RECOVERED_README_2026-11-12.md](RECOVERED_README_2026-11-12.md). The exact frozen CI file is archived at [RECOVERED_CI_SOURCE_2026-11-12.yml](RECOVERED_CI_SOURCE_2026-11-12.yml); the active workflow is a recovery edit that adds a nine-class matrix and all-year diagnostics.
 
-This branch is **not a byte-identical copy of the complete tested checkout and is not a full release claim**. The execution receipt records a mixed final gauntlet result, API and browser/install observations; it does not certify this incomplete branch. See [execution receipt](../release/EXECUTION_RECEIPT_2026-11-12.md) and the [machine-readable path manifest](RECOVERY_MANIFEST_2026-11-12.json).
+The final frozen gauntlet and all-year clean reports were uncommitted and lost before upload. The [execution receipt](../release/EXECUTION_RECEIPT_2026-11-12.md) records source-run console observations: structural gauntlet checks passed, statistical gates failed, and reported drift was zero; the receipt gives counts of 33 pass, 9 fail, and 7 unsupported, an all-year matrix of 864 drafts and 1,728 pairs, API result 16/445, and 128 by 9 all-year diagnostics with no drift. It also records successful build, dependency audit, HTTP, and isolated-install checks, and a blocked local-browser run. These receipt observations do not validate this incomplete branch. Older analytics reports in the checkout are not evidence for the final run.
+
+This branch is **not a byte-identical copy of the complete tested checkout and is not a full release claim**. The machine-readable [recovery manifest](RECOVERY_MANIFEST_2026-11-12.json) lists every expected changed path, source blob SHA, size, and checkpoint status.
 
 ## Missing paths
 
@@ -43,4 +45,4 @@ This branch is **not a byte-identical copy of the complete tested checkout and i
 
 ## Recovery note
 
-This checkpoint preserves baseline ancestry and does not update `main`. Recover the missing source blobs from local commit `73755533c6a34cb3a3b1e1e4c76a40e87400881a` if its object database becomes available. `tests/scenario-data.test.ts` is included with its exact frozen blob. `tests/year-contract.test.ts` is absent from this checkpoint; a later replacement must be marked as a recovery edit if it differs from the frozen blob SHA.
+This checkpoint preserves baseline ancestry and does not update `main`. Recover the missing blobs from local commit `73755533c6a34cb3a3b1e1e4c76a40e87400881a` if its object database becomes available. `tests/scenario-data.test.ts` is present with its exact frozen blob. `tests/year-contract.test.ts` is absent; any replacement must be marked as a recovery edit if it differs from the frozen SHA.
