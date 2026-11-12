@@ -1,0 +1,19 @@
+{
+  "id": "rank-sensitivity-tests",
+  "kind": "structural",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "analytics/test_rank_sensitivity.mjs"
+  ],
+  "startedAt": "2026-11-12T23:17:38.909Z",
+  "finishedAt": "2026-11-12T23:17:38.977Z",
+  "durationMs": 67.47963499999605,
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "error": null,
+  "status": "passed",
+  "stdout": "19-rank-sensitivity-tests.stdout.log",
+  "stderr": "19-rank-sensitivity-tests.stderr.log",
+  "artifacts": []
+}

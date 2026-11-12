@@ -1,0 +1,741 @@
+{
+  "version": "qb-annual-transition-research-v1",
+  "asOf": "2026-11-12",
+  "runtimeChanged": false,
+  "protocol": {
+    "states": [
+      "zero",
+      "1\u2013199",
+      "200\u2013599",
+      "600+"
+    ],
+    "experienceBands": [
+      "second-season",
+      "third-through-fifth"
+    ],
+    "shrinkagePseudoCounts": [
+      0,
+      5,
+      20
+    ],
+    "selectionTrainTransitionEndYear": 2014,
+    "selectionYear": 2015,
+    "assessmentTrainTransitionEndYear": 2015,
+    "assessmentYears": [
+      2016,
+      2017
+    ],
+    "finalResearchFitThrough": 2017,
+    "selectionMetric": "Exact annual next-year CRPS",
+    "assessmentOutcomePoisoning": "passed",
+    "fiveYearAuditStatus": "Already exposed2018 outcomes; not used for candidate fitting or selection."
+  },
+  "data": {
+    "panelRows": 380,
+    "transitionRows": 243,
+    "uniqueTransitionPlayers": 106,
+    "unknownIdExclusions": [
+      {
+        "season": 2009,
+        "player_name": "Jason Boltus"
+      },
+      {
+        "season": 2009,
+        "player_name": "Nathan Brown"
+      },
+      {
+        "season": 2009,
+        "player_name": "Cullen Harper"
+      },
+      {
+        "season": 2009,
+        "player_name": "Chase Holbrook"
+      },
+      {
+        "season": 2009,
+        "player_name": "Mike Reilly"
+      },
+      {
+        "season": 2010,
+        "player_name": "Daryll Clark"
+      },
+      {
+        "season": 2010,
+        "player_name": "Tim Hiller"
+      },
+      {
+        "season": 2010,
+        "player_name": "Riley Skinner"
+      },
+      {
+        "season": 2010,
+        "player_name": "Jevan Snead"
+      },
+      {
+        "season": 2011,
+        "player_name": "Jeff Van Camp"
+      },
+      {
+        "season": 2011,
+        "player_name": "Ryan Colburn"
+      },
+      {
+        "season": 2012,
+        "player_name": "Aaron Corp"
+      },
+      {
+        "season": 2012,
+        "player_name": "Jacory Harris"
+      },
+      {
+        "season": 2012,
+        "player_name": "Jordan Jefferson"
+      },
+      {
+        "season": 2012,
+        "player_name": "Darron Thomas"
+      },
+      {
+        "season": 2012,
+        "player_name": "Patrick Witt"
+      },
+      {
+        "season": 2013,
+        "player_name": "James Vandenberg"
+      },
+      {
+        "season": 2014,
+        "player_name": "Jeff Mathews"
+      },
+      {
+        "season": 2015,
+        "player_name": "Bryan Bennett"
+      },
+      {
+        "season": 2015,
+        "player_name": "Jerry Lovelocke"
+      },
+      {
+        "season": 2016,
+        "player_name": "Vernon Adams"
+      }
+    ],
+    "panelBySeason": {
+      "2013": 75,
+      "2014": 77,
+      "2015": 75,
+      "2016": 76,
+      "2017": 77
+    },
+    "knownIdAbsentRows": 208,
+    "zeroToPositiveTransitions": 21,
+    "assessmentPlayerOverlapWithTraining": 47,
+    "assessmentUniquePlayers": 76,
+    "coverage": {
+      "2013": {
+        "expectedGames": 256,
+        "observedGames": 256,
+        "rows": 22821,
+        "sha256": "9d1fdd557875b9a2c71d88e583da24a739dfca671edf8223d6171e39a421000e"
+      },
+      "2014": {
+        "expectedGames": 256,
+        "observedGames": 256,
+        "rows": 22880,
+        "sha256": "84540709d9483552185c8ca3ef30b2f66fb94b30c3e6c21e7a27205f337f21d3"
+      },
+      "2015": {
+        "expectedGames": 256,
+        "observedGames": 256,
+        "rows": 22864,
+        "sha256": "841496252ada825c3c50d3ba9b4b26d3f4fabd0fedc5fb44f286ddaaa5bdb7e0"
+      },
+      "2016": {
+        "expectedGames": 256,
+        "observedGames": 256,
+        "rows": 22904,
+        "sha256": "a778e24e9eb665ffe8f16093b03c5a263dca0250b3aa92bd6002f61f534bea59"
+      },
+      "2017": {
+        "expectedGames": 256,
+        "observedGames": 256,
+        "rows": 22876,
+        "sha256": "eab2fad2df99249d4061ed9c5c34d312cdba07cf3159d027d255bdc9b6526917"
+      }
+    }
+  },
+  "selection": {
+    "selected": "state:shrink0",
+    "candidates": {
+      "state:shrink0": {
+        "variant": [
+          "state",
+          0
+        ],
+        "metrics": {
+          "n": 63,
+          "mae": 150.3330670652099,
+          "rmse": 247.31774658660436,
+          "meanCrps": 108.26859773244858,
+          "outsideDonorSupport": 11,
+          "interval80": {
+            "coverage": 0.7777777777777778,
+            "covered": 49,
+            "wilson95": [
+              0.6608771888656633,
+              0.8627499224738635
+            ],
+            "meanWidth": 260.92063492063494,
+            "meanIntervalScore": 780.6031746031746
+          },
+          "interval95": {
+            "coverage": 0.8253968253968254,
+            "covered": 52,
+            "wilson95": [
+              0.7137857247924102,
+              0.8996060342053211
+            ],
+            "meanWidth": 484.1904761904762,
+            "meanIntervalScore": 2322.2857142857124
+          }
+        }
+      },
+      "state:shrink5": {
+        "variant": [
+          "state",
+          5
+        ],
+        "metrics": {
+          "n": 63,
+          "mae": 169.97459061241395,
+          "rmse": 253.64707524204704,
+          "meanCrps": 109.39433141680851,
+          "outsideDonorSupport": 1,
+          "interval80": {
+            "coverage": 0.8095238095238095,
+            "covered": 51,
+            "wilson95": [
+              0.6959321285012545,
+              0.8875380812770755
+            ],
+            "meanWidth": 348.92063492063494,
+            "meanIntervalScore": 796.3809523809524
+          },
+          "interval95": {
+            "coverage": 0.9841269841269841,
+            "covered": 62,
+            "wilson95": [
+              0.915414745405616,
+              0.9971925057861307
+            ],
+            "meanWidth": 831.8730158730159,
+            "meanIntervalScore": 834.4126984126984
+          }
+        }
+      },
+      "state:shrink20": {
+        "variant": [
+          "state",
+          20
+        ],
+        "metrics": {
+          "n": 63,
+          "mae": 204.47016867280567,
+          "rmse": 288.48995940780253,
+          "meanCrps": 127.16883001702037,
+          "outsideDonorSupport": 1,
+          "interval80": {
+            "coverage": 0.9206349206349206,
+            "covered": 58,
+            "wilson95": [
+              0.8272969014909591,
+              0.9656241528231814
+            ],
+            "meanWidth": 517.3809523809524,
+            "meanIntervalScore": 672.7777777777778
+          },
+          "interval95": {
+            "coverage": 0.9841269841269841,
+            "covered": 62,
+            "wilson95": [
+              0.915414745405616,
+              0.9971925057861307
+            ],
+            "meanWidth": 1056.904761904762,
+            "meanIntervalScore": 1059.4444444444443
+          }
+        }
+      },
+      "state+experience:shrink0": {
+        "variant": [
+          "state+experience",
+          0
+        ],
+        "metrics": {
+          "n": 63,
+          "mae": 168.04183755627852,
+          "rmse": 276.8187594893626,
+          "meanCrps": 130.24585346662295,
+          "outsideDonorSupport": 18,
+          "interval80": {
+            "coverage": 0.6984126984126984,
+            "covered": 44,
+            "wilson95": [
+              0.5763962768644041,
+              0.7976230883781149
+            ],
+            "meanWidth": 248.17460317460316,
+            "meanIntervalScore": 891.984126984127
+          },
+          "interval95": {
+            "coverage": 0.7142857142857143,
+            "covered": 45,
+            "wilson95": [
+              0.5929728343259288,
+              0.810968080135992
+            ],
+            "meanWidth": 374.1746031746032,
+            "meanIntervalScore": 2943.06349206349
+          }
+        }
+      },
+      "state+experience:shrink5": {
+        "variant": [
+          "state+experience",
+          5
+        ],
+        "metrics": {
+          "n": 63,
+          "mae": 190.39814802401384,
+          "rmse": 288.1201953693907,
+          "meanCrps": 128.9736581468478,
+          "outsideDonorSupport": 4,
+          "interval80": {
+            "coverage": 0.7936507936507936,
+            "covered": 50,
+            "wilson95": [
+              0.6783018567138667,
+              0.8752468038450617
+            ],
+            "meanWidth": 343.06349206349205,
+            "meanIntervalScore": 810.6825396825396
+          },
+          "interval95": {
+            "coverage": 0.9365079365079365,
+            "covered": 59,
+            "wilson95": [
+              0.8478082215469362,
+              0.9750343819866059
+            ],
+            "meanWidth": 772.1428571428571,
+            "meanIntervalScore": 1164.523809523809
+          }
+        }
+      },
+      "state+experience:shrink20": {
+        "variant": [
+          "state+experience",
+          20
+        ],
+        "metrics": {
+          "n": 63,
+          "mae": 221.51493555939123,
+          "rmse": 315.9081930627946,
+          "meanCrps": 143.88825951890513,
+          "outsideDonorSupport": 4,
+          "interval80": {
+            "coverage": 0.9047619047619048,
+            "covered": 57,
+            "wilson95": [
+              0.8073829893716311,
+              0.955616515723108
+            ],
+            "meanWidth": 672.7936507936508,
+            "meanIntervalScore": 798.984126984127
+          },
+          "interval95": {
+            "coverage": 0.9365079365079365,
+            "covered": 59,
+            "wilson95": [
+              0.8478082215469362,
+              0.9750343819866059
+            ],
+            "meanWidth": 991.7301587301587,
+            "meanIntervalScore": 1384.1111111111106
+          }
+        }
+      }
+    }
+  },
+  "annualAssessment": {
+    "selected": {
+      "n": 121,
+      "mae": 123.05290159418331,
+      "rmse": 213.93573255872417,
+      "meanCrps": 78.09928519149086,
+      "outsideDonorSupport": 5,
+      "interval80": {
+        "coverage": 0.8760330578512396,
+        "covered": 106,
+        "wilson95": [
+          0.8055084227089188,
+          0.9234160937107464
+        ],
+        "meanWidth": 314.5206611570248,
+        "meanIntervalScore": 573.3636363636364
+      },
+      "interval95": {
+        "coverage": 0.9421487603305785,
+        "covered": 114,
+        "wilson95": [
+          0.8853898222394644,
+          0.9716972465177242
+        ],
+        "meanWidth": 575.3719008264463,
+        "meanIntervalScore": 718.8429752066114
+      }
+    },
+    "unconditionalTransitionBaseline": {
+      "n": 121,
+      "mae": 269.983132366888,
+      "rmse": 343.94434664564534,
+      "meanCrps": 147.6687757223353,
+      "outsideDonorSupport": 3,
+      "interval80": {
+        "coverage": 0.8842975206611571,
+        "covered": 107,
+        "wilson95": [
+          0.8151300267053524,
+          0.9298148087565034
+        ],
+        "meanWidth": 927.0,
+        "meanIntervalScore": 1032.0413223140497
+      },
+      "interval95": {
+        "coverage": 0.9669421487603306,
+        "covered": 117,
+        "wilson95": [
+          0.9180772072778853,
+          0.9870708186058748
+        ],
+        "meanWidth": 1058.0,
+        "meanIntervalScore": 1111.5537190082644
+      }
+    },
+    "persistencePointBaseline": {
+      "n": 121,
+      "mae": 98.52066115702479,
+      "rmse": 201.82393521692686,
+      "meanCrps": 98.52066115702479,
+      "outsideDonorSupport": 65,
+      "interval80": {
+        "coverage": 0.4628099173553719,
+        "covered": 56,
+        "wilson95": [
+          0.3764818577220656,
+          0.5514267065880774
+        ],
+        "meanWidth": 0.0,
+        "meanIntervalScore": 985.2066115702481
+      },
+      "interval95": {
+        "coverage": 0.4628099173553719,
+        "covered": 56,
+        "wilson95": [
+          0.3764818577220656,
+          0.5514267065880774
+        ],
+        "meanWidth": 0.0,
+        "meanIntervalScore": 3940.826446280989
+      }
+    },
+    "pairedVsUnconditional": {
+      "meanCrpsDifference": -69.56949053084445,
+      "playerClusterBootstrap95": [
+        -108.83601951049691,
+        -32.960130652350855
+      ],
+      "uniquePlayers": 76,
+      "resamples": 2000,
+      "limitation": "Accounts for repeated players, not shared season/team context; only two assessment seasons."
+    },
+    "byYear": {
+      "2016": {
+        "n": 59,
+        "mae": 149.37158046547324,
+        "rmse": 245.4077287470602,
+        "meanCrps": 94.64295826254516,
+        "outsideDonorSupport": 3,
+        "interval80": {
+          "coverage": 0.8305084745762712,
+          "covered": 49,
+          "wilson95": [
+            0.71536779263512,
+            0.9052416065081895
+          ],
+          "meanWidth": 327.5762711864407,
+          "meanIntervalScore": 692.8305084745763
+        },
+        "interval95": {
+          "coverage": 0.9152542372881356,
+          "covered": 54,
+          "wilson95": [
+            0.8164820473258972,
+            0.9632579669823632
+          ],
+          "meanWidth": 587.457627118644,
+          "meanIntervalScore": 819.3220338983049
+        }
+      },
+      "2017": {
+        "n": 62,
+        "mae": 98.00770718440735,
+        "rmse": 178.91771270972504,
+        "meanCrps": 62.35611243032628,
+        "outsideDonorSupport": 2,
+        "interval80": {
+          "coverage": 0.9193548387096774,
+          "covered": 57,
+          "wilson95": [
+            0.8247142865138739,
+            0.9650616530140073
+          ],
+          "meanWidth": 302.0967741935484,
+          "meanIntervalScore": 459.6774193548387
+        },
+        "interval95": {
+          "coverage": 0.967741935483871,
+          "covered": 60,
+          "wilson95": [
+            0.8897953040501456,
+            0.9911086285001833
+          ],
+          "meanWidth": 563.8709677419355,
+          "meanIntervalScore": 623.2258064516129
+        }
+      }
+    }
+  },
+  "strict2018CandidateSupport": [
+    {
+      "experienceBand": "second-season",
+      "priorUsageState": 0,
+      "rows": 35,
+      "uniquePlayers": 35,
+      "positiveNextYears": 5
+    },
+    {
+      "experienceBand": "second-season",
+      "priorUsageState": 1,
+      "rows": 14,
+      "uniquePlayers": 14,
+      "positiveNextYears": 8
+    },
+    {
+      "experienceBand": "second-season",
+      "priorUsageState": 2,
+      "rows": 3,
+      "uniquePlayers": 3,
+      "positiveNextYears": 3
+    },
+    {
+      "experienceBand": "second-season",
+      "priorUsageState": 3,
+      "rows": 10,
+      "uniquePlayers": 10,
+      "positiveNextYears": 10
+    },
+    {
+      "experienceBand": "third-through-fifth",
+      "priorUsageState": 0,
+      "rows": 93,
+      "uniquePlayers": 58,
+      "positiveNextYears": 16
+    },
+    {
+      "experienceBand": "third-through-fifth",
+      "priorUsageState": 1,
+      "rows": 38,
+      "uniquePlayers": 27,
+      "positiveNextYears": 30
+    },
+    {
+      "experienceBand": "third-through-fifth",
+      "priorUsageState": 2,
+      "rows": 24,
+      "uniquePlayers": 20,
+      "positiveNextYears": 15
+    },
+    {
+      "experienceBand": "third-through-fifth",
+      "priorUsageState": 3,
+      "rows": 26,
+      "uniquePlayers": 15,
+      "positiveNextYears": 25
+    }
+  ],
+  "rookie2013Through2017Support": {
+    "rows": 77,
+    "rolePositive": 17
+  },
+  "reusedFiveYear2018": {
+    "n": 16,
+    "drawsPerProspect": 8192,
+    "seed": 20261112,
+    "metrics": {
+      "n": 16,
+      "mae": 1338.9794464111328,
+      "rmse": 1845.1260043674965,
+      "meanCrps": 917.1207828912884,
+      "outsideDonorSupport": 0,
+      "interval80": {
+        "coverage": 0.75,
+        "covered": 12,
+        "wilson95": [
+          0.5050168346449122,
+          0.8981793250878696
+        ],
+        "meanWidth": 2950.9375,
+        "meanIntervalScore": 6350.3125
+      },
+      "interval95": {
+        "coverage": 0.9375,
+        "covered": 15,
+        "wilson95": [
+          0.7167126242970107,
+          0.9888806552353576
+        ],
+        "meanWidth": 4724.125,
+        "meanIntervalScore": 4949.125
+      }
+    },
+    "annualCoverage95": [
+      1.0,
+      1.0,
+      1.0,
+      0.9375,
+      0.9375
+    ],
+    "additionalSeedDiagnostics": [
+      {
+        "seed": 20261113,
+        "metrics": {
+          "n": 16,
+          "mae": 1333.0439147949219,
+          "rmse": 1837.1588872687653,
+          "meanCrps": 910.1632807143033,
+          "outsideDonorSupport": 0,
+          "interval80": {
+            "coverage": 0.75,
+            "covered": 12,
+            "wilson95": [
+              0.5050168346449122,
+              0.8981793250878696
+            ],
+            "meanWidth": 2951.8125,
+            "meanIntervalScore": 6219.9375
+          },
+          "interval95": {
+            "coverage": 0.9375,
+            "covered": 15,
+            "wilson95": [
+              0.7167126242970107,
+              0.9888806552353576
+            ],
+            "meanWidth": 4751.8125,
+            "meanIntervalScore": 4954.3125
+          }
+        }
+      },
+      {
+        "seed": 20261114,
+        "metrics": {
+          "n": 16,
+          "mae": 1328.130500793457,
+          "rmse": 1832.0061262956344,
+          "meanCrps": 906.3955730805174,
+          "outsideDonorSupport": 0,
+          "interval80": {
+            "coverage": 0.75,
+            "covered": 12,
+            "wilson95": [
+              0.5050168346449122,
+              0.8981793250878696
+            ],
+            "meanWidth": 2961.6875,
+            "meanIntervalScore": 6102.9375
+          },
+          "interval95": {
+            "coverage": 0.9375,
+            "covered": 15,
+            "wilson95": [
+              0.7167126242970107,
+              0.9888806552353576
+            ],
+            "meanWidth": 4745.375,
+            "meanIntervalScore": 5037.875
+          }
+        }
+      },
+      {
+        "seed": 20261115,
+        "metrics": {
+          "n": 16,
+          "mae": 1331.7448272705078,
+          "rmse": 1841.3070777726616,
+          "meanCrps": 913.2917200084776,
+          "outsideDonorSupport": 0,
+          "interval80": {
+            "coverage": 0.75,
+            "covered": 12,
+            "wilson95": [
+              0.5050168346449122,
+              0.8981793250878696
+            ],
+            "meanWidth": 2945.3125,
+            "meanIntervalScore": 6292.8125
+          },
+          "interval95": {
+            "coverage": 0.9375,
+            "covered": 15,
+            "wilson95": [
+              0.7167126242970107,
+              0.9888806552353576
+            ],
+            "meanWidth": 4725.6875,
+            "meanIntervalScore": 5033.1875
+          }
+        }
+      }
+    ]
+  },
+  "decision": "Research only. Annual transition performance cannot validate a five-year rookie trajectory. No runtime promotion or gate change.",
+  "limitations": [
+    "Annual-state Markov assumption loses persistent latent ability and higher-order career dependence; first-order persistence alone is not sufficient.",
+    "Predicted paths recombine observed annual outcomes across players; they are simulated estimates, never recorded careers.",
+    "Selection and assessment use overlapping players. This tests a known-player annual forecast, not unseen-rookie career prediction.",
+    "Known-ID absence means zero recorded NFL snaps in a fully reconciled source season, not proven retirement, injury or roster exclusion. Zero is not absorbing.",
+    "Unknown PFR identities are excluded, never filled with zero; combine participation and identity selection bias remain.",
+    "No independent strict pre2018 five-year trajectory assessment exists; annual validation and exposed2018 diagnostics cannot replace it.",
+    "Year2013\u201317 snapshots lack archived original publication timestamps; label-availability dates are conservative reconstructed dates.",
+    "No post2017 outcomes enter fit or selection. The investigation was motivated by exposed2018 support failures, so it is not a new untouched test.",
+    "No empirical causal snaps-to-wins identification, injury model, specialist target, or parameter-uncertainty guarantee is added."
+  ],
+  "sources": {
+    "methodology": "https://www.jstatsoft.org/article/view/v038i08",
+    "properScoring": "https://sites.stat.washington.edu/people/raftery/Research/PDF/Gneiting2007jasa.pdf"
+  },
+  "sourceHashes": {
+    "analytics/qb_transition_experiment.py": "62fc21ad077362381696329157b6bba847d380883966e7a34c47ec69c71c9f87",
+    "analytics/five_year.py": "f66e57954eeafb6258f88ec558a643f4c02c1d8379fa72d5c1a58ccf9b7dc06e",
+    "analytics/forecast_audit.py": "0e7a1ad8a647b5bea9bf54d28da9e661773c9a6dfb9a60d6e6647f7ada2cb64f",
+    "data/raw/games.csv": "924d1b149d01b3aa6fc87c64116a489d44f50f4d8eac4bf8c8874bec6f1b75d3",
+    "data/raw/combine.csv": "5648886b1bb9de8a0c42b05ee7b1d9cbe58897676caaa2f6a4a3d3c9228235bb",
+    "analytics/five_year_frozen_2018_predictions.csv": "a12e376e85bb09048b84f399da99d4b52e699922ac49023ab65e8c7de46d5094",
+    "data/raw/snap_counts_2013.csv": "9d1fdd557875b9a2c71d88e583da24a739dfca671edf8223d6171e39a421000e",
+    "data/raw/snap_counts_2014.csv": "84540709d9483552185c8ca3ef30b2f66fb94b30c3e6c21e7a27205f337f21d3",
+    "data/raw/snap_counts_2015.csv": "841496252ada825c3c50d3ba9b4b26d3f4fabd0fedc5fb44f286ddaaa5bdb7e0",
+    "data/raw/snap_counts_2016.csv": "a778e24e9eb665ffe8f16093b03c5a263dca0250b3aa92bd6002f61f534bea59",
+    "data/raw/snap_counts_2017.csv": "eab2fad2df99249d4061ed9c5c34d312cdba07cf3159d027d255bdc9b6526917"
+  }
+}

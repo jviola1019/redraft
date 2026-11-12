@@ -1,0 +1,19 @@
+{
+  "id": "statistical-integrity-tests",
+  "kind": "structural",
+  "command": [
+    "python3",
+    "analytics/test_statistical_gates.py"
+  ],
+  "startedAt": "2026-11-12T23:18:01.270Z",
+  "finishedAt": "2026-11-12T23:18:01.929Z",
+  "durationMs": 658.9289160000044,
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "error": null,
+  "status": "passed",
+  "stdout": "21-statistical-integrity-tests.stdout.log",
+  "stderr": "21-statistical-integrity-tests.stderr.log",
+  "artifacts": []
+}

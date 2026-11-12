@@ -1,0 +1,1209 @@
+{
+  "version": "score-sensitivity-v3-tied-official-ranks",
+  "asOf": "2026-11-12T23:18:01.226Z",
+  "team": "CLE",
+  "seed": "redraft-score-sensitivity-2026-11-02",
+  "engineVersion": "redraft-research-0.8-schedule-tiebreaks",
+  "replicatesPerPolicy": 128,
+  "policies": [
+    {
+      "name": "CPU utility policy",
+      "decisionScore": 56,
+      "components": [
+        {
+          "name": "Projected class value",
+          "score": 53.0741309503831,
+          "weight": 0.3,
+          "explanation": "Rookie-role probability sum compared with the actual class; this is not a career-value estimate."
+        },
+        {
+          "name": "Draft-class balance",
+          "score": 100,
+          "weight": 0.1,
+          "explanation": "Position diversity proxy; complete historical roster needs are unavailable."
+        },
+        {
+          "name": "Trade capital",
+          "score": 50,
+          "weight": 0.15,
+          "explanation": "Net change under the published Johnson chart, with a one-point extension after pick224; acceptance is heuristic."
+        },
+        {
+          "name": "Paired five-year difference",
+          "score": 51.6796875,
+          "weight": 0.35,
+          "explanation": "Mean simulated wins gained against the paired baseline; sensitive to unvalidated development assumptions."
+        },
+        {
+          "name": "Scouting coverage",
+          "score": 44.44444444444444,
+          "weight": 0.1,
+          "explanation": "Share of selections researched; an activity measure, not empirical scouting skill."
+        }
+      ],
+      "pairedSummary": {
+        "mean": 0.3359375,
+        "median": 0,
+        "lower": -3,
+        "upper": 4,
+        "probabilityImprovement": 0.484375,
+        "standardError": 0.3054373847979881,
+        "samples": 128
+      },
+      "selectedProspects": [
+        "p2018-0239398be9",
+        "p2018-7e9ebf6f55",
+        "p2018-b5ec9a80f1",
+        "p2018-158136645e",
+        "p2018-5a893a5346",
+        "p2018-58fff745fe",
+        "p2018-e43b33609c",
+        "p2018-f763f6744b",
+        "p2018-41d2d7e806"
+      ]
+    },
+    {
+      "name": "Highest rookie-role probability",
+      "decisionScore": 57,
+      "components": [
+        {
+          "name": "Projected class value",
+          "score": 58.09629716550758,
+          "weight": 0.3,
+          "explanation": "Rookie-role probability sum compared with the actual class; this is not a career-value estimate."
+        },
+        {
+          "name": "Draft-class balance",
+          "score": 83.33333333333334,
+          "weight": 0.1,
+          "explanation": "Position diversity proxy; complete historical roster needs are unavailable."
+        },
+        {
+          "name": "Trade capital",
+          "score": 50,
+          "weight": 0.15,
+          "explanation": "Net change under the published Johnson chart, with a one-point extension after pick224; acceptance is heuristic."
+        },
+        {
+          "name": "Paired five-year difference",
+          "score": 53.3203125,
+          "weight": 0.35,
+          "explanation": "Mean simulated wins gained against the paired baseline; sensitive to unvalidated development assumptions."
+        },
+        {
+          "name": "Scouting coverage",
+          "score": 55.55555555555556,
+          "weight": 0.1,
+          "explanation": "Share of selections researched; an activity measure, not empirical scouting skill."
+        }
+      ],
+      "pairedSummary": {
+        "mean": 0.6640625,
+        "median": 0.5,
+        "lower": -3,
+        "upper": 5,
+        "probabilityImprovement": 0.5,
+        "standardError": 0.30422657190958236,
+        "samples": 128
+      },
+      "selectedProspects": [
+        "p2018-d4dc370f60",
+        "p2018-b5ec9a80f1",
+        "p2018-782021cb22",
+        "p2018-c282ca89ab",
+        "p2018-692e78bb24",
+        "p2018-e43b33609c",
+        "p2018-18265e91f7",
+        "p2018-f763f6744b",
+        "p2018-41d2d7e806"
+      ]
+    },
+    {
+      "name": "Quarterback priority",
+      "decisionScore": 53,
+      "components": [
+        {
+          "name": "Projected class value",
+          "score": 54.02366446813844,
+          "weight": 0.3,
+          "explanation": "Rookie-role probability sum compared with the actual class; this is not a career-value estimate."
+        },
+        {
+          "name": "Draft-class balance",
+          "score": 50,
+          "weight": 0.1,
+          "explanation": "Position diversity proxy; complete historical roster needs are unavailable."
+        },
+        {
+          "name": "Trade capital",
+          "score": 50,
+          "weight": 0.15,
+          "explanation": "Net change under the published Johnson chart, with a one-point extension after pick224; acceptance is heuristic."
+        },
+        {
+          "name": "Paired five-year difference",
+          "score": 53.5546875,
+          "weight": 0.35,
+          "explanation": "Mean simulated wins gained against the paired baseline; sensitive to unvalidated development assumptions."
+        },
+        {
+          "name": "Scouting coverage",
+          "score": 55.55555555555556,
+          "weight": 0.1,
+          "explanation": "Share of selections researched; an activity measure, not empirical scouting skill."
+        }
+      ],
+      "pairedSummary": {
+        "mean": 0.7109375,
+        "median": 1,
+        "lower": -4,
+        "upper": 4.299999999999997,
+        "probabilityImprovement": 0.5078125,
+        "standardError": 0.2934975133175285,
+        "samples": 128
+      },
+      "selectedProspects": [
+        "p2018-d4dc370f60",
+        "p2018-b5ec9a80f1",
+        "p2018-782021cb22",
+        "p2018-c282ca89ab",
+        "p2018-692e78bb24",
+        "p2018-e43b33609c",
+        "p2018-31a886e241",
+        "p2018-8869c8ab10",
+        "p2018-e6d509e8d2"
+      ]
+    },
+    {
+      "name": "Line priority",
+      "decisionScore": 58,
+      "components": [
+        {
+          "name": "Projected class value",
+          "score": 60.02793376246007,
+          "weight": 0.3,
+          "explanation": "Rookie-role probability sum compared with the actual class; this is not a career-value estimate."
+        },
+        {
+          "name": "Draft-class balance",
+          "score": 33.33333333333333,
+          "weight": 0.1,
+          "explanation": "Position diversity proxy; complete historical roster needs are unavailable."
+        },
+        {
+          "name": "Trade capital",
+          "score": 50,
+          "weight": 0.15,
+          "explanation": "Net change under the published Johnson chart, with a one-point extension after pick224; acceptance is heuristic."
+        },
+        {
+          "name": "Paired five-year difference",
+          "score": 54.1015625,
+          "weight": 0.35,
+          "explanation": "Mean simulated wins gained against the paired baseline; sensitive to unvalidated development assumptions."
+        },
+        {
+          "name": "Scouting coverage",
+          "score": 100,
+          "weight": 0.1,
+          "explanation": "Share of selections researched; an activity measure, not empirical scouting skill."
+        }
+      ],
+      "pairedSummary": {
+        "mean": 0.8203125,
+        "median": 1,
+        "lower": -3,
+        "upper": 5,
+        "probabilityImprovement": 0.515625,
+        "standardError": 0.2989552003720262,
+        "samples": 128
+      },
+      "selectedProspects": [
+        "p2018-d4dc370f60",
+        "p2018-b5ec9a80f1",
+        "p2018-782021cb22",
+        "p2018-c282ca89ab",
+        "p2018-692e78bb24",
+        "p2018-aee2561de3",
+        "p2018-b86e65a720",
+        "p2018-8d6b1d5710",
+        "p2018-1a197d3c5e"
+      ]
+    }
+  ],
+  "weightPerturbations": [
+    {
+      "name": "Default",
+      "weights": [
+        0.3,
+        0.1,
+        0.15,
+        0.35,
+        0.1
+      ],
+      "ranking": [
+        {
+          "name": "Line priority",
+          "score": 58,
+          "rawScore": 57.777260337071354,
+          "sharedRank": 1,
+          "averageRank": 1
+        },
+        {
+          "name": "Highest rookie-role probability",
+          "score": 57,
+          "rawScore": 57.479887413541164,
+          "sharedRank": 2,
+          "averageRank": 2
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 56,
+          "rawScore": 55.95457435455937,
+          "sharedRank": 3,
+          "averageRank": 3
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 53,
+          "rawScore": 53.00679552099709,
+          "sharedRank": 4,
+          "averageRank": 4
+        }
+      ],
+      "rawRanking": [
+        {
+          "name": "Line priority",
+          "score": 57.777260337071354,
+          "rawScore": 57.777260337071354,
+          "sharedRank": 1,
+          "averageRank": 1
+        },
+        {
+          "name": "Highest rookie-role probability",
+          "score": 57.479887413541164,
+          "rawScore": 57.479887413541164,
+          "sharedRank": 2,
+          "averageRank": 2
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 55.95457435455937,
+          "rawScore": 55.95457435455937,
+          "sharedRank": 3,
+          "averageRank": 3
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 53.00679552099709,
+          "rawScore": 53.00679552099709,
+          "sharedRank": 4,
+          "averageRank": 4
+        }
+      ],
+      "spearmanToDefault": 1,
+      "topPolicyChanged": false,
+      "topPolicySet": [
+        "Line priority"
+      ],
+      "allScoresTied": false,
+      "rawExploratoryComparison": {
+        "spearmanToDefault": 1,
+        "topPolicyChanged": false,
+        "topPolicySet": [
+          "Line priority"
+        ],
+        "allScoresTied": false
+      }
+    },
+    {
+      "name": "Projected class value ×0.5",
+      "weights": [
+        0.17647058823529413,
+        0.11764705882352942,
+        0.17647058823529413,
+        0.4117647058823529,
+        0.11764705882352942
+      ],
+      "ranking": [
+        {
+          "name": "Highest rookie-role probability",
+          "score": 57,
+          "rawScore": 57.37110922201767,
+          "sharedRank": 1,
+          "averageRank": 1.5
+        },
+        {
+          "name": "Line priority",
+          "score": 57,
+          "rawScore": 57.38008267376746,
+          "sharedRank": 1,
+          "averageRank": 1.5
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 56,
+          "rawScore": 56.462887896472836,
+          "sharedRank": 3,
+          "averageRank": 3
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 53,
+          "rawScore": 52.82734805973684,
+          "sharedRank": 4,
+          "averageRank": 4
+        }
+      ],
+      "rawRanking": [
+        {
+          "name": "Line priority",
+          "score": 57.38008267376746,
+          "rawScore": 57.38008267376746,
+          "sharedRank": 1,
+          "averageRank": 1
+        },
+        {
+          "name": "Highest rookie-role probability",
+          "score": 57.37110922201767,
+          "rawScore": 57.37110922201767,
+          "sharedRank": 2,
+          "averageRank": 2
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 56.462887896472836,
+          "rawScore": 56.462887896472836,
+          "sharedRank": 3,
+          "averageRank": 3
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 52.82734805973684,
+          "rawScore": 52.82734805973684,
+          "sharedRank": 4,
+          "averageRank": 4
+        }
+      ],
+      "spearmanToDefault": 0.9486832980505138,
+      "topPolicyChanged": true,
+      "topPolicySet": [
+        "Highest rookie-role probability",
+        "Line priority"
+      ],
+      "allScoresTied": false,
+      "rawExploratoryComparison": {
+        "spearmanToDefault": 1,
+        "topPolicyChanged": false,
+        "topPolicySet": [
+          "Line priority"
+        ],
+        "allScoresTied": false
+      }
+    },
+    {
+      "name": "Projected class value ×1.5",
+      "weights": [
+        0.391304347826087,
+        0.08695652173913045,
+        0.13043478260869565,
+        0.30434782608695654,
+        0.08695652173913045
+      ],
+      "ranking": [
+        {
+          "name": "Highest rookie-role probability",
+          "score": 58,
+          "rawScore": 57.56028868553679,
+          "sharedRank": 1,
+          "averageRank": 1.5
+        },
+        {
+          "name": "Line priority",
+          "score": 58,
+          "rawScore": 58.070826436035105,
+          "sharedRank": 1,
+          "averageRank": 1.5
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 56,
+          "rawScore": 55.57886434531899,
+          "sharedRank": 3,
+          "averageRank": 3
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 53,
+          "rawScore": 53.139430601059004,
+          "sharedRank": 4,
+          "averageRank": 4
+        }
+      ],
+      "rawRanking": [
+        {
+          "name": "Line priority",
+          "score": 58.070826436035105,
+          "rawScore": 58.070826436035105,
+          "sharedRank": 1,
+          "averageRank": 1
+        },
+        {
+          "name": "Highest rookie-role probability",
+          "score": 57.56028868553679,
+          "rawScore": 57.56028868553679,
+          "sharedRank": 2,
+          "averageRank": 2
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 55.57886434531899,
+          "rawScore": 55.57886434531899,
+          "sharedRank": 3,
+          "averageRank": 3
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 53.139430601059004,
+          "rawScore": 53.139430601059004,
+          "sharedRank": 4,
+          "averageRank": 4
+        }
+      ],
+      "spearmanToDefault": 0.9486832980505138,
+      "topPolicyChanged": true,
+      "topPolicySet": [
+        "Highest rookie-role probability",
+        "Line priority"
+      ],
+      "allScoresTied": false,
+      "rawExploratoryComparison": {
+        "spearmanToDefault": 1,
+        "topPolicyChanged": false,
+        "topPolicySet": [
+          "Line priority"
+        ],
+        "allScoresTied": false
+      }
+    },
+    {
+      "name": "Draft-class balance ×0.5",
+      "weights": [
+        0.3157894736842105,
+        0.052631578947368425,
+        0.15789473684210525,
+        0.3684210526315789,
+        0.10526315789473685
+      ],
+      "ranking": [
+        {
+          "name": "Line priority",
+          "score": 59,
+          "rawScore": 59.063782810952304,
+          "sharedRank": 1,
+          "averageRank": 1
+        },
+        {
+          "name": "Highest rookie-role probability",
+          "score": 56,
+          "rawScore": 56.1191797335521,
+          "sharedRank": 2,
+          "averageRank": 2
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 54,
+          "rawScore": 53.63639405743091,
+          "sharedRank": 3,
+          "averageRank": 3
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 53,
+          "rawScore": 53.16504791683904,
+          "sharedRank": 4,
+          "averageRank": 4
+        }
+      ],
+      "rawRanking": [
+        {
+          "name": "Line priority",
+          "score": 59.063782810952304,
+          "rawScore": 59.063782810952304,
+          "sharedRank": 1,
+          "averageRank": 1
+        },
+        {
+          "name": "Highest rookie-role probability",
+          "score": 56.1191797335521,
+          "rawScore": 56.1191797335521,
+          "sharedRank": 2,
+          "averageRank": 2
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 53.63639405743091,
+          "rawScore": 53.63639405743091,
+          "sharedRank": 3,
+          "averageRank": 3
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 53.16504791683904,
+          "rawScore": 53.16504791683904,
+          "sharedRank": 4,
+          "averageRank": 4
+        }
+      ],
+      "spearmanToDefault": 1,
+      "topPolicyChanged": false,
+      "topPolicySet": [
+        "Line priority"
+      ],
+      "allScoresTied": false,
+      "rawExploratoryComparison": {
+        "spearmanToDefault": 1,
+        "topPolicyChanged": false,
+        "topPolicySet": [
+          "Line priority"
+        ],
+        "allScoresTied": false
+      }
+    },
+    {
+      "name": "Draft-class balance ×1.5",
+      "weights": [
+        0.2857142857142857,
+        0.14285714285714288,
+        0.14285714285714285,
+        0.3333333333333333,
+        0.09523809523809523
+      ],
+      "ranking": [
+        {
+          "name": "Highest rookie-role probability",
+          "score": 59,
+          "rawScore": 58.71100388591222,
+          "sharedRank": 1,
+          "averageRank": 1
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 58,
+          "rawScore": 58.05197557577083,
+          "sharedRank": 2,
+          "averageRank": 2
+        },
+        {
+          "name": "Line priority",
+          "score": 57,
+          "rawScore": 56.613263813083826,
+          "sharedRank": 3,
+          "averageRank": 3
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 53,
+          "rawScore": 52.86361478190199,
+          "sharedRank": 4,
+          "averageRank": 4
+        }
+      ],
+      "rawRanking": [
+        {
+          "name": "Highest rookie-role probability",
+          "score": 58.71100388591222,
+          "rawScore": 58.71100388591222,
+          "sharedRank": 1,
+          "averageRank": 1
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 58.05197557577083,
+          "rawScore": 58.05197557577083,
+          "sharedRank": 2,
+          "averageRank": 2
+        },
+        {
+          "name": "Line priority",
+          "score": 56.613263813083826,
+          "rawScore": 56.613263813083826,
+          "sharedRank": 3,
+          "averageRank": 3
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 52.86361478190199,
+          "rawScore": 52.86361478190199,
+          "sharedRank": 4,
+          "averageRank": 4
+        }
+      ],
+      "spearmanToDefault": 0.4,
+      "topPolicyChanged": true,
+      "topPolicySet": [
+        "Highest rookie-role probability"
+      ],
+      "allScoresTied": false,
+      "rawExploratoryComparison": {
+        "spearmanToDefault": 0.4,
+        "topPolicyChanged": true,
+        "topPolicySet": [
+          "Highest rookie-role probability"
+        ],
+        "allScoresTied": false
+      }
+    },
+    {
+      "name": "Trade capital ×0.5",
+      "weights": [
+        0.32432432432432434,
+        0.10810810810810813,
+        0.08108108108108109,
+        0.3783783783783784,
+        0.10810810810810813
+      ],
+      "ranking": [
+        {
+          "name": "Highest rookie-role probability",
+          "score": 58,
+          "rawScore": 58.086364771395864,
+          "sharedRank": 1,
+          "averageRank": 1.5
+        },
+        {
+          "name": "Line priority",
+          "score": 58,
+          "rawScore": 58.40784901305012,
+          "sharedRank": 1,
+          "averageRank": 1.5
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 56,
+          "rawScore": 56.437377680604726,
+          "sharedRank": 3,
+          "averageRank": 3
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 53,
+          "rawScore": 53.25058975242929,
+          "sharedRank": 4,
+          "averageRank": 4
+        }
+      ],
+      "rawRanking": [
+        {
+          "name": "Line priority",
+          "score": 58.40784901305012,
+          "rawScore": 58.40784901305012,
+          "sharedRank": 1,
+          "averageRank": 1
+        },
+        {
+          "name": "Highest rookie-role probability",
+          "score": 58.086364771395864,
+          "rawScore": 58.086364771395864,
+          "sharedRank": 2,
+          "averageRank": 2
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 56.437377680604726,
+          "rawScore": 56.437377680604726,
+          "sharedRank": 3,
+          "averageRank": 3
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 53.25058975242929,
+          "rawScore": 53.25058975242929,
+          "sharedRank": 4,
+          "averageRank": 4
+        }
+      ],
+      "spearmanToDefault": 0.9486832980505138,
+      "topPolicyChanged": true,
+      "topPolicySet": [
+        "Highest rookie-role probability",
+        "Line priority"
+      ],
+      "allScoresTied": false,
+      "rawExploratoryComparison": {
+        "spearmanToDefault": 1,
+        "topPolicyChanged": false,
+        "topPolicySet": [
+          "Line priority"
+        ],
+        "allScoresTied": false
+      }
+    },
+    {
+      "name": "Trade capital ×1.5",
+      "weights": [
+        0.27906976744186046,
+        0.0930232558139535,
+        0.20930232558139533,
+        0.3255813953488372,
+        0.0930232558139535
+      ],
+      "ranking": [
+        {
+          "name": "Highest rookie-role probability",
+          "score": 57,
+          "rawScore": 56.95803480329411,
+          "sharedRank": 1,
+          "averageRank": 1.5
+        },
+        {
+          "name": "Line priority",
+          "score": 57,
+          "rawScore": 57.23466077867103,
+          "sharedRank": 1,
+          "averageRank": 1.5
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 56,
+          "rawScore": 55.539138934473826,
+          "sharedRank": 3,
+          "averageRank": 3
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 53,
+          "rawScore": 52.79701908929961,
+          "sharedRank": 4,
+          "averageRank": 4
+        }
+      ],
+      "rawRanking": [
+        {
+          "name": "Line priority",
+          "score": 57.23466077867103,
+          "rawScore": 57.23466077867103,
+          "sharedRank": 1,
+          "averageRank": 1
+        },
+        {
+          "name": "Highest rookie-role probability",
+          "score": 56.95803480329411,
+          "rawScore": 56.95803480329411,
+          "sharedRank": 2,
+          "averageRank": 2
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 55.539138934473826,
+          "rawScore": 55.539138934473826,
+          "sharedRank": 3,
+          "averageRank": 3
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 52.79701908929961,
+          "rawScore": 52.79701908929961,
+          "sharedRank": 4,
+          "averageRank": 4
+        }
+      ],
+      "spearmanToDefault": 0.9486832980505138,
+      "topPolicyChanged": true,
+      "topPolicySet": [
+        "Highest rookie-role probability",
+        "Line priority"
+      ],
+      "allScoresTied": false,
+      "rawExploratoryComparison": {
+        "spearmanToDefault": 1,
+        "topPolicyChanged": false,
+        "topPolicySet": [
+          "Line priority"
+        ],
+        "allScoresTied": false
+      }
+    },
+    {
+      "name": "Paired five-year difference ×0.5",
+      "weights": [
+        0.3636363636363636,
+        0.12121212121212122,
+        0.1818181818181818,
+        0.2121212121212121,
+        0.12121212121212122
+      ],
+      "ranking": [
+        {
+          "name": "Line priority",
+          "score": 59,
+          "rawScore": 58.55695381766225,
+          "sharedRank": 1,
+          "averageRank": 1
+        },
+        {
+          "name": "Highest rookie-role probability",
+          "score": 58,
+          "rawScore": 58.36222148611049,
+          "sharedRank": 2,
+          "averageRank": 2
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 57,
+          "rawScore": 56.86136853582954,
+          "sharedRank": 3,
+          "averageRank": 3
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 53,
+          "rawScore": 52.8905760102995,
+          "sharedRank": 4,
+          "averageRank": 4
+        }
+      ],
+      "rawRanking": [
+        {
+          "name": "Line priority",
+          "score": 58.55695381766225,
+          "rawScore": 58.55695381766225,
+          "sharedRank": 1,
+          "averageRank": 1
+        },
+        {
+          "name": "Highest rookie-role probability",
+          "score": 58.36222148611049,
+          "rawScore": 58.36222148611049,
+          "sharedRank": 2,
+          "averageRank": 2
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 56.86136853582954,
+          "rawScore": 56.86136853582954,
+          "sharedRank": 3,
+          "averageRank": 3
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 52.8905760102995,
+          "rawScore": 52.8905760102995,
+          "sharedRank": 4,
+          "averageRank": 4
+        }
+      ],
+      "spearmanToDefault": 1,
+      "topPolicyChanged": false,
+      "topPolicySet": [
+        "Line priority"
+      ],
+      "allScoresTied": false,
+      "rawExploratoryComparison": {
+        "spearmanToDefault": 1,
+        "topPolicyChanged": false,
+        "topPolicySet": [
+          "Line priority"
+        ],
+        "allScoresTied": false
+      }
+    },
+    {
+      "name": "Paired five-year difference ×1.5",
+      "weights": [
+        0.2553191489361702,
+        0.0851063829787234,
+        0.1276595744680851,
+        0.4468085106382978,
+        0.0851063829787234
+      ],
+      "ranking": [
+        {
+          "name": "Highest rookie-role probability",
+          "score": 57,
+          "rawScore": 56.86037625620525,
+          "sharedRank": 1,
+          "averageRank": 1.5
+        },
+        {
+          "name": "Line priority",
+          "score": 57,
+          "rawScore": 57.229815978358594,
+          "sharedRank": 1,
+          "averageRank": 1.5
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 55,
+          "rawScore": 55.3178890783484,
+          "sharedRank": 3,
+          "averageRank": 3
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 53,
+          "rawScore": 53.08839645404007,
+          "sharedRank": 4,
+          "averageRank": 4
+        }
+      ],
+      "rawRanking": [
+        {
+          "name": "Line priority",
+          "score": 57.229815978358594,
+          "rawScore": 57.229815978358594,
+          "sharedRank": 1,
+          "averageRank": 1
+        },
+        {
+          "name": "Highest rookie-role probability",
+          "score": 56.86037625620525,
+          "rawScore": 56.86037625620525,
+          "sharedRank": 2,
+          "averageRank": 2
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 55.3178890783484,
+          "rawScore": 55.3178890783484,
+          "sharedRank": 3,
+          "averageRank": 3
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 53.08839645404007,
+          "rawScore": 53.08839645404007,
+          "sharedRank": 4,
+          "averageRank": 4
+        }
+      ],
+      "spearmanToDefault": 0.9486832980505138,
+      "topPolicyChanged": true,
+      "topPolicySet": [
+        "Highest rookie-role probability",
+        "Line priority"
+      ],
+      "allScoresTied": false,
+      "rawExploratoryComparison": {
+        "spearmanToDefault": 1,
+        "topPolicyChanged": false,
+        "topPolicySet": [
+          "Line priority"
+        ],
+        "allScoresTied": false
+      }
+    },
+    {
+      "name": "Scouting coverage ×0.5",
+      "weights": [
+        0.3157894736842105,
+        0.10526315789473684,
+        0.15789473684210525,
+        0.36842105263157887,
+        0.05263157894736842
+      ],
+      "ranking": [
+        {
+          "name": "Highest rookie-role probability",
+          "score": 58,
+          "rawScore": 57.58116803764566,
+          "sharedRank": 1,
+          "averageRank": 1
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 57,
+          "rawScore": 56.560370665618045,
+          "sharedRank": 2,
+          "averageRank": 2
+        },
+        {
+          "name": "Line priority",
+          "score": 56,
+          "rawScore": 55.555010881127735,
+          "sharedRank": 3,
+          "averageRank": 3
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 53,
+          "rawScore": 52.87265025602032,
+          "sharedRank": 4,
+          "averageRank": 4
+        }
+      ],
+      "rawRanking": [
+        {
+          "name": "Highest rookie-role probability",
+          "score": 57.58116803764566,
+          "rawScore": 57.58116803764566,
+          "sharedRank": 1,
+          "averageRank": 1
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 56.560370665618045,
+          "rawScore": 56.560370665618045,
+          "sharedRank": 2,
+          "averageRank": 2
+        },
+        {
+          "name": "Line priority",
+          "score": 55.555010881127735,
+          "rawScore": 55.555010881127735,
+          "sharedRank": 3,
+          "averageRank": 3
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 52.87265025602032,
+          "rawScore": 52.87265025602032,
+          "sharedRank": 4,
+          "averageRank": 4
+        }
+      ],
+      "spearmanToDefault": 0.4,
+      "topPolicyChanged": true,
+      "topPolicySet": [
+        "Highest rookie-role probability"
+      ],
+      "allScoresTied": false,
+      "rawExploratoryComparison": {
+        "spearmanToDefault": 0.4,
+        "topPolicyChanged": true,
+        "topPolicySet": [
+          "Highest rookie-role probability"
+        ],
+        "allScoresTied": false
+      }
+    },
+    {
+      "name": "Scouting coverage ×1.5",
+      "weights": [
+        0.2857142857142857,
+        0.09523809523809523,
+        0.14285714285714285,
+        0.3333333333333333,
+        0.14285714285714288
+      ],
+      "ranking": [
+        {
+          "name": "Line priority",
+          "score": 60,
+          "rawScore": 59.78786698768701,
+          "sharedRank": 1,
+          "averageRank": 1
+        },
+        {
+          "name": "Highest rookie-role probability",
+          "score": 57,
+          "rawScore": 57.38825256316089,
+          "sharedRank": 2,
+          "averageRank": 2
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 55,
+          "rawScore": 55.40647293026819,
+          "sharedRank": 3,
+          "averageRank": 3
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 53,
+          "rawScore": 53.12816504645225,
+          "sharedRank": 4,
+          "averageRank": 4
+        }
+      ],
+      "rawRanking": [
+        {
+          "name": "Line priority",
+          "score": 59.78786698768701,
+          "rawScore": 59.78786698768701,
+          "sharedRank": 1,
+          "averageRank": 1
+        },
+        {
+          "name": "Highest rookie-role probability",
+          "score": 57.38825256316089,
+          "rawScore": 57.38825256316089,
+          "sharedRank": 2,
+          "averageRank": 2
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 55.40647293026819,
+          "rawScore": 55.40647293026819,
+          "sharedRank": 3,
+          "averageRank": 3
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 53.12816504645225,
+          "rawScore": 53.12816504645225,
+          "sharedRank": 4,
+          "averageRank": 4
+        }
+      ],
+      "spearmanToDefault": 1,
+      "topPolicyChanged": false,
+      "topPolicySet": [
+        "Line priority"
+      ],
+      "allScoresTied": false,
+      "rawExploratoryComparison": {
+        "spearmanToDefault": 1,
+        "topPolicyChanged": false,
+        "topPolicySet": [
+          "Line priority"
+        ],
+        "allScoresTied": false
+      }
+    }
+  ],
+  "topRankChanges": 7,
+  "minRankCorrelation": 0.4,
+  "rankCorrelationStatus": "available",
+  "undefinedRankComparisons": 0,
+  "rawExploratoryTopRankChanges": 2,
+  "rankingMethod": "Official integer scores with shared competition ranks; Spearman is Pearson correlation of average tied ranks. Top change compares complete tied leader sets. Raw precision retained as exploratory only.",
+  "runtimeMilliseconds": 21628.368908,
+  "sourceHashes": {
+    "lib/engine.ts": "e38a8e91788b2663f0bf1ce35f2d905785ba9500296ab7b4a67acff3aabc322e",
+    "lib/simulation.ts": "4ea752092f4093d12125122455f30ecc87cb43ba9662134cf0ceaac9a15e86c3",
+    "lib/scouting.ts": "6a2850cb8f15f6effb6b12fd15f79602e5e0c6a20ff84951e7bdb2695aeba1d6",
+    "lib/server-data.ts": "64a7f0c5d75ce231805b9aba756d15bbd3d29de01e8d8bb473686f3811a767f1",
+    "analytics/model.json": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0",
+    "analytics/five_year_strict_2018.json": "a717e2d683ab57c8f79f963d672598810593bae69945c8d00db82857d6c647e1",
+    "analytics/scoring_recalibration.json": "484c709f0e1687fa77e6fba118a267801b919e4a98dc8138ce3dea7dead64812",
+    "data/clean/team_context_2018.json": "f16356d6371a130b5310c6f035db434fcbad52464acb3b5b950d74430eb06de3",
+    "data/clean/team_context_source_manifest.json": "af8d90bda2e0030888c0c926c8d31f18057e93f5ab860e59401f7f695a79a499",
+    "data/processed/scenario-2018.json": "b7895eef7862ccfb45cff5f2f4b6e347abd809c1905ed274883d55cc237f59d8",
+    "data/processed/scenario-2019.json": "88ef4b175bfc7ddf8c2d32541b1b8371836f09f6e961f4bb8a36b0db0bf5f28c",
+    "data/processed/scenario-2020.json": "527ff4f9770199052a6405d9d56cf503f150b998dddbcfbd947e686c060b624b",
+    "data/processed/scenario-2021.json": "16b574b788658ea916a48a61cdf4a24df76e72305dc16054f32971ec5ed4aec4",
+    "data/processed/scenario-2022.json": "ea6846602cddfe179544b1d845c811a1848c59de69084c210c03080ac4d46f63",
+    "data/processed/scenario-2023.json": "14587193998afcb61ca2c95c50ee641ba709246a5b3a9c8187855b94e894611f",
+    "data/processed/scenario-2024.json": "6a6d794cdf0747d7a03ba92549d4d8165b149a19b04eb32588b679e6c50e8323",
+    "data/processed/scenario-2025.json": "8f80dab73fa8b50a92a6b0ec499419dfd07eade6398ebda59b5117aac62b13b7",
+    "data/processed/scenario-2026.json": "c30d6a697573fc39488b13a91eb7c3863aa780c14a81f446e06dd0e3a86638ca",
+    "data/processed/scenario-coverage.json": "0d42970e685e510b6554c7fea7675e7f3a5aecb525aabb1c6b7e155ec0058ca3",
+    "analytics/model-2019.json": "2da02bcb4d6da178a635852e61c4ee7488f9551f346c9560f680ce99f13176cf",
+    "analytics/model-2020.json": "35d80e75ae50e8ada8c9ad96db2fd965e38f9dea06bc0f298b899f51497c3bdc",
+    "analytics/model-2021.json": "c89d6915e04159845d48c0692fe899ff66430c404a2d30cafade478ba629a17b",
+    "analytics/model-2022.json": "9579d70620a4f20ede36008bdcc745d913f8ba1aa7f64b4276104561491b8457",
+    "analytics/model-2023.json": "3b7a67a1f83c32ba8461abe9608f3f2c18e8a17e34b60c20768099d9b23c78cb",
+    "analytics/model-2024.json": "1c4b07f22dc40575623920f108335d8990c07a53511db5e0c6bd740398102e9d",
+    "analytics/model-2025.json": "4b753663702af949cc2474da986eadbe1e23966ce58778928590353c0f774397",
+    "analytics/model-2026.json": "a4380ba61137af8813883ec3b021acfb73ee755fd51fdef1004d9f68d25f8ad4",
+    "analytics/score_sensitivity.mjs": "6d46656cf38e323f085bfbe56e550ed68174830357e3e4633a4b7af2b1065218",
+    "analytics/rank_sensitivity.mjs": "ebe5b9059a149ce71c38b28393fd8852fd049115d88fd06bd2fb53aa7f75c3b4"
+  },
+  "limitations": [
+    "Four prespecified policies on one challenge: exploratory, not validation of GM skill.",
+    "Weights are design choices, not learned scientific coefficients.",
+    "No active user trade strategy is represented.",
+    "Small score differences can reflect sampling noise or model misspecification."
+  ]
+}

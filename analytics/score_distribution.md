@@ -1,5 +1,7 @@
 # Shutout hurdle score distribution experiment
 
+> **Current-runtime comparison limitation (12 November 2026):** The retrospective `runtime_score_law()` reads the base `model.json` total-score mean43.54895, omitting the application’s recency override44.87109 and team-season shocks. Its alias normalization also differs from the canonical runtime. Consequently, the label `currentCorrelatedNormal` below means a research approximation, not an exact replay of the current application. Mixed/small gains from this experiment do not justify production adoption. The source and parameters were not changed during the fixed gauntlet.
+
 ## Protocol
 
 The shutout rate window was selected on 2014–15 (training through 2013): **trailing3** by lowest Brier score. The frozen pre-2018 test is 2016–17 (fit through 2015). After that test, selected parameters are refit through 2017 for a known-exposed retrospective check on 2018–25. The 2026 season is incomplete and excluded.

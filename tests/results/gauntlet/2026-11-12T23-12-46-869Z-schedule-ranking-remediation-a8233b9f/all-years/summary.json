@@ -1,0 +1,170 @@
+{
+  "at": "2026-11-12T23:16:01.771Z",
+  "years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "results": [
+    {
+      "year": 2018,
+      "exitCode": 0,
+      "status": "passed",
+      "actual": {
+        "draftCases": 96,
+        "passedCases": 96,
+        "failedCases": 0,
+        "pairedReplicates": 192,
+        "replayPairs": 32,
+        "assertions": 5759437,
+        "worlds": 384,
+        "seasons": 1920,
+        "regularGames": 503808,
+        "postseasonGames": 23424
+      }
+    },
+    {
+      "year": 2019,
+      "exitCode": 0,
+      "status": "passed",
+      "actual": {
+        "draftCases": 96,
+        "passedCases": 96,
+        "failedCases": 0,
+        "pairedReplicates": 192,
+        "replayPairs": 32,
+        "assertions": 5762873,
+        "worlds": 384,
+        "seasons": 1920,
+        "regularGames": 509952,
+        "postseasonGames": 24192
+      }
+    },
+    {
+      "year": 2020,
+      "exitCode": 0,
+      "status": "passed",
+      "actual": {
+        "draftCases": 96,
+        "passedCases": 96,
+        "failedCases": 0,
+        "pairedReplicates": 192,
+        "replayPairs": 32,
+        "assertions": 5795513,
+        "worlds": 384,
+        "seasons": 1920,
+        "regularGames": 516096,
+        "postseasonGames": 24960
+      }
+    },
+    {
+      "year": 2021,
+      "exitCode": 0,
+      "status": "passed",
+      "actual": {
+        "draftCases": 96,
+        "passedCases": 96,
+        "failedCases": 0,
+        "pairedReplicates": 192,
+        "replayPairs": 32,
+        "assertions": 5864127,
+        "worlds": 384,
+        "seasons": 1920,
+        "regularGames": 522240,
+        "postseasonGames": 24960
+      }
+    },
+    {
+      "year": 2022,
+      "exitCode": 0,
+      "status": "passed",
+      "actual": {
+        "draftCases": 96,
+        "passedCases": 96,
+        "failedCases": 0,
+        "pairedReplicates": 192,
+        "replayPairs": 32,
+        "assertions": 5901647,
+        "worlds": 384,
+        "seasons": 1920,
+        "regularGames": 522240,
+        "postseasonGames": 24960
+      }
+    },
+    {
+      "year": 2023,
+      "exitCode": 0,
+      "status": "passed",
+      "actual": {
+        "draftCases": 96,
+        "passedCases": 96,
+        "failedCases": 0,
+        "pairedReplicates": 192,
+        "replayPairs": 32,
+        "assertions": 5873487,
+        "worlds": 384,
+        "seasons": 1920,
+        "regularGames": 522240,
+        "postseasonGames": 24960
+      }
+    },
+    {
+      "year": 2024,
+      "exitCode": 0,
+      "status": "passed",
+      "actual": {
+        "draftCases": 96,
+        "passedCases": 96,
+        "failedCases": 0,
+        "pairedReplicates": 192,
+        "replayPairs": 32,
+        "assertions": 5839651,
+        "worlds": 384,
+        "seasons": 1920,
+        "regularGames": 522240,
+        "postseasonGames": 24960
+      }
+    },
+    {
+      "year": 2025,
+      "exitCode": 0,
+      "status": "passed",
+      "actual": {
+        "draftCases": 96,
+        "passedCases": 96,
+        "failedCases": 0,
+        "pairedReplicates": 192,
+        "replayPairs": 32,
+        "assertions": 5851839,
+        "worlds": 384,
+        "seasons": 1920,
+        "regularGames": 522240,
+        "postseasonGames": 24960
+      }
+    },
+    {
+      "year": 2026,
+      "exitCode": 0,
+      "status": "passed",
+      "actual": {
+        "draftCases": 96,
+        "passedCases": 96,
+        "failedCases": 0,
+        "pairedReplicates": 192,
+        "replayPairs": 32,
+        "assertions": 5852589,
+        "worlds": 384,
+        "seasons": 1920,
+        "regularGames": 522240,
+        "postseasonGames": 24960
+      }
+    }
+  ],
+  "limitation": "Structural consistency only; does not establish statistical calibration or historical completeness."
+}

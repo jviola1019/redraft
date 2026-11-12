@@ -1,0 +1,20 @@
+{
+  "id": "league-matrix",
+  "kind": "structural",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "tests/league-matrix.mjs",
+    "/workspace/scratch/781ed5af9c46/redraft/tests/results/gauntlet/2026-11-12T23-12-46-869Z-schedule-ranking-remediation-a8233b9f/league-matrix.json"
+  ],
+  "startedAt": "2026-11-12T23:13:43.306Z",
+  "finishedAt": "2026-11-12T23:14:22.417Z",
+  "durationMs": 39110.751885,
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "error": null,
+  "status": "passed",
+  "stdout": "11-league-matrix.stdout.log",
+  "stderr": "11-league-matrix.stderr.log",
+  "artifacts": []
+}

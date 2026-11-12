@@ -1,0 +1,235 @@
+{
+  "executedAt": "2026-11-12T23:13:43.246Z",
+  "runtime": {
+    "node": "v24.22.1",
+    "os": "linux",
+    "architecture": "x64",
+    "cpu": "AMD EPYC 9V74 80-Core Processor"
+  },
+  "scope": "Full 256-pair historical and two daily participants plus bounded scenario smoke checks",
+  "method": "Real route and auth helper through Node registerHooks; SQLite-backed D1 adapter and Next header-context adapter. Not a browser or production Cloudflare test.",
+  "scenarios": [
+    {
+      "year": 2018,
+      "picks": 256,
+      "playableCandidates": 336,
+      "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:f16356d6371a+scoring-trailing3-v1",
+      "teamContextAvailable": true
+    },
+    {
+      "year": 2019,
+      "picks": 254,
+      "playableCandidates": 336,
+      "modelVersion": "redraft-2019-pre2018-logistic-C10-v1+blind-g5-v1+nflverse-2019-combine-pool-v1",
+      "teamContextAvailable": false
+    },
+    {
+      "year": 2020,
+      "picks": 255,
+      "playableCandidates": 337,
+      "modelVersion": "redraft-2020-pre2018-logistic-C10-v1+blind-g5-v1+nflverse-2020-combine-pool-v1",
+      "teamContextAvailable": false
+    },
+    {
+      "year": 2021,
+      "picks": 259,
+      "playableCandidates": 323,
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1+blind-g5-v1+nflverse-2021-combine-pool-v1",
+      "teamContextAvailable": false
+    },
+    {
+      "year": 2022,
+      "picks": 262,
+      "playableCandidates": 324,
+      "modelVersion": "redraft-2022-pre2018-logistic-C10-v1+blind-g5-v1+nflverse-2022-combine-pool-v1",
+      "teamContextAvailable": false
+    },
+    {
+      "year": 2023,
+      "picks": 259,
+      "playableCandidates": 319,
+      "modelVersion": "redraft-2023-pre2018-logistic-C10-v1+blind-g5-v1+nflverse-2023-combine-pool-v1",
+      "teamContextAvailable": false
+    },
+    {
+      "year": 2024,
+      "picks": 257,
+      "playableCandidates": 321,
+      "modelVersion": "redraft-2024-pre2018-logistic-C10-v1+blind-g5-v1+nflverse-2024-combine-pool-v1",
+      "teamContextAvailable": false
+    },
+    {
+      "year": 2025,
+      "picks": 257,
+      "playableCandidates": 329,
+      "modelVersion": "redraft-2025-pre2018-logistic-C10-v1+blind-g5-v1+nflverse-2025-combine-pool-v1",
+      "teamContextAvailable": false
+    },
+    {
+      "year": 2026,
+      "picks": 257,
+      "playableCandidates": 319,
+      "modelVersion": "redraft-2026-pre2018-logistic-C10-v1+blind-g5-v1+nflverse-2026-combine-pool-v1",
+      "teamContextAvailable": false
+    }
+  ],
+  "migrations": [
+    "0000_spotty_patriot.sql"
+  ],
+  "sourceHashes": {
+    "app/api/game/route.ts": "48229f6b114ff302960677660b1c564db130263a124af082e923e18f8b8cd5ed",
+    "lib/scouting.ts": "6a2850cb8f15f6effb6b12fd15f79602e5e0c6a20ff84951e7bdb2695aeba1d6",
+    "lib/engine.ts": "e38a8e91788b2663f0bf1ce35f2d905785ba9500296ab7b4a67acff3aabc322e",
+    "lib/simulation.ts": "4ea752092f4093d12125122455f30ecc87cb43ba9662134cf0ceaac9a15e86c3",
+    "lib/server-data.ts": "64a7f0c5d75ce231805b9aba756d15bbd3d29de01e8d8bb473686f3811a767f1",
+    "analytics/model.json": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0",
+    "analytics/five_year_strict_2018.json": "a717e2d683ab57c8f79f963d672598810593bae69945c8d00db82857d6c647e1",
+    "analytics/scoring_recalibration.json": "484c709f0e1687fa77e6fba118a267801b919e4a98dc8138ce3dea7dead64812",
+    "data/clean/team_context_2018.json": "f16356d6371a130b5310c6f035db434fcbad52464acb3b5b950d74430eb06de3",
+    "data/clean/team_context_source_manifest.json": "af8d90bda2e0030888c0c926c8d31f18057e93f5ab860e59401f7f695a79a499",
+    "data/processed/scenario-coverage.json": "0d42970e685e510b6554c7fea7675e7f3a5aecb525aabb1c6b7e155ec0058ca3",
+    "tests/api.integration.mjs": "0c4ae7c37eea21af6906a9baa5728d794666863f3cb841353db3e82c2f2372b4",
+    "data/processed/scenario-2018.json": "b7895eef7862ccfb45cff5f2f4b6e347abd809c1905ed274883d55cc237f59d8",
+    "data/processed/scenario-2019.json": "88ef4b175bfc7ddf8c2d32541b1b8371836f09f6e961f4bb8a36b0db0bf5f28c",
+    "data/processed/scenario-2020.json": "527ff4f9770199052a6405d9d56cf503f150b998dddbcfbd947e686c060b624b",
+    "data/processed/scenario-2021.json": "16b574b788658ea916a48a61cdf4a24df76e72305dc16054f32971ec5ed4aec4",
+    "data/processed/scenario-2022.json": "ea6846602cddfe179544b1d845c811a1848c59de69084c210c03080ac4d46f63",
+    "data/processed/scenario-2023.json": "14587193998afcb61ca2c95c50ee641ba709246a5b3a9c8187855b94e894611f",
+    "data/processed/scenario-2024.json": "6a6d794cdf0747d7a03ba92549d4d8165b149a19b04eb32588b679e6c50e8323",
+    "data/processed/scenario-2025.json": "8f80dab73fa8b50a92a6b0ec499419dfd07eade6398ebda59b5117aac62b13b7",
+    "data/processed/scenario-2026.json": "c30d6a697573fc39488b13a91eb7c3863aa780c14a81f446e06dd0e3a86638ca",
+    "analytics/model-2019.json": "2da02bcb4d6da178a635852e61c4ee7488f9551f346c9560f680ce99f13176cf",
+    "analytics/model-2020.json": "35d80e75ae50e8ada8c9ad96db2fd965e38f9dea06bc0f298b899f51497c3bdc",
+    "analytics/model-2021.json": "c89d6915e04159845d48c0692fe899ff66430c404a2d30cafade478ba629a17b",
+    "analytics/model-2022.json": "9579d70620a4f20ede36008bdcc745d913f8ba1aa7f64b4276104561491b8457",
+    "analytics/model-2023.json": "3b7a67a1f83c32ba8461abe9608f3f2c18e8a17e34b60c20768099d9b23c78cb",
+    "analytics/model-2024.json": "1c4b07f22dc40575623920f108335d8990c07a53511db5e0c6bd740398102e9d",
+    "analytics/model-2025.json": "4b753663702af949cc2474da986eadbe1e23966ce58778928590353c0f774397",
+    "analytics/model-2026.json": "a4380ba61137af8813883ec3b021acfb73ee755fd51fdef1004d9f68d25f8ad4",
+    "drizzle/0000_spotty_patriot.sql": "c1647856b8b5266e73145bdbe68e46a4ef68e6c13b97e39a817faf976866c497"
+  },
+  "finalHashes": {
+    "app/api/game/route.ts": "48229f6b114ff302960677660b1c564db130263a124af082e923e18f8b8cd5ed",
+    "lib/scouting.ts": "6a2850cb8f15f6effb6b12fd15f79602e5e0c6a20ff84951e7bdb2695aeba1d6",
+    "lib/engine.ts": "e38a8e91788b2663f0bf1ce35f2d905785ba9500296ab7b4a67acff3aabc322e",
+    "lib/simulation.ts": "4ea752092f4093d12125122455f30ecc87cb43ba9662134cf0ceaac9a15e86c3",
+    "lib/server-data.ts": "64a7f0c5d75ce231805b9aba756d15bbd3d29de01e8d8bb473686f3811a767f1",
+    "analytics/model.json": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0",
+    "analytics/five_year_strict_2018.json": "a717e2d683ab57c8f79f963d672598810593bae69945c8d00db82857d6c647e1",
+    "analytics/scoring_recalibration.json": "484c709f0e1687fa77e6fba118a267801b919e4a98dc8138ce3dea7dead64812",
+    "data/clean/team_context_2018.json": "f16356d6371a130b5310c6f035db434fcbad52464acb3b5b950d74430eb06de3",
+    "data/clean/team_context_source_manifest.json": "af8d90bda2e0030888c0c926c8d31f18057e93f5ab860e59401f7f695a79a499",
+    "data/processed/scenario-coverage.json": "0d42970e685e510b6554c7fea7675e7f3a5aecb525aabb1c6b7e155ec0058ca3",
+    "tests/api.integration.mjs": "0c4ae7c37eea21af6906a9baa5728d794666863f3cb841353db3e82c2f2372b4",
+    "data/processed/scenario-2018.json": "b7895eef7862ccfb45cff5f2f4b6e347abd809c1905ed274883d55cc237f59d8",
+    "data/processed/scenario-2019.json": "88ef4b175bfc7ddf8c2d32541b1b8371836f09f6e961f4bb8a36b0db0bf5f28c",
+    "data/processed/scenario-2020.json": "527ff4f9770199052a6405d9d56cf503f150b998dddbcfbd947e686c060b624b",
+    "data/processed/scenario-2021.json": "16b574b788658ea916a48a61cdf4a24df76e72305dc16054f32971ec5ed4aec4",
+    "data/processed/scenario-2022.json": "ea6846602cddfe179544b1d845c811a1848c59de69084c210c03080ac4d46f63",
+    "data/processed/scenario-2023.json": "14587193998afcb61ca2c95c50ee641ba709246a5b3a9c8187855b94e894611f",
+    "data/processed/scenario-2024.json": "6a6d794cdf0747d7a03ba92549d4d8165b149a19b04eb32588b679e6c50e8323",
+    "data/processed/scenario-2025.json": "8f80dab73fa8b50a92a6b0ec499419dfd07eade6398ebda59b5117aac62b13b7",
+    "data/processed/scenario-2026.json": "c30d6a697573fc39488b13a91eb7c3863aa780c14a81f446e06dd0e3a86638ca",
+    "analytics/model-2019.json": "2da02bcb4d6da178a635852e61c4ee7488f9551f346c9560f680ce99f13176cf",
+    "analytics/model-2020.json": "35d80e75ae50e8ada8c9ad96db2fd965e38f9dea06bc0f298b899f51497c3bdc",
+    "analytics/model-2021.json": "c89d6915e04159845d48c0692fe899ff66430c404a2d30cafade478ba629a17b",
+    "analytics/model-2022.json": "9579d70620a4f20ede36008bdcc745d913f8ba1aa7f64b4276104561491b8457",
+    "analytics/model-2023.json": "3b7a67a1f83c32ba8461abe9608f3f2c18e8a17e34b60c20768099d9b23c78cb",
+    "analytics/model-2024.json": "1c4b07f22dc40575623920f108335d8990c07a53511db5e0c6bd740398102e9d",
+    "analytics/model-2025.json": "4b753663702af949cc2474da986eadbe1e23966ce58778928590353c0f774397",
+    "analytics/model-2026.json": "a4380ba61137af8813883ec3b021acfb73ee755fd51fdef1004d9f68d25f8ad4",
+    "drizzle/0000_spotty_patriot.sql": "c1647856b8b5266e73145bdbe68e46a4ef68e6c13b97e39a817faf976866c497"
+  },
+  "sourceChangedDuringRun": false,
+  "cases": [
+    {
+      "name": "five-year donor labels precede the draft and do not claim independent validation",
+      "status": "passed",
+      "durationMs": 0.41
+    },
+    {
+      "name": "auth, CSRF, strict schema and body-size limits",
+      "status": "passed",
+      "durationMs": 16.42
+    },
+    {
+      "name": "versioned creation and request replay",
+      "status": "passed",
+      "durationMs": 47.3
+    },
+    {
+      "name": "owner isolation, aliases and canonical identifier rejection",
+      "status": "passed",
+      "durationMs": 48.57
+    },
+    {
+      "name": "group scouting costs once and preserves blind ranges",
+      "status": "passed",
+      "durationMs": 43.8
+    },
+    {
+      "name": "stale revision and concurrent CAS cannot lose updates",
+      "status": "passed",
+      "durationMs": 42.54
+    },
+    {
+      "name": "counteroffers and accepted trades conserve ownership",
+      "status": "passed",
+      "durationMs": 62.92
+    },
+    {
+      "name": "historical full draft, reveal and persisted recovery",
+      "status": "passed",
+      "durationMs": 715.7
+    },
+    {
+      "name": "retired source versions allow review but block mutations",
+      "status": "passed",
+      "durationMs": 35.88
+    },
+    {
+      "name": "historical 256-pair simulation survives a database reopen",
+      "status": "passed",
+      "durationMs": 12383.14
+    },
+    {
+      "name": "daily conditions, aliases and one official attempt are shared",
+      "status": "passed",
+      "durationMs": 70.42
+    },
+    {
+      "name": "identical daily decisions yield identical seven-round drafts",
+      "status": "passed",
+      "durationMs": 683.61
+    },
+    {
+      "name": "daily 256-pair results remain blind with immutable server scores",
+      "status": "passed",
+      "durationMs": 25443.93
+    },
+    {
+      "name": "UTC rollover closes old attempts and reveals completed draft identities",
+      "status": "passed",
+      "durationMs": 99.89
+    },
+    {
+      "name": "frozen daily versions and rate limits are enforced",
+      "status": "passed",
+      "durationMs": 1.36
+    },
+    {
+      "name": "all registered scenarios use exact bundles through draft, simulation, and reload",
+      "status": "passed",
+      "durationMs": 4774.5
+    }
+  ],
+  "passed": 16,
+  "failed": 0,
+  "requests": 445,
+  "maximumResponseBytes": 1949575,
+  "durationMs": 44482.538273,
+  "limitations": [
+    "Does not establish Safari/WebKit behavior or production Worker CPU limits.",
+    "Synthetic identities and disposable SQLite database are isolated test fixtures."
+  ]
+}

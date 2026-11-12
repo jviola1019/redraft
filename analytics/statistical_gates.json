@@ -508,7 +508,7 @@
         "configuration": {
           "team": "CLE",
           "draftSeed": "redraft-validation-2026-11-02",
-          "engineVersion": "redraft-research-0.7-multiyear-playoffs",
+          "engineVersion": "redraft-research-0.8-schedule-tiebreaks",
           "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:f16356d6371a+scoring-trailing3-v1",
           "datasetVersion": "nflverse-2018-combine-only-v2"
         }
@@ -528,14 +528,14 @@
       "requirement": "Win-difference MCSE\u2264.25 wins and improvement-probability MCSE\u2264.032",
       "evidence": {
         "replicates": 256,
-        "pairedMeanWinDifference": 0.015625,
-        "pairedStandardError": 0.19388386820591907,
+        "pairedMeanWinDifference": 0.109375,
+        "pairedStandardError": 0.222540255088386,
         "mean95Interval": [
-          -0.36438738168360135,
-          0.39563738168360135
+          -0.32680389997323656,
+          0.5455538999732366
         ],
-        "probabilityImprovement": 0.421875,
-        "probabilityMcse": 0.030866173104060757
+        "probabilityImprovement": 0.45703125,
+        "probabilityMcse": 0.031134391562742603
       }
     },
     {
@@ -547,19 +547,19 @@
         {
           "metric": "totalScoreMean",
           "observed": 46.289855072463766,
-          "simulatedMean": 45.045713843368915,
+          "simulatedMean": 45.050891411013744,
           "interval": [
-            44.20579268292683,
-            45.9344512195122
+            44.27286585365854,
+            45.984756097560975
           ]
         },
         {
           "metric": "zeroScoreRate",
           "observed": 0.010297482837528604,
-          "simulatedMean": 0.016061178067835354,
+          "simulatedMean": 0.01609541730182926,
           "interval": [
-            0.011432926829268292,
-            0.021341463414634148
+            0.011051829268292682,
+            0.022103658536585365
           ]
         }
       ]
@@ -574,7 +574,7 @@
         "configuration": {
           "team": "KC",
           "draftSeed": "redraft-validation-2026-11-02",
-          "engineVersion": "redraft-research-0.7-multiyear-playoffs",
+          "engineVersion": "redraft-research-0.8-schedule-tiebreaks",
           "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:f16356d6371a+scoring-trailing3-v1",
           "datasetVersion": "nflverse-2018-combine-only-v2"
         }
@@ -594,14 +594,14 @@
       "requirement": "Win-difference MCSE\u2264.25 wins and improvement-probability MCSE\u2264.032",
       "evidence": {
         "replicates": 256,
-        "pairedMeanWinDifference": 1,
-        "pairedStandardError": 0.2088718530113432,
+        "pairedMeanWinDifference": 1.25,
+        "pairedStandardError": 0.19725443905141957,
         "mean95Interval": [
-          0.5906111680977673,
-          1.4093888319022327
+          0.8633812994592176,
+          1.6366187005407824
         ],
-        "probabilityImprovement": 0.5546875,
-        "probabilityMcse": 0.031062517438611176
+        "probabilityImprovement": 0.5859375,
+        "probabilityMcse": 0.030784961457320535
       }
     },
     {
@@ -613,19 +613,19 @@
         {
           "metric": "totalScoreMean",
           "observed": 46.289855072463766,
-          "simulatedMean": 45.045713843368915,
+          "simulatedMean": 45.050891411013744,
           "interval": [
-            44.20579268292683,
-            45.9344512195122
+            44.27286585365854,
+            45.984756097560975
           ]
         },
         {
           "metric": "zeroScoreRate",
           "observed": 0.010297482837528604,
-          "simulatedMean": 0.016061178067835354,
+          "simulatedMean": 0.01609541730182926,
           "interval": [
-            0.011432926829268292,
-            0.021341463414634148
+            0.011051829268292682,
+            0.022103658536585365
           ]
         }
       ]
@@ -640,7 +640,7 @@
         "configuration": {
           "team": "NE",
           "draftSeed": "redraft-validation-2026-11-02",
-          "engineVersion": "redraft-research-0.7-multiyear-playoffs",
+          "engineVersion": "redraft-research-0.8-schedule-tiebreaks",
           "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:f16356d6371a+scoring-trailing3-v1",
           "datasetVersion": "nflverse-2018-combine-only-v2"
         }
@@ -660,14 +660,14 @@
       "requirement": "Win-difference MCSE\u2264.25 wins and improvement-probability MCSE\u2264.032",
       "evidence": {
         "replicates": 256,
-        "pairedMeanWinDifference": -0.59765625,
-        "pairedStandardError": 0.20176756435762314,
+        "pairedMeanWinDifference": -0.8203125,
+        "pairedStandardError": 0.21500592698026294,
         "mean95Interval": [
-          -0.9931206761409413,
-          -0.20219182385905865
+          -1.2417241168813153,
+          -0.39890088311868466
         ],
-        "probabilityImprovement": 0.39453125,
-        "probabilityMcse": 0.03054686095098382
+        "probabilityImprovement": 0.34765625,
+        "probabilityMcse": 0.02976413673024351
       }
     },
     {
@@ -679,19 +679,19 @@
         {
           "metric": "totalScoreMean",
           "observed": 46.289855072463766,
-          "simulatedMean": 45.045713843368915,
+          "simulatedMean": 45.050891411013744,
           "interval": [
-            44.20579268292683,
-            45.9344512195122
+            44.27286585365854,
+            45.984756097560975
           ]
         },
         {
           "metric": "zeroScoreRate",
           "observed": 0.010297482837528604,
-          "simulatedMean": 0.016061178067835354,
+          "simulatedMean": 0.01609541730182926,
           "interval": [
-            0.011432926829268292,
-            0.021341463414634148
+            0.011051829268292682,
+            0.022103658536585365
           ]
         }
       ]
@@ -706,7 +706,7 @@
         "configuration": {
           "team": "SF",
           "draftSeed": "redraft-validation-2026-11-02",
-          "engineVersion": "redraft-research-0.7-multiyear-playoffs",
+          "engineVersion": "redraft-research-0.8-schedule-tiebreaks",
           "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:f16356d6371a+scoring-trailing3-v1",
           "datasetVersion": "nflverse-2018-combine-only-v2"
         }
@@ -726,14 +726,14 @@
       "requirement": "Win-difference MCSE\u2264.25 wins and improvement-probability MCSE\u2264.032",
       "evidence": {
         "replicates": 256,
-        "pairedMeanWinDifference": 0.5,
-        "pairedStandardError": 0.20359814803271895,
+        "pairedMeanWinDifference": 0.46484375,
+        "pairedStandardError": 0.20192409307718306,
         "mean95Interval": [
-          0.10094762985587086,
-          0.8990523701441291
+          0.06907252756872118,
+          0.8606149724312788
         ],
-        "probabilityImprovement": 0.5,
-        "probabilityMcse": 0.03125
+        "probabilityImprovement": 0.49609375,
+        "probabilityMcse": 0.031249046311131234
       }
     },
     {
@@ -745,19 +745,19 @@
         {
           "metric": "totalScoreMean",
           "observed": 46.289855072463766,
-          "simulatedMean": 45.045713843368915,
+          "simulatedMean": 45.050891411013744,
           "interval": [
-            44.20579268292683,
-            45.9344512195122
+            44.27286585365854,
+            45.984756097560975
           ]
         },
         {
           "metric": "zeroScoreRate",
           "observed": 0.010297482837528604,
-          "simulatedMean": 0.016061178067835354,
+          "simulatedMean": 0.01609541730182926,
           "interval": [
-            0.011432926829268292,
-            0.021341463414634148
+            0.011051829268292682,
+            0.022103658536585365
           ]
         }
       ]
@@ -768,7 +768,7 @@
       "configuration": {
         "team": "CLE",
         "draftSeed": "redraft-validation-2026-11-02",
-        "engineVersion": "redraft-research-0.7-multiyear-playoffs",
+        "engineVersion": "redraft-research-0.8-schedule-tiebreaks",
         "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:f16356d6371a+scoring-trailing3-v1",
         "datasetVersion": "nflverse-2018-combine-only-v2"
       },
@@ -778,39 +778,39 @@
         {
           "metric": "totalScoreMean",
           "observed": 46.289855072463766,
-          "simulatedMean": 45.045713843368915,
+          "simulatedMean": 45.050891411013744,
           "interval": [
-            44.20579268292683,
-            45.9344512195122
+            44.27286585365854,
+            45.984756097560975
           ]
         },
         {
           "metric": "zeroScoreRate",
           "observed": 0.010297482837528604,
-          "simulatedMean": 0.016061178067835354,
+          "simulatedMean": 0.01609541730182926,
           "interval": [
-            0.011432926829268292,
-            0.021341463414634148
+            0.011051829268292682,
+            0.022103658536585365
           ]
         }
       ],
       "convergence": {
         "replicates": 256,
-        "pairedMeanWinDifference": 0.015625,
-        "pairedStandardError": 0.19388386820591907,
+        "pairedMeanWinDifference": 0.109375,
+        "pairedStandardError": 0.222540255088386,
         "mean95Interval": [
-          -0.36438738168360135,
-          0.39563738168360135
+          -0.32680389997323656,
+          0.5455538999732366
         ],
-        "probabilityImprovement": 0.421875,
-        "probabilityMcse": 0.030866173104060757
+        "probabilityImprovement": 0.45703125,
+        "probabilityMcse": 0.031134391562742603
       }
     },
     "KC": {
       "configuration": {
         "team": "KC",
         "draftSeed": "redraft-validation-2026-11-02",
-        "engineVersion": "redraft-research-0.7-multiyear-playoffs",
+        "engineVersion": "redraft-research-0.8-schedule-tiebreaks",
         "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:f16356d6371a+scoring-trailing3-v1",
         "datasetVersion": "nflverse-2018-combine-only-v2"
       },
@@ -820,39 +820,39 @@
         {
           "metric": "totalScoreMean",
           "observed": 46.289855072463766,
-          "simulatedMean": 45.045713843368915,
+          "simulatedMean": 45.050891411013744,
           "interval": [
-            44.20579268292683,
-            45.9344512195122
+            44.27286585365854,
+            45.984756097560975
           ]
         },
         {
           "metric": "zeroScoreRate",
           "observed": 0.010297482837528604,
-          "simulatedMean": 0.016061178067835354,
+          "simulatedMean": 0.01609541730182926,
           "interval": [
-            0.011432926829268292,
-            0.021341463414634148
+            0.011051829268292682,
+            0.022103658536585365
           ]
         }
       ],
       "convergence": {
         "replicates": 256,
-        "pairedMeanWinDifference": 1,
-        "pairedStandardError": 0.2088718530113432,
+        "pairedMeanWinDifference": 1.25,
+        "pairedStandardError": 0.19725443905141957,
         "mean95Interval": [
-          0.5906111680977673,
-          1.4093888319022327
+          0.8633812994592176,
+          1.6366187005407824
         ],
-        "probabilityImprovement": 0.5546875,
-        "probabilityMcse": 0.031062517438611176
+        "probabilityImprovement": 0.5859375,
+        "probabilityMcse": 0.030784961457320535
       }
     },
     "NE": {
       "configuration": {
         "team": "NE",
         "draftSeed": "redraft-validation-2026-11-02",
-        "engineVersion": "redraft-research-0.7-multiyear-playoffs",
+        "engineVersion": "redraft-research-0.8-schedule-tiebreaks",
         "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:f16356d6371a+scoring-trailing3-v1",
         "datasetVersion": "nflverse-2018-combine-only-v2"
       },
@@ -862,39 +862,39 @@
         {
           "metric": "totalScoreMean",
           "observed": 46.289855072463766,
-          "simulatedMean": 45.045713843368915,
+          "simulatedMean": 45.050891411013744,
           "interval": [
-            44.20579268292683,
-            45.9344512195122
+            44.27286585365854,
+            45.984756097560975
           ]
         },
         {
           "metric": "zeroScoreRate",
           "observed": 0.010297482837528604,
-          "simulatedMean": 0.016061178067835354,
+          "simulatedMean": 0.01609541730182926,
           "interval": [
-            0.011432926829268292,
-            0.021341463414634148
+            0.011051829268292682,
+            0.022103658536585365
           ]
         }
       ],
       "convergence": {
         "replicates": 256,
-        "pairedMeanWinDifference": -0.59765625,
-        "pairedStandardError": 0.20176756435762314,
+        "pairedMeanWinDifference": -0.8203125,
+        "pairedStandardError": 0.21500592698026294,
         "mean95Interval": [
-          -0.9931206761409413,
-          -0.20219182385905865
+          -1.2417241168813153,
+          -0.39890088311868466
         ],
-        "probabilityImprovement": 0.39453125,
-        "probabilityMcse": 0.03054686095098382
+        "probabilityImprovement": 0.34765625,
+        "probabilityMcse": 0.02976413673024351
       }
     },
     "SF": {
       "configuration": {
         "team": "SF",
         "draftSeed": "redraft-validation-2026-11-02",
-        "engineVersion": "redraft-research-0.7-multiyear-playoffs",
+        "engineVersion": "redraft-research-0.8-schedule-tiebreaks",
         "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:f16356d6371a+scoring-trailing3-v1",
         "datasetVersion": "nflverse-2018-combine-only-v2"
       },
@@ -904,32 +904,32 @@
         {
           "metric": "totalScoreMean",
           "observed": 46.289855072463766,
-          "simulatedMean": 45.045713843368915,
+          "simulatedMean": 45.050891411013744,
           "interval": [
-            44.20579268292683,
-            45.9344512195122
+            44.27286585365854,
+            45.984756097560975
           ]
         },
         {
           "metric": "zeroScoreRate",
           "observed": 0.010297482837528604,
-          "simulatedMean": 0.016061178067835354,
+          "simulatedMean": 0.01609541730182926,
           "interval": [
-            0.011432926829268292,
-            0.021341463414634148
+            0.011051829268292682,
+            0.022103658536585365
           ]
         }
       ],
       "convergence": {
         "replicates": 256,
-        "pairedMeanWinDifference": 0.5,
-        "pairedStandardError": 0.20359814803271895,
+        "pairedMeanWinDifference": 0.46484375,
+        "pairedStandardError": 0.20192409307718306,
         "mean95Interval": [
-          0.10094762985587086,
-          0.8990523701441291
+          0.06907252756872118,
+          0.8606149724312788
         ],
-        "probabilityImprovement": 0.5,
-        "probabilityMcse": 0.03125
+        "probabilityImprovement": 0.49609375,
+        "probabilityMcse": 0.031249046311131234
       }
     }
   },

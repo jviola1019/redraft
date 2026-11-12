@@ -36,3 +36,7 @@ Remaining statistical failures are retained; do not represent this as full model
 ## 2026-11-12 — recovered release and hosted browser verification
 
 Full source and fresh evidence are on jviola1019/redraft. The all-class matrix, API, build and HTTP checks passed. Hosted workflow 43323677851 also passed strengthened Chromium/WebKit desktop/phone smoke checks; four viewport captures were inspected. Scientific status remains 33 pass / 9 fail / 7 unsupported. See the current release report and acceptance matrix before continuing; do not repeat frozen tests without a relevant change or treat a green implementation workflow as model clearance. The next substantive work remains additional valid historical outcome support, model/distribution validation, full roster/future-personnel implementation and broader end-to-end/physical-device testing.
+
+## November 12 follow-up remediation
+
+Schedule tiebreak and tied-score audit defects corrected. Expanded 22-step gauntlet completed with structural PASS and zero drift; statistical gates remain 33 pass / 9 fail / 7 unsupported. Corrected official-score sensitivity reports 7 leader-set changes and minimum correlation 0.4. QB annual-transition research remains unpromoted. See [current release evidence](docs/release/CURRENT_RELEASE.md) and `tests/results/gauntlet/2026-11-12T23-12-46-869Z-schedule-ranking-remediation-a8233b9f`.

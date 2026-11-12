@@ -1,0 +1,23 @@
+{
+  "json": "tests/results/all-year-distributions-2026-11-12.json",
+  "markdown": "tests/results/all-year-distributions-2026-11-12.md",
+  "years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "replicatesPerClass": 128,
+  "replicateWorlds": 2304,
+  "parity": "Not modified; this report consumes existing runtime outputs.",
+  "inputDrift": {
+    "detected": false,
+    "changedPaths": []
+  },
+  "elapsedSeconds": 47.491
+}

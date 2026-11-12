@@ -1,0 +1,22 @@
+{
+  "id": "statistical-gates",
+  "kind": "statistical",
+  "command": [
+    "python3",
+    "analytics/statistical_gates.py"
+  ],
+  "startedAt": "2026-11-12T23:18:01.929Z",
+  "finishedAt": "2026-11-12T23:18:02.205Z",
+  "durationMs": 275.59335400001146,
+  "exitCode": 2,
+  "signal": null,
+  "timedOut": false,
+  "error": null,
+  "status": "failed",
+  "stdout": "22-statistical-gates.stdout.log",
+  "stderr": "22-statistical-gates.stderr.log",
+  "artifacts": [
+    "artifacts/analytics/statistical_gates.json",
+    "artifacts/analytics/STATISTICAL_GATES.md"
+  ]
+}

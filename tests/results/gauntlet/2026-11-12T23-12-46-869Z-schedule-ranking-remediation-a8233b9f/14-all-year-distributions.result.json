@@ -1,0 +1,22 @@
+{
+  "id": "all-year-distributions",
+  "kind": "diagnostic",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "analytics/all_year_diagnostics.mjs"
+  ],
+  "startedAt": "2026-11-12T23:16:02.407Z",
+  "finishedAt": "2026-11-12T23:16:50.473Z",
+  "durationMs": 48066.7378,
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "error": null,
+  "status": "passed",
+  "stdout": "14-all-year-distributions.stdout.log",
+  "stderr": "14-all-year-distributions.stderr.log",
+  "artifacts": [
+    "artifacts/tests/results/all-year-distributions-2026-11-12.json",
+    "artifacts/tests/results/all-year-distributions-2026-11-12.md"
+  ]
+}

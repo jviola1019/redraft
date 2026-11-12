@@ -67,3 +67,7 @@ The source package includes the 2025 ownership reconstruction and the rolling
 scoring audit. The recorded-data audit covers 2018–2026. Playable scenarios
 remain restricted to 2018, and the statistical release criteria remain in
 analytics/statistical_gates.json.
+
+## November 12 follow-up remediation
+
+Schedule tiebreak and tied-score audit defects corrected. Expanded 22-step gauntlet completed with structural PASS and zero drift; statistical gates remain 33 pass / 9 fail / 7 unsupported. Corrected official-score sensitivity reports 7 leader-set changes and minimum correlation 0.4. QB annual-transition research remains unpromoted. See [current release evidence](docs/release/CURRENT_RELEASE.md) and `tests/results/gauntlet/2026-11-12T23-12-46-869Z-schedule-ranking-remediation-a8233b9f`.

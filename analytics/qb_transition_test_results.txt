@@ -1,0 +1,11 @@
+test_annual_metrics_recompute (__main__.TransitionChecks.test_annual_metrics_recompute) ... ok
+test_cutoff_and_absence_semantics (__main__.TransitionChecks.test_cutoff_and_absence_semantics) ... ok
+test_distribution_weights_and_states (__main__.TransitionChecks.test_distribution_weights_and_states) ... ok
+test_no_runtime_promotion_and_hashes_current (__main__.TransitionChecks.test_no_runtime_promotion_and_hashes_current) ... ok
+test_recombined_paths_have_only_empirical_annual_values (__main__.TransitionChecks.test_recombined_paths_have_only_empirical_annual_values) ... ok
+test_selection_ignores_assessment_outcomes (__main__.TransitionChecks.test_selection_ignores_assessment_outcomes) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.145s
+
+OK
