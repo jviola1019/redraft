@@ -1,0 +1,308 @@
+{
+  "asOf": "2026-11-04",
+  "scope": "Recorded files and observed bracket advancement",
+  "classes": [
+    {
+      "draftYear": 2018,
+      "recordedPicks": 256,
+      "playable": true,
+      "recordedRegularGames": 256,
+      "recordedPostseason": {
+        "WC": 4,
+        "DIV": 4,
+        "CON": 2,
+        "SB": 1
+      },
+      "fiveYearWindow": [
+        {
+          "season": 2018,
+          "status": "completed"
+        },
+        {
+          "season": 2019,
+          "status": "completed"
+        },
+        {
+          "season": 2020,
+          "status": "completed"
+        },
+        {
+          "season": 2021,
+          "status": "completed"
+        },
+        {
+          "season": 2022,
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "draftYear": 2019,
+      "recordedPicks": 254,
+      "playable": false,
+      "recordedRegularGames": 256,
+      "recordedPostseason": {
+        "WC": 4,
+        "DIV": 4,
+        "CON": 2,
+        "SB": 1
+      },
+      "fiveYearWindow": [
+        {
+          "season": 2019,
+          "status": "completed"
+        },
+        {
+          "season": 2020,
+          "status": "completed"
+        },
+        {
+          "season": 2021,
+          "status": "completed"
+        },
+        {
+          "season": 2022,
+          "status": "completed"
+        },
+        {
+          "season": 2023,
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "draftYear": 2020,
+      "recordedPicks": 255,
+      "playable": false,
+      "recordedRegularGames": 256,
+      "recordedPostseason": {
+        "WC": 6,
+        "DIV": 4,
+        "CON": 2,
+        "SB": 1
+      },
+      "fiveYearWindow": [
+        {
+          "season": 2020,
+          "status": "completed"
+        },
+        {
+          "season": 2021,
+          "status": "completed"
+        },
+        {
+          "season": 2022,
+          "status": "completed"
+        },
+        {
+          "season": 2023,
+          "status": "completed"
+        },
+        {
+          "season": 2024,
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "draftYear": 2021,
+      "recordedPicks": 259,
+      "playable": false,
+      "recordedRegularGames": 272,
+      "recordedPostseason": {
+        "WC": 6,
+        "DIV": 4,
+        "CON": 2,
+        "SB": 1
+      },
+      "fiveYearWindow": [
+        {
+          "season": 2021,
+          "status": "completed"
+        },
+        {
+          "season": 2022,
+          "status": "completed"
+        },
+        {
+          "season": 2023,
+          "status": "completed"
+        },
+        {
+          "season": 2024,
+          "status": "completed"
+        },
+        {
+          "season": 2025,
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "draftYear": 2022,
+      "recordedPicks": 262,
+      "playable": false,
+      "recordedRegularGames": 271,
+      "recordedPostseason": {
+        "WC": 6,
+        "DIV": 4,
+        "CON": 2,
+        "SB": 1
+      },
+      "fiveYearWindow": [
+        {
+          "season": 2022,
+          "status": "completed"
+        },
+        {
+          "season": 2023,
+          "status": "completed"
+        },
+        {
+          "season": 2024,
+          "status": "completed"
+        },
+        {
+          "season": 2025,
+          "status": "completed"
+        },
+        {
+          "season": 2026,
+          "status": "incomplete"
+        }
+      ]
+    },
+    {
+      "draftYear": 2023,
+      "recordedPicks": 259,
+      "playable": false,
+      "recordedRegularGames": 272,
+      "recordedPostseason": {
+        "WC": 6,
+        "DIV": 4,
+        "CON": 2,
+        "SB": 1
+      },
+      "fiveYearWindow": [
+        {
+          "season": 2023,
+          "status": "completed"
+        },
+        {
+          "season": 2024,
+          "status": "completed"
+        },
+        {
+          "season": 2025,
+          "status": "completed"
+        },
+        {
+          "season": 2026,
+          "status": "incomplete"
+        },
+        {
+          "season": 2027,
+          "status": "future"
+        }
+      ]
+    },
+    {
+      "draftYear": 2024,
+      "recordedPicks": 257,
+      "playable": false,
+      "recordedRegularGames": 272,
+      "recordedPostseason": {
+        "WC": 6,
+        "DIV": 4,
+        "CON": 2,
+        "SB": 1
+      },
+      "fiveYearWindow": [
+        {
+          "season": 2024,
+          "status": "completed"
+        },
+        {
+          "season": 2025,
+          "status": "completed"
+        },
+        {
+          "season": 2026,
+          "status": "incomplete"
+        },
+        {
+          "season": 2027,
+          "status": "future"
+        },
+        {
+          "season": 2028,
+          "status": "future"
+        }
+      ]
+    },
+    {
+      "draftYear": 2025,
+      "recordedPicks": 257,
+      "playable": false,
+      "recordedRegularGames": 272,
+      "recordedPostseason": {
+        "WC": 6,
+        "DIV": 4,
+        "CON": 2,
+        "SB": 1
+      },
+      "fiveYearWindow": [
+        {
+          "season": 2025,
+          "status": "completed"
+        },
+        {
+          "season": 2026,
+          "status": "incomplete"
+        },
+        {
+          "season": 2027,
+          "status": "future"
+        },
+        {
+          "season": 2028,
+          "status": "future"
+        },
+        {
+          "season": 2029,
+          "status": "future"
+        }
+      ]
+    },
+    {
+      "draftYear": 2026,
+      "recordedPicks": 257,
+      "playable": false,
+      "recordedRegularGames": 121,
+      "recordedPostseason": {},
+      "fiveYearWindow": [
+        {
+          "season": 2026,
+          "status": "incomplete"
+        },
+        {
+          "season": 2027,
+          "status": "future"
+        },
+        {
+          "season": 2028,
+          "status": "future"
+        },
+        {
+          "season": 2029,
+          "status": "future"
+        },
+        {
+          "season": 2030,
+          "status": "future"
+        }
+      ]
+    }
+  ],
+  "failures": []
+}

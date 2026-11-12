@@ -1,0 +1,13 @@
+test_conditioning_conserves_probability (__main__.StatisticalAuditChecks.test_conditioning_conserves_probability) ... ok
+test_coverage_interval_includes_uncertainty (__main__.StatisticalAuditChecks.test_coverage_interval_includes_uncertainty) ... ok
+test_exact_crps_point_forecast (__main__.StatisticalAuditChecks.test_exact_crps_point_forecast) ... ok
+test_exact_forecast_metrics_from_saved_rows (__main__.StatisticalAuditChecks.test_exact_forecast_metrics_from_saved_rows) ... ok
+test_exact_mixture_against_enumeration (__main__.StatisticalAuditChecks.test_exact_mixture_against_enumeration) ... ok
+test_method_selection_does_not_use_assessment_scores (__main__.StatisticalAuditChecks.test_method_selection_does_not_use_assessment_scores) ... ok
+test_no_future_scores_in_candidate (__main__.StatisticalAuditChecks.test_no_future_scores_in_candidate) ... ok
+test_release_failure_cannot_be_hidden_by_metric_success (__main__.StatisticalAuditChecks.test_release_failure_cannot_be_hidden_by_metric_success) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.453s
+
+OK

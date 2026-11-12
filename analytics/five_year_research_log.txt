@@ -1,0 +1,407 @@
+{
+  "strictDonors": 310,
+  "support": {
+    "DB": {
+      "donors": 57,
+      "rookieRole": 26,
+      "noRookieRole": 31,
+      "roleConditioningSupported": true
+    },
+    "DL": {
+      "donors": 49,
+      "rookieRole": 19,
+      "noRookieRole": 30,
+      "roleConditioningSupported": true
+    },
+    "LB": {
+      "donors": 38,
+      "rookieRole": 12,
+      "noRookieRole": 26,
+      "roleConditioningSupported": true
+    },
+    "OL": {
+      "donors": 53,
+      "rookieRole": 14,
+      "noRookieRole": 39,
+      "roleConditioningSupported": true
+    },
+    "QB": {
+      "donors": 15,
+      "rookieRole": 3,
+      "noRookieRole": 12,
+      "roleConditioningSupported": true
+    },
+    "RB": {
+      "donors": 34,
+      "rookieRole": 7,
+      "noRookieRole": 27,
+      "roleConditioningSupported": true
+    },
+    "ST": {
+      "donors": 9,
+      "rookieRole": 0,
+      "noRookieRole": 9,
+      "roleConditioningSupported": false
+    },
+    "TE": {
+      "donors": 18,
+      "rookieRole": 7,
+      "noRookieRole": 11,
+      "roleConditioningSupported": true
+    },
+    "WR": {
+      "donors": 37,
+      "rookieRole": 15,
+      "noRookieRole": 22,
+      "roleConditioningSupported": true
+    }
+  },
+  "excluded": {
+    "2013": 22
+  }
+}
+{
+  "counts": {
+    "train": 906,
+    "validation": 307,
+    "test": 593
+  },
+  "selected": "roleConditionalDonors",
+  "test": {
+    "positionDonors": {
+      "n": 593,
+      "annualMAE": 279.46532462057337,
+      "annualRMSE": 337.6429299238364,
+      "totalMAE": 1207.6201559865092,
+      "totalRMSE": 1460.839135153284,
+      "roleBrierByYear": [
+        0.2397764228499154,
+        0.24666727445193912,
+        0.2464379848229343,
+        0.24432955311973026,
+        0.23629601602023603
+      ],
+      "anyRoleBrier": 0.22969947301854976,
+      "totalInterval80": {
+        "coverage": 0.8684654300168634,
+        "meanWidth": 3329.139291736931
+      },
+      "totalInterval95": {
+        "coverage": 0.9645868465430016,
+        "meanWidth": 4260.5447301854965
+      }
+    },
+    "roleConditionalDonors": {
+      "n": 593,
+      "annualMAE": 268.7682774030354,
+      "annualRMSE": 329.9711607270325,
+      "totalMAE": 1151.5158979763912,
+      "totalRMSE": 1414.0298858366828,
+      "roleBrierByYear": [
+        0.23249155775716684,
+        0.23631968802698125,
+        0.23692254426644183,
+        0.23447699198988178,
+        0.23001838111298484
+      ],
+      "anyRoleBrier": 0.22195924325463745,
+      "totalInterval80": {
+        "coverage": 0.8583473861720068,
+        "meanWidth": 3224.212478920743
+      },
+      "totalInterval95": {
+        "coverage": 0.96964586846543,
+        "meanWidth": 4196.347428330522
+      }
+    },
+    "log1pRidge": {
+      "n": 593,
+      "annualMAE": 272.11092313861565,
+      "annualRMSE": 334.65058233955045,
+      "totalMAE": 1162.7141768878762,
+      "totalRMSE": 1432.3592051360195,
+      "roleBrierByYear": [
+        0.23767660202360882,
+        0.24213932335581753,
+        0.24340824198988184,
+        0.24061854974704863,
+        0.23745470067453633
+      ],
+      "anyRoleBrier": 0.23115508010118044,
+      "totalInterval80": {
+        "coverage": 0.7537942664418212,
+        "meanWidth": 3565.861595464572
+      },
+      "totalInterval95": {
+        "coverage": 0.9089376053962901,
+        "meanWidth": 4860.336955610496
+      }
+    }
+  },
+  "rolling": [
+    {
+      "forecastDraftYear": 2018,
+      "informationCutoff": "2018-04-01",
+      "donorCohorts": [
+        2013
+      ],
+      "rookieClassifierCohorts": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017
+      ],
+      "nDonors": 301,
+      "nTest": 287,
+      "metrics": {
+        "n": 287,
+        "annualMAE": 272.32444076655054,
+        "annualRMSE": 340.74841330659564,
+        "totalMAE": 1176.7061236933796,
+        "totalRMSE": 1473.4873432611364,
+        "roleBrierByYear": [
+          0.23994494773519168,
+          0.23919701655052272,
+          0.2418914198606273,
+          0.24961178135888512,
+          0.24258212108013918
+        ],
+        "anyRoleBrier": 0.22092870209059234,
+        "totalInterval80": {
+          "coverage": 0.8571428571428571,
+          "meanWidth": 3210.4602787456447
+        },
+        "totalInterval95": {
+          "coverage": 0.9337979094076655,
+          "meanWidth": 4058.2424216027866
+        }
+      },
+      "positionBaseline": {
+        "n": 287,
+        "annualMAE": 278.51808013937284,
+        "annualRMSE": 349.0585503887739,
+        "totalMAE": 1209.5874216027876,
+        "totalRMSE": 1523.7714514867755,
+        "roleBrierByYear": [
+          0.24643294860627168,
+          0.24938510452961654,
+          0.24524202961672473,
+          0.25540376742160265,
+          0.2478356489547038
+        ],
+        "anyRoleBrier": 0.2241831663763066,
+        "totalInterval80": {
+          "coverage": 0.8501742160278746,
+          "meanWidth": 3218.4146341463415
+        },
+        "totalInterval95": {
+          "coverage": 0.9337979094076655,
+          "meanWidth": 4038.121864111497
+        }
+      },
+      "status": "frozen historical forecast evaluated later; no test-cohort labels used for fit"
+    },
+    {
+      "forecastDraftYear": 2019,
+      "informationCutoff": "2019-04-01",
+      "donorCohorts": [
+        2013,
+        2014
+      ],
+      "rookieClassifierCohorts": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "nDonors": 615,
+      "nTest": 325,
+      "metrics": {
+        "n": 325,
+        "annualMAE": 278.6249723076923,
+        "annualRMSE": 329.08162478908343,
+        "totalMAE": 1194.4679230769232,
+        "totalRMSE": 1406.732295846805,
+        "roleBrierByYear": [
+          0.21785548076923053,
+          0.23494646153846147,
+          0.22794765384615392,
+          0.22376990384615383,
+          0.22526236538461525
+        ],
+        "anyRoleBrier": 0.23349998076923079,
+        "totalInterval80": {
+          "coverage": 0.8553846153846154,
+          "meanWidth": 3448.057230769231
+        },
+        "totalInterval95": {
+          "coverage": 0.9476923076923077,
+          "meanWidth": 4273.193923076922
+        }
+      },
+      "positionBaseline": {
+        "n": 325,
+        "annualMAE": 281.31509384615384,
+        "annualRMSE": 332.3001011642535,
+        "totalMAE": 1211.3752846153848,
+        "totalRMSE": 1430.5304326306257,
+        "roleBrierByYear": [
+          0.22119296153846144,
+          0.24271255769230765,
+          0.2306649999999999,
+          0.2303297307692309,
+          0.23110703846153827
+        ],
+        "anyRoleBrier": 0.24197886538461538,
+        "totalInterval80": {
+          "coverage": 0.8830769230769231,
+          "meanWidth": 3454.4363076923087
+        },
+        "totalInterval95": {
+          "coverage": 0.9538461538461539,
+          "meanWidth": 4277.252076923076
+        }
+      },
+      "status": "frozen historical forecast evaluated later; no test-cohort labels used for fit"
+    },
+    {
+      "forecastDraftYear": 2020,
+      "informationCutoff": "2020-04-01",
+      "donorCohorts": [
+        2013,
+        2014,
+        2015
+      ],
+      "rookieClassifierCohorts": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "nDonors": 906,
+      "nTest": 325,
+      "metrics": {
+        "n": 325,
+        "annualMAE": 263.7752046153846,
+        "annualRMSE": 323.20075675014346,
+        "totalMAE": 1127.0199615384618,
+        "totalRMSE": 1367.0324204168214,
+        "roleBrierByYear": [
+          0.22913705769230747,
+          0.22547332692307695,
+          0.23625740384615365,
+          0.22204051923076923,
+          0.2203260576923077
+        ],
+        "anyRoleBrier": 0.22063903846153843,
+        "totalInterval80": {
+          "coverage": 0.9015384615384615,
+          "meanWidth": 3367.917538461539
+        },
+        "totalInterval95": {
+          "coverage": 0.9753846153846154,
+          "meanWidth": 4267.058999999999
+        }
+      },
+      "positionBaseline": {
+        "n": 325,
+        "annualMAE": 269.37544153846153,
+        "annualRMSE": 329.57115181922404,
+        "totalMAE": 1156.1601307692308,
+        "totalRMSE": 1405.6059728377008,
+        "roleBrierByYear": [
+          0.23211423076923088,
+          0.23237946153846153,
+          0.24148498076923086,
+          0.2296510769230767,
+          0.22335675
+        ],
+        "anyRoleBrier": 0.2279861538461539,
+        "totalInterval80": {
+          "coverage": 0.8830769230769231,
+          "meanWidth": 3379.86
+        },
+        "totalInterval95": {
+          "coverage": 0.9753846153846154,
+          "meanWidth": 4301.5689999999995
+        }
+      },
+      "status": "frozen historical forecast evaluated later; no test-cohort labels used for fit"
+    },
+    {
+      "forecastDraftYear": 2021,
+      "informationCutoff": "2021-04-01",
+      "donorCohorts": [
+        2013,
+        2014,
+        2015,
+        2016
+      ],
+      "rookieClassifierCohorts": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "nDonors": 1213,
+      "nTest": 329,
+      "metrics": {
+        "n": 329,
+        "annualMAE": 259.7459848024316,
+        "annualRMSE": 307.5881068533274,
+        "totalMAE": 1134.0024772036475,
+        "totalRMSE": 1315.7421820094387,
+        "roleBrierByYear": [
+          0.21042929331306992,
+          0.22706168313069905,
+          0.2185297872340424,
+          0.20880087386018237,
+          0.19302311930091176
+        ],
+        "anyRoleBrier": 0.23999631458966567,
+        "totalInterval80": {
+          "coverage": 0.9179331306990881,
+          "meanWidth": 3472.326443768998
+        },
+        "totalInterval95": {
+          "coverage": 0.9787234042553191,
+          "meanWidth": 4262.200911854102
+        }
+      },
+      "positionBaseline": {
+        "n": 329,
+        "annualMAE": 265.4972462006079,
+        "annualRMSE": 315.7161880266067,
+        "totalMAE": 1170.6075075987842,
+        "totalRMSE": 1361.7523138080817,
+        "roleBrierByYear": [
+          0.22812340425531893,
+          0.23554156534954404,
+          0.2267601063829787,
+          0.21377330927051671,
+          0.1976979103343464
+        ],
+        "anyRoleBrier": 0.2494154065349544,
+        "totalInterval80": {
+          "coverage": 0.9027355623100304,
+          "meanWidth": 3457.6586626139824
+        },
+        "totalInterval95": {
+          "coverage": 0.9787234042553191,
+          "meanWidth": 4279.071656534954
+        }
+      },
+      "status": "frozen historical forecast evaluated later; no test-cohort labels used for fit"
+    }
+  ]
+}

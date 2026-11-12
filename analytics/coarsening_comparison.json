@@ -1,0 +1,362 @@
+{
+  "asOf": "2026-11-02",
+  "purpose": "candidate display-information compression, not proof of anonymity",
+  "bandWidths": {
+    "height": 3,
+    "wt": 15,
+    "forty": 0.2,
+    "bench": 5,
+    "vertical": 5,
+    "broad_jump": 10,
+    "cone": 0.2,
+    "shuttle": 0.2
+  },
+  "bandRule": "nearest fixed-width band center; missing remains missing",
+  "probabilityBandRule": "display ten-percentage-point ranges; midpoint evaluated as representative probability",
+  "rawLogisticC": 10.0,
+  "coarseLogisticC": 10.0,
+  "train": [
+    2013,
+    2014
+  ],
+  "validation": [
+    2015,
+    2015
+  ],
+  "test": [
+    2016,
+    2017
+  ],
+  "variants": {
+    "raw_measurement_logistic": {
+      "n": 613,
+      "positiveRate": 0.3719412724306688,
+      "brier": 0.2231244044567804,
+      "logLoss": 0.6374330826717902,
+      "rocAuc": 0.62634996582365,
+      "calibrationIntercept": -0.010211988159880819,
+      "calibrationSlope": 0.8871038235692994,
+      "reliability": [
+        {
+          "from": 0.0,
+          "to": 0.1,
+          "n": 2,
+          "predicted": 0.07973410783960494,
+          "observed": 0.0
+        },
+        {
+          "from": 0.1,
+          "to": 0.2,
+          "n": 34,
+          "predicted": 0.16801441955260718,
+          "observed": 0.20588235294117646
+        },
+        {
+          "from": 0.2,
+          "to": 0.3,
+          "n": 167,
+          "predicted": 0.25726571282632876,
+          "observed": 0.2874251497005988
+        },
+        {
+          "from": 0.3,
+          "to": 0.4,
+          "n": 202,
+          "predicted": 0.3493411565865037,
+          "observed": 0.3564356435643564
+        },
+        {
+          "from": 0.4,
+          "to": 0.5,
+          "n": 138,
+          "predicted": 0.44841029638737334,
+          "observed": 0.4420289855072464
+        },
+        {
+          "from": 0.5,
+          "to": 0.6,
+          "n": 51,
+          "predicted": 0.537645734151417,
+          "observed": 0.5882352941176471
+        },
+        {
+          "from": 0.6,
+          "to": 0.7,
+          "n": 15,
+          "predicted": 0.6295816882320258,
+          "observed": 0.6
+        },
+        {
+          "from": 0.7,
+          "to": 0.8,
+          "n": 4,
+          "predicted": 0.7222400709683737,
+          "observed": 0.25
+        }
+      ],
+      "brierBootstrap95": [
+        0.21079568275105284,
+        0.23473329656767147
+      ]
+    },
+    "coarse_measurement_logistic": {
+      "n": 613,
+      "positiveRate": 0.3719412724306688,
+      "brier": 0.22576298060195807,
+      "logLoss": 0.64242560198542,
+      "rocAuc": 0.6094725449988608,
+      "calibrationIntercept": -0.04077904164931998,
+      "calibrationSlope": 0.8252857241399176,
+      "reliability": [
+        {
+          "from": 0.0,
+          "to": 0.1,
+          "n": 1,
+          "predicted": 0.05999704383694975,
+          "observed": 0.0
+        },
+        {
+          "from": 0.1,
+          "to": 0.2,
+          "n": 29,
+          "predicted": 0.16982651836369678,
+          "observed": 0.06896551724137931
+        },
+        {
+          "from": 0.2,
+          "to": 0.3,
+          "n": 166,
+          "predicted": 0.2565775877578392,
+          "observed": 0.30120481927710846
+        },
+        {
+          "from": 0.3,
+          "to": 0.4,
+          "n": 206,
+          "predicted": 0.3469398142895684,
+          "observed": 0.3640776699029126
+        },
+        {
+          "from": 0.4,
+          "to": 0.5,
+          "n": 145,
+          "predicted": 0.4424101725605083,
+          "observed": 0.4482758620689655
+        },
+        {
+          "from": 0.5,
+          "to": 0.6,
+          "n": 56,
+          "predicted": 0.5402010145759167,
+          "observed": 0.5357142857142857
+        },
+        {
+          "from": 0.6,
+          "to": 0.7,
+          "n": 6,
+          "predicted": 0.6533008928485483,
+          "observed": 0.6666666666666666
+        },
+        {
+          "from": 0.7,
+          "to": 0.8,
+          "n": 4,
+          "predicted": 0.73949533622524,
+          "observed": 0.5
+        }
+      ],
+      "brierBootstrap95": [
+        0.21356026442729123,
+        0.23780802279833985
+      ]
+    },
+    "raw_with_10point_display_midpoint": {
+      "n": 613,
+      "positiveRate": 0.3719412724306688,
+      "brier": 0.2256321370309951,
+      "logLoss": 0.6430741270949445,
+      "rocAuc": 0.6124231032125769,
+      "calibrationIntercept": -0.07718976883288753,
+      "calibrationSlope": 0.7606201925184869,
+      "reliability": [
+        {
+          "from": 0.0,
+          "to": 0.1,
+          "n": 2,
+          "predicted": 0.05,
+          "observed": 0.0
+        },
+        {
+          "from": 0.1,
+          "to": 0.2,
+          "n": 34,
+          "predicted": 0.15000000000000005,
+          "observed": 0.20588235294117646
+        },
+        {
+          "from": 0.2,
+          "to": 0.3,
+          "n": 167,
+          "predicted": 0.25,
+          "observed": 0.2874251497005988
+        },
+        {
+          "from": 0.3,
+          "to": 0.4,
+          "n": 202,
+          "predicted": 0.35000000000000003,
+          "observed": 0.3564356435643564
+        },
+        {
+          "from": 0.4,
+          "to": 0.5,
+          "n": 138,
+          "predicted": 0.4500000000000001,
+          "observed": 0.4420289855072464
+        },
+        {
+          "from": 0.5,
+          "to": 0.6,
+          "n": 51,
+          "predicted": 0.55,
+          "observed": 0.5882352941176471
+        },
+        {
+          "from": 0.6,
+          "to": 0.7,
+          "n": 15,
+          "predicted": 0.6500000000000002,
+          "observed": 0.6
+        },
+        {
+          "from": 0.7,
+          "to": 0.8,
+          "n": 4,
+          "predicted": 0.7500000000000001,
+          "observed": 0.25
+        }
+      ],
+      "brierBootstrap95": [
+        0.21245513866231647,
+        0.23821370309951057
+      ]
+    },
+    "coarse_with_10point_display_midpoint": {
+      "n": 613,
+      "positiveRate": 0.3719412724306688,
+      "brier": 0.22439233278955956,
+      "logLoss": 0.6389650952462621,
+      "rocAuc": 0.6134939621781726,
+      "calibrationIntercept": -0.019711489673895268,
+      "calibrationSlope": 0.8691032266238123,
+      "reliability": [
+        {
+          "from": 0.0,
+          "to": 0.1,
+          "n": 1,
+          "predicted": 0.05,
+          "observed": 0.0
+        },
+        {
+          "from": 0.1,
+          "to": 0.2,
+          "n": 29,
+          "predicted": 0.15000000000000005,
+          "observed": 0.06896551724137931
+        },
+        {
+          "from": 0.2,
+          "to": 0.3,
+          "n": 166,
+          "predicted": 0.25,
+          "observed": 0.30120481927710846
+        },
+        {
+          "from": 0.3,
+          "to": 0.4,
+          "n": 206,
+          "predicted": 0.35000000000000003,
+          "observed": 0.3640776699029126
+        },
+        {
+          "from": 0.4,
+          "to": 0.5,
+          "n": 145,
+          "predicted": 0.4500000000000001,
+          "observed": 0.4482758620689655
+        },
+        {
+          "from": 0.5,
+          "to": 0.6,
+          "n": 56,
+          "predicted": 0.5499999999999999,
+          "observed": 0.5357142857142857
+        },
+        {
+          "from": 0.6,
+          "to": 0.7,
+          "n": 6,
+          "predicted": 0.6500000000000002,
+          "observed": 0.6666666666666666
+        },
+        {
+          "from": 0.7,
+          "to": 0.8,
+          "n": 4,
+          "predicted": 0.7500000000000001,
+          "observed": 0.5
+        }
+      ],
+      "brierBootstrap95": [
+        0.21171615008156605,
+        0.2371663947797716
+      ]
+    }
+  },
+  "comparisonsVsRaw": {
+    "coarse_measurement_logistic": {
+      "brierDifference": 0.00263857614517769,
+      "withinCohortBootstrap95": [
+        -0.0005338447664444764,
+        0.0060638297016208185
+      ],
+      "resamples": 1000,
+      "note": "Conditional on two test cohorts; not between-era uncertainty."
+    },
+    "raw_with_10point_display_midpoint": {
+      "brierDifference": 0.0025077325742147508,
+      "withinCohortBootstrap95": [
+        0.0004776868654477243,
+        0.004544557718541879
+      ],
+      "resamples": 1000,
+      "note": "Conditional on two test cohorts; not between-era uncertainty."
+    },
+    "coarse_with_10point_display_midpoint": {
+      "brierDifference": 0.0012679283327791879,
+      "withinCohortBootstrap95": [
+        -0.0025191994247130123,
+        0.005193511719515088
+      ],
+      "resamples": 1000,
+      "note": "Conditional on two test cohorts; not between-era uncertainty."
+    }
+  },
+  "baselineComparison": {
+    "brierDifference": -0.010432463084876048,
+    "withinCohortBootstrap95": [
+      -0.01783051741434094,
+      -0.0029543869195085065
+    ],
+    "resamples": 1000,
+    "note": "Conditional on two test cohorts; not between-era uncertainty."
+  },
+  "limitations": [
+    "Bands are candidate product choices, not proven optimal privacy thresholds.",
+    "Predictive similarity does not establish equal human decision quality or resistance to player recognition.",
+    "College was not a model predictor; this experiment does not evaluate hiding college on user outcomes.",
+    "Verified pre-draft college production is unavailable, so production-stat masking cannot be evaluated here.",
+    "Only identifiable combine participants and two test cohorts; selected-cohort bias and weak era generalization remain.",
+    "No claim of differential privacy or guaranteed anonymity."
+  ]
+}

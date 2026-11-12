@@ -1,0 +1,23 @@
+{
+  "id": "distribution-sf",
+  "kind": "diagnostic",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "analytics/simulation_diagnostics.mjs",
+    "256",
+    "SF"
+  ],
+  "startedAt": "2026-11-04T20:48:42.278Z",
+  "finishedAt": "2026-11-04T20:48:51.532Z",
+  "durationMs": 9253.69957299999,
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "error": null,
+  "status": "passed",
+  "stdout": "15-distribution-sf.stdout.log",
+  "stderr": "15-distribution-sf.stderr.log",
+  "artifacts": [
+    "artifacts/analytics/simulation_diagnostics_SF.json"
+  ]
+}

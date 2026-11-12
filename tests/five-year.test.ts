@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import model from '../analytics/five_year_strict_2018.json';
+import {readFileSync} from 'node:fs';
+import {autoComplete,createGame} from '../lib/engine';
+import {simulateReplicate} from '../lib/simulation';
+import type {Dataset} from '../lib/types';
+test('five-year donor labels end before historical cutoff',()=>{assert.deepEqual(model.cohorts,[2013]);assert.deepEqual(model.labelSeasons,[2013,2017]);assert.equal(model.validation.chronologicallyValidatedFor2018,false);assert.ok(new Date('2018-03-01')<new Date(model.cutoff));});
+test('five-year vectors preserve missingness exclusions and valid joint outcomes',()=>{assert.equal(model.donors.length,310);for(const d of model.donors){assert.equal(d.snaps.length,5);assert.equal(d.games.length,5);assert.equal(d.rookieRole,d.snaps[0]>=200);for(let i=0;i<5;i++){assert.ok(Number.isInteger(d.games[i])&&d.games[i]>=0&&d.games[i]<=17);assert.ok(Number.isFinite(d.snaps[i])&&d.snaps[i]>=0);if(d.games[i]===0)assert.equal(d.snaps[i],0);}}});
+test('empirical five-year simulation is reproducible and supports zero participation',()=>{const data=JSON.parse(readFileSync('data/processed/scenario-2018.json','utf8')) as Dataset;const g=autoComplete(createGame({seed:'empirical-fiveyear',team:'CLE'},data),data);const a=simulateReplicate(g,0,data);assert.deepEqual(a,simulateReplicate(g,0,data));assert.ok(a.alternate.seasons.flatMap(s=>s.players).some(p=>p.games===0));assert.notDeepEqual(a,simulateReplicate(g,1,data));});

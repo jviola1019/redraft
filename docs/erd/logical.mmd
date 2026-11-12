@@ -1,0 +1,104 @@
+erDiagram
+  data_sources ||--o{ source_documents : "publishes"
+  players ||--o{ prospects : "eligible"
+  teams ||--o{ team_identities : "dated names"
+  dataset_versions ||--o{ model_versions : "fits"
+  source_documents ||--o{ feature_values : "evidence"
+  prospects ||--o{ historical_draft_picks : "actual selections"
+  model_versions ||--o{ game_runs : "pins"
+  game_runs ||--o{ game_draft_picks : "contains"
+  game_runs ||--o{ simulation_runs : "generates"
+  game_runs ||--o{ game_public_prospect_ids : "private map"
+  disclosure_policies ||--o{ daily_challenges : "pins"
+  data_sources {
+    text source_id PK
+    text provider
+    text url
+    text license
+  }
+  players {
+    text player_id PK
+    text full_name
+    text birth_date
+  }
+  teams {
+    text team_id PK
+    text canonical_label
+  }
+  dataset_versions {
+    text dataset_version PK
+    text created_at
+    text manifest_sha256
+    text pipeline_version
+  }
+  source_documents {
+    text document_id PK
+    text source_id FK
+    text url
+    text published_at
+  }
+  prospects {
+    text prospect_id PK
+    text player_id FK
+    integer draft_year FK
+    text college_id FK
+  }
+  team_identities {
+    text identity_id PK
+    text team_id FK
+    text city
+    text nickname
+  }
+  model_versions {
+    text model_version PK
+    text dataset_version FK
+    text training_cutoff
+    text training_label_max_available_at
+  }
+  feature_values {
+    text prospect_id PK
+    text feature_name PK
+    text feature_version PK
+    text dataset_version PK
+  }
+  historical_draft_picks {
+    text pick_id PK
+    integer draft_year FK
+    text original_team_id FK
+    text selecting_team_id FK
+  }
+  game_runs {
+    text game_run_id PK
+    text user_id FK
+    integer draft_year FK
+    text team_id FK
+  }
+  disclosure_policies {
+    text disclosure_version PK
+    text mode
+    text field_rules_json
+    text finalized_at
+  }
+  game_draft_picks {
+    text game_run_id PK
+    text pick_id PK
+    text team_id FK
+    text prospect_id FK
+  }
+  simulation_runs {
+    text simulation_run_id PK
+    text game_run_id FK
+    text model_version FK
+    text dataset_version FK
+  }
+  game_public_prospect_ids {
+    text game_run_id PK
+    text public_id PK
+    text prospect_id FK
+  }
+  daily_challenges {
+    text challenge_date PK
+    text dataset_version FK
+    text model_version FK
+    text disclosure_version FK
+  }

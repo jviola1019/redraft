@@ -1,0 +1,566 @@
+{
+  "selected": "trailing3",
+  "selectionCriterion": "Minimum RMSE of annual mean total at one-season origins 2005\u20132012",
+  "assessment": "2013\u20132017 one-season rolling origins; only earlier seasons fit each forecast",
+  "methods": {
+    "expanding": {
+      "window": null,
+      "origins": [
+        {
+          "origin": 2005,
+          "trainFirstSeason": 2000,
+          "trainLastSeason": 2004,
+          "trainGames": 1264,
+          "predictedMeanTotal": 41.9628164556962,
+          "observedMeanTotal": 41.234375,
+          "squaredError": 0.5306269543767976
+        },
+        {
+          "origin": 2006,
+          "trainFirstSeason": 2000,
+          "trainLastSeason": 2005,
+          "trainGames": 1520,
+          "predictedMeanTotal": 41.84013157894737,
+          "observedMeanTotal": 41.31640625,
+          "squaredError": 0.2742882201810323
+        },
+        {
+          "origin": 2007,
+          "trainFirstSeason": 2000,
+          "trainLastSeason": 2006,
+          "trainGames": 1776,
+          "predictedMeanTotal": 41.76463963963964,
+          "observedMeanTotal": 43.375,
+          "squaredError": 2.5932604902199494
+        },
+        {
+          "origin": 2008,
+          "trainFirstSeason": 2000,
+          "trainLastSeason": 2007,
+          "trainGames": 2032,
+          "predictedMeanTotal": 41.96751968503937,
+          "observedMeanTotal": 44.05859375,
+          "squaredError": 4.372590745150972
+        },
+        {
+          "origin": 2009,
+          "trainFirstSeason": 2000,
+          "trainLastSeason": 2008,
+          "trainGames": 2288,
+          "predictedMeanTotal": 42.20148601398601,
+          "observedMeanTotal": 42.93359375,
+          "squaredError": 0.5359817371315253
+        },
+        {
+          "origin": 2010,
+          "trainFirstSeason": 2000,
+          "trainLastSeason": 2009,
+          "trainGames": 2544,
+          "predictedMeanTotal": 42.2751572327044,
+          "observedMeanTotal": 44.07421875,
+          "squaredError": 3.2366223430139405
+        },
+        {
+          "origin": 2011,
+          "trainFirstSeason": 2000,
+          "trainLastSeason": 2010,
+          "trainGames": 2800,
+          "predictedMeanTotal": 42.43964285714286,
+          "observedMeanTotal": 44.359375,
+          "squaredError": 3.6853715003188774
+        },
+        {
+          "origin": 2012,
+          "trainFirstSeason": 2000,
+          "trainLastSeason": 2011,
+          "trainGames": 3056,
+          "predictedMeanTotal": 42.600458115183244,
+          "observedMeanTotal": 45.51171875,
+          "squaredError": 8.475438483833662
+        },
+        {
+          "origin": 2013,
+          "trainFirstSeason": 2000,
+          "trainLastSeason": 2012,
+          "trainGames": 3312,
+          "predictedMeanTotal": 42.82548309178744,
+          "observedMeanTotal": 46.81640625,
+          "squaredError": 15.927467654757313
+        },
+        {
+          "origin": 2014,
+          "trainFirstSeason": 2000,
+          "trainLastSeason": 2013,
+          "trainGames": 3568,
+          "predictedMeanTotal": 43.11182735426009,
+          "observedMeanTotal": 45.17578125,
+          "squaredError": 4.259905683739938
+        },
+        {
+          "origin": 2015,
+          "trainFirstSeason": 2000,
+          "trainLastSeason": 2014,
+          "trainGames": 3824,
+          "predictedMeanTotal": 43.25,
+          "observedMeanTotal": 45.625,
+          "squaredError": 5.640625
+        },
+        {
+          "origin": 2016,
+          "trainFirstSeason": 2000,
+          "trainLastSeason": 2015,
+          "trainGames": 4080,
+          "predictedMeanTotal": 43.39901960784314,
+          "observedMeanTotal": 45.55078125,
+          "squaredError": 4.630078164657601
+        },
+        {
+          "origin": 2017,
+          "trainFirstSeason": 2000,
+          "trainLastSeason": 2016,
+          "trainGames": 4336,
+          "predictedMeanTotal": 43.52606088560886,
+          "observedMeanTotal": 43.4375,
+          "squaredError": 0.007843030459824995
+        }
+      ],
+      "selection2005Through2012RMSE": 1.7213432427259663,
+      "assessment2013Through2017RMSE": 2.468437543613963
+    },
+    "trailing3": {
+      "window": 3,
+      "origins": [
+        {
+          "origin": 2005,
+          "trainFirstSeason": 2002,
+          "trainLastSeason": 2004,
+          "trainGames": 768,
+          "predictedMeanTotal": 42.66015625,
+          "observedMeanTotal": 41.234375,
+          "squaredError": 2.0328521728515625
+        },
+        {
+          "origin": 2006,
+          "trainFirstSeason": 2003,
+          "trainLastSeason": 2005,
+          "trainGames": 768,
+          "predictedMeanTotal": 41.955729166666664,
+          "observedMeanTotal": 41.31640625,
+          "squaredError": 0.4087337917751706
+        },
+        {
+          "origin": 2007,
+          "trainFirstSeason": 2004,
+          "trainLastSeason": 2006,
+          "trainGames": 768,
+          "predictedMeanTotal": 41.83984375,
+          "observedMeanTotal": 43.375,
+          "squaredError": 2.3567047119140625
+        },
+        {
+          "origin": 2008,
+          "trainFirstSeason": 2005,
+          "trainLastSeason": 2007,
+          "trainGames": 768,
+          "predictedMeanTotal": 41.975260416666664,
+          "observedMeanTotal": 44.05859375,
+          "squaredError": 4.3402777777777874
+        },
+        {
+          "origin": 2009,
+          "trainFirstSeason": 2006,
+          "trainLastSeason": 2008,
+          "trainGames": 768,
+          "predictedMeanTotal": 42.916666666666664,
+          "observedMeanTotal": 42.93359375,
+          "squaredError": 0.0002865261501736913
+        },
+        {
+          "origin": 2010,
+          "trainFirstSeason": 2007,
+          "trainLastSeason": 2009,
+          "trainGames": 768,
+          "predictedMeanTotal": 43.455729166666664,
+          "observedMeanTotal": 44.07421875,
+          "squaredError": 0.38252936469184323
+        },
+        {
+          "origin": 2011,
+          "trainFirstSeason": 2008,
+          "trainLastSeason": 2010,
+          "trainGames": 768,
+          "predictedMeanTotal": 43.688802083333336,
+          "observedMeanTotal": 44.359375,
+          "squaredError": 0.4496680365668371
+        },
+        {
+          "origin": 2012,
+          "trainFirstSeason": 2009,
+          "trainLastSeason": 2011,
+          "trainGames": 768,
+          "predictedMeanTotal": 43.7890625,
+          "observedMeanTotal": 45.51171875,
+          "squaredError": 2.9675445556640625
+        },
+        {
+          "origin": 2013,
+          "trainFirstSeason": 2010,
+          "trainLastSeason": 2012,
+          "trainGames": 768,
+          "predictedMeanTotal": 44.6484375,
+          "observedMeanTotal": 46.81640625,
+          "squaredError": 4.7000885009765625
+        },
+        {
+          "origin": 2014,
+          "trainFirstSeason": 2011,
+          "trainLastSeason": 2013,
+          "trainGames": 768,
+          "predictedMeanTotal": 45.5625,
+          "observedMeanTotal": 45.17578125,
+          "squaredError": 0.1495513916015625
+        },
+        {
+          "origin": 2015,
+          "trainFirstSeason": 2012,
+          "trainLastSeason": 2014,
+          "trainGames": 768,
+          "predictedMeanTotal": 45.834635416666664,
+          "observedMeanTotal": 45.625,
+          "squaredError": 0.04394700792100595
+        },
+        {
+          "origin": 2016,
+          "trainFirstSeason": 2013,
+          "trainLastSeason": 2015,
+          "trainGames": 768,
+          "predictedMeanTotal": 45.872395833333336,
+          "observedMeanTotal": 45.55078125,
+          "squaredError": 0.10343594021267513
+        },
+        {
+          "origin": 2017,
+          "trainFirstSeason": 2014,
+          "trainLastSeason": 2016,
+          "trainGames": 768,
+          "predictedMeanTotal": 45.450520833333336,
+          "observedMeanTotal": 43.4375,
+          "squaredError": 4.0522528754340374
+        }
+      ],
+      "selection2005Through2012RMSE": 1.2717407822248752,
+      "assessment2013Through2017RMSE": 1.3453085680352923
+    },
+    "trailing5": {
+      "window": 5,
+      "origins": [
+        {
+          "origin": 2005,
+          "trainFirstSeason": 2000,
+          "trainLastSeason": 2004,
+          "trainGames": 1264,
+          "predictedMeanTotal": 41.9628164556962,
+          "observedMeanTotal": 41.234375,
+          "squaredError": 0.5306269543767976
+        },
+        {
+          "origin": 2006,
+          "trainFirstSeason": 2001,
+          "trainLastSeason": 2005,
+          "trainGames": 1272,
+          "predictedMeanTotal": 41.93632075471698,
+          "observedMeanTotal": 41.31640625,
+          "squaredError": 0.38429399315849955
+        },
+        {
+          "origin": 2007,
+          "trainFirstSeason": 2002,
+          "trainLastSeason": 2006,
+          "trainGames": 1280,
+          "predictedMeanTotal": 42.10625,
+          "observedMeanTotal": 43.375,
+          "squaredError": 1.6097265624999928
+        },
+        {
+          "origin": 2008,
+          "trainFirstSeason": 2003,
+          "trainLastSeason": 2007,
+          "trainGames": 1280,
+          "predictedMeanTotal": 42.11171875,
+          "observedMeanTotal": 44.05859375,
+          "squaredError": 3.7903222656249946
+        },
+        {
+          "origin": 2009,
+          "trainFirstSeason": 2004,
+          "trainLastSeason": 2008,
+          "trainGames": 1280,
+          "predictedMeanTotal": 42.590625,
+          "observedMeanTotal": 42.93359375,
+          "squaredError": 0.11762756347656055
+        },
+        {
+          "origin": 2010,
+          "trainFirstSeason": 2005,
+          "trainLastSeason": 2009,
+          "trainGames": 1280,
+          "predictedMeanTotal": 42.58359375,
+          "observedMeanTotal": 44.07421875,
+          "squaredError": 2.2219628906250044
+        },
+        {
+          "origin": 2011,
+          "trainFirstSeason": 2006,
+          "trainLastSeason": 2010,
+          "trainGames": 1280,
+          "predictedMeanTotal": 43.1515625,
+          "observedMeanTotal": 44.359375,
+          "squaredError": 1.4588110351562569
+        },
+        {
+          "origin": 2012,
+          "trainFirstSeason": 2007,
+          "trainLastSeason": 2011,
+          "trainGames": 1280,
+          "predictedMeanTotal": 43.76015625,
+          "observedMeanTotal": 45.51171875,
+          "squaredError": 3.067971191406245
+        },
+        {
+          "origin": 2013,
+          "trainFirstSeason": 2008,
+          "trainLastSeason": 2012,
+          "trainGames": 1280,
+          "predictedMeanTotal": 44.1875,
+          "observedMeanTotal": 46.81640625,
+          "squaredError": 6.9111480712890625
+        },
+        {
+          "origin": 2014,
+          "trainFirstSeason": 2009,
+          "trainLastSeason": 2013,
+          "trainGames": 1280,
+          "predictedMeanTotal": 44.7390625,
+          "observedMeanTotal": 45.17578125,
+          "squaredError": 0.19072326660156003
+        },
+        {
+          "origin": 2015,
+          "trainFirstSeason": 2010,
+          "trainLastSeason": 2014,
+          "trainGames": 1280,
+          "predictedMeanTotal": 45.1875,
+          "observedMeanTotal": 45.625,
+          "squaredError": 0.19140625
+        },
+        {
+          "origin": 2016,
+          "trainFirstSeason": 2011,
+          "trainLastSeason": 2015,
+          "trainGames": 1280,
+          "predictedMeanTotal": 45.49765625,
+          "observedMeanTotal": 45.55078125,
+          "squaredError": 0.002822265625000151
+        },
+        {
+          "origin": 2017,
+          "trainFirstSeason": 2012,
+          "trainLastSeason": 2016,
+          "trainGames": 1280,
+          "predictedMeanTotal": 45.7359375,
+          "observedMeanTotal": 43.4375,
+          "squaredError": 5.282814941406244
+        }
+      ],
+      "selection2005Through2012RMSE": 1.283615131977083,
+      "assessment2013Through2017RMSE": 1.5861219874222705
+    },
+    "trailing10": {
+      "window": 10,
+      "origins": [
+        {
+          "origin": 2005,
+          "trainFirstSeason": 2000,
+          "trainLastSeason": 2004,
+          "trainGames": 1264,
+          "predictedMeanTotal": 41.9628164556962,
+          "observedMeanTotal": 41.234375,
+          "squaredError": 0.5306269543767976
+        },
+        {
+          "origin": 2006,
+          "trainFirstSeason": 2000,
+          "trainLastSeason": 2005,
+          "trainGames": 1520,
+          "predictedMeanTotal": 41.84013157894737,
+          "observedMeanTotal": 41.31640625,
+          "squaredError": 0.2742882201810323
+        },
+        {
+          "origin": 2007,
+          "trainFirstSeason": 2000,
+          "trainLastSeason": 2006,
+          "trainGames": 1776,
+          "predictedMeanTotal": 41.76463963963964,
+          "observedMeanTotal": 43.375,
+          "squaredError": 2.5932604902199494
+        },
+        {
+          "origin": 2008,
+          "trainFirstSeason": 2000,
+          "trainLastSeason": 2007,
+          "trainGames": 2032,
+          "predictedMeanTotal": 41.96751968503937,
+          "observedMeanTotal": 44.05859375,
+          "squaredError": 4.372590745150972
+        },
+        {
+          "origin": 2009,
+          "trainFirstSeason": 2000,
+          "trainLastSeason": 2008,
+          "trainGames": 2288,
+          "predictedMeanTotal": 42.20148601398601,
+          "observedMeanTotal": 42.93359375,
+          "squaredError": 0.5359817371315253
+        },
+        {
+          "origin": 2010,
+          "trainFirstSeason": 2000,
+          "trainLastSeason": 2009,
+          "trainGames": 2544,
+          "predictedMeanTotal": 42.2751572327044,
+          "observedMeanTotal": 44.07421875,
+          "squaredError": 3.2366223430139405
+        },
+        {
+          "origin": 2011,
+          "trainFirstSeason": 2001,
+          "trainLastSeason": 2010,
+          "trainGames": 2552,
+          "predictedMeanTotal": 42.54584639498432,
+          "observedMeanTotal": 44.359375,
+          "squaredError": 3.2888860012101055
+        },
+        {
+          "origin": 2012,
+          "trainFirstSeason": 2002,
+          "trainLastSeason": 2011,
+          "trainGames": 2560,
+          "predictedMeanTotal": 42.933203125,
+          "observedMeanTotal": 45.51171875,
+          "squaredError": 6.648742828369148
+        },
+        {
+          "origin": 2013,
+          "trainFirstSeason": 2003,
+          "trainLastSeason": 2012,
+          "trainGames": 2560,
+          "predictedMeanTotal": 43.149609375,
+          "observedMeanTotal": 46.81640625,
+          "squaredError": 13.445399322509786
+        },
+        {
+          "origin": 2014,
+          "trainFirstSeason": 2004,
+          "trainLastSeason": 2013,
+          "trainGames": 2560,
+          "predictedMeanTotal": 43.66484375,
+          "observedMeanTotal": 45.17578125,
+          "squaredError": 2.2829321289062414
+        },
+        {
+          "origin": 2015,
+          "trainFirstSeason": 2005,
+          "trainLastSeason": 2014,
+          "trainGames": 2560,
+          "predictedMeanTotal": 43.885546875,
+          "observedMeanTotal": 45.625,
+          "squaredError": 3.025697174072256
+        },
+        {
+          "origin": 2016,
+          "trainFirstSeason": 2006,
+          "trainLastSeason": 2015,
+          "trainGames": 2560,
+          "predictedMeanTotal": 44.324609375,
+          "observedMeanTotal": 45.55078125,
+          "squaredError": 1.5034974670410122
+        },
+        {
+          "origin": 2017,
+          "trainFirstSeason": 2007,
+          "trainLastSeason": 2016,
+          "trainGames": 2560,
+          "predictedMeanTotal": 44.748046875,
+          "observedMeanTotal": 43.4375,
+          "squaredError": 1.7175331115722656
+        }
+      ],
+      "selection2005Through2012RMSE": 1.6386350768113942,
+      "assessment2013Through2017RMSE": 2.096428353371589
+    }
+  },
+  "frozenFiveSeasonAssessment": {
+    "expanding": {
+      "origin": 2013,
+      "futureSeasons": [
+        2013,
+        2017
+      ],
+      "frozenPrediction": 42.82548309178744,
+      "observedAnnualMeans": [
+        46.81640625,
+        45.17578125,
+        45.625,
+        45.55078125,
+        43.4375
+      ],
+      "fiveSeasonMeanError": -2.495610658212563,
+      "annualMeanRMSE": 2.723618135999153
+    },
+    "trailing3": {
+      "origin": 2013,
+      "futureSeasons": [
+        2013,
+        2017
+      ],
+      "frozenPrediction": 44.6484375,
+      "observedAnnualMeans": [
+        46.81640625,
+        45.17578125,
+        45.625,
+        45.55078125,
+        43.4375
+      ],
+      "fiveSeasonMeanError": -0.6726562500000028,
+      "annualMeanRMSE": 1.281596513737236
+    }
+  },
+  "candidateMeanTotal2018": 44.87109375,
+  "candidateTrainingSeasons": [
+    2015,
+    2017
+  ],
+  "improvementOnLaterPre2018Origins": true,
+  "improvementOnFrozenFiveSeason2013": true,
+  "version": "scoring-recalibration-pre2018-v1",
+  "asOf": "2026-11-04",
+  "cutoff": "2018-04-26T00:00:00Z",
+  "fitThroughSeason": 2017,
+  "currentMeanTotal": 43.54895104895105,
+  "proposedOverride": {
+    "meanTotal": 44.87109375
+  },
+  "runtimeArtifactChanged": false,
+  "futureOutcomePoisoningTest": "passed",
+  "sourceHash": "b4dd94e697ff7f75b477ed69711ae7613a95257ebde60e496c8e2d21095f07a3",
+  "decision": "Candidate supported for recency of unconditional total only; requires integrated simulation validation before adoption.",
+  "limitations": [
+    "Design responds to already examined post2017 scoring failures; no new untouched test claim.",
+    "Only five later pre2018 annual assessment observations and one frozen five-season window.",
+    "One-season rolling losses and five-season frozen forecasts answer different questions; both shown.",
+    "This mean update does not fix the discretized normal low-score distribution or identify draft effects.",
+    "No new variance, home advantage or player effect fit. No guarantee against post2017 era shift.",
+    "Forecast-origin samples overlap in training; conventional independent-origin significance is not asserted."
+  ]
+}

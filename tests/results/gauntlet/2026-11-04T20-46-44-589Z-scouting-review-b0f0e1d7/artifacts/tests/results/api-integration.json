@@ -1,0 +1,131 @@
+{
+  "executedAt": "2026-11-04T20:47:31.733Z",
+  "runtime": {
+    "node": "v24.22.1",
+    "os": "linux",
+    "architecture": "x64",
+    "cpu": "AMD EPYC 9V74 80-Core Processor"
+  },
+  "scope": "Full 256-pair historical and two daily participants",
+  "method": "Real route and auth helper through Node registerHooks; SQLite-backed D1 adapter and Next header-context adapter. Not a browser or production Cloudflare test.",
+  "migrations": [
+    "0000_spotty_patriot.sql"
+  ],
+  "sourceHashes": {
+    "app/api/game/route.ts": "d9654c7f06d623f92abc4828b51b7cbe4b2bb93722b2f29b4f4f7f47c76d6563",
+    "lib/scouting.ts": "6a2850cb8f15f6effb6b12fd15f79602e5e0c6a20ff84951e7bdb2695aeba1d6",
+    "lib/engine.ts": "fe137603174a1af578610fbe7bf195f3ac4ad736fa36ba1f31daa76e80e08408",
+    "lib/simulation.ts": "2b819a968fadcbf6e80cd40f2295ea2ab8c4f64703221196c93a36615a8ef008",
+    "lib/server-data.ts": "859ec9dd1d674469ac17585c72853298a0948370d86245dc6bc76dc5e397cb74",
+    "analytics/model.json": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0",
+    "analytics/five_year_strict_2018.json": "a717e2d683ab57c8f79f963d672598810593bae69945c8d00db82857d6c647e1",
+    "analytics/scoring_recalibration.json": "980399c2d06400cd3e612b3a30d4b69a03074a5b2d0805bfe94dc5c53d3d462e",
+    "data/clean/team_context_2018.json": "c3f102575a364807b57e84559946f46544dc457bb878241cb77b343e1ef9c8bf",
+    "data/clean/team_context_source_manifest.json": "e2e1a4dc0332ca1a7c3e35ec860cc29c81a3c4a87859102553f7239ce4565254",
+    "data/processed/scenario-2018.json": "b7895eef7862ccfb45cff5f2f4b6e347abd809c1905ed274883d55cc237f59d8",
+    "tests/api.integration.mjs": "5bea2a956356bb177d5df89397bdd1f197ca3585b586336164d35eaab768d907",
+    "drizzle/0000_spotty_patriot.sql": "c1647856b8b5266e73145bdbe68e46a4ef68e6c13b97e39a817faf976866c497"
+  },
+  "finalHashes": {
+    "app/api/game/route.ts": "d9654c7f06d623f92abc4828b51b7cbe4b2bb93722b2f29b4f4f7f47c76d6563",
+    "lib/scouting.ts": "6a2850cb8f15f6effb6b12fd15f79602e5e0c6a20ff84951e7bdb2695aeba1d6",
+    "lib/engine.ts": "fe137603174a1af578610fbe7bf195f3ac4ad736fa36ba1f31daa76e80e08408",
+    "lib/simulation.ts": "2b819a968fadcbf6e80cd40f2295ea2ab8c4f64703221196c93a36615a8ef008",
+    "lib/server-data.ts": "859ec9dd1d674469ac17585c72853298a0948370d86245dc6bc76dc5e397cb74",
+    "analytics/model.json": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0",
+    "analytics/five_year_strict_2018.json": "a717e2d683ab57c8f79f963d672598810593bae69945c8d00db82857d6c647e1",
+    "analytics/scoring_recalibration.json": "980399c2d06400cd3e612b3a30d4b69a03074a5b2d0805bfe94dc5c53d3d462e",
+    "data/clean/team_context_2018.json": "c3f102575a364807b57e84559946f46544dc457bb878241cb77b343e1ef9c8bf",
+    "data/clean/team_context_source_manifest.json": "e2e1a4dc0332ca1a7c3e35ec860cc29c81a3c4a87859102553f7239ce4565254",
+    "data/processed/scenario-2018.json": "b7895eef7862ccfb45cff5f2f4b6e347abd809c1905ed274883d55cc237f59d8",
+    "tests/api.integration.mjs": "5bea2a956356bb177d5df89397bdd1f197ca3585b586336164d35eaab768d907",
+    "drizzle/0000_spotty_patriot.sql": "c1647856b8b5266e73145bdbe68e46a4ef68e6c13b97e39a817faf976866c497"
+  },
+  "sourceChangedDuringRun": false,
+  "cases": [
+    {
+      "name": "five-year donor labels precede the draft and do not claim independent validation",
+      "status": "passed",
+      "durationMs": 0.61
+    },
+    {
+      "name": "auth, CSRF, strict schema and body-size limits",
+      "status": "passed",
+      "durationMs": 17.26
+    },
+    {
+      "name": "versioned creation and request replay",
+      "status": "passed",
+      "durationMs": 53.07
+    },
+    {
+      "name": "owner isolation, aliases and canonical identifier rejection",
+      "status": "passed",
+      "durationMs": 64.53
+    },
+    {
+      "name": "group scouting costs once and preserves blind ranges",
+      "status": "passed",
+      "durationMs": 58.32
+    },
+    {
+      "name": "stale revision and concurrent CAS cannot lose updates",
+      "status": "passed",
+      "durationMs": 52.1
+    },
+    {
+      "name": "counteroffers and accepted trades conserve ownership",
+      "status": "passed",
+      "durationMs": 70.2
+    },
+    {
+      "name": "historical full draft, reveal and persisted recovery",
+      "status": "passed",
+      "durationMs": 805.25
+    },
+    {
+      "name": "retired source versions allow review but block mutations",
+      "status": "passed",
+      "durationMs": 42.34
+    },
+    {
+      "name": "historical 256-pair simulation survives a database reopen",
+      "status": "passed",
+      "durationMs": 11203.87
+    },
+    {
+      "name": "daily conditions, aliases and one official attempt are shared",
+      "status": "passed",
+      "durationMs": 72.22
+    },
+    {
+      "name": "identical daily decisions yield identical seven-round drafts",
+      "status": "passed",
+      "durationMs": 1571.6
+    },
+    {
+      "name": "daily 256-pair results remain blind with immutable server scores",
+      "status": "passed",
+      "durationMs": 21184.74
+    },
+    {
+      "name": "UTC rollover closes old attempts and reveals completed draft identities",
+      "status": "passed",
+      "durationMs": 146.17
+    },
+    {
+      "name": "frozen daily versions and rate limits are enforced",
+      "status": "passed",
+      "durationMs": 9.26
+    }
+  ],
+  "passed": 15,
+  "failed": 0,
+  "requests": 304,
+  "maximumResponseBytes": 1919224,
+  "durationMs": 35357.474467,
+  "limitations": [
+    "Does not establish Safari/WebKit behavior or production Worker CPU limits.",
+    "Synthetic identities and disposable SQLite database are isolated test fixtures."
+  ]
+}

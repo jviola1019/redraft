@@ -1,0 +1,356 @@
+{
+  "version": "simulation-diagnostics-v2",
+  "asOf": "2026-11-02",
+  "replicates": 256,
+  "configuration": {
+    "team": "KC",
+    "draftSeed": "redraft-validation-2026-11-02",
+    "engineVersion": "redraft-research-0.4-r1",
+    "modelVersion": "redraft-2018-model-v1",
+    "datasetVersion": "nflverse-2018-combine-only-v2"
+  },
+  "observed2018Through2022": {
+    "games": 1311,
+    "totalScoreMean": 46.289855072463766,
+    "totalScoreSd": 14.06967002310761,
+    "marginMean": 1.1777269260106789,
+    "marginSd": 14.288136049735657,
+    "homeWinRate": 0.5362318840579711,
+    "tieRate": 0.005339435545385202,
+    "teamWinSd": 3.098386676965934,
+    "zeroScoreRate": 0.010297482837528604,
+    "onePointScoreRate": 0
+  },
+  "simulatedBaseline": {
+    "totalScoreMean": {
+      "mean": 43.759429187309465,
+      "sd": 0.43909916012244027,
+      "p025": 42.858231707317074,
+      "p50": 43.734756097560975,
+      "p975": 44.739329268292686
+    },
+    "totalScoreSd": {
+      "mean": 13.938922015902236,
+      "sd": 0.2745095097508747,
+      "p025": 13.369709691139658,
+      "p50": 13.934793522576067,
+      "p975": 14.446856043814726
+    },
+    "marginMean": {
+      "mean": 2.0587872761051824,
+      "sd": 0.46028457126963646,
+      "p025": 1.1432926829268293,
+      "p50": 2.0907012195121952,
+      "p975": 2.924542682926829
+    },
+    "marginSd": {
+      "mean": 14.553175133462092,
+      "sd": 0.3724497916169769,
+      "p025": 13.829472233080326,
+      "p50": 14.555650789876717,
+      "p975": 15.27677801172753
+    },
+    "homeWinRate": {
+      "mean": 0.5542349466463412,
+      "sd": 0.014190959716348614,
+      "p025": 0.5266768292682927,
+      "p50": 0.555640243902439,
+      "p975": 0.5807926829268293
+    },
+    "tieRate": {
+      "mean": 0.0033405583079268207,
+      "sd": 0.001620367775749823,
+      "p025": 0.0007621951219512195,
+      "p50": 0.003048780487804878,
+      "p975": 0.006859756097560976
+    },
+    "teamWinSd": {
+      "mean": 3.0716197374977563,
+      "sd": 0.14635095076907687,
+      "p025": 2.755205193878916,
+      "p50": 3.0807783056483413,
+      "p975": 3.316719603888399
+    },
+    "zeroScoreRate": {
+      "mean": 0.018809248761432938,
+      "sd": 0.0029998779641074932,
+      "p025": 0.012957317073170731,
+      "p50": 0.018673780487804877,
+      "p975": 0.025533536585365852
+    },
+    "onePointScoreRate": {
+      "mean": 0,
+      "sd": 0,
+      "p025": 0,
+      "p50": 0,
+      "p975": 0
+    }
+  },
+  "byYear": {
+    "2018": {
+      "totalScoreMean": {
+        "mean": 43.7572021484375,
+        "sd": 0.8312997606543584,
+        "p025": 42.0703125,
+        "p50": 43.77734375,
+        "p975": 45.6875
+      },
+      "teamWinSd": {
+        "mean": 3.028111370426652,
+        "sd": 0.2997909494131118,
+        "p025": 2.3691566486423925,
+        "p50": 3.048003048004572,
+        "p975": 3.550187409864624
+      },
+      "homeWinRate": {
+        "mean": 0.5510406494140625,
+        "sd": 0.02700117056171515,
+        "p025": 0.50390625,
+        "p50": 0.546875,
+        "p975": 0.609375
+      },
+      "tieRate": {
+        "mean": 0.0037384033203125,
+        "sd": 0.004008521362412866,
+        "p025": 0,
+        "p50": 0.00390625,
+        "p975": 0.01171875
+      }
+    },
+    "2019": {
+      "totalScoreMean": {
+        "mean": 43.79026794433594,
+        "sd": 0.8942418758328575,
+        "p025": 42.17578125,
+        "p50": 43.71484375,
+        "p975": 45.65625
+      },
+      "teamWinSd": {
+        "mean": 3.078631311556768,
+        "sd": 0.3056652740033546,
+        "p025": 2.449489742783178,
+        "p50": 3.0728716736272355,
+        "p975": 3.663243759117004
+      },
+      "homeWinRate": {
+        "mean": 0.56756591796875,
+        "sd": 0.031656589695924095,
+        "p025": 0.50390625,
+        "p50": 0.56640625,
+        "p975": 0.6328125
+      },
+      "tieRate": {
+        "mean": 0.003204345703125,
+        "sd": 0.0036260930619257652,
+        "p025": 0,
+        "p50": 0.00390625,
+        "p975": 0.01171875
+      }
+    },
+    "2020": {
+      "totalScoreMean": {
+        "mean": 43.72021484375,
+        "sd": 0.9513192070815426,
+        "p025": 41.70703125,
+        "p50": 43.72265625,
+        "p975": 45.6875
+      },
+      "teamWinSd": {
+        "mean": 2.9883350232611243,
+        "sd": 0.30064571401320106,
+        "p025": 2.429448032359508,
+        "p50": 2.9838273754444327,
+        "p975": 3.601075108281396
+      },
+      "homeWinRate": {
+        "mean": 0.54339599609375,
+        "sd": 0.03140180032847006,
+        "p025": 0.48046875,
+        "p50": 0.546875,
+        "p975": 0.6015625
+      },
+      "tieRate": {
+        "mean": 0.0030670166015625,
+        "sd": 0.003364586360450448,
+        "p025": 0,
+        "p50": 0.00390625,
+        "p975": 0.01171875
+      }
+    },
+    "2021": {
+      "totalScoreMean": {
+        "mean": 43.759564568014675,
+        "sd": 0.8701271588744239,
+        "p025": 42.1764705882353,
+        "p50": 43.705882352941174,
+        "p975": 45.470588235294116
+      },
+      "teamWinSd": {
+        "mean": 3.186960580059033,
+        "sd": 0.3109025697939085,
+        "p025": 2.54000254000381,
+        "p50": 3.1925758131296815,
+        "p975": 3.7754512654866192
+      },
+      "homeWinRate": {
+        "mean": 0.567296645220588,
+        "sd": 0.029016441391980858,
+        "p025": 0.5110294117647058,
+        "p50": 0.5698529411764706,
+        "p975": 0.6286764705882353
+      },
+      "tieRate": {
+        "mean": 0.0033605238970588155,
+        "sd": 0.0035675130003001445,
+        "p025": 0,
+        "p50": 0.003676470588235294,
+        "p975": 0.011029411764705883
+      }
+    },
+    "2022": {
+      "totalScoreMean": {
+        "mean": 43.76927274816174,
+        "sd": 0.8908602929989102,
+        "p025": 41.900735294117645,
+        "p50": 43.74264705882353,
+        "p975": 45.4375
+      },
+      "teamWinSd": {
+        "mean": 3.161191802250224,
+        "sd": 0.3064232594572161,
+        "p025": 2.5650803294973423,
+        "p50": 3.1621182671563486,
+        "p975": 3.75886049994736
+      },
+      "homeWinRate": {
+        "mean": 0.5418342141544118,
+        "sd": 0.03137568531837218,
+        "p025": 0.47794117647058826,
+        "p50": 0.5441176470588235,
+        "p975": 0.6066176470588235
+      },
+      "tieRate": {
+        "mean": 0.0033318014705882282,
+        "sd": 0.0036091735752752617,
+        "p025": 0,
+        "p50": 0.003676470588235294,
+        "p975": 0.011029411764705883
+      }
+    }
+  },
+  "convergence": [
+    {
+      "replicates": 8,
+      "pairedMeanWinDifference": 1.375,
+      "pairedStandardError": 0.625,
+      "mean95Interval": [
+        0.1499999999999999,
+        2.6
+      ],
+      "probabilityImprovement": 0.75,
+      "probabilityMcse": 0.15309310892394862
+    },
+    {
+      "replicates": 16,
+      "pairedMeanWinDifference": 1,
+      "pairedStandardError": 0.4281744192888376,
+      "mean95Interval": [
+        0.16077813819387832,
+        1.8392218618061218
+      ],
+      "probabilityImprovement": 0.6875,
+      "probabilityMcse": 0.11587810136086973
+    },
+    {
+      "replicates": 32,
+      "pairedMeanWinDifference": 1.1875,
+      "pairedStandardError": 0.5225509313037836,
+      "mean95Interval": [
+        0.16330017464458413,
+        2.211699825355416
+      ],
+      "probabilityImprovement": 0.71875,
+      "probabilityMcse": 0.07948042948974923
+    },
+    {
+      "replicates": 64,
+      "pairedMeanWinDifference": 1.6875,
+      "pairedStandardError": 0.36587780400062186,
+      "mean95Interval": [
+        0.9703795041587812,
+        2.4046204958412187
+      ],
+      "probabilityImprovement": 0.734375,
+      "probabilityMcse": 0.055208179785556914
+    },
+    {
+      "replicates": 128,
+      "pairedMeanWinDifference": 1.2734375,
+      "pairedStandardError": 0.3045171010492626,
+      "mean95Interval": [
+        0.6765839819434453,
+        1.8702910180565548
+      ],
+      "probabilityImprovement": 0.640625,
+      "probabilityMcse": 0.04241025537228216
+    },
+    {
+      "replicates": 256,
+      "pairedMeanWinDifference": 1.3671875,
+      "pairedStandardError": 0.21378233240014496,
+      "mean95Interval": [
+        0.9481741284957159,
+        1.786200871504284
+      ],
+      "probabilityImprovement": 0.6328125,
+      "probabilityMcse": 0.03012738838066865
+    }
+  ],
+  "distributionFlags": [
+    {
+      "metric": "totalScoreMean",
+      "observed": 46.289855072463766,
+      "simulatedMean": 43.759429187309465,
+      "interval": [
+        42.858231707317074,
+        44.739329268292686
+      ]
+    },
+    {
+      "metric": "zeroScoreRate",
+      "observed": 0.010297482837528604,
+      "simulatedMean": 0.018809248761432938,
+      "interval": [
+        0.012957317073170731,
+        0.025533536585365852
+      ]
+    }
+  ],
+  "performance": {
+    "draftMilliseconds": 222.07585099999994,
+    "simulationMilliseconds": 10702.11104,
+    "millisecondsPerPairedFiveSeasonReplicate": 41.80512125,
+    "hardware": {
+      "platform": "linux",
+      "arch": "x64",
+      "cpu": "AMD EPYC 9V74 80-Core Processor",
+      "logicalCpus": 9,
+      "memoryBytes": 10451427328,
+      "node": "v24.22.1"
+    }
+  },
+  "sourceHashes": {
+    "lib/engine.ts": "00f1c388e8da96d2761dbc9b7416b5992a85d37a3c82372cf6ea1fc87821db1f",
+    "lib/simulation.ts": "79fa59ca9c1c730023aa2d63f6ca8451da7936ccb93a4139b46602f5093c3b78",
+    "analytics/model.json": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0",
+    "data/processed/scenario-2018.json": "b7895eef7862ccfb45cff5f2f4b6e347abd809c1905ed274883d55cc237f59d8"
+  },
+  "limitations": [
+    "Historical2018–2022 data is evaluation only and never enters pre-draft features.",
+    "Intervals measure conditional simulation randomness, not model uncertainty or causality.",
+    "Fixed pre2018 scoring environment misses later scoring trends.",
+    "Normal score approximation does not model possessions or validate low-score frequencies.",
+    "One policy perteam and one seed family do not establish broad decision-quality validity.",
+    "Player development, future rosters, awards and draft-to-wins mapping remain unvalidated assumptions."
+  ]
+}

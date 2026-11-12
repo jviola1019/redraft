@@ -1,0 +1,60 @@
+{
+  "version": "prior-usage-2017-v1",
+  "verifiedDate": "2026-11-04",
+  "teams": 32,
+  "regularGames": 256,
+  "teamGameObservations": 512,
+  "teamPlayerObservations": 2080,
+  "unclassifiedPositions": [],
+  "rosterRows": 3082,
+  "rosterMissingPfrIds": 1860,
+  "rosterMissingBirthDates": 476,
+  "rosterJoinCounts": {
+    "exact_normalized_name_and_team": 901,
+    "unresolved": 88,
+    "exact_pfr_id": 1091
+  },
+  "rosterStatusCounts": {
+    "ACT": 1713,
+    "RES": 416,
+    "CUT": 624,
+    "SUS": 8,
+    "RSN": 16,
+    "PUP": 3,
+    "DEV": 289,
+    "": 1,
+    "NWT": 12
+  },
+  "depthChartAudit": {
+    "rows": 36620,
+    "regularRows": 34545,
+    "formations": {
+      "Defense": 15131,
+      "Offense": 15624,
+      "Special Teams": 5865
+    },
+    "regularWeeks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "teams": 32,
+    "missingGsisIds": 0,
+    "warning": "Formation describes units only. REG week 18 records occur despite the 17-week 2017 season. Current dictionary describes a newer schema than this snapshot. Not used for scheme or April roster."
+  }
+}

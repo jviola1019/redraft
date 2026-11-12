@@ -1,0 +1,129 @@
+{
+  "overall": {
+    "snaps": {
+      "n": 287,
+      "mae": 1175.7830214496696,
+      "rmse": 1469.4362003948102,
+      "meanCrps": 788.254743614644,
+      "outsideDonorSupport": 12,
+      "interval80": {
+        "coverage": 0.867595818815331,
+        "covered": 249,
+        "wilson95": [
+          0.8234871760757962,
+          0.9019939876329961
+        ],
+        "meanWidth": 3251.94425087108,
+        "meanIntervalScore": 4484.313588850174
+      },
+      "interval95": {
+        "coverage": 0.9372822299651568,
+        "covered": 269,
+        "wilson95": [
+          0.9030498356138723,
+          0.9599633022577241
+        ],
+        "meanWidth": 4095.1951219512193,
+        "meanIntervalScore": 5990.526132404179
+      }
+    },
+    "games": {
+      "n": 287,
+      "mae": 25.035148754216504,
+      "rmse": 28.27371558902265,
+      "meanCrps": 16.321293596686598,
+      "outsideDonorSupport": 15,
+      "interval80": {
+        "coverage": 0.8432055749128919,
+        "covered": 242,
+        "wilson95": [
+          0.7966392973500114,
+          0.8807056754017994
+        ],
+        "meanWidth": 68.70383275261324,
+        "meanIntervalScore": 82.9198606271777
+      },
+      "interval95": {
+        "coverage": 0.9372822299651568,
+        "covered": 269,
+        "wilson95": [
+          0.9030498356138723,
+          0.9599633022577241
+        ],
+        "meanWidth": 76.7630662020906,
+        "meanIntervalScore": 88.88850174216027
+      }
+    }
+  },
+  "QB": {
+    "support": {
+      "donors": 15,
+      "rookieRole": 3,
+      "noRookieRole": 12,
+      "roleConditioningSupported": true
+    },
+    "snaps": {
+      "n": 16,
+      "mae": 1233.885201440625,
+      "rmse": 1979.7497044528177,
+      "meanCrps": 1026.179664913499,
+      "outsideDonorSupport": 4,
+      "interval80": {
+        "coverage": 0.75,
+        "covered": 12,
+        "wilson95": [
+          0.5050168346449122,
+          0.8981793250878696
+        ],
+        "meanWidth": 1387.4375,
+        "meanIntervalScore": 8592.4375
+      },
+      "interval95": {
+        "coverage": 0.75,
+        "covered": 12,
+        "wilson95": [
+          0.5050168346449122,
+          0.8981793250878696
+        ],
+        "meanWidth": 1965.0,
+        "meanIntervalScore": 24869.99999999998
+      }
+    },
+    "games": {
+      "n": 16,
+      "mae": 20.89921523402778,
+      "rmse": 29.874251891230777,
+      "meanCrps": 15.539583326185731,
+      "outsideDonorSupport": 3,
+      "interval80": {
+        "coverage": 0.75,
+        "covered": 12,
+        "wilson95": [
+          0.5050168346449122,
+          0.8981793250878696
+        ],
+        "meanWidth": 35.0,
+        "meanIntervalScore": 119.375
+      },
+      "interval95": {
+        "coverage": 0.8125,
+        "covered": 13,
+        "wilson95": [
+          0.5699111903802586,
+          0.9340840092857187
+        ],
+        "meanWidth": 61.0,
+        "meanIntervalScore": 150.99999999999991
+      }
+    }
+  },
+  "pairedCrps": {
+    "difference": -28.934962821958486,
+    "playerBootstrap95": [
+      -66.11187002107738,
+      6.196063737187829
+    ],
+    "resamples": 2000,
+    "note": "One cohort; does not measure between-era or team clustering uncertainty."
+  }
+}

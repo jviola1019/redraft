@@ -1,0 +1,23 @@
+{
+  "id": "distribution-ne",
+  "kind": "diagnostic",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "analytics/simulation_diagnostics.mjs",
+    "256",
+    "NE"
+  ],
+  "startedAt": "2026-11-04T20:48:23.071Z",
+  "finishedAt": "2026-11-04T20:48:32.628Z",
+  "durationMs": 9556.91545,
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "error": null,
+  "status": "passed",
+  "stdout": "13-distribution-ne.stdout.log",
+  "stderr": "13-distribution-ne.stderr.log",
+  "artifacts": [
+    "artifacts/analytics/simulation_diagnostics_NE.json"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "api",
+  "kind": "structural",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "tests/api.integration.mjs"
+  ],
+  "startedAt": "2026-11-04T20:10:15.092Z",
+  "finishedAt": "2026-11-04T20:10:49.498Z",
+  "durationMs": 34405.942359,
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "error": null,
+  "status": "passed",
+  "stdout": "10-api.stdout.log",
+  "stderr": "10-api.stderr.log",
+  "artifacts": [
+    "artifacts/tests/results/api-integration.json"
+  ]
+}

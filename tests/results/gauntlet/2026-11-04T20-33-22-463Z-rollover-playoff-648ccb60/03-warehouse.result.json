@@ -1,0 +1,19 @@
+{
+  "id": "warehouse",
+  "kind": "structural",
+  "command": [
+    "python3",
+    "tests/warehouse_test.py"
+  ],
+  "startedAt": "2026-11-04T20:33:24.374Z",
+  "finishedAt": "2026-11-04T20:33:24.478Z",
+  "durationMs": 104.25322300000016,
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "error": null,
+  "status": "passed",
+  "stdout": "03-warehouse.stdout.log",
+  "stderr": "03-warehouse.stderr.log",
+  "artifacts": []
+}

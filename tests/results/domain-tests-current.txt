@@ -1,0 +1,45 @@
+✔ analytical schema:20 current relational, temporal and disclosure constraints (280.292379ms)
+BENCHMARK {"node":"v24.22.1","engine":"redraft-research-0.4-r1","draftSelections":256,"replicateSerializedBytes":679418}
+✔ real scenario has32 teams, seven rounds and256 unique selections (1.868844ms)
+✔ seven rounds finish with unique players, ownership and budget invariants (0.470524ms)
+✔ identical config repeats the same draft (340.777585ms)
+✔ different seeds produce different choices (258.314711ms)
+✔ future and invalid availability timestamps are rejected (1.309844ms)
+✔ future actual selections and scores cannot enter CPU choices (299.239608ms)
+✔ only336 combine participants can be selected, scouted or shortlisted (19.313052ms)
+✔ retrospective prospect membership cannot influence CPU policy (299.274429ms)
+✔ duplicate player selections fail (6.709322ms)
+✔ scouting is charged once and never changes prospect talent or RNG (290.044447ms)
+✔ scouting budget cannot be negative (5.508575ms)
+✔ accepted trades conserve assets atomically and leave input unchanged (1.719148ms)
+✔ duplicate trade assets and invalid future selections fail (0.838762ms)
+✔ corrupted persisted eligibility, dates, board and status fail invariants (1.53238ms)
+✔ five schedules preserve team counts, divisional opponents and one game/week (5.92356ms)
+✔ five-season worlds reproduce and league/playoff invariants reconcile (90.859239ms)
+✔ identical baseline allocations have zero paired effect (72.850872ms)
+✔ opposite venue games have independent score shocks (0.448147ms)
+✔ 256 compact replicates fit authoritative storage budget (13.427226ms)
+✔ timeline identifies incomplete and future seasons (0.188585ms)
+✔ supported probabilities are bounded; specialists remain unavailable (3.541574ms)
+✔ QA: reciprocal division games have independent total-score draws (3.58611ms)
+✔ QA: team records and points exactly reconcile to regular-season games (5.189943ms)
+✔ QA: cohort position starts cannot exceed possible role capacity (8.354188ms)
+✔ QA: future observed scores cannot affect generated baseline or alternate world (87.499538ms)
+✔ all336 playable candidates have shared profiles of5–9; ST conceals the lone LS (1.847701ms)
+✔ every known individual measure is contained in its true shared outward-rounded range (3.039506ms)
+✔ aliases are stable, private-salt-dependent, one-to-one, and independent of reference-only membership (230.423329ms)
+✔ full cumulative browser evidence has at least five identical profiles and no canonical fingerprints (145.162474ms)
+✔ pooling affects CPU/simulation inputs equally; specialist projection stays unavailable (8.506808ms)
+✔ future history, names, colleges, reference-only membership and source-row ordering cannot affect shared profiles (8.487991ms)
+✔ scouting reveals only a range; end of draft reveals historical identity with stable aliases (28.379505ms)
+✔ unsupported sparse position pool fails closed (4.801462ms)
+✔ one scouting action reveals the entire shared profile without additional individual evidence (20.121822ms)
+✔ daily identities remain sealed in ready, simulating and complete states until UTC rollover (568.543045ms)
+ℹ tests 36
+ℹ suites 0
+ℹ pass 36
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2757.14502

@@ -1,0 +1,19 @@
+test_actual_reference_keys (__main__.DataTests.test_actual_reference_keys) ... ok
+test_actual_season_game_counts (__main__.DataTests.test_actual_season_game_counts) ... ok
+test_all_playable_eligibility_independently_verified (__main__.DataTests.test_all_playable_eligibility_independently_verified) ... ok
+test_header_only_source_not_treated_as_training_rows (__main__.DataTests.test_header_only_source_not_treated_as_training_rows) ... ok
+test_historical_name (__main__.DataTests.test_historical_name) ... ok
+test_identity_risk_recomputes_from_playable_population (__main__.DataTests.test_identity_risk_recomputes_from_playable_population) ... ok
+test_independent_order_reconciliation (__main__.DataTests.test_independent_order_reconciliation) ... ok
+test_initial_owner_not_actual_selection_owner (__main__.DataTests.test_initial_owner_not_actual_selection_owner) ... ok
+test_no_duplicate_official_invitee_resolution (__main__.DataTests.test_no_duplicate_official_invitee_resolution) ... ok
+test_noncombine_actuals_not_playable (__main__.DataTests.test_noncombine_actuals_not_playable) ... ok
+test_original_chart_tail_is_explicit_assumption (__main__.DataTests.test_original_chart_tail_is_explicit_assumption) ... ok
+test_original_round_lengths_and_compensatory (__main__.DataTests.test_original_round_lengths_and_compensatory) ... ok
+test_outcomes_absent_from_prospect_schema (__main__.DataTests.test_outcomes_absent_from_prospect_schema) ... ok
+test_same_name_players_remain_distinct (__main__.DataTests.test_same_name_players_remain_distinct) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.280s
+
+OK

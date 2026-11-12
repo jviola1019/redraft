@@ -1,0 +1,110 @@
+[
+  {
+    "year": 2013,
+    "combineRows": 332,
+    "draftSelections": 254,
+    "regularSeasonGames": 256,
+    "fortyMissing": 0,
+    "predraftOrderReconstructed": false,
+    "collegeProduction": false,
+    "injuriesPredraft": false,
+    "strictPublicationTimes": false,
+    "releaseQualified": false
+  },
+  {
+    "year": 2014,
+    "combineRows": 333,
+    "draftSelections": 256,
+    "regularSeasonGames": 256,
+    "fortyMissing": 7,
+    "predraftOrderReconstructed": false,
+    "collegeProduction": false,
+    "injuriesPredraft": false,
+    "strictPublicationTimes": false,
+    "releaseQualified": false
+  },
+  {
+    "year": 2015,
+    "combineRows": 322,
+    "draftSelections": 256,
+    "regularSeasonGames": 256,
+    "fortyMissing": 1,
+    "predraftOrderReconstructed": false,
+    "collegeProduction": false,
+    "injuriesPredraft": false,
+    "strictPublicationTimes": false,
+    "releaseQualified": false
+  },
+  {
+    "year": 2016,
+    "combineRows": 332,
+    "draftSelections": 253,
+    "regularSeasonGames": 256,
+    "fortyMissing": 1,
+    "predraftOrderReconstructed": false,
+    "collegeProduction": false,
+    "injuriesPredraft": false,
+    "strictPublicationTimes": false,
+    "releaseQualified": false
+  },
+  {
+    "year": 2017,
+    "combineRows": 327,
+    "draftSelections": 253,
+    "regularSeasonGames": 256,
+    "fortyMissing": 57,
+    "predraftOrderReconstructed": false,
+    "collegeProduction": false,
+    "injuriesPredraft": false,
+    "strictPublicationTimes": false,
+    "releaseQualified": false
+  },
+  {
+    "year": 2018,
+    "combineRows": 336,
+    "draftSelections": 256,
+    "regularSeasonGames": 256,
+    "fortyMissing": 66,
+    "predraftOrderReconstructed": true,
+    "collegeProduction": false,
+    "injuriesPredraft": false,
+    "strictPublicationTimes": false,
+    "releaseQualified": false
+  },
+  {
+    "year": 2019,
+    "combineRows": 336,
+    "draftSelections": 254,
+    "regularSeasonGames": 256,
+    "fortyMissing": 75,
+    "predraftOrderReconstructed": false,
+    "collegeProduction": false,
+    "injuriesPredraft": false,
+    "strictPublicationTimes": false,
+    "releaseQualified": false
+  },
+  {
+    "year": 2020,
+    "combineRows": 337,
+    "draftSelections": 255,
+    "regularSeasonGames": 256,
+    "fortyMissing": 70,
+    "predraftOrderReconstructed": false,
+    "collegeProduction": false,
+    "injuriesPredraft": false,
+    "strictPublicationTimes": false,
+    "releaseQualified": false
+  },
+  {
+    "year": 2021,
+    "combineRows": 464,
+    "draftSelections": 259,
+    "regularSeasonGames": 272,
+    "fortyMissing": 68,
+    "predraftOrderReconstructed": false,
+    "collegeProduction": false,
+    "injuriesPredraft": false,
+    "strictPublicationTimes": false,
+    "releaseQualified": false
+  }
+]

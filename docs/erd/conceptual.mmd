@@ -1,0 +1,65 @@
+erDiagram
+  Sources ||--o{ HistoricalFacts : "documents"
+  HistoricalFacts ||--o{ Features : "derives"
+  HistoricalFacts ||--o{ ObservedOutcomes : "observes"
+  Features ||--o{ Models : "fits"
+  ObservedOutcomes ||--o{ Models : "evaluates"
+  DisclosurePolicy ||--o{ PublicDTO : "constrains"
+  PrivateGame ||--o{ PublicDTO : "sanitizes"
+  Models ||--o{ Baseline : "generates"
+  Models ||--o{ Alternate : "generates"
+  PrivateGame ||--o{ Alternate : "changes"
+  Baseline ||--o{ Comparison : "compares"
+  Alternate ||--o{ Comparison : "compares"
+  Sources {
+    text source_id PK
+    text rights
+    timestamp available_at
+  }
+  HistoricalFacts {
+    text dataset_version PK
+    text canonical_entity
+    text provenance
+  }
+  Features {
+    text feature_version PK
+    timestamp cutoff
+    text units
+  }
+  ObservedOutcomes {
+    text player_season PK
+    timestamp label_available_at
+  }
+  DisclosurePolicy {
+    text version PK
+    text permitted_fields
+    text true_bands
+  }
+  Models {
+    text model_version PK
+    timestamp training_cutoff
+  }
+  PrivateGame {
+    text game_id PK
+    text canonical_ids
+    text public_id_map
+  }
+  PublicDTO {
+    text per_run_id PK
+    text permitted_evidence
+  }
+  Baseline {
+    text replicate_id PK
+    text actual_selections
+    text paired_seed
+  }
+  Alternate {
+    text replicate_id PK
+    text user_selections
+    text paired_seed
+  }
+  Comparison {
+    text run_id PK
+    text historical_actuals
+    text paired_distribution
+  }

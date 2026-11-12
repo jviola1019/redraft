@@ -1,0 +1,1546 @@
+{
+  "name": "Jimmy Johnson chart (49ers2014 publication)",
+  "source": "https://www.49ers.com/news/nfl-draft-value-chart-12850728",
+  "publishedAt": "2014-04-07T09:58:28Z",
+  "units": "Johnson chart points",
+  "licenseNote": "Functional numerical values extracted with attribution; no open article/prose/asset license asserted.",
+  "extension": "Picks225\u2013256 are unpriced by original chart; gameValue=1 is a gameplay assumption, not historical fact.",
+  "values": [
+    {
+      "pick": 1,
+      "johnson": 3000.0,
+      "gameValue": 3000.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 2,
+      "johnson": 2600.0,
+      "gameValue": 2600.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 3,
+      "johnson": 2200.0,
+      "gameValue": 2200.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 4,
+      "johnson": 1800.0,
+      "gameValue": 1800.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 5,
+      "johnson": 1700.0,
+      "gameValue": 1700.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 6,
+      "johnson": 1600.0,
+      "gameValue": 1600.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 7,
+      "johnson": 1500.0,
+      "gameValue": 1500.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 8,
+      "johnson": 1400.0,
+      "gameValue": 1400.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 9,
+      "johnson": 1350.0,
+      "gameValue": 1350.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 10,
+      "johnson": 1300.0,
+      "gameValue": 1300.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 11,
+      "johnson": 1250.0,
+      "gameValue": 1250.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 12,
+      "johnson": 1200.0,
+      "gameValue": 1200.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 13,
+      "johnson": 1150.0,
+      "gameValue": 1150.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 14,
+      "johnson": 1100.0,
+      "gameValue": 1100.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 15,
+      "johnson": 1050.0,
+      "gameValue": 1050.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 16,
+      "johnson": 1000.0,
+      "gameValue": 1000.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 17,
+      "johnson": 950.0,
+      "gameValue": 950.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 18,
+      "johnson": 900.0,
+      "gameValue": 900.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 19,
+      "johnson": 875.0,
+      "gameValue": 875.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 20,
+      "johnson": 850.0,
+      "gameValue": 850.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 21,
+      "johnson": 800.0,
+      "gameValue": 800.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 22,
+      "johnson": 780.0,
+      "gameValue": 780.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 23,
+      "johnson": 760.0,
+      "gameValue": 760.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 24,
+      "johnson": 740.0,
+      "gameValue": 740.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 25,
+      "johnson": 720.0,
+      "gameValue": 720.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 26,
+      "johnson": 700.0,
+      "gameValue": 700.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 27,
+      "johnson": 680.0,
+      "gameValue": 680.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 28,
+      "johnson": 660.0,
+      "gameValue": 660.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 29,
+      "johnson": 640.0,
+      "gameValue": 640.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 30,
+      "johnson": 620.0,
+      "gameValue": 620.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 31,
+      "johnson": 600.0,
+      "gameValue": 600.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 32,
+      "johnson": 550.0,
+      "gameValue": 550.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 33,
+      "johnson": 580.0,
+      "gameValue": 580.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 34,
+      "johnson": 560.0,
+      "gameValue": 560.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 35,
+      "johnson": 550.0,
+      "gameValue": 550.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 36,
+      "johnson": 540.0,
+      "gameValue": 540.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 37,
+      "johnson": 530.0,
+      "gameValue": 530.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 38,
+      "johnson": 520.0,
+      "gameValue": 520.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 39,
+      "johnson": 510.0,
+      "gameValue": 510.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 40,
+      "johnson": 500.0,
+      "gameValue": 500.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 41,
+      "johnson": 490.0,
+      "gameValue": 490.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 42,
+      "johnson": 480.0,
+      "gameValue": 480.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 43,
+      "johnson": 470.0,
+      "gameValue": 470.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 44,
+      "johnson": 460.0,
+      "gameValue": 460.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 45,
+      "johnson": 450.0,
+      "gameValue": 450.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 46,
+      "johnson": 440.0,
+      "gameValue": 440.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 47,
+      "johnson": 430.0,
+      "gameValue": 430.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 48,
+      "johnson": 420.0,
+      "gameValue": 420.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 49,
+      "johnson": 410.0,
+      "gameValue": 410.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 50,
+      "johnson": 400.0,
+      "gameValue": 400.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 51,
+      "johnson": 390.0,
+      "gameValue": 390.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 52,
+      "johnson": 380.0,
+      "gameValue": 380.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 53,
+      "johnson": 370.0,
+      "gameValue": 370.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 54,
+      "johnson": 360.0,
+      "gameValue": 360.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 55,
+      "johnson": 350.0,
+      "gameValue": 350.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 56,
+      "johnson": 340.0,
+      "gameValue": 340.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 57,
+      "johnson": 330.0,
+      "gameValue": 330.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 58,
+      "johnson": 320.0,
+      "gameValue": 320.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 59,
+      "johnson": 310.0,
+      "gameValue": 310.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 60,
+      "johnson": 300.0,
+      "gameValue": 300.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 61,
+      "johnson": 292.0,
+      "gameValue": 292.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 62,
+      "johnson": 284.0,
+      "gameValue": 284.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 63,
+      "johnson": 276.0,
+      "gameValue": 276.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 64,
+      "johnson": 270.0,
+      "gameValue": 270.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 65,
+      "johnson": 265.0,
+      "gameValue": 265.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 66,
+      "johnson": 260.0,
+      "gameValue": 260.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 67,
+      "johnson": 255.0,
+      "gameValue": 255.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 68,
+      "johnson": 250.0,
+      "gameValue": 250.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 69,
+      "johnson": 245.0,
+      "gameValue": 245.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 70,
+      "johnson": 240.0,
+      "gameValue": 240.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 71,
+      "johnson": 235.0,
+      "gameValue": 235.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 72,
+      "johnson": 230.0,
+      "gameValue": 230.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 73,
+      "johnson": 225.0,
+      "gameValue": 225.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 74,
+      "johnson": 220.0,
+      "gameValue": 220.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 75,
+      "johnson": 215.0,
+      "gameValue": 215.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 76,
+      "johnson": 210.0,
+      "gameValue": 210.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 77,
+      "johnson": 205.0,
+      "gameValue": 205.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 78,
+      "johnson": 200.0,
+      "gameValue": 200.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 79,
+      "johnson": 195.0,
+      "gameValue": 195.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 80,
+      "johnson": 190.0,
+      "gameValue": 190.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 81,
+      "johnson": 185.0,
+      "gameValue": 185.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 82,
+      "johnson": 180.0,
+      "gameValue": 180.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 83,
+      "johnson": 175.0,
+      "gameValue": 175.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 84,
+      "johnson": 170.0,
+      "gameValue": 170.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 85,
+      "johnson": 165.0,
+      "gameValue": 165.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 86,
+      "johnson": 160.0,
+      "gameValue": 160.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 87,
+      "johnson": 155.0,
+      "gameValue": 155.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 88,
+      "johnson": 150.0,
+      "gameValue": 150.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 89,
+      "johnson": 145.0,
+      "gameValue": 145.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 90,
+      "johnson": 140.0,
+      "gameValue": 140.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 91,
+      "johnson": 136.0,
+      "gameValue": 136.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 92,
+      "johnson": 132.0,
+      "gameValue": 132.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 93,
+      "johnson": 128.0,
+      "gameValue": 128.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 94,
+      "johnson": 124.0,
+      "gameValue": 124.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 95,
+      "johnson": 120.0,
+      "gameValue": 120.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 96,
+      "johnson": 116.0,
+      "gameValue": 116.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 97,
+      "johnson": 112.0,
+      "gameValue": 112.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 98,
+      "johnson": 108.0,
+      "gameValue": 108.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 99,
+      "johnson": 104.0,
+      "gameValue": 104.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 100,
+      "johnson": 100.0,
+      "gameValue": 100.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 101,
+      "johnson": 96.0,
+      "gameValue": 96.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 102,
+      "johnson": 92.0,
+      "gameValue": 92.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 103,
+      "johnson": 88.0,
+      "gameValue": 88.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 104,
+      "johnson": 86.0,
+      "gameValue": 86.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 105,
+      "johnson": 84.0,
+      "gameValue": 84.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 106,
+      "johnson": 82.0,
+      "gameValue": 82.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 107,
+      "johnson": 80.0,
+      "gameValue": 80.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 108,
+      "johnson": 78.0,
+      "gameValue": 78.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 109,
+      "johnson": 76.0,
+      "gameValue": 76.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 110,
+      "johnson": 74.0,
+      "gameValue": 74.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 111,
+      "johnson": 72.0,
+      "gameValue": 72.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 112,
+      "johnson": 70.0,
+      "gameValue": 70.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 113,
+      "johnson": 68.0,
+      "gameValue": 68.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 114,
+      "johnson": 66.0,
+      "gameValue": 66.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 115,
+      "johnson": 64.0,
+      "gameValue": 64.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 116,
+      "johnson": 62.0,
+      "gameValue": 62.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 117,
+      "johnson": 60.0,
+      "gameValue": 60.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 118,
+      "johnson": 58.0,
+      "gameValue": 58.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 119,
+      "johnson": 56.0,
+      "gameValue": 56.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 120,
+      "johnson": 54.0,
+      "gameValue": 54.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 121,
+      "johnson": 52.0,
+      "gameValue": 52.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 122,
+      "johnson": 50.0,
+      "gameValue": 50.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 123,
+      "johnson": 49.0,
+      "gameValue": 49.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 124,
+      "johnson": 48.0,
+      "gameValue": 48.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 125,
+      "johnson": 47.0,
+      "gameValue": 47.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 126,
+      "johnson": 46.0,
+      "gameValue": 46.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 127,
+      "johnson": 45.0,
+      "gameValue": 45.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 128,
+      "johnson": 44.0,
+      "gameValue": 44.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 129,
+      "johnson": 43.0,
+      "gameValue": 43.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 130,
+      "johnson": 42.0,
+      "gameValue": 42.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 131,
+      "johnson": 41.0,
+      "gameValue": 41.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 132,
+      "johnson": 40.0,
+      "gameValue": 40.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 133,
+      "johnson": 39.5,
+      "gameValue": 39.5,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 134,
+      "johnson": 39.0,
+      "gameValue": 39.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 135,
+      "johnson": 38.5,
+      "gameValue": 38.5,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 136,
+      "johnson": 38.0,
+      "gameValue": 38.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 137,
+      "johnson": 37.5,
+      "gameValue": 37.5,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 138,
+      "johnson": 37.0,
+      "gameValue": 37.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 139,
+      "johnson": 36.5,
+      "gameValue": 36.5,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 140,
+      "johnson": 36.0,
+      "gameValue": 36.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 141,
+      "johnson": 35.5,
+      "gameValue": 35.5,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 142,
+      "johnson": 35.0,
+      "gameValue": 35.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 143,
+      "johnson": 34.5,
+      "gameValue": 34.5,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 144,
+      "johnson": 34.0,
+      "gameValue": 34.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 145,
+      "johnson": 33.5,
+      "gameValue": 33.5,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 146,
+      "johnson": 33.0,
+      "gameValue": 33.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 147,
+      "johnson": 32.6,
+      "gameValue": 32.6,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 148,
+      "johnson": 32.2,
+      "gameValue": 32.2,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 149,
+      "johnson": 31.8,
+      "gameValue": 31.8,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 150,
+      "johnson": 31.4,
+      "gameValue": 31.4,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 151,
+      "johnson": 31.0,
+      "gameValue": 31.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 152,
+      "johnson": 30.6,
+      "gameValue": 30.6,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 153,
+      "johnson": 30.5,
+      "gameValue": 30.5,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 154,
+      "johnson": 29.8,
+      "gameValue": 29.8,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 155,
+      "johnson": 29.4,
+      "gameValue": 29.4,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 156,
+      "johnson": 29.0,
+      "gameValue": 29.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 157,
+      "johnson": 28.6,
+      "gameValue": 28.6,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 158,
+      "johnson": 28.2,
+      "gameValue": 28.2,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 159,
+      "johnson": 27.8,
+      "gameValue": 27.8,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 160,
+      "johnson": 27.4,
+      "gameValue": 27.4,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 161,
+      "johnson": 27.0,
+      "gameValue": 27.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 162,
+      "johnson": 26.6,
+      "gameValue": 26.6,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 163,
+      "johnson": 26.2,
+      "gameValue": 26.2,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 164,
+      "johnson": 25.8,
+      "gameValue": 25.8,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 165,
+      "johnson": 25.4,
+      "gameValue": 25.4,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 166,
+      "johnson": 25.0,
+      "gameValue": 25.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 167,
+      "johnson": 24.6,
+      "gameValue": 24.6,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 168,
+      "johnson": 24.2,
+      "gameValue": 24.2,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 169,
+      "johnson": 23.8,
+      "gameValue": 23.8,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 170,
+      "johnson": 23.4,
+      "gameValue": 23.4,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 171,
+      "johnson": 23.0,
+      "gameValue": 23.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 172,
+      "johnson": 22.6,
+      "gameValue": 22.6,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 173,
+      "johnson": 22.2,
+      "gameValue": 22.2,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 174,
+      "johnson": 21.8,
+      "gameValue": 21.8,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 175,
+      "johnson": 21.4,
+      "gameValue": 21.4,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 176,
+      "johnson": 21.0,
+      "gameValue": 21.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 177,
+      "johnson": 20.6,
+      "gameValue": 20.6,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 178,
+      "johnson": 20.2,
+      "gameValue": 20.2,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 179,
+      "johnson": 19.8,
+      "gameValue": 19.8,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 180,
+      "johnson": 19.4,
+      "gameValue": 19.4,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 181,
+      "johnson": 19.0,
+      "gameValue": 19.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 182,
+      "johnson": 18.6,
+      "gameValue": 18.6,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 183,
+      "johnson": 18.2,
+      "gameValue": 18.2,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 184,
+      "johnson": 17.8,
+      "gameValue": 17.8,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 185,
+      "johnson": 17.4,
+      "gameValue": 17.4,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 186,
+      "johnson": 17.0,
+      "gameValue": 17.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 187,
+      "johnson": 16.6,
+      "gameValue": 16.6,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 188,
+      "johnson": 16.2,
+      "gameValue": 16.2,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 189,
+      "johnson": 15.8,
+      "gameValue": 15.8,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 190,
+      "johnson": 15.4,
+      "gameValue": 15.4,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 191,
+      "johnson": 15.0,
+      "gameValue": 15.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 192,
+      "johnson": 14.6,
+      "gameValue": 14.6,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 193,
+      "johnson": 14.2,
+      "gameValue": 14.2,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 194,
+      "johnson": 13.8,
+      "gameValue": 13.8,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 195,
+      "johnson": 13.4,
+      "gameValue": 13.4,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 196,
+      "johnson": 13.0,
+      "gameValue": 13.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 197,
+      "johnson": 12.6,
+      "gameValue": 12.6,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 198,
+      "johnson": 12.2,
+      "gameValue": 12.2,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 199,
+      "johnson": 11.8,
+      "gameValue": 11.8,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 200,
+      "johnson": 11.4,
+      "gameValue": 11.4,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 201,
+      "johnson": 11.0,
+      "gameValue": 11.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 202,
+      "johnson": 10.6,
+      "gameValue": 10.6,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 203,
+      "johnson": 10.2,
+      "gameValue": 10.2,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 204,
+      "johnson": 9.8,
+      "gameValue": 9.8,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 205,
+      "johnson": 9.4,
+      "gameValue": 9.4,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 206,
+      "johnson": 9.0,
+      "gameValue": 9.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 207,
+      "johnson": 8.6,
+      "gameValue": 8.6,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 208,
+      "johnson": 8.2,
+      "gameValue": 8.2,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 209,
+      "johnson": 7.8,
+      "gameValue": 7.8,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 210,
+      "johnson": 7.4,
+      "gameValue": 7.4,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 211,
+      "johnson": 7.0,
+      "gameValue": 7.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 212,
+      "johnson": 6.6,
+      "gameValue": 6.6,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 213,
+      "johnson": 6.2,
+      "gameValue": 6.2,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 214,
+      "johnson": 5.8,
+      "gameValue": 5.8,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 215,
+      "johnson": 5.4,
+      "gameValue": 5.4,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 216,
+      "johnson": 5.0,
+      "gameValue": 5.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 217,
+      "johnson": 4.6,
+      "gameValue": 4.6,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 218,
+      "johnson": 4.2,
+      "gameValue": 4.2,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 219,
+      "johnson": 3.8,
+      "gameValue": 3.8,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 220,
+      "johnson": 3.4,
+      "gameValue": 3.4,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 221,
+      "johnson": 3.0,
+      "gameValue": 3.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 222,
+      "johnson": 2.6,
+      "gameValue": 2.6,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 223,
+      "johnson": 2.3,
+      "gameValue": 2.3,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 224,
+      "johnson": 2.0,
+      "gameValue": 2.0,
+      "basis": "published-chart"
+    },
+    {
+      "pick": 225,
+      "johnson": null,
+      "gameValue": 1,
+      "basis": "gameplay-tail-extension"
+    },
+    {
+      "pick": 226,
+      "johnson": null,
+      "gameValue": 1,
+      "basis": "gameplay-tail-extension"
+    },
+    {
+      "pick": 227,
+      "johnson": null,
+      "gameValue": 1,
+      "basis": "gameplay-tail-extension"
+    },
+    {
+      "pick": 228,
+      "johnson": null,
+      "gameValue": 1,
+      "basis": "gameplay-tail-extension"
+    },
+    {
+      "pick": 229,
+      "johnson": null,
+      "gameValue": 1,
+      "basis": "gameplay-tail-extension"
+    },
+    {
+      "pick": 230,
+      "johnson": null,
+      "gameValue": 1,
+      "basis": "gameplay-tail-extension"
+    },
+    {
+      "pick": 231,
+      "johnson": null,
+      "gameValue": 1,
+      "basis": "gameplay-tail-extension"
+    },
+    {
+      "pick": 232,
+      "johnson": null,
+      "gameValue": 1,
+      "basis": "gameplay-tail-extension"
+    },
+    {
+      "pick": 233,
+      "johnson": null,
+      "gameValue": 1,
+      "basis": "gameplay-tail-extension"
+    },
+    {
+      "pick": 234,
+      "johnson": null,
+      "gameValue": 1,
+      "basis": "gameplay-tail-extension"
+    },
+    {
+      "pick": 235,
+      "johnson": null,
+      "gameValue": 1,
+      "basis": "gameplay-tail-extension"
+    },
+    {
+      "pick": 236,
+      "johnson": null,
+      "gameValue": 1,
+      "basis": "gameplay-tail-extension"
+    },
+    {
+      "pick": 237,
+      "johnson": null,
+      "gameValue": 1,
+      "basis": "gameplay-tail-extension"
+    },
+    {
+      "pick": 238,
+      "johnson": null,
+      "gameValue": 1,
+      "basis": "gameplay-tail-extension"
+    },
+    {
+      "pick": 239,
+      "johnson": null,
+      "gameValue": 1,
+      "basis": "gameplay-tail-extension"
+    },
+    {
+      "pick": 240,
+      "johnson": null,
+      "gameValue": 1,
+      "basis": "gameplay-tail-extension"
+    },
+    {
+      "pick": 241,
+      "johnson": null,
+      "gameValue": 1,
+      "basis": "gameplay-tail-extension"
+    },
+    {
+      "pick": 242,
+      "johnson": null,
+      "gameValue": 1,
+      "basis": "gameplay-tail-extension"
+    },
+    {
+      "pick": 243,
+      "johnson": null,
+      "gameValue": 1,
+      "basis": "gameplay-tail-extension"
+    },
+    {
+      "pick": 244,
+      "johnson": null,
+      "gameValue": 1,
+      "basis": "gameplay-tail-extension"
+    },
+    {
+      "pick": 245,
+      "johnson": null,
+      "gameValue": 1,
+      "basis": "gameplay-tail-extension"
+    },
+    {
+      "pick": 246,
+      "johnson": null,
+      "gameValue": 1,
+      "basis": "gameplay-tail-extension"
+    },
+    {
+      "pick": 247,
+      "johnson": null,
+      "gameValue": 1,
+      "basis": "gameplay-tail-extension"
+    },
+    {
+      "pick": 248,
+      "johnson": null,
+      "gameValue": 1,
+      "basis": "gameplay-tail-extension"
+    },
+    {
+      "pick": 249,
+      "johnson": null,
+      "gameValue": 1,
+      "basis": "gameplay-tail-extension"
+    },
+    {
+      "pick": 250,
+      "johnson": null,
+      "gameValue": 1,
+      "basis": "gameplay-tail-extension"
+    },
+    {
+      "pick": 251,
+      "johnson": null,
+      "gameValue": 1,
+      "basis": "gameplay-tail-extension"
+    },
+    {
+      "pick": 252,
+      "johnson": null,
+      "gameValue": 1,
+      "basis": "gameplay-tail-extension"
+    },
+    {
+      "pick": 253,
+      "johnson": null,
+      "gameValue": 1,
+      "basis": "gameplay-tail-extension"
+    },
+    {
+      "pick": 254,
+      "johnson": null,
+      "gameValue": 1,
+      "basis": "gameplay-tail-extension"
+    },
+    {
+      "pick": 255,
+      "johnson": null,
+      "gameValue": 1,
+      "basis": "gameplay-tail-extension"
+    },
+    {
+      "pick": 256,
+      "johnson": null,
+      "gameValue": 1,
+      "basis": "gameplay-tail-extension"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "verifiedDate": "2026-11-02",
+  "method": "Reverse grouped draft-day asset transfers from actual final owners; compare with independently extracted official pre-draft order. Later results reconstruct past facts, not prospect ability.",
+  "sourceTransactions": 39,
+  "pickRelatedTransactions": 38,
+  "corrections": [
+    {
+      "tradeId": "1288",
+      "action": "Add omitted2018 pick255 TB toBUF",
+      "source": "https://www.buccaneers.com/news/bucs-swing-dramatic-first-round-trade-20586933",
+      "independentSource": "https://www.buffalobills.com/news/bills-trade-up-with-bucs-to-land-qb-josh-allen-20587262"
+    },
+    {
+      "tradeId": "1291",
+      "action": "Correct2018 pick154 direction toBAL toBUF",
+      "source": "https://www.nfl.com/news/2018-nfl-draft-trade-tracker-details-of-all-the-moves-0ap3000000928057"
+    }
+  ],
+  "assetOwnershipErrors": [],
+  "officialOrderDisagreements": [],
+  "matchedSlots": 256,
+  "raidersApril20IndependentCheck": [
+    10,
+    41,
+    75,
+    110,
+    159,
+    173,
+    185,
+    212,
+    216,
+    217,
+    228
+  ],
+  "raidersSource": "https://static.clubs.nfl.com/image/upload/raiders/jcs5xnkdgnwwoglmp2rf.pdf",
+  "strictArchiveLimit": "Original per-field publication timestamps remain unavailable."
+}

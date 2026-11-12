@@ -1,0 +1,141 @@
+{
+  "version": "identity-audit-v2",
+  "asOf": "2026-11-02",
+  "datasetVersion": "nflverse-2018-combine-only-v2",
+  "cohort": "2018, verified playable combine participants only",
+  "n": 336,
+  "method": "Exact equality of joint released fields; null is a category. Individually coarsened rule: floor(value/width+0.5). Runtime count uses every fully-scouted browser field except opaque labels and user action state.",
+  "individualBandWidths": {
+    "heightIn": 3,
+    "weightLb": 15,
+    "forty": 0.2,
+    "bench": 5,
+    "verticalIn": 5,
+    "broadJumpIn": 10,
+    "cone": 0.2,
+    "shuttle": 0.2
+  },
+  "metrics": {
+    "collegeAndExactPosition": {
+      "n": 336,
+      "distinctProfiles": 299,
+      "singletonProspects": 265,
+      "singletonFraction": 0.7886904761904762,
+      "prospectsInGroupsBelowFive": 336,
+      "minimumProfileGroup": 1,
+      "maximumProfileGroup": 4,
+      "profileSizeDistribution": {
+        "1": 265,
+        "2": 32,
+        "3": 1,
+        "4": 1
+      }
+    },
+    "exactPositionHeightWeight": {
+      "n": 336,
+      "distinctProfiles": 308,
+      "singletonProspects": 285,
+      "singletonFraction": 0.8482142857142857,
+      "prospectsInGroupsBelowFive": 336,
+      "minimumProfileGroup": 1,
+      "maximumProfileGroup": 3,
+      "profileSizeDistribution": {
+        "1": 285,
+        "2": 18,
+        "3": 5
+      }
+    },
+    "exactPositionFortyVerticalBroad": {
+      "n": 336,
+      "distinctProfiles": 308,
+      "singletonProspects": 297,
+      "singletonFraction": 0.8839285714285714,
+      "prospectsInGroupsBelowFive": 326,
+      "minimumProfileGroup": 1,
+      "maximumProfileGroup": 5,
+      "profileSizeDistribution": {
+        "1": 297,
+        "2": 1,
+        "3": 5,
+        "4": 3,
+        "5": 2
+      }
+    },
+    "exactPositionCollegeHeightWeightForty": {
+      "n": 336,
+      "distinctProfiles": 336,
+      "singletonProspects": 336,
+      "singletonFraction": 1.0,
+      "prospectsInGroupsBelowFive": 336,
+      "minimumProfileGroup": 1,
+      "maximumProfileGroup": 1,
+      "profileSizeDistribution": {
+        "1": 336
+      }
+    },
+    "exactPositionAllMeasurements": {
+      "n": 336,
+      "distinctProfiles": 335,
+      "singletonProspects": 334,
+      "singletonFraction": 0.9940476190476191,
+      "prospectsInGroupsBelowFive": 336,
+      "minimumProfileGroup": 1,
+      "maximumProfileGroup": 2,
+      "profileSizeDistribution": {
+        "1": 334,
+        "2": 1
+      }
+    },
+    "exactPositionAllIndividuallyCoarsenedMeasurements": {
+      "n": 336,
+      "distinctProfiles": 332,
+      "singletonProspects": 328,
+      "singletonFraction": 0.9761904761904762,
+      "prospectsInGroupsBelowFive": 336,
+      "minimumProfileGroup": 1,
+      "maximumProfileGroup": 2,
+      "profileSizeDistribution": {
+        "1": 328,
+        "2": 4
+      }
+    },
+    "runtimeFullCumulativeEvidenceWithoutOpaqueLabels": {
+      "n": 336,
+      "distinctProfiles": 63,
+      "singletonProspects": 0,
+      "singletonFraction": 0.0,
+      "prospectsInGroupsBelowFive": 0,
+      "minimumProfileGroup": 5,
+      "maximumProfileGroup": 9,
+      "profileSizeDistribution": {
+        "5": 56,
+        "7": 3,
+        "8": 1,
+        "9": 3
+      }
+    }
+  },
+  "runtimePolicy": {
+    "policyVersion": "blind-g5-v1",
+    "baseModelVersion": "redraft-2018-model-v1",
+    "playableProspects": 336,
+    "groupCount": 63,
+    "minimumGroupSize": 5,
+    "maximumGroupSize": 9,
+    "initialJointProfileMinimum": 5,
+    "claim": "At least five candidates share each initial released non-ID profile. This is not a guarantee against recognition, elimination, auxiliary data, or collusion."
+  },
+  "hashes": {
+    "lib/scouting.ts": "6a2850cb8f15f6effb6b12fd15f79602e5e0c6a20ff84951e7bdb2695aeba1d6",
+    "analytics/model.json": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0",
+    "data/processed/scenario-2018.json": "b7895eef7862ccfb45cff5f2f4b6e347abd809c1905ed274883d55cc237f59d8"
+  },
+  "limitations": [
+    "Cohort uniqueness is not the probability that a human recognizes a player.",
+    "At least five matching initial profiles does not guarantee protection against elimination, auxiliary information, inferred group membership, repeat-run reveals or collusion.",
+    "Same private daily alias salt enables standardized play but allows shared spoiler dictionaries after any completed attempt.",
+    "Opaque aliases protect direct canonical-ID lookup only; they do not erase football knowledge.",
+    "Grouped measurements describe known values in the group; an individual member may not have completed a measurement.",
+    "Utility and recognition require separate validation. No human recognition experiment has yet been executed."
+  ]
+}

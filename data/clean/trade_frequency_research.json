@@ -1,0 +1,69 @@
+{
+  "verifiedDate": "2026-11-02",
+  "source": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/trades.csv",
+  "counts": [
+    {
+      "year": 2013,
+      "draftStart": "2013-04-25",
+      "draftEnd": "2013-04-27",
+      "distinctTradeIds": 26,
+      "pickRelatedTransactions": 26,
+      "currentYearPicksOnly": 19,
+      "assetRows": 87
+    },
+    {
+      "year": 2014,
+      "draftStart": "2014-05-08",
+      "draftEnd": "2014-05-10",
+      "distinctTradeIds": 26,
+      "pickRelatedTransactions": 26,
+      "currentYearPicksOnly": 19,
+      "assetRows": 83
+    },
+    {
+      "year": 2015,
+      "draftStart": "2015-04-30",
+      "draftEnd": "2015-05-02",
+      "distinctTradeIds": 24,
+      "pickRelatedTransactions": 24,
+      "currentYearPicksOnly": 17,
+      "assetRows": 87
+    },
+    {
+      "year": 2016,
+      "draftStart": "2016-04-28",
+      "draftEnd": "2016-04-30",
+      "distinctTradeIds": 25,
+      "pickRelatedTransactions": 25,
+      "currentYearPicksOnly": 16,
+      "assetRows": 85
+    },
+    {
+      "year": 2017,
+      "draftStart": "2017-04-27",
+      "draftEnd": "2017-04-29",
+      "distinctTradeIds": 38,
+      "pickRelatedTransactions": 38,
+      "currentYearPicksOnly": 29,
+      "assetRows": 127
+    },
+    {
+      "year": 2018,
+      "draftStart": "2018-04-26",
+      "draftEnd": "2018-04-28",
+      "distinctTradeIds": 39,
+      "pickRelatedTransactions": 38,
+      "currentYearPicksOnly": 29,
+      "assetRows": 126
+    }
+  ],
+  "evaluationOnlyYear": 2018,
+  "notes": [
+    "Rows are assets; trade_id groups identify transactions.",
+    "PFR IDs on pick rows are eventual selection identities, not player assets.",
+    "Future pick overall numbers are retrospective and forbidden as contemporaneous estimates.",
+    "2018 includes39 transactions:38 involving picks and one player-only Switzer/Ward swap.",
+    "nfldata license not explicit; private research and derived aggregate counts only.",
+    "Counts are descriptive; CPU policy validation remains a separate empirical task."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "topRankChanges": 2,
+  "minRankCorrelation": 0.6,
+  "policies": [
+    {
+      "name": "CPU utility policy",
+      "score": 51,
+      "mean": -0.359375,
+      "mcse": 0.31988986305175054
+    },
+    {
+      "name": "Highest rookie-role probability",
+      "score": 55,
+      "mean": 0.1796875,
+      "mcse": 0.3268710514414258
+    },
+    {
+      "name": "Quarterback priority",
+      "score": 55,
+      "mean": 0.953125,
+      "mcse": 0.31232463091120255
+    },
+    {
+      "name": "Line priority",
+      "score": 50,
+      "mean": -0.28125,
+      "mcse": 0.31683751564310947
+    }
+  ],
+  "runtime": 16434.657024
+}

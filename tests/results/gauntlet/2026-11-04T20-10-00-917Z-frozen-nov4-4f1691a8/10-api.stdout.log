@@ -1,0 +1,28 @@
+PASS five-year donor labels precede the draft and do not claim independent validation (0.54 ms)
+PASS auth, CSRF, strict schema and body-size limits (17.48 ms)
+PASS versioned creation and request replay (60.51 ms)
+PASS owner isolation, aliases and canonical identifier rejection (69.64 ms)
+PASS group scouting costs once and preserves blind ranges (58.84 ms)
+PASS stale revision and concurrent CAS cannot lose updates (47.37 ms)
+PASS counteroffers and accepted trades conserve ownership (67.26 ms)
+PASS historical full draft, reveal and persisted recovery (761.3 ms)
+PASS retired source versions allow review but block mutations (42.9 ms)
+PROGRESS historical-owner: 64/256 paired runs
+PROGRESS historical-owner: 128/256 paired runs
+PROGRESS historical-owner: 192/256 paired runs
+PROGRESS historical-owner: 256/256 paired runs
+PASS historical 256-pair simulation survives a database reopen (11000.22 ms)
+PASS daily conditions, aliases and one official attempt are shared (62.41 ms)
+PASS identical daily decisions yield identical seven-round drafts (1552.63 ms)
+PROGRESS daily-a: 64/256 paired runs
+PROGRESS daily-a: 128/256 paired runs
+PROGRESS daily-a: 192/256 paired runs
+PROGRESS daily-a: 256/256 paired runs
+PROGRESS daily-b: 64/256 paired runs
+PROGRESS daily-b: 128/256 paired runs
+PROGRESS daily-b: 192/256 paired runs
+PROGRESS daily-b: 256/256 paired runs
+PASS daily 256-pair results remain blind with immutable server scores (19947.61 ms)
+PASS UTC rollover closes old attempts and reveals completed draft identities (122.85 ms)
+PASS frozen daily versions and rate limits are enforced (8.54 ms)
+API_INTEGRATION_REPORT {"passed":15,"failed":0,"requests":304,"durationMs":33826,"sourceChangedDuringRun":false}

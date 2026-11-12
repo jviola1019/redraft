@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="855" viewBox="0 0 1240 855" role="img" aria-labelledby="title desc">
+<title id="title">Logical ERD — principal families</title><desc id="desc">Core relationships only; physical-full.mmd contains every analytical table and foreign key.</desc>
+<rect width="1240" height="855" fill="#f5f2e9"/>
+<style>text{font-family:Arial,sans-serif}.name{font-size:14px;font-weight:700;fill:#1c2927}.field{font-family:monospace;font-size:11px;fill:#526052}.edge{fill:none;stroke:#a4aaa0;stroke-width:1.5}</style>
+<text x="35" y="35" font-size="12" letter-spacing="3" fill="#b53429">REDRAFT / DATA ARCHITECTURE</text><text x="35" y="75" font-size="29" font-weight="700" fill="#1c2927">Logical ERD — principal families</text><text x="35" y="108" font-size="13" fill="#526052">Core relationships only; physical-full.mmd contains every analytical table and foreign key.</text>
+<path class="edge" d="M 170 270 C 170 295, 170 295, 170 320"/><circle cx="170" cy="320" r="3" fill="#b53429"/>
+<path class="edge" d="M 475 270 C 475 295, 475 295, 475 320"/><circle cx="475" cy="320" r="3" fill="#b53429"/>
+<path class="edge" d="M 780 270 C 780 295, 780 295, 780 320"/><circle cx="780" cy="320" r="3" fill="#b53429"/>
+<path class="edge" d="M 1085 270 C 1085 295, 1085 295, 1085 320"/><circle cx="1085" cy="320" r="3" fill="#b53429"/>
+<path class="edge" d="M 170 445 C 170 470, 170 470, 170 495"/><circle cx="170" cy="495" r="3" fill="#b53429"/>
+<path class="edge" d="M 475 445 C 475 470, 475 470, 475 495"/><circle cx="475" cy="495" r="3" fill="#b53429"/>
+<path class="edge" d="M 1085 445 C 1085 470, 780 470, 780 495"/><circle cx="780" cy="495" r="3" fill="#b53429"/>
+<path class="edge" d="M 780 620 C 780 645, 170 645, 170 670"/><circle cx="170" cy="670" r="3" fill="#b53429"/>
+<path class="edge" d="M 780 620 C 780 645, 475 645, 475 670"/><circle cx="475" cy="670" r="3" fill="#b53429"/>
+<path class="edge" d="M 780 620 C 780 645, 780 645, 780 670"/><circle cx="780" cy="670" r="3" fill="#b53429"/>
+<path class="edge" d="M 1085 620 C 1085 645, 1085 645, 1085 670"/><circle cx="1085" cy="670" r="3" fill="#b53429"/>
+<rect x="35" y="145" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="35" y="145" width="4" height="125" fill="#b53429"/><text class="name" x="50" y="171">data_sources</text><path d="M 50 184 H 290" stroke="#deded3"/>
+<text class="field" x="50" y="204">text source_id PK</text>
+<text class="field" x="50" y="220">text provider</text>
+<text class="field" x="50" y="236">text url</text>
+<text class="field" x="50" y="252">text license</text>
+<rect x="340" y="145" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="340" y="145" width="4" height="125" fill="#b53429"/><text class="name" x="355" y="171">players</text><path d="M 355 184 H 595" stroke="#deded3"/>
+<text class="field" x="355" y="204">text player_id PK</text>
+<text class="field" x="355" y="220">text full_name</text>
+<text class="field" x="355" y="236">text birth_date</text>
+<rect x="645" y="145" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="645" y="145" width="4" height="125" fill="#b53429"/><text class="name" x="660" y="171">teams</text><path d="M 660 184 H 900" stroke="#deded3"/>
+<text class="field" x="660" y="204">text team_id PK</text>
+<text class="field" x="660" y="220">text canonical_label</text>
+<rect x="950" y="145" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="950" y="145" width="4" height="125" fill="#b53429"/><text class="name" x="965" y="171">dataset_versions</text><path d="M 965 184 H 1205" stroke="#deded3"/>
+<text class="field" x="965" y="204">text dataset_version PK</text>
+<text class="field" x="965" y="220">text created_at</text>
+<text class="field" x="965" y="236">text manifest_sha256</text>
+<text class="field" x="965" y="252">text pipeline_version</text>
+<rect x="35" y="320" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="35" y="320" width="4" height="125" fill="#b53429"/><text class="name" x="50" y="346">source_documents</text><path d="M 50 359 H 290" stroke="#deded3"/>
+<text class="field" x="50" y="379">text document_id PK</text>
+<text class="field" x="50" y="395">text source_id FK</text>
+<text class="field" x="50" y="411">text url</text>
+<text class="field" x="50" y="427">text published_at</text>
+<rect x="340" y="320" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="340" y="320" width="4" height="125" fill="#b53429"/><text class="name" x="355" y="346">prospects</text><path d="M 355 359 H 595" stroke="#deded3"/>
+<text class="field" x="355" y="379">text prospect_id PK</text>
+<text class="field" x="355" y="395">text player_id FK</text>
+<text class="field" x="355" y="411">integer draft_year FK</text>
+<text class="field" x="355" y="427">text college_id FK</text>
+<rect x="645" y="320" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="645" y="320" width="4" height="125" fill="#b53429"/><text class="name" x="660" y="346">team_identities</text><path d="M 660 359 H 900" stroke="#deded3"/>
+<text class="field" x="660" y="379">text identity_id PK</text>
+<text class="field" x="660" y="395">text team_id FK</text>
+<text class="field" x="660" y="411">text city</text>
+<text class="field" x="660" y="427">text nickname</text>
+<rect x="950" y="320" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="950" y="320" width="4" height="125" fill="#b53429"/><text class="name" x="965" y="346">model_versions</text><path d="M 965 359 H 1205" stroke="#deded3"/>
+<text class="field" x="965" y="379">text model_version PK</text>
+<text class="field" x="965" y="395">text dataset_version FK</text>
+<text class="field" x="965" y="411">text training_cutoff</text>
+<text class="field" x="965" y="427">text training_label_max_available_at</text>
+<rect x="35" y="495" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="35" y="495" width="4" height="125" fill="#b53429"/><text class="name" x="50" y="521">feature_values</text><path d="M 50 534 H 290" stroke="#deded3"/>
+<text class="field" x="50" y="554">text prospect_id PK</text>
+<text class="field" x="50" y="570">text feature_name PK</text>
+<text class="field" x="50" y="586">text feature_version PK</text>
+<text class="field" x="50" y="602">text dataset_version PK</text>
+<rect x="340" y="495" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="340" y="495" width="4" height="125" fill="#b53429"/><text class="name" x="355" y="521">historical_draft_picks</text><path d="M 355 534 H 595" stroke="#deded3"/>
+<text class="field" x="355" y="554">text pick_id PK</text>
+<text class="field" x="355" y="570">integer draft_year FK</text>
+<text class="field" x="355" y="586">text original_team_id FK</text>
+<text class="field" x="355" y="602">text selecting_team_id FK</text>
+<rect x="645" y="495" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="645" y="495" width="4" height="125" fill="#b53429"/><text class="name" x="660" y="521">game_runs</text><path d="M 660 534 H 900" stroke="#deded3"/>
+<text class="field" x="660" y="554">text game_run_id PK</text>
+<text class="field" x="660" y="570">text user_id FK</text>
+<text class="field" x="660" y="586">integer draft_year FK</text>
+<text class="field" x="660" y="602">text team_id FK</text>
+<rect x="950" y="495" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="950" y="495" width="4" height="125" fill="#b53429"/><text class="name" x="965" y="521">disclosure_policies</text><path d="M 965 534 H 1205" stroke="#deded3"/>
+<text class="field" x="965" y="554">text disclosure_version PK</text>
+<text class="field" x="965" y="570">text mode</text>
+<text class="field" x="965" y="586">text field_rules_json</text>
+<text class="field" x="965" y="602">text finalized_at</text>
+<rect x="35" y="670" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="35" y="670" width="4" height="125" fill="#b53429"/><text class="name" x="50" y="696">game_draft_picks</text><path d="M 50 709 H 290" stroke="#deded3"/>
+<text class="field" x="50" y="729">text game_run_id PK</text>
+<text class="field" x="50" y="745">text pick_id PK</text>
+<text class="field" x="50" y="761">text team_id FK</text>
+<text class="field" x="50" y="777">text prospect_id FK</text>
+<rect x="340" y="670" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="340" y="670" width="4" height="125" fill="#b53429"/><text class="name" x="355" y="696">simulation_runs</text><path d="M 355 709 H 595" stroke="#deded3"/>
+<text class="field" x="355" y="729">text simulation_run_id PK</text>
+<text class="field" x="355" y="745">text game_run_id FK</text>
+<text class="field" x="355" y="761">text model_version FK</text>
+<text class="field" x="355" y="777">text dataset_version FK</text>
+<rect x="645" y="670" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="645" y="670" width="4" height="125" fill="#b53429"/><text class="name" x="660" y="696">game_public_prospect_ids</text><path d="M 660 709 H 900" stroke="#deded3"/>
+<text class="field" x="660" y="729">text game_run_id PK</text>
+<text class="field" x="660" y="745">text public_id PK</text>
+<text class="field" x="660" y="761">text prospect_id FK</text>
+<rect x="950" y="670" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="950" y="670" width="4" height="125" fill="#b53429"/><text class="name" x="965" y="696">daily_challenges</text><path d="M 965 709 H 1205" stroke="#deded3"/>
+<text class="field" x="965" y="729">text challenge_date PK</text>
+<text class="field" x="965" y="745">text dataset_version FK</text>
+<text class="field" x="965" y="761">text model_version FK</text>
+<text class="field" x="965" y="777">text disclosure_version FK</text>
+</svg>

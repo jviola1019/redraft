@@ -1,0 +1,35 @@
+✔ analytical schema:20 current relational, temporal and disclosure constraints (126.149129ms)
+BENCHMARK {"node":"v24.22.1","engine":"redraft-research-0.4-r1","draftSelections":256,"replicateSerializedBytes":679418}
+✔ real scenario has32 teams, seven rounds and256 unique selections (0.938718ms)
+✔ seven rounds finish with unique players, ownership and budget invariants (0.325972ms)
+✔ identical config repeats the same draft (199.769251ms)
+✔ different seeds produce different choices (167.306191ms)
+✔ future and invalid availability timestamps are rejected (0.793834ms)
+✔ future actual selections and scores cannot enter CPU choices (169.352277ms)
+✔ only336 combine participants can be selected, scouted or shortlisted (9.655229ms)
+✔ retrospective prospect membership cannot influence CPU policy (169.215564ms)
+✔ duplicate player selections fail (2.613085ms)
+✔ scouting is charged once and never changes prospect talent or RNG (172.457098ms)
+✔ scouting budget cannot be negative (1.238172ms)
+✔ accepted trades conserve assets atomically and leave input unchanged (0.610743ms)
+✔ duplicate trade assets and invalid future selections fail (0.281997ms)
+✔ corrupted persisted eligibility, dates, board and status fail invariants (0.913681ms)
+✔ five schedules preserve team counts, divisional opponents and one game/week (2.764167ms)
+✔ five-season worlds reproduce and league/playoff invariants reconcile (48.813626ms)
+✔ identical baseline allocations have zero paired effect (44.908737ms)
+✔ opposite venue games have independent score shocks (0.261176ms)
+✔ 256 compact replicates fit authoritative storage budget (6.973012ms)
+✔ timeline identifies incomplete and future seasons (0.146556ms)
+✔ supported probabilities are bounded; specialists remain unavailable (3.258559ms)
+✔ QA: reciprocal division games have independent total-score draws (1.647907ms)
+✔ QA: team records and points exactly reconcile to regular-season games (2.817417ms)
+✔ QA: cohort position starts cannot exceed possible role capacity (6.906564ms)
+✔ QA: future observed scores cannot affect generated baseline or alternate world (62.634021ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 26
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1425.714186

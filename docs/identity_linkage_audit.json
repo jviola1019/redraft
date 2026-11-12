@@ -1,0 +1,69 @@
+{
+  "datasetVersion": "nflverse-2018-combine-only-v2",
+  "datasetSha256": "b7895eef7862ccfb45cff5f2f4b6e347abd809c1905ed274883d55cc237f59d8",
+  "population": "336 documented combine participants only; not complete eligible NFL population",
+  "diagnostics": [
+    {
+      "profile": "position_only",
+      "fields": [
+        "position"
+      ],
+      "records": 336,
+      "uniqueRecords": 1,
+      "uniqueFraction": 0.002976190476190476,
+      "minimumEquivalenceClass": 1,
+      "medianRecordEquivalenceClass": 27.0,
+      "note": "Exact equality including nulls; null patterns may contribute to uniqueness."
+    },
+    {
+      "profile": "college_position",
+      "fields": [
+        "college",
+        "position"
+      ],
+      "records": 336,
+      "uniqueRecords": 265,
+      "uniqueFraction": 0.7886904761904762,
+      "minimumEquivalenceClass": 1,
+      "medianRecordEquivalenceClass": 1.0,
+      "note": "Exact equality including nulls; null patterns may contribute to uniqueness."
+    },
+    {
+      "profile": "college_position_height_weight",
+      "fields": [
+        "college",
+        "position",
+        "heightIn",
+        "weightLb"
+      ],
+      "records": 336,
+      "uniqueRecords": 334,
+      "uniqueFraction": 0.9940476190476191,
+      "minimumEquivalenceClass": 1,
+      "medianRecordEquivalenceClass": 1.0,
+      "note": "Exact equality including nulls; null patterns may contribute to uniqueness."
+    },
+    {
+      "profile": "position_exact_measurements",
+      "fields": [
+        "position",
+        "heightIn",
+        "weightLb",
+        "forty",
+        "bench",
+        "verticalIn",
+        "broadJumpIn",
+        "cone",
+        "shuttle"
+      ],
+      "records": 336,
+      "uniqueRecords": 334,
+      "uniqueFraction": 0.9940476190476191,
+      "minimumEquivalenceClass": 1,
+      "medianRecordEquivalenceClass": 1.0,
+      "note": "Exact equality including nulls; null patterns may contribute to uniqueness."
+    }
+  ],
+  "interpretation": "Within-source quasi-identifier uniqueness, not actual human recognition accuracy. Exact public profiles can be linked if an external reference maps these fields to names. Coarsened runtime DTO must be audited separately.",
+  "humanStudy": "not executed"
+}

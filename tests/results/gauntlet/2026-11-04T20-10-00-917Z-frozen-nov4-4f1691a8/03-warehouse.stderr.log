@@ -1,0 +1,25 @@
+test_baseline_only_not_selectable (__main__.WarehouseTests.test_baseline_only_not_selectable) ... ok
+test_daily_fixed_and_unique (__main__.WarehouseTests.test_daily_fixed_and_unique) ... ok
+test_disclosure_policy_fixed (__main__.WarehouseTests.test_disclosure_policy_fixed) ... ok
+test_duplicate_selected_player (__main__.WarehouseTests.test_duplicate_selected_player) ... ok
+test_foreign_key_integrity (__main__.WarehouseTests.test_foreign_key_integrity) ... ok
+test_future_feature (__main__.WarehouseTests.test_future_feature) ... ok
+test_future_training_label (__main__.WarehouseTests.test_future_training_label) ... ok
+test_missing_distinct_from_zero (__main__.WarehouseTests.test_missing_distinct_from_zero) ... ok
+test_model_training_cutoff (__main__.WarehouseTests.test_model_training_cutoff) ... ok
+test_no_self_transfer (__main__.WarehouseTests.test_no_self_transfer) ... ok
+test_ownership_intervals (__main__.WarehouseTests.test_ownership_intervals) ... ok
+test_ownership_update (__main__.WarehouseTests.test_ownership_update) ... ok
+test_public_id_mapping_one_to_one (__main__.WarehouseTests.test_public_id_mapping_one_to_one) ... ok
+test_replicate_unique (__main__.WarehouseTests.test_replicate_unique) ... ok
+test_round_bounds (__main__.WarehouseTests.test_round_bounds) ... ok
+test_selected_asset_locked (__main__.WarehouseTests.test_selected_asset_locked) ... ok
+test_simulation_version_link (__main__.WarehouseTests.test_simulation_version_link) ... ok
+test_unique_pick (__main__.WarehouseTests.test_unique_pick) ... ok
+test_unknown_player_reference (__main__.WarehouseTests.test_unknown_player_reference) ... ok
+test_wrong_owner (__main__.WarehouseTests.test_wrong_owner) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.065s
+
+OK

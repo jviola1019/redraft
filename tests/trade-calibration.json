@@ -1,0 +1,102 @@
+{
+  "historicalTrainYears": [
+    2013,
+    2017
+  ],
+  "currentYearPickOnlyCounts": [
+    19,
+    19,
+    17,
+    16,
+    29
+  ],
+  "targetMean": 20,
+  "candidates": [
+    {
+      "rate": 0.08,
+      "counts": [
+        18,
+        19,
+        10,
+        16,
+        12,
+        12,
+        18,
+        15
+      ],
+      "mean": 15
+    },
+    {
+      "rate": 0.12,
+      "counts": [
+        25,
+        26,
+        19,
+        28,
+        18,
+        20,
+        33,
+        28
+      ],
+      "mean": 24.625
+    },
+    {
+      "rate": 0.16,
+      "counts": [
+        34,
+        32,
+        27,
+        34,
+        29,
+        29,
+        40,
+        37
+      ],
+      "mean": 32.75
+    },
+    {
+      "rate": 0.1,
+      "counts": [
+        20,
+        21,
+        16,
+        20,
+        13,
+        16,
+        26,
+        19
+      ],
+      "mean": 18.875
+    }
+  ],
+  "selectedArrivalRate": 0.1,
+  "independentSeedsValidation": {
+    "rate": 0.1,
+    "counts": [
+      16,
+      21,
+      19,
+      16,
+      19,
+      27,
+      23,
+      22,
+      20,
+      20,
+      24,
+      20,
+      22,
+      25,
+      18,
+      24
+    ],
+    "mean": 21
+  },
+  "limitations": [
+    "Frequency calibration matches one prior-cohort first moment only; partners, prices, urgency and acceptance remain heuristic.",
+    "Historical counts include all teams while simulation reserves the user franchise for user-initiated trades. Fixed-CLE calibration does not establish other-team calibration.",
+    "2018 historical trade counts are held out."
+  ],
+  "reproduce": "Bundle tests/calibrate-trades.ts with esbuild and run from project root. All candidates and validation seeds are rerun.",
+  "engineVersion": "redraft-research-0.4-r1"
+}

@@ -1,0 +1,75 @@
+{
+  "releaseStatus": "blocked",
+  "counts": {
+    "pass": 33,
+    "fail": 9,
+    "unsupported": 7,
+    "stale": 0
+  },
+  "adverse": [
+    {
+      "id": "strict_independent_chronological_validation",
+      "status": "unsupported"
+    },
+    {
+      "id": "coverage95_DL_games",
+      "status": "fail"
+    },
+    {
+      "id": "coverage95_LB_snaps",
+      "status": "fail"
+    },
+    {
+      "id": "conditional_support_QB",
+      "status": "unsupported"
+    },
+    {
+      "id": "coverage95_QB_snaps",
+      "status": "fail"
+    },
+    {
+      "id": "coverage95_QB_games",
+      "status": "fail"
+    },
+    {
+      "id": "conditional_support_RB",
+      "status": "unsupported"
+    },
+    {
+      "id": "conditional_support_TE",
+      "status": "unsupported"
+    },
+    {
+      "id": "coverage95_TE_games",
+      "status": "fail"
+    },
+    {
+      "id": "specialist_quality",
+      "status": "unsupported"
+    },
+    {
+      "id": "forecast_distribution_skill",
+      "status": "unsupported"
+    },
+    {
+      "id": "counterfactual_snaps_to_wins",
+      "status": "unsupported"
+    },
+    {
+      "id": "simulation_distribution_CLE",
+      "status": "fail"
+    },
+    {
+      "id": "simulation_distribution_KC",
+      "status": "fail"
+    },
+    {
+      "id": "simulation_distribution_NE",
+      "status": "fail"
+    },
+    {
+      "id": "simulation_distribution_SF",
+      "status": "fail"
+    }
+  ]
+}

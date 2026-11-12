@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="855" viewBox="0 0 1240 855" role="img" aria-labelledby="title desc">
+<title id="title">Physical core — keys and isolation</title><desc id="desc">52-table analytical target; runtime D1 aggregates are a separate schema with separate tests.</desc>
+<rect width="1240" height="855" fill="#f5f2e9"/>
+<style>text{font-family:Arial,sans-serif}.name{font-size:14px;font-weight:700;fill:#1c2927}.field{font-family:monospace;font-size:11px;fill:#526052}.edge{fill:none;stroke:#a4aaa0;stroke-width:1.5}</style>
+<text x="35" y="35" font-size="12" letter-spacing="3" fill="#b53429">REDRAFT / DATA ARCHITECTURE</text><text x="35" y="75" font-size="29" font-weight="700" fill="#1c2927">Physical core — keys and isolation</text><text x="35" y="108" font-size="13" fill="#526052">52-table analytical target; runtime D1 aggregates are a separate schema with separate tests.</text>
+<path class="edge" d="M 170 270 C 170 295, 170 295, 170 320"/><circle cx="170" cy="320" r="3" fill="#b53429"/>
+<path class="edge" d="M 475 270 C 475 295, 170 295, 170 320"/><circle cx="170" cy="320" r="3" fill="#b53429"/>
+<path class="edge" d="M 780 270 C 780 295, 475 295, 475 320"/><circle cx="475" cy="320" r="3" fill="#b53429"/>
+<path class="edge" d="M 170 445 C 170 470, 170 470, 170 495"/><circle cx="170" cy="495" r="3" fill="#b53429"/>
+<path class="edge" d="M 475 445 C 475 470, 475 470, 475 495"/><circle cx="475" cy="495" r="3" fill="#b53429"/>
+<path class="edge" d="M 780 445 C 780 470, 780 470, 780 495"/><circle cx="780" cy="495" r="3" fill="#b53429"/>
+<path class="edge" d="M 170 620 C 170 645, 170 645, 170 670"/><circle cx="170" cy="670" r="3" fill="#b53429"/>
+<path class="edge" d="M 475 620 C 475 645, 475 645, 475 670"/><circle cx="475" cy="670" r="3" fill="#b53429"/>
+<path class="edge" d="M 170 445 C 170 470, 780 645, 780 670"/><circle cx="780" cy="670" r="3" fill="#b53429"/>
+<rect x="35" y="145" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="35" y="145" width="4" height="125" fill="#b53429"/><text class="name" x="50" y="171">dataset_versions</text><path d="M 50 184 H 290" stroke="#deded3"/>
+<text class="field" x="50" y="204">text dataset_version PK</text>
+<text class="field" x="50" y="220">text created_at</text>
+<text class="field" x="50" y="236">text manifest_sha256</text>
+<text class="field" x="50" y="252">text pipeline_version</text>
+<rect x="340" y="145" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="340" y="145" width="4" height="125" fill="#b53429"/><text class="name" x="355" y="171">model_versions</text><path d="M 355 184 H 595" stroke="#deded3"/>
+<text class="field" x="355" y="204">text model_version PK</text>
+<text class="field" x="355" y="220">text dataset_version FK</text>
+<text class="field" x="355" y="236">text training_cutoff</text>
+<text class="field" x="355" y="252">text training_label_max_available_at</text>
+<rect x="645" y="145" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="645" y="145" width="4" height="125" fill="#b53429"/><text class="name" x="660" y="171">disclosure_policies</text><path d="M 660 184 H 900" stroke="#deded3"/>
+<text class="field" x="660" y="204">text disclosure_version PK</text>
+<text class="field" x="660" y="220">text mode</text>
+<text class="field" x="660" y="236">text field_rules_json</text>
+<text class="field" x="660" y="252">text finalized_at</text>
+<rect x="35" y="320" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="35" y="320" width="4" height="125" fill="#b53429"/><text class="name" x="50" y="346">game_runs</text><path d="M 50 359 H 290" stroke="#deded3"/>
+<text class="field" x="50" y="379">text game_run_id PK</text>
+<text class="field" x="50" y="395">text user_id FK</text>
+<text class="field" x="50" y="411">integer draft_year FK</text>
+<text class="field" x="50" y="427">text team_id FK</text>
+<rect x="340" y="320" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="340" y="320" width="4" height="125" fill="#b53429"/><text class="name" x="355" y="346">daily_challenges</text><path d="M 355 359 H 595" stroke="#deded3"/>
+<text class="field" x="355" y="379">text challenge_date PK</text>
+<text class="field" x="355" y="395">text dataset_version FK</text>
+<text class="field" x="355" y="411">text model_version FK</text>
+<text class="field" x="355" y="427">text disclosure_version FK</text>
+<rect x="645" y="320" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="645" y="320" width="4" height="125" fill="#b53429"/><text class="name" x="660" y="346">prospects</text><path d="M 660 359 H 900" stroke="#deded3"/>
+<text class="field" x="660" y="379">text prospect_id PK</text>
+<text class="field" x="660" y="395">text player_id FK</text>
+<text class="field" x="660" y="411">integer draft_year FK</text>
+<text class="field" x="660" y="427">text college_id FK</text>
+<rect x="35" y="495" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="35" y="495" width="4" height="125" fill="#b53429"/><text class="name" x="50" y="521">game_pick_assets</text><path d="M 50 534 H 290" stroke="#deded3"/>
+<text class="field" x="50" y="554">text game_run_id PK</text>
+<text class="field" x="50" y="570">text pick_id PK</text>
+<text class="field" x="50" y="586">text owner_team_id FK</text>
+<rect x="340" y="495" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="340" y="495" width="4" height="125" fill="#b53429"/><text class="name" x="355" y="521">daily_attempts</text><path d="M 355 534 H 595" stroke="#deded3"/>
+<text class="field" x="355" y="554">text challenge_date PK</text>
+<text class="field" x="355" y="570">text user_id PK</text>
+<text class="field" x="355" y="586">text game_run_id FK</text>
+<text class="field" x="355" y="602">text submitted_at</text>
+<rect x="645" y="495" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="645" y="495" width="4" height="125" fill="#b53429"/><text class="name" x="660" y="521">game_public_prospect_ids</text><path d="M 660 534 H 900" stroke="#deded3"/>
+<text class="field" x="660" y="554">text game_run_id PK</text>
+<text class="field" x="660" y="570">text public_id PK</text>
+<text class="field" x="660" y="586">text prospect_id FK</text>
+<rect x="35" y="670" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="35" y="670" width="4" height="125" fill="#b53429"/><text class="name" x="50" y="696">game_draft_picks</text><path d="M 50 709 H 290" stroke="#deded3"/>
+<text class="field" x="50" y="729">text game_run_id PK</text>
+<text class="field" x="50" y="745">text pick_id PK</text>
+<text class="field" x="50" y="761">text team_id FK</text>
+<text class="field" x="50" y="777">text prospect_id FK</text>
+<rect x="340" y="670" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="340" y="670" width="4" height="125" fill="#b53429"/><text class="name" x="355" y="696">daily_leaderboard_entries</text><path d="M 355 709 H 595" stroke="#deded3"/>
+<text class="field" x="355" y="729">text challenge_date PK</text>
+<text class="field" x="355" y="745">text user_id PK</text>
+<text class="field" x="355" y="761">real score</text>
+<text class="field" x="355" y="777">text score_components_json</text>
+<rect x="645" y="670" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="645" y="670" width="4" height="125" fill="#b53429"/><text class="name" x="660" y="696">simulation_runs</text><path d="M 660 709 H 900" stroke="#deded3"/>
+<text class="field" x="660" y="729">text simulation_run_id PK</text>
+<text class="field" x="660" y="745">text game_run_id FK</text>
+<text class="field" x="660" y="761">text model_version FK</text>
+<text class="field" x="660" y="777">text dataset_version FK</text>
+</svg>

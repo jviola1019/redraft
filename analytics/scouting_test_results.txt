@@ -1,0 +1,18 @@
+✔ all336 playable candidates have shared profiles of5–9; ST conceals the lone LS (1.094216ms)
+✔ every known individual measure is contained in its true shared outward-rounded range (1.461328ms)
+✔ aliases are stable, private-salt-dependent, one-to-one, and independent of reference-only membership (52.929872ms)
+✔ full cumulative browser evidence has at least five identical profiles and no canonical fingerprints (89.266032ms)
+✔ pooling affects CPU/simulation inputs equally; specialist projection stays unavailable (2.300358ms)
+✔ future history, names, colleges, reference-only membership and source-row ordering cannot affect shared profiles (4.985464ms)
+✔ scouting reveals only a range; end of draft reveals historical identity with stable aliases (17.983152ms)
+✔ unsupported sparse position pool fails closed (2.332155ms)
+✔ one scouting action reveals the entire shared profile without additional individual evidence (9.567963ms)
+✔ daily identities remain sealed in ready, simulating and complete states until UTC rollover (266.884308ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 454.185506

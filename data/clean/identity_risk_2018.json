@@ -1,0 +1,219 @@
+{
+  "verifiedDate": "2026-11-02",
+  "population": "336 combine participants only",
+  "method": "Exact equivalence classes of displayed field tuples in the downloaded2018 cohort. Nulls are explicit values. No external attacker model or privacy guarantee.",
+  "comparisons": {
+    "positionOnly": {
+      "fields": [
+        "position"
+      ],
+      "groups": 17,
+      "singletonProspects": 1,
+      "singletonFraction": 0.002976190476190476,
+      "fewerThanFiveMatches": 7,
+      "medianMatchingCandidates": 27,
+      "smallestGroup": 1,
+      "largestGroup": 44
+    },
+    "collegeOnly": {
+      "fields": [
+        "college"
+      ],
+      "groups": 115,
+      "singletonProspects": 56,
+      "singletonFraction": 0.16666666666666666,
+      "fewerThanFiveMatches": 148,
+      "medianMatchingCandidates": 5,
+      "smallestGroup": 1,
+      "largestGroup": 14
+    },
+    "collegePosition": {
+      "fields": [
+        "position",
+        "college"
+      ],
+      "groups": 299,
+      "singletonProspects": 265,
+      "singletonFraction": 0.7886904761904762,
+      "fewerThanFiveMatches": 336,
+      "medianMatchingCandidates": 1,
+      "smallestGroup": 1,
+      "largestGroup": 4
+    },
+    "positionExactBody": {
+      "fields": [
+        "position",
+        "heightIn",
+        "weightLb"
+      ],
+      "groups": 308,
+      "singletonProspects": 285,
+      "singletonFraction": 0.8482142857142857,
+      "fewerThanFiveMatches": 336,
+      "medianMatchingCandidates": 1,
+      "smallestGroup": 1,
+      "largestGroup": 3
+    },
+    "positionExactMeasurements": {
+      "fields": [
+        "position",
+        "heightIn",
+        "weightLb",
+        "forty",
+        "bench",
+        "verticalIn",
+        "broadJumpIn",
+        "cone",
+        "shuttle"
+      ],
+      "groups": 335,
+      "singletonProspects": 334,
+      "singletonFraction": 0.9940476190476191,
+      "fewerThanFiveMatches": 336,
+      "medianMatchingCandidates": 1,
+      "smallestGroup": 1,
+      "largestGroup": 2
+    },
+    "positionCoarseBody": {
+      "fields": [
+        "position",
+        "heightIn",
+        "weightLb"
+      ],
+      "groups": 86,
+      "singletonProspects": 31,
+      "singletonFraction": 0.09226190476190477,
+      "fewerThanFiveMatches": 101,
+      "medianMatchingCandidates": 7,
+      "smallestGroup": 1,
+      "largestGroup": 19
+    },
+    "positionCoarseBodySpeed": {
+      "fields": [
+        "position",
+        "heightIn",
+        "weightLb",
+        "forty"
+      ],
+      "groups": 169,
+      "singletonProspects": 95,
+      "singletonFraction": 0.28273809523809523,
+      "fewerThanFiveMatches": 267,
+      "medianMatchingCandidates": 3,
+      "smallestGroup": 1,
+      "largestGroup": 9
+    }
+  },
+  "collegePositionByPosition": [
+    {
+      "position": "C",
+      "prospects": 9,
+      "collegeSingletons": 7,
+      "fraction": 0.7777777777777778
+    },
+    {
+      "position": "CB",
+      "prospects": 43,
+      "collegeSingletons": 31,
+      "fraction": 0.7209302325581395
+    },
+    {
+      "position": "DE",
+      "prospects": 16,
+      "collegeSingletons": 12,
+      "fraction": 0.75
+    },
+    {
+      "position": "DT",
+      "prospects": 24,
+      "collegeSingletons": 16,
+      "fraction": 0.6666666666666666
+    },
+    {
+      "position": "EDGE",
+      "prospects": 23,
+      "collegeSingletons": 17,
+      "fraction": 0.7391304347826086
+    },
+    {
+      "position": "G",
+      "prospects": 14,
+      "collegeSingletons": 14,
+      "fraction": 1.0
+    },
+    {
+      "position": "K",
+      "prospects": 4,
+      "collegeSingletons": 4,
+      "fraction": 1.0
+    },
+    {
+      "position": "LB",
+      "prospects": 31,
+      "collegeSingletons": 21,
+      "fraction": 0.6774193548387096
+    },
+    {
+      "position": "LS",
+      "prospects": 1,
+      "collegeSingletons": 1,
+      "fraction": 1.0
+    },
+    {
+      "position": "OL",
+      "prospects": 2,
+      "collegeSingletons": 2,
+      "fraction": 1.0
+    },
+    {
+      "position": "P",
+      "prospects": 7,
+      "collegeSingletons": 7,
+      "fraction": 1.0
+    },
+    {
+      "position": "QB",
+      "prospects": 19,
+      "collegeSingletons": 19,
+      "fraction": 1.0
+    },
+    {
+      "position": "RB",
+      "prospects": 32,
+      "collegeSingletons": 22,
+      "fraction": 0.6875
+    },
+    {
+      "position": "S",
+      "prospects": 27,
+      "collegeSingletons": 25,
+      "fraction": 0.9259259259259259
+    },
+    {
+      "position": "T",
+      "prospects": 23,
+      "collegeSingletons": 21,
+      "fraction": 0.9130434782608695
+    },
+    {
+      "position": "TE",
+      "prospects": 17,
+      "collegeSingletons": 17,
+      "fraction": 1.0
+    },
+    {
+      "position": "WR",
+      "prospects": 44,
+      "collegeSingletons": 29,
+      "fraction": 0.6590909090909091
+    }
+  ],
+  "interpretation": [
+    "College plus position often uniquely identifies a real prospect within this cohort.",
+    "Hiding names alone is not anonymity. Hiding college reduces an easy recognition clue but exact measurements still frequently identify athletes.",
+    "Use per-run opaque browser IDs; canonical stable hashes derived from names and college can be dictionary-matched if exposed.",
+    "Coarsen or withhold information explicitly instead of fabricating statistics.",
+    "Measure inference utility separately; fewer singleton groups does not establish player recognition is impossible.",
+    "Specific target-model probabilities or position rarity can remain identifying."
+  ]
+}

@@ -1,0 +1,846 @@
+{
+  "asOf": "2026-11-04",
+  "sourceSha256": "b4dd94e697ff7f75b477ed69711ae7613a95257ebde60e496c8e2d21095f07a3",
+  "method": "Game-weighted empirical rates from completed prior seasons. MAE across season origins.",
+  "selection2005Through2012": {
+    "3": {
+      "pointsPerGame": 1.089029947916667,
+      "zeroScoreRate": 0.005696614583333334
+    },
+    "5": {
+      "pointsPerGame": 1.169618713801647,
+      "zeroScoreRate": 0.006803564231550036
+    },
+    "10": {
+      "pointsPerGame": 1.4877338675886032,
+      "zeroScoreRate": 0.006777671590133551
+    },
+    "None": {
+      "pointsPerGame": 1.567135326686782,
+      "zeroScoreRate": 0.006977119896869845
+    }
+  },
+  "selectedWindows": {
+    "pointsPerGame": 3,
+    "zeroScoreRate": 3
+  },
+  "assessment2013Through2017": {
+    "3": {
+      "pointsPerGame": 1.019791666666667,
+      "zeroScoreRate": 0.0062499999999999995
+    },
+    "5": {
+      "pointsPerGame": 1.1709374999999995,
+      "zeroScoreRate": 0.0063281249999999995
+    },
+    "10": {
+      "pointsPerGame": 1.8907812499999992,
+      "zeroScoreRate": 0.0074218750000000005
+    },
+    "None": {
+      "pointsPerGame": 2.1951138653936724,
+      "zeroScoreRate": 0.007687823563834208
+    }
+  },
+  "reusedEvaluation2018Through2025": {
+    "3": [
+      {
+        "year": 2018,
+        "fitSeasons": [
+          2015,
+          2016,
+          2017
+        ],
+        "forecast": {
+          "pointsPerGame": 44.87109375,
+          "zeroScoreRate": 0.010416666666666666
+        },
+        "actual": {
+          "pointsPerGame": 46.6875,
+          "zeroScoreRate": 0.015625
+        },
+        "games": 256
+      },
+      {
+        "year": 2019,
+        "fitSeasons": [
+          2016,
+          2017,
+          2018
+        ],
+        "forecast": {
+          "pointsPerGame": 45.225260416666664,
+          "zeroScoreRate": 0.014322916666666666
+        },
+        "actual": {
+          "pointsPerGame": 45.625,
+          "zeroScoreRate": 0.0078125
+        },
+        "games": 256
+      },
+      {
+        "year": 2020,
+        "fitSeasons": [
+          2017,
+          2018,
+          2019
+        ],
+        "forecast": {
+          "pointsPerGame": 45.25,
+          "zeroScoreRate": 0.014973958333333334
+        },
+        "actual": {
+          "pointsPerGame": 49.578125,
+          "zeroScoreRate": 0.005859375
+        },
+        "games": 256
+      },
+      {
+        "year": 2021,
+        "fitSeasons": [
+          2018,
+          2019,
+          2020
+        ],
+        "forecast": {
+          "pointsPerGame": 47.296875,
+          "zeroScoreRate": 0.009765625
+        },
+        "actual": {
+          "pointsPerGame": 45.963235294117645,
+          "zeroScoreRate": 0.014705882352941176
+        },
+        "games": 272
+      },
+      {
+        "year": 2022,
+        "fitSeasons": [
+          2019,
+          2020,
+          2021
+        ],
+        "forecast": {
+          "pointsPerGame": 47.03316326530612,
+          "zeroScoreRate": 0.009566326530612245
+        },
+        "actual": {
+          "pointsPerGame": 43.76383763837639,
+          "zeroScoreRate": 0.007380073800738007
+        },
+        "games": 271
+      },
+      {
+        "year": 2023,
+        "fitSeasons": [
+          2020,
+          2021,
+          2022
+        ],
+        "forecast": {
+          "pointsPerGame": 46.37546933667084,
+          "zeroScoreRate": 0.009386733416770964
+        },
+        "actual": {
+          "pointsPerGame": 43.536764705882355,
+          "zeroScoreRate": 0.014705882352941176
+        },
+        "games": 272
+      },
+      {
+        "year": 2024,
+        "fitSeasons": [
+          2021,
+          2022,
+          2023
+        ],
+        "forecast": {
+          "pointsPerGame": 44.42208588957055,
+          "zeroScoreRate": 0.012269938650306749
+        },
+        "actual": {
+          "pointsPerGame": 45.8235294117647,
+          "zeroScoreRate": 0.003676470588235294
+        },
+        "games": 272
+      },
+      {
+        "year": 2025,
+        "fitSeasons": [
+          2022,
+          2023,
+          2024
+        ],
+        "forecast": {
+          "pointsPerGame": 44.37546012269939,
+          "zeroScoreRate": 0.008588957055214725
+        },
+        "actual": {
+          "pointsPerGame": 46.025735294117645,
+          "zeroScoreRate": 0.012867647058823529
+        },
+        "games": 272
+      }
+    ],
+    "5": [
+      {
+        "year": 2018,
+        "fitSeasons": [
+          2013,
+          2014,
+          2015,
+          2016,
+          2017
+        ],
+        "forecast": {
+          "pointsPerGame": 45.32109375,
+          "zeroScoreRate": 0.01015625
+        },
+        "actual": {
+          "pointsPerGame": 46.6875,
+          "zeroScoreRate": 0.015625
+        },
+        "games": 256
+      },
+      {
+        "year": 2019,
+        "fitSeasons": [
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "forecast": {
+          "pointsPerGame": 45.2953125,
+          "zeroScoreRate": 0.012109375
+        },
+        "actual": {
+          "pointsPerGame": 45.625,
+          "zeroScoreRate": 0.0078125
+        },
+        "games": 256
+      },
+      {
+        "year": 2020,
+        "fitSeasons": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "forecast": {
+          "pointsPerGame": 45.38515625,
+          "zeroScoreRate": 0.0109375
+        },
+        "actual": {
+          "pointsPerGame": 49.578125,
+          "zeroScoreRate": 0.005859375
+        },
+        "games": 256
+      },
+      {
+        "year": 2021,
+        "fitSeasons": [
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "forecast": {
+          "pointsPerGame": 46.17578125,
+          "zeroScoreRate": 0.011328125
+        },
+        "actual": {
+          "pointsPerGame": 45.963235294117645,
+          "zeroScoreRate": 0.014705882352941176
+        },
+        "games": 272
+      },
+      {
+        "year": 2022,
+        "fitSeasons": [
+          2017,
+          2018,
+          2019,
+          2020,
+          2021
+        ],
+        "forecast": {
+          "pointsPerGame": 46.254629629629626,
+          "zeroScoreRate": 0.013117283950617283
+        },
+        "actual": {
+          "pointsPerGame": 43.76383763837639,
+          "zeroScoreRate": 0.007380073800738007
+        },
+        "games": 271
+      },
+      {
+        "year": 2023,
+        "fitSeasons": [
+          2018,
+          2019,
+          2020,
+          2021,
+          2022
+        ],
+        "forecast": {
+          "pointsPerGame": 46.289855072463766,
+          "zeroScoreRate": 0.010297482837528604
+        },
+        "actual": {
+          "pointsPerGame": 43.536764705882355,
+          "zeroScoreRate": 0.014705882352941176
+        },
+        "games": 272
+      },
+      {
+        "year": 2024,
+        "fitSeasons": [
+          2019,
+          2020,
+          2021,
+          2022,
+          2023
+        ],
+        "forecast": {
+          "pointsPerGame": 45.64883195177091,
+          "zeroScoreRate": 0.010173323285606632
+        },
+        "actual": {
+          "pointsPerGame": 45.8235294117647,
+          "zeroScoreRate": 0.003676470588235294
+        },
+        "games": 272
+      },
+      {
+        "year": 2025,
+        "fitSeasons": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "forecast": {
+          "pointsPerGame": 45.68875651526433,
+          "zeroScoreRate": 0.009307520476545048
+        },
+        "actual": {
+          "pointsPerGame": 46.025735294117645,
+          "zeroScoreRate": 0.012867647058823529
+        },
+        "games": 272
+      }
+    ],
+    "10": [
+      {
+        "year": 2018,
+        "fitSeasons": [
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017
+        ],
+        "forecast": {
+          "pointsPerGame": 44.754296875,
+          "zeroScoreRate": 0.0115234375
+        },
+        "actual": {
+          "pointsPerGame": 46.6875,
+          "zeroScoreRate": 0.015625
+        },
+        "games": 256
+      },
+      {
+        "year": 2019,
+        "fitSeasons": [
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "forecast": {
+          "pointsPerGame": 45.0171875,
+          "zeroScoreRate": 0.0119140625
+        },
+        "actual": {
+          "pointsPerGame": 45.625,
+          "zeroScoreRate": 0.0078125
+        },
+        "games": 256
+      },
+      {
+        "year": 2020,
+        "fitSeasons": [
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "forecast": {
+          "pointsPerGame": 45.286328125,
+          "zeroScoreRate": 0.010546875
+        },
+        "actual": {
+          "pointsPerGame": 49.578125,
+          "zeroScoreRate": 0.005859375
+        },
+        "games": 256
+      },
+      {
+        "year": 2021,
+        "fitSeasons": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "forecast": {
+          "pointsPerGame": 45.83671875,
+          "zeroScoreRate": 0.01015625
+        },
+        "actual": {
+          "pointsPerGame": 45.963235294117645,
+          "zeroScoreRate": 0.014705882352941176
+        },
+        "games": 272
+      },
+      {
+        "year": 2022,
+        "fitSeasons": [
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021
+        ],
+        "forecast": {
+          "pointsPerGame": 45.99689440993789,
+          "zeroScoreRate": 0.010675465838509316
+        },
+        "actual": {
+          "pointsPerGame": 43.76383763837639,
+          "zeroScoreRate": 0.007380073800738007
+        },
+        "games": 271
+      },
+      {
+        "year": 2023,
+        "fitSeasons": [
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022
+        ],
+        "forecast": {
+          "pointsPerGame": 45.81126978000772,
+          "zeroScoreRate": 0.010227711308375145
+        },
+        "actual": {
+          "pointsPerGame": 43.536764705882355,
+          "zeroScoreRate": 0.014705882352941176
+        },
+        "games": 272
+      },
+      {
+        "year": 2024,
+        "fitSeasons": [
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023
+        ],
+        "forecast": {
+          "pointsPerGame": 45.475258918296895,
+          "zeroScoreRate": 0.011123897199846567
+        },
+        "actual": {
+          "pointsPerGame": 45.8235294117647,
+          "zeroScoreRate": 0.003676470588235294
+        },
+        "games": 272
+      },
+      {
+        "year": 2025,
+        "fitSeasons": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "forecast": {
+          "pointsPerGame": 45.54060236370568,
+          "zeroScoreRate": 0.010102935569958064
+        },
+        "actual": {
+          "pointsPerGame": 46.025735294117645,
+          "zeroScoreRate": 0.012867647058823529
+        },
+        "games": 272
+      }
+    ],
+    "None": [
+      {
+        "year": 2018,
+        "fitSeasons": [
+          1999,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017
+        ],
+        "forecast": {
+          "pointsPerGame": 43.42417355371901,
+          "zeroScoreRate": 0.014256198347107438
+        },
+        "actual": {
+          "pointsPerGame": 46.6875,
+          "zeroScoreRate": 0.015625
+        },
+        "games": 256
+      },
+      {
+        "year": 2019,
+        "fitSeasons": [
+          1999,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "forecast": {
+          "pointsPerGame": 43.58810832025118,
+          "zeroScoreRate": 0.014324960753532182
+        },
+        "actual": {
+          "pointsPerGame": 45.625,
+          "zeroScoreRate": 0.0078125
+        },
+        "games": 256
+      },
+      {
+        "year": 2020,
+        "fitSeasons": [
+          1999,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "forecast": {
+          "pointsPerGame": 43.68553811659193,
+          "zeroScoreRate": 0.014013452914798207
+        },
+        "actual": {
+          "pointsPerGame": 49.578125,
+          "zeroScoreRate": 0.005859375
+        },
+        "games": 256
+      },
+      {
+        "year": 2021,
+        "fitSeasons": [
+          1999,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "forecast": {
+          "pointsPerGame": 43.95452924393723,
+          "zeroScoreRate": 0.013641226818830243
+        },
+        "actual": {
+          "pointsPerGame": 45.963235294117645,
+          "zeroScoreRate": 0.014705882352941176
+        },
+        "games": 272
+      },
+      {
+        "year": 2022,
+        "fitSeasons": [
+          1999,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021
+        ],
+        "forecast": {
+          "pointsPerGame": 44.047448979591834,
+          "zeroScoreRate": 0.01369047619047619
+        },
+        "actual": {
+          "pointsPerGame": 43.76383763837639,
+          "zeroScoreRate": 0.007380073800738007
+        },
+        "games": 271
+      },
+      {
+        "year": 2023,
+        "fitSeasons": [
+          1999,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022
+        ],
+        "forecast": {
+          "pointsPerGame": 44.03495366607056,
+          "zeroScoreRate": 0.01341245325963258
+        },
+        "actual": {
+          "pointsPerGame": 43.536764705882355,
+          "zeroScoreRate": 0.014705882352941176
+        },
+        "games": 272
+      },
+      {
+        "year": 2024,
+        "fitSeasons": [
+          1999,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023
+        ],
+        "forecast": {
+          "pointsPerGame": 44.0138564533707,
+          "zeroScoreRate": 0.013467227152420987
+        },
+        "actual": {
+          "pointsPerGame": 45.8235294117647,
+          "zeroScoreRate": 0.003676470588235294
+        },
+        "games": 272
+      },
+      {
+        "year": 2025,
+        "fitSeasons": [
+          1999,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "forecast": {
+          "pointsPerGame": 44.0873786407767,
+          "zeroScoreRate": 0.013069454817027632
+        },
+        "actual": {
+          "pointsPerGame": 46.025735294117645,
+          "zeroScoreRate": 0.012867647058823529
+        },
+        "games": 272
+      }
+    ]
+  },
+  "reusedEvaluationMAE": {
+    "3": {
+      "pointsPerGame": 2.1297074363182897,
+      "zeroScoreRate": 0.0057688938022499026
+    },
+    "5": {
+      "pointsPerGame": 1.4821458815705135,
+      "zeroScoreRate": 0.004803012037235355
+    },
+    "10": {
+      "pointsPerGame": 1.5375367892105354,
+      "zeroScoreRate": 0.004428244816969407
+    },
+    "None": {
+      "pointsPerGame": 2.216417621594612,
+      "zeroScoreRate": 0.004337048957596307
+    }
+  },
+  "limitations": "Aggregate benchmarks only. Runtime team/game distributions, player uncertainty, ranking sensitivity and causal validity require separate evidence."
+}

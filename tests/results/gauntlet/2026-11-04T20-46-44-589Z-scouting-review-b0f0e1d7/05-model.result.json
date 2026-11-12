@@ -1,0 +1,19 @@
+{
+  "id": "model",
+  "kind": "structural",
+  "command": [
+    "python3",
+    "analytics/test_models.py"
+  ],
+  "startedAt": "2026-11-04T20:46:48.645Z",
+  "finishedAt": "2026-11-04T20:46:51.491Z",
+  "durationMs": 2846.330752,
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "error": null,
+  "status": "passed",
+  "stdout": "05-model.stdout.log",
+  "stderr": "05-model.stderr.log",
+  "artifacts": []
+}

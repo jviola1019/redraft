@@ -1,0 +1,42 @@
+{
+  "selected": "trailing3",
+  "currentMeanTotal": 43.54895104895105,
+  "candidateMeanTotal2018": 44.87109375,
+  "frozenFiveSeasonAssessment": {
+    "expanding": {
+      "origin": 2013,
+      "futureSeasons": [
+        2013,
+        2017
+      ],
+      "frozenPrediction": 42.82548309178744,
+      "observedAnnualMeans": [
+        46.81640625,
+        45.17578125,
+        45.625,
+        45.55078125,
+        43.4375
+      ],
+      "fiveSeasonMeanError": -2.495610658212563,
+      "annualMeanRMSE": 2.723618135999153
+    },
+    "trailing3": {
+      "origin": 2013,
+      "futureSeasons": [
+        2013,
+        2017
+      ],
+      "frozenPrediction": 44.6484375,
+      "observedAnnualMeans": [
+        46.81640625,
+        45.17578125,
+        45.625,
+        45.55078125,
+        43.4375
+      ],
+      "fiveSeasonMeanError": -0.6726562500000028,
+      "annualMeanRMSE": 1.281596513737236
+    }
+  },
+  "futureOutcomePoisoningTest": "passed"
+}

@@ -1,0 +1,60 @@
+{
+  "datasetVersion": "nflverse-2018-combine-only-v2",
+  "verifiedDate": "2026-11-02",
+  "teams": 32,
+  "combineProspects": 336,
+  "canonicalProspects": 375,
+  "referenceOnlyProspects": 39,
+  "draftPicks": 256,
+  "compensatoryPicks": 32,
+  "roundCounts": {
+    "1": 32,
+    "2": 32,
+    "3": 36,
+    "4": 37,
+    "5": 37,
+    "6": 44,
+    "7": 38
+  },
+  "games": 1639,
+  "gamesBySeason": {
+    "2017": 267,
+    "2018": 267,
+    "2019": 267,
+    "2020": 269,
+    "2021": 285,
+    "2022": 284
+  },
+  "missingPlayableMeasurements": {
+    "heightIn": 0,
+    "weightLb": 0,
+    "forty": 66,
+    "bench": 93,
+    "verticalIn": 79,
+    "broadJumpIn": 83,
+    "cone": 152,
+    "shuttle": 140
+  },
+  "duplicateProspectIds": 0,
+  "duplicateActualSelections": 0,
+  "entityResolution": {
+    "exact_pfr_id": 212,
+    "exact_normalized_name_and_college": 3,
+    "audited_alias_and_college": 2
+  },
+  "warnings": [
+    "Playable pool restricted to336 combine participants. 39 non-combine draftees appear only in actual-history/baseline references. Missing non-combine eligible players limit historical completeness. Research alpha; no fully reconstructed eligible population.",
+    "Current NFL article was modified after cutoff. Independently audited transaction reconstruction supports ownership; original publication timestamps remain incomplete.",
+    "Annual2017 roster is not an April2018 roster snapshot."
+  ],
+  "checksPassed": [
+    "256 sequential picks",
+    "32 compensatory picks",
+    "seven true round lengths",
+    "32 teams",
+    "all2017 teams16 games",
+    "unique prospectIDs",
+    "unique actual selections",
+    "actual foreign keys resolved"
+  ]
+}

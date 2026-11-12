@@ -1,0 +1,548 @@
+erDiagram
+  coaching_staff {
+    text appointment_id PK
+    text team_id FK
+    text person_name
+    text role
+    text valid_from
+    text valid_to
+    text document_id FK
+  }
+  college_player_seasons {
+    text player_id PK
+    text college_id PK
+    integer season PK
+    text position
+    text conference
+  }
+  college_statistics {
+    text player_id PK
+    text college_id PK
+    integer season PK
+    text statistic PK
+    real value
+    text unit
+    text missing_reason
+    text available_at
+    text document_id FK
+  }
+  colleges {
+    text college_id PK
+    text name
+  }
+  combine_results {
+    text prospect_id PK
+    text measurement PK
+    real value
+    text unit
+    text missing_reason
+    text measured_at
+    text available_at
+    text document_id FK
+  }
+  contracts {
+    text contract_id PK
+    text player_id FK
+    text team_id FK
+    text starts_at
+    text ends_at
+    text announced_at
+    real cap_charge_usd
+    text document_id FK
+  }
+  daily_attempts {
+    text challenge_date PK
+    text user_id PK
+    text game_run_id FK
+    text submitted_at
+  }
+  daily_challenges {
+    text challenge_date PK
+    text scenario_json
+    text dataset_version FK
+    text model_version FK
+    text engine_version
+    text disclosure_version FK
+    text seed_commitment
+    text scoring_version
+    integer ensemble_size
+    text finalized_at
+  }
+  daily_leaderboard_entries {
+    text challenge_date PK
+    text user_id PK
+    real score
+    text score_components_json
+    text scoring_version
+    text result_sha256
+  }
+  data_quality_issues {
+    text issue_id PK
+    text dataset_version FK
+    text entity_type
+    text entity_id
+    text field_name
+    text severity
+    text description
+    text resolution
+  }
+  data_sources {
+    text source_id PK
+    text provider
+    text url
+    text license
+    text redistribution_status
+    text verified_at
+  }
+  dataset_versions {
+    text dataset_version PK
+    text created_at
+    text manifest_sha256
+    text pipeline_version
+    text validation_status
+  }
+  disclosure_policies {
+    text disclosure_version PK
+    text mode
+    text field_rules_json
+    text finalized_at
+  }
+  draft_classes {
+    integer draft_year PK
+    text draft_starts_at
+    text information_cutoff
+    text dataset_version FK
+  }
+  draft_pick_ownership {
+    text pick_id PK
+    text valid_from PK
+    text valid_to
+    text owner_team_id FK
+    text document_id FK
+  }
+  fact_provenance {
+    text fact_id PK
+    text entity_type
+    text entity_id
+    text field_name
+    text document_id FK
+    text dataset_version FK
+    text transformation
+    text value_kind
+  }
+  feature_definitions {
+    text feature_name PK
+    text feature_version PK
+    text description
+    text unit
+    text derivation
+  }
+  feature_values {
+    text prospect_id PK
+    text feature_name PK
+    text feature_version PK
+    text dataset_version PK
+    real value
+    text missing_reason
+    text effective_at
+    text available_at
+    text permitted_cutoff
+    text document_id FK
+  }
+  game_draft_picks {
+    text game_run_id PK
+    text pick_id PK
+    text team_id FK
+    text prospect_id FK
+    text selected_at
+  }
+  game_pick_assets {
+    text game_run_id PK
+    text pick_id PK
+    text owner_team_id FK
+  }
+  game_public_prospect_ids {
+    text game_run_id PK
+    text public_id PK
+    text prospect_id FK
+  }
+  game_reveal_events {
+    text event_id PK
+    text game_run_id FK
+    text prospect_id FK
+    text disclosure_version FK
+    text revealed_fields_json
+    text created_at
+  }
+  game_runs {
+    text game_run_id PK
+    text user_id FK
+    text mode
+    integer draft_year FK
+    text team_id FK
+    text seed
+    text dataset_version FK
+    text model_version FK
+    text engine_version
+    text disclosure_version FK
+    text scenario_json
+    text challenge_date FK
+    integer revision
+    text state
+  }
+  game_saves {
+    text game_run_id PK
+    integer revision PK
+    text state_json
+    text state_sha256
+    text created_at
+  }
+  game_scouting_actions {
+    text action_id PK
+    text game_run_id FK
+    text prospect_id FK
+    integer resource_cost
+    text action_kind
+    text created_at
+  }
+  game_trade_assets {
+    text trade_id PK
+    text game_run_id FK
+    text pick_id PK
+    text from_team_id FK
+    text to_team_id FK
+  }
+  game_trades {
+    text trade_id PK
+    text game_run_id FK
+    text from_team_id FK
+    text to_team_id FK
+    integer transaction_revision
+    text accepted_at
+  }
+  historical_comparisons {
+    text game_run_id PK
+    text metric_name PK
+    real actual
+    real baseline
+    real alternate
+    real mean_paired_difference
+    real lower_difference
+    real upper_difference
+    integer ensemble_count
+  }
+  historical_draft_picks {
+    text pick_id PK
+    integer draft_year FK
+    integer round
+    integer overall
+    text original_team_id FK
+    text selecting_team_id FK
+    text prospect_id FK
+    integer compensatory
+    integer forfeited
+    text executed_at
+  }
+  historical_games {
+    text game_id PK
+    integer season FK
+    integer week
+    text game_type
+    text starts_at
+    text home_team_id FK
+    text away_team_id FK
+    integer home_score
+    integer away_score
+    text document_id FK
+  }
+  historical_player_seasons {
+    text player_id PK
+    integer season PK
+    integer games_played
+    integer games_started
+    text metric_name PK
+    real metric_value
+    text label_available_at
+    text document_id FK
+  }
+  historical_team_seasons {
+    text team_id PK
+    integer season PK
+    integer wins
+    integer losses
+    integer ties
+    integer points_for
+    integer points_against
+    text document_id FK
+  }
+  historical_trades {
+    text trade_id PK
+    text effective_at
+    text announced_at
+    text document_id FK
+  }
+  injury_events {
+    text injury_id PK
+    text player_id FK
+    text event_at
+    text available_at
+    text description
+    text document_id FK
+  }
+  model_predictions {
+    text prediction_id PK
+    text model_version FK
+    text prospect_id FK
+    text cutoff
+    text target
+    real estimate
+    real lower_bound
+    real upper_bound
+  }
+  model_versions {
+    text model_version PK
+    text dataset_version FK
+    text training_cutoff
+    text training_label_max_available_at
+    text artifact_sha256
+    text methodology
+  }
+  player_identifiers {
+    text namespace PK
+    text external_id PK
+    text player_id FK
+    text match_method
+  }
+  players {
+    text player_id PK
+    text full_name
+    text birth_date
+  }
+  prospects {
+    text prospect_id PK
+    text player_id FK
+    integer draft_year FK
+    text college_id FK
+    text position
+    text eligible_at
+    text eligibility_evidence
+    integer playable
+  }
+  roster_memberships {
+    text roster_id PK
+    text player_id FK
+    text team_id FK
+    text valid_from
+    text valid_to
+    text roster_status
+    text document_id FK
+  }
+  scouting_reports {
+    text report_id PK
+    text prospect_id FK
+    text published_at
+    text document_id FK
+    text permitted_excerpt
+    text license_notes
+  }
+  seasons {
+    integer season PK
+    text starts_at
+    text completed_at
+    integer regular_season_games
+    integer playoff_teams
+  }
+  simulation_games {
+    text simulation_run_id PK
+    text game_id PK
+    integer season
+    text game_type
+    text home_team_id FK
+    text away_team_id FK
+    integer home_score
+    integer away_score
+  }
+  simulation_player_seasons {
+    text simulation_run_id PK
+    text player_id PK
+    text team_id FK
+    integer season PK
+    text metric_name PK
+    real metric_value
+  }
+  simulation_runs {
+    text simulation_run_id PK
+    text game_run_id FK
+    text branch
+    integer replicate
+    text seed
+    text model_version FK
+    text dataset_version FK
+    text configuration_json
+    text status
+  }
+  simulation_team_seasons {
+    text simulation_run_id PK
+    text team_id PK
+    integer season PK
+    integer wins
+    integer losses
+    integer ties
+  }
+  source_documents {
+    text document_id PK
+    text source_id FK
+    text url
+    text published_at
+    text retrieved_at
+    text sha256
+    text availability_status
+  }
+  team_identities {
+    text identity_id PK
+    text team_id FK
+    text city
+    text nickname
+    text abbreviation
+    text valid_from
+    text valid_to
+  }
+  team_seasons {
+    text team_id PK
+    integer season PK
+    text identity_id FK
+    text conference
+    text division
+  }
+  teams {
+    text team_id PK
+    text canonical_label
+  }
+  trade_assets {
+    text trade_id PK
+    integer asset_index PK
+    text from_team_id FK
+    text to_team_id FK
+    text asset_type
+    text pick_id FK
+    text player_id FK
+    text condition_text
+  }
+  users {
+    text user_id PK
+    text created_at
+  }
+  source_documents ||--o{ coaching_staff : "document_id"
+  teams ||--o{ coaching_staff : "team_id"
+  colleges ||--o{ college_player_seasons : "college_id"
+  players ||--o{ college_player_seasons : "player_id"
+  college_player_seasons ||--o{ college_statistics : "player_id"
+  college_player_seasons ||--o{ college_statistics : "college_id"
+  college_player_seasons ||--o{ college_statistics : "season"
+  source_documents ||--o{ college_statistics : "document_id"
+  source_documents ||--o{ combine_results : "document_id"
+  prospects ||--o{ combine_results : "prospect_id"
+  source_documents ||--o{ contracts : "document_id"
+  teams ||--o{ contracts : "team_id"
+  players ||--o{ contracts : "player_id"
+  game_runs ||--o{ daily_attempts : "game_run_id"
+  users ||--o{ daily_attempts : "user_id"
+  daily_challenges ||--o{ daily_attempts : "challenge_date"
+  disclosure_policies ||--o{ daily_challenges : "disclosure_version"
+  model_versions ||--o{ daily_challenges : "model_version"
+  dataset_versions ||--o{ daily_challenges : "dataset_version"
+  daily_attempts ||--o{ daily_leaderboard_entries : "challenge_date"
+  daily_attempts ||--o{ daily_leaderboard_entries : "user_id"
+  dataset_versions ||--o{ data_quality_issues : "dataset_version"
+  dataset_versions ||--o{ draft_classes : "dataset_version"
+  source_documents ||--o{ draft_pick_ownership : "document_id"
+  teams ||--o{ draft_pick_ownership : "owner_team_id"
+  historical_draft_picks ||--o{ draft_pick_ownership : "pick_id"
+  dataset_versions ||--o{ fact_provenance : "dataset_version"
+  source_documents ||--o{ fact_provenance : "document_id"
+  feature_definitions ||--o{ feature_values : "feature_name"
+  feature_definitions ||--o{ feature_values : "feature_version"
+  source_documents ||--o{ feature_values : "document_id"
+  dataset_versions ||--o{ feature_values : "dataset_version"
+  prospects ||--o{ feature_values : "prospect_id"
+  game_pick_assets ||--o{ game_draft_picks : "game_run_id"
+  game_pick_assets ||--o{ game_draft_picks : "pick_id"
+  prospects ||--o{ game_draft_picks : "prospect_id"
+  teams ||--o{ game_draft_picks : "team_id"
+  teams ||--o{ game_pick_assets : "owner_team_id"
+  historical_draft_picks ||--o{ game_pick_assets : "pick_id"
+  game_runs ||--o{ game_pick_assets : "game_run_id"
+  prospects ||--o{ game_public_prospect_ids : "prospect_id"
+  game_runs ||--o{ game_public_prospect_ids : "game_run_id"
+  disclosure_policies ||--o{ game_reveal_events : "disclosure_version"
+  prospects ||--o{ game_reveal_events : "prospect_id"
+  game_runs ||--o{ game_reveal_events : "game_run_id"
+  daily_challenges ||--o{ game_runs : "challenge_date"
+  disclosure_policies ||--o{ game_runs : "disclosure_version"
+  model_versions ||--o{ game_runs : "model_version"
+  dataset_versions ||--o{ game_runs : "dataset_version"
+  teams ||--o{ game_runs : "team_id"
+  draft_classes ||--o{ game_runs : "draft_year"
+  users ||--o{ game_runs : "user_id"
+  game_runs ||--o{ game_saves : "game_run_id"
+  prospects ||--o{ game_scouting_actions : "prospect_id"
+  game_runs ||--o{ game_scouting_actions : "game_run_id"
+  game_pick_assets ||--o{ game_trade_assets : "game_run_id"
+  game_pick_assets ||--o{ game_trade_assets : "pick_id"
+  teams ||--o{ game_trade_assets : "to_team_id"
+  teams ||--o{ game_trade_assets : "from_team_id"
+  game_trades ||--o{ game_trade_assets : "trade_id"
+  teams ||--o{ game_trades : "to_team_id"
+  teams ||--o{ game_trades : "from_team_id"
+  game_runs ||--o{ game_trades : "game_run_id"
+  game_runs ||--o{ historical_comparisons : "game_run_id"
+  prospects ||--o{ historical_draft_picks : "prospect_id"
+  teams ||--o{ historical_draft_picks : "selecting_team_id"
+  teams ||--o{ historical_draft_picks : "original_team_id"
+  draft_classes ||--o{ historical_draft_picks : "draft_year"
+  source_documents ||--o{ historical_games : "document_id"
+  teams ||--o{ historical_games : "away_team_id"
+  teams ||--o{ historical_games : "home_team_id"
+  seasons ||--o{ historical_games : "season"
+  source_documents ||--o{ historical_player_seasons : "document_id"
+  seasons ||--o{ historical_player_seasons : "season"
+  players ||--o{ historical_player_seasons : "player_id"
+  source_documents ||--o{ historical_team_seasons : "document_id"
+  seasons ||--o{ historical_team_seasons : "season"
+  teams ||--o{ historical_team_seasons : "team_id"
+  source_documents ||--o{ historical_trades : "document_id"
+  source_documents ||--o{ injury_events : "document_id"
+  players ||--o{ injury_events : "player_id"
+  prospects ||--o{ model_predictions : "prospect_id"
+  model_versions ||--o{ model_predictions : "model_version"
+  dataset_versions ||--o{ model_versions : "dataset_version"
+  players ||--o{ player_identifiers : "player_id"
+  colleges ||--o{ prospects : "college_id"
+  draft_classes ||--o{ prospects : "draft_year"
+  players ||--o{ prospects : "player_id"
+  source_documents ||--o{ roster_memberships : "document_id"
+  teams ||--o{ roster_memberships : "team_id"
+  players ||--o{ roster_memberships : "player_id"
+  source_documents ||--o{ scouting_reports : "document_id"
+  prospects ||--o{ scouting_reports : "prospect_id"
+  teams ||--o{ simulation_games : "away_team_id"
+  teams ||--o{ simulation_games : "home_team_id"
+  simulation_runs ||--o{ simulation_games : "simulation_run_id"
+  teams ||--o{ simulation_player_seasons : "team_id"
+  players ||--o{ simulation_player_seasons : "player_id"
+  simulation_runs ||--o{ simulation_player_seasons : "simulation_run_id"
+  dataset_versions ||--o{ simulation_runs : "dataset_version"
+  model_versions ||--o{ simulation_runs : "model_version"
+  game_runs ||--o{ simulation_runs : "game_run_id"
+  teams ||--o{ simulation_team_seasons : "team_id"
+  simulation_runs ||--o{ simulation_team_seasons : "simulation_run_id"
+  data_sources ||--o{ source_documents : "source_id"
+  teams ||--o{ team_identities : "team_id"
+  team_identities ||--o{ team_seasons : "identity_id"
+  seasons ||--o{ team_seasons : "season"
+  teams ||--o{ team_seasons : "team_id"
+  players ||--o{ trade_assets : "player_id"
+  historical_draft_picks ||--o{ trade_assets : "pick_id"
+  teams ||--o{ trade_assets : "to_team_id"
+  teams ||--o{ trade_assets : "from_team_id"
+  historical_trades ||--o{ trade_assets : "trade_id"

@@ -1,0 +1,21 @@
+{
+  "id": "score-sensitivity",
+  "kind": "diagnostic",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "analytics/score_sensitivity.mjs"
+  ],
+  "startedAt": "2026-11-04T20:12:07.085Z",
+  "finishedAt": "2026-11-04T20:12:25.516Z",
+  "durationMs": 18431.787481000007,
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "error": null,
+  "status": "passed",
+  "stdout": "16-score-sensitivity.stdout.log",
+  "stderr": "16-score-sensitivity.stderr.log",
+  "artifacts": [
+    "artifacts/analytics/score_sensitivity.json"
+  ]
+}

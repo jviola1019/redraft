@@ -1,0 +1,62 @@
+{
+  "strictDonors": 310,
+  "support": {
+    "DB": {
+      "donors": 57,
+      "rookieRole": 26,
+      "noRookieRole": 31,
+      "roleConditioningSupported": true
+    },
+    "DL": {
+      "donors": 49,
+      "rookieRole": 19,
+      "noRookieRole": 30,
+      "roleConditioningSupported": true
+    },
+    "LB": {
+      "donors": 38,
+      "rookieRole": 12,
+      "noRookieRole": 26,
+      "roleConditioningSupported": true
+    },
+    "OL": {
+      "donors": 53,
+      "rookieRole": 14,
+      "noRookieRole": 39,
+      "roleConditioningSupported": true
+    },
+    "QB": {
+      "donors": 15,
+      "rookieRole": 3,
+      "noRookieRole": 12,
+      "roleConditioningSupported": true
+    },
+    "RB": {
+      "donors": 34,
+      "rookieRole": 7,
+      "noRookieRole": 27,
+      "roleConditioningSupported": true
+    },
+    "ST": {
+      "donors": 9,
+      "rookieRole": 0,
+      "noRookieRole": 9,
+      "roleConditioningSupported": false
+    },
+    "TE": {
+      "donors": 18,
+      "rookieRole": 7,
+      "noRookieRole": 11,
+      "roleConditioningSupported": true
+    },
+    "WR": {
+      "donors": 37,
+      "rookieRole": 15,
+      "noRookieRole": 22,
+      "roleConditioningSupported": true
+    }
+  },
+  "excluded": {
+    "2013": 22
+  }
+}

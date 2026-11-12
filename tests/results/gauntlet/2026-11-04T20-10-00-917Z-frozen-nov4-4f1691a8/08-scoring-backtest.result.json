@@ -1,0 +1,21 @@
+{
+  "id": "scoring-backtest",
+  "kind": "diagnostic",
+  "command": [
+    "python3",
+    "analytics/scoring_recalibration.py"
+  ],
+  "startedAt": "2026-11-04T20:10:10.293Z",
+  "finishedAt": "2026-11-04T20:10:10.845Z",
+  "durationMs": 552.130994000001,
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "error": null,
+  "status": "passed",
+  "stdout": "08-scoring-backtest.stdout.log",
+  "stderr": "08-scoring-backtest.stderr.log",
+  "artifacts": [
+    "artifacts/analytics/scoring_recalibration.json"
+  ]
+}

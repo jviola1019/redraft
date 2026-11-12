@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="1030" viewBox="0 0 1240 1030" role="img" aria-labelledby="title desc">
+<title id="title">Evidence, disclosure and alternate history</title><desc id="desc">Facts and estimates are separate; identity suppression is a server response boundary.</desc>
+<rect width="1240" height="1030" fill="#f5f2e9"/>
+<style>text{font-family:Arial,sans-serif}.name{font-size:14px;font-weight:700;fill:#1c2927}.field{font-family:monospace;font-size:11px;fill:#526052}.edge{fill:none;stroke:#a4aaa0;stroke-width:1.5}</style>
+<text x="35" y="35" font-size="12" letter-spacing="3" fill="#b53429">REDRAFT / DATA ARCHITECTURE</text><text x="35" y="75" font-size="29" font-weight="700" fill="#1c2927">Evidence, disclosure and alternate history</text><text x="35" y="108" font-size="13" fill="#526052">Facts and estimates are separate; identity suppression is a server response boundary.</text>
+<path class="edge" d="M 170 270 C 170 295, 475 120, 475 145"/><circle cx="475" cy="145" r="3" fill="#b53429"/>
+<path class="edge" d="M 475 270 C 475 295, 170 295, 170 320"/><circle cx="170" cy="320" r="3" fill="#b53429"/>
+<path class="edge" d="M 475 270 C 475 295, 475 295, 475 320"/><circle cx="475" cy="320" r="3" fill="#b53429"/>
+<path class="edge" d="M 170 445 C 170 470, 170 470, 170 495"/><circle cx="170" cy="495" r="3" fill="#b53429"/>
+<path class="edge" d="M 475 445 C 475 470, 170 470, 170 495"/><circle cx="170" cy="495" r="3" fill="#b53429"/>
+<path class="edge" d="M 780 445 C 780 470, 780 470, 780 495"/><circle cx="780" cy="495" r="3" fill="#b53429"/>
+<path class="edge" d="M 475 620 C 475 645, 780 470, 780 495"/><circle cx="780" cy="495" r="3" fill="#b53429"/>
+<path class="edge" d="M 170 620 C 170 645, 170 645, 170 670"/><circle cx="170" cy="670" r="3" fill="#b53429"/>
+<path class="edge" d="M 170 620 C 170 645, 475 645, 475 670"/><circle cx="475" cy="670" r="3" fill="#b53429"/>
+<path class="edge" d="M 475 620 C 475 645, 475 645, 475 670"/><circle cx="475" cy="670" r="3" fill="#b53429"/>
+<path class="edge" d="M 170 795 C 170 820, 475 820, 475 845"/><circle cx="475" cy="845" r="3" fill="#b53429"/>
+<path class="edge" d="M 475 795 C 475 820, 475 820, 475 845"/><circle cx="475" cy="845" r="3" fill="#b53429"/>
+<rect x="35" y="145" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="35" y="145" width="4" height="125" fill="#b53429"/><text class="name" x="50" y="171">Sources</text><path d="M 50 184 H 290" stroke="#deded3"/>
+<text class="field" x="50" y="204">text source_id PK</text>
+<text class="field" x="50" y="220">text rights</text>
+<text class="field" x="50" y="236">timestamp available_at</text>
+<rect x="340" y="145" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="340" y="145" width="4" height="125" fill="#b53429"/><text class="name" x="355" y="171">HistoricalFacts</text><path d="M 355 184 H 595" stroke="#deded3"/>
+<text class="field" x="355" y="204">text dataset_version PK</text>
+<text class="field" x="355" y="220">text canonical_entity</text>
+<text class="field" x="355" y="236">text provenance</text>
+<rect x="35" y="320" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="35" y="320" width="4" height="125" fill="#b53429"/><text class="name" x="50" y="346">Features</text><path d="M 50 359 H 290" stroke="#deded3"/>
+<text class="field" x="50" y="379">text feature_version PK</text>
+<text class="field" x="50" y="395">timestamp cutoff</text>
+<text class="field" x="50" y="411">text units</text>
+<rect x="340" y="320" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="340" y="320" width="4" height="125" fill="#b53429"/><text class="name" x="355" y="346">ObservedOutcomes</text><path d="M 355 359 H 595" stroke="#deded3"/>
+<text class="field" x="355" y="379">text player_season PK</text>
+<text class="field" x="355" y="395">timestamp label_available_at</text>
+<rect x="645" y="320" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="645" y="320" width="4" height="125" fill="#b53429"/><text class="name" x="660" y="346">DisclosurePolicy</text><path d="M 660 359 H 900" stroke="#deded3"/>
+<text class="field" x="660" y="379">text version PK</text>
+<text class="field" x="660" y="395">text permitted_fields</text>
+<text class="field" x="660" y="411">text true_bands</text>
+<rect x="35" y="495" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="35" y="495" width="4" height="125" fill="#b53429"/><text class="name" x="50" y="521">Models</text><path d="M 50 534 H 290" stroke="#deded3"/>
+<text class="field" x="50" y="554">text model_version PK</text>
+<text class="field" x="50" y="570">timestamp training_cutoff</text>
+<rect x="340" y="495" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="340" y="495" width="4" height="125" fill="#b53429"/><text class="name" x="355" y="521">PrivateGame</text><path d="M 355 534 H 595" stroke="#deded3"/>
+<text class="field" x="355" y="554">text game_id PK</text>
+<text class="field" x="355" y="570">text canonical_ids</text>
+<text class="field" x="355" y="586">text public_id_map</text>
+<rect x="645" y="495" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="645" y="495" width="4" height="125" fill="#b53429"/><text class="name" x="660" y="521">PublicDTO</text><path d="M 660 534 H 900" stroke="#deded3"/>
+<text class="field" x="660" y="554">text per_run_id PK</text>
+<text class="field" x="660" y="570">text permitted_evidence</text>
+<rect x="35" y="670" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="35" y="670" width="4" height="125" fill="#b53429"/><text class="name" x="50" y="696">Baseline</text><path d="M 50 709 H 290" stroke="#deded3"/>
+<text class="field" x="50" y="729">text replicate_id PK</text>
+<text class="field" x="50" y="745">text actual_selections</text>
+<text class="field" x="50" y="761">text paired_seed</text>
+<rect x="340" y="670" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="340" y="670" width="4" height="125" fill="#b53429"/><text class="name" x="355" y="696">Alternate</text><path d="M 355 709 H 595" stroke="#deded3"/>
+<text class="field" x="355" y="729">text replicate_id PK</text>
+<text class="field" x="355" y="745">text user_selections</text>
+<text class="field" x="355" y="761">text paired_seed</text>
+<rect x="340" y="845" width="270" height="125" rx="6" fill="#fffdf8" stroke="#d6d8cc"/><rect x="340" y="845" width="4" height="125" fill="#b53429"/><text class="name" x="355" y="871">Comparison</text><path d="M 355 884 H 595" stroke="#deded3"/>
+<text class="field" x="355" y="904">text run_id PK</text>
+<text class="field" x="355" y="920">text historical_actuals</text>
+<text class="field" x="355" y="936">text paired_distribution</text>
+</svg>

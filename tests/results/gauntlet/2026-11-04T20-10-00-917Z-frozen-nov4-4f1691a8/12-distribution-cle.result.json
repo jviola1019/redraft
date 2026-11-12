@@ -1,0 +1,23 @@
+{
+  "id": "distribution-cle",
+  "kind": "diagnostic",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "analytics/simulation_diagnostics.mjs",
+    "256",
+    "CLE"
+  ],
+  "startedAt": "2026-11-04T20:11:28.225Z",
+  "finishedAt": "2026-11-04T20:11:37.717Z",
+  "durationMs": 9491.768143000008,
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "error": null,
+  "status": "passed",
+  "stdout": "12-distribution-cle.stdout.log",
+  "stderr": "12-distribution-cle.stderr.log",
+  "artifacts": [
+    "artifacts/analytics/simulation_diagnostics.json"
+  ]
+}

@@ -1,0 +1,14 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {createGame,autoComplete,positionGroup} from '../lib/engine';
+import {simulateReplicate} from '../lib/simulation';
+import type {Dataset} from '../lib/types';
+const dataset=JSON.parse(readFileSync('data/processed/scenario-2018.json','utf8')) as Dataset;
+const models=JSON.parse(readFileSync('analytics/model.json','utf8'));
+const game=autoComplete(createGame({id:'independent-qa',team:'CLE',seed:'independent-review-r1',now:'2026-11-02T00:00:00Z'},dataset),dataset,models);
+const result=simulateReplicate(game,3,dataset,models);
+test('QA: reciprocal division games have independent total-score draws',()=>{const games=result.alternate.seasons[0].games.filter(g=>g.type==='REG');const pairs=games.filter(g=>games.some(h=>h.home===g.away&&h.away===g.home));const diffs=pairs.map(g=>{const h=pairs.find(h=>h.home===g.away&&h.away===g.home)!;return Math.abs(g.homeScore+g.awayScore-h.homeScore-h.awayScore);});assert.ok(diffs.filter(n=>n>4).length>pairs.length/2);});
+test('QA: team records and points exactly reconcile to regular-season games',()=>{for(const world of[result.baseline,result.alternate])for(const season of world.seasons)for(const team of season.teams){const games=season.games.filter(g=>g.type==='REG'&&(g.home===team.team||g.away===team.team));let wins=0,losses=0,ties=0,pf=0,pa=0;for(const g of games){const own=g.home===team.team?g.homeScore:g.awayScore,opp=g.home===team.team?g.awayScore:g.homeScore;pf+=own;pa+=opp;if(own>opp)wins++;else if(own<opp)losses++;else ties++;}assert.deepEqual({wins,losses,ties,pf,pa},{wins:team.wins,losses:team.losses,ties:team.ties,pf:team.pointsFor,pa:team.pointsAgainst});}});
+test('QA: cohort position starts cannot exceed possible role capacity',()=>{const capacity:Record<string,number>={QB:1,RB:2,WR:3,TE:2,OL:5,DL:4,LB:3,DB:5,K:1,P:1,LS:1};for(const world of[result.baseline,result.alternate])for(const season of world.seasons){const used=new Map<string,number>();for(const player of season.players){const p=dataset.prospects.find(p=>p.id===player.prospectId)!,group=positionGroup(p.position),key=`${player.team}:${group}`;used.set(key,(used.get(key)||0)+player.starts);assert.ok(Number.isInteger(player.starts)&&player.starts>=0&&player.starts<=player.games);}for(const[key,starts]of used)assert.ok(starts<=(capacity[key.split(':')[1]]||1)*(season.year>=2021?17:16));}});
+test('QA: future observed scores cannot affect generated baseline or alternate world',()=>{const poisoned={...dataset,games:dataset.games.map(g=>g.season>=2018?{...g,homeScore:999,awayScore:998}:g)};assert.deepEqual(simulateReplicate(game,3,poisoned,models),result);});

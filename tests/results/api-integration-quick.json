@@ -1,0 +1,104 @@
+{
+  "executedAt": "2026-11-02T19:28:16.809Z",
+  "runtime": {
+    "node": "v24.22.1",
+    "os": "linux",
+    "architecture": "x64",
+    "cpu": "INTEL(R) XEON(R) PLATINUM 8573C"
+  },
+  "scope": "Security and draft flows only; simulation omitted",
+  "method": "Real route and auth helper through Node registerHooks; SQLite-backed D1 adapter and Next header-context adapter. Not a browser or production Cloudflare test.",
+  "migrations": [
+    "0000_spotty_patriot.sql"
+  ],
+  "sourceHashes": {
+    "app/api/game/route.ts": "ccfce8f1c7c15afa623e2799e1f43dd64d2fa0c4f0653dddf2ae650dcbdb840d",
+    "lib/scouting.ts": "6a2850cb8f15f6effb6b12fd15f79602e5e0c6a20ff84951e7bdb2695aeba1d6",
+    "lib/engine.ts": "a4a9c4cfa1404761b27705a6b132de25454fa87e61fbc1f67239888a071ec709",
+    "lib/simulation.ts": "2b819a968fadcbf6e80cd40f2295ea2ab8c4f64703221196c93a36615a8ef008",
+    "lib/server-data.ts": "0b64fb3bbe75e5eafd236021cda9c51079c3a0ef5e91762f8b6515da7342022f",
+    "analytics/model.json": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0",
+    "data/processed/scenario-2018.json": "b7895eef7862ccfb45cff5f2f4b6e347abd809c1905ed274883d55cc237f59d8"
+  },
+  "finalHashes": {
+    "app/api/game/route.ts": "ccfce8f1c7c15afa623e2799e1f43dd64d2fa0c4f0653dddf2ae650dcbdb840d",
+    "lib/scouting.ts": "6a2850cb8f15f6effb6b12fd15f79602e5e0c6a20ff84951e7bdb2695aeba1d6",
+    "lib/engine.ts": "a4a9c4cfa1404761b27705a6b132de25454fa87e61fbc1f67239888a071ec709",
+    "lib/simulation.ts": "2b819a968fadcbf6e80cd40f2295ea2ab8c4f64703221196c93a36615a8ef008",
+    "lib/server-data.ts": "0b64fb3bbe75e5eafd236021cda9c51079c3a0ef5e91762f8b6515da7342022f",
+    "analytics/model.json": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0",
+    "data/processed/scenario-2018.json": "b7895eef7862ccfb45cff5f2f4b6e347abd809c1905ed274883d55cc237f59d8"
+  },
+  "sourceChangedDuringRun": false,
+  "cases": [
+    {
+      "name": "auth, CSRF, strict schema and body-size limits",
+      "status": "passed",
+      "durationMs": 24.6
+    },
+    {
+      "name": "versioned creation and request replay",
+      "status": "passed",
+      "durationMs": 75.05
+    },
+    {
+      "name": "owner isolation, aliases and canonical identifier rejection",
+      "status": "passed",
+      "durationMs": 108.18
+    },
+    {
+      "name": "group scouting costs once and preserves blind ranges",
+      "status": "passed",
+      "durationMs": 94.67
+    },
+    {
+      "name": "stale revision and concurrent CAS cannot lose updates",
+      "status": "passed",
+      "durationMs": 90.27
+    },
+    {
+      "name": "counteroffers and accepted trades conserve ownership",
+      "status": "passed",
+      "durationMs": 143.5
+    },
+    {
+      "name": "historical full draft, reveal and persisted recovery",
+      "status": "passed",
+      "durationMs": 1327.59
+    },
+    {
+      "name": "retired source versions allow review but block mutations",
+      "status": "passed",
+      "durationMs": 142.47
+    },
+    {
+      "name": "daily conditions, aliases and one official attempt are shared",
+      "status": "passed",
+      "durationMs": 98.3
+    },
+    {
+      "name": "identical daily decisions yield identical seven-round drafts",
+      "status": "passed",
+      "durationMs": 2881.25
+    },
+    {
+      "name": "UTC rollover closes old attempts and reveals completed draft identities",
+      "status": "passed",
+      "durationMs": 103.18
+    },
+    {
+      "name": "frozen daily versions and rate limits are enforced",
+      "status": "passed",
+      "durationMs": 13.03
+    }
+  ],
+  "passed": 12,
+  "failed": 0,
+  "requests": 106,
+  "maximumResponseBytes": 441116,
+  "durationMs": 5108.057082,
+  "limitations": [
+    "Does not establish Safari/WebKit behavior or production Worker CPU limits.",
+    "Synthetic identities and disposable SQLite database are isolated test fixtures."
+  ]
+}

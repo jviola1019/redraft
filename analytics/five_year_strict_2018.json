@@ -1,0 +1,5704 @@
+{
+  "version": "five-year-participation-2018-donors-v1",
+  "cutoff": "2018-04-26T00:00:00Z",
+  "asOf": "2026-11-02",
+  "target": "Five annual regular-season scrimmage-snap counts and games with recorded snaps; not games started",
+  "cohorts": [
+    2013
+  ],
+  "labelSeasons": [
+    2013,
+    2017
+  ],
+  "donors": [
+    {
+      "position": "OL",
+      "snaps": [
+        0,
+        722,
+        398,
+        268,
+        557
+      ],
+      "games": [
+        0,
+        15,
+        7,
+        4,
+        8
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        4,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        569,
+        617,
+        906,
+        1081,
+        1040
+      ],
+      "games": [
+        16,
+        10,
+        15,
+        16,
+        16
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        944,
+        836,
+        539,
+        27,
+        898
+      ],
+      "games": [
+        15,
+        14,
+        8,
+        1,
+        16
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "ST",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        1145,
+        0,
+        472,
+        1049,
+        1008
+      ],
+      "games": [
+        16,
+        0,
+        11,
+        15,
+        16
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        685,
+        905,
+        879,
+        959,
+        287
+      ],
+      "games": [
+        16,
+        15,
+        16,
+        15,
+        6
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        21,
+        496,
+        495,
+        314,
+        618
+      ],
+      "games": [
+        5,
+        15,
+        15,
+        7,
+        16
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        554,
+        663,
+        657,
+        496,
+        516
+      ],
+      "games": [
+        14,
+        16,
+        16,
+        13,
+        14
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        137,
+        836,
+        928,
+        398,
+        541
+      ],
+      "games": [
+        6,
+        14,
+        13,
+        7,
+        10
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        423,
+        535,
+        741,
+        731,
+        228
+      ],
+      "games": [
+        13,
+        15,
+        16,
+        15,
+        16
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        4,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        4,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        81,
+        419,
+        272,
+        373,
+        0
+      ],
+      "games": [
+        14,
+        14,
+        14,
+        14,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        188,
+        403,
+        252,
+        0,
+        0
+      ],
+      "games": [
+        16,
+        14,
+        8,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        1119,
+        1006,
+        956,
+        1055,
+        754
+      ],
+      "games": [
+        16,
+        16,
+        14,
+        16,
+        12
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        312,
+        191,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        16,
+        5,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        939,
+        910,
+        434,
+        133,
+        88
+      ],
+      "games": [
+        16,
+        15,
+        14,
+        9,
+        3
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        0,
+        0,
+        4,
+        0,
+        0
+      ],
+      "games": [
+        4,
+        1,
+        1,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "QB",
+      "snaps": [
+        76,
+        6,
+        0,
+        412,
+        0
+      ],
+      "games": [
+        3,
+        1,
+        0,
+        7,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        24,
+        0,
+        79,
+        100,
+        77
+      ],
+      "games": [
+        8,
+        0,
+        10,
+        13,
+        13
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        0,
+        72,
+        58,
+        63,
+        0
+      ],
+      "games": [
+        0,
+        6,
+        10,
+        5,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        0,
+        357,
+        15,
+        0,
+        0
+      ],
+      "games": [
+        7,
+        14,
+        1,
+        7,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        311,
+        143,
+        528,
+        226,
+        351
+      ],
+      "games": [
+        12,
+        8,
+        16,
+        13,
+        15
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        1,
+        3,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        2,
+        3,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        13,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        1,
+        0,
+        5,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        677,
+        927,
+        301,
+        781,
+        943
+      ],
+      "games": [
+        13,
+        16,
+        6,
+        12,
+        15
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        613,
+        510,
+        580,
+        394,
+        482
+      ],
+      "games": [
+        16,
+        13,
+        16,
+        10,
+        16
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        371,
+        54,
+        268,
+        0,
+        273
+      ],
+      "games": [
+        16,
+        4,
+        16,
+        0,
+        16
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        4,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        605,
+        679,
+        40,
+        0,
+        914
+      ],
+      "games": [
+        16,
+        13,
+        11,
+        0,
+        14
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        179,
+        10,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        9,
+        1,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        102,
+        386,
+        26,
+        0,
+        0
+      ],
+      "games": [
+        9,
+        15,
+        2,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "QB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        205,
+        0,
+        10,
+        6,
+        0
+      ],
+      "games": [
+        14,
+        4,
+        16,
+        14,
+        0
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        790,
+        373,
+        404,
+        0,
+        0
+      ],
+      "games": [
+        14,
+        14,
+        10,
+        0,
+        0
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        187,
+        132,
+        480,
+        104,
+        0
+      ],
+      "games": [
+        12,
+        5,
+        14,
+        5,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        119,
+        25,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        15,
+        3,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        0,
+        34,
+        73,
+        238,
+        195
+      ],
+      "games": [
+        1,
+        9,
+        16,
+        16,
+        10
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "QB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "ST",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        0,
+        145,
+        223,
+        232,
+        214
+      ],
+      "games": [
+        0,
+        9,
+        14,
+        13,
+        8
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        0,
+        0,
+        0,
+        76,
+        60
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        13,
+        7
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        296,
+        925,
+        775,
+        980,
+        330
+      ],
+      "games": [
+        16,
+        15,
+        12,
+        15,
+        6
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        0,
+        184,
+        638,
+        183,
+        835
+      ],
+      "games": [
+        0,
+        10,
+        14,
+        5,
+        13
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "TE",
+      "snaps": [
+        14,
+        0,
+        11,
+        0,
+        0
+      ],
+      "games": [
+        1,
+        0,
+        2,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        1045,
+        985,
+        1014,
+        1070,
+        605
+      ],
+      "games": [
+        15,
+        15,
+        14,
+        16,
+        10
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        170,
+        306,
+        79,
+        59,
+        0
+      ],
+      "games": [
+        16,
+        16,
+        14,
+        11,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        64,
+        136,
+        30,
+        54,
+        0
+      ],
+      "games": [
+        5,
+        10,
+        2,
+        3,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        20,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        0,
+        296,
+        388,
+        63,
+        147
+      ],
+      "games": [
+        0,
+        7,
+        15,
+        1,
+        9
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        18,
+        326,
+        640,
+        477,
+        310
+      ],
+      "games": [
+        3,
+        14,
+        15,
+        14,
+        13
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        547,
+        56,
+        212,
+        0,
+        0
+      ],
+      "games": [
+        12,
+        4,
+        8,
+        0,
+        0
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "QB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        149,
+        48,
+        2,
+        196,
+        47
+      ],
+      "games": [
+        7,
+        4,
+        1,
+        10,
+        3
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "TE",
+      "snaps": [
+        673,
+        8,
+        750,
+        428,
+        104
+      ],
+      "games": [
+        15,
+        1,
+        13,
+        8,
+        2
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        1011,
+        636,
+        0,
+        54,
+        0
+      ],
+      "games": [
+        16,
+        16,
+        0,
+        9,
+        0
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        405,
+        528,
+        213,
+        150,
+        315
+      ],
+      "games": [
+        15,
+        12,
+        10,
+        16,
+        12
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "TE",
+      "snaps": [
+        450,
+        588,
+        789,
+        849,
+        776
+      ],
+      "games": [
+        16,
+        16,
+        15,
+        14,
+        14
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "TE",
+      "snaps": [
+        197,
+        261,
+        237,
+        167,
+        20
+      ],
+      "games": [
+        16,
+        16,
+        14,
+        16,
+        2
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        676,
+        971,
+        621,
+        0,
+        0
+      ],
+      "games": [
+        15,
+        16,
+        16,
+        2,
+        0
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "TE",
+      "snaps": [
+        307,
+        117,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        16,
+        7,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        789,
+        1006,
+        826,
+        1022,
+        961
+      ],
+      "games": [
+        14,
+        16,
+        16,
+        16,
+        16
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        462,
+        568,
+        548,
+        25,
+        0
+      ],
+      "games": [
+        16,
+        14,
+        13,
+        1,
+        0
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        1045,
+        1020,
+        861,
+        991,
+        446
+      ],
+      "games": [
+        15,
+        16,
+        12,
+        16,
+        9
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        12,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        0,
+        0,
+        28,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        62,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        10,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        998,
+        1060,
+        1029,
+        1058,
+        1065
+      ],
+      "games": [
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        0,
+        410,
+        169,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        16,
+        12,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "TE",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        30,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        7,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        312,
+        570,
+        671,
+        585,
+        447
+      ],
+      "games": [
+        12,
+        15,
+        16,
+        14,
+        14
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        93,
+        206,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        6,
+        16,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        9,
+        0,
+        112,
+        283,
+        171
+      ],
+      "games": [
+        3,
+        0,
+        5,
+        15,
+        9
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "QB",
+      "snaps": [
+        842,
+        364,
+        0,
+        15,
+        264
+      ],
+      "games": [
+        13,
+        6,
+        0,
+        2,
+        4
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        74,
+        157,
+        0,
+        39,
+        0
+      ],
+      "games": [
+        9,
+        15,
+        0,
+        8,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        302,
+        582,
+        106,
+        40,
+        0
+      ],
+      "games": [
+        14,
+        16,
+        4,
+        3,
+        0
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        313,
+        90,
+        30,
+        640,
+        769
+      ],
+      "games": [
+        12,
+        10,
+        2,
+        15,
+        16
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "TE",
+      "snaps": [
+        51,
+        213,
+        347,
+        0,
+        0
+      ],
+      "games": [
+        9,
+        10,
+        13,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        9,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        485,
+        855,
+        455,
+        86,
+        0
+      ],
+      "games": [
+        10,
+        15,
+        12,
+        6,
+        0
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "QB",
+      "snaps": [
+        109,
+        157,
+        26,
+        253,
+        127
+      ],
+      "games": [
+        12,
+        13,
+        4,
+        16,
+        16
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        231,
+        117,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        15,
+        10,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        0,
+        0,
+        0,
+        384,
+        53
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        11,
+        3
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        191,
+        681,
+        409,
+        765,
+        686
+      ],
+      "games": [
+        11,
+        16,
+        9,
+        16,
+        15
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        4,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        5,
+        5,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        1,
+        3,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        337,
+        581,
+        901,
+        475,
+        488
+      ],
+      "games": [
+        8,
+        10,
+        16,
+        11,
+        16
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        64,
+        359,
+        311,
+        42,
+        0
+      ],
+      "games": [
+        4,
+        13,
+        10,
+        4,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        2,
+        503,
+        517,
+        584,
+        12
+      ],
+      "games": [
+        11,
+        14,
+        14,
+        15,
+        11
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        208,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        9,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        12,
+        171,
+        484,
+        0,
+        0
+      ],
+      "games": [
+        3,
+        5,
+        9,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        995,
+        1056,
+        1148,
+        1085,
+        1022
+      ],
+      "games": [
+        16,
+        16,
+        16,
+        16,
+        15
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "ST",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        15,
+        16,
+        8
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        71,
+        196,
+        118,
+        17,
+        0
+      ],
+      "games": [
+        4,
+        12,
+        7,
+        2,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        164,
+        186,
+        57,
+        322,
+        576
+      ],
+      "games": [
+        10,
+        12,
+        7,
+        15,
+        16
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        334,
+        593,
+        375,
+        303,
+        66
+      ],
+      "games": [
+        14,
+        12,
+        9,
+        13,
+        7
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        417,
+        708,
+        647,
+        817,
+        1065
+      ],
+      "games": [
+        16,
+        16,
+        15,
+        16,
+        16
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        155,
+        49,
+        0,
+        49,
+        0
+      ],
+      "games": [
+        8,
+        11,
+        0,
+        4,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "TE",
+      "snaps": [
+        16,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        4,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        198,
+        680,
+        755,
+        929,
+        1085
+      ],
+      "games": [
+        16,
+        16,
+        16,
+        15,
+        16
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        39,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        125,
+        900,
+        697,
+        371,
+        81
+      ],
+      "games": [
+        16,
+        15,
+        13,
+        9,
+        7
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        432,
+        390,
+        532,
+        209,
+        109
+      ],
+      "games": [
+        16,
+        12,
+        14,
+        9,
+        8
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        272,
+        982,
+        900,
+        221,
+        702
+      ],
+      "games": [
+        5,
+        16,
+        14,
+        4,
+        11
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        401,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        10,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        0,
+        0,
+        0,
+        134,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        8,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        12,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        1102,
+        889,
+        1156,
+        407,
+        964
+      ],
+      "games": [
+        16,
+        12,
+        16,
+        6,
+        15
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        17,
+        93,
+        1,
+        0,
+        0
+      ],
+      "games": [
+        6,
+        11,
+        1,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        0,
+        6,
+        16,
+        99,
+        236
+      ],
+      "games": [
+        0,
+        4,
+        12,
+        16,
+        13
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        129,
+        376,
+        364,
+        463,
+        488
+      ],
+      "games": [
+        8,
+        16,
+        15,
+        15,
+        15
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        0,
+        23,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        3,
+        7,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        780,
+        503,
+        0,
+        302,
+        0
+      ],
+      "games": [
+        13,
+        15,
+        0,
+        13,
+        0
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        256,
+        313,
+        364,
+        548,
+        205
+      ],
+      "games": [
+        16,
+        13,
+        15,
+        15,
+        7
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        630,
+        231,
+        455,
+        474,
+        0
+      ],
+      "games": [
+        14,
+        7,
+        15,
+        14,
+        0
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "QB",
+      "snaps": [
+        0,
+        0,
+        109,
+        161,
+        70
+      ],
+      "games": [
+        0,
+        0,
+        7,
+        8,
+        3
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        330,
+        222,
+        0,
+        0,
+        135
+      ],
+      "games": [
+        16,
+        10,
+        0,
+        0,
+        5
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "TE",
+      "snaps": [
+        75,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        16,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "TE",
+      "snaps": [
+        0,
+        668,
+        923,
+        886,
+        873
+      ],
+      "games": [
+        1,
+        16,
+        16,
+        16,
+        15
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        0,
+        55,
+        0,
+        76,
+        393
+      ],
+      "games": [
+        0,
+        2,
+        0,
+        7,
+        8
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        129,
+        282,
+        318,
+        350,
+        664
+      ],
+      "games": [
+        16,
+        14,
+        15,
+        15,
+        12
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "QB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        26,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        12,
+        1,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "ST",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        679,
+        687,
+        470,
+        166,
+        137
+      ],
+      "games": [
+        15,
+        16,
+        15,
+        5,
+        9
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        276,
+        143,
+        271,
+        135,
+        0
+      ],
+      "games": [
+        16,
+        16,
+        10,
+        9,
+        0
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        295,
+        16,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        12,
+        1,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        0,
+        0,
+        51,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        68,
+        0,
+        220,
+        210,
+        168
+      ],
+      "games": [
+        3,
+        1,
+        16,
+        15,
+        12
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "ST",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        16,
+        16,
+        16,
+        16,
+        5
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        480,
+        638,
+        583,
+        467,
+        572
+      ],
+      "games": [
+        16,
+        16,
+        14,
+        13,
+        15
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        1058,
+        994,
+        1080,
+        430,
+        447
+      ],
+      "games": [
+        16,
+        15,
+        16,
+        8,
+        10
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        108,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        14,
+        0,
+        4,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        604,
+        478,
+        533,
+        703,
+        586
+      ],
+      "games": [
+        16,
+        14,
+        14,
+        16,
+        16
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        95,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        7,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        0,
+        16,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        8,
+        9,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "ST",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "QB",
+      "snaps": [
+        694,
+        259,
+        155,
+        78,
+        76
+      ],
+      "games": [
+        10,
+        5,
+        6,
+        6,
+        2
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        126,
+        87,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        12,
+        12,
+        2,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        779,
+        426,
+        885,
+        560,
+        1053
+      ],
+      "games": [
+        13,
+        13,
+        14,
+        10,
+        16
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        11,
+        1,
+        174,
+        58,
+        63
+      ],
+      "games": [
+        14,
+        9,
+        16,
+        8,
+        11
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        92,
+        815,
+        225,
+        0,
+        0
+      ],
+      "games": [
+        16,
+        16,
+        14,
+        0,
+        3
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        0,
+        121,
+        118,
+        163,
+        21
+      ],
+      "games": [
+        0,
+        13,
+        11,
+        13,
+        13
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        650,
+        1049,
+        770,
+        1070,
+        539
+      ],
+      "games": [
+        10,
+        16,
+        11,
+        16,
+        8
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "TE",
+      "snaps": [
+        479,
+        214,
+        468,
+        443,
+        271
+      ],
+      "games": [
+        15,
+        8,
+        14,
+        11,
+        10
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        245,
+        81,
+        0,
+        56,
+        0
+      ],
+      "games": [
+        16,
+        7,
+        2,
+        9,
+        0
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        78,
+        26,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        15,
+        2,
+        1,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        350,
+        118,
+        408,
+        220,
+        432
+      ],
+      "games": [
+        15,
+        11,
+        16,
+        9,
+        16
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        26,
+        73,
+        101,
+        398,
+        0
+      ],
+      "games": [
+        4,
+        10,
+        8,
+        15,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        0,
+        0,
+        126,
+        393,
+        124
+      ],
+      "games": [
+        1,
+        0,
+        9,
+        16,
+        13
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        723,
+        116,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        13,
+        3,
+        5,
+        0,
+        0
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        1011,
+        813,
+        355,
+        1033,
+        1023
+      ],
+      "games": [
+        16,
+        13,
+        10,
+        16,
+        16
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        666,
+        667,
+        256,
+        47,
+        501
+      ],
+      "games": [
+        15,
+        15,
+        16,
+        16,
+        16
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        1,
+        317,
+        926,
+        1003,
+        198
+      ],
+      "games": [
+        13,
+        16,
+        16,
+        16,
+        9
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        10,
+        164,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        4,
+        16,
+        3,
+        1,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        133,
+        318,
+        278,
+        104,
+        58
+      ],
+      "games": [
+        15,
+        16,
+        14,
+        4,
+        3
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        577,
+        697,
+        69,
+        412,
+        0
+      ],
+      "games": [
+        15,
+        11,
+        12,
+        8,
+        0
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        153,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        10,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "QB",
+      "snaps": [
+        0,
+        19,
+        6,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        4,
+        1,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        152,
+        96,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        4,
+        4,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        1033,
+        1045,
+        263,
+        1090,
+        923
+      ],
+      "games": [
+        16,
+        16,
+        4,
+        16,
+        15
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        5,
+        698,
+        612,
+        230,
+        486
+      ],
+      "games": [
+        1,
+        13,
+        13,
+        15,
+        10
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "TE",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        0,
+        0,
+        0,
+        10,
+        2
+      ],
+      "games": [
+        0,
+        3,
+        0,
+        5,
+        6
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "TE",
+      "snaps": [
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        436,
+        566,
+        57,
+        531,
+        430
+      ],
+      "games": [
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        60,
+        86,
+        424,
+        703,
+        0
+      ],
+      "games": [
+        6,
+        4,
+        16,
+        14,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        1,
+        0,
+        2,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        15,
+        45,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        5,
+        14,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        129,
+        115,
+        424,
+        354,
+        1038
+      ],
+      "games": [
+        12,
+        16,
+        14,
+        6,
+        15
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        1027,
+        910,
+        968,
+        687,
+        436
+      ],
+      "games": [
+        16,
+        14,
+        14,
+        11,
+        8
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        28
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        334,
+        127,
+        686,
+        468,
+        0
+      ],
+      "games": [
+        11,
+        6,
+        15,
+        9,
+        0
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        119,
+        94,
+        143,
+        0,
+        0
+      ],
+      "games": [
+        13,
+        16,
+        6,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        15,
+        0,
+        32,
+        0,
+        0
+      ],
+      "games": [
+        16,
+        5,
+        5,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "TE",
+      "snaps": [
+        378,
+        364,
+        702,
+        566,
+        234
+      ],
+      "games": [
+        9,
+        11,
+        14,
+        12,
+        6
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        982,
+        879,
+        1113,
+        744,
+        736
+      ],
+      "games": [
+        16,
+        15,
+        16,
+        10,
+        13
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "QB",
+      "snaps": [
+        0,
+        0,
+        24,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        675,
+        1027,
+        1015,
+        786,
+        904
+      ],
+      "games": [
+        13,
+        16,
+        16,
+        14,
+        16
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        888,
+        812,
+        618,
+        761,
+        654
+      ],
+      "games": [
+        16,
+        16,
+        11,
+        15,
+        15
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        48,
+        172,
+        470,
+        423,
+        469
+      ],
+      "games": [
+        14,
+        14,
+        16,
+        10,
+        16
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "TE",
+      "snaps": [
+        592,
+        820,
+        399,
+        314,
+        0
+      ],
+      "games": [
+        16,
+        16,
+        16,
+        13,
+        0
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        609,
+        641,
+        672,
+        572,
+        656
+      ],
+      "games": [
+        16,
+        16,
+        16,
+        16,
+        15
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        52,
+        391,
+        254,
+        101,
+        0
+      ],
+      "games": [
+        16,
+        13,
+        13,
+        13,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        205,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        599,
+        510,
+        976,
+        897,
+        921
+      ],
+      "games": [
+        16,
+        16,
+        16,
+        16,
+        15
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        601,
+        59,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        15,
+        12,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        567,
+        648,
+        305,
+        247,
+        148
+      ],
+      "games": [
+        9,
+        11,
+        5,
+        16,
+        16
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "QB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "ST",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        518,
+        586,
+        759,
+        780,
+        701
+      ],
+      "games": [
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        3,
+        233,
+        638,
+        519,
+        470
+      ],
+      "games": [
+        7,
+        11,
+        16,
+        11,
+        9
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        0,
+        300,
+        0,
+        76,
+        0
+      ],
+      "games": [
+        0,
+        10,
+        1,
+        9,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "TE",
+      "snaps": [
+        279,
+        507,
+        457,
+        701,
+        580
+      ],
+      "games": [
+        15,
+        14,
+        13,
+        14,
+        14
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        338,
+        1012,
+        994,
+        731,
+        1064
+      ],
+      "games": [
+        13,
+        16,
+        16,
+        13,
+        16
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "QB",
+      "snaps": [
+        985,
+        816,
+        65,
+        33,
+        66
+      ],
+      "games": [
+        16,
+        14,
+        1,
+        2,
+        2
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        0,
+        304,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        15,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        3,
+        15,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        4,
+        4,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "QB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        24,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        4,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        694,
+        492,
+        289,
+        362,
+        662
+      ],
+      "games": [
+        16,
+        16,
+        8,
+        16,
+        16
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        147,
+        0,
+        155,
+        362,
+        363
+      ],
+      "games": [
+        10,
+        0,
+        6,
+        11,
+        16
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        566,
+        200,
+        140,
+        0,
+        0
+      ],
+      "games": [
+        14,
+        13,
+        8,
+        0,
+        0
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        9,
+        276,
+        331,
+        614,
+        0
+      ],
+      "games": [
+        16,
+        15,
+        16,
+        15,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        690,
+        617,
+        594,
+        795,
+        939
+      ],
+      "games": [
+        16,
+        15,
+        16,
+        16,
+        16
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "TE",
+      "snaps": [
+        9,
+        0,
+        120,
+        0,
+        0
+      ],
+      "games": [
+        9,
+        0,
+        11,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "ST",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        16,
+        16,
+        13,
+        16,
+        1
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        797,
+        1017,
+        263,
+        837,
+        1092
+      ],
+      "games": [
+        16,
+        16,
+        11,
+        16,
+        16
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        15,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        9,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        301,
+        223,
+        550,
+        664,
+        10
+      ],
+      "games": [
+        14,
+        16,
+        15,
+        16,
+        2
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        42,
+        293,
+        712,
+        921,
+        965
+      ],
+      "games": [
+        9,
+        12,
+        12,
+        15,
+        16
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        131,
+        208,
+        76,
+        11,
+        0
+      ],
+      "games": [
+        16,
+        14,
+        16,
+        15,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        524,
+        457,
+        710,
+        142,
+        501
+      ],
+      "games": [
+        13,
+        10,
+        12,
+        3,
+        16
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        2,
+        673,
+        1031,
+        44,
+        0
+      ],
+      "games": [
+        6,
+        14,
+        16,
+        1,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        0,
+        271,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        8,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        190,
+        2,
+        20,
+        5,
+        6
+      ],
+      "games": [
+        14,
+        11,
+        15,
+        8,
+        12
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        575,
+        393,
+        281,
+        0,
+        0
+      ],
+      "games": [
+        12,
+        14,
+        7,
+        0,
+        0
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        0,
+        30,
+        273,
+        487,
+        338
+      ],
+      "games": [
+        4,
+        2,
+        13,
+        16,
+        10
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        870,
+        566,
+        800,
+        0,
+        0
+      ],
+      "games": [
+        14,
+        10,
+        13,
+        0,
+        0
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "TE",
+      "snaps": [
+        192,
+        940,
+        522,
+        570,
+        421
+      ],
+      "games": [
+        16,
+        16,
+        16,
+        16,
+        15
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        0,
+        58,
+        373,
+        488,
+        1068
+      ],
+      "games": [
+        0,
+        8,
+        16,
+        7,
+        16
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        1000,
+        1076,
+        966,
+        591,
+        901
+      ],
+      "games": [
+        16,
+        16,
+        16,
+        9,
+        15
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        792,
+        986,
+        1077,
+        721,
+        698
+      ],
+      "games": [
+        14,
+        15,
+        16,
+        11,
+        12
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        131,
+        969,
+        1128,
+        924,
+        791
+      ],
+      "games": [
+        16,
+        15,
+        16,
+        15,
+        13
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        7,
+        0,
+        159,
+        544,
+        0
+      ],
+      "games": [
+        2,
+        0,
+        11,
+        14,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        1135,
+        784,
+        814,
+        970,
+        824
+      ],
+      "games": [
+        16,
+        13,
+        13,
+        15,
+        14
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        1075,
+        965,
+        830,
+        134,
+        316
+      ],
+      "games": [
+        16,
+        16,
+        14,
+        2,
+        11
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        10,
+        77,
+        1,
+        364,
+        488
+      ],
+      "games": [
+        2,
+        13,
+        1,
+        15,
+        15
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        0,
+        9,
+        199,
+        787,
+        612
+      ],
+      "games": [
+        0,
+        10,
+        8,
+        15,
+        10
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        173,
+        486,
+        0,
+        255,
+        447
+      ],
+      "games": [
+        5,
+        12,
+        0,
+        10,
+        7
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        179,
+        4,
+        256,
+        587,
+        0
+      ],
+      "games": [
+        15,
+        11,
+        9,
+        14,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        479,
+        130,
+        69,
+        59,
+        552
+      ],
+      "games": [
+        14,
+        12,
+        15,
+        13,
+        11
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        305,
+        746,
+        153,
+        0,
+        0
+      ],
+      "games": [
+        13,
+        15,
+        10,
+        0,
+        0
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        0,
+        0,
+        0,
+        646,
+        916
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        16,
+        16
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        159,
+        746,
+        697,
+        97,
+        187
+      ],
+      "games": [
+        12,
+        16,
+        16,
+        3,
+        11
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        515,
+        987,
+        828,
+        563,
+        134
+      ],
+      "games": [
+        13,
+        16,
+        16,
+        13,
+        12
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        91,
+        549,
+        725,
+        636,
+        475
+      ],
+      "games": [
+        7,
+        16,
+        16,
+        16,
+        12
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        33,
+        527,
+        283,
+        91,
+        0
+      ],
+      "games": [
+        16,
+        16,
+        16,
+        10,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        0,
+        89,
+        51,
+        51,
+        240
+      ],
+      "games": [
+        1,
+        5,
+        6,
+        10,
+        16
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        0,
+        1,
+        182,
+        85,
+        0
+      ],
+      "games": [
+        0,
+        2,
+        14,
+        10,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        11,
+        27,
+        473,
+        912,
+        578
+      ],
+      "games": [
+        16,
+        16,
+        16,
+        15,
+        11
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        0,
+        129,
+        287,
+        219,
+        0
+      ],
+      "games": [
+        0,
+        13,
+        13,
+        6,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        296,
+        426,
+        534,
+        647,
+        349
+      ],
+      "games": [
+        13,
+        16,
+        15,
+        16,
+        15
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        679,
+        811,
+        791,
+        746,
+        687
+      ],
+      "games": [
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DL",
+      "snaps": [
+        214,
+        131,
+        0,
+        144,
+        0
+      ],
+      "games": [
+        13,
+        15,
+        0,
+        16,
+        0
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "LB",
+      "snaps": [
+        0,
+        15,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        75,
+        373,
+        638,
+        80,
+        0
+      ],
+      "games": [
+        10,
+        7,
+        11,
+        3,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "QB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "ST",
+      "snaps": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        16,
+        16,
+        16,
+        16
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        0,
+        55,
+        7,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        12,
+        7,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "OL",
+      "snaps": [
+        763,
+        371,
+        765,
+        805,
+        807
+      ],
+      "games": [
+        16,
+        6,
+        16,
+        13,
+        13
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        524,
+        76,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        11,
+        7,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "RB",
+      "snaps": [
+        3,
+        0,
+        10,
+        0,
+        0
+      ],
+      "games": [
+        3,
+        0,
+        2,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "WR",
+      "snaps": [
+        910,
+        899,
+        777,
+        634,
+        645
+      ],
+      "games": [
+        14,
+        16,
+        14,
+        13,
+        12
+      ],
+      "rookieRole": true
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "games": [
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      "rookieRole": false
+    },
+    {
+      "position": "DB",
+      "snaps": [
+        92,
+        670,
+        293,
+        2,
+        65
+      ],
+      "games": [
+        13,
+        11,
+        10,
+        1,
+        8
+      ],
+      "rookieRole": false
+    }
+  ],
+  "supportByPosition": {
+    "DB": {
+      "donors": 57,
+      "rookieRole": 26,
+      "noRookieRole": 31,
+      "roleConditioningSupported": true
+    },
+    "DL": {
+      "donors": 49,
+      "rookieRole": 19,
+      "noRookieRole": 30,
+      "roleConditioningSupported": true
+    },
+    "LB": {
+      "donors": 38,
+      "rookieRole": 12,
+      "noRookieRole": 26,
+      "roleConditioningSupported": true
+    },
+    "OL": {
+      "donors": 53,
+      "rookieRole": 14,
+      "noRookieRole": 39,
+      "roleConditioningSupported": true
+    },
+    "QB": {
+      "donors": 15,
+      "rookieRole": 3,
+      "noRookieRole": 12,
+      "roleConditioningSupported": true
+    },
+    "RB": {
+      "donors": 34,
+      "rookieRole": 7,
+      "noRookieRole": 27,
+      "roleConditioningSupported": true
+    },
+    "ST": {
+      "donors": 9,
+      "rookieRole": 0,
+      "noRookieRole": 9,
+      "roleConditioningSupported": false
+    },
+    "TE": {
+      "donors": 18,
+      "rookieRole": 7,
+      "noRookieRole": 11,
+      "roleConditioningSupported": true
+    },
+    "WR": {
+      "donors": 37,
+      "rookieRole": 15,
+      "noRookieRole": 22,
+      "roleConditioningSupported": true
+    }
+  },
+  "validation": {
+    "status": "fit-only; no independent pre2018 chronological test possible",
+    "chronologicallyValidatedFor2018": false,
+    "n": 310,
+    "excludedUnknownIds": {
+      "2013": 22
+    },
+    "reason": "2012 snap source is header-only. Only2013 has all five annual outcomes observable before2018 draft.",
+    "samplingPolicy": "Condition within broad position on rookieRole using a pooled calibrated rookie-role probability if both strata exist; otherwise use position-wide donors. Draw one whole five-year vector.",
+    "specialists": "ST scrimmage snaps are not a specialist quality metric; do not condition on scrimmage role or infer specialist skill.",
+    "uncertainty": "Empirical donor variation is conditional on one cohort and observed opportunity; it does not include full parameter or model uncertainty."
+  },
+  "sourceCoverage": {
+    "2013": {
+      "expectedGames": 256,
+      "observedGames": 256,
+      "rows": 22821,
+      "sha256": "9d1fdd557875b9a2c71d88e583da24a739dfca671edf8223d6171e39a421000e"
+    },
+    "2014": {
+      "expectedGames": 256,
+      "observedGames": 256,
+      "rows": 22880,
+      "sha256": "84540709d9483552185c8ca3ef30b2f66fb94b30c3e6c21e7a27205f337f21d3"
+    },
+    "2015": {
+      "expectedGames": 256,
+      "observedGames": 256,
+      "rows": 22864,
+      "sha256": "841496252ada825c3c50d3ba9b4b26d3f4fabd0fedc5fb44f286ddaaa5bdb7e0"
+    },
+    "2016": {
+      "expectedGames": 256,
+      "observedGames": 256,
+      "rows": 22904,
+      "sha256": "a778e24e9eb665ffe8f16093b03c5a263dca0250b3aa92bd6002f61f534bea59"
+    },
+    "2017": {
+      "expectedGames": 256,
+      "observedGames": 256,
+      "rows": 22876,
+      "sha256": "eab2fad2df99249d4061ed9c5c34d312cdba07cf3159d027d255bdc9b6526917"
+    }
+  },
+  "limitations": [
+    "Known-ID selection bias; unknown identities excluded.",
+    "No independent strict2018 chronological validation and only one donor cohort.",
+    "Actual opportunity, injuries, coaching and roster context are confounded in donor outcomes.",
+    "Games count positive recorded snaps, not official credited appearances or starts.",
+    "Future17-game seasons require an explicit exposure policy; no silent rescaling is empirically validated.",
+    "No causal mapping from snaps to team wins or value is identified.",
+    "Whole trajectory sampling preserves donor correlations but not causal context or unobserved talent."
+  ]
+}

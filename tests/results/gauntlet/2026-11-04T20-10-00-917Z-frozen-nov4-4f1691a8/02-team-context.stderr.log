@@ -1,0 +1,10 @@
+test_all_32_teams_reconcile_source_snap_totals (__main__.ContextTests.test_all_32_teams_reconcile_source_snap_totals) ... ok
+test_contributor_stats_preserve_team_specific_sources (__main__.ContextTests.test_contributor_stats_preserve_team_specific_sources) ... ok
+test_depth_chart_units_are_not_schemes (__main__.ContextTests.test_depth_chart_units_are_not_schemes) ... ok
+test_exact_artifact_and_input_hashes (__main__.ContextTests.test_exact_artifact_and_input_hashes) ... ok
+test_missing_draft_day_facts_not_inferred (__main__.ContextTests.test_missing_draft_day_facts_not_inferred) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.168s
+
+OK

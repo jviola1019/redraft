@@ -1,0 +1,20 @@
+{
+  "id": "league-matrix",
+  "kind": "structural",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "tests/league-matrix.mjs",
+    "/workspace/sites/redraft/tests/results/gauntlet/2026-11-04T20-33-22-463Z-rollover-playoff-648ccb60/league-matrix.json"
+  ],
+  "startedAt": "2026-11-04T20:34:08.881Z",
+  "finishedAt": "2026-11-04T20:34:50.901Z",
+  "durationMs": 42019.642671,
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "error": null,
+  "status": "passed",
+  "stdout": "11-league-matrix.stdout.log",
+  "stderr": "11-league-matrix.stderr.log",
+  "artifacts": []
+}

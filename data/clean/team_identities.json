@@ -1,0 +1,42 @@
+{
+  "verifiedDate": "2026-11-02",
+  "counterfactualAssumption": "Historical naming changes treated as exogenous to draft interventions. Canonical franchise IDs stay stable.",
+  "identities": [
+    {
+      "team": "OAK",
+      "startSeason": 2018,
+      "endSeason": 2019,
+      "name": "Oakland Raiders"
+    },
+    {
+      "team": "OAK",
+      "startSeason": 2020,
+      "endSeason": 2022,
+      "name": "Las Vegas Raiders",
+      "effectiveDate": "2020-01-22",
+      "source": "https://www.raiders.com/news/las-vegas-raiders-silver-and-black-officially-welcomed-to-the-silver-state"
+    },
+    {
+      "team": "WAS",
+      "startSeason": 2018,
+      "endSeason": 2019,
+      "name": "Washington Redskins"
+    },
+    {
+      "team": "WAS",
+      "startSeason": 2020,
+      "endSeason": 2021,
+      "name": "Washington Football Team",
+      "effectiveDate": "2020-07-23",
+      "source": "https://www.commanders.com/news/redskins-announce-franchise-will-be-called-washington-football-team-pending-adop"
+    },
+    {
+      "team": "WAS",
+      "startSeason": 2022,
+      "endSeason": 2022,
+      "name": "Washington Commanders",
+      "effectiveDate": "2022-02-02",
+      "source": "https://www.commanders.com/news/the-washington-football-team-is-now-the-washington-commanders"
+    }
+  ]
+}

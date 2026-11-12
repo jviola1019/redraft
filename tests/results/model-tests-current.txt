@@ -1,0 +1,20 @@
+test_chronological_partitions (__main__.ModelValidation.test_chronological_partitions) ... ok
+test_coarsening_metrics_recomputed (__main__.ModelValidation.test_coarsening_metrics_recomputed) ... ok
+test_coarsening_preserves_missingness_and_units (__main__.ModelValidation.test_coarsening_preserves_missingness_and_units) ... ok
+test_completed_label_availability (__main__.ModelValidation.test_completed_label_availability) ... ok
+test_feature_outcome_separation (__main__.ModelValidation.test_feature_outcome_separation) ... ok
+test_future_games_do_not_change_fit (__main__.ModelValidation.test_future_games_do_not_change_fit) ... ok
+test_future_prospect_and_career_poisoning (__main__.ModelValidation.test_future_prospect_and_career_poisoning) ... ok
+test_metrics_recomputed_from_holdout (__main__.ModelValidation.test_metrics_recomputed_from_holdout) ... ok
+test_original_publication_unknown_is_explicit (__main__.ModelValidation.test_original_publication_unknown_is_explicit) ... ok
+test_pooling_groups_use_features_only (__main__.ModelValidation.test_pooling_groups_use_features_only) ... ok
+test_pooling_metrics_recomputed (__main__.ModelValidation.test_pooling_metrics_recomputed) ... ok
+test_pooling_unknowns_grouped_but_not_scored (__main__.ModelValidation.test_pooling_unknowns_grouped_but_not_scored) ... ok
+test_probabilities_ids_specialists (__main__.ModelValidation.test_probabilities_ids_specialists) ... ok
+test_residual_variance_identity (__main__.ModelValidation.test_residual_variance_identity) ... ok
+test_snap_coverage_before_zero_labels (__main__.ModelValidation.test_snap_coverage_before_zero_labels) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 5.935s
+
+OK

@@ -1,0 +1,105 @@
+{
+  "team": "NE",
+  "count": 256,
+  "convergence": [
+    {
+      "replicates": 8,
+      "pairedMeanWinDifference": -1.5,
+      "pairedStandardError": 0.9636241116594314,
+      "mean95Interval": [
+        -3.3887032588524857,
+        0.38870325885248547
+      ],
+      "probabilityImprovement": 0.125,
+      "probabilityMcse": 0.11692679333668567
+    },
+    {
+      "replicates": 16,
+      "pairedMeanWinDifference": -1.625,
+      "pairedStandardError": 0.7238496621076322,
+      "mean95Interval": [
+        -3.043745337730959,
+        -0.20625466226904088
+      ],
+      "probabilityImprovement": 0.1875,
+      "probabilityMcse": 0.09757809372497497
+    },
+    {
+      "replicates": 32,
+      "pairedMeanWinDifference": -1.28125,
+      "pairedStandardError": 0.694497925807999,
+      "mean95Interval": [
+        -2.6424659345836776,
+        0.07996593458367784
+      ],
+      "probabilityImprovement": 0.21875,
+      "probabilityMcse": 0.07307924583542855
+    },
+    {
+      "replicates": 64,
+      "pairedMeanWinDifference": -1.25,
+      "pairedStandardError": 0.45589176521110975,
+      "mean95Interval": [
+        -2.143547859813775,
+        -0.35645214018622495
+      ],
+      "probabilityImprovement": 0.265625,
+      "probabilityMcse": 0.055208179785556914
+    },
+    {
+      "replicates": 128,
+      "pairedMeanWinDifference": -1.0390625,
+      "pairedStandardError": 0.29956545458950257,
+      "mean95Interval": [
+        -1.626210790995425,
+        -0.451914209004575
+      ],
+      "probabilityImprovement": 0.296875,
+      "probabilityMcse": 0.04038295532838932
+    },
+    {
+      "replicates": 256,
+      "pairedMeanWinDifference": -1.07421875,
+      "pairedStandardError": 0.21060973877589037,
+      "mean95Interval": [
+        -1.4870138380007452,
+        -0.6614236619992548
+      ],
+      "probabilityImprovement": 0.3203125,
+      "probabilityMcse": 0.02916228851882639
+    }
+  ],
+  "flags": [
+    {
+      "metric": "totalScoreMean",
+      "observed": 46.289855072463766,
+      "simulatedMean": 43.75650545445884,
+      "interval": [
+        42.93292682926829,
+        44.74771341463415
+      ]
+    },
+    {
+      "metric": "zeroScoreRate",
+      "observed": 0.010297482837528604,
+      "simulatedMean": 0.01875416825457317,
+      "interval": [
+        0.013338414634146341,
+        0.025152439024390245
+      ]
+    }
+  ],
+  "performance": {
+    "draftMilliseconds": 185.28280800000005,
+    "simulationMilliseconds": 9828.225611,
+    "millisecondsPerPairedFiveSeasonReplicate": 38.39150629296875,
+    "hardware": {
+      "platform": "linux",
+      "arch": "x64",
+      "cpu": "AMD EPYC 9V74 80-Core Processor",
+      "logicalCpus": 9,
+      "memoryBytes": 10451427328,
+      "node": "v24.22.1"
+    }
+  }
+}

@@ -1,0 +1,80 @@
+erDiagram
+  dataset_versions ||--o{ game_runs : "version"
+  model_versions ||--o{ game_runs : "version"
+  disclosure_policies ||--o{ daily_challenges : "immutable"
+  game_runs ||--o{ game_pick_assets : "owns"
+  daily_challenges ||--o{ daily_attempts : "one per user"
+  prospects ||--o{ game_public_prospect_ids : "private canonical key"
+  game_pick_assets ||--o{ game_draft_picks : "owner validated"
+  daily_attempts ||--o{ daily_leaderboard_entries : "immutable score"
+  game_runs ||--o{ simulation_runs : "version match"
+  dataset_versions {
+    text dataset_version PK
+    text created_at
+    text manifest_sha256
+    text pipeline_version
+  }
+  model_versions {
+    text model_version PK
+    text dataset_version FK
+    text training_cutoff
+    text training_label_max_available_at
+  }
+  disclosure_policies {
+    text disclosure_version PK
+    text mode
+    text field_rules_json
+    text finalized_at
+  }
+  game_runs {
+    text game_run_id PK
+    text user_id FK
+    integer draft_year FK
+    text team_id FK
+  }
+  daily_challenges {
+    text challenge_date PK
+    text dataset_version FK
+    text model_version FK
+    text disclosure_version FK
+  }
+  prospects {
+    text prospect_id PK
+    text player_id FK
+    integer draft_year FK
+    text college_id FK
+  }
+  game_pick_assets {
+    text game_run_id PK
+    text pick_id PK
+    text owner_team_id FK
+  }
+  daily_attempts {
+    text challenge_date PK
+    text user_id PK
+    text game_run_id FK
+    text submitted_at
+  }
+  game_public_prospect_ids {
+    text game_run_id PK
+    text public_id PK
+    text prospect_id FK
+  }
+  game_draft_picks {
+    text game_run_id PK
+    text pick_id PK
+    text team_id FK
+    text prospect_id FK
+  }
+  daily_leaderboard_entries {
+    text challenge_date PK
+    text user_id PK
+    real score
+    text score_components_json
+  }
+  simulation_runs {
+    text simulation_run_id PK
+    text game_run_id FK
+    text model_version FK
+    text dataset_version FK
+  }
