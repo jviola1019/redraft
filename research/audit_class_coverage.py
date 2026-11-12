@@ -53,7 +53,7 @@ def main():
                         failures.append(f"{game['game_id']}: postseason tie")
                     previous_winners.add(game['home_team'] if home > away else game['away_team'])
         records.append({
-            'draftYear': year, 'recordedPicks': len(picks), 'playable': year == 2018,
+            'draftYear': year, 'recordedPicks': len(picks), 'scenarioDatasetAvailable': (ROOT / 'data/processed' / f'scenario-{year}.json').exists(),
             'recordedRegularGames': sum(r['game_type'] == 'REG' for r in games),
             'recordedPostseason': dict(counts),
             'fiveYearWindow': [{'season': season, 'status': (

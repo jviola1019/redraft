@@ -160,7 +160,22 @@ def main(download=False):
     artifact_path.write_text(json.dumps({'metadata':metadata,'teams':result,'leagueGroupReferences':references}, indent=2))
     manifest_path = ROOT/'data/clean/team_context_source_manifest.json'
     prior_manifest = json.loads(manifest_path.read_text()) if manifest_path.exists() else []
-    sources_manifest = prior_manifest['sources'] if isinstance(prior_manifest, dict) else prior_manifest
+    prior_sources = prior_manifest['sources'] if isinstance(prior_manifest, dict) else prior_manifest
+    shared_path = ROOT/'data/clean/source_manifest.json'
+    shared_sources = json.loads(shared_path.read_text()) if shared_path.exists() else []
+    sources_manifest = []
+    for name, url in SOURCE_FILES.items():
+        source_path = ROOT/'data/raw'/name
+        payload = source_path.read_bytes()
+        digest = hashlib.sha256(payload).hexdigest()
+        # Another ingestion command may refresh a shared source. Preserve only
+        # retrieval receipts that identify the exact bytes being transformed.
+        matches = [row for row in [*prior_sources, *shared_sources]
+                   if row.get('file') == f'data/raw/{name}' and row.get('url') == url
+                   and row.get('sha256') == digest and row.get('bytes') == len(payload)]
+        receipt = max(matches, key=lambda row: row.get('retrieved_at') or '') if matches else {}
+        sources_manifest.append({'file':f'data/raw/{name}', 'url':url, 'sha256':digest,
+            'bytes':len(payload), 'retrieved_at':receipt.get('retrieved_at')})
     manifest_path.write_text(json.dumps({'artifact':'data/clean/team_context_2018.json',
         'artifactSha256':hashlib.sha256(artifact_path.read_bytes()).hexdigest(),
         'artifactVersion':metadata['version'], 'verifiedDate':metadata['verifiedDate'],

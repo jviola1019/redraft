@@ -6,13 +6,13 @@ The NFL draft time machine. Draft the past. Rewrite the future.
 
 Exactly two playable modes share the same domain engine: historical draft plus five-season simulation, and a UTC daily challenge. The user controls scouting, draft selections and draft-pick trades, not a separate franchise-management game. No fantasy, trivia, betting, on-field gameplay or extra playable modes.
 
-The intended full product has historically accurate information sets, coherent league simulation, evaluated forecasts, secure daily scoring and responsive professional interaction. The current implementation is a **2018 research alpha**; the complete production acceptance gate is not claimed. `KNOWN_LIMITATIONS.md` records missing evidence and incomplete systems.
+The intended full product has historically accurate information sets, coherent league simulation, evaluated forecasts, secure daily scoring and responsive professional interaction. The current implementation is a **2018–2026 research alpha**; the complete production acceptance gate is not claimed. `KNOWN_LIMITATIONS.md` records missing evidence and incomplete systems.
 
 ## Current reconstruction
 
 The earlier transient checkout was unavailable when work resumed. This checkout is rebuilt and must earn fresh test/build/deployment evidence. Earlier reported test counts and timings are historical session notes, not proof of this code. Versions distinguish restored source from earlier variants. Source checkpoints and exact deployment commit linkage are required.
 
-2018 is selected for accessible draft/combine/game coverage and a completed five-season historical window. It is a practical initial scope, not a scientific conclusion that the year is uniquely optimal. Gameplay includes 336 documented combine participants.39 non-combine historical draftees remain actual-baseline references only; they cannot enter user or CPU selections, scouting or board ranking. The incomplete eligible universe and baseline-pool mismatch remain material limitations.
+2018 was initially selected for accessible draft/combine/game coverage and a completed five-season historical window. It is a practical initial scope, not a scientific conclusion that the year is uniquely optimal. Gameplay includes 336 documented combine participants.39 non-combine historical draftees remain actual-baseline references only; they cannot enter user or CPU selections, scouting or board ranking. The incomplete eligible universe and baseline-pool mismatch remain material limitations.
 
 ## Identity and evidence
 
@@ -24,4 +24,4 @@ Every displayed item is a historical fact, transformed observation, derived stat
 
 Random assignment is the default; supported team/year/seed controls are available. Drafting covers the real seven-round structure and current-pick transfers. Scouting improves disclosed information without changing talent. Saving is authoritative and durable. Results separate actual history, simulated actual-selection baseline and alternate selections, with paired uncertainty and explicit cohort-only star/award summaries. Daily attempts use the same engine, fixed configuration and server-derived scoring.
 
-Reference windows are draft year through draft year+4. The actual present-day boundary must use runtime time and verified season completion; never invent future actuals. Daily rollover uses UTC. This 2018 window is entirely historical, so future-boundary behavior requires separate tests.
+Reference windows are draft year through draft year+4. The actual present-day boundary must use runtime time and verified season completion; never invent future actuals. Daily rollover uses UTC. The 2018–2021 draft windows are fully observed; later windows contain incomplete or future seasons. Actual values require verified complete source coverage.

@@ -17,7 +17,10 @@ const origin = 'https://redraft.integration.test', scratch = mkdtempSync(join(tm
 const context = new AsyncLocalStorage();
 globalThis.__redraftHeadersContext = context;
 globalThis.__redraftTestEnv = {};
-const tracked = ['app/api/game/route.ts', 'lib/scouting.ts', 'lib/engine.ts', 'lib/simulation.ts', 'lib/server-data.ts', 'analytics/model.json', 'analytics/five_year_strict_2018.json', 'analytics/scoring_recalibration.json', 'data/clean/team_context_2018.json', 'data/clean/team_context_source_manifest.json', 'data/processed/scenario-2018.json', 'tests/api.integration.mjs', ...readdirSync('drizzle').filter(f => f.endsWith('.sql')).sort().map(f => 'drizzle/' + f)];
+const tracked = ['app/api/game/route.ts', 'lib/scouting.ts', 'lib/engine.ts', 'lib/simulation.ts', 'lib/server-data.ts', 'analytics/model.json', 'analytics/five_year_strict_2018.json', 'analytics/scoring_recalibration.json', 'data/clean/team_context_2018.json', 'data/clean/team_context_source_manifest.json', 'data/processed/scenario-coverage.json', 'tests/api.integration.mjs',
+    ...readdirSync('data/processed').filter(f => /^scenario-\d{4}\.json$/.test(f)).sort().map(f => 'data/processed/' + f),
+    ...readdirSync('analytics').filter(f => /^model-\d{4}\.json$/.test(f)).sort().map(f => 'analytics/' + f),
+    ...readdirSync('drizzle').filter(f => f.endsWith('.sql')).sort().map(f => 'drizzle/' + f)];
 const hashes = () => Object.fromEntries(tracked.map(f => [f, createHash('sha256').update(readFileSync(f)).digest('hex')]));
 const sourceHashes = hashes();
 class D1SQLite {
@@ -85,6 +88,12 @@ registerHooks({
 });
 const { GET, POST } = await import(pathToFileURL(join(root, 'app/api/game/route.ts')).href);
 const dataset = JSON.parse(readFileSync('data/processed/scenario-2018.json', 'utf8'));
+const scenarioData = year => JSON.parse(readFileSync(`data/processed/scenario-${year}.json`, 'utf8'));
+const pinnedScenarios = await import(pathToFileURL(join(root, 'lib/server-data.ts')).href);
+const scenarioMatrix = pinnedScenarios.years.map(year => {
+    const scenario = scenarioData(year), bundle = pinnedScenarios.getScenario(year);
+    return { year, picks: scenario.picks.length, playableCandidates: scenario.metadata.playableProspectCount, modelVersion: bundle.models.version, teamContextAvailable: bundle.teamContexts.length > 0 };
+});
 const developmentModel = JSON.parse(readFileSync('analytics/five_year_strict_2018.json', 'utf8'));
 const { positionGroup } = await import(pathToFileURL(join(root, 'lib/engine.ts')).href);
 const cases = [], started = performance.now(), nativeDate = Date, quick = process.argv.includes('--quick');
@@ -133,8 +142,8 @@ const stored = id => JSON.parse(one('SELECT state FROM game_runs WHERE id=?', id
 const restore = (id, state) => database.sql.prepare('UPDATE game_runs SET state=? WHERE id=?').run(JSON.stringify(state), id);
 function assertNoIds(view) { const text = JSON.stringify(view); assert.ok(!text.includes('p2018-'), 'Canonical player hashes leaked.'); assert.ok(!text.includes('blindSalt'), 'Private salt leaked.'); for (const p of view.prospects ?? [])
     assert.match(p.id, /^bp_[a-f0-9]{32}$/); }
-function assertBlind(view) { assertNoIds(view); assert.equal(view.game.identityRevealed, false); assert.equal(view.historicalSelections, undefined); for (const p of view.prospects) {
-    assert.ok(!dataset.prospects.some(raw => raw.name === p.name), `Name leaked: ${p.name}`);
+function assertBlind(view) { const scenario = scenarioData(view.game.year); assertNoIds(view); assert.equal(view.game.identityRevealed, false); assert.equal(view.historicalSelections, undefined); for (const p of view.prospects) {
+    assert.ok(!scenario.prospects.some(raw => raw.name === p.name), `Name leaked: ${p.name}`);
     assert.equal(p.college, 'Hidden until reveal');
     for (const f of ['heightIn', 'weightLb', 'forty', 'bench', 'verticalIn', 'broadJumpIn', 'cone', 'shuttle'])
         assert.equal(p[f], null, `Exact ${f} leaked.`);
@@ -159,7 +168,7 @@ async function finishDraft(owner, initial, preferred = []) { let view = initial,
     assertNoIds(view);
     if (view.game.mode === 'daily')
         assertBlind(view);
-} assert.equal(view.game.status, 'ready'); assert.equal(view.game.selections.length, 256); assert.equal(new Set(view.game.selections.map(p => p.prospectId)).size, 256); assert.equal(new Set(view.game.selections.map(p => p.team)).size, 32); return view; }
+} assert.equal(view.game.status, 'ready'); assert.equal(view.game.selections.length, view.game.picks.length); assert.equal(new Set(view.game.selections.map(p => p.prospectId)).size, view.game.picks.length); assert.equal(new Set(view.game.selections.map(p => p.team)).size, 32); return view; }
 async function finishSimulation(owner, initial, reopen = false) { let view = initial, steps = 0; while (view.game.status !== 'complete') {
     const before = view.game.results?.replicates.length ?? 0;
     view = await mutate(owner, view, 'simulate');
@@ -209,6 +218,14 @@ try {
     await check('auth, CSRF, strict schema and body-size limits', async () => {
         await expect('POST', null, { body: newPayload() }, 401);
         await expect('GET', null, { action: 'history' }, 401);
+        process.env.NODE_ENV = 'development';
+        delete process.env.REDRAFT_LOCAL_IDENTITY;
+        await expect('GET', null, { action: 'history' }, 401);
+        process.env.REDRAFT_LOCAL_IDENTITY = '1';
+        await expect('GET', null, { action: 'history' }, 200);
+        process.env.NODE_ENV = 'production';
+        await expect('GET', null, { action: 'history' }, 401);
+        delete process.env.REDRAFT_LOCAL_IDENTITY;
         await expect('POST', 'security', { body: newPayload(), headers: { origin: 'https://untrusted.invalid' } }, 403);
         await expect('POST', 'security', { body: newPayload(), headers: { 'sec-fetch-site': 'cross-site' } }, 403);
         await expect('POST', 'security', { body: newPayload(), headers: { 'content-type': 'text/plain' } }, 415);
@@ -216,12 +233,13 @@ try {
         await expect('POST', 'security', { rawBody: ' '.repeat(16001) }, 413);
         await expect('POST', 'security', { body: { ...newPayload(), score: 100 } }, 400);
         await expect('POST', 'security', { body: { action: 'new', mode: 'historical' } }, 400);
-        await expect('POST', 'security', { body: newPayload('historical', { year: 2020 }) }, 400);
+        await expect('POST', 'security', { body: newPayload('historical', { year: 2017 }) }, 400);
         await expect('POST', 'security', { body: newPayload('historical', { team: 'ZZZ' }) }, 400);
     });
     await check('versioned creation and request replay', async () => {
         const bootstrap = await expect('GET', 'historical-owner');
-        assert.deepEqual(bootstrap.years, [2018]);
+        assert.deepEqual(bootstrap.years, pinnedScenarios.years);
+        assert.equal(bootstrap.teamsByYear['2019'].length, 32);
         assert.equal(bootstrap.teams.length, 32);
         assert.equal(bootstrap.teamContexts.length, 32);
         assert.equal(bootstrap.teamContextMetadata.observedSeason, 2017);
@@ -356,6 +374,11 @@ try {
         await expect('POST', 'daily-a', { body: newPayload('daily', { seed: 'chosen' }) }, 400);
         dailyA = await expect('POST', 'daily-a', { body: newPayload('daily') }, 201);
         dailyB = await expect('POST', 'daily-b', { body: newPayload('daily') }, 201);
+        assert.ok(pinnedScenarios.years.includes(dailyA.game.year));
+        assert.equal(dailyA.game.year, dailyB.game.year);
+        assert.equal(stored(dailyA.game.id).datasetVersion, pinnedScenarios.getScenario(dailyA.game.year).dataset.metadata.version);
+        assert.equal(stored(dailyA.game.id).modelVersion, pinnedScenarios.getScenario(dailyA.game.year).models.version);
+        assert.equal(dailyA.game.picks.length, pinnedScenarios.getScenario(dailyA.game.year).dataset.picks.length);
         assertBlind(dailyA);
         assertBlind(dailyB);
         assert.equal(dailyA.game.team, dailyB.game.team);
@@ -411,9 +434,10 @@ try {
             await expect('POST', 'rollover-owner', { body: mutation(unfinished, 'advance', { pace: 'user' }) }, 409);
             const reveal = await load('daily-a', dailyA.game.id);
             assert.equal(reveal.game.identityRevealed, true);
-            assert.equal(reveal.historicalSelections.length, 256);
-            assert.equal(reveal.prospects.length, 375);
-            assert.ok(reveal.prospects.every(p => dataset.prospects.some(raw => raw.name === p.name)));
+            const revealedScenario = scenarioData(reveal.game.year);
+            assert.equal(reveal.historicalSelections.length, revealedScenario.actualPicks.length);
+            assert.equal(reveal.prospects.length, revealedScenario.prospects.length);
+            assert.ok(reveal.prospects.every(p => revealedScenario.prospects.some(raw => raw.name === p.name)));
             const next = await expect('POST', 'rollover-owner', { body: newPayload('daily') }, 201);
             assert.notEqual(next.game.id, unfinished.game.id);
             assert.equal(one('SELECT count(*) AS n FROM daily_attempts WHERE owner=?', 'rollover-owner').n, 2);
@@ -438,6 +462,54 @@ try {
         await expect('POST', 'limited-owner', { body: newPayload() }, 429);
         assert.equal(one('SELECT count(*) AS n FROM game_runs WHERE owner=?', 'limited-owner').n, 0);
     });
+    await check('all registered scenarios use exact bundles through draft, simulation, and reload', async () => {
+        const bootstrap = await expect('GET', 'scenario-matrix-owner');
+        assert.deepEqual(bootstrap.years, pinnedScenarios.years);
+        const coverage2021 = bootstrap.coverage.find(s => s.year === 2021);
+        assert.equal(coverage2021.status, 'research-alpha-dataset-built');
+        assert.ok(coverage2021.blockers.some(text => /no strict archived pre-draft order snapshot/i.test(text)));
+        await expect('POST', 'scenario-matrix-owner', { body: newPayload('historical', { year: 2017 }) }, 400);
+        for (const year of pinnedScenarios.years.filter(year => year !== 2018)) {
+            const source = scenarioData(year), bundle = pinnedScenarios.getScenario(year), owner = `year-${year}-owner`;
+            assert.equal(source.teams.length, 32);
+            assert.equal(new Set(source.teams.map(team => team.id)).size, 32);
+            assert.equal(source.picks.length, source.actualPicks.length);
+            assert.equal(bundle.models.usagePolicy, undefined, `${year} must not borrow 2018's usage context.`);
+            assert.ok(bundle.models.prospect.projections.some(p => p.supported === true));
+            assert.ok(bundle.models.version.includes(`redraft-${year}-pre2018-logistic-C10-v1`));
+            assert.equal(bundle.teamContexts.length, 0);
+            assert.equal(bundle.teamContextMetadata.available, false);
+            const priorSeason = year - 1;
+            for (const team of source.teams) {
+                const games = source.games.filter(g => g.season === priorSeason && g.type === 'REG' && (g.home === team.id || g.away === team.id));
+                assert.ok(games.length > 0, `${year} must contain the preceding regular season for ${team.id}.`);
+                const margin = games.reduce((sum, g) => sum + (g.home === team.id ? g.homeScore - g.awayScore : g.awayScore - g.homeScore), 0) / games.length;
+                assert.ok(Math.abs(bundle.models.team.initialStrength[team.id] - margin) < 1e-10, `${team.id} initial strength for ${year} must use known ${priorSeason} points.`);
+            }
+            let view = await expect('POST', owner, { body: newPayload('historical', { year, team: 'ARI', seed: `scenario-api-${year}` }) }, 201);
+            assert.equal(view.game.year, year);
+            assert.equal(view.game.modelVersion, bundle.models.version);
+            assert.equal(view.game.picks.length, source.picks.length);
+            assert.equal(view.prospects.length, source.metadata.playableProspectCount);
+            view = await finishDraft(owner, view);
+            assert.equal(view.game.status, 'ready');
+            assert.equal(view.game.selections.length, source.picks.length);
+            assert.equal(view.prospects.length, source.prospects.length);
+            assert.equal(view.selectedTeamContext, null);
+            assert.ok(view.prospects.every(p => !('rawModelProbability' in p.projection)), 'Model diagnostic scores must stay server-side.');
+            view = await mutate(owner, view, 'simulate');
+            assert.equal(view.game.status, 'simulating');
+            assert.equal(view.game.results.replicates.length, 4);
+            assert.deepEqual(view.game.results.actual.map(x => x.year), Array.from({ length: 5 }, (_, i) => year + i));
+            assert.ok(view.game.results.actual.filter(x => x.state !== 'recorded').every(x => x.wins === null && x.losses === null && x.ties === null && x.playoff === null && x.champion === null));
+            if (year === 2026) assert.deepEqual(view.game.results.actual.map(x => x.state), ['incomplete', 'future', 'future', 'future', 'future']);
+            const reloaded = await load(owner, view.game.id);
+            assert.equal(reloaded.game.year, year);
+            assert.equal(reloaded.game.revision, view.game.revision);
+            assert.equal(reloaded.game.results.replicates.length, 4);
+            assert.equal(reloaded.selectedTeamContext, null);
+        }
+    });
 }
 catch (e) {
     failure = e;
@@ -447,7 +519,7 @@ catch (e) {
 finally {
     globalThis.Date = nativeDate;
     const finalHashes = hashes(), sourceChanged = Object.keys(sourceHashes).some(f => sourceHashes[f] !== finalHashes[f]);
-    const report = { executedAt: new nativeDate().toISOString(), runtime: { node: process.version, os: platform(), architecture: arch(), cpu: cpus()[0]?.model }, scope: quick ? 'Security and draft flows only; simulation omitted' : 'Full 256-pair historical and two daily participants', method: 'Real route and auth helper through Node registerHooks; SQLite-backed D1 adapter and Next header-context adapter. Not a browser or production Cloudflare test.', migrations, sourceHashes, finalHashes, sourceChangedDuringRun: sourceChanged, cases, passed: cases.filter(c => c.status === 'passed').length, failed: cases.filter(c => c.status === 'failed').length, requests, maximumResponseBytes, durationMs: performance.now() - started, limitations: ['Does not establish Safari/WebKit behavior or production Worker CPU limits.', 'Synthetic identities and disposable SQLite database are isolated test fixtures.'] };
+    const report = { executedAt: new nativeDate().toISOString(), runtime: { node: process.version, os: platform(), architecture: arch(), cpu: cpus()[0]?.model }, scope: quick ? 'Security and draft flows with four-replicate scenario smoke checks' : 'Full 256-pair historical and two daily participants plus bounded scenario smoke checks', method: 'Real route and auth helper through Node registerHooks; SQLite-backed D1 adapter and Next header-context adapter. Not a browser or production Cloudflare test.', scenarios: scenarioMatrix, migrations, sourceHashes, finalHashes, sourceChangedDuringRun: sourceChanged, cases, passed: cases.filter(c => c.status === 'passed').length, failed: cases.filter(c => c.status === 'failed').length, requests, maximumResponseBytes, durationMs: performance.now() - started, limitations: ['Does not establish Safari/WebKit behavior or production Worker CPU limits.', 'Synthetic identities and disposable SQLite database are isolated test fixtures.'] };
     mkdirSync('tests/results', { recursive: true });
     writeFileSync(`tests/results/api-integration${quick ? '-quick' : ''}.json`, JSON.stringify(report, null, 2) + '\n');
     console.log('API_INTEGRATION_REPORT', JSON.stringify({ passed: report.passed, failed: report.failed, requests, durationMs: Math.round(report.durationMs), sourceChangedDuringRun: sourceChanged }));

@@ -7,8 +7,8 @@ process.chdir(fileURLToPath(new URL('..',import.meta.url)));
 const args=new Set(process.argv.slice(2));
 if([...args].some(a=>!['--python','--help'].includes(a)))throw Error('Usage: node scripts/setup.mjs [--python]');
 if(args.has('--help')){console.log('Install pinned JavaScript dependencies and run domain tests. --python also creates .venv and installs pinned analytics dependencies. Hosted identity/D1 setup is separate; see INSTALL.md.');process.exit(0);}
-const [major,minor]=process.versions.node.split('.').map(Number);
-if(major<22||(major===22&&minor<13))throw Error('Node22.13 or newer is required.');
+const [major]=process.versions.node.split('.').map(Number);
+if(major<24)throw Error('Node 24 or newer is required.');
 function run(cmd,argv){const r=spawnSync(cmd,argv,{stdio:'inherit',shell:process.platform==='win32'&&cmd==='pnpm'});if(r.error)throw r.error;if(r.status!==0)process.exit(r.status??1);}
 run('pnpm',['install','--frozen-lockfile']);
 run(process.execPath,['tests/run.mjs']);

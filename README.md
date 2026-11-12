@@ -1,93 +1,76 @@
+> **Recovery checkpoint:** This branch preserves critical source and season data but omits some test evidence. The original frozen checkout could not be fully recovered byte-for-byte. See [recovery status](docs/security/RECOVERY_STATUS_2026-11-12.md).
+
 # REDRAFT — The NFL Draft Time Machine
 
 Draft the past. Rewrite the future.
 
-Two modes share one historical drafting and simulation engine: a 2018 historical draft and a standardized UTC daily challenge. This is a research alpha, not a completed or causally validated NFL counterfactual model.
+REDRAFT is a playable **research alpha**, with exactly two modes: historical drafting and a shared UTC daily challenge. Both use the same seven-round draft, scouting, trade and five-season simulation engine. It is not a completed or statistically cleared production release.
 
-The reconstructed checkout uses real source records, actual fitted model artifacts and fresh tests. Old session tests do not certify this code. Current evidence and unfinished acceptance gates are in `TEST_RESULTS.md` and `KNOWN_LIMITATIONS.md`.
+## Run locally
 
-## Scope and limitations
-
-32 franchises, the real seven-round 256-selection structure and 336 documented combine participants form the playable scenario. Another 39 actual historical draftees are baseline-only because using later selections to define the playable universe would introduce future-derived membership information. The eligible universe remains incomplete, and the actual baseline uses a broader pool than the user.
-
-Scouting, current-pick trades, CPU decisions and paired five-season worlds are implemented as inspectable domain functions. Historical facts, model baseline and alternate outcomes remain separate. Rookie role estimates concern 200+ rookie snaps, not pure talent or validated five-year value. Individual future rosters/contracts, full NFL rules and five-year causal effects remain incomplete or assumption-dependent.
-
-Name hiding is not anonymity. College, year, position, measurements and precise model outputs can identify an athlete. Server DTOs and random per-run IDs reduce direct leakage; the threat model and proposed human recognition study are in `docs/PROSPECT_IDENTITY.md`. No human recognition/fairness result is claimed.
-
-## Repository map
-
-| Path | Purpose |
-|---|---|
-| `app/` | interface, platform identity and authoritative API |
-| `lib/engine.ts`, `lib/simulation.ts`, `lib/types.ts` | pure domain functions and contracts |
-| `db/schema.ts`, `drizzle/` | actual runtime D1 schema/migrations |
-| `research/`, `data/` | acquisition, sources, cleaning, snapshots and quality |
-| `analytics/` | chronological fitting, predictions, diagnostics and pinned Python requirements |
-| `tests/` | current domain, SQL and application checks |
-| `docs/warehouse/` | separate normalized analytical target; not the runtime schema |
-| `docs/erd/` | editable Mermaid and deterministic vector ERDs |
-
-## Reproduce research and checks
-
-Use the repository lockfile/package manager and the Sites skill’s dependency helper in the managed environment. Python dependencies are pinned under `analytics/requirements.txt`.
+Use Node 24 and pnpm 11.25.0. No paid API key or Cloudflare account is required for local play.
 
 ```sh
-python3 -m pip install -r analytics/requirements.txt
-python3 research/ingest.py
-python3 research/clean.py
-python3 analytics/train_models.py
-python3 analytics/test_models.py
-node tests/run.mjs
+git clone https://github.com/jviola1019/redraft.git
+cd redraft
+pnpm install --frozen-lockfile
+pnpm run build
+pnpm run db:local-init
+pnpm run dev:local
+```
+
+Open `http://127.0.0.1:5173/signin-with-chatgpt?return_to=%2F`. This is a loopback-only development identity. Local saves stay in the local D1 emulator. See [INSTALL.md](INSTALL.md) for setup, tests, research dependencies and deployment limits.
+
+## What is implemented
+
+- Real recorded prospects and draft slots, with explicit per-year source/cutoff metadata.
+- Anonymous shared scouting profiles, explanations for beginners, and post-draft identity disclosure. Daily identities remain hidden until the challenge closes at midnight UTC.
+- CPU selections, current-year pick trading, persistent saves and reproducible keyed random streams.
+- Paired historical-baseline and alternate five-season league simulations, plus completed actual-history comparisons. Unobserved actual outcomes remain null.
+- Historical 12/14-team playoff formats, reseeding and score-level tiebreak criteria.
+- Original SVG pixel football graphics driven by application state, with reduced-motion styling.
+
+The app lists enabled scenarios; [the coverage manifest](data/processed/scenario-coverage.json) records source limitations. A dataset existing on disk is not a claim that its forecasts are calibrated.
+
+## What is not cleared
+
+The original release criteria remain unmet. Quarterback tail uncertainty, scoring distribution, score-weight sensitivity, exact draft-day rosters, historical schemes and individual future roster/draft management need further work. Five-year snaps are sampled from a limited empirical donor model; their conversion to team strength is an assumption. Later classes use a frozen pre-2018 rookie-role model, with unsupported cases labeled as fallback priors. No causal alternate-history accuracy is claimed.
+
+Eligibility is restricted to verified/source-recorded combine participants or invitees, not every draft-eligible player. The actual historical baseline includes additional reference-only players. These unequal pools limit decision comparisons. Original publication timestamps are incomplete. Full net-touchdown tiebreaks, detailed overtime, contracts and future-pick trades are not implemented.
+
+Browser checks have a runnable test and CI job, but the local Chromium attempt was blocked by environment socket restrictions. HTTP/server tests do not certify mobile Safari, accessibility compliance or visual quality. No approved visual-regression baseline or human recognition study exists.
+
+## Reproduce checks
+
+```sh
+pnpm test
+pnpm exec tsc --noEmit
+pnpm run test:api
+pnpm run test:playoffs
+node tests/all-years.mjs
 python3 tests/warehouse_test.py
-python3 docs/erd/render_diagrams.py
+node tests/local-http.mjs
+# On a machine that permits browser execution:
+pnpm exec playwright install --with-deps chromium webkit
+pnpm run test:browser
+REDRAFT_BROWSER=webkit pnpm run test:browser
 ```
 
-Run only existing current scripts; additional data diagnostics and route-test commands are documented in their workstream reports. Network access is required for uncached provider downloads. No unsupported CollegeFootballData key is implied. Preserve source hashes and provenance.
-
-`tests/run.mjs` bundles TypeScript test entries with installed esbuild into a temporary directory and executes Node’s test runner. The analytical SQL suite uses standard Python SQLite. An API adapter test, when present, does not replace actual hosted authentication/network tests.
-
-## Run and build
+The full research audit needs Python dependencies and raw source downloads:
 
 ```sh
-npm run dev
-npm run build
+node scripts/setup.mjs --python
+. .venv/bin/activate
+python research/ingest.py
+node scripts/gauntlet.mjs --label independent-check
 ```
 
-Managed preview uses `sites-preview start /workspace/sites/redraft` instead of a competing server. Production platform identity is distinct from any local test fixture. Durable state requires configured D1 and applied runtime migrations.
+Exit 2 means adverse statistical evidence remains. Repeating the audit until it happens to pass is not validation. Source hashes, logs, finite seed matrices, rejected experiments and limitations are retained.
 
-Generate a new runtime migration with `npm run db:generate`, inspect the SQL, and apply only unapplied migrations. After a build has generated `dist/server/wrangler.json`, the local D1 command shape is:
+## Architecture and documentation
 
-```sh
-node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js d1 execute DB --local --config dist/server/wrangler.json --persist-to .wrangler/state --file drizzle/ACTUAL_PENDING_MIGRATION.sql
-```
+`app/` contains the interface and authoritative API; `lib/` holds the draft/simulation contracts; `drizzle/` contains runtime D1 migrations; `research/` and `analytics/` contain reproducible data/model work; `tests/` contains software and analytical checks. The normalized analytical warehouse is separate from the runtime schema.
 
-Replace the filename with the actual pending migration. Applied migrations are immutable. The analytical schema has overlapping conceptual names and must not be applied over runtime aggregate tables.
+Start with [the release plan](docs/release/PLAN_2026-11-12.md), [test evidence](TEST_RESULTS.md), [known limitations](KNOWN_LIMITATIONS.md), [source registry](SOURCE_REGISTRY.md) and [deployment instructions](DEPLOYMENT.md). The remaining required project reports are maintained at the repository root.
 
-The Sites workflow preserves the existing Site ID, commits/pushes exact source, builds/packages its artifacts and deploys the saved matching version. Only a verified terminal result establishes publication. See `DEPLOYMENT.md`.
-
-## Documentation
-
-Read `PROJECT_SPEC.md`, `MASTER_PLAN.md`, `RESEARCH_LOG.md`, `SOURCE_REGISTRY.md`, `ARCHITECTURE.md`, `DATA_DICTIONARY.md`, `MODEL_EXPERIMENTS.md`, `SIMULATION_VALIDATION.md`, `DESIGN_SYSTEM.md`, `DECISIONS.md`, `TEST_RESULTS.md`, `PROGRESS.md`, `KNOWN_LIMITATIONS.md` and `DEPLOYMENT.md`.
-
-Data attribution and redistribution restrictions are dataset-specific in the source registry. Original typography/vector graphics avoid copied logos and athlete photographs. No official NFL affiliation is implied.
-
-## November 4 downloadable release
-
-Use Node 22.13+ and the pnpm version in package.json. Install with
-`pnpm install --frozen-lockfile`, then run `pnpm run build`. Apply the
-included D1 migration before local play as described above. The source
-archive excludes credentials, local saves, installed dependencies and raw
-provider downloads. To reproduce the data audits, fetch the source files
-with `python3 research/ingest.py`.
-
-Run `python3 research/audit_class_coverage.py --as-of 2026-11-04` to audit
-the recorded 2018–2026 draft files and completed playoff brackets. Only
-2018 is playable. A five-season window can include completed, incomplete,
-and future seasons. The report labels them individually and uses only
-recorded scores through the requested date.
-
-Run `node scripts/gauntlet.mjs --label local-audit` for the fixed regression
-matrix. Exit 2 records statistical gate failures after structural checks
-complete. The daily challenge uses midnight UTC. Completed draft identities
-automatically refresh after closure in an open results view, with retries
-on network errors and a refresh when the tab becomes visible.
+No official NFL affiliation is implied. Source-specific data rights and attribution are documented separately. Official logos and athlete photographs are not bundled.

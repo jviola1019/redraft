@@ -1,0 +1,45 @@
+name: REDRAFT implementation checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  software:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+      - uses: pnpm/action-setup@v6
+        with:
+          version: 11.25.0
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm exec tsc --noEmit
+      - run: node tests/run.mjs
+      - run: python3 tests/warehouse_test.py
+      - run: node tests/api.integration.mjs
+      - run: node tests/playoff-backtest.mjs
+      - run: pnpm run build
+      - run: pnpm run db:local-init
+      - run: node tests/local-http.mjs
+      - run: pnpm exec playwright install --with-deps chromium webkit
+      - name: Chromium desktop and phone viewport
+        run: node tests/browser.mjs --start-server
+      - name: WebKit desktop and phone viewport
+        if: always()
+        env:
+          REDRAFT_BROWSER: webkit
+        run: node tests/browser.mjs --start-server
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: implementation-evidence
+          path: tests/results/
+          retention-days: 14
+# Software checks do not certify statistical calibration or historical completeness.
+# The raw-data-dependent research gauntlet is separately reproducible from INSTALL.md.

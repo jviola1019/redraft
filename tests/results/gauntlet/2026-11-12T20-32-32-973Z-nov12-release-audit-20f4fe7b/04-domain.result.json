@@ -1,0 +1,19 @@
+{
+  "id": "domain",
+  "kind": "structural",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "tests/run.mjs"
+  ],
+  "startedAt": "2026-11-12T20:32:35.361Z",
+  "finishedAt": "2026-11-12T20:32:37.271Z",
+  "durationMs": 1909.448645,
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "error": null,
+  "status": "passed",
+  "stdout": "04-domain.stdout.log",
+  "stderr": "04-domain.stderr.log",
+  "artifacts": []
+}

@@ -11,7 +11,7 @@ export type HistoryRow = {id:string;team:string;year:number;mode:string;status:s
 export type PriorTeamContext = PriorSeasonTeamContext & {
   usagePolicy?:{label:string;coefficientCap:number;positionAdjustments:Record<string,number>;interpretation:string};
 };
-export type Bootstrap = {teamContexts?:PriorTeamContext[];teams:Team[];years:number[];daily:{date:string;team:string;year:number;endsAt:string|number;status:string;gameId?:string};history:HistoryRow[];leaderboard:{rank:number;alias:string;score:number;team:string}[];methodology?:Record<string,unknown>;user?:{alias:string}};
+export type Bootstrap = {teamsByYear?:Record<string,Team[]>;teamContextsByYear?:Record<string,PriorTeamContext[]>;coverage?:{year:number;status:string;blockers?:string[]}[];teamContexts?:PriorTeamContext[];teams:Team[];years:number[];daily:{date:string;team:string;year:number;endsAt:string|number;status:string;gameId?:string};history:HistoryRow[];leaderboard:{rank:number;alias:string;score:number;team:string}[];methodology?:Record<string,unknown>;user?:{alias:string}};
 export type Payload = {teamContexts?:PriorTeamContext[];selectedTeamContext?:PriorTeamContext|null;teamContextMetadata?:Record<string,unknown>;game:GameState & {ensembleTarget?:number;identityRevealed?:boolean;identityRevealAt?:string|number};prospects:ProspectView[];teams:Team[];tradeEvaluation?:TradeEvaluation;historicalSelections?:Selection[];compatibilityWarning?:string};
 export const fmt=(n:number|null|undefined,d=0)=>n==null||!Number.isFinite(n)?'—':n.toFixed(d);
 export const percent=(n:number|null|undefined)=>n==null?'Withheld':`${Math.round(n*100)}%`;

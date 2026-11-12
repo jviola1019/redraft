@@ -1,5 +1,5 @@
 import developmentModel from '../analytics/five_year_strict_2018.json';
-import { clamp, normal, positionGroup, probability, random, pickValue, validateGame } from './engine';
+import { clamp, normal, positionGroup, probability, random, pickValue, scenarioYear, validateGame } from './engine';
 import type { RuntimeModels } from './engine';
 import type { Dataset, GameState, TeamSeason, SimGame, SeasonResult, PlayerSeason, Selection, SimWorld, ReplicateResult, SimulationResults, ScoreComponent } from './types';
 interface Fixture {
@@ -23,14 +23,136 @@ function compareTeams(a: TeamSeason, b: TeamSeason, games: SimGame[] = []): numb
     }
     return (b.pointsFor - b.pointsAgainst) - (a.pointsFor - a.pointsAgainst) || b.pointsFor - a.pointsFor || a.team.localeCompare(b.team);
 }
+type TiebreakScope = 'division' | 'wildcard';
+const teamPct = (t: TeamSeason) => (t.wins + t.ties / 2) / Math.max(1, t.wins + t.losses + t.ties);
+const pctFromGames = (games: SimGame[], team: string) => {
+    const own = games.filter(g => g.home === team || g.away === team);
+    return own.length ? own.reduce((n, g) => n + ((g.homeScore === g.awayScore) ? 0.5 : ((g.home === team) === (g.homeScore > g.awayScore)) ? 1 : 0), 0) / own.length : null;
+};
+/** NFL criteria through net points. Net touchdowns are unavailable in this score-level
+ * engine; ties remaining after net points use a disclosed deterministic team-ID fallback.
+ * Each awarded place restarts the procedure for every remaining tied club. */
+export function rankTiedTeams(candidates: TeamSeason[], dataset: Dataset, games: SimGame[], scope: TiebreakScope): TeamSeason[] {
+    const regular = games.filter(g => g.type === 'REG'), info = new Map(dataset.teams.map(t => [t.id, t]));
+    const own = (id: string) => regular.filter(g => g.home === id || g.away === id);
+    const opponent = (g: SimGame, id: string) => g.home === id ? g.away : g.home;
+    const margin = (g: SimGame, id: string) => g.home === id ? g.homeScore - g.awayScore : g.awayScore - g.homeScore;
+    const stats = new Map(dataset.teams.map(t => {
+        const rows = own(t.id);
+        return [t.id, { played: rows.length, credit: rows.reduce((n, g) => n + (margin(g, t.id) > 0 ? 1 : margin(g, t.id) === 0 ? .5 : 0), 0),
+            pf: rows.reduce((n, g) => n + (g.home === t.id ? g.homeScore : g.awayScore), 0), pa: rows.reduce((n, g) => n + (g.home === t.id ? g.awayScore : g.homeScore), 0) }];
+    }));
+    type Criterion = 'head' | 'division' | 'common' | 'conference' | 'victory' | 'schedule' | 'conferenceRank' | 'leagueRank' | 'commonNet' | 'conferenceNet' | 'net';
+    const metrics: Criterion[] = scope === 'division'
+        ? ['head', 'division', 'common', 'conference', 'victory', 'schedule', 'conferenceRank', 'leagueRank', 'commonNet', 'net']
+        : ['head', 'conference', 'common', 'victory', 'schedule', 'conferenceRank', 'leagueRank', 'conferenceNet', 'net'];
+    const metric = (group: TeamSeason[], criterion: Criterion): Map<string, number | null> => {
+        const sets = group.map(t => new Set(own(t.team).map(g => opponent(g, t.team))));
+        const common = [...sets[0]].filter(id => sets.every(set => set.has(id)));
+        return new Map(group.map(t => {
+            const rows = own(t.team);
+            let applicable = rows;
+            if (criterion === 'head') {
+                applicable = rows.filter(g => group.some(x => x.team === opponent(g, t.team)));
+                if (scope === 'wildcard' && group.length > 2) {
+                    const meetsAll = group.every(x => x.team === t.team || applicable.some(g => opponent(g, t.team) === x.team));
+                    return [t.team, meetsAll && applicable.every(g => margin(g, t.team) > 0) ? 1 : meetsAll && applicable.every(g => margin(g, t.team) < 0) ? -1 : 0];
+                }
+            }
+            if (criterion === 'division') applicable = rows.filter(g => info.get(opponent(g, t.team))?.division === info.get(t.team)?.division && info.get(opponent(g, t.team))?.conference === info.get(t.team)?.conference);
+            if (criterion === 'conference' || criterion === 'conferenceNet') applicable = rows.filter(g => info.get(opponent(g, t.team))?.conference === info.get(t.team)?.conference);
+            if (criterion === 'common' || criterion === 'commonNet') {
+                applicable = rows.filter(g => common.includes(opponent(g, t.team)));
+                if (criterion === 'common' && scope === 'wildcard' && applicable.length < 4) return [t.team, null];
+            }
+            if (criterion === 'victory' || criterion === 'schedule') {
+                const opponents = rows.filter(g => criterion === 'schedule' || margin(g, t.team) > 0).map(g => stats.get(opponent(g, t.team))!);
+                const played = opponents.reduce((n, x) => n + x.played, 0);
+                return [t.team, played ? opponents.reduce((n, x) => n + x.credit, 0) / played : null];
+            }
+            if (criterion === 'conferenceRank' || criterion === 'leagueRank') {
+                const peers = dataset.teams.filter(x => criterion === 'leagueRank' || x.conference === info.get(t.team)?.conference).map(x => stats.get(x.id)!);
+                const current = stats.get(t.team)!;
+                return [t.team, -peers.filter(x => x.pf > current.pf).length - peers.filter(x => x.pa < current.pa).length];
+            }
+            if (criterion.endsWith('Net') || criterion === 'net') return [t.team, applicable.length ? applicable.reduce((n, g) => n + margin(g, t.team), 0) : null];
+            return [t.team, pctFromGames(applicable, t.team)];
+        }));
+    };
+    const winner = (group: TeamSeason[]): TeamSeason => {
+        if (group.length === 1) return group[0];
+        for (const criterion of metrics) {
+            const values = metric(group, criterion);
+            if (group.some(t => values.get(t.team) == null)) continue;
+            const best = Math.max(...group.map(t => values.get(t.team)!));
+            const retained = group.filter(t => values.get(t.team) === best);
+            if (retained.length < group.length) return winner(retained);
+        }
+        return [...group].sort((a, b) => a.team.localeCompare(b.team))[0];
+    };
+    const ranked: TeamSeason[] = [], remaining = [...candidates];
+    while (remaining.length) {
+        const best = Math.max(...remaining.map(teamPct));
+        const selected = winner(remaining.filter(t => teamPct(t) === best));
+        ranked.push(selected); remaining.splice(remaining.indexOf(selected), 1);
+    }
+    return ranked;
+}
+/** Per-conference playoff field, with division winners ranked before wild cards. */
+export function playoffSeeds(year: number, conference: string, dataset: Dataset, teams: TeamSeason[], games: SimGame[]): TeamSeason[] {
+    const eligible = teams.filter(t => teamInfo(dataset, t.team)?.conference === conference);
+    const divisions = [...new Set(eligible.map(t => teamInfo(dataset, t.team)!.division))];
+    const winners = divisions.map(div => rankTiedTeams(eligible.filter(t => teamInfo(dataset, t.team)!.division === div), dataset, games, 'division')[0]);
+    const orderedWinners = rankTiedTeams(winners, dataset, games, 'wildcard');
+    const remaining = eligible.filter(t => !winners.some(w => w.team === t.team));
+    const wild: TeamSeason[] = [];
+    const divisionOrder = new Map(divisions.map(div => [div, rankTiedTeams(eligible.filter(t => teamInfo(dataset, t.team)!.division === div), dataset, games, 'division')]));
+    for (let slot = 0; slot < (year >= 2020 ? 3 : 2); slot++) {
+        const reps = [...new Set(remaining.map(t => teamInfo(dataset, t.team)!.division))].map(div => divisionOrder.get(div)!.find(t => remaining.includes(t))!);
+        const selected = rankTiedTeams(reps, dataset, games, 'wildcard')[0];
+        wild.push(selected);
+        remaining.splice(remaining.findIndex(t => t.team === selected.team), 1);
+    }
+    return [...orderedWinners, ...wild].map((t, i) => ({ ...t, playoff: true, seed: i + 1 }));
+}
+export function wildcardMatchups(seeds: TeamSeason[], year: number): [string, string][] {
+    if (year >= 2020) return [[seeds[1].team, seeds[6].team], [seeds[2].team, seeds[5].team], [seeds[3].team, seeds[4].team]];
+    return [[seeds[2].team, seeds[5].team], [seeds[3].team, seeds[4].team]];
+}
+/** NFL reseeding: the highest remaining seed hosts the lowest remaining seed (2020 NFL Record & Fact Book, postseason site priorities). */
+export function divisionalMatchups(seeds: TeamSeason[], survivors: string[]): [string, string][] {
+    const rank = new Map(seeds.map(t => [t.team, t.seed!]));
+    const ordered = survivors.slice().sort((a, b) => rank.get(a)! - rank.get(b)!);
+    if (ordered.length !== 4) throw new Error('Divisional round requires four teams per conference.');
+    return [[ordered[0], ordered[3]], [ordered[1], ordered[2]]];
+}
+function teamInfo(dataset: Dataset, id: string) { return dataset.teams.find(t => t.id === id); }
+/** Complete recorded data check, including the documented 2022 BUF-CIN cancellation. */
+export function actualSeasonIsComplete(dataset: Dataset, year: number): boolean {
+    const teams = dataset.teams.map(t => t.id), regular = dataset.games.filter(g => g.season === year && g.type === 'REG'), postseason = dataset.games.filter(g => g.season === year && g.type !== 'REG');
+    const valid = (g: Dataset['games'][number]) => teams.includes(g.home) && teams.includes(g.away) && g.home !== g.away && Number.isFinite(g.homeScore) && Number.isFinite(g.awayScore) && g.homeScore >= 0 && g.awayScore >= 0;
+    const uniqueIds = (rows: Dataset['games']) => new Set(rows.map(g => g.id)).size === rows.length;
+    if (!uniqueIds(regular) || !uniqueIds(postseason) || !regular.every(valid) || !postseason.every(valid)) return false;
+    const canceled2022 = year === 2022 ? 1 : 0;
+    const expectedTeamGames = year >= 2021 ? 17 : 16;
+    if (regular.length !== teams.length * expectedTeamGames / 2 - canceled2022) return false;
+    if (postseason.length !== (year >= 2020 ? 13 : 11)) return false;
+    return teams.every(team => {
+        const count = regular.filter(g => g.home === team || g.away === team).length;
+        const expected = year === 2022 && ['BUF', 'CIN'].includes(team) ? 16 : expectedTeamGames;
+        return count === expected;
+    });
+}
 function initialStandings(dataset: Dataset): TeamSeason[] { return dataset.teams.map(t => ({ team: t.id, wins: t.priorWins, losses: t.priorLosses, ties: t.priorTies, pointsFor: t.priorPointsFor, pointsAgainst: t.priorPointsAgainst, playoff: false, seed: null, conferenceChampion: false, champion: false })); }
 /** Future schedules replace historical standings-dependent opponents with alternate standings. */
 export function generateSchedule(year: number, dataset: Dataset, prior: TeamSeason[]): Fixture[] {
-    if (year === 2018) {
-        const schedule = dataset.games.filter(g => g.season === year && g.type === 'REG').map(g => ({ home: g.home, away: g.away, week: g.week }));
-        if (schedule.length === 256)
-            return schedule;
-    }
+    if (!Number.isInteger(year) || year < 2018) throw new Error('No pre-cutoff schedule support for this season.');
+    const regularGames = year >= 2021 ? 17 : 16, expectedGames = dataset.teams.length * regularGames / 2;
+    const observed = dataset.games.filter(g => g.season === year && g.type === 'REG');
+    const observedTeams = new Set(observed.flatMap(g => [g.home, g.away]));
+    if (year === scenarioYear(dataset) && observed.length === expectedGames && observedTeams.size === dataset.teams.length &&
+        dataset.teams.every(t => observed.filter(g => g.home === t.id || g.away === t.id).length === regularGames))
+        return observed.map(g => ({ home: g.home, away: g.away, week: g.week }));
     const groups = new Map<string, string[]>();
     for (const conference of ['AFC', 'NFC'])
         for (const div of DIVISIONS) {
@@ -145,7 +267,8 @@ export function scoreGame(home: string, away: string, season: number, week: numb
     return { id: `${season}-${type}-${week}-${away}-${home}`, season, week, type, home, away, homeScore: hs, awayScore: as };
 }
 function cohort(selections: Selection[], dataset: Dataset, year: number, seed: string, models?: RuntimeModels): PlayerSeason[] {
-    const age = year - 2018, n = year >= 2021 ? 17 : 16;
+    const age = year - scenarioYear(dataset), n = year >= 2021 ? 17 : 16;
+    if (age < 0 || age > 4) throw new Error('Development donor evidence supports only the five seasons after the draft.');
     const players = selections.map(s => {
         const p = dataset.prospects.find(p => p.id === s.prospectId);
         if (!p) throw new Error('Historical baseline prospect is missing.');
@@ -210,16 +333,11 @@ function playSeason(year: number, dataset: Dataset, prior: TeamSeason[], strengt
     const playoff = (home: string, away: string, type: SimGame['type'], week: number) => { const g = scoreGame(home, away, year, week, type, strength, seed, model); games.push(g); return g.homeScore > g.awayScore ? home : away; };
     for (const conference of ['AFC', 'NFC']) {
         const ids = new Set(dataset.teams.filter(t => t.conference === conference).map(t => t.id)), eligible = teams.filter(t => ids.has(t.team));
-        const winners = DIVISIONS.map(div => eligible.filter(t => dataset.teams.find(x => x.id === t.team)!.division === div).sort((a, b) => compareTeams(a, b, games))[0]).sort((a, b) => compareTeams(a, b, games));
-        const winnerIds = new Set(winners.map(t => t.team)), wild = eligible.filter(t => !winnerIds.has(t.team)).sort((a, b) => compareTeams(a, b, games)).slice(0, year >= 2020 ? 3 : 2), seeds = [...winners, ...wild];
-        seeds.forEach((t, i) => { t.playoff = true; t.seed = i + 1; });
-        let remaining: string[];
-        if (year >= 2020)
-            remaining = [seeds[0].team, playoff(seeds[1].team, seeds[6].team, 'WC', postWeek), playoff(seeds[2].team, seeds[5].team, 'WC', postWeek), playoff(seeds[3].team, seeds[4].team, 'WC', postWeek)];
-        else
-            remaining = [seeds[0].team, seeds[1].team, playoff(seeds[2].team, seeds[5].team, 'WC', postWeek), playoff(seeds[3].team, seeds[4].team, 'WC', postWeek)];
-        remaining.sort((a, b) => map.get(a)!.seed! - map.get(b)!.seed!);
-        const div = [playoff(remaining[0], remaining[3], 'DIV', postWeek + 1), playoff(remaining[1], remaining[2], 'DIV', postWeek + 1)].sort((a, b) => map.get(a)!.seed! - map.get(b)!.seed!);
+        const seeds = playoffSeeds(year, conference, dataset, eligible, games);
+        seeds.forEach(s => { Object.assign(map.get(s.team)!, { playoff: true, seed: s.seed }); });
+        const wildcardWinners = wildcardMatchups(seeds, year).map(([home, away]) => playoff(home, away, 'WC', postWeek));
+        const firstRoundSurvivors = year >= 2020 ? [seeds[0].team, ...wildcardWinners] : [seeds[0].team, seeds[1].team, ...wildcardWinners];
+        const div = divisionalMatchups(seeds, firstRoundSurvivors).map(([home, away]) => playoff(home, away, 'DIV', postWeek + 1)).sort((a, b) => map.get(a)!.seed! - map.get(b)!.seed!);
         const winner = playoff(div[0], div[1], 'CON', postWeek + 2);
         map.get(winner)!.conferenceChampion = true;
         champions.push(winner);
@@ -227,12 +345,12 @@ function playSeason(year: number, dataset: Dataset, prior: TeamSeason[], strengt
     const champion = playoff(champions[0], champions[1], 'SB', postWeek + 4);
     map.get(champion)!.champion = true;
     const stars = [...players].sort((a, b) => b.contribution - a.contribution), mvp = stars[0];
-    return { year, teams: teams.sort((a, b) => compareTeams(a, b, games)), games, players, awards: mvp ? [{ award: 'Draft-class MVP', prospectId: mvp.prospectId, team: mvp.team, label: 'Highest simulated contribution in the 2018 class', scope: 'Cohort-only model award; not an NFL-wide MVP forecast' }] : [], champion, starPicks: stars.slice(0, 8).map(p => ({ prospectId: p.prospectId, team: p.team, contribution: p.contribution })), trades: year === 2018 ? game.trades : [] };
+    return { year, teams: teams.sort((a, b) => compareTeams(a, b, games)), games, players, awards: mvp ? [{ award: 'Draft-class MVP', prospectId: mvp.prospectId, team: mvp.team, label: `Highest simulated contribution in the ${game.year} class`, scope: 'Cohort-only model award; not an NFL-wide MVP forecast' }] : [], champion, starPicks: stars.slice(0, 8).map(p => ({ prospectId: p.prospectId, team: p.team, contribution: p.contribution })), trades: year === game.year ? game.trades : [] };
 }
 function world(game: GameState, selections: Selection[], dataset: Dataset, models: RuntimeModels | undefined, index: number): SimWorld {
     const seed = `${game.seed}|ensemble|${index}`, model = strengthModel(dataset, models), background = { ...model.initial }, seasons: SeasonResult[] = [];
     let prior = initialStandings(dataset);
-    for (let year = 2018; year <= 2022; year++) {
+    for (let year = game.year; year <= game.year + 4; year++) {
         const players = cohort(selections, dataset, year, seed, models), impact = draftImpact(players, dataset), strength: Record<string, number> = {};
         // The fitted coefficient multiplies lagged realized point differential exactly once.
         for (const t of dataset.teams)
@@ -288,15 +406,21 @@ export function summarizeResults(game: GameState, replicates: ReplicateResult[],
         { name: 'Paired five-year difference', score: clamp(50 + mean * 5, 0, 100), weight: 0.35, explanation: 'Mean simulated wins gained against the paired baseline; sensitive to unvalidated development assumptions.' },
         { name: 'Scouting coverage', score: 100 * own.filter(s => game.scouted.includes(s.prospectId)).length / Math.max(1, own.length), weight: 0.10, explanation: 'Share of selections researched; an activity measure, not empirical scouting skill.' }
     ];
-    const actual = Array.from({ length: 5 }, (_, i) => { const year = game.year + i, state = timelineState(year), games = dataset.games.filter(g => g.season === year && (g.home === game.team || g.away === game.team)), regular = games.filter(g => g.type === 'REG'); return { year, state, wins: state === 'future' ? null : regular.filter(g => (g.home === game.team ? g.homeScore : g.awayScore) > (g.home === game.team ? g.awayScore : g.homeScore)).length, losses: state === 'future' ? null : regular.filter(g => (g.home === game.team ? g.homeScore : g.awayScore) < (g.home === game.team ? g.awayScore : g.homeScore)).length, ties: state === 'future' ? null : regular.filter(g => g.homeScore === g.awayScore).length, playoff: state === 'future' ? null : games.some(g => g.type !== 'REG'), champion: state !== 'recorded' ? null : games.some(g => g.type === 'SB' && (g.home === game.team ? g.homeScore : g.awayScore) > (g.home === game.team ? g.awayScore : g.homeScore)) }; });
+    const actual = Array.from({ length: 5 }, (_, i) => {
+        const year = game.year + i, calendarState = timelineState(year), teamGames = dataset.games.filter(g => g.season === year && (g.home === game.team || g.away === game.team));
+        const regular = teamGames.filter(g => g.type === 'REG');
+        const state: SimulationResults['actual'][number]['state'] = calendarState === 'future' ? 'future' : calendarState === 'recorded' && actualSeasonIsComplete(dataset, year) ? 'recorded' : 'incomplete';
+        const recorded = state === 'recorded';
+        return { year, state, wins: !recorded ? null : regular.filter(g => (g.home === game.team ? g.homeScore : g.awayScore) > (g.home === game.team ? g.awayScore : g.homeScore)).length, losses: !recorded ? null : regular.filter(g => (g.home === game.team ? g.awayScore : g.homeScore) > (g.home === game.team ? g.homeScore : g.awayScore)).length, ties: !recorded ? null : regular.filter(g => g.homeScore === g.awayScore).length, playoff: !recorded ? null : teamGames.some(g => g.type !== 'REG'), champion: !recorded ? null : teamGames.some(g => g.type === 'SB' && (g.home === game.team ? g.homeScore : g.awayScore) > (g.home === game.team ? g.awayScore : g.homeScore)) };
+    });
     return { replicates, summary: { mean, median: quantile(deltas, 0.5), lower: quantile(deltas, 0.1), upper: quantile(deltas, 0.9), probabilityImprovement: deltas.filter(n => n > 0).length / deltas.length, standardError: Math.sqrt(variance / deltas.length), samples: deltas.length }, decisionScore: Math.round(scoreComponents.reduce((n, c) => n + c.score * c.weight, 0)), scoreComponents, actual, limitations: [
             'Research alpha: the rookie snap model does not validate five-year player development or causal draft effects.',
-            'Gameplay is restricted to 336 documented combine participants. The historical baseline also includes39 non-combine selections, so unequal prospect universes limit comparisons. Other eligible prospects and original publication timestamps are not fully reconstructed.',
+            `The playable pool contains ${dataset.prospects.filter(p => p.eligibilitySource === 'combine-participant').length} recorded combine participants. The historical baseline also includes reference-only non-combine selections, so unequal prospect universes limit comparisons. Other eligible prospects and original publication timestamps are not fully reconstructed.`,
             'Future veterans, contracts, coaching, injuries, trades and draft intake are represented only through an aggregate team-strength process. Individual future roster transactions and league-wide MVP awards are not modeled.',
             'Five-year participation trajectories are sampled from the complete pre-cutoff 2013 cohort. That single cohort cannot establish independent historical calibration; conversion from snaps to team-strength points remains an assumption. Ensemble intervals measure simulation randomness, not full model uncertainty.',
-            '2018 uses the real schedule. Later schedules preserve division rotation pairings and regenerate rank-based opponents; week placement, home assignments, the17th opponent rotation and the full NFL tiebreak chain are approximations.',
+            `The ${game.year} season uses the recorded schedule when complete; otherwise a schedule is generated. Later seasons regenerate standings-dependent opponents. Week placement, home assignments and the 17th-opponent rotation are approximations. Playoff tiebreaks implement score-level criteria through net points; unavailable net touchdowns and final tie resolution remain approximations.`,
             'Scores are rounded continuous draws, with one-point scores mapped to two, rather than possession-by-possession football scores. Overtime is simplified; individual football box scores are not generated.',
             'Trade pricing uses the published Johnson chart with a one-point extension after pick224. Trade frequency is checked against a prior-year count benchmark; acceptance, team styles and composite score weights remain heuristic. Future and conditional picks are unsupported.',
-            'The historical baseline uses actual final draft allocations; later real trade obligations are not reconstructed. Draft-class MVP is an illustrative award among2018 prospects only.'
+            `The historical baseline uses actual final draft allocations; later real trade obligations are not reconstructed. Draft-class MVP is an illustrative award among ${game.year} prospects only. Two-way prospects use their first source-listed role for gameplay; dual-role development is not modeled.`
         ] };
 }

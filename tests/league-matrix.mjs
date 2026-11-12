@@ -4,8 +4,10 @@ import {createHash} from 'node:crypto';
 import {writeFileSync, mkdirSync} from 'node:fs';
 import {dirname, resolve} from 'node:path';
 import os from 'node:os';
-import {engine, sim, dataset, models, cleanup, hashes} from '../analytics/runtime_loader.mjs';
+import {engine, sim, loadScenario, cleanup, hashes} from '../analytics/runtime_loader.mjs';
 
+const scenarioYear = Number(process.env.REDRAFT_SCENARIO_YEAR || 2018);
+const { dataset, models } = loadScenario(scenarioYear);
 const output = resolve(process.argv[2] || 'tests/results/league-matrix.json');
 const seeds = ['redraft-structural-matrix-v1-a', 'redraft-structural-matrix-v1-b', 'redraft-structural-matrix-v1-c'];
 const fixedTime = '2026-11-04T00:00:00Z';
@@ -50,7 +52,7 @@ function inspectDraft(game) {
 
 function inspectWorld(world, team, allocations, label) {
   worlds++;
-  equal(world.seasons.map(s => s.year), [2018, 2019, 2020, 2021, 2022], `${label}: five chronological seasons`);
+  equal(world.seasons.map(s => s.year), Array.from({length:5}, (_,i)=>scenarioYear+i), `${label}: five chronological seasons`);
   let totalWins = 0, appearances = 0, titles = 0;
   const expectedPlayers = new Map(allocations.map(s => [s.prospectId, s.team]));
   for (const season of world.seasons) {
@@ -169,7 +171,7 @@ try {
 finally {
   const finalHashes=hashes(),sourceChanged=Object.keys(sourceHashes).some(p=>sourceHashes[p]!==finalHashes[p]);
   if(sourceChanged) failures.push({error:'Runtime source/artifact changed during matrix execution'});
-  const report={version:'league-structural-matrix-v1',startedAt,finishedAt:new Date().toISOString(),durationMs:performance.now()-started,configuration:{teams,seeds,fixedGameTime:fixedTime,pairedReplicatesPerCase:2,replay:'First seed and replicate for every team',modelVersion:models.version,engineVersion:engine.RULE_VERSION,datasetVersion:dataset.metadata.version},planned:{draftCases:96,pairedReplicates:192,deterministicDraftAndPairReplays:32},actual:{draftCases:rows.length,passedCases:rows.filter(r=>r.status==='passed').length,failedCases:rows.filter(r=>r.status==='failed').length,pairedReplicates:rows.reduce((n,r)=>n+r.replicates.length,0),replayPairs,assertions,worlds,seasons,regularGames,postseasonGames},runtime:{node:process.version,platform:os.platform(),architecture:os.arch(),cpu:os.cpus()[0]?.model,logicalCpus:os.cpus().length},sourceHashes,finalHashes,sourceChanged,rows,failures,status:failures.length?'failed':'passed',limitations:['Finite prespecified seed coverage is not exhaustive verification.','Autocompleted drafts exercise one CPU policy; adversarial user trades are covered separately by domain/API tests.','Structural consistency does not establish forecast calibration, causal validity, exact NFL tiebreakers or complete historical rosters.','Monte Carlo replicate indices are fixed; failures are retained and never resampled.']};
+  const report={version:'league-structural-matrix-v1',startedAt,finishedAt:new Date().toISOString(),durationMs:performance.now()-started,configuration:{scenarioYear,teams,seeds,fixedGameTime:fixedTime,pairedReplicatesPerCase:2,replay:'First seed and replicate for every team',modelVersion:models.version,engineVersion:engine.RULE_VERSION,datasetVersion:dataset.metadata.version},planned:{draftCases:96,pairedReplicates:192,deterministicDraftAndPairReplays:32},actual:{draftCases:rows.length,passedCases:rows.filter(r=>r.status==='passed').length,failedCases:rows.filter(r=>r.status==='failed').length,pairedReplicates:rows.reduce((n,r)=>n+r.replicates.length,0),replayPairs,assertions,worlds,seasons,regularGames,postseasonGames},runtime:{node:process.version,platform:os.platform(),architecture:os.arch(),cpu:os.cpus()[0]?.model,logicalCpus:os.cpus().length},sourceHashes,finalHashes,sourceChanged,rows,failures,status:failures.length?'failed':'passed',limitations:['Finite prespecified seed coverage is not exhaustive verification.','Autocompleted drafts exercise one CPU policy; adversarial user trades are covered separately by domain/API tests.','Structural consistency does not establish forecast calibration, causal validity, exact NFL tiebreakers or complete historical rosters.','Monte Carlo replicate indices are fixed; failures are retained and never resampled.']};
   mkdirSync(dirname(output),{recursive:true});writeFileSync(output,JSON.stringify(report,null,2)+'\n',{flag:'wx'});cleanup();
   console.log('LEAGUE_MATRIX_REPORT',JSON.stringify({status:report.status,...report.actual,durationMs:Math.round(report.durationMs),report:output}));
   if(failures.length)process.exitCode=1;

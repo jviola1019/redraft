@@ -1,0 +1,14 @@
+{
+  "clientJavaScriptFiles": 9,
+  "clientJavaScriptBytes": 851726,
+  "workerManifestExists": true,
+  "workerEntryExists": true,
+  "targetedLeakCheck": {
+    "Baker Mayfield": false,
+    "Travis Hunter": false,
+    "five-year-strict-2018": false
+  },
+  "limitation": "Targeted client-bundle string check only; not exhaustive information leakage or security certification.",
+  "workerMain": "index.js",
+  "actualEntryExists": true
+}

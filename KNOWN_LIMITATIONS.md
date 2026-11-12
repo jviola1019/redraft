@@ -1,5 +1,11 @@
 # Known limitations and release acceptance
 
+## Current coverage — November 12, 2026
+
+The application now enables **2018–2026** as research-alpha scenarios. Later sections retain dated historical findings; older 2018-only coverage descriptions are superseded. All years remain unsupported as a full release. Source limitations differ by year: see `data/processed/scenario-coverage.json` and `research/SCENARIO_LIMITATIONS.md`. Eligibility does not include every draft-eligible player; 2021 includes 323 verified invitees, 144 with all measurement fields unavailable. Exact-match identity reconciliation can leave the same person separately represented in the alternate eligible pool and actual baseline reference pool.
+
+The full nine-year structural matrix passed 864 drafts / 1,728 paired replicates / 288 replays, with no input drift. This does not clear forecasting. QB upper-tail support, score-distribution mismatch and scoring-weight sensitivity remain unresolved. Verified draft-day rosters, historical schemes, named future personnel/rookies, contracts and awards are not fully implemented. Browser execution is blocked locally; HTTP checks do not establish iPhone usability. See the current release audit for final test and security results.
+
 **Research alpha. The complete requested production/scientific acceptance gate is not passed.** New checks must be executed for the rebuilt source; old session outputs are not current evidence.
 
 ## Material gaps

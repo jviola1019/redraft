@@ -1,5 +1,11 @@
 # Simulation validation — executed diagnostics
 
+## November 12 implementation audit
+
+The current engine is `redraft-research-0.7-multiyear-playoffs`. All registered classes 2018–2026 pass the same finite structural matrix: 864 full drafts, 1,728 baseline/alternate replicate pairs, 288 deterministic replays, 17,280 simulated seasons, 4,663,296 regular-season games and 222,336 playoff games. These counts exclude repeated deterministic replay inspections and are not independent real-world observations. Reports: `tests/results/year-matrix-2026-11-12/`.
+
+A separate recorded-season backtest reproduces qualifiers, wild-card matchups/home teams and divisional reseeding/home teams for 2018–2025 (`tests/results/playoff-backtest.json`). It tests rule implementation, not playoff probability calibration. Future schedules now respond to alternate standings; full net-touchdown tiebreak criteria, schedule week/home placement and 17th-opponent rotation remain approximations. Dynamic actual-history boundaries leave incomplete 2026 and future actual values unavailable. Fresh statistical gauntlet results are reported separately; earlier dated numbers below are historical evidence only.
+
 Rebuilt 2026-11-02; engine redraft-research-0.4-r1. Full statistical release gate **not passed**. JSON reports retain exact source/model hashes. Simulations use the actual TypeScript engine via a temporary transpilation loader.
 
 Game predictor alignment fixes double shrinkage: the prior-season coefficient is applied once, and next state uses simulated realized margins. Team-year shocks preserve within-season correlation. Directional home/away random keys prevent repeated divisional games sharing identical residuals. Rounded 1-point scores map to 2; the score model is still a continuous approximation.

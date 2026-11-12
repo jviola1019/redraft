@@ -25,3 +25,10 @@ Runtime metadata must pin disclosure policy as well as data/model/engine/scoring
 Replace fixed development/retention curves with complete observed five-season donor trajectories from the only full cohort available before2018 (2013;310 resolved combine participants). Sample by broad position and rookie-role stratum; preserve the five-year vector. Missing identities are excluded, never zero-filled. Recorded snaps measure opportunity, not pure talent. Converting snaps to simulated team-strength points and starts remains a disclosed assumption. The strict model is evaluated later on held-out careers; later observations cannot enter the2018 donor pool. Runtime engine/model version changes prevent silently resuming old saved runs under new assumptions.
 
 Default interaction changes to guided prospect cards with position explanations and three or six visible alternatives. Full board, filtering, trades and analytical results remain available. This changes presentation, not game modes or historical draft rules. Original pixel stadium motion responds to picks, trades, simulation batches and chosen season; no invented game events are animated.
+
+## 2026-11-12 implementation review
+- Preserve the requested public GitHub repository jviola1019/redraft. Import source and evidence, excluding raw source downloads, dependencies, credentials and local database state.
+- Keep scenario selection tied to built, provenance-bearing datasets; synthetic year-contract fixtures do not constitute historical coverage.
+- Restart playoff tie resolution after each awarded place and preserve division ordering for successive wildcard selections. Model score-level criteria through net points; touchdowns and the final tie resolution remain a disclosed approximation.
+- Run structural and statistical checks separately. An adverse model experiment is retained, not reclassified as passed.
+- Use the authoritative server scenario registry in analytical diagnostics so test model assembly cannot silently differ from the API.

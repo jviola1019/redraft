@@ -6,7 +6,7 @@
 |---|---|---|
 | Team | canonical franchise ID, historical display identity, conference/division | stable IDs; names follow time where explicitly implemented |
 | Prior team record | prior wins/losses/ties and points for/against | observed season facts; not an exact pre-draft roster |
-| Prospect | canonical ID, name, position, college, eligibility evidence |336 combine participants playable;39 later-identified non-combine draftees baseline-only |
+| Prospect | canonical ID, name, position, college, eligibility evidence |per-year participant/invitee pool; unmatched historical selections are baseline-only references |
 | Measurements | height, weight, forty, bench, vertical/broad jump, cone, shuttle | inches, pounds, seconds, repetitions; null never implies zero |
 | `availableBy` | reconstructed upper availability bound | not proof of original per-field publication timestamp |
 | Projection | roleProbability, supported/fallback, target, modelVersion, uncertainty |200+ rookie snaps; null for unsupported specialist target; no invented individual confidence interval |
@@ -33,3 +33,9 @@ No achievements table exists without a defined feature. The target schema’s ex
 Instants are ISO 8601 UTC; dates alone must not be promoted to invented exact times. Validity is `[valid_from,valid_to)` with null end open. Missing reasons distinguish unknown, not applicable, not measured, not reported, source unavailable, failed ingestion and incomplete season. Every real numeric zero remains a value. Identity reconciliation uses exact or audited manual rules; no unreviewed fuzzy match.
 
 Generalized display bands contain the true observed value. Suppression is labeled as withheld/unavailable and does not fabricate a measurement. Missingness itself may identify an athlete, so daily disclosure audits use cumulative visible fields including absence patterns.
+
+## Multi-year scenario metadata (November 12)
+
+`metadata.draftYear`/`informationCutoff` control the scenario, independent of runtime calendar date. `eligibilitySource=combine-participant` is the legacy engine enum for source-recorded combine participants or official invitees; `eligibilityProvenance` distinguishes the source. `playable`/baseline-only status must not be inferred from actual draft position. `scenario-coverage.json` records slot counts, identity gaps, ownership evidence, unavailable compensatory flags and full-release status. `model-YYYY.json` pins the scenario SHA-256, training cutoff, missing-measurement and unsupported-position fallbacks.
+
+Franchise IDs persist across relocation; source-year display names change explicitly. Prior-season schedules use 16/17 games as applicable, including the recorded 2022 BUF/CIN exception. Incomplete future actuals are null, never zero wins.

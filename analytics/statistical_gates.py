@@ -5,6 +5,7 @@ or unsupported/stale evidence. Exit 1: audit could not execute. --report-only
 suppresses exit 2 for interactive inspection; it never changes report statuses.
 """
 from pathlib import Path
+from datetime import datetime, timezone
 import argparse
 import hashlib
 import json
@@ -19,6 +20,9 @@ REQUIRED_HASHES = ['lib/engine.ts','lib/simulation.ts','lib/scouting.ts',
                    'analytics/scoring_recalibration.json','data/processed/scenario-2018.json',
                    'lib/server-data.ts','data/clean/team_context_2018.json',
                    'data/clean/team_context_source_manifest.json']
+REQUIRED_HASHES = sorted(set(REQUIRED_HASHES +
+    [str(p.relative_to(ROOT)) for p in (ROOT/'data/processed').glob('scenario-*.json')] +
+    [str(p.relative_to(ROOT)) for p in A.glob('model-*.json')]))
 POLICY = {'version':'research-release-gates-2026-11-04-v1',
     'minimumDonorsPerConditionalStratum':10,
     'minimumSubgroupNominal95Coverage':.90,
@@ -111,7 +115,7 @@ def run():
                            'replicates':d['replicates'],'flags':d['distributionFlags'],
                            'convergence':convergence}
     counts = {s:sum(g['status']==s for g in gates) for s in ['pass','fail','unsupported','stale']}
-    result = {'version':POLICY['version'],'asOf':'2026-11-04','policy':POLICY,
+    result = {'version':POLICY['version'],'asOf':datetime.now(timezone.utc).date().isoformat(),'policy':POLICY,
         'releaseStatus':'pass' if all(g['status']=='pass' for g in gates) else 'blocked',
         'counts':counts,'gates':gates,'simulationScenarios':simulations,
         'seedAudit':{'count':len(audit['finiteEnsembleSeeds']),

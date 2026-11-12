@@ -38,3 +38,7 @@ Data owns acquisition, licenses, hashes, coverage and historical references. Mod
 ## Production work beyond the alpha
 
 Acquire a full prospect eligibility set and original publication evidence, exact April rosters/contracts, college production and injury/scouting data; validate five-year development and future personnel behavior; implement full scheduling/tiebreak/OT rules, future/conditional trades, broader CPU calibration, comprehensive security/load/accessibility tests and a human recognition study. Expanding years before these gates risks multiplying weak assumptions.
+
+## November 12 integration status
+
+The detailed execution plan and bounded workstream prompts are in `docs/release/PLAN_2026-11-12.md`. Recovery, GitHub repository setup, portable local play and 2018–2026 scenario routing are implemented. Every class passes the fixed all-team draft/league structural matrix. Release remains blocked on predictive adequacy, complete historical roster/scheme reconstruction, future individual personnel, browser/mobile execution and production operations. The next research effort must acquire usable additional pre-cutoff QB trajectories and evaluate them; the official 2012 snap download still contains no rows. Repeating previously inspected statistical tests cannot replace new evidence.

@@ -1,0 +1,19 @@
+{
+  "id": "five-year-model",
+  "kind": "structural",
+  "command": [
+    "python3",
+    "analytics/five_year_tests.py"
+  ],
+  "startedAt": "2026-11-12T20:32:40.483Z",
+  "finishedAt": "2026-11-12T20:32:40.802Z",
+  "durationMs": 318.4189040000001,
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "error": null,
+  "status": "passed",
+  "stdout": "06-five-year-model.stdout.log",
+  "stderr": "06-five-year-model.stderr.log",
+  "artifacts": []
+}

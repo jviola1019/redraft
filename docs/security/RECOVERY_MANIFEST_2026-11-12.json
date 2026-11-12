@@ -1,0 +1,2000 @@
+{
+  "schema_version": 1,
+  "repository": "jviola1019/redraft",
+  "recovery_branch": "recovery-2026-11-12",
+  "source_local_commit": "73755533c6a34cb3a3b1e1e4c76a40e87400881a",
+  "baseline_local_commit": "b0ca91ac32558cd189f8c11022b0d9a07c4b5e50",
+  "baseline_remote_commit": "81cc2b89b8867c69a01e9ee71eb27fe80b0731e4",
+  "expected_changed_paths": 196,
+  "included_source_paths": 166,
+  "missing_source_paths": 30,
+  "missing_unique_blobs": 30,
+  "paths": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "0c5998cdedd131f48af13d29eb17c8fafc8209e6",
+      "checkpoint_status": "recovery_edit",
+      "checkpoint_blob_sha": "378fb7c91b0097252b4069a72c1818c698af6100",
+      "size_bytes": 1440
+    },
+    {
+      "path": "ARCHITECTURE.md",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "75592f730883d16479f68e4fc4ccb2960d491c44",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "75592f730883d16479f68e4fc4ccb2960d491c44",
+      "size_bytes": 6170
+    },
+    {
+      "path": "DATA_DICTIONARY.md",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "84ba98aea6036a985f0b2e1b39848cd6e5671526",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "84ba98aea6036a985f0b2e1b39848cd6e5671526",
+      "size_bytes": 5399
+    },
+    {
+      "path": "DECISIONS.md",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "5fa002883f4a15c0d963046f1bffc9dfa1b1331e",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "5fa002883f4a15c0d963046f1bffc9dfa1b1331e",
+      "size_bytes": 4652
+    },
+    {
+      "path": "DEPLOYMENT.md",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "deeb60126209de2b9aad3d0994de1a661e5e15c8",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "deeb60126209de2b9aad3d0994de1a661e5e15c8",
+      "size_bytes": 4254
+    },
+    {
+      "path": "DESIGN_SYSTEM.md",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "8e7bc2e9d50361e88974503da03e4e05f67de086",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "8e7bc2e9d50361e88974503da03e4e05f67de086",
+      "size_bytes": 6907
+    },
+    {
+      "path": "INSTALL.md",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "060bece34fc0306db03b88a9a60868491502fa91",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "060bece34fc0306db03b88a9a60868491502fa91",
+      "size_bytes": 3936
+    },
+    {
+      "path": "KNOWN_LIMITATIONS.md",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "dec077924496819978d7151acf4712b4ea4708c0",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "dec077924496819978d7151acf4712b4ea4708c0",
+      "size_bytes": 7922
+    },
+    {
+      "path": "MASTER_PLAN.md",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "41d26340130de5705afcc9d589dea2bb4ad79097",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "41d26340130de5705afcc9d589dea2bb4ad79097",
+      "size_bytes": 3388
+    },
+    {
+      "path": "MODEL_EXPERIMENTS.md",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "64a482092ac76e5719cfe13e7614c0a19beaf63c",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "64a482092ac76e5719cfe13e7614c0a19beaf63c",
+      "size_bytes": 8394
+    },
+    {
+      "path": "PROJECT_SPEC.md",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "07c1a215efe1e303601995e602845c519b6be815",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "07c1a215efe1e303601995e602845c519b6be815",
+      "size_bytes": 3451
+    },
+    {
+      "path": "README.md",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "c2e67ff35dcfbde182e645a2a879556dc1ce2b40",
+      "checkpoint_status": "recovery_edit",
+      "checkpoint_blob_sha": null,
+      "size_bytes": 4658
+    },
+    {
+      "path": "RESEARCH_LOG.md",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "c647aa51b9f86d0a757a18b8cf9249681f5dc2cb",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "c647aa51b9f86d0a757a18b8cf9249681f5dc2cb",
+      "size_bytes": 8909
+    },
+    {
+      "path": "SIMULATION_VALIDATION.md",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "135f87a1b43fe5db6d06a80e368fcc113c1ea18e",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "135f87a1b43fe5db6d06a80e368fcc113c1ea18e",
+      "size_bytes": 9164
+    },
+    {
+      "path": "SOURCE_REGISTRY.md",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "90eeadba607f1041986f155c8e35d4512abde341",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "90eeadba607f1041986f155c8e35d4512abde341",
+      "size_bytes": 2463
+    },
+    {
+      "path": "analytics/additional_order_sources.py",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "6b3450b52dd0739f450a7c7f672828976cac4e23",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "6b3450b52dd0739f450a7c7f672828976cac4e23",
+      "size_bytes": 14268
+    },
+    {
+      "path": "analytics/all_year_diagnostics.mjs",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "ab32ff55c95ff329b576621807e3e9328b014a0d",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "ab32ff55c95ff329b576621807e3e9328b014a0d",
+      "size_bytes": 15546
+    },
+    {
+      "path": "analytics/model-2019.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "a1f3239df43dfc43fcd251e20e35435739ce3e88",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "a1f3239df43dfc43fcd251e20e35435739ce3e88",
+      "size_bytes": 273655
+    },
+    {
+      "path": "analytics/model-2020.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "a9b97ecf79e03569e8cbb27d94dfeff376dcaed4",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "a9b97ecf79e03569e8cbb27d94dfeff376dcaed4",
+      "size_bytes": 267095
+    },
+    {
+      "path": "analytics/model-2021.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "167d8be4d8f5d1b69bc7089b9ee287af73cad223",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "167d8be4d8f5d1b69bc7089b9ee287af73cad223",
+      "size_bytes": 302275
+    },
+    {
+      "path": "analytics/model-2022.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "84bdecd98ab3359647c055397025b9489aa0af28",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "84bdecd98ab3359647c055397025b9489aa0af28",
+      "size_bytes": 268828
+    },
+    {
+      "path": "analytics/model-2023.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "36b3e045c7e5ca4525986fc693df866735147a04",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "36b3e045c7e5ca4525986fc693df866735147a04",
+      "size_bytes": 268114
+    },
+    {
+      "path": "analytics/model-2024.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "af427b45af64d874ad6b3e1df932b4e564491081",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "af427b45af64d874ad6b3e1df932b4e564491081",
+      "size_bytes": 260977
+    },
+    {
+      "path": "analytics/model-2025.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "f62c55c0447b8dafc96146a7fbe22722ea192277",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "f62c55c0447b8dafc96146a7fbe22722ea192277",
+      "size_bytes": 256990
+    },
+    {
+      "path": "analytics/model-2026.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "f4a6b1bdfee62357e171fcc3dc0ee32fa8d86d2b",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "f4a6b1bdfee62357e171fcc3dc0ee32fa8d86d2b",
+      "size_bytes": 261270
+    },
+    {
+      "path": "analytics/project_scenarios.py",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "1a0173ff55d1cea20178dc40bdf11f194e7d286c",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "1a0173ff55d1cea20178dc40bdf11f194e7d286c",
+      "size_bytes": 17461
+    },
+    {
+      "path": "analytics/qb_2012_extension_REPORT.md",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "8df769b01be4f40ce1d8c56b5663fcd5dfff65ba",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "8df769b01be4f40ce1d8c56b5663fcd5dfff65ba",
+      "size_bytes": 1610
+    },
+    {
+      "path": "analytics/qb_legacy_source_feasibility.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "52473cc01c59838bfa6e24daa030c70bfc70bebd",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "52473cc01c59838bfa6e24daa030c70bfc70bebd",
+      "size_bytes": 4925
+    },
+    {
+      "path": "analytics/qb_legacy_source_feasibility_REPORT.md",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "c39bbf6c11e8ab4e208fef820151cc6b25ef1a8c",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "c39bbf6c11e8ab4e208fef820151cc6b25ef1a8c",
+      "size_bytes": 3982
+    },
+    {
+      "path": "analytics/qb_uncertainty.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "6551c1181851c90cc8dc6aad5e5c37b94d22299e",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "6551c1181851c90cc8dc6aad5e5c37b94d22299e",
+      "size_bytes": 29531
+    },
+    {
+      "path": "analytics/qb_uncertainty.py",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "ebd25713ea75475e8cf1aa7761f42f124f7ec089",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "ebd25713ea75475e8cf1aa7761f42f124f7ec089",
+      "size_bytes": 21037
+    },
+    {
+      "path": "analytics/qb_uncertainty_REPORT.md",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "4690e97146fcf6e1ac6dfd9d6e0ef1e649309788",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "4690e97146fcf6e1ac6dfd9d6e0ef1e649309788",
+      "size_bytes": 4671
+    },
+    {
+      "path": "analytics/runtime_loader.mjs",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "677914439907d3d47735e4fa3c56b8a237275a24",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "677914439907d3d47735e4fa3c56b8a237275a24",
+      "size_bytes": 2241
+    },
+    {
+      "path": "analytics/score_distribution.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "78bf8dd9c9a627e323d7624af7e6ff2d21f2ce41",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "78bf8dd9c9a627e323d7624af7e6ff2d21f2ce41",
+      "size_bytes": 24921
+    },
+    {
+      "path": "analytics/score_distribution.md",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "9a03c664b61ee4846c37ac33c57072938480135f",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "9a03c664b61ee4846c37ac33c57072938480135f",
+      "size_bytes": 4258
+    },
+    {
+      "path": "analytics/score_distribution.py",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "343125142774a441688ebd9c92b74e13242d913f",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "343125142774a441688ebd9c92b74e13242d913f",
+      "size_bytes": 18044
+    },
+    {
+      "path": "analytics/score_sensitivity.json",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "3b5dad44c63101a17e699ac5556e6cea216162b1",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "3b5dad44c63101a17e699ac5556e6cea216162b1",
+      "size_bytes": 18681
+    },
+    {
+      "path": "analytics/scoring_recalibration.json",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "5d0fd1262463df4313bcc4842dfe6fd321a5dc4c",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "5d0fd1262463df4313bcc4842dfe6fd321a5dc4c",
+      "size_bytes": 17885
+    },
+    {
+      "path": "analytics/simulation_diagnostics.json",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "f4059ec79d27e6d61f6abb7104d9a314aceb7bcb",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "f4059ec79d27e6d61f6abb7104d9a314aceb7bcb",
+      "size_bytes": 12610
+    },
+    {
+      "path": "analytics/simulation_diagnostics_KC.json",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "a5063130bcf4c83b1dbb0936b613bfa7d67d23ca",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "a5063130bcf4c83b1dbb0936b613bfa7d67d23ca",
+      "size_bytes": 12572
+    },
+    {
+      "path": "analytics/simulation_diagnostics_NE.json",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "46833043676d9e6b899c80dcaa58f19eb07f47c5",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "46833043676d9e6b899c80dcaa58f19eb07f47c5",
+      "size_bytes": 12608
+    },
+    {
+      "path": "analytics/simulation_diagnostics_SF.json",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "8a2b35c48f9c2a0895f6eb0df832f2cef9722929",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "8a2b35c48f9c2a0895f6eb0df832f2cef9722929",
+      "size_bytes": 12582
+    },
+    {
+      "path": "analytics/simulation_sample.json",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "440d3a6ad96155c1bbc0d56934a8307031fb6ed5",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "440d3a6ad96155c1bbc0d56934a8307031fb6ed5",
+      "size_bytes": 1350839
+    },
+    {
+      "path": "analytics/simulation_sample_KC.json",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "81799c4e7d91ab3739fd3009eb16d5f519fb725b",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "81799c4e7d91ab3739fd3009eb16d5f519fb725b",
+      "size_bytes": 1350882
+    },
+    {
+      "path": "analytics/simulation_sample_NE.json",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "1f77a300be97a2ed3603499c282aba482998e81b",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "1f77a300be97a2ed3603499c282aba482998e81b",
+      "size_bytes": 1351176
+    },
+    {
+      "path": "analytics/simulation_sample_SF.json",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "bb1ea123d23a9b7e05fecec0ee79146045337031",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "bb1ea123d23a9b7e05fecec0ee79146045337031",
+      "size_bytes": 1351408
+    },
+    {
+      "path": "analytics/statistical_gates.json",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "87ad01dae454b99057c865236876a2178fd43338",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "87ad01dae454b99057c865236876a2178fd43338",
+      "size_bytes": 30706
+    },
+    {
+      "path": "analytics/statistical_gates.py",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "e258cb424b812974b9cfb18fdb489eba9d615c92",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "e258cb424b812974b9cfb18fdb489eba9d615c92",
+      "size_bytes": 10361
+    },
+    {
+      "path": "analytics/test_qb_uncertainty.py",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "3f9eef1f3db08702b8e5988f3cf99444019b3cf2",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "3f9eef1f3db08702b8e5988f3cf99444019b3cf2",
+      "size_bytes": 2790
+    },
+    {
+      "path": "app/api/game/route.ts",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "fb9b5deed923307174ac7e641d75aaa8d5e60ef4",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "fb9b5deed923307174ac7e641d75aaa8d5e60ef4",
+      "size_bytes": 20649
+    },
+    {
+      "path": "app/page.tsx",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "21c1169bc8e2952b0469ce179f282bb736c698dd",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "21c1169bc8e2952b0469ce179f282bb736c698dd",
+      "size_bytes": 45338
+    },
+    {
+      "path": "components/redraft/guided-board.tsx",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "fd13e32f1a54f757611e781c5023b00d47439b9a",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "fd13e32f1a54f757611e781c5023b00d47439b9a",
+      "size_bytes": 5664
+    },
+    {
+      "path": "components/redraft/types.ts",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "bafacbd21fdd4947e852c1cfe394f991e6cd789d",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "bafacbd21fdd4947e852c1cfe394f991e6cd789d",
+      "size_bytes": 4925
+    },
+    {
+      "path": "data/clean/additional_order_sources.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "7cf212c58d8864cd3cd6f69b528478097df3b981",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "7cf212c58d8864cd3cd6f69b528478097df3b981",
+      "size_bytes": 814055
+    },
+    {
+      "path": "data/clean/additional_order_sources_REPORT.md",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "523eabe3743305f7b368fb9b846a08ad59a14788",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "523eabe3743305f7b368fb9b846a08ad59a14788",
+      "size_bytes": 2668
+    },
+    {
+      "path": "data/clean/source_manifest.json",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "e5260a2f3fc3de57820715898b4c43c00a648757",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "e5260a2f3fc3de57820715898b4c43c00a648757",
+      "size_bytes": 9371
+    },
+    {
+      "path": "data/clean/team_context_2018.json",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "baf630a609bfbdec083f0d68711db1c5ce18e8e6",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "baf630a609bfbdec083f0d68711db1c5ce18e8e6",
+      "size_bytes": 913527
+    },
+    {
+      "path": "data/clean/team_context_quality.json",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "8729ed50c5ec03c56716b78cbdf2c56249d5e32d",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "8729ed50c5ec03c56716b78cbdf2c56249d5e32d",
+      "size_bytes": 334845
+    },
+    {
+      "path": "data/clean/team_context_source_manifest.json",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "f5c113f07a24f233dfe09d706603d585cbf0f703",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "f5c113f07a24f233dfe09d706603d585cbf0f703",
+      "size_bytes": 2203
+    },
+    {
+      "path": "data/processed/scenario-2019.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "dfa9de17648b0e1f39a9808ae331d140281bb373",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "dfa9de17648b0e1f39a9808ae331d140281bb373",
+      "size_bytes": 519569
+    },
+    {
+      "path": "data/processed/scenario-2020.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "07258b2630503c2126ca1c53bdcb25d1673c2b97",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "07258b2630503c2126ca1c53bdcb25d1673c2b97",
+      "size_bytes": 524662
+    },
+    {
+      "path": "data/processed/scenario-2021.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "46618b87a9612290df61b76b14c96afe78c5ec68",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "46618b87a9612290df61b76b14c96afe78c5ec68",
+      "size_bytes": 555304
+    },
+    {
+      "path": "data/processed/scenario-2022.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "9eba63aaa219be0bff8e51f75ce5d4e503ac5161",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "9eba63aaa219be0bff8e51f75ce5d4e503ac5161",
+      "size_bytes": 469804
+    },
+    {
+      "path": "data/processed/scenario-2023.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "ffb0d0171385d096ecdefdd17395205ed0fa82bc",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "ffb0d0171385d096ecdefdd17395205ed0fa82bc",
+      "size_bytes": 428937
+    },
+    {
+      "path": "data/processed/scenario-2024.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "7e0501c5f7536111f01f91c6c5b44cb4b9a5b8f2",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "7e0501c5f7536111f01f91c6c5b44cb4b9a5b8f2",
+      "size_bytes": 385928
+    },
+    {
+      "path": "data/processed/scenario-2025.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "3afa9919d284fc4fbbe0907ffdc21c35e05f2778",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "3afa9919d284fc4fbbe0907ffdc21c35e05f2778",
+      "size_bytes": 344625
+    },
+    {
+      "path": "data/processed/scenario-2026.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "1184fb522c38753c1036366d5764aec80c269a04",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "1184fb522c38753c1036366d5764aec80c269a04",
+      "size_bytes": 306996
+    },
+    {
+      "path": "data/processed/scenario-coverage.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "8f1288da16947128965abbdf2f6bb0003dfde80a",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "8f1288da16947128965abbdf2f6bb0003dfde80a",
+      "size_bytes": 11347
+    },
+    {
+      "path": "docs/release/PLAN_2026-11-12.md",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "ef98ed15651d21d451f7b7449da6593c4719fad6",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "ef98ed15651d21d451f7b7449da6593c4719fad6",
+      "size_bytes": 10139
+    },
+    {
+      "path": "docs/security/DEPENDENCY_REMEDIATION_2026-11-12.md",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "2afcc43d0161e0792e43e6faf17321abf9483588",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "2afcc43d0161e0792e43e6faf17321abf9483588",
+      "size_bytes": 5308
+    },
+    {
+      "path": "lib/engine.ts",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "6826de989761bec7f92c46fc7a8fd7e87909c8bd",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "6826de989761bec7f92c46fc7a8fd7e87909c8bd",
+      "size_bytes": 28420
+    },
+    {
+      "path": "lib/server-data.ts",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "bc609bcb0ce381fc0d5d7d80188407bacf96da25",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "bc609bcb0ce381fc0d5d7d80188407bacf96da25",
+      "size_bytes": 17175
+    },
+    {
+      "path": "lib/simulation.ts",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "f1a943f8de4aeba15926ae4d1be4dea3497843d2",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "f1a943f8de4aeba15926ae4d1be4dea3497843d2",
+      "size_bytes": 34671
+    },
+    {
+      "path": "package.json",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "e477f6453cf7c23a8222b8fdc510d951054300ca",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "e477f6453cf7c23a8222b8fdc510d951054300ca",
+      "size_bytes": 2454
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "3be1e0125c2b70b8bd976b22a925af92ed6bc13c",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "3be1e0125c2b70b8bd976b22a925af92ed6bc13c",
+      "size_bytes": 324602
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "71713d21d96480c9911e23d5e292808c746b799f",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "71713d21d96480c9911e23d5e292808c746b799f",
+      "size_bytes": 1155
+    },
+    {
+      "path": "research/SCENARIO_LIMITATIONS.md",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "fb73c81ab3ecaa3d109bd1af9ec83ae3168ef799",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "fb73c81ab3ecaa3d109bd1af9ec83ae3168ef799",
+      "size_bytes": 1220
+    },
+    {
+      "path": "research/audit_class_coverage.py",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "34b8dbd960efd3b45e2745550cd0bd998aa2d197",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "34b8dbd960efd3b45e2745550cd0bd998aa2d197",
+      "size_bytes": 3894
+    },
+    {
+      "path": "research/build_scenarios.py",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "96aa73d2978116d2d95a9388746424354cdeda3b",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "96aa73d2978116d2d95a9388746424354cdeda3b",
+      "size_bytes": 37568
+    },
+    {
+      "path": "research/team_context.py",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "59825237098cc4da2d2cd759001b41c011681676",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "59825237098cc4da2d2cd759001b41c011681676",
+      "size_bytes": 15088
+    },
+    {
+      "path": "scripts/connector-preview/protocol.mjs",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "f1a68f908da4dbdb6309c42062780bc044f4fa85",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "f1a68f908da4dbdb6309c42062780bc044f4fa85",
+      "size_bytes": 1805
+    },
+    {
+      "path": "scripts/local-db-init.mjs",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "76e33056b32355fa942fa54c00f9c7dbf0fd68f6",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "76e33056b32355fa942fa54c00f9c7dbf0fd68f6",
+      "size_bytes": 1800
+    },
+    {
+      "path": "scripts/local-dev.mjs",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "eafeddfcda2889162c29817c93b106712a97bb20",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "eafeddfcda2889162c29817c93b106712a97bb20",
+      "size_bytes": 778
+    },
+    {
+      "path": "scripts/setup.mjs",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "8320e1e54cddb88d6b6a26d57a6550db8dd2903f",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "8320e1e54cddb88d6b6a26d57a6550db8dd2903f",
+      "size_bytes": 1526
+    },
+    {
+      "path": "tests/all-years.mjs",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "64a273c234bc2fceeb2b8cd498cf9b498d652f52",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "64a273c234bc2fceeb2b8cd498cf9b498d652f52",
+      "size_bytes": 2075
+    },
+    {
+      "path": "tests/api.integration.mjs",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "c9cd694d26e38fe56351ff3db34cd6b1b029ebd4",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "c9cd694d26e38fe56351ff3db34cd6b1b029ebd4",
+      "size_bytes": 38937
+    },
+    {
+      "path": "tests/browser.mjs",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "f7e16190b8d692228c4296b3f867e9d7b60f085b",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "f7e16190b8d692228c4296b3f867e9d7b60f085b",
+      "size_bytes": 5182
+    },
+    {
+      "path": "tests/league-matrix.mjs",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "cf1a2220ddde5547163ab6decaeb677e0d02dd52",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "cf1a2220ddde5547163ab6decaeb677e0d02dd52",
+      "size_bytes": 14636
+    },
+    {
+      "path": "tests/local-http.mjs",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "23f05ce403800d3f4c5e7965168581b316dcb3af",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "23f05ce403800d3f4c5e7965168581b316dcb3af",
+      "size_bytes": 3427
+    },
+    {
+      "path": "tests/playoff-backtest.mjs",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "f4aaf9fb23e06fb128d4656e8bf58e26a66e53c0",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "f4aaf9fb23e06fb128d4656e8bf58e26a66e53c0",
+      "size_bytes": 3670
+    },
+    {
+      "path": "tests/playoff-rules.test.ts",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "247f07480c1a9f6bfb88f06cacf0aae0c3ba7d2b",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "247f07480c1a9f6bfb88f06cacf0aae0c3ba7d2b",
+      "size_bytes": 3867
+    },
+    {
+      "path": "tests/results/all-year-distributions-2026-11-12-drift.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "cde232c8d8c543a8ac8f2749b291bc6738820b7b",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "cde232c8d8c543a8ac8f2749b291bc6738820b7b",
+      "size_bytes": 217052
+    },
+    {
+      "path": "tests/results/all-year-distributions-2026-11-12-drift.md",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "cf6a4c3a31191107fb68427ebc7301575c14ccd8",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "cf6a4c3a31191107fb68427ebc7301575c14ccd8",
+      "size_bytes": 8770
+    },
+    {
+      "path": "tests/results/api-integration-quick.json",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "413ef79df02d570b650c479ceb88fcf79ce689d9",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "413ef79df02d570b650c479ceb88fcf79ce689d9",
+      "size_bytes": 5533
+    },
+    {
+      "path": "tests/results/api-integration.json",
+      "status": "M",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "312fc97bc427027b99cb8f66ae5c4dab2dd80233",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "312fc97bc427027b99cb8f66ae5c4dab2dd80233",
+      "size_bytes": 11516
+    },
+    {
+      "path": "tests/results/browser/chromium-report.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "f6d9ad7a3650bb283008e17e15e58abc7a4460bd",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "f6d9ad7a3650bb283008e17e15e58abc7a4460bd",
+      "size_bytes": 5145
+    },
+    {
+      "path": "tests/results/browser/server.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "02eded271cc5a47d9180f74390eae59226e96877",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "02eded271cc5a47d9180f74390eae59226e96877",
+      "size_bytes": 270
+    },
+    {
+      "path": "tests/results/build-inspection.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "2c18051c53d8c1c0fac4797660c9614903c1b83d",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "2c18051c53d8c1c0fac4797660c9614903c1b83d",
+      "size_bytes": 431
+    },
+    {
+      "path": "tests/results/dependency-audit-final.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "2eee42e94e16dfef41f1c2fd0268c194490a62b7",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "2eee42e94e16dfef41f1c2fd0268c194490a62b7",
+      "size_bytes": 282
+    },
+    {
+      "path": "tests/results/dependency-audit.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "1fadcf5a4cf93b296f48e794bb623a9e29c368ca",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "1fadcf5a4cf93b296f48e794bb623a9e29c368ca",
+      "size_bytes": 107822
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/01-data.result.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "bc0d87273baa2e2fbd03934f29398dc32163262f",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "bc0d87273baa2e2fbd03934f29398dc32163262f",
+      "size_bytes": 516
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/01-data.stderr.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "91ae0f6aa04a8b711c37945f7e4f3d7105511963",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "91ae0f6aa04a8b711c37945f7e4f3d7105511963",
+      "size_bytes": 1797
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/01-data.stdout.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/02-team-context.result.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "62c2add5169c02e49d5631d04147eb212e856a20",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "62c2add5169c02e49d5631d04147eb212e856a20",
+      "size_bytes": 442
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/02-team-context.stderr.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "0463a17fd52402a0a0fa1ea203ed4e511f571062",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "0463a17fd52402a0a0fa1ea203ed4e511f571062",
+      "size_bytes": 1490
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/02-team-context.stdout.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/03-warehouse.result.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "49296639248a4107f318f1ecc414039e0f76f416",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "49296639248a4107f318f1ecc414039e0f76f416",
+      "size_bytes": 428
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/03-warehouse.stderr.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "4f132d3979b992445b46cf7f1f5fef235c86aa43",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "4f132d3979b992445b46cf7f1f5fef235c86aa43",
+      "size_bytes": 1795
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/03-warehouse.stdout.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/04-domain.result.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "7f15dfbfd4aa0c27712979fee25a48442abc84b4",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "7f15dfbfd4aa0c27712979fee25a48442abc84b4",
+      "size_bytes": 463
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/04-domain.stderr.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/04-domain.stdout.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "468fece2651d731d93a861b039cb5b58cb9744fd",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "468fece2651d731d93a861b039cb5b58cb9744fd",
+      "size_bytes": 7077
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/05-model.result.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "7b6f24766b84cd546f679bba306a6cc2c764ec3e",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "7b6f24766b84cd546f679bba306a6cc2c764ec3e",
+      "size_bytes": 410
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/05-model.stderr.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "ef08d53763c02a7f50fb7a10cf7c71230320b10b",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "ef08d53763c02a7f50fb7a10cf7c71230320b10b",
+      "size_bytes": 2387
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/05-model.stdout.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/06-five-year-model.result.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "e924d212fc02bb0b0b1c993226ce5f7afc5b2651",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "e924d212fc02bb0b0b1c993226ce5f7afc5b2651",
+      "size_bytes": 450
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/06-five-year-model.stderr.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "5e3933f346de038303d7f4d34dc4a1f30e5e8b99",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "5e3933f346de038303d7f4d34dc4a1f30e5e8b99",
+      "size_bytes": 819
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/06-five-year-model.stdout.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/07-forecast-audit.result.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "98d0283305a92e7807a43e3fcc8d12e1221f3dd2",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "98d0283305a92e7807a43e3fcc8d12e1221f3dd2",
+      "size_bytes": 553
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/07-forecast-audit.stderr.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/07-forecast-audit.stdout.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "855012b3b64c0b7de37e4ce53fe8a660351c6ff9",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "855012b3b64c0b7de37e4ce53fe8a660351c6ff9",
+      "size_bytes": 3184
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/08-scoring-backtest.result.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "6707b215f8af672008264f9df834a9178fa57a71",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "6707b215f8af672008264f9df834a9178fa57a71",
+      "size_bytes": 516
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/08-scoring-backtest.stderr.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/08-scoring-backtest.stdout.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "913f5387f3f5d39da783839df89b31a1cb07e8df",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "913f5387f3f5d39da783839df89b31a1cb07e8df",
+      "size_bytes": 946
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/09-typecheck.result.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "44f5be0af9c43fab9a7a3dfccb8944cbd30e4680",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "44f5be0af9c43fab9a7a3dfccb8944cbd30e4680",
+      "size_bytes": 513
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/09-typecheck.stderr.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/09-typecheck.stdout.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/10-api.result.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "69af8612c901000af54ce04c4cda349f0340e268",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "69af8612c901000af54ce04c4cda349f0340e268",
+      "size_bytes": 521
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/10-api.stderr.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/10-api.stdout.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "bbdfe9f30acecdae88db56609baa19cdb7ec71f7",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "bbdfe9f30acecdae88db56609baa19cdb7ec71f7",
+      "size_bytes": 1812
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/11-league-matrix.result.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "0533015e031b9f0f2089993b67fe84c4415a3b03",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "0533015e031b9f0f2089993b67fe84c4415a3b03",
+      "size_bytes": 623
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/11-league-matrix.stderr.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/11-league-matrix.stdout.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "1320bd80df4c82b51b13345c207bf7a8fbef3adb",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "1320bd80df4c82b51b13345c207bf7a8fbef3adb",
+      "size_bytes": 1298
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/12-distribution-cle.result.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "a3c080d14a3a2a5ba463aa0936b30ba456fb34b2",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "a3c080d14a3a2a5ba463aa0936b30ba456fb34b2",
+      "size_bytes": 602
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/12-distribution-cle.stderr.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/12-distribution-cle.stdout.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "309f6a300e113f30c9d474d380d8c7b2a2ef173e",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "309f6a300e113f30c9d474d380d8c7b2a2ef173e",
+      "size_bytes": 2715
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/13-distribution-ne.result.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "ec74b25add3e0d3eedfff153c636d09651b45389",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "ec74b25add3e0d3eedfff153c636d09651b45389",
+      "size_bytes": 601
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/13-distribution-ne.stderr.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/13-distribution-ne.stdout.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "cef9db6c3e6e808f8a636397c2f82dde313ca442",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "cef9db6c3e6e808f8a636397c2f82dde313ca442",
+      "size_bytes": 2713
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/14-distribution-kc.result.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "0a1206624e949377b6b7fa665773cfb2b0deaa89",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "0a1206624e949377b6b7fa665773cfb2b0deaa89",
+      "size_bytes": 601
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/14-distribution-kc.stderr.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/14-distribution-kc.stdout.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "aa7616be0d8095ed68d5080975905168e7063592",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "aa7616be0d8095ed68d5080975905168e7063592",
+      "size_bytes": 2677
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/15-distribution-sf.result.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "3ef7eed1d067908000f09673068dfd829a6444e1",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "3ef7eed1d067908000f09673068dfd829a6444e1",
+      "size_bytes": 601
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/15-distribution-sf.stderr.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/15-distribution-sf.stdout.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "9e9fd1cff6a9f5429f4152af95fb59bff617df39",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "9e9fd1cff6a9f5429f4152af95fb59bff617df39",
+      "size_bytes": 2687
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/16-score-sensitivity.result.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "3b7090b9d4031083bbc333806da126d4216d6fee",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "3b7090b9d4031083bbc333806da126d4216d6fee",
+      "size_bytes": 573
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/16-score-sensitivity.stderr.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/16-score-sensitivity.stdout.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "ffcafd1303d68e8c633e35342c14e5835bcbeb37",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "ffcafd1303d68e8c633e35342c14e5835bcbeb37",
+      "size_bytes": 611
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/17-statistical-integrity-tests.result.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "33688227ece345409e02244d0572ec9633b256a9",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "33688227ece345409e02244d0572ec9633b256a9",
+      "size_bytes": 493
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/17-statistical-integrity-tests.stderr.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "fd39e6272269b82c454d6fb3912cfc1b095bb0c6",
+      "checkpoint_status": "missing",
+      "checkpoint_blob_sha": null,
+      "size_bytes": 1110
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/17-statistical-integrity-tests.stdout.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/18-statistical-gates.result.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "8761a353dccbcfdeae35d098242164ff56d9ace3",
+      "checkpoint_status": "missing",
+      "checkpoint_blob_sha": null,
+      "size_bytes": 560
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/18-statistical-gates.stderr.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/18-statistical-gates.stdout.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "0da38bea6704973bb257e31c395f8695fd052639",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "0da38bea6704973bb257e31c395f8695fd052639",
+      "size_bytes": 1402
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/REPORT.md",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "5a4bbc7c7f628b3af1a448f6e36ef73bf333bb39",
+      "checkpoint_status": "missing",
+      "checkpoint_blob_sha": null,
+      "size_bytes": 3256
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/artifacts/analytics/STATISTICAL_GATES.md",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "dedc058c295203b609ac5e8f48e0e794c88e269d",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "dedc058c295203b609ac5e8f48e0e794c88e269d",
+      "size_bytes": 6428
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/artifacts/analytics/forecast_audit.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "6554ed6b9af35e952380bf1ff73dff837aa52cbc",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "6554ed6b9af35e952380bf1ff73dff837aa52cbc",
+      "size_bytes": 38780
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/artifacts/analytics/forecast_audit_predictions.csv",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "49d406f223a0509e89ae4d3953674187c19ebbbb",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "49d406f223a0509e89ae4d3953674187c19ebbbb",
+      "size_bytes": 53032
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/artifacts/analytics/score_sensitivity.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "3b5dad44c63101a17e699ac5556e6cea216162b1",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "3b5dad44c63101a17e699ac5556e6cea216162b1",
+      "size_bytes": 18681
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/artifacts/analytics/scoring_recalibration.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "5d0fd1262463df4313bcc4842dfe6fd321a5dc4c",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "5d0fd1262463df4313bcc4842dfe6fd321a5dc4c",
+      "size_bytes": 17885
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/artifacts/analytics/simulation_diagnostics.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "f4059ec79d27e6d61f6abb7104d9a314aceb7bcb",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "f4059ec79d27e6d61f6abb7104d9a314aceb7bcb",
+      "size_bytes": 12610
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/artifacts/analytics/simulation_diagnostics_KC.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "a5063130bcf4c83b1dbb0936b613bfa7d67d23ca",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "a5063130bcf4c83b1dbb0936b613bfa7d67d23ca",
+      "size_bytes": 12572
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/artifacts/analytics/simulation_diagnostics_NE.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "46833043676d9e6b899c80dcaa58f19eb07f47c5",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "46833043676d9e6b899c80dcaa58f19eb07f47c5",
+      "size_bytes": 12608
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/artifacts/analytics/simulation_diagnostics_SF.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "8a2b35c48f9c2a0895f6eb0df832f2cef9722929",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "8a2b35c48f9c2a0895f6eb0df832f2cef9722929",
+      "size_bytes": 12582
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/artifacts/analytics/statistical_gates.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "87ad01dae454b99057c865236876a2178fd43338",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "87ad01dae454b99057c865236876a2178fd43338",
+      "size_bytes": 30706
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/artifacts/data/clean/eligibility_audit_2018.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "b27f6d7bb328ebc1cc10e8d6ec0b67a12c1c6bad",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "b27f6d7bb328ebc1cc10e8d6ec0b67a12c1c6bad",
+      "size_bytes": 73182
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/artifacts/data/clean/order_reconciliation.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "83c26bfa0b9fb1d9223af8fc2d676eef045b7205",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "83c26bfa0b9fb1d9223af8fc2d676eef045b7205",
+      "size_bytes": 1257
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/artifacts/tests/results/api-integration.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "312fc97bc427027b99cb8f66ae5c4dab2dd80233",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "312fc97bc427027b99cb8f66ae5c4dab2dd80233",
+      "size_bytes": 11516
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/league-matrix.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "46f146f59fd4c8dabffb06f0f08438daaaff9952",
+      "checkpoint_status": "missing",
+      "checkpoint_blob_sha": null,
+      "size_bytes": 91009
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/manifest.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "5fc3a2ec0da00b6a737dd35f441f6d4efcf6c4b3",
+      "checkpoint_status": "missing",
+      "checkpoint_blob_sha": null,
+      "size_bytes": 28406
+    },
+    {
+      "path": "tests/results/gauntlet/2026-11-12T20-32-32-973Z-nov12-release-audit-20f4fe7b/report.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "b0c6628b10f26a9e5abaf1dbf4ac845529985ccc",
+      "checkpoint_status": "missing",
+      "checkpoint_blob_sha": null,
+      "size_bytes": 48925
+    },
+    {
+      "path": "tests/results/local-http-server.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "284193a2f4751b367735b46648d2e50cab463192",
+      "checkpoint_status": "missing",
+      "checkpoint_blob_sha": null,
+      "size_bytes": 753
+    },
+    {
+      "path": "tests/results/local-http.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "cf0ceb9e2b82fd22de6a5bafa5f062f2cf1a5c6a",
+      "checkpoint_status": "missing",
+      "checkpoint_blob_sha": null,
+      "size_bytes": 369
+    },
+    {
+      "path": "tests/results/playoff-backtest.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "809fbdd2f6db0694c7d712bfba80d5003f149ae5",
+      "checkpoint_status": "missing",
+      "checkpoint_blob_sha": null,
+      "size_bytes": 8218
+    },
+    {
+      "path": "tests/results/recorded-coverage-2026-11-12.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "292c607990c5c1fddcc3006b2170894d32f38bb3",
+      "checkpoint_status": "missing",
+      "checkpoint_blob_sha": null,
+      "size_bytes": 6123
+    },
+    {
+      "path": "tests/results/year-matrix-2026-11-12/2018.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "7488b54747cab2054e649080349e2530e2067859",
+      "checkpoint_status": "missing",
+      "checkpoint_blob_sha": null,
+      "size_bytes": 91023
+    },
+    {
+      "path": "tests/results/year-matrix-2026-11-12/2018.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "1138e82f38328079ff99f40abd74b71714843cfd",
+      "checkpoint_status": "missing",
+      "checkpoint_blob_sha": null,
+      "size_bytes": 1249
+    },
+    {
+      "path": "tests/results/year-matrix-2026-11-12/2019.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "4f6f4f7b14448d2bfeee9a3f83cb25e87f7ed3bc",
+      "checkpoint_status": "missing",
+      "checkpoint_blob_sha": null,
+      "size_bytes": 90988
+    },
+    {
+      "path": "tests/results/year-matrix-2026-11-12/2019.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "8d3974420d5ddcf12a5b45dc140d5747d6eb78ee",
+      "checkpoint_status": "missing",
+      "checkpoint_blob_sha": null,
+      "size_bytes": 1249
+    },
+    {
+      "path": "tests/results/year-matrix-2026-11-12/2020.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "01120bb31bdd6ebe6580299e014f5bc05748104f",
+      "checkpoint_status": "missing",
+      "checkpoint_blob_sha": null,
+      "size_bytes": 90986
+    },
+    {
+      "path": "tests/results/year-matrix-2026-11-12/2020.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "2ac63703049becaf2cd58ff3b058501fb7c5327c",
+      "checkpoint_status": "missing",
+      "checkpoint_blob_sha": null,
+      "size_bytes": 1249
+    },
+    {
+      "path": "tests/results/year-matrix-2026-11-12/2021.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "c7369bf03eddac1efd62dcbdae6bdcec16b2ae60",
+      "checkpoint_status": "missing",
+      "checkpoint_blob_sha": null,
+      "size_bytes": 91016
+    },
+    {
+      "path": "tests/results/year-matrix-2026-11-12/2021.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "d4a06b69cee58084514a36f38b8812ea9c92e2f5",
+      "checkpoint_status": "missing",
+      "checkpoint_blob_sha": null,
+      "size_bytes": 1249
+    },
+    {
+      "path": "tests/results/year-matrix-2026-11-12/2022.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "c5fa921c00ffeabe2ab4133a284e56340326e641",
+      "checkpoint_status": "missing",
+      "checkpoint_blob_sha": null,
+      "size_bytes": 91032
+    },
+    {
+      "path": "tests/results/year-matrix-2026-11-12/2022.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "3a0a55f462f95eb720a2a58b92df8508ac3a92aa",
+      "checkpoint_status": "missing",
+      "checkpoint_blob_sha": null,
+      "size_bytes": 1249
+    },
+    {
+      "path": "tests/results/year-matrix-2026-11-12/2023.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "35b5c1435177b984a11d88b21d67a37b81349cda",
+      "checkpoint_status": "missing",
+      "checkpoint_blob_sha": null,
+      "size_bytes": 91022
+    },
+    {
+      "path": "tests/results/year-matrix-2026-11-12/2023.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "41b44e66f95ee117ccc2cbb7b623ce00f9e2d245",
+      "checkpoint_status": "missing",
+      "checkpoint_blob_sha": null,
+      "size_bytes": 1249
+    },
+    {
+      "path": "tests/results/year-matrix-2026-11-12/2024.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "db3080d46e69066b2a416503dddca97d22fab8c2",
+      "checkpoint_status": "missing",
+      "checkpoint_blob_sha": null,
+      "size_bytes": 91018
+    },
+    {
+      "path": "tests/results/year-matrix-2026-11-12/2024.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "8ff44a17c65c021b70e5470415dbf6388cd56f30",
+      "checkpoint_status": "missing",
+      "checkpoint_blob_sha": null,
+      "size_bytes": 1249
+    },
+    {
+      "path": "tests/results/year-matrix-2026-11-12/2025.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "b91469a86a3c9735985398eb922fb95b045aebd8",
+      "checkpoint_status": "missing",
+      "checkpoint_blob_sha": null,
+      "size_bytes": 91013
+    },
+    {
+      "path": "tests/results/year-matrix-2026-11-12/2025.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "ce05b1b0a708163bc6c45905d818c0e8d637a6d8",
+      "checkpoint_status": "missing",
+      "checkpoint_blob_sha": null,
+      "size_bytes": 1249
+    },
+    {
+      "path": "tests/results/year-matrix-2026-11-12/2026.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "4a450d0e0c7ca30b2bd3d3105aeb7b5784e6082c",
+      "checkpoint_status": "missing",
+      "checkpoint_blob_sha": null,
+      "size_bytes": 91012
+    },
+    {
+      "path": "tests/results/year-matrix-2026-11-12/2026.log",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "0cc8ec7991aba54896939016b23c7b36159c23a0",
+      "checkpoint_status": "missing",
+      "checkpoint_blob_sha": null,
+      "size_bytes": 1249
+    },
+    {
+      "path": "tests/results/year-matrix-2026-11-12/summary.json",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "fd0181a5e408e493dd6b6a3be037223c3879657e",
+      "checkpoint_status": "missing",
+      "checkpoint_blob_sha": null,
+      "size_bytes": 408
+    },
+    {
+      "path": "tests/scenario-data.test.ts",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "0acadc8cf3126df7460275d8dd3eaa20d7f6f79c",
+      "checkpoint_status": "included",
+      "checkpoint_blob_sha": "0acadc8cf3126df7460275d8dd3eaa20d7f6f79c",
+      "size_bytes": 2613
+    },
+    {
+      "path": "tests/year-contract.test.ts",
+      "status": "A",
+      "mode": "100644",
+      "type": "blob",
+      "source_blob_sha": "a7fa2a152be358392a9f4887de61ea87e330088f",
+      "checkpoint_status": "missing",
+      "checkpoint_blob_sha": null,
+      "size_bytes": 5102
+    }
+  ],
+  "supplemental_files": [
+    {
+      "path": "docs/security/RECOVERY_STATUS_2026-11-12.md",
+      "status": "included recovery documentation"
+    },
+    {
+      "path": "docs/security/RECOVERY_MANIFEST_2026-11-12.json",
+      "status": "included recovery manifest"
+    },
+    {
+      "path": "docs/release/EXECUTION_RECEIPT_2026-11-12.md",
+      "source_blob_sha": "bbd8367948d129f8479b0a67810012027686ca11",
+      "status": "included recovery evidence"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "source_blob_sha": "0c5998cdedd131f48af13d29eb17c8fafc8209e6",
+      "checkpoint_blob_sha": "378fb7c91b0097252b4069a72c1818c698af6100",
+      "status": "recovery CI edit; source copy archived"
+    },
+    {
+      "path": "docs/security/RECOVERED_README_2026-11-12.md",
+      "source_blob_sha": "c2e67ff35dcfbde182e645a2a879556dc1ce2b40",
+      "status": "original frozen README archived"
+    }
+  ]
+}

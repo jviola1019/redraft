@@ -1,0 +1,1416 @@
+{
+  "version": "exact-donor-audit-v1",
+  "asOf": "2026-11-04",
+  "evaluationStatus": "Reused 2018 historical backtest; no new untouched test claim.",
+  "runtimeArtifactChanged": false,
+  "cohort": 2018,
+  "outcomeSeasons": [
+    2018,
+    2022
+  ],
+  "strictCutoff": "2018-04-26T00:00:00Z",
+  "donorCohorts": [
+    2013
+  ],
+  "methods": {
+    "quantiles": "left inverse of exact weighted empirical CDF",
+    "distributionScore": "CRPS, exact finite mixture; lower is better",
+    "intervalScore": "proper interval score includes misses and width; lower is better",
+    "coverageUncertainty": "Wilson 95%; descriptive, approximate independent-player assumption"
+  },
+  "overall": {
+    "snaps": {
+      "n": 287,
+      "mae": 1175.7830214496696,
+      "rmse": 1469.4362003948102,
+      "meanCrps": 788.254743614644,
+      "outsideDonorSupport": 12,
+      "interval80": {
+        "coverage": 0.867595818815331,
+        "covered": 249,
+        "wilson95": [
+          0.8234871760757962,
+          0.9019939876329961
+        ],
+        "meanWidth": 3251.94425087108,
+        "meanIntervalScore": 4484.313588850174
+      },
+      "interval95": {
+        "coverage": 0.9372822299651568,
+        "covered": 269,
+        "wilson95": [
+          0.9030498356138723,
+          0.9599633022577241
+        ],
+        "meanWidth": 4095.1951219512193,
+        "meanIntervalScore": 5990.526132404179
+      }
+    },
+    "games": {
+      "n": 287,
+      "mae": 25.035148754216504,
+      "rmse": 28.27371558902265,
+      "meanCrps": 16.321293596686598,
+      "outsideDonorSupport": 15,
+      "interval80": {
+        "coverage": 0.8432055749128919,
+        "covered": 242,
+        "wilson95": [
+          0.7966392973500114,
+          0.8807056754017994
+        ],
+        "meanWidth": 68.70383275261324,
+        "meanIntervalScore": 82.9198606271777
+      },
+      "interval95": {
+        "coverage": 0.9372822299651568,
+        "covered": 269,
+        "wilson95": [
+          0.9030498356138723,
+          0.9599633022577241
+        ],
+        "meanWidth": 76.7630662020906,
+        "meanIntervalScore": 88.88850174216027
+      }
+    }
+  },
+  "positionBaseline": {
+    "snaps": {
+      "n": 287,
+      "mae": 1206.1433668030263,
+      "rmse": 1514.8654456645338,
+      "meanCrps": 817.1897064366026,
+      "outsideDonorSupport": 12,
+      "interval80": {
+        "coverage": 0.8606271777003485,
+        "covered": 247,
+        "wilson95": [
+          0.8157769283910112,
+          0.8959510379015008
+        ],
+        "meanWidth": 3256.4773519163764,
+        "meanIntervalScore": 4591.285714285715
+      },
+      "interval95": {
+        "coverage": 0.9372822299651568,
+        "covered": 269,
+        "wilson95": [
+          0.9030498356138723,
+          0.9599633022577241
+        ],
+        "meanWidth": 4224.759581881533,
+        "meanIntervalScore": 6214.585365853657
+      }
+    },
+    "games": {
+      "n": 287,
+      "mae": 25.562120855378808,
+      "rmse": 28.66685938841023,
+      "meanCrps": 16.578288540580843,
+      "outsideDonorSupport": 15,
+      "interval80": {
+        "coverage": 0.8362369337979094,
+        "covered": 240,
+        "wilson95": [
+          0.7890349182851003,
+          0.8745568570504302
+        ],
+        "meanWidth": 69.81533101045297,
+        "meanIntervalScore": 84.2404181184669
+      },
+      "interval95": {
+        "coverage": 0.9233449477351916,
+        "covered": 265,
+        "wilson95": [
+          0.8866708759751792,
+          0.9488358670638565
+        ],
+        "meanWidth": 76.64808362369338,
+        "meanIntervalScore": 89.33101045296168
+      }
+    }
+  },
+  "pairedCrpsVsPositionBaseline": {
+    "difference": -28.934962821958486,
+    "playerBootstrap95": [
+      -66.11187002107738,
+      6.196063737187829
+    ],
+    "resamples": 2000,
+    "note": "One cohort; does not measure between-era or team clustering uncertainty."
+  },
+  "subgroups": {
+    "DB": {
+      "support": {
+        "donors": 57,
+        "rookieRole": 26,
+        "noRookieRole": 31,
+        "roleConditioningSupported": true
+      },
+      "snaps": {
+        "n": 58,
+        "mae": 1303.547573501326,
+        "rmse": 1533.8178088340155,
+        "meanCrps": 854.3452930280871,
+        "outsideDonorSupport": 3,
+        "interval80": {
+          "coverage": 0.9137931034482759,
+          "covered": 53,
+          "wilson95": [
+            0.8135637093712647,
+            0.962614616873809
+          ],
+          "meanWidth": 4042.103448275862,
+          "meanIntervalScore": 4764.862068965517
+        },
+        "interval95": {
+          "coverage": 0.9137931034482759,
+          "covered": 53,
+          "wilson95": [
+            0.8135637093712647,
+            0.962614616873809
+          ],
+          "meanWidth": 4496.741379310345,
+          "meanIntervalScore": 5709.155172413792
+        }
+      },
+      "games": {
+        "n": 58,
+        "mae": 22.197659629511428,
+        "rmse": 25.37145968793346,
+        "meanCrps": 14.828526290273276,
+        "outsideDonorSupport": 1,
+        "interval80": {
+          "coverage": 0.9137931034482759,
+          "covered": 53,
+          "wilson95": [
+            0.8135637093712647,
+            0.962614616873809
+          ],
+          "meanWidth": 74.01724137931035,
+          "meanIntervalScore": 78.32758620689656
+        },
+        "interval95": {
+          "coverage": 0.9827586206896551,
+          "covered": 57,
+          "wilson95": [
+            0.9085914190653199,
+            0.9969499615539326
+          ],
+          "meanWidth": 79.0,
+          "meanIntervalScore": 79.6896551724138
+        }
+      }
+    },
+    "DL": {
+      "support": {
+        "donors": 49,
+        "rookieRole": 19,
+        "noRookieRole": 30,
+        "roleConditioningSupported": true
+      },
+      "snaps": {
+        "n": 36,
+        "mae": 1008.8320987008772,
+        "rmse": 1161.7122229059344,
+        "meanCrps": 656.4386193769632,
+        "outsideDonorSupport": 1,
+        "interval80": {
+          "coverage": 0.8333333333333334,
+          "covered": 30,
+          "wilson95": [
+            0.6810920568872054,
+            0.9212955240498188
+          ],
+          "meanWidth": 2789.6666666666665,
+          "meanIntervalScore": 3421.6111111111113
+        },
+        "interval95": {
+          "coverage": 0.9722222222222222,
+          "covered": 35,
+          "wilson95": [
+            0.8583028134672614,
+            0.9950795928601897
+          ],
+          "meanWidth": 3549.3055555555557,
+          "meanIntervalScore": 4045.972222222222
+        }
+      },
+      "games": {
+        "n": 36,
+        "mae": 26.95126246306043,
+        "rmse": 29.608394692834228,
+        "meanCrps": 17.26344881735861,
+        "outsideDonorSupport": 2,
+        "interval80": {
+          "coverage": 0.75,
+          "covered": 27,
+          "wilson95": [
+            0.5892954623327166,
+            0.8624952233700517
+          ],
+          "meanWidth": 72.13888888888889,
+          "meanIntervalScore": 85.19444444444444
+        },
+        "interval95": {
+          "coverage": 0.8888888888888888,
+          "covered": 32,
+          "wilson95": [
+            0.7468519140963513,
+            0.9559335969968435
+          ],
+          "meanWidth": 78.11111111111111,
+          "meanIntervalScore": 91.44444444444443
+        }
+      }
+    },
+    "LB": {
+      "support": {
+        "donors": 38,
+        "rookieRole": 12,
+        "noRookieRole": 26,
+        "roleConditioningSupported": true
+      },
+      "snaps": {
+        "n": 48,
+        "mae": 1179.9461901452992,
+        "rmse": 1523.4448709585333,
+        "meanCrps": 789.5515277695873,
+        "outsideDonorSupport": 4,
+        "interval80": {
+          "coverage": 0.8333333333333334,
+          "covered": 40,
+          "wilson95": [
+            0.7042217159874441,
+            0.9130448642351444
+          ],
+          "meanWidth": 2821.8125,
+          "meanIntervalScore": 5064.729166666667
+        },
+        "interval95": {
+          "coverage": 0.875,
+          "covered": 42,
+          "wilson95": [
+            0.7529954171361317,
+            0.9414294856142802
+          ],
+          "meanWidth": 4184.0,
+          "meanIntervalScore": 5477.333333333332
+        }
+      },
+      "games": {
+        "n": 48,
+        "mae": 25.835326630840456,
+        "rmse": 28.588219882498574,
+        "meanCrps": 16.532469196059267,
+        "outsideDonorSupport": 3,
+        "interval80": {
+          "coverage": 0.7916666666666666,
+          "covered": 38,
+          "wilson95": [
+            0.6574109872738206,
+            0.882697270420944
+          ],
+          "meanWidth": 66.125,
+          "meanIntervalScore": 85.5
+        },
+        "interval95": {
+          "coverage": 0.9166666666666666,
+          "covered": 44,
+          "wilson95": [
+            0.8044669820963272,
+            0.9671162431819081
+          ],
+          "meanWidth": 76.5,
+          "meanIntervalScore": 85.66666666666667
+        }
+      }
+    },
+    "OL": {
+      "support": {
+        "donors": 53,
+        "rookieRole": 14,
+        "noRookieRole": 39,
+        "roleConditioningSupported": true
+      },
+      "snaps": {
+        "n": 46,
+        "mae": 1576.4553661420287,
+        "rmse": 1814.6304374466283,
+        "meanCrps": 996.3234744362659,
+        "outsideDonorSupport": 0,
+        "interval80": {
+          "coverage": 0.8478260869565217,
+          "covered": 39,
+          "wilson95": [
+            0.71775860447939,
+            0.9242771777219454
+          ],
+          "meanWidth": 4441.434782608696,
+          "meanIntervalScore": 5096.652173913043
+        },
+        "interval95": {
+          "coverage": 0.9782608695652174,
+          "covered": 45,
+          "wilson95": [
+            0.8866470547848865,
+            0.9961521457419497
+          ],
+          "meanWidth": 5039.782608695652,
+          "meanIntervalScore": 5514.565217391304
+        }
+      },
+      "games": {
+        "n": 46,
+        "mae": 26.916805534989646,
+        "rmse": 29.548433224144688,
+        "meanCrps": 16.83150733479978,
+        "outsideDonorSupport": 1,
+        "interval80": {
+          "coverage": 0.8478260869565217,
+          "covered": 39,
+          "wilson95": [
+            0.71775860447939,
+            0.9242771777219454
+          ],
+          "meanWidth": 71.56521739130434,
+          "meanIntervalScore": 80.47826086956522
+        },
+        "interval95": {
+          "coverage": 0.9782608695652174,
+          "covered": 45,
+          "wilson95": [
+            0.8866470547848865,
+            0.9961521457419497
+          ],
+          "meanWidth": 78.80434782608695,
+          "meanIntervalScore": 84.02173913043478
+        }
+      }
+    },
+    "QB": {
+      "support": {
+        "donors": 15,
+        "rookieRole": 3,
+        "noRookieRole": 12,
+        "roleConditioningSupported": true
+      },
+      "snaps": {
+        "n": 16,
+        "mae": 1233.885201440625,
+        "rmse": 1979.7497044528177,
+        "meanCrps": 1026.179664913499,
+        "outsideDonorSupport": 4,
+        "interval80": {
+          "coverage": 0.75,
+          "covered": 12,
+          "wilson95": [
+            0.5050168346449122,
+            0.8981793250878696
+          ],
+          "meanWidth": 1387.4375,
+          "meanIntervalScore": 8592.4375
+        },
+        "interval95": {
+          "coverage": 0.75,
+          "covered": 12,
+          "wilson95": [
+            0.5050168346449122,
+            0.8981793250878696
+          ],
+          "meanWidth": 1965.0,
+          "meanIntervalScore": 24869.99999999998
+        }
+      },
+      "games": {
+        "n": 16,
+        "mae": 20.89921523402778,
+        "rmse": 29.874251891230777,
+        "meanCrps": 15.539583326185731,
+        "outsideDonorSupport": 3,
+        "interval80": {
+          "coverage": 0.75,
+          "covered": 12,
+          "wilson95": [
+            0.5050168346449122,
+            0.8981793250878696
+          ],
+          "meanWidth": 35.0,
+          "meanIntervalScore": 119.375
+        },
+        "interval95": {
+          "coverage": 0.8125,
+          "covered": 13,
+          "wilson95": [
+            0.5699111903802586,
+            0.9340840092857187
+          ],
+          "meanWidth": 61.0,
+          "meanIntervalScore": 150.99999999999991
+        }
+      }
+    },
+    "RB": {
+      "support": {
+        "donors": 34,
+        "rookieRole": 7,
+        "noRookieRole": 27,
+        "roleConditioningSupported": true
+      },
+      "snaps": {
+        "n": 28,
+        "mae": 672.8013792487205,
+        "rmse": 790.5801978910449,
+        "meanCrps": 426.921880658606,
+        "outsideDonorSupport": 0,
+        "interval80": {
+          "coverage": 0.9285714285714286,
+          "covered": 26,
+          "wilson95": [
+            0.7735463743160095,
+            0.9801879358846942
+          ],
+          "meanWidth": 2299.714285714286,
+          "meanIntervalScore": 2485.4285714285716
+        },
+        "interval95": {
+          "coverage": 1.0,
+          "covered": 28,
+          "wilson95": [
+            0.8793566952341543,
+            0.9999999999999998
+          ],
+          "meanWidth": 3479.0,
+          "meanIntervalScore": 3479.0
+        }
+      },
+      "games": {
+        "n": 28,
+        "mae": 24.194593216715266,
+        "rmse": 26.677124109053384,
+        "meanCrps": 15.231768548937373,
+        "outsideDonorSupport": 2,
+        "interval80": {
+          "coverage": 0.8928571428571429,
+          "covered": 25,
+          "wilson95": [
+            0.7280414845132785,
+            0.9628816331707
+          ],
+          "meanWidth": 64.57142857142857,
+          "meanIntervalScore": 75.64285714285714
+        },
+        "interval95": {
+          "coverage": 0.9285714285714286,
+          "covered": 26,
+          "wilson95": [
+            0.7735463743160095,
+            0.9801879358846942
+          ],
+          "meanWidth": 70.85714285714286,
+          "meanIntervalScore": 90.85714285714285
+        }
+      }
+    },
+    "TE": {
+      "support": {
+        "donors": 18,
+        "rookieRole": 7,
+        "noRookieRole": 11,
+        "roleConditioningSupported": true
+      },
+      "snaps": {
+        "n": 16,
+        "mae": 1134.8861987795917,
+        "rmse": 1276.5629383737514,
+        "meanCrps": 769.8159595619111,
+        "outsideDonorSupport": 0,
+        "interval80": {
+          "coverage": 0.9375,
+          "covered": 15,
+          "wilson95": [
+            0.7167126242970107,
+            0.9888806552353576
+          ],
+          "meanWidth": 3349.125,
+          "meanIntervalScore": 3388.5
+        },
+        "interval95": {
+          "coverage": 1.0,
+          "covered": 16,
+          "wilson95": [
+            0.8063923194655637,
+            1.0
+          ],
+          "meanWidth": 3452.0,
+          "meanIntervalScore": 3452.0
+        }
+      },
+      "games": {
+        "n": 16,
+        "mae": 28.139749554545457,
+        "rmse": 30.95457983262574,
+        "meanCrps": 18.161655734669445,
+        "outsideDonorSupport": 3,
+        "interval80": {
+          "coverage": 0.6875,
+          "covered": 11,
+          "wilson95": [
+            0.44404355834740666,
+            0.8583535614521796
+          ],
+          "meanWidth": 73.6875,
+          "meanIntervalScore": 89.3125
+        },
+        "interval95": {
+          "coverage": 0.8125,
+          "covered": 13,
+          "wilson95": [
+            0.5699111903802586,
+            0.9340840092857187
+          ],
+          "meanWidth": 79.0,
+          "meanIntervalScore": 96.49999999999999
+        }
+      }
+    },
+    "WR": {
+      "support": {
+        "donors": 37,
+        "rookieRole": 15,
+        "noRookieRole": 22,
+        "roleConditioningSupported": true
+      },
+      "snaps": {
+        "n": 39,
+        "mae": 1016.2273678910593,
+        "rmse": 1296.0235965703673,
+        "meanCrps": 734.0050850550554,
+        "outsideDonorSupport": 0,
+        "interval80": {
+          "coverage": 0.8717948717948718,
+          "covered": 34,
+          "wilson95": [
+            0.7329425662025455,
+            0.9439718246302862
+          ],
+          "meanWidth": 3038.6666666666665,
+          "meanIntervalScore": 3810.7179487179487
+        },
+        "interval95": {
+          "coverage": 0.9743589743589743,
+          "covered": 38,
+          "wilson95": [
+            0.8681900983014993,
+            0.99545929689901
+          ],
+          "meanWidth": 4358.692307692308,
+          "meanIntervalScore": 4496.128205128205
+        }
+      },
+      "games": {
+        "n": 39,
+        "mae": 25.30864630008288,
+        "rmse": 28.466682815643907,
+        "meanCrps": 17.15783017519817,
+        "outsideDonorSupport": 0,
+        "interval80": {
+          "coverage": 0.9487179487179487,
+          "covered": 37,
+          "wilson95": [
+            0.8311435995238639,
+            0.9858220445847259
+          ],
+          "meanWidth": 72.17948717948718,
+          "meanIntervalScore": 75.0
+        },
+        "interval95": {
+          "coverage": 1.0,
+          "covered": 39,
+          "wilson95": [
+            0.9103331462924287,
+            1.0
+          ],
+          "meanWidth": 79.8974358974359,
+          "meanIntervalScore": 79.8974358974359
+        }
+      }
+    }
+  },
+  "finiteEnsembleSeeds": [
+    {
+      "seed": 2026110400,
+      "drawsPerProspect": 256,
+      "rmsMeanApproximationError": 86.30306856722093,
+      "subgroups": {
+        "DB": {
+          "n": 58,
+          "coverage95": 0.9310344827586207,
+          "rmsMeanApproximationError": 108.7226446119396
+        },
+        "DL": {
+          "n": 36,
+          "coverage95": 0.9444444444444444,
+          "rmsMeanApproximationError": 62.56425121233229
+        },
+        "LB": {
+          "n": 48,
+          "coverage95": 0.875,
+          "rmsMeanApproximationError": 82.0097324327904
+        },
+        "OL": {
+          "n": 46,
+          "coverage95": 0.9782608695652174,
+          "rmsMeanApproximationError": 111.1109857083051
+        },
+        "QB": {
+          "n": 16,
+          "coverage95": 0.75,
+          "rmsMeanApproximationError": 31.962509595852975
+        },
+        "RB": {
+          "n": 28,
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 56.32341042971299
+        },
+        "TE": {
+          "n": 16,
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 67.18470758671636
+        },
+        "WR": {
+          "n": 39,
+          "coverage95": 0.9743589743589743,
+          "rmsMeanApproximationError": 78.93672777462689
+        }
+      }
+    },
+    {
+      "seed": 2026110401,
+      "drawsPerProspect": 256,
+      "rmsMeanApproximationError": 84.03126083298856,
+      "subgroups": {
+        "DB": {
+          "n": 58,
+          "coverage95": 0.9310344827586207,
+          "rmsMeanApproximationError": 85.40372887391057
+        },
+        "DL": {
+          "n": 36,
+          "coverage95": 0.9444444444444444,
+          "rmsMeanApproximationError": 59.5682210996801
+        },
+        "LB": {
+          "n": 48,
+          "coverage95": 0.8958333333333334,
+          "rmsMeanApproximationError": 76.27391499478101
+        },
+        "OL": {
+          "n": 46,
+          "coverage95": 0.9565217391304348,
+          "rmsMeanApproximationError": 122.14629724800206
+        },
+        "QB": {
+          "n": 16,
+          "coverage95": 0.75,
+          "rmsMeanApproximationError": 36.44464251240568
+        },
+        "RB": {
+          "n": 28,
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 64.61750869488145
+        },
+        "TE": {
+          "n": 16,
+          "coverage95": 0.9375,
+          "rmsMeanApproximationError": 85.78431408560218
+        },
+        "WR": {
+          "n": 39,
+          "coverage95": 0.9743589743589743,
+          "rmsMeanApproximationError": 80.75515372238281
+        }
+      }
+    },
+    {
+      "seed": 2026110402,
+      "drawsPerProspect": 256,
+      "rmsMeanApproximationError": 83.3657755966516,
+      "subgroups": {
+        "DB": {
+          "n": 58,
+          "coverage95": 0.9310344827586207,
+          "rmsMeanApproximationError": 108.37099084552291
+        },
+        "DL": {
+          "n": 36,
+          "coverage95": 0.9444444444444444,
+          "rmsMeanApproximationError": 58.07153773763672
+        },
+        "LB": {
+          "n": 48,
+          "coverage95": 0.875,
+          "rmsMeanApproximationError": 78.83475722300025
+        },
+        "OL": {
+          "n": 46,
+          "coverage95": 0.9782608695652174,
+          "rmsMeanApproximationError": 97.83208054724224
+        },
+        "QB": {
+          "n": 16,
+          "coverage95": 0.75,
+          "rmsMeanApproximationError": 33.114034743492944
+        },
+        "RB": {
+          "n": 28,
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 52.773070110630364
+        },
+        "TE": {
+          "n": 16,
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 69.96692415763171
+        },
+        "WR": {
+          "n": 39,
+          "coverage95": 0.9743589743589743,
+          "rmsMeanApproximationError": 84.67117122301039
+        }
+      }
+    },
+    {
+      "seed": 2026110403,
+      "drawsPerProspect": 256,
+      "rmsMeanApproximationError": 82.31586277511354,
+      "subgroups": {
+        "DB": {
+          "n": 58,
+          "coverage95": 0.9310344827586207,
+          "rmsMeanApproximationError": 94.88442298788159
+        },
+        "DL": {
+          "n": 36,
+          "coverage95": 0.9444444444444444,
+          "rmsMeanApproximationError": 71.60945654620127
+        },
+        "LB": {
+          "n": 48,
+          "coverage95": 0.875,
+          "rmsMeanApproximationError": 77.58335052351018
+        },
+        "OL": {
+          "n": 46,
+          "coverage95": 0.9782608695652174,
+          "rmsMeanApproximationError": 111.95940742006356
+        },
+        "QB": {
+          "n": 16,
+          "coverage95": 0.75,
+          "rmsMeanApproximationError": 36.073351438468706
+        },
+        "RB": {
+          "n": 28,
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 55.78450662223332
+        },
+        "TE": {
+          "n": 16,
+          "coverage95": 0.9375,
+          "rmsMeanApproximationError": 70.4776041005003
+        },
+        "WR": {
+          "n": 39,
+          "coverage95": 0.9487179487179487,
+          "rmsMeanApproximationError": 68.86400182247792
+        }
+      }
+    },
+    {
+      "seed": 2026110404,
+      "drawsPerProspect": 256,
+      "rmsMeanApproximationError": 85.26625677625236,
+      "subgroups": {
+        "DB": {
+          "n": 58,
+          "coverage95": 0.9137931034482759,
+          "rmsMeanApproximationError": 103.95324789847665
+        },
+        "DL": {
+          "n": 36,
+          "coverage95": 0.9444444444444444,
+          "rmsMeanApproximationError": 65.38941502597795
+        },
+        "LB": {
+          "n": 48,
+          "coverage95": 0.875,
+          "rmsMeanApproximationError": 75.69909651288309
+        },
+        "OL": {
+          "n": 46,
+          "coverage95": 0.9565217391304348,
+          "rmsMeanApproximationError": 116.6200527055749
+        },
+        "QB": {
+          "n": 16,
+          "coverage95": 0.75,
+          "rmsMeanApproximationError": 36.22974637387133
+        },
+        "RB": {
+          "n": 28,
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 60.2432596958957
+        },
+        "TE": {
+          "n": 16,
+          "coverage95": 0.9375,
+          "rmsMeanApproximationError": 74.88445274386193
+        },
+        "WR": {
+          "n": 39,
+          "coverage95": 0.9487179487179487,
+          "rmsMeanApproximationError": 70.32574741612599
+        }
+      }
+    },
+    {
+      "seed": 2026110405,
+      "drawsPerProspect": 256,
+      "rmsMeanApproximationError": 83.55539329166065,
+      "subgroups": {
+        "DB": {
+          "n": 58,
+          "coverage95": 0.9137931034482759,
+          "rmsMeanApproximationError": 105.95681893014083
+        },
+        "DL": {
+          "n": 36,
+          "coverage95": 0.9722222222222222,
+          "rmsMeanApproximationError": 81.18212029471407
+        },
+        "LB": {
+          "n": 48,
+          "coverage95": 0.875,
+          "rmsMeanApproximationError": 70.42103719776347
+        },
+        "OL": {
+          "n": 46,
+          "coverage95": 0.9782608695652174,
+          "rmsMeanApproximationError": 93.11612467743649
+        },
+        "QB": {
+          "n": 16,
+          "coverage95": 0.75,
+          "rmsMeanApproximationError": 31.979240823168457
+        },
+        "RB": {
+          "n": 28,
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 69.40049356639841
+        },
+        "TE": {
+          "n": 16,
+          "coverage95": 0.9375,
+          "rmsMeanApproximationError": 88.44925113061682
+        },
+        "WR": {
+          "n": 39,
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 71.96758034390248
+        }
+      }
+    },
+    {
+      "seed": 2026110406,
+      "drawsPerProspect": 256,
+      "rmsMeanApproximationError": 82.38385120037591,
+      "subgroups": {
+        "DB": {
+          "n": 58,
+          "coverage95": 0.9137931034482759,
+          "rmsMeanApproximationError": 95.36810541193732
+        },
+        "DL": {
+          "n": 36,
+          "coverage95": 0.9722222222222222,
+          "rmsMeanApproximationError": 63.48366586058934
+        },
+        "LB": {
+          "n": 48,
+          "coverage95": 0.875,
+          "rmsMeanApproximationError": 78.55461151502406
+        },
+        "OL": {
+          "n": 46,
+          "coverage95": 0.9782608695652174,
+          "rmsMeanApproximationError": 110.97283635148584
+        },
+        "QB": {
+          "n": 16,
+          "coverage95": 0.75,
+          "rmsMeanApproximationError": 35.41721353546509
+        },
+        "RB": {
+          "n": 28,
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 46.89055639553774
+        },
+        "TE": {
+          "n": 16,
+          "coverage95": 0.9375,
+          "rmsMeanApproximationError": 86.3504810399452
+        },
+        "WR": {
+          "n": 39,
+          "coverage95": 0.9743589743589743,
+          "rmsMeanApproximationError": 73.67139742967474
+        }
+      }
+    },
+    {
+      "seed": 2026110407,
+      "drawsPerProspect": 256,
+      "rmsMeanApproximationError": 87.54612622867064,
+      "subgroups": {
+        "DB": {
+          "n": 58,
+          "coverage95": 0.9137931034482759,
+          "rmsMeanApproximationError": 96.74748845986944
+        },
+        "DL": {
+          "n": 36,
+          "coverage95": 0.9722222222222222,
+          "rmsMeanApproximationError": 64.02324730370505
+        },
+        "LB": {
+          "n": 48,
+          "coverage95": 0.8958333333333334,
+          "rmsMeanApproximationError": 85.43732586681641
+        },
+        "OL": {
+          "n": 46,
+          "coverage95": 0.9565217391304348,
+          "rmsMeanApproximationError": 126.74703084540533
+        },
+        "QB": {
+          "n": 16,
+          "coverage95": 0.75,
+          "rmsMeanApproximationError": 33.826580027383294
+        },
+        "RB": {
+          "n": 28,
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 71.46770323127362
+        },
+        "TE": {
+          "n": 16,
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 67.422539713567
+        },
+        "WR": {
+          "n": 39,
+          "coverage95": 0.9743589743589743,
+          "rmsMeanApproximationError": 69.0225089147745
+        }
+      }
+    },
+    {
+      "seed": 2026110408,
+      "drawsPerProspect": 256,
+      "rmsMeanApproximationError": 84.2795080381449,
+      "subgroups": {
+        "DB": {
+          "n": 58,
+          "coverage95": 0.9137931034482759,
+          "rmsMeanApproximationError": 110.22533840906034
+        },
+        "DL": {
+          "n": 36,
+          "coverage95": 0.9722222222222222,
+          "rmsMeanApproximationError": 73.13567289955955
+        },
+        "LB": {
+          "n": 48,
+          "coverage95": 0.875,
+          "rmsMeanApproximationError": 73.7104254107415
+        },
+        "OL": {
+          "n": 46,
+          "coverage95": 0.9565217391304348,
+          "rmsMeanApproximationError": 100.07295580263595
+        },
+        "QB": {
+          "n": 16,
+          "coverage95": 0.75,
+          "rmsMeanApproximationError": 31.201513737428943
+        },
+        "RB": {
+          "n": 28,
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 56.53876149738825
+        },
+        "TE": {
+          "n": 16,
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 76.23521069490101
+        },
+        "WR": {
+          "n": 39,
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 75.4129964084088
+        }
+      }
+    },
+    {
+      "seed": 2026110409,
+      "drawsPerProspect": 256,
+      "rmsMeanApproximationError": 85.79472661309835,
+      "subgroups": {
+        "DB": {
+          "n": 58,
+          "coverage95": 0.9310344827586207,
+          "rmsMeanApproximationError": 115.60073626816168
+        },
+        "DL": {
+          "n": 36,
+          "coverage95": 0.9722222222222222,
+          "rmsMeanApproximationError": 77.83488472832538
+        },
+        "LB": {
+          "n": 48,
+          "coverage95": 0.875,
+          "rmsMeanApproximationError": 85.11004043296793
+        },
+        "OL": {
+          "n": 46,
+          "coverage95": 0.9782608695652174,
+          "rmsMeanApproximationError": 99.80076280078315
+        },
+        "QB": {
+          "n": 16,
+          "coverage95": 0.75,
+          "rmsMeanApproximationError": 26.30162700808612
+        },
+        "RB": {
+          "n": 28,
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 62.542926115337224
+        },
+        "TE": {
+          "n": 16,
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 61.78223364523629
+        },
+        "WR": {
+          "n": 39,
+          "coverage95": 0.9487179487179487,
+          "rmsMeanApproximationError": 58.13661257404813
+        }
+      }
+    },
+    {
+      "seed": 2026110410,
+      "drawsPerProspect": 256,
+      "rmsMeanApproximationError": 85.14405182291445,
+      "subgroups": {
+        "DB": {
+          "n": 58,
+          "coverage95": 0.9482758620689655,
+          "rmsMeanApproximationError": 100.15208842730593
+        },
+        "DL": {
+          "n": 36,
+          "coverage95": 0.9722222222222222,
+          "rmsMeanApproximationError": 56.188504871949654
+        },
+        "LB": {
+          "n": 48,
+          "coverage95": 0.875,
+          "rmsMeanApproximationError": 69.93090407568496
+        },
+        "OL": {
+          "n": 46,
+          "coverage95": 0.9565217391304348,
+          "rmsMeanApproximationError": 121.10998918546095
+        },
+        "QB": {
+          "n": 16,
+          "coverage95": 0.75,
+          "rmsMeanApproximationError": 42.00218329575841
+        },
+        "RB": {
+          "n": 28,
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 68.48477792930966
+        },
+        "TE": {
+          "n": 16,
+          "coverage95": 0.9375,
+          "rmsMeanApproximationError": 95.31149752210125
+        },
+        "WR": {
+          "n": 39,
+          "coverage95": 0.9743589743589743,
+          "rmsMeanApproximationError": 66.18533245839373
+        }
+      }
+    },
+    {
+      "seed": 2026110411,
+      "drawsPerProspect": 256,
+      "rmsMeanApproximationError": 89.08915071616299,
+      "subgroups": {
+        "DB": {
+          "n": 58,
+          "coverage95": 0.9310344827586207,
+          "rmsMeanApproximationError": 103.16174728053494
+        },
+        "DL": {
+          "n": 36,
+          "coverage95": 0.9444444444444444,
+          "rmsMeanApproximationError": 72.35107399681563
+        },
+        "LB": {
+          "n": 48,
+          "coverage95": 0.8958333333333334,
+          "rmsMeanApproximationError": 65.15855249457567
+        },
+        "OL": {
+          "n": 46,
+          "coverage95": 0.9782608695652174,
+          "rmsMeanApproximationError": 138.6413296296103
+        },
+        "QB": {
+          "n": 16,
+          "coverage95": 0.75,
+          "rmsMeanApproximationError": 36.04698363139504
+        },
+        "RB": {
+          "n": 28,
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 51.159230106212256
+        },
+        "TE": {
+          "n": 16,
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 66.48149165551214
+        },
+        "WR": {
+          "n": 39,
+          "coverage95": 0.9487179487179487,
+          "rmsMeanApproximationError": 75.00651073106664
+        }
+      }
+    },
+    {
+      "seed": 2026110412,
+      "drawsPerProspect": 256,
+      "rmsMeanApproximationError": 85.58156341595934,
+      "subgroups": {
+        "DB": {
+          "n": 58,
+          "coverage95": 0.9310344827586207,
+          "rmsMeanApproximationError": 103.0877994167978
+        },
+        "DL": {
+          "n": 36,
+          "coverage95": 0.9722222222222222,
+          "rmsMeanApproximationError": 76.20422140353027
+        },
+        "LB": {
+          "n": 48,
+          "coverage95": 0.8958333333333334,
+          "rmsMeanApproximationError": 63.655074719791635
+        },
+        "OL": {
+          "n": 46,
+          "coverage95": 0.9565217391304348,
+          "rmsMeanApproximationError": 114.56111098999628
+        },
+        "QB": {
+          "n": 16,
+          "coverage95": 0.75,
+          "rmsMeanApproximationError": 36.03811440900977
+        },
+        "RB": {
+          "n": 28,
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 59.60370096816088
+        },
+        "TE": {
+          "n": 16,
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 76.5821943445328
+        },
+        "WR": {
+          "n": 39,
+          "coverage95": 0.9487179487179487,
+          "rmsMeanApproximationError": 82.32519681285048
+        }
+      }
+    },
+    {
+      "seed": 2026110413,
+      "drawsPerProspect": 256,
+      "rmsMeanApproximationError": 75.99677081404492,
+      "subgroups": {
+        "DB": {
+          "n": 58,
+          "coverage95": 0.9310344827586207,
+          "rmsMeanApproximationError": 95.15806227768333
+        },
+        "DL": {
+          "n": 36,
+          "coverage95": 0.9444444444444444,
+          "rmsMeanApproximationError": 56.38465190683179
+        },
+        "LB": {
+          "n": 48,
+          "coverage95": 0.875,
+          "rmsMeanApproximationError": 68.302958533335
+        },
+        "OL": {
+          "n": 46,
+          "coverage95": 0.9782608695652174,
+          "rmsMeanApproximationError": 93.50189015651685
+        },
+        "QB": {
+          "n": 16,
+          "coverage95": 0.75,
+          "rmsMeanApproximationError": 52.84565639619916
+        },
+        "RB": {
+          "n": 28,
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 56.81309559118678
+        },
+        "TE": {
+          "n": 16,
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 63.894481534836984
+        },
+        "WR": {
+          "n": 39,
+          "coverage95": 0.9487179487179487,
+          "rmsMeanApproximationError": 70.06455749796213
+        }
+      }
+    },
+    {
+      "seed": 2026110414,
+      "drawsPerProspect": 256,
+      "rmsMeanApproximationError": 79.34322753547112,
+      "subgroups": {
+        "DB": {
+          "n": 58,
+          "coverage95": 0.9310344827586207,
+          "rmsMeanApproximationError": 95.5989669228774
+        },
+        "DL": {
+          "n": 36,
+          "coverage95": 0.9722222222222222,
+          "rmsMeanApproximationError": 52.57041126736085
+        },
+        "LB": {
+          "n": 48,
+          "coverage95": 0.8958333333333334,
+          "rmsMeanApproximationError": 74.93422249376684
+        },
+        "OL": {
+          "n": 46,
+          "coverage95": 0.9782608695652174,
+          "rmsMeanApproximationError": 108.01146317775711
+        },
+        "QB": {
+          "n": 16,
+          "coverage95": 0.75,
+          "rmsMeanApproximationError": 26.210421633692786
+        },
+        "RB": {
+          "n": 28,
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 42.7436133650134
+        },
+        "TE": {
+          "n": 16,
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 77.88109372053786
+        },
+        "WR": {
+          "n": 39,
+          "coverage95": 0.9743589743589743,
+          "rmsMeanApproximationError": 73.69755561578812
+        }
+      }
+    },
+    {
+      "seed": 2026110415,
+      "drawsPerProspect": 256,
+      "rmsMeanApproximationError": 84.42965357125934,
+      "subgroups": {
+        "DB": {
+          "n": 58,
+          "coverage95": 0.9137931034482759,
+          "rmsMeanApproximationError": 97.14288224038056
+        },
+        "DL": {
+          "n": 36,
+          "coverage95": 0.9444444444444444,
+          "rmsMeanApproximationError": 66.15439069726604
+        },
+        "LB": {
+          "n": 48,
+          "coverage95": 0.875,
+          "rmsMeanApproximationError": 78.03770710051278
+        },
+        "OL": {
+          "n": 46,
+          "coverage95": 0.9565217391304348,
+          "rmsMeanApproximationError": 111.91339256555287
+        },
+        "QB": {
+          "n": 16,
+          "coverage95": 0.75,
+          "rmsMeanApproximationError": 32.83401533434777
+        },
+        "RB": {
+          "n": 28,
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 73.86862079903372
+        },
+        "TE": {
+          "n": 16,
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 63.6142960615093
+        },
+        "WR": {
+          "n": 39,
+          "coverage95": 0.9743589743589743,
+          "rmsMeanApproximationError": 78.07486727458611
+        }
+      }
+    }
+  ],
+  "specialists": {
+    "status": "unsupported quality target; no specialist outcome coverage claim",
+    "support": {
+      "donors": 9,
+      "rookieRole": 0,
+      "noRookieRole": 9,
+      "roleConditioningSupported": false
+    }
+  },
+  "sourceHashes": {
+    "analytics/five_year_strict_2018.json": "a717e2d683ab57c8f79f963d672598810593bae69945c8d00db82857d6c647e1",
+    "analytics/five_year_frozen_2018_predictions.csv": "a12e376e85bb09048b84f399da99d4b52e699922ac49023ab65e8c7de46d5094",
+    "analytics/model.json": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0"
+  },
+  "limitations": [
+    "2013 is the only fully observed strict donor cohort; no independent pre2018 five-year chronological validation exists.",
+    "Exact integration removes Monte Carlo noise from this audit; it does not broaden donor support or fix undercoverage.",
+    "Games means games with recorded snaps, not official appearances or starts.",
+    "Forecasts precede capacity/opportunity transformations and are not validated causal wins.",
+    "A 17-game future season changes exposure; strict donors all come from 16-game seasons.",
+    "No parameter, source revision, selection bias, or counterfactual model uncertainty is captured."
+  ]
+}

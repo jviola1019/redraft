@@ -39,3 +39,9 @@ Primary design references reviewed:
 - [Krillion original site](https://krillion.io/) — the requested broad visual reference. Its assets, logos, exact layouts, and additional modes are not imported.
 
 These are design decisions informed by published guidance. They are not evidence of novice usability testing, WCAG certification, or a measured improvement in user performance. Record fresh browser and accessibility observations separately in TEST_RESULTS.md.
+
+## November 12 interface integration
+
+Scenario setup now defaults to a random supported year and franchise, with historical names and previous-season records from the selected bundle. The guided prospect board explains measurement units and uncertainty in plain language. It keeps colleges and exact identifying measurements out of blind profiles; a recognizable historical player can otherwise defeat blind evaluation. Original SVG football/stadium animation remains state-driven, not a static generated preview.
+
+Current browser status: the Linux environment blocks Chromium before page creation. A runnable Playwright workflow covers desktop and phone viewport interaction, scouting, dialog dismissal, save/reload, runtime errors and horizontal overflow, with WebKit configured separately. No new screenshot, approved visual baseline, physical-iPhone test, accessibility certification or novice usability result is claimed.

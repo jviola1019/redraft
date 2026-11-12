@@ -1,50 +1,50 @@
 {
   "artifact": "data/clean/team_context_2018.json",
-  "artifactSha256": "c3f102575a364807b57e84559946f46544dc457bb878241cb77b343e1ef9c8bf",
+  "artifactSha256": "3c4dfcd5c080501ba349c1434b92f25978c6595a7f0db144a7d2a8e642324d07",
   "artifactVersion": "prior-usage-2017-v1",
-  "verifiedDate": "2026-11-04",
+  "verifiedDate": "2026-11-12",
   "sources": [
     {
       "file": "data/raw/snap_counts_2017.csv",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/snap_counts/snap_counts_2017.csv",
       "sha256": "eab2fad2df99249d4061ed9c5c34d312cdba07cf3159d027d255bdc9b6526917",
       "bytes": 2157818,
-      "retrieved_at": "2026-11-04T20:01:50.871201+00:00"
+      "retrieved_at": "2026-11-12T19:43:31.781944+00:00"
     },
     {
       "file": "data/raw/roster_2017.csv",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2017.csv",
       "sha256": "22584ad80445611edff6dcbc6dce9ab596bdc484430d8aac298725da15697fd4",
       "bytes": 958517,
-      "retrieved_at": "2026-11-04T20:01:50.947397+00:00"
+      "retrieved_at": "2026-11-12T19:43:23.522067+00:00"
     },
     {
       "file": "data/raw/games.csv",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
-      "sha256": "b4dd94e697ff7f75b477ed69711ae7613a95257ebde60e496c8e2d21095f07a3",
-      "bytes": 2188862,
-      "retrieved_at": "2026-11-04T20:01:50.839691+00:00"
+      "sha256": "7b6db9362136b0846e4e55730cdb5ec7fcab107b7c55b6fa2f6802d555fceb9e",
+      "bytes": 2189959,
+      "retrieved_at": "2026-11-12T19:43:23.454186+00:00"
     },
     {
       "file": "data/raw/depth_charts_2017.csv",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/depth_charts/depth_charts_2017.csv",
       "sha256": "cc8a9e6991236510ada3fd1a71ed0ebd3df91f2130c8abbf11e69150adc0eb7d",
       "bytes": 3367336,
-      "retrieved_at": "2026-11-04T20:01:50.968381+00:00"
+      "retrieved_at": "2026-11-12T19:43:23.329584+00:00"
     },
     {
       "file": "data/raw/dictionary_rosters.csv",
       "url": "https://raw.githubusercontent.com/nflverse/nflreadr/main/data-raw/dictionary_rosters.csv",
       "sha256": "86c058e9053066ee50ddf573164591dcc6eb16bf6c8b1c6fe7a48803a870d799",
       "bytes": 2450,
-      "retrieved_at": "2026-11-04T20:01:43.580547+00:00"
+      "retrieved_at": "2026-11-12T19:43:24.879160+00:00"
     },
     {
       "file": "data/raw/dictionary_depth_charts.csv",
       "url": "https://raw.githubusercontent.com/nflverse/nflreadr/main/data-raw/dictionary_depth_charts.csv",
       "sha256": "faf36b0e8e943127d232edc36ccd11125a39d278e2ff42404038e0a3763bf165",
       "bytes": 825,
-      "retrieved_at": "2026-11-04T20:01:43.548872+00:00"
+      "retrieved_at": "2026-11-12T19:43:24.886206+00:00"
     }
   ]
 }

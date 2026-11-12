@@ -1,7 +1,7 @@
 import { env } from 'cloudflare:workers';
 import { z } from 'zod';
 import { getChatGPTUser } from '@/app/chatgpt-auth';
-import { dataset, models, scoutingPolicy, teamContexts, teamContextMetadata, selectedTeamContext } from '@/lib/server-data';
+import { dataset, models, scoutingPolicy, teamContexts, teamContextMetadata, selectedTeamContext, getScenario, years, coverage } from '@/lib/server-data';
 import { createGame, advance, scout, select, setBoard, proposeTrade, applyTrade, validateGame, random, rankLeaderboard, RULE_VERSION, SCORING_VERSION, ENSEMBLE_SIZE } from '@/lib/engine';
 import { simulateReplicate, compactReplicate, summarizeResults } from '@/lib/simulation';
 import { aliasCatalog, prospectViews, identityRevealed, BLIND_POLICY_VERSION, type AliasCatalog } from '@/lib/scouting';
@@ -10,17 +10,15 @@ import type { GameState } from '@/lib/types';
 export const dynamic = 'force-dynamic';
 type StoredGame = GameState & { blindSalt: string; scoutingVersion: string };
 type RunRow = { id:string; owner:string; challenge_date:string|null; state:string; revision:number };
-type DailyConfig = { date:string; team:string; year:2018; seed:string; blindSalt:string; modelVersion:string; datasetVersion:string; engineVersion:string; scoringVersion:string; scoutingVersion:string; ensembleSize:number };
+type DailyConfig = { date:string; team:string; year:number; seed:string; blindSalt:string; modelVersion:string; datasetVersion:string; engineVersion:string; scoringVersion:string; scoutingVersion:string; ensembleSize:number };
 class HttpError extends Error { constructor(public status:number,message:string){super(message)} }
 const json = (body:unknown,status=200) => Response.json(body,{status,headers:{'Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff'}});
 const utcDate = () => new Date().toISOString().slice(0,10);
-const modelVersion = String(models.version);
-const datasetVersion = String(dataset.metadata.version);
 const token = () => crypto.randomUUID()+crypto.randomUUID();
 const hash = async (value:string) => Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(value))),v=>v.toString(16).padStart(2,'0')).join('');
 const alias = async (owner:string) => `GM-${(await hash(owner)).slice(0,6).toUpperCase()}`;
 function db(){if(!env.DB)throw new HttpError(503,'Saved games are temporarily unavailable.');return env.DB;}
-async function identity(){const user=await getChatGPTUser();if(user)return user.userId;if(process.env.NODE_ENV==='development')return 'local-development-fixture';throw new HttpError(401,'Sign in with ChatGPT to save your draft.');}
+async function identity(){const user=await getChatGPTUser();if(user)return user.userId;if(process.env.NODE_ENV==='development'&&process.env.REDRAFT_LOCAL_IDENTITY==='1')return 'local-development-fixture';throw new HttpError(401,'Sign in with ChatGPT to save your draft.');}
 function failure(error:unknown){
   if(error instanceof HttpError)return json({error:error.message},error.status);
   if(error instanceof z.ZodError)return json({error:'Invalid request. Check the action, revision, and supplied fields.'},400);
@@ -48,18 +46,18 @@ async function readBody(request:Request){
 const base={id:z.string().uuid(),revision:z.number().int().nonnegative(),requestId:z.string().uuid()};
 const pickId=z.string().regex(/^bp_[a-f0-9]{32}$/);
 const schema=z.discriminatedUnion('action',[
-  z.object({action:z.literal('new'),requestId:z.string().uuid(),mode:z.enum(['historical','daily']).default('historical'),team:z.string().max(4).optional(),year:z.literal(2018).optional(),seed:z.string().min(1).max(80).optional()}).strict(),
+  z.object({action:z.literal('new'),requestId:z.string().uuid(),mode:z.enum(['historical','daily']).default('historical'),team:z.string().max(4).optional(),year:z.number().int().refine(value=>years.includes(value)).optional(),seed:z.string().min(1).max(80).optional()}).strict(),
   z.object({action:z.literal('advance'),...base,pace:z.enum(['user','one']).default('user')}).strict(),
   z.object({action:z.literal('pick'),...base,prospectId:pickId}).strict(),
   z.object({action:z.literal('scout'),...base,prospectId:pickId}).strict(),
   z.object({action:z.literal('board'),...base,prospectIds:z.array(pickId).max(100)}).strict(),
-  z.object({action:z.literal('trade'),...base,target:z.string().min(2).max(4),give:z.array(z.number().int().min(1).max(256)).min(1).max(20),receive:z.array(z.number().int().min(1).max(256)).min(1).max(20),accept:z.boolean()}).strict(),
+  z.object({action:z.literal('trade'),...base,target:z.string().min(2).max(4),give:z.array(z.number().int().min(1).max(400)).min(1).max(20),receive:z.array(z.number().int().min(1).max(400)).min(1).max(20),accept:z.boolean()}).strict(),
   z.object({action:z.literal('simulate'),...base}).strict(),
   z.object({action:z.literal('save'),...base}).strict(),
 ]);
 async function run(owner:string,id:string){const row=await db().prepare('SELECT id,owner,challenge_date,state,revision FROM game_runs WHERE id=? AND owner=?').bind(id,owner).first<RunRow>();if(!row)throw new HttpError(404,'Draft not found.');return row;}
 const unpack=(row:RunRow)=>JSON.parse(row.state) as StoredGame;
-function compatible(game:StoredGame){return game.modelVersion===modelVersion&&game.datasetVersion===datasetVersion&&game.engineVersion===RULE_VERSION&&game.scoringVersion===SCORING_VERSION&&game.scoutingVersion===BLIND_POLICY_VERSION&&game.ensembleSize===ENSEMBLE_SIZE;}
+function compatible(game:StoredGame,bundle=getScenario(game.year)){return game.modelVersion===bundle.models.version&&game.datasetVersion===bundle.dataset.metadata.version&&game.engineVersion===RULE_VERSION&&game.scoringVersion===SCORING_VERSION&&game.scoutingVersion===BLIND_POLICY_VERSION&&game.ensembleSize===ENSEMBLE_SIZE;}
 function remap(value:unknown,aliases:AliasCatalog):unknown{
   if(typeof value==='string')return aliases.toPublic.get(value)??value;
   if(Array.isArray(value))return value.map(v=>remap(v,aliases));
@@ -67,6 +65,7 @@ function remap(value:unknown,aliases:AliasCatalog):unknown{
   return value;
 }
 async function view(game:StoredGame){
+  const {dataset,models,scoutingPolicy,teamContexts,teamContextMetadata,selectedTeamContext}=getScenario(game.year);
   const aliases=await aliasCatalog(game.blindSalt,dataset),revealed=identityRevealed(game);
   const publicGame=remap(game,aliases) as Record<string,unknown>;
   if(game.status==='drafting'||(game.mode==='daily'&&game.createdAt.slice(0,10)===utcDate()))publicGame.seed='Hidden until challenge closes or draft reveal';
@@ -85,7 +84,7 @@ async function view(game:StoredGame){
 }
 async function challenge():Promise<DailyConfig>{
   const date=utcDate();let row=await db().prepare('SELECT config FROM daily_challenges WHERE date=?').bind(date).first<{config:string}>();
-  if(!row){const config:DailyConfig={date,team:dataset.teams[Math.floor(random('daily-team-v1',date)*dataset.teams.length)].id,year:2018,seed:token(),blindSalt:token(),modelVersion,datasetVersion,engineVersion:RULE_VERSION,scoringVersion:SCORING_VERSION,scoutingVersion:BLIND_POLICY_VERSION,ensembleSize:ENSEMBLE_SIZE};
+  if(!row){const year=years[Math.floor(random('daily-year-v1',date)*years.length)],bundle=getScenario(year),config:DailyConfig={date,team:bundle.dataset.teams[Math.floor(random('daily-team-v1',date)*bundle.dataset.teams.length)].id,year,seed:token(),blindSalt:token(),modelVersion:String(bundle.models.version),datasetVersion:String(bundle.dataset.metadata.version),engineVersion:RULE_VERSION,scoringVersion:SCORING_VERSION,scoutingVersion:BLIND_POLICY_VERSION,ensembleSize:ENSEMBLE_SIZE};
     await db().prepare('INSERT INTO daily_challenges (date,config,created_at) VALUES (?,?,?) ON CONFLICT(date) DO NOTHING').bind(date,JSON.stringify(config),new Date().toISOString()).run();
     row=await db().prepare('SELECT config FROM daily_challenges WHERE date=?').bind(date).first<{config:string}>();
   }if(!row)throw new HttpError(503,'The daily challenge is unavailable.');return JSON.parse(row.config);
@@ -107,7 +106,11 @@ export async function GET(request:Request){try{
   ]);
   const leaderboard=rankLeaderboard(leaders.results as {alias:string;score:number;team:string}[]);
   if(action==='leaderboard')return json({leaderboard});if(action==='history')return json({history:history.results});
-  return json({teams:dataset.teams,teamContexts,teamContextMetadata,selectedTeamContext:null,years:[2018],daily:{date:daily.date,team:daily.team,year:daily.year,endsAt:Date.parse(daily.date+'T00:00:00Z')+86400000,status:attempt?.status??'available',gameId:attempt?.game_id},history:history.results,leaderboard,user:{alias:await alias(owner)},methodology:{version:modelVersion,datasetVersion,ensembleSize:ENSEMBLE_SIZE,scoutingVersion:BLIND_POLICY_VERSION,status:'Research alpha',coverage:'2018; 336 verified combine participants, 39 additional historical-reference picks',limitations:['Shared profiles reduce identity clues; they do not guarantee anonymity.','The trained target is rookie participation, not five-year talent.','Five-year development, roster turnover, and CPU strategy remain explicit model assumptions.','Contracts, complete historical rosters, college production, and future-pick trades are not implemented.']}});
+  const teamsByYear=Object.fromEntries(years.map(year=>[year,getScenario(year).dataset.teams]));
+  const teamContextsByYear=Object.fromEntries(years.map(year=>[year,getScenario(year).teamContexts]));
+  const teamContextMetadataByYear=Object.fromEntries(years.map(year=>[year,getScenario(year).teamContextMetadata]));
+  const scenarioModelsByYear=Object.fromEntries(years.map(year=>{const bundle=getScenario(year);return [year,{modelVersion:bundle.models.version,datasetVersion:bundle.dataset.metadata.version,modelStatus:year===2018?'research-alpha':'pre-2018-logistic-extrapolation',teamContextAvailable:year===2018}]}));
+  return json({teams:dataset.teams,teamsByYear,teamContextsByYear,teamContextMetadataByYear,teamContexts,teamContextMetadata,selectedTeamContext:null,years,coverage,scenarioModelsByYear,daily:{date:daily.date,team:daily.team,year:daily.year,endsAt:Date.parse(daily.date+'T00:00:00Z')+86400000,status:attempt?.status??'available',gameId:attempt?.game_id},history:history.results,leaderboard,user:{alias:await alias(owner)},methodology:{version:models.version,datasetVersion:dataset.metadata.version,ensembleSize:ENSEMBLE_SIZE,scoutingVersion:BLIND_POLICY_VERSION,status:'Research alpha',coverage:`Playable scenario years: ${years.join(', ')}. Other years are not enabled; check coverage for blockers.`,limitations:['All post-2018 classes use a frozen model trained through 2017, extrapolated without cohort-specific calibration; reference-only, unseen-position, and specialist rows use explicit fallbacks or remain unavailable.','No audited draft-day roster/position-use context is wired to post-2018 scenarios.','2026 season outcomes are incomplete; five-year labels for that draft class do not yet exist.','Shared profiles reduce identity clues; they do not guarantee anonymity.','The trained target is rookie participation, not five-year talent.','Five-year development, roster turnover, and CPU strategy remain explicit model assumptions.','Contracts, complete historical rosters, college production, and future-pick trades are not implemented.']}});
 }catch(error){return failure(error);}}
 export async function POST(request:Request){try{
   const owner=await identity();const payload=schema.parse(await readBody(request));await limited(owner);
@@ -115,21 +118,24 @@ export async function POST(request:Request){try{
   const receipt=await db().prepare('SELECT owner,game_id,request_hash FROM request_receipts WHERE id=?').bind(payload.requestId).first<{owner:string;game_id:string;request_hash:string}>();
   if(receipt){if(receipt.owner!==owner||receipt.request_hash!==requestHash)throw new HttpError(409,'Request identifier was already used for another action.');const row=await run(owner,receipt.game_id);const game=unpack(row);await scoreIfNeeded(row,game);return json(await view(game));}
   if(payload.action==='new'){
-    if(payload.team&&!dataset.teams.some(t=>t.id===payload.team))throw new HttpError(400,'Unsupported historical franchise.');
     let config:DailyConfig|undefined;
     if(payload.mode==='daily'){
       if(payload.seed||payload.team||payload.year)throw new HttpError(400,'Daily conditions cannot be changed.');config=await challenge();
       const existing=await db().prepare('SELECT game_id FROM daily_attempts WHERE owner=? AND date=?').bind(owner,config.date).first<{game_id:string}>();
       if(existing)return json(await view(unpack(await run(owner,existing.game_id))));
-      if(config.modelVersion!==modelVersion||config.datasetVersion!==datasetVersion||config.engineVersion!==RULE_VERSION||config.scoutingVersion!==BLIND_POLICY_VERSION||config.scoringVersion!==SCORING_VERSION||config.ensembleSize!==ENSEMBLE_SIZE)throw new HttpError(409,'Today’s challenge is pinned to a different version. It remains frozen until the next UTC day.');
+      const pinned=getScenario(config.year);
+      if(config.modelVersion!==pinned.models.version||config.datasetVersion!==pinned.dataset.metadata.version||config.engineVersion!==RULE_VERSION||config.scoutingVersion!==BLIND_POLICY_VERSION||config.scoringVersion!==SCORING_VERSION||config.ensembleSize!==ENSEMBLE_SIZE)throw new HttpError(409,'Today’s challenge is pinned to a different version. It remains frozen until the next UTC day.');
     }
-    const now=new Date().toISOString();const game:StoredGame={...createGame({id:crypto.randomUUID(),team:config?.team??payload.team,year:2018,seed:config?.seed??payload.seed??token(),mode:payload.mode,now,modelVersion},dataset),blindSalt:config?.blindSalt??token(),scoutingVersion:BLIND_POLICY_VERSION};
+    const year=config?.year??payload.year??2018,bundle=getScenario(year),{dataset,models}=bundle;
+    if(payload.team&&!dataset.teams.some(t=>t.id===payload.team))throw new HttpError(400,'Unsupported historical franchise for this draft year.');
+    const now=new Date().toISOString();const game:StoredGame={...createGame({id:crypto.randomUUID(),team:config?.team??payload.team,year,seed:config?.seed??payload.seed??token(),mode:payload.mode,now,modelVersion:String(models.version)},dataset),blindSalt:config?.blindSalt??token(),scoutingVersion:BLIND_POLICY_VERSION};
     const statements=[db().prepare('INSERT INTO game_runs (id,owner,mode,challenge_date,team,year,status,revision,state,created_at,updated_at) VALUES (?,?,?,?,?,?,?,?,?,?,?)').bind(game.id,owner,game.mode,config?.date??null,game.team,game.year,game.status,0,JSON.stringify(game),now,now),db().prepare('INSERT INTO request_receipts (id,owner,game_id,request_hash,created_at) VALUES (?,?,?,?,?)').bind(payload.requestId,owner,game.id,requestHash,now)];
     if(config)statements.push(db().prepare('INSERT INTO daily_attempts (id,owner,date,game_id,created_at) VALUES (?,?,?,?,?)').bind(crypto.randomUUID(),owner,config.date,game.id,now));
     try{await db().batch(statements);}catch{throw new HttpError(409,'Another request created this draft. Refresh your saved drafts.');}
     return json(await view(game),201);
   }
   const row=await run(owner,payload.id),game=unpack(row);
+  const {dataset,models,scoutingPolicy}=getScenario(game.year);
   if(payload.revision!==row.revision)throw new HttpError(409,'Your saved draft changed. Reload it before continuing.');
   if(!compatible(game))throw new HttpError(409,'This saved draft uses a different version and is available for review only.');
   if(game.mode==='daily'&&row.challenge_date!==utcDate())throw new HttpError(409,'This daily challenge has closed. Your saved draft remains available for review.');

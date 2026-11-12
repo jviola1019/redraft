@@ -39,3 +39,16 @@ The context covers 32 teams, 256 regular games, 512 team-game observations, and 
 Depth-chart `formation` only identifies Offense, Defense, or Special Teams. The current dictionary differs from the 2017 schema and the old file contains REG week 18 rows. Consequently no scheme or draft-day roster claim is derived from it. `draftDayRoster`, `draftDayCoaches`, `scheme`, and `rosterContinuity` remain null for every team.
 
 The pipeline writes an exact artifact SHA-256 sidecar for runtime version pinning. Five new context tests passed in 0.134 seconds. Full-product regression is handled by the independent QA workstream; the older test logs are not treated as fresh Nov4 executions. Detailed evidence and reproduction commands are in `research/TEAM_CONTEXT.md`.
+
+## 2026-11-12 continuation
+Primary NFL tiebreak procedures and NFL Football Operations schedule documentation were checked before fixing tie groups and future opponent generation. A wildcard sweep requires a result against every other tied club, and common-game eligibility counts games rather than unique opponents. Historical future schedules cannot replace alternate standings-dependent opponents.
+
+Sources: https://www.nfl.com/standings/tie-breaking-procedures and https://operations.nfl.com/calendar-events/nfl-schedule/making-the-schedule . Original publication timestamps are not supplied on these current reference pages; access date is November 12, 2026. Rule-era bracket changes are separately checked against the 2020 NFL Record & Fact Book.
+
+Playwright's official emulation and browser documentation was reviewed. Phone viewport emulation is not physical iPhone Safari certification. The local server started, but Chromium failed before page creation because socket creation was denied. The failure is retained in tests/results/browser; no browser pass is claimed.
+
+## November 12 final cross-checks
+
+- Every source-audited class 2018–2026 was exercised in the same all-team structural matrix; all 864 draft cases passed before final provenance refresh. These are software invariants, not forecast calibration.
+- Fresh inspection of the official 2012 snap file returned HTTP 200 but only a 154-byte CSV header. Loader-supported years cannot be equated to available observations. Receipt: `analytics/qb_2012_extension_REPORT.md`.
+- The current schedule source had a new hash after reacquisition. The fixed audit caught a stale prior-context manifest rather than silently accepting old provenance. The regeneration and final rerun are recorded in the release audit.

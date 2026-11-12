@@ -34,7 +34,7 @@ export interface RuntimeModels {
     };
     [key: string]: unknown;
 }
-export const RULE_VERSION = 'redraft-research-0.6-prior-usage';
+export const RULE_VERSION = 'redraft-research-0.7-multiyear-playoffs';
 export const ENSEMBLE_SIZE = 256;
 export const SCORING_VERSION = 'research-score-v1';
 /** Fail closed on malformed or post-cutoff calibration metadata. */
@@ -67,11 +67,16 @@ export function normal(seed: string, ...keys: (string | number)[]): number {
 }
 export function positionGroup(pos: string): string {
     const p = pos.toUpperCase();
+    // A two-way designation is retained on the prospect. Draft/roster grouping
+    // uses its first source-listed role; this is not a two-way development model.
+    if (p.includes('/')) return positionGroup(p.split('/')[0]);
+    // H-back is a roster role grouped with tight ends; preserve its raw source label.
+    if (p === 'H-BACK') return 'TE';
     if (['OT', 'OG', 'C', 'G', 'T', 'OL'].includes(p))
         return 'OL';
     if (['DE', 'DT', 'DL', 'NT'].includes(p))
         return 'DL';
-    if (['CB', 'S', 'FS', 'SS', 'DB'].includes(p))
+    if (['CB', 'S', 'SAF', 'FS', 'SS', 'DB'].includes(p))
         return 'DB';
     if (['ILB', 'OLB', 'LB', 'EDGE'].includes(p))
         return 'LB';
@@ -106,25 +111,38 @@ export function createGame(config: {
     now?: string;
     modelVersion?: string;
 }, dataset: Dataset): GameState {
-    const seed = String(config.seed || 'redraft-2018');
+    const year = scenarioYear(dataset);
+    if (config.year !== undefined && config.year !== year)
+        throw new Error('Configured draft year does not match the dataset.');
+    const seed = String(config.seed || `redraft-${year}`);
     const team = config.team || dataset.teams[Math.floor(random(seed, 'assigned-team') * dataset.teams.length)]?.id;
     if (!dataset.teams.some(t => t.id === team))
         throw new Error('Unknown franchise.');
-    if (config.year && config.year !== 2018)
-        throw new Error('Only the researched 2018 scenario is installed.');
     if (dataset.prospects.filter(isPlayableProspect).length < dataset.picks.length)
         throw new Error('Playable prospect pool is too small for a complete draft.');
     const now = config.now ?? new Date().toISOString();
-    const state: GameState = { id: config.id ?? `run-${Math.floor(random(seed, now, team) * 1e12).toString(36)}`, year: 2018, team, mode: config.mode ?? 'historical', seed, status: 'drafting', cutoff: String(dataset.metadata.informationCutoff ?? '2018-04-26T23:59:00Z'), datasetVersion: String(dataset.metadata.version ?? 'nflverse-2018-v1'), modelVersion: config.modelVersion ?? RULE_VERSION, engineVersion: RULE_VERSION, scoringVersion: SCORING_VERSION, ensembleSize: ENSEMBLE_SIZE, picks: dataset.picks.map(p => ({ ...p })).sort((a, b) => a.overall - b.overall), selections: [], trades: [], scouted: [], scoutingPoints: 12, board: [], createdAt: now, updatedAt: now, revision: 0 };
+    const state: GameState = { id: config.id ?? `run-${Math.floor(random(seed, now, team) * 1e12).toString(36)}`, year, team, mode: config.mode ?? 'historical', seed, status: 'drafting', cutoff: String(dataset.metadata.informationCutoff), datasetVersion: String(dataset.metadata.version ?? `dataset-${year}`), modelVersion: config.modelVersion ?? RULE_VERSION, engineVersion: RULE_VERSION, scoringVersion: SCORING_VERSION, ensembleSize: ENSEMBLE_SIZE, picks: dataset.picks.map(p => ({ ...p })).sort((a, b) => a.overall - b.overall), selections: [], trades: [], scouted: [], scoutingPoints: 12, board: [], createdAt: now, updatedAt: now, revision: 0 };
     validateGame(state, dataset);
     return state;
+}
+/** Resolve the scenario's draft class from its dataset contract; 2013-era donors only support 2018 onward. */
+export function scenarioYear(dataset: Dataset): number {
+    const metadata = dataset.metadata as Record<string, unknown>;
+    const year = metadata.year ?? metadata.draftYear;
+    if (typeof year !== 'number' || !Number.isInteger(year) || year < 2018 || year > 9998 ||
+        (metadata.year !== undefined && metadata.draftYear !== undefined && metadata.year !== metadata.draftYear))
+        throw new Error('Dataset has an unsupported draft year.');
+    const cutoff = typeof metadata.informationCutoff === 'string' ? Date.parse(metadata.informationCutoff) : NaN;
+    if (!Number.isFinite(cutoff)) throw new Error('Dataset has an invalid information cutoff.');
+    return year;
 }
 export function currentPick(game: GameState) { return game.picks[game.selections.length] ?? null; }
 function nextState(game: GameState): GameState { return { ...game, revision: game.revision + 1, picks: game.picks.map(p => ({ ...p })), selections: [...game.selections], trades: [...game.trades], scouted: [...game.scouted], board: [...game.board] }; }
 export function validateGame(game: GameState, dataset: Dataset): true {
+    const year = scenarioYear(dataset);
     const teams = new Set(dataset.teams.map(t => t.id)), players = new Map(dataset.prospects.map(p => [p.id, p]));
     const cutoff = new Date(game.cutoff).getTime();
-    if (!Number.isFinite(cutoff) || game.cutoff !== String(dataset.metadata.informationCutoff ?? '2018-04-26T23:59:00Z'))
+    if (game.year !== year || !Number.isFinite(cutoff) || game.cutoff !== String(dataset.metadata.informationCutoff))
         throw new Error('Invalid historical cutoff.');
     const permitted = (id: string) => { const p = players.get(id), available = p ? new Date(p.availableBy).getTime() : NaN; return !!p && isPlayableProspect(p) && Number.isFinite(available) && available <= cutoff; };
     if (game.picks.length !== dataset.picks.length)
@@ -325,11 +343,13 @@ function cpuPick(game: GameState, dataset: Dataset, models?: RuntimeModels): str
         throw new Error('Eligible prospect pool exhausted.');
     return best;
 }
-/** Johnson chart (2014 source); compensatory-era picks225–256 use an explicit1-point extension. */
+/** Johnson chart (2014 source); picks beyond 224 use an explicit one-point
+ * gameplay extension. This is not an empirically fitted late-pick price. */
 export function pickValue(overall: number): number {
-    if (!Number.isInteger(overall) || overall < 1 || overall > 256)
+    if (!Number.isInteger(overall) || overall < 1 || overall > 400)
         throw new Error('Invalid pick.');
     const row = johnsonChart.values.find(p => p.pick === overall);
+    if (!row && overall > 224) return 1;
     if (!row)
         throw new Error('Unpriced selection.');
     return row.gameValue;

@@ -1,0 +1,604 @@
+{
+  "version": "score-sensitivity-v2",
+  "asOf": "2026-11-02",
+  "team": "CLE",
+  "seed": "redraft-score-sensitivity-2026-11-02",
+  "engineVersion": "redraft-research-0.7-multiyear-playoffs",
+  "replicatesPerPolicy": 128,
+  "policies": [
+    {
+      "name": "CPU utility policy",
+      "decisionScore": 56,
+      "components": [
+        {
+          "name": "Projected class value",
+          "score": 53.0741309503831,
+          "weight": 0.3,
+          "explanation": "Rookie-role probability sum compared with the actual class; this is not a career-value estimate."
+        },
+        {
+          "name": "Draft-class balance",
+          "score": 100,
+          "weight": 0.1,
+          "explanation": "Position diversity proxy; complete historical roster needs are unavailable."
+        },
+        {
+          "name": "Trade capital",
+          "score": 50,
+          "weight": 0.15,
+          "explanation": "Net change under the published Johnson chart, with a one-point extension after pick224; acceptance is heuristic."
+        },
+        {
+          "name": "Paired five-year difference",
+          "score": 52.890625,
+          "weight": 0.35,
+          "explanation": "Mean simulated wins gained against the paired baseline; sensitive to unvalidated development assumptions."
+        },
+        {
+          "name": "Scouting coverage",
+          "score": 44.44444444444444,
+          "weight": 0.1,
+          "explanation": "Share of selections researched; an activity measure, not empirical scouting skill."
+        }
+      ],
+      "pairedSummary": {
+        "mean": 0.578125,
+        "median": 0.5,
+        "lower": -3,
+        "upper": 5,
+        "probabilityImprovement": 0.5,
+        "standardError": 0.32159202261689696,
+        "samples": 128
+      },
+      "selectedProspects": [
+        "p2018-0239398be9",
+        "p2018-7e9ebf6f55",
+        "p2018-b5ec9a80f1",
+        "p2018-158136645e",
+        "p2018-5a893a5346",
+        "p2018-58fff745fe",
+        "p2018-e43b33609c",
+        "p2018-f763f6744b",
+        "p2018-41d2d7e806"
+      ]
+    },
+    {
+      "name": "Highest rookie-role probability",
+      "decisionScore": 58,
+      "components": [
+        {
+          "name": "Projected class value",
+          "score": 58.09629716550758,
+          "weight": 0.3,
+          "explanation": "Rookie-role probability sum compared with the actual class; this is not a career-value estimate."
+        },
+        {
+          "name": "Draft-class balance",
+          "score": 83.33333333333334,
+          "weight": 0.1,
+          "explanation": "Position diversity proxy; complete historical roster needs are unavailable."
+        },
+        {
+          "name": "Trade capital",
+          "score": 50,
+          "weight": 0.15,
+          "explanation": "Net change under the published Johnson chart, with a one-point extension after pick224; acceptance is heuristic."
+        },
+        {
+          "name": "Paired five-year difference",
+          "score": 54.296875,
+          "weight": 0.35,
+          "explanation": "Mean simulated wins gained against the paired baseline; sensitive to unvalidated development assumptions."
+        },
+        {
+          "name": "Scouting coverage",
+          "score": 55.55555555555556,
+          "weight": 0.1,
+          "explanation": "Share of selections researched; an activity measure, not empirical scouting skill."
+        }
+      ],
+      "pairedSummary": {
+        "mean": 0.859375,
+        "median": 1,
+        "lower": -3,
+        "upper": 5,
+        "probabilityImprovement": 0.5390625,
+        "standardError": 0.3024942194980334,
+        "samples": 128
+      },
+      "selectedProspects": [
+        "p2018-d4dc370f60",
+        "p2018-b5ec9a80f1",
+        "p2018-782021cb22",
+        "p2018-c282ca89ab",
+        "p2018-692e78bb24",
+        "p2018-e43b33609c",
+        "p2018-18265e91f7",
+        "p2018-f763f6744b",
+        "p2018-41d2d7e806"
+      ]
+    },
+    {
+      "name": "Quarterback priority",
+      "decisionScore": 53,
+      "components": [
+        {
+          "name": "Projected class value",
+          "score": 54.02366446813844,
+          "weight": 0.3,
+          "explanation": "Rookie-role probability sum compared with the actual class; this is not a career-value estimate."
+        },
+        {
+          "name": "Draft-class balance",
+          "score": 50,
+          "weight": 0.1,
+          "explanation": "Position diversity proxy; complete historical roster needs are unavailable."
+        },
+        {
+          "name": "Trade capital",
+          "score": 50,
+          "weight": 0.15,
+          "explanation": "Net change under the published Johnson chart, with a one-point extension after pick224; acceptance is heuristic."
+        },
+        {
+          "name": "Paired five-year difference",
+          "score": 54.4921875,
+          "weight": 0.35,
+          "explanation": "Mean simulated wins gained against the paired baseline; sensitive to unvalidated development assumptions."
+        },
+        {
+          "name": "Scouting coverage",
+          "score": 55.55555555555556,
+          "weight": 0.1,
+          "explanation": "Share of selections researched; an activity measure, not empirical scouting skill."
+        }
+      ],
+      "pairedSummary": {
+        "mean": 0.8984375,
+        "median": 1,
+        "lower": -3,
+        "upper": 5,
+        "probabilityImprovement": 0.53125,
+        "standardError": 0.29862707576947534,
+        "samples": 128
+      },
+      "selectedProspects": [
+        "p2018-d4dc370f60",
+        "p2018-b5ec9a80f1",
+        "p2018-782021cb22",
+        "p2018-c282ca89ab",
+        "p2018-692e78bb24",
+        "p2018-e43b33609c",
+        "p2018-31a886e241",
+        "p2018-8869c8ab10",
+        "p2018-e6d509e8d2"
+      ]
+    },
+    {
+      "name": "Line priority",
+      "decisionScore": 57,
+      "components": [
+        {
+          "name": "Projected class value",
+          "score": 60.02793376246007,
+          "weight": 0.3,
+          "explanation": "Rookie-role probability sum compared with the actual class; this is not a career-value estimate."
+        },
+        {
+          "name": "Draft-class balance",
+          "score": 33.33333333333333,
+          "weight": 0.1,
+          "explanation": "Position diversity proxy; complete historical roster needs are unavailable."
+        },
+        {
+          "name": "Trade capital",
+          "score": 50,
+          "weight": 0.15,
+          "explanation": "Net change under the published Johnson chart, with a one-point extension after pick224; acceptance is heuristic."
+        },
+        {
+          "name": "Paired five-year difference",
+          "score": 52.5,
+          "weight": 0.35,
+          "explanation": "Mean simulated wins gained against the paired baseline; sensitive to unvalidated development assumptions."
+        },
+        {
+          "name": "Scouting coverage",
+          "score": 100,
+          "weight": 0.1,
+          "explanation": "Share of selections researched; an activity measure, not empirical scouting skill."
+        }
+      ],
+      "pairedSummary": {
+        "mean": 0.5,
+        "median": 0,
+        "lower": -4,
+        "upper": 5,
+        "probabilityImprovement": 0.4375,
+        "standardError": 0.30618621784789724,
+        "samples": 128
+      },
+      "selectedProspects": [
+        "p2018-d4dc370f60",
+        "p2018-b5ec9a80f1",
+        "p2018-782021cb22",
+        "p2018-c282ca89ab",
+        "p2018-692e78bb24",
+        "p2018-aee2561de3",
+        "p2018-b86e65a720",
+        "p2018-8d6b1d5710",
+        "p2018-1a197d3c5e"
+      ]
+    }
+  ],
+  "weightPerturbations": [
+    {
+      "name": "Default",
+      "weights": [
+        0.3,
+        0.1,
+        0.15,
+        0.35,
+        0.1
+      ],
+      "ranking": [
+        {
+          "name": "Highest rookie-role probability",
+          "score": 57.821684288541164
+        },
+        {
+          "name": "Line priority",
+          "score": 57.216713462071354
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 56.37840247955937
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 53.33492052099709
+        }
+      ],
+      "spearmanToDefault": 1,
+      "topPolicyChanged": false
+    },
+    {
+      "name": "Projected class value ×0.5",
+      "weights": [
+        0.17647058823529413,
+        0.11764705882352942,
+        0.17647058823529413,
+        0.4117647058823529,
+        0.11764705882352942
+      ],
+      "ranking": [
+        {
+          "name": "Highest rookie-role probability",
+          "score": 57.77322319260591
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 56.96150922000225
+        },
+        {
+          "name": "Line priority",
+          "score": 56.72061576200276
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 53.21337747150155
+        }
+      ],
+      "spearmanToDefault": 0.8,
+      "topPolicyChanged": false
+    },
+    {
+      "name": "Projected class value ×1.5",
+      "weights": [
+        0.391304347826087,
+        0.08695652173913045,
+        0.13043478260869565,
+        0.30434782608695654,
+        0.08695652173913045
+      ],
+      "ranking": [
+        {
+          "name": "Highest rookie-role probability",
+          "score": 57.85750335944983
+        },
+        {
+          "name": "Line priority",
+          "score": 57.583394370817715
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 55.94741054097117
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 53.42475668801553
+        }
+      ],
+      "spearmanToDefault": 1,
+      "topPolicyChanged": false
+    },
+    {
+      "name": "Draft-class balance ×0.5",
+      "weights": [
+        0.3157894736842105,
+        0.052631578947368425,
+        0.15789473684210525,
+        0.3684210526315789,
+        0.10526315789473685
+      ],
+      "ranking": [
+        {
+          "name": "Line priority",
+          "score": 58.473733468847044
+        },
+        {
+          "name": "Highest rookie-role probability",
+          "score": 56.47896591776263
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 54.08252892585197
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 53.510442653681146
+        }
+      ],
+      "spearmanToDefault": 0.8,
+      "topPolicyChanged": true
+    },
+    {
+      "name": "Draft-class balance ×1.5",
+      "weights": [
+        0.2857142857142857,
+        0.14285714285714288,
+        0.14285714285714285,
+        0.3333333333333333,
+        0.09523809523809523
+      ],
+      "ranking": [
+        {
+          "name": "Highest rookie-role probability",
+          "score": 59.03652471924555
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 58.45562140910416
+        },
+        {
+          "name": "Line priority",
+          "score": 56.07940964641717
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 53.17611478190199
+        }
+      ],
+      "spearmanToDefault": 0.8,
+      "topPolicyChanged": false
+    },
+    {
+      "name": "Trade capital ×0.5",
+      "weights": [
+        0.32432432432432434,
+        0.10810810810810813,
+        0.08108108108108109,
+        0.3783783783783784,
+        0.10810810810810813
+      ],
+      "ranking": [
+        {
+          "name": "Highest rookie-role probability",
+          "score": 58.455874906530994
+        },
+        {
+          "name": "Line priority",
+          "score": 57.801852391428504
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 56.8955702481723
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 53.60531948215902
+        }
+      ],
+      "spearmanToDefault": 1,
+      "topPolicyChanged": false
+    },
+    {
+      "name": "Trade capital ×1.5",
+      "weights": [
+        0.27906976744186046,
+        0.0930232558139535,
+        0.20930232558139533,
+        0.3255813953488372,
+        0.0930232558139535
+      ],
+      "ranking": [
+        {
+          "name": "Highest rookie-role probability",
+          "score": 57.27598538468946
+        },
+        {
+          "name": "Line priority",
+          "score": 56.71322182518266
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 55.933397655404065
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 53.10225164743915
+        }
+      ],
+      "spearmanToDefault": 1,
+      "topPolicyChanged": false
+    },
+    {
+      "name": "Paired five-year difference ×0.5",
+      "weights": [
+        0.3636363636363636,
+        0.12121212121212122,
+        0.1818181818181818,
+        0.2121212121212121,
+        0.12121212121212122
+      ],
+      "ranking": [
+        {
+          "name": "Highest rookie-role probability",
+          "score": 58.56937110732262
+        },
+        {
+          "name": "Line priority",
+          "score": 58.21722843887436
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 57.11823406613257
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 53.08943964666313
+        }
+      ],
+      "spearmanToDefault": 1,
+      "topPolicyChanged": false
+    },
+    {
+      "name": "Paired five-year difference ×1.5",
+      "weights": [
+        0.2553191489361702,
+        0.0851063829787234,
+        0.1276595744680851,
+        0.4468085106382978,
+        0.0851063829787234
+      ],
+      "ranking": [
+        {
+          "name": "Highest rookie-role probability",
+          "score": 57.29671269237546
+        },
+        {
+          "name": "Line priority",
+          "score": 56.51422422303944
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 55.858946259199456
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 53.507279432763475
+        }
+      ],
+      "spearmanToDefault": 1,
+      "topPolicyChanged": false
+    },
+    {
+      "name": "Scouting coverage ×0.5",
+      "weights": [
+        0.3157894736842105,
+        0.10526315789473684,
+        0.15789473684210525,
+        0.36842105263157887,
+        0.05263157894736842
+      ],
+      "ranking": [
+        {
+          "name": "Highest rookie-role probability",
+          "score": 57.94095422185619
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 57.0065055340391
+        },
+        {
+          "name": "Line priority",
+          "score": 54.964961539022475
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 53.218044992862424
+        }
+      ],
+      "spearmanToDefault": 0.8,
+      "topPolicyChanged": false
+    },
+    {
+      "name": "Scouting coverage ×1.5",
+      "weights": [
+        0.2857142857142857,
+        0.09523809523809523,
+        0.14285714285714285,
+        0.3333333333333333,
+        0.14285714285714288
+      ],
+      "ranking": [
+        {
+          "name": "Line priority",
+          "score": 59.25401282102034
+        },
+        {
+          "name": "Highest rookie-role probability",
+          "score": 57.713773396494226
+        },
+        {
+          "name": "CPU utility policy",
+          "score": 55.810118763601515
+        },
+        {
+          "name": "Quarterback priority",
+          "score": 53.44066504645225
+        }
+      ],
+      "spearmanToDefault": 0.8,
+      "topPolicyChanged": true
+    }
+  ],
+  "topRankChanges": 2,
+  "minRankCorrelation": 0.8,
+  "runtimeMilliseconds": 19969.945625,
+  "sourceHashes": {
+    "lib/engine.ts": "3826b204aea464dd4532cdd1901950bcc5452e7a4455780ee92e5c27a37015c7",
+    "lib/simulation.ts": "1ad4f1edbe10a83c80a424952735bb07e32a663bc23ae23b5df258a9b28e1727",
+    "lib/scouting.ts": "6a2850cb8f15f6effb6b12fd15f79602e5e0c6a20ff84951e7bdb2695aeba1d6",
+    "lib/server-data.ts": "64a7f0c5d75ce231805b9aba756d15bbd3d29de01e8d8bb473686f3811a767f1",
+    "analytics/model.json": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0",
+    "analytics/five_year_strict_2018.json": "a717e2d683ab57c8f79f963d672598810593bae69945c8d00db82857d6c647e1",
+    "analytics/scoring_recalibration.json": "f7094c79bfd4bce2ea5c61a9e8aee1a8806892fbe677f2862937eec3616b1336",
+    "data/clean/team_context_2018.json": "c3f102575a364807b57e84559946f46544dc457bb878241cb77b343e1ef9c8bf",
+    "data/clean/team_context_source_manifest.json": "e2e1a4dc0332ca1a7c3e35ec860cc29c81a3c4a87859102553f7239ce4565254",
+    "data/processed/scenario-2018.json": "b7895eef7862ccfb45cff5f2f4b6e347abd809c1905ed274883d55cc237f59d8",
+    "data/processed/scenario-2019.json": "88ef4b175bfc7ddf8c2d32541b1b8371836f09f6e961f4bb8a36b0db0bf5f28c",
+    "data/processed/scenario-2020.json": "527ff4f9770199052a6405d9d56cf503f150b998dddbcfbd947e686c060b624b",
+    "data/processed/scenario-2021.json": "16b574b788658ea916a48a61cdf4a24df76e72305dc16054f32971ec5ed4aec4",
+    "data/processed/scenario-2022.json": "ea6846602cddfe179544b1d845c811a1848c59de69084c210c03080ac4d46f63",
+    "data/processed/scenario-2023.json": "14587193998afcb61ca2c95c50ee641ba709246a5b3a9c8187855b94e894611f",
+    "data/processed/scenario-2024.json": "6a6d794cdf0747d7a03ba92549d4d8165b149a19b04eb32588b679e6c50e8323",
+    "data/processed/scenario-2025.json": "8f80dab73fa8b50a92a6b0ec499419dfd07eade6398ebda59b5117aac62b13b7",
+    "data/processed/scenario-2026.json": "c30d6a697573fc39488b13a91eb7c3863aa780c14a81f446e06dd0e3a86638ca",
+    "data/processed/scenario-coverage.json": "0d42970e685e510b6554c7fea7675e7f3a5aecb525aabb1c6b7e155ec0058ca3",
+    "analytics/model-2019.json": "2da02bcb4d6da178a635852e61c4ee7488f9551f346c9560f680ce99f13176cf",
+    "analytics/model-2020.json": "35d80e75ae50e8ada8c9ad96db2fd965e38f9dea06bc0f298b899f51497c3bdc",
+    "analytics/model-2021.json": "c89d6915e04159845d48c0692fe899ff66430c404a2d30cafade478ba629a17b",
+    "analytics/model-2022.json": "9579d70620a4f20ede36008bdcc745d913f8ba1aa7f64b4276104561491b8457",
+    "analytics/model-2023.json": "3b7a67a1f83c32ba8461abe9608f3f2c18e8a17e34b60c20768099d9b23c78cb",
+    "analytics/model-2024.json": "1c4b07f22dc40575623920f108335d8990c07a53511db5e0c6bd740398102e9d",
+    "analytics/model-2025.json": "4b753663702af949cc2474da986eadbe1e23966ce58778928590353c0f774397",
+    "analytics/model-2026.json": "a4380ba61137af8813883ec3b021acfb73ee755fd51fdef1004d9f68d25f8ad4"
+  },
+  "limitations": [
+    "Four prespecified policies on one challenge: exploratory, not validation of GM skill.",
+    "Weights are design choices, not learned scientific coefficients.",
+    "No active user trade strategy is represented.",
+    "Small score differences can reflect sampling noise or model misspecification."
+  ]
+}

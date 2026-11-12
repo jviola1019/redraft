@@ -1,0 +1,970 @@
+{
+  "version": "research-release-gates-2026-11-04-v1",
+  "asOf": "2026-11-12",
+  "policy": {
+    "version": "research-release-gates-2026-11-04-v1",
+    "minimumDonorsPerConditionalStratum": 10,
+    "minimumSubgroupNominal95Coverage": 0.9,
+    "maximumWinDifferenceMCSE": 0.25,
+    "maximumImprovementProbabilityMCSE": 0.032,
+    "minimumSimulationReplicates": 256,
+    "disclosure": "Engineering release tolerances established after prior diagnostics were seen; not preregistered scientific significance criteria. Subgroup rates are descriptive, no multiplicity-adjusted population claim."
+  },
+  "releaseStatus": "blocked",
+  "counts": {
+    "pass": 33,
+    "fail": 9,
+    "unsupported": 7,
+    "stale": 0
+  },
+  "gates": [
+    {
+      "id": "frozen_metrics_recompute",
+      "status": "pass",
+      "scope": "evidence-integrity",
+      "requirement": "Saved predictions reproduce metrics",
+      "evidence": {
+        "computedRMSE": 1467.8030783442823,
+        "storedRMSE": 1467.8030783442823
+      }
+    },
+    {
+      "id": "strict_label_cutoff",
+      "status": "pass",
+      "scope": "temporal-integrity",
+      "requirement": "Every five-season donor label complete before draft cutoff",
+      "evidence": {
+        "cohorts": [
+          2013
+        ],
+        "lastLabelAvailableBy": "2018-03-01"
+      }
+    },
+    {
+      "id": "strict_independent_chronological_validation",
+      "status": "unsupported",
+      "scope": "forecast-validity",
+      "requirement": "An independent pre2018 five-year chronological test",
+      "evidence": "2012 snap source is header-only. Only2013 has all five annual outcomes observable before2018 draft."
+    },
+    {
+      "id": "forecast_source_analytics/five_year_strict_2018.json",
+      "status": "pass",
+      "scope": "evidence-integrity",
+      "requirement": "Exact audit matches source artifact",
+      "evidence": {
+        "evaluated": "a717e2d683ab57c8f79f963d672598810593bae69945c8d00db82857d6c647e1",
+        "current": "a717e2d683ab57c8f79f963d672598810593bae69945c8d00db82857d6c647e1"
+      }
+    },
+    {
+      "id": "forecast_source_analytics/five_year_frozen_2018_predictions.csv",
+      "status": "pass",
+      "scope": "evidence-integrity",
+      "requirement": "Exact audit matches source artifact",
+      "evidence": {
+        "evaluated": "a12e376e85bb09048b84f399da99d4b52e699922ac49023ab65e8c7de46d5094",
+        "current": "a12e376e85bb09048b84f399da99d4b52e699922ac49023ab65e8c7de46d5094"
+      }
+    },
+    {
+      "id": "forecast_source_analytics/model.json",
+      "status": "pass",
+      "scope": "evidence-integrity",
+      "requirement": "Exact audit matches source artifact",
+      "evidence": {
+        "evaluated": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0",
+        "current": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0"
+      }
+    },
+    {
+      "id": "conditional_support_DB",
+      "status": "pass",
+      "scope": "forecast-support",
+      "requirement": "At least10 donors in each conditional stratum; minimum screening rule, not proof of validity",
+      "evidence": {
+        "donors": 57,
+        "rookieRole": 26,
+        "noRookieRole": 31,
+        "roleConditioningSupported": true
+      }
+    },
+    {
+      "id": "coverage95_DB_snaps",
+      "status": "pass",
+      "scope": "forecast-calibration",
+      "requirement": "Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes",
+      "evidence": {
+        "n": 58,
+        "coverage": 0.9137931034482759,
+        "covered": 53,
+        "wilson95": [
+          0.8135637093712647,
+          0.962614616873809
+        ],
+        "meanWidth": 4496.741379310345,
+        "meanIntervalScore": 5709.155172413792,
+        "outsideDonorSupport": 3
+      }
+    },
+    {
+      "id": "coverage95_DB_games",
+      "status": "pass",
+      "scope": "forecast-calibration",
+      "requirement": "Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes",
+      "evidence": {
+        "n": 58,
+        "coverage": 0.9827586206896551,
+        "covered": 57,
+        "wilson95": [
+          0.9085914190653199,
+          0.9969499615539326
+        ],
+        "meanWidth": 79.0,
+        "meanIntervalScore": 79.6896551724138,
+        "outsideDonorSupport": 1
+      }
+    },
+    {
+      "id": "conditional_support_DL",
+      "status": "pass",
+      "scope": "forecast-support",
+      "requirement": "At least10 donors in each conditional stratum; minimum screening rule, not proof of validity",
+      "evidence": {
+        "donors": 49,
+        "rookieRole": 19,
+        "noRookieRole": 30,
+        "roleConditioningSupported": true
+      }
+    },
+    {
+      "id": "coverage95_DL_snaps",
+      "status": "pass",
+      "scope": "forecast-calibration",
+      "requirement": "Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes",
+      "evidence": {
+        "n": 36,
+        "coverage": 0.9722222222222222,
+        "covered": 35,
+        "wilson95": [
+          0.8583028134672614,
+          0.9950795928601897
+        ],
+        "meanWidth": 3549.3055555555557,
+        "meanIntervalScore": 4045.972222222222,
+        "outsideDonorSupport": 1
+      }
+    },
+    {
+      "id": "coverage95_DL_games",
+      "status": "fail",
+      "scope": "forecast-calibration",
+      "requirement": "Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes",
+      "evidence": {
+        "n": 36,
+        "coverage": 0.8888888888888888,
+        "covered": 32,
+        "wilson95": [
+          0.7468519140963513,
+          0.9559335969968435
+        ],
+        "meanWidth": 78.11111111111111,
+        "meanIntervalScore": 91.44444444444443,
+        "outsideDonorSupport": 2
+      }
+    },
+    {
+      "id": "conditional_support_LB",
+      "status": "pass",
+      "scope": "forecast-support",
+      "requirement": "At least10 donors in each conditional stratum; minimum screening rule, not proof of validity",
+      "evidence": {
+        "donors": 38,
+        "rookieRole": 12,
+        "noRookieRole": 26,
+        "roleConditioningSupported": true
+      }
+    },
+    {
+      "id": "coverage95_LB_snaps",
+      "status": "fail",
+      "scope": "forecast-calibration",
+      "requirement": "Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes",
+      "evidence": {
+        "n": 48,
+        "coverage": 0.875,
+        "covered": 42,
+        "wilson95": [
+          0.7529954171361317,
+          0.9414294856142802
+        ],
+        "meanWidth": 4184.0,
+        "meanIntervalScore": 5477.333333333332,
+        "outsideDonorSupport": 4
+      }
+    },
+    {
+      "id": "coverage95_LB_games",
+      "status": "pass",
+      "scope": "forecast-calibration",
+      "requirement": "Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes",
+      "evidence": {
+        "n": 48,
+        "coverage": 0.9166666666666666,
+        "covered": 44,
+        "wilson95": [
+          0.8044669820963272,
+          0.9671162431819081
+        ],
+        "meanWidth": 76.5,
+        "meanIntervalScore": 85.66666666666667,
+        "outsideDonorSupport": 3
+      }
+    },
+    {
+      "id": "conditional_support_OL",
+      "status": "pass",
+      "scope": "forecast-support",
+      "requirement": "At least10 donors in each conditional stratum; minimum screening rule, not proof of validity",
+      "evidence": {
+        "donors": 53,
+        "rookieRole": 14,
+        "noRookieRole": 39,
+        "roleConditioningSupported": true
+      }
+    },
+    {
+      "id": "coverage95_OL_snaps",
+      "status": "pass",
+      "scope": "forecast-calibration",
+      "requirement": "Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes",
+      "evidence": {
+        "n": 46,
+        "coverage": 0.9782608695652174,
+        "covered": 45,
+        "wilson95": [
+          0.8866470547848865,
+          0.9961521457419497
+        ],
+        "meanWidth": 5039.782608695652,
+        "meanIntervalScore": 5514.565217391304,
+        "outsideDonorSupport": 0
+      }
+    },
+    {
+      "id": "coverage95_OL_games",
+      "status": "pass",
+      "scope": "forecast-calibration",
+      "requirement": "Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes",
+      "evidence": {
+        "n": 46,
+        "coverage": 0.9782608695652174,
+        "covered": 45,
+        "wilson95": [
+          0.8866470547848865,
+          0.9961521457419497
+        ],
+        "meanWidth": 78.80434782608695,
+        "meanIntervalScore": 84.02173913043478,
+        "outsideDonorSupport": 1
+      }
+    },
+    {
+      "id": "conditional_support_QB",
+      "status": "unsupported",
+      "scope": "forecast-support",
+      "requirement": "At least10 donors in each conditional stratum; minimum screening rule, not proof of validity",
+      "evidence": {
+        "donors": 15,
+        "rookieRole": 3,
+        "noRookieRole": 12,
+        "roleConditioningSupported": true
+      }
+    },
+    {
+      "id": "coverage95_QB_snaps",
+      "status": "fail",
+      "scope": "forecast-calibration",
+      "requirement": "Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes",
+      "evidence": {
+        "n": 16,
+        "coverage": 0.75,
+        "covered": 12,
+        "wilson95": [
+          0.5050168346449122,
+          0.8981793250878696
+        ],
+        "meanWidth": 1965.0,
+        "meanIntervalScore": 24869.99999999998,
+        "outsideDonorSupport": 4
+      }
+    },
+    {
+      "id": "coverage95_QB_games",
+      "status": "fail",
+      "scope": "forecast-calibration",
+      "requirement": "Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes",
+      "evidence": {
+        "n": 16,
+        "coverage": 0.8125,
+        "covered": 13,
+        "wilson95": [
+          0.5699111903802586,
+          0.9340840092857187
+        ],
+        "meanWidth": 61.0,
+        "meanIntervalScore": 150.99999999999991,
+        "outsideDonorSupport": 3
+      }
+    },
+    {
+      "id": "conditional_support_RB",
+      "status": "unsupported",
+      "scope": "forecast-support",
+      "requirement": "At least10 donors in each conditional stratum; minimum screening rule, not proof of validity",
+      "evidence": {
+        "donors": 34,
+        "rookieRole": 7,
+        "noRookieRole": 27,
+        "roleConditioningSupported": true
+      }
+    },
+    {
+      "id": "coverage95_RB_snaps",
+      "status": "pass",
+      "scope": "forecast-calibration",
+      "requirement": "Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes",
+      "evidence": {
+        "n": 28,
+        "coverage": 1.0,
+        "covered": 28,
+        "wilson95": [
+          0.8793566952341543,
+          0.9999999999999998
+        ],
+        "meanWidth": 3479.0,
+        "meanIntervalScore": 3479.0,
+        "outsideDonorSupport": 0
+      }
+    },
+    {
+      "id": "coverage95_RB_games",
+      "status": "pass",
+      "scope": "forecast-calibration",
+      "requirement": "Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes",
+      "evidence": {
+        "n": 28,
+        "coverage": 0.9285714285714286,
+        "covered": 26,
+        "wilson95": [
+          0.7735463743160095,
+          0.9801879358846942
+        ],
+        "meanWidth": 70.85714285714286,
+        "meanIntervalScore": 90.85714285714285,
+        "outsideDonorSupport": 2
+      }
+    },
+    {
+      "id": "conditional_support_TE",
+      "status": "unsupported",
+      "scope": "forecast-support",
+      "requirement": "At least10 donors in each conditional stratum; minimum screening rule, not proof of validity",
+      "evidence": {
+        "donors": 18,
+        "rookieRole": 7,
+        "noRookieRole": 11,
+        "roleConditioningSupported": true
+      }
+    },
+    {
+      "id": "coverage95_TE_snaps",
+      "status": "pass",
+      "scope": "forecast-calibration",
+      "requirement": "Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes",
+      "evidence": {
+        "n": 16,
+        "coverage": 1.0,
+        "covered": 16,
+        "wilson95": [
+          0.8063923194655637,
+          1.0
+        ],
+        "meanWidth": 3452.0,
+        "meanIntervalScore": 3452.0,
+        "outsideDonorSupport": 0
+      }
+    },
+    {
+      "id": "coverage95_TE_games",
+      "status": "fail",
+      "scope": "forecast-calibration",
+      "requirement": "Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes",
+      "evidence": {
+        "n": 16,
+        "coverage": 0.8125,
+        "covered": 13,
+        "wilson95": [
+          0.5699111903802586,
+          0.9340840092857187
+        ],
+        "meanWidth": 79.0,
+        "meanIntervalScore": 96.49999999999999,
+        "outsideDonorSupport": 3
+      }
+    },
+    {
+      "id": "conditional_support_WR",
+      "status": "pass",
+      "scope": "forecast-support",
+      "requirement": "At least10 donors in each conditional stratum; minimum screening rule, not proof of validity",
+      "evidence": {
+        "donors": 37,
+        "rookieRole": 15,
+        "noRookieRole": 22,
+        "roleConditioningSupported": true
+      }
+    },
+    {
+      "id": "coverage95_WR_snaps",
+      "status": "pass",
+      "scope": "forecast-calibration",
+      "requirement": "Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes",
+      "evidence": {
+        "n": 39,
+        "coverage": 0.9743589743589743,
+        "covered": 38,
+        "wilson95": [
+          0.8681900983014993,
+          0.99545929689901
+        ],
+        "meanWidth": 4358.692307692308,
+        "meanIntervalScore": 4496.128205128205,
+        "outsideDonorSupport": 0
+      }
+    },
+    {
+      "id": "coverage95_WR_games",
+      "status": "pass",
+      "scope": "forecast-calibration",
+      "requirement": "Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes",
+      "evidence": {
+        "n": 39,
+        "coverage": 1.0,
+        "covered": 39,
+        "wilson95": [
+          0.9103331462924287,
+          1.0
+        ],
+        "meanWidth": 79.8974358974359,
+        "meanIntervalScore": 79.8974358974359,
+        "outsideDonorSupport": 0
+      }
+    },
+    {
+      "id": "specialist_quality",
+      "status": "unsupported",
+      "scope": "forecast-validity",
+      "requirement": "Position-appropriate validated specialist quality target",
+      "evidence": {
+        "status": "unsupported quality target; no specialist outcome coverage claim",
+        "support": {
+          "donors": 9,
+          "rookieRole": 0,
+          "noRookieRole": 9,
+          "roleConditioningSupported": false
+        }
+      }
+    },
+    {
+      "id": "forecast_distribution_skill",
+      "status": "unsupported",
+      "scope": "forecast-validity",
+      "requirement": "Paired CRPS improvement confidence interval excludes zero on independent evidence; reused cohort only supports an audit",
+      "evidence": {
+        "difference": -28.934962821958486,
+        "playerBootstrap95": [
+          -66.11187002107738,
+          6.196063737187829
+        ],
+        "resamples": 2000,
+        "note": "One cohort; does not measure between-era or team clustering uncertainty."
+      }
+    },
+    {
+      "id": "counterfactual_snaps_to_wins",
+      "status": "unsupported",
+      "scope": "counterfactual-validity",
+      "requirement": "Validated effect mapping with sensitivity and identification limitations",
+      "evidence": "Participation forecasts precede unvalidated opportunity and snaps-to-wins transformations."
+    },
+    {
+      "id": "simulation_fresh_CLE",
+      "status": "pass",
+      "scope": "evidence-integrity",
+      "requirement": "Diagnostic hashes match every current runtime dependency",
+      "evidence": {
+        "mismatches": [],
+        "configuration": {
+          "team": "CLE",
+          "draftSeed": "redraft-validation-2026-11-02",
+          "engineVersion": "redraft-research-0.7-multiyear-playoffs",
+          "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:c3f102575a36+scoring-trailing3-v1",
+          "datasetVersion": "nflverse-2018-combine-only-v2"
+        }
+      }
+    },
+    {
+      "id": "simulation_replicates_CLE",
+      "status": "pass",
+      "scope": "monte-carlo-precision",
+      "requirement": "At least256 paired five-season replicates",
+      "evidence": 256
+    },
+    {
+      "id": "simulation_precision_CLE",
+      "status": "pass",
+      "scope": "monte-carlo-precision",
+      "requirement": "Win-difference MCSE\u2264.25 wins and improvement-probability MCSE\u2264.032",
+      "evidence": {
+        "replicates": 256,
+        "pairedMeanWinDifference": 0.015625,
+        "pairedStandardError": 0.19388386820591907,
+        "mean95Interval": [
+          -0.36438738168360135,
+          0.39563738168360135
+        ],
+        "probabilityImprovement": 0.421875,
+        "probabilityMcse": 0.030866173104060757
+      }
+    },
+    {
+      "id": "simulation_distribution_CLE",
+      "status": "fail",
+      "scope": "simulation-validity",
+      "requirement": "Observed2018\u201322 summary inside conditional simulated2.5\u201397.5% range; diagnostic, not calibrated model-uncertainty interval",
+      "evidence": [
+        {
+          "metric": "totalScoreMean",
+          "observed": 46.289855072463766,
+          "simulatedMean": 45.045713843368915,
+          "interval": [
+            44.20579268292683,
+            45.9344512195122
+          ]
+        },
+        {
+          "metric": "zeroScoreRate",
+          "observed": 0.010297482837528604,
+          "simulatedMean": 0.016061178067835354,
+          "interval": [
+            0.011432926829268292,
+            0.021341463414634148
+          ]
+        }
+      ]
+    },
+    {
+      "id": "simulation_fresh_KC",
+      "status": "pass",
+      "scope": "evidence-integrity",
+      "requirement": "Diagnostic hashes match every current runtime dependency",
+      "evidence": {
+        "mismatches": [],
+        "configuration": {
+          "team": "KC",
+          "draftSeed": "redraft-validation-2026-11-02",
+          "engineVersion": "redraft-research-0.7-multiyear-playoffs",
+          "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:c3f102575a36+scoring-trailing3-v1",
+          "datasetVersion": "nflverse-2018-combine-only-v2"
+        }
+      }
+    },
+    {
+      "id": "simulation_replicates_KC",
+      "status": "pass",
+      "scope": "monte-carlo-precision",
+      "requirement": "At least256 paired five-season replicates",
+      "evidence": 256
+    },
+    {
+      "id": "simulation_precision_KC",
+      "status": "pass",
+      "scope": "monte-carlo-precision",
+      "requirement": "Win-difference MCSE\u2264.25 wins and improvement-probability MCSE\u2264.032",
+      "evidence": {
+        "replicates": 256,
+        "pairedMeanWinDifference": 1,
+        "pairedStandardError": 0.2088718530113432,
+        "mean95Interval": [
+          0.5906111680977673,
+          1.4093888319022327
+        ],
+        "probabilityImprovement": 0.5546875,
+        "probabilityMcse": 0.031062517438611176
+      }
+    },
+    {
+      "id": "simulation_distribution_KC",
+      "status": "fail",
+      "scope": "simulation-validity",
+      "requirement": "Observed2018\u201322 summary inside conditional simulated2.5\u201397.5% range; diagnostic, not calibrated model-uncertainty interval",
+      "evidence": [
+        {
+          "metric": "totalScoreMean",
+          "observed": 46.289855072463766,
+          "simulatedMean": 45.045713843368915,
+          "interval": [
+            44.20579268292683,
+            45.9344512195122
+          ]
+        },
+        {
+          "metric": "zeroScoreRate",
+          "observed": 0.010297482837528604,
+          "simulatedMean": 0.016061178067835354,
+          "interval": [
+            0.011432926829268292,
+            0.021341463414634148
+          ]
+        }
+      ]
+    },
+    {
+      "id": "simulation_fresh_NE",
+      "status": "pass",
+      "scope": "evidence-integrity",
+      "requirement": "Diagnostic hashes match every current runtime dependency",
+      "evidence": {
+        "mismatches": [],
+        "configuration": {
+          "team": "NE",
+          "draftSeed": "redraft-validation-2026-11-02",
+          "engineVersion": "redraft-research-0.7-multiyear-playoffs",
+          "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:c3f102575a36+scoring-trailing3-v1",
+          "datasetVersion": "nflverse-2018-combine-only-v2"
+        }
+      }
+    },
+    {
+      "id": "simulation_replicates_NE",
+      "status": "pass",
+      "scope": "monte-carlo-precision",
+      "requirement": "At least256 paired five-season replicates",
+      "evidence": 256
+    },
+    {
+      "id": "simulation_precision_NE",
+      "status": "pass",
+      "scope": "monte-carlo-precision",
+      "requirement": "Win-difference MCSE\u2264.25 wins and improvement-probability MCSE\u2264.032",
+      "evidence": {
+        "replicates": 256,
+        "pairedMeanWinDifference": -0.59765625,
+        "pairedStandardError": 0.20176756435762314,
+        "mean95Interval": [
+          -0.9931206761409413,
+          -0.20219182385905865
+        ],
+        "probabilityImprovement": 0.39453125,
+        "probabilityMcse": 0.03054686095098382
+      }
+    },
+    {
+      "id": "simulation_distribution_NE",
+      "status": "fail",
+      "scope": "simulation-validity",
+      "requirement": "Observed2018\u201322 summary inside conditional simulated2.5\u201397.5% range; diagnostic, not calibrated model-uncertainty interval",
+      "evidence": [
+        {
+          "metric": "totalScoreMean",
+          "observed": 46.289855072463766,
+          "simulatedMean": 45.045713843368915,
+          "interval": [
+            44.20579268292683,
+            45.9344512195122
+          ]
+        },
+        {
+          "metric": "zeroScoreRate",
+          "observed": 0.010297482837528604,
+          "simulatedMean": 0.016061178067835354,
+          "interval": [
+            0.011432926829268292,
+            0.021341463414634148
+          ]
+        }
+      ]
+    },
+    {
+      "id": "simulation_fresh_SF",
+      "status": "pass",
+      "scope": "evidence-integrity",
+      "requirement": "Diagnostic hashes match every current runtime dependency",
+      "evidence": {
+        "mismatches": [],
+        "configuration": {
+          "team": "SF",
+          "draftSeed": "redraft-validation-2026-11-02",
+          "engineVersion": "redraft-research-0.7-multiyear-playoffs",
+          "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:c3f102575a36+scoring-trailing3-v1",
+          "datasetVersion": "nflverse-2018-combine-only-v2"
+        }
+      }
+    },
+    {
+      "id": "simulation_replicates_SF",
+      "status": "pass",
+      "scope": "monte-carlo-precision",
+      "requirement": "At least256 paired five-season replicates",
+      "evidence": 256
+    },
+    {
+      "id": "simulation_precision_SF",
+      "status": "pass",
+      "scope": "monte-carlo-precision",
+      "requirement": "Win-difference MCSE\u2264.25 wins and improvement-probability MCSE\u2264.032",
+      "evidence": {
+        "replicates": 256,
+        "pairedMeanWinDifference": 0.5,
+        "pairedStandardError": 0.20359814803271895,
+        "mean95Interval": [
+          0.10094762985587086,
+          0.8990523701441291
+        ],
+        "probabilityImprovement": 0.5,
+        "probabilityMcse": 0.03125
+      }
+    },
+    {
+      "id": "simulation_distribution_SF",
+      "status": "fail",
+      "scope": "simulation-validity",
+      "requirement": "Observed2018\u201322 summary inside conditional simulated2.5\u201397.5% range; diagnostic, not calibrated model-uncertainty interval",
+      "evidence": [
+        {
+          "metric": "totalScoreMean",
+          "observed": 46.289855072463766,
+          "simulatedMean": 45.045713843368915,
+          "interval": [
+            44.20579268292683,
+            45.9344512195122
+          ]
+        },
+        {
+          "metric": "zeroScoreRate",
+          "observed": 0.010297482837528604,
+          "simulatedMean": 0.016061178067835354,
+          "interval": [
+            0.011432926829268292,
+            0.021341463414634148
+          ]
+        }
+      ]
+    }
+  ],
+  "simulationScenarios": {
+    "CLE": {
+      "configuration": {
+        "team": "CLE",
+        "draftSeed": "redraft-validation-2026-11-02",
+        "engineVersion": "redraft-research-0.7-multiyear-playoffs",
+        "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:c3f102575a36+scoring-trailing3-v1",
+        "datasetVersion": "nflverse-2018-combine-only-v2"
+      },
+      "stale": false,
+      "replicates": 256,
+      "flags": [
+        {
+          "metric": "totalScoreMean",
+          "observed": 46.289855072463766,
+          "simulatedMean": 45.045713843368915,
+          "interval": [
+            44.20579268292683,
+            45.9344512195122
+          ]
+        },
+        {
+          "metric": "zeroScoreRate",
+          "observed": 0.010297482837528604,
+          "simulatedMean": 0.016061178067835354,
+          "interval": [
+            0.011432926829268292,
+            0.021341463414634148
+          ]
+        }
+      ],
+      "convergence": {
+        "replicates": 256,
+        "pairedMeanWinDifference": 0.015625,
+        "pairedStandardError": 0.19388386820591907,
+        "mean95Interval": [
+          -0.36438738168360135,
+          0.39563738168360135
+        ],
+        "probabilityImprovement": 0.421875,
+        "probabilityMcse": 0.030866173104060757
+      }
+    },
+    "KC": {
+      "configuration": {
+        "team": "KC",
+        "draftSeed": "redraft-validation-2026-11-02",
+        "engineVersion": "redraft-research-0.7-multiyear-playoffs",
+        "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:c3f102575a36+scoring-trailing3-v1",
+        "datasetVersion": "nflverse-2018-combine-only-v2"
+      },
+      "stale": false,
+      "replicates": 256,
+      "flags": [
+        {
+          "metric": "totalScoreMean",
+          "observed": 46.289855072463766,
+          "simulatedMean": 45.045713843368915,
+          "interval": [
+            44.20579268292683,
+            45.9344512195122
+          ]
+        },
+        {
+          "metric": "zeroScoreRate",
+          "observed": 0.010297482837528604,
+          "simulatedMean": 0.016061178067835354,
+          "interval": [
+            0.011432926829268292,
+            0.021341463414634148
+          ]
+        }
+      ],
+      "convergence": {
+        "replicates": 256,
+        "pairedMeanWinDifference": 1,
+        "pairedStandardError": 0.2088718530113432,
+        "mean95Interval": [
+          0.5906111680977673,
+          1.4093888319022327
+        ],
+        "probabilityImprovement": 0.5546875,
+        "probabilityMcse": 0.031062517438611176
+      }
+    },
+    "NE": {
+      "configuration": {
+        "team": "NE",
+        "draftSeed": "redraft-validation-2026-11-02",
+        "engineVersion": "redraft-research-0.7-multiyear-playoffs",
+        "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:c3f102575a36+scoring-trailing3-v1",
+        "datasetVersion": "nflverse-2018-combine-only-v2"
+      },
+      "stale": false,
+      "replicates": 256,
+      "flags": [
+        {
+          "metric": "totalScoreMean",
+          "observed": 46.289855072463766,
+          "simulatedMean": 45.045713843368915,
+          "interval": [
+            44.20579268292683,
+            45.9344512195122
+          ]
+        },
+        {
+          "metric": "zeroScoreRate",
+          "observed": 0.010297482837528604,
+          "simulatedMean": 0.016061178067835354,
+          "interval": [
+            0.011432926829268292,
+            0.021341463414634148
+          ]
+        }
+      ],
+      "convergence": {
+        "replicates": 256,
+        "pairedMeanWinDifference": -0.59765625,
+        "pairedStandardError": 0.20176756435762314,
+        "mean95Interval": [
+          -0.9931206761409413,
+          -0.20219182385905865
+        ],
+        "probabilityImprovement": 0.39453125,
+        "probabilityMcse": 0.03054686095098382
+      }
+    },
+    "SF": {
+      "configuration": {
+        "team": "SF",
+        "draftSeed": "redraft-validation-2026-11-02",
+        "engineVersion": "redraft-research-0.7-multiyear-playoffs",
+        "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:c3f102575a36+scoring-trailing3-v1",
+        "datasetVersion": "nflverse-2018-combine-only-v2"
+      },
+      "stale": false,
+      "replicates": 256,
+      "flags": [
+        {
+          "metric": "totalScoreMean",
+          "observed": 46.289855072463766,
+          "simulatedMean": 45.045713843368915,
+          "interval": [
+            44.20579268292683,
+            45.9344512195122
+          ]
+        },
+        {
+          "metric": "zeroScoreRate",
+          "observed": 0.010297482837528604,
+          "simulatedMean": 0.016061178067835354,
+          "interval": [
+            0.011432926829268292,
+            0.021341463414634148
+          ]
+        }
+      ],
+      "convergence": {
+        "replicates": 256,
+        "pairedMeanWinDifference": 0.5,
+        "pairedStandardError": 0.20359814803271895,
+        "mean95Interval": [
+          0.10094762985587086,
+          0.8990523701441291
+        ],
+        "probabilityImprovement": 0.5,
+        "probabilityMcse": 0.03125
+      }
+    }
+  },
+  "seedAudit": {
+    "count": 16,
+    "seeds": [
+      2026110400,
+      2026110401,
+      2026110402,
+      2026110403,
+      2026110404,
+      2026110405,
+      2026110406,
+      2026110407,
+      2026110408,
+      2026110409,
+      2026110410,
+      2026110411,
+      2026110412,
+      2026110413,
+      2026110414,
+      2026110415
+    ],
+    "drawsPerProspect": 256,
+    "rmsMeanApproximationErrorRange": [
+      75.99677081404492,
+      89.08915071616299
+    ],
+    "note": "Numerical precision audit only; more seeds cannot remedy donor support or causal validity."
+  },
+  "interpretation": [
+    "Failed and unsupported gates block a claim of statistically validated full production.",
+    "Structural software tests can pass while these research-release gates remain blocked.",
+    "An individual gate pass does not establish calibrated forecasts for all subgroups or causal effects.",
+    "2018\u201322 outcomes have been examined before: these are reused backtests, never an untouched final test.",
+    "No thresholds are silently relaxed to turn an adverse result into success."
+  ]
+}

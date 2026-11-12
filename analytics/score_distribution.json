@@ -1,0 +1,647 @@
+{
+  "version": "score-distribution-shutout-hurdle-v1",
+  "asOf": "2026-11-12",
+  "protocol": {
+    "formSelectionTrainSeasons": [
+      2000,
+      2013
+    ],
+    "formSelectionValidationSeasons": [
+      2014,
+      2015
+    ],
+    "finalPre2018TrainSeasons": [
+      2000,
+      2015
+    ],
+    "finalPre2018TestSeasons": [
+      2016,
+      2017
+    ],
+    "gameplayFitSeasons": [
+      2000,
+      2017
+    ],
+    "retrospectiveKnownExposedTestSeasons": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "excludedIncompleteSeason": 2026,
+    "noPost2017Tuning": true
+  },
+  "data": {
+    "source": "nflverse schedules/games.csv archived at data/raw/games.csv",
+    "sourceSha256": "7b6db9362136b0846e4e55730cdb5ec7fcab107b7c55b6fa2f6802d555fceb9e",
+    "rowsBySeason": {
+      "2000": 248,
+      "2001": 248,
+      "2002": 256,
+      "2003": 256,
+      "2004": 256,
+      "2005": 256,
+      "2006": 256,
+      "2007": 256,
+      "2008": 256,
+      "2009": 256,
+      "2010": 256,
+      "2011": 256,
+      "2012": 256,
+      "2013": 256,
+      "2014": 256,
+      "2015": 256,
+      "2016": 256,
+      "2017": 256,
+      "2018": 256,
+      "2019": 256,
+      "2020": 256,
+      "2021": 272,
+      "2022": 271,
+      "2023": 272,
+      "2024": 272,
+      "2025": 272
+    },
+    "modelArtifactSha256": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0"
+  },
+  "research": {
+    "hurdleReference": {
+      "citation": "Mullahy, J. (1986), Specification and testing of some modified count data models, Journal of Econometrics 33(3), 341\u2013365.",
+      "url": "https://doi.org/10.1016/0304-4076(86)90002-3",
+      "relevance": "A two-part model separates threshold-crossing probability from the conditional positive distribution."
+    },
+    "footballScoreReference": {
+      "citation": "Baker, R. D. and McHale, I. G. (2013), Forecasting exact scores in National Football League games, International Journal of Forecasting 29(1), 122\u2013130.",
+      "url": "https://doi.org/10.1016/j.ijforecast.2012.07.002",
+      "relevance": "NFL exact scores arise from multiple discrete scoring events; their paper models scoring as a point process."
+    },
+    "probabilityEvaluationReference": {
+      "citation": "Gneiting, T. and Raftery, A. E. (2007), Strictly Proper Scoring Rules, Prediction, and Estimation, JASA 102(477), 359\u2013378.",
+      "url": "https://doi.org/10.1198/016214506000001437",
+      "relevance": "Use Brier/log loss for the shutout event and CRPS/interval coverage for predictive score distributions."
+    }
+  },
+  "boundedPlan": "Fit only intercept-only shutout rates with expanding, trailing-3, trailing-5, and trailing-10 season windows; select by validation Brier on 2014\u201315, evaluate once on 2016\u201317, then refit the selected rate window through 2017 for retrospective 2018\u201325. Positive-score law is existing correlated normal conditional on no shutout; shutout scorelines use that same law conditional on any team scoring zero. No engine edits, causal claim, or release threshold change.",
+  "validationFormComparison": {
+    "expanding": {
+      "games": 512,
+      "observedRate": 0.017578125,
+      "predictedRate": 0.030269058295964116,
+      "brier": 0.017430194309406982,
+      "logLoss": 0.09167809785193469
+    },
+    "trailing3": {
+      "games": 512,
+      "observedRate": 0.017578125,
+      "predictedRate": 0.018229166666666668,
+      "brier": 0.017269558376736115,
+      "logLoss": 0.0884696607364627
+    },
+    "trailing5": {
+      "games": 512,
+      "observedRate": 0.017578125,
+      "predictedRate": 0.0234375,
+      "brier": 0.017303466796875,
+      "logLoss": 0.08927768489408895
+    },
+    "trailing10": {
+      "games": 512,
+      "observedRate": 0.017578125,
+      "predictedRate": 0.02578124999999999,
+      "brier": 0.017336425781249998,
+      "logLoss": 0.08996295704988028
+    }
+  },
+  "selectedWindow": "trailing3",
+  "finalPre2018Test": {
+    "trainThroughSeason": 2015,
+    "testSeasons": [
+      2016,
+      2017
+    ],
+    "scoreLaw": {
+      "homeAdvantage": 2.501470588235294,
+      "strengthCoefficient": 0.3946862768607381,
+      "meanTotal": 43.39901960784314,
+      "marginSd": 14.485558020730876,
+      "totalSd": 14.211293811667101,
+      "rho": 0.020949382735957926,
+      "fitThroughSeason": 2015
+    },
+    "hurdleParameters": {
+      "form": "intercept_only",
+      "windowSeasons": 3,
+      "windowFirstSeason": 2013,
+      "windowLastSeason": 2015,
+      "shutoutRate": 0.015625,
+      "intercept": -4.143134726391533,
+      "fitThroughSeason": 2015
+    },
+    "eventForecastMetrics": {
+      "games": 512,
+      "observedRate": 0.02734375,
+      "predictedRate": 0.015625,
+      "brier": 0.0267333984375,
+      "logLoss": 0.1290371971429076
+    },
+    "scoreMetrics": {
+      "currentCorrelatedNormal": {
+        "games": 512,
+        "totalMAE": 10.93802547454834,
+        "marginMAE": 10.40522289276123,
+        "totalCRPS": 7.75498281000182,
+        "marginCRPS": 7.512424801941961,
+        "total80Coverage": 0.814453125,
+        "total90Coverage": 0.90625,
+        "margin80Coverage": 0.841796875,
+        "margin90Coverage": 0.919921875,
+        "predictedShutoutRate": 0.039102137088775635,
+        "observedShutoutRate": 0.02734375,
+        "shutoutBrier": 0.02676883318235923,
+        "shutoutLogLoss": 0.12768764672311492,
+        "predictedTieRate": 0.003200531005859375,
+        "observedTieRate": 0.00390625
+      },
+      "twoPartHurdle": {
+        "games": 512,
+        "totalMAE": 10.881048202514648,
+        "marginMAE": 10.41064453125,
+        "totalCRPS": 7.722972394898534,
+        "marginCRPS": 7.497279631905258,
+        "total80Coverage": 0.810546875,
+        "total90Coverage": 0.896484375,
+        "margin80Coverage": 0.837890625,
+        "margin90Coverage": 0.91015625,
+        "predictedShutoutRate": 0.015625,
+        "observedShutoutRate": 0.02734375,
+        "shutoutBrier": 0.0267333984375,
+        "shutoutLogLoss": 0.1290371971429076,
+        "predictedTieRate": 0.00324249267578125,
+        "observedTieRate": 0.00390625
+      }
+    },
+    "bySeason": {
+      "currentCorrelatedNormal": {
+        "2016": {
+          "games": 256,
+          "totalMAE": 10.609468460083008,
+          "marginMAE": 9.659204483032227,
+          "totalCRPS": 7.570083116181195,
+          "marginCRPS": 6.9929092871025205,
+          "total80Coverage": 0.828125,
+          "total90Coverage": 0.9140625,
+          "margin80Coverage": 0.87109375,
+          "margin90Coverage": 0.94140625,
+          "predictedShutoutRate": 0.03935444355010986,
+          "observedShutoutRate": 0.01171875,
+          "shutoutBrier": 0.012348597283562412,
+          "shutoutLogLoss": 0.07734691810601706,
+          "predictedTieRate": 0.003170013427734375,
+          "observedTieRate": 0.0078125
+        },
+        "2017": {
+          "games": 256,
+          "totalMAE": 11.266582489013672,
+          "marginMAE": 11.151241302490234,
+          "totalCRPS": 7.939882503822446,
+          "marginCRPS": 8.031940316781402,
+          "total80Coverage": 0.80078125,
+          "total90Coverage": 0.8984375,
+          "margin80Coverage": 0.8125,
+          "margin90Coverage": 0.8984375,
+          "predictedShutoutRate": 0.038849830627441406,
+          "observedShutoutRate": 0.04296875,
+          "shutoutBrier": 0.04118906908115605,
+          "shutoutLogLoss": 0.1780283753402128,
+          "predictedTieRate": 0.003231048583984375,
+          "observedTieRate": 0.0
+        }
+      },
+      "twoPartHurdle": {
+        "2016": {
+          "games": 256,
+          "totalMAE": 10.520610809326172,
+          "marginMAE": 9.656360626220703,
+          "totalCRPS": 7.5180030558258295,
+          "marginCRPS": 6.980650087818503,
+          "total80Coverage": 0.83203125,
+          "total90Coverage": 0.90234375,
+          "margin80Coverage": 0.87109375,
+          "margin90Coverage": 0.9296875,
+          "predictedShutoutRate": 0.015625,
+          "observedShutoutRate": 0.01171875,
+          "shutoutBrier": 0.0115966796875,
+          "shutoutLogLoss": 0.0643007170430399,
+          "predictedTieRate": 0.0031871795654296875,
+          "observedTieRate": 0.0078125
+        },
+        "2017": {
+          "games": 256,
+          "totalMAE": 11.241485595703125,
+          "marginMAE": 11.164928436279297,
+          "totalCRPS": 7.927941733971238,
+          "marginCRPS": 8.013909175992012,
+          "total80Coverage": 0.7890625,
+          "total90Coverage": 0.890625,
+          "margin80Coverage": 0.8046875,
+          "margin90Coverage": 0.890625,
+          "predictedShutoutRate": 0.015625,
+          "observedShutoutRate": 0.04296875,
+          "shutoutBrier": 0.0418701171875,
+          "shutoutLogLoss": 0.19377367724277528,
+          "predictedTieRate": 0.0032978057861328125,
+          "observedTieRate": 0.0
+        }
+      }
+    }
+  },
+  "retrospectiveKnownExposedTest": {
+    "trainThroughSeason": 2017,
+    "testSeasons": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "scoreLaw": {
+      "homeAdvantage": 2.081289622906382,
+      "strengthCoefficient": 0.40127475897984344,
+      "meanTotal": 43.54895104895105,
+      "marginSd": 12.678989779827118,
+      "totalSd": 14.168301686156779,
+      "rho": 0.022640913141933644,
+      "fitThroughSeason": 2017
+    },
+    "hurdleParameters": {
+      "form": "intercept_only",
+      "windowSeasons": 3,
+      "windowFirstSeason": 2015,
+      "windowLastSeason": 2017,
+      "shutoutRate": 0.020833333333333332,
+      "intercept": -3.8501476017100584,
+      "fitThroughSeason": 2017
+    },
+    "eventForecastMetrics": {
+      "games": 2127,
+      "observedRate": 0.020686412787964268,
+      "predictedRate": 0.02083333333333333,
+      "brier": 0.020258506699576864,
+      "logLoss": 0.10069915178139728
+    },
+    "scoreMetrics": {
+      "currentCorrelatedNormal": {
+        "games": 2127,
+        "totalMAE": 11.008908894569817,
+        "marginMAE": 10.719551176098966,
+        "totalCRPS": 7.866946440993983,
+        "marginCRPS": 7.744613785333459,
+        "total80Coverage": 0.8180535966149506,
+        "total90Coverage": 0.9120827456511519,
+        "margin80Coverage": 0.770098730606488,
+        "margin90Coverage": 0.8603667136812412,
+        "predictedShutoutRate": 0.02722743311901299,
+        "observedShutoutRate": 0.020686412787964268,
+        "shutoutBrier": 0.02031276074641388,
+        "shutoutLogLoss": 0.10174071524714393,
+        "predictedTieRate": 0.003608276768923366,
+        "observedTieRate": 0.0037611659614480487
+      },
+      "twoPartHurdle": {
+        "games": 2127,
+        "totalMAE": 10.998634557181477,
+        "marginMAE": 10.720339496650212,
+        "totalCRPS": 7.852841487332134,
+        "marginCRPS": 7.746528102917799,
+        "total80Coverage": 0.8166431593794076,
+        "total90Coverage": 0.9097320169252469,
+        "margin80Coverage": 0.768218147625764,
+        "margin90Coverage": 0.8589562764456982,
+        "predictedShutoutRate": 0.02083333333333333,
+        "observedShutoutRate": 0.020686412787964268,
+        "shutoutBrier": 0.020258506699576864,
+        "shutoutLogLoss": 0.10069915178139728,
+        "predictedTieRate": 0.0036355948078279268,
+        "observedTieRate": 0.0037611659614480487
+      }
+    },
+    "bySeason": {
+      "currentCorrelatedNormal": {
+        "2018": {
+          "games": 256,
+          "totalMAE": 11.430992126464844,
+          "marginMAE": 10.518661499023438,
+          "totalCRPS": 8.27332072518766,
+          "marginCRPS": 7.644254790619016,
+          "total80Coverage": 0.77734375,
+          "total90Coverage": 0.890625,
+          "margin80Coverage": 0.796875,
+          "margin90Coverage": 0.875,
+          "predictedShutoutRate": 0.027321219444274902,
+          "observedShutoutRate": 0.03125,
+          "shutoutBrier": 0.030244374578614952,
+          "shutoutLogLoss": 0.13890198680300075,
+          "predictedTieRate": 0.0035915374755859375,
+          "observedTieRate": 0.0078125
+        },
+        "2019": {
+          "games": 256,
+          "totalMAE": 11.135751724243164,
+          "marginMAE": 11.091371536254883,
+          "totalCRPS": 7.852018811739981,
+          "marginCRPS": 7.966082277707756,
+          "total80Coverage": 0.8203125,
+          "total90Coverage": 0.94140625,
+          "margin80Coverage": 0.7578125,
+          "margin90Coverage": 0.86328125,
+          "predictedShutoutRate": 0.027170181274414062,
+          "observedShutoutRate": 0.015625,
+          "shutoutBrier": 0.015570629977446515,
+          "shutoutLogLoss": 0.08430036083942398,
+          "predictedTieRate": 0.0037021636962890625,
+          "observedTieRate": 0.00390625
+        },
+        "2020": {
+          "games": 256,
+          "totalMAE": 11.61680793762207,
+          "marginMAE": 10.78437614440918,
+          "totalCRPS": 8.363906505517662,
+          "marginCRPS": 7.770425151102245,
+          "total80Coverage": 0.7890625,
+          "total90Coverage": 0.89453125,
+          "margin80Coverage": 0.76953125,
+          "margin90Coverage": 0.85546875,
+          "predictedShutoutRate": 0.02787172794342041,
+          "observedShutoutRate": 0.01171875,
+          "shutoutBrier": 0.011953908990108175,
+          "shutoutLogLoss": 0.07157272872767342,
+          "predictedTieRate": 0.0036067962646484375,
+          "observedTieRate": 0.00390625
+        },
+        "2021": {
+          "games": 272,
+          "totalMAE": 11.192472570082721,
+          "marginMAE": 11.492837344898897,
+          "totalCRPS": 7.894493001348832,
+          "marginCRPS": 8.250614127692055,
+          "total80Coverage": 0.8088235294117647,
+          "total90Coverage": 0.9191176470588235,
+          "margin80Coverage": 0.7426470588235294,
+          "margin90Coverage": 0.8382352941176471,
+          "predictedShutoutRate": 0.02733174492331112,
+          "observedShutoutRate": 0.029411764705882353,
+          "shutoutBrier": 0.028506029660895688,
+          "shutoutLogLoss": 0.13194881613987325,
+          "predictedTieRate": 0.0036423627068014708,
+          "observedTieRate": 0.003676470588235294
+        },
+        "2022": {
+          "games": 271,
+          "totalMAE": 10.925336211369926,
+          "marginMAE": 9.390324103436347,
+          "totalCRPS": 7.740889059221613,
+          "marginCRPS": 6.804849526978947,
+          "total80Coverage": 0.8265682656826568,
+          "total90Coverage": 0.9114391143911439,
+          "margin80Coverage": 0.8376383763837638,
+          "margin90Coverage": 0.9077490774907749,
+          "predictedShutoutRate": 0.027549940721575183,
+          "observedShutoutRate": 0.014760147601476014,
+          "shutoutBrier": 0.014628468332227966,
+          "shutoutLogLoss": 0.07907372783315333,
+          "predictedTieRate": 0.0034864362315498157,
+          "observedTieRate": 0.007380073800738007
+        },
+        "2023": {
+          "games": 272,
+          "totalMAE": 10.674547980813418,
+          "marginMAE": 10.695709228515625,
+          "totalCRPS": 7.622872258810436,
+          "marginCRPS": 7.743208516169997,
+          "total80Coverage": 0.8345588235294118,
+          "total90Coverage": 0.9191176470588235,
+          "margin80Coverage": 0.7683823529411765,
+          "margin90Coverage": 0.8566176470588235,
+          "predictedShutoutRate": 0.026153115665211397,
+          "observedShutoutRate": 0.029411764705882353,
+          "shutoutBrier": 0.028624726562103367,
+          "shutoutLogLoss": 0.13415628364252652,
+          "predictedTieRate": 0.0035400390625,
+          "observedTieRate": 0.0
+        },
+        "2024": {
+          "games": 272,
+          "totalMAE": 10.111364028033089,
+          "marginMAE": 10.953042423023897,
+          "totalCRPS": 7.357478743090349,
+          "marginCRPS": 7.959168711129357,
+          "total80Coverage": 0.8566176470588235,
+          "total90Coverage": 0.9154411764705882,
+          "margin80Coverage": 0.7426470588235294,
+          "margin90Coverage": 0.8455882352941176,
+          "predictedShutoutRate": 0.027021183687097886,
+          "observedShutoutRate": 0.007352941176470588,
+          "shutoutBrier": 0.007735127134604708,
+          "shutoutLogLoss": 0.05439279786135157,
+          "predictedTieRate": 0.003671085133272059,
+          "observedTieRate": 0.0
+        },
+        "2025": {
+          "games": 272,
+          "totalMAE": 11.051739860983457,
+          "marginMAE": 10.839068244485293,
+          "totalCRPS": 7.882388195570777,
+          "marginCRPS": 7.823494569343679,
+          "total80Coverage": 0.8272058823529411,
+          "total90Coverage": 0.9044117647058824,
+          "margin80Coverage": 0.7463235294117647,
+          "margin90Coverage": 0.8419117647058824,
+          "predictedShutoutRate": 0.027441585765165442,
+          "observedShutoutRate": 0.025735294117647058,
+          "shutoutBrier": 0.02503148914890035,
+          "shutoutLogLoss": 0.11888115212516578,
+          "predictedTieRate": 0.003629796645220588,
+          "observedTieRate": 0.003676470588235294
+        }
+      },
+      "twoPartHurdle": {
+        "2018": {
+          "games": 256,
+          "totalMAE": 11.43349838256836,
+          "marginMAE": 10.4951171875,
+          "totalCRPS": 8.286800842732191,
+          "marginCRPS": 7.632639875635505,
+          "total80Coverage": 0.78125,
+          "total90Coverage": 0.8828125,
+          "margin80Coverage": 0.79296875,
+          "margin90Coverage": 0.8671875,
+          "predictedShutoutRate": 0.02083333333333333,
+          "observedShutoutRate": 0.03125,
+          "shutoutBrier": 0.03038194444444444,
+          "shutoutLogLoss": 0.1413705217512717,
+          "predictedTieRate": 0.0036945343017578125,
+          "observedTieRate": 0.0078125
+        },
+        "2019": {
+          "games": 256,
+          "totalMAE": 11.134620666503906,
+          "marginMAE": 11.116439819335938,
+          "totalCRPS": 7.846981385722756,
+          "marginCRPS": 7.968424221500754,
+          "total80Coverage": 0.82421875,
+          "total90Coverage": 0.9375,
+          "margin80Coverage": 0.765625,
+          "margin90Coverage": 0.875,
+          "predictedShutoutRate": 0.02083333333333333,
+          "observedShutoutRate": 0.015625,
+          "shutoutBrier": 0.015407986111111112,
+          "shutoutLogLoss": 0.08121196547455203,
+          "predictedTieRate": 0.00365447998046875,
+          "observedTieRate": 0.00390625
+        },
+        "2020": {
+          "games": 256,
+          "totalMAE": 11.583364486694336,
+          "marginMAE": 10.761407852172852,
+          "totalCRPS": 8.322562030516565,
+          "marginCRPS": 7.7595582930371165,
+          "total80Coverage": 0.77734375,
+          "total90Coverage": 0.88671875,
+          "margin80Coverage": 0.7734375,
+          "margin90Coverage": 0.8515625,
+          "predictedShutoutRate": 0.02083333333333333,
+          "observedShutoutRate": 0.01171875,
+          "shutoutBrier": 0.011664496527777778,
+          "shutoutLogLoss": 0.06617232640537213,
+          "predictedTieRate": 0.0035648345947265625,
+          "observedTieRate": 0.00390625
+        },
+        "2021": {
+          "games": 272,
+          "totalMAE": 11.151586196001839,
+          "marginMAE": 11.511144301470589,
+          "totalCRPS": 7.8522624741582305,
+          "marginCRPS": 8.267923206090927,
+          "total80Coverage": 0.8088235294117647,
+          "total90Coverage": 0.9191176470588235,
+          "margin80Coverage": 0.7352941176470589,
+          "margin90Coverage": 0.8308823529411765,
+          "predictedShutoutRate": 0.020833333333333332,
+          "observedShutoutRate": 0.029411764705882353,
+          "shutoutBrier": 0.0286203022875817,
+          "shutoutLogLoss": 0.13429304454224586,
+          "predictedTieRate": 0.0035974839154411763,
+          "observedTieRate": 0.003676470588235294
+        },
+        "2022": {
+          "games": 271,
+          "totalMAE": 10.91929846056273,
+          "marginMAE": 9.40074737661439,
+          "totalCRPS": 7.732695512666034,
+          "marginCRPS": 6.808236225944603,
+          "total80Coverage": 0.8265682656826568,
+          "total90Coverage": 0.9040590405904059,
+          "margin80Coverage": 0.8339483394833949,
+          "margin90Coverage": 0.9003690036900369,
+          "predictedShutoutRate": 0.02083333333333333,
+          "observedShutoutRate": 0.014760147601476014,
+          "shutoutBrier": 0.01457916922919229,
+          "shutoutLogLoss": 0.07788215608654173,
+          "predictedTieRate": 0.0035693179197416975,
+          "observedTieRate": 0.007380073800738007
+        },
+        "2023": {
+          "games": 272,
+          "totalMAE": 10.664008645450368,
+          "marginMAE": 10.720358455882353,
+          "totalCRPS": 7.613678504438961,
+          "marginCRPS": 7.749764437184615,
+          "total80Coverage": 0.8419117647058824,
+          "total90Coverage": 0.9264705882352942,
+          "margin80Coverage": 0.7610294117647058,
+          "margin90Coverage": 0.8566176470588235,
+          "predictedShutoutRate": 0.020833333333333332,
+          "observedShutoutRate": 0.029411764705882353,
+          "shutoutBrier": 0.028620302287581695,
+          "shutoutLogLoss": 0.13429304454224586,
+          "predictedTieRate": 0.003748276654411765,
+          "observedTieRate": 0.0
+        },
+        "2024": {
+          "games": 272,
+          "totalMAE": 10.126963895909926,
+          "marginMAE": 10.926215676700368,
+          "totalCRPS": 7.353253590710023,
+          "marginCRPS": 7.967074834248599,
+          "total80Coverage": 0.8455882352941176,
+          "total90Coverage": 0.9154411764705882,
+          "margin80Coverage": 0.7426470588235294,
+          "margin90Coverage": 0.8492647058823529,
+          "predictedShutoutRate": 0.020833333333333332,
+          "observedShutoutRate": 0.007352941176470588,
+          "shutoutBrier": 0.007480596405228757,
+          "shutoutLogLoss": 0.049363318033935746,
+          "predictedTieRate": 0.0035974839154411763,
+          "observedTieRate": 0.0
+        },
+        "2025": {
+          "games": 272,
+          "totalMAE": 11.043419333065257,
+          "marginMAE": 10.838901295381433,
+          "totalCRPS": 7.866868773803992,
+          "marginCRPS": 7.822274014353752,
+          "total80Coverage": 0.8235294117647058,
+          "total90Coverage": 0.9044117647058824,
+          "margin80Coverage": 0.7426470588235294,
+          "margin90Coverage": 0.8419117647058824,
+          "predictedShutoutRate": 0.020833333333333332,
+          "observedShutoutRate": 0.025735294117647058,
+          "shutoutBrier": 0.025097017973856207,
+          "shutoutLogLoss": 0.12013809012419419,
+          "predictedTieRate": 0.0036585190716911763,
+          "observedTieRate": 0.003676470588235294
+        }
+      }
+    }
+  },
+  "proposedGameplayParameters": {
+    "fitThroughSeason": 2017,
+    "scoreLaw": {
+      "homeAdvantage": 2.081289622906382,
+      "strengthCoefficient": 0.40127475897984344,
+      "meanTotal": 43.54895104895105,
+      "marginSd": 12.678989779827118,
+      "totalSd": 14.168301686156779,
+      "rho": 0.022640913141933644,
+      "fitThroughSeason": 2017
+    },
+    "shutoutHurdle": {
+      "form": "intercept_only",
+      "windowSeasons": 3,
+      "windowFirstSeason": 2015,
+      "windowLastSeason": 2017,
+      "shutoutRate": 0.020833333333333332,
+      "intercept": -3.8501476017100584,
+      "fitThroughSeason": 2017
+    },
+    "monteCarloDrawsPerObservedGameInAudit": 2048,
+    "baseDrawsForConditionalSamplingInAudit": 32768,
+    "conditionalScoreDistribution": "Current analytics/model.json correlated-normal margin/total draw and NFL score transform, conditioned on the fitted shutout branch. On the shutout branch, sample from baseline draws with either score zero; on the positive branch, sample from baseline draws with both scores positive. The hurdle probability chooses the branch.",
+    "seedRecommendation": "keyed by seed, season, matchup, game type, component=shutout-hurdle or score-conditional"
+  },
+  "decision": "The three-season intercept-only hurdle wins 2014\u201315 Brier selection. On the 2016\u201317 final test its shutout Brier is slightly better but log loss is worse than the normal law; the exposed 2018\u201325 diagnostic improves shutout probability scores and lowers predicted shutouts toward observed frequency. Score-distribution gains are small/mixed, and this known-exposed diagnostic is not independent evidence. Keep it a candidate for review; no adoption claim.",
+  "limitations": [
+    "Post-2017 outcomes have been inspected in prior project diagnostics; chronology prevents leakage but does not make them an untouched test.",
+    "2016\u201317 final pre-2018 evaluation has only two seasons and low shutout counts.",
+    "Conditional distributions inherit the existing normal score model and its limitations.",
+    "A fit to 2000\u20132017 assumes the shutout relationship is stable; future NFL scoring regimes may differ.",
+    "No causal draft effect or alternate-history truth is identified."
+  ]
+}

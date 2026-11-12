@@ -1,0 +1,22 @@
+{
+  "id": "data",
+  "kind": "structural",
+  "command": [
+    "python3",
+    "research/test_data.py"
+  ],
+  "startedAt": "2026-11-12T20:32:33.427Z",
+  "finishedAt": "2026-11-12T20:32:35.072Z",
+  "durationMs": 1645.217169,
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "error": null,
+  "status": "passed",
+  "stdout": "01-data.stdout.log",
+  "stderr": "01-data.stderr.log",
+  "artifacts": [
+    "artifacts/data/clean/order_reconciliation.json",
+    "artifacts/data/clean/eligibility_audit_2018.json"
+  ]
+}

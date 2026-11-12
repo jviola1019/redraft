@@ -1,0 +1,70 @@
+{
+  "version": "qb-legacy-source-feasibility-v1",
+  "checkedAt": "2026-11-12",
+  "status": "promising-source-schema-and-loader-verified-data-not-acquired",
+  "question": "Can older NFL QB production records add pre-2018 evidence without pretending they are scrimmage snaps?",
+  "findings": {
+    "sourceCoverageClaim": "The current official nflreadr loader accepts seasons >=1999 and constructs a regular-season player-stats URL for each requested season.",
+    "filePattern": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_reg_{YEAR}.csv",
+    "exampleYears": [1999, 2000, 2013],
+    "fieldsDocumented": ["player_id (GSIS)", "season", "position", "attempts", "completions", "passing_yards", "passing_tds", "passing_interceptions", "sacks_suffered"],
+    "identifierPlan": "Join stats.player_id (GSIS) to nflverse players.gsis_id; use the registry's PFR ID and draft year fields, and verify draft-year / PFR matches against the archived draft-pick table. Reject ambiguous or conflicting joins.",
+    "cohortFeasibility": "Draft cohorts 2000-2013 could be generated from combine.csv, whose recovered file begins at 2000, and matched to official passing seasons. For a strict 2018 cutoff, five seasons of outcomes through 2017 are available for these cohorts, subject to actual release availability and identity coverage.",
+    "localCombineSupport": {
+      "file": "data/raw/combine.csv",
+      "sha256": "5648886b1bb9de8a0c42b05ee7b1d9cbe58897676caaa2f6a4a3d3c9228235bb",
+      "cohorts": [2000, 2013],
+      "qbCombineRows": 154,
+      "qbRowsWithPfrId": 142,
+      "qbRowsMissingPfrId": 12,
+      "note": "This is only the candidate combine cohort count; GSIS join coverage and source statistics were not acquired in this task."
+    },
+    "targetBoundary": "Passing attempts, yards and touchdowns are a QB-specific usage/production target. They are not scrimmage snaps, games played, starts, or latent player talent. Do not combine units or substitute passing attempts for missing snap vectors.",
+    "acquisition": {
+      "attemptedUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_reg_2013.csv",
+      "result": "Python urllib request timed out; web retrieval of release CSV assets returned DisabledError.",
+      "dataRetrieved": false,
+      "sha256": null,
+      "rows": null
+    },
+    "licensing": {
+      "repositoryLicense": "nflverse-data LICENSE.md is Creative Commons Attribution 4.0 (CC BY 4.0).",
+      "upstreamCaveat": "nflreadr terms state that NFL data accessed by the package belong to their respective owners and are governed by those owners' terms of use. The accessible documents do not identify a stats_player-specific downstream redistribution grant for the underlying NFL-derived records.",
+      "redistributionCleared": false,
+      "policy": "Do not bundle or redistribute the historical stats files until the applicable upstream rights and required attribution are confirmed. A private research download may still need to follow applicable source terms."
+    }
+  },
+  "primarySources": [
+    {
+      "title": "nflreadr load_player_stats reference",
+      "url": "https://nflreadr.nflverse.com/reference/load_player_stats.html",
+      "supports": "Regular-season summary level and player stats loader contract."
+    },
+    {
+      "title": "nflreadr load_stats.R source",
+      "url": "https://github.com/nflverse/nflreadr/blob/main/R/load_stats.R",
+      "supports": "Minimum season 1999, URL construction for stats_player_reg_YEAR, CSV format support."
+    },
+    {
+      "title": "nflreadr player stats dictionary",
+      "url": "https://nflreadr.nflverse.com/articles/dictionary_player_stats.html",
+      "supports": "GSIS player_id and passing-attempt / passing-yard / passing-touchdown fields."
+    },
+    {
+      "title": "nflreadr players reference",
+      "url": "https://nflreadr.nflverse.com/reference/load_players.html",
+      "supports": "Crosswalk scope includes GSIS primary key and PFR IDs; draft information."
+    },
+    {
+      "title": "nflverse-data LICENSE.md",
+      "url": "https://github.com/nflverse/nflverse-data/blob/main/LICENSE.md",
+      "supports": "Repository license file states CC BY 4.0; does not alone resolve upstream rights for NFL-derived content."
+    },
+    {
+      "title": "nflreadr terms of use",
+      "url": "https://nflreadr.nflverse.com/",
+      "supports": "NFL data accessed by the package belong to respective owners and are governed by their terms of use."
+    }
+  ],
+  "nextStep": "Acquire year files through an authorized nflverse data channel, record per-file hashes and license metadata, validate year/position/ID completeness against draft and player registries, then build a separate QB passing-opportunity hindcast. Keep it separate from five-year snap forecasts until direct same-cohort crosswalk and calibration evidence supports a joint model."
+}

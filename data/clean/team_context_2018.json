@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "prior-usage-2017-v1",
-    "verifiedDate": "2026-11-04",
+    "verifiedDate": "2026-11-12",
     "scenarioYear": 2018,
     "observedSeason": 2017,
     "observedThrough": "2017-12-31",
@@ -19,7 +19,7 @@
     "sourceHashes": {
       "snap_counts_2017.csv": "eab2fad2df99249d4061ed9c5c34d312cdba07cf3159d027d255bdc9b6526917",
       "roster_2017.csv": "22584ad80445611edff6dcbc6dce9ab596bdc484430d8aac298725da15697fd4",
-      "games.csv": "b4dd94e697ff7f75b477ed69711ae7613a95257ebde60e496c8e2d21095f07a3",
+      "games.csv": "7b6db9362136b0846e4e55730cdb5ec7fcab107b7c55b6fa2f6802d555fceb9e",
       "depth_charts_2017.csv": "cc8a9e6991236510ada3fd1a71ed0ebd3df91f2130c8abbf11e69150adc0eb7d",
       "dictionary_rosters.csv": "86c058e9053066ee50ddf573164591dcc6eb16bf6c8b1c6fe7a48803a870d799",
       "dictionary_depth_charts.csv": "faf36b0e8e943127d232edc36ccd11125a39d278e2ff42404038e0a3763bf165"

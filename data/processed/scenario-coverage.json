@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "verifiedDate": "2026-11-12",
+  "method": "Fail closed: a year is built only when the pre-draft pool scope and slot ownership are explicitly supportable. Actual draft outcomes remain isolated.",
+  "scenarios": [
+    {
+      "year": 2018,
+      "status": "existing-research-alpha",
+      "dataset": "data/processed/scenario-2018.json",
+      "blockers": [
+        "Combine-only pool is incomplete",
+        "Strict original publication timestamps unavailable"
+      ]
+    },
+    {
+      "year": 2019,
+      "status": "research-alpha-dataset-built",
+      "dataset": "data/processed/scenario-2019.json",
+      "blockers": [
+        "Only 2019 combine rows are playable. Non-combine eligible and undrafted players are not represented; do not interpret as a complete scouting pool.",
+        "2019 owners are reconstructed from nflverse transactions without a complete leaguewide primary-order row check.",
+        "Exact compensatory flags from official order sources for 2020, 2022, 2023, 2024, 2025, and 2026; unknown for 2019 and 2021.",
+        "Historical games after the cutoff are included as reference labels and must never be exposed as pre-draft features."
+      ]
+    },
+    {
+      "year": 2020,
+      "status": "research-alpha-dataset-built",
+      "dataset": "data/processed/scenario-2020.json",
+      "blockers": [
+        "Only 2020 combine rows are playable. Non-combine eligible and undrafted players are not represented; do not interpret as a complete scouting pool.",
+        "PDF title, order table, and footer say as of April 15, 2020; press release says FOR IMMEDIATE RELEASE \u2014 APRIL 16, 2020.",
+        "Exact compensatory flags from official order sources for 2020, 2022, 2023, 2024, 2025, and 2026; unknown for 2019 and 2021.",
+        "Historical games after the cutoff are included as reference labels and must never be exposed as pre-draft features."
+      ]
+    },
+    {
+      "year": 2021,
+      "status": "research-alpha-dataset-built",
+      "dataset": "data/processed/scenario-2021.json",
+      "blockers": [
+        "The complete 323-name official 2021 invitee list defines eligibility. 182 have an exact name/school measurement-row join; 141 have no provider row, and individual measurement fields can also be missing.",
+        "Reverse-transaction ownership is audited with zero unresolved issues; no strict archived pre-draft order snapshot is available. An NFL.com page published March 19 contains a later trade and is explicitly excluded as an as-of source.",
+        "Exact compensatory flags from official order sources for 2020, 2022, 2023, 2024, 2025, and 2026; unknown for 2019 and 2021.",
+        "Historical games after the cutoff are included as reference labels and must never be exposed as pre-draft features."
+      ]
+    },
+    {
+      "year": 2022,
+      "status": "research-alpha-dataset-built",
+      "dataset": "data/processed/scenario-2022.json",
+      "blockers": [
+        "Only 2022 combine rows are playable. Non-combine eligible and undrafted players are not represented; do not interpret as a complete scouting pool.",
+        "Editor's note: information below reflects the order entering Day 1 of the draft.",
+        "Exact compensatory flags from official order sources for 2020, 2022, 2023, 2024, 2025, and 2026; unknown for 2019 and 2021.",
+        "Historical games after the cutoff are included as reference labels and must never be exposed as pre-draft features."
+      ]
+    },
+    {
+      "year": 2023,
+      "status": "research-alpha-dataset-built",
+      "dataset": "data/processed/scenario-2023.json",
+      "blockers": [
+        "Only 2023 combine rows are playable. Non-combine eligible and undrafted players are not represented; do not interpret as a complete scouting pool.",
+        "Page states picks are accurate as of the beginning of Round 1; Published and Updated fields are blank in the captured page.",
+        "Exact compensatory flags from official order sources for 2020, 2022, 2023, 2024, 2025, and 2026; unknown for 2019 and 2021.",
+        "Historical games after the cutoff are included as reference labels and must never be exposed as pre-draft features."
+      ]
+    },
+    {
+      "year": 2024,
+      "status": "research-alpha-dataset-built",
+      "dataset": "data/processed/scenario-2024.json",
+      "blockers": [
+        "Only 2024 combine rows are playable. Non-combine eligible and undrafted players are not represented; do not interpret as a complete scouting pool.",
+        "Page states picks are accurate as of the beginning of Round 1; page Updated timestamp is 13 minutes after Round 1 start.",
+        "Exact compensatory flags from official order sources for 2020, 2022, 2023, 2024, 2025, and 2026; unknown for 2019 and 2021.",
+        "Historical games after the cutoff are included as reference labels and must never be exposed as pre-draft features."
+      ]
+    },
+    {
+      "year": 2025,
+      "status": "research-alpha-dataset-built",
+      "dataset": "data/processed/scenario-2025.json",
+      "blockers": [
+        "Only 2025 combine rows are playable. Non-combine eligible and undrafted players are not represented; do not interpret as a complete scouting pool.",
+        "Owners are the NFL.com primary order as of Round 1; trade data mismatches are retained in audit metadata.",
+        "Exact compensatory flags from official order sources for 2020, 2022, 2023, 2024, 2025, and 2026; unknown for 2019 and 2021.",
+        "Historical games after the cutoff are included as reference labels and must never be exposed as pre-draft features."
+      ]
+    },
+    {
+      "year": 2026,
+      "status": "research-alpha-dataset-built",
+      "dataset": "data/processed/scenario-2026.json",
+      "blockers": [
+        "Only 2026 combine rows are playable. Non-combine eligible and undrafted players are not represented; do not interpret as a complete scouting pool.",
+        "Owners are the NFL Football Operations primary order as of April 22; trade-data mismatches are retained in audit metadata.",
+        "Exact compensatory flags from official order sources for 2020, 2022, 2023, 2024, 2025, and 2026; unknown for 2019 and 2021.",
+        "Historical games after the cutoff are included as reference labels and must never be exposed as pre-draft features."
+      ]
+    }
+  ],
+  "expectedCoverageByYear": {
+    "2018": {
+      "dataset": "data/processed/scenario-2018.json",
+      "teams": 32,
+      "slots": 256,
+      "playableCombinePool": 336,
+      "actualPicks": 256,
+      "compensatoryFlags": 32,
+      "compensatoryFlagsKnown": true
+    },
+    "2019": {
+      "dataset": "data/processed/scenario-2019.json",
+      "teams": 32,
+      "slots": 254,
+      "playableCombinePool": 336,
+      "actualPicks": 254,
+      "officialOrderMismatchBeforeOverride": 0,
+      "compensatoryFlags": null,
+      "compensatoryFlagsKnown": false
+    },
+    "2020": {
+      "dataset": "data/processed/scenario-2020.json",
+      "teams": 32,
+      "slots": 255,
+      "playableCombinePool": 337,
+      "actualPicks": 255,
+      "officialOrderMismatchBeforeOverride": 4,
+      "compensatoryFlags": 32,
+      "compensatoryFlagsKnown": true
+    },
+    "2021": {
+      "dataset": "data/processed/scenario-2021.json",
+      "teams": 32,
+      "slots": 259,
+      "playableCombinePool": 323,
+      "actualPicks": 259,
+      "officialOrderMismatchBeforeOverride": 0,
+      "compensatoryFlags": null,
+      "compensatoryFlagsKnown": false
+    },
+    "2022": {
+      "dataset": "data/processed/scenario-2022.json",
+      "teams": 32,
+      "slots": 262,
+      "playableCombinePool": 324,
+      "actualPicks": 262,
+      "officialOrderMismatchBeforeOverride": 7,
+      "compensatoryFlags": 39,
+      "compensatoryFlagsKnown": true
+    },
+    "2023": {
+      "dataset": "data/processed/scenario-2023.json",
+      "teams": 32,
+      "slots": 259,
+      "playableCombinePool": 319,
+      "actualPicks": 259,
+      "officialOrderMismatchBeforeOverride": 3,
+      "compensatoryFlags": 37,
+      "compensatoryFlagsKnown": true
+    },
+    "2024": {
+      "dataset": "data/processed/scenario-2024.json",
+      "teams": 32,
+      "slots": 257,
+      "playableCombinePool": 321,
+      "actualPicks": 257,
+      "officialOrderMismatchBeforeOverride": 4,
+      "compensatoryFlags": 34,
+      "compensatoryFlagsKnown": true
+    },
+    "2025": {
+      "dataset": "data/processed/scenario-2025.json",
+      "teams": 32,
+      "slots": 257,
+      "playableCombinePool": 329,
+      "actualPicks": 257,
+      "officialOrderMismatchBeforeOverride": 0,
+      "compensatoryFlags": 35,
+      "compensatoryFlagsKnown": true
+    },
+    "2026": {
+      "dataset": "data/processed/scenario-2026.json",
+      "teams": 32,
+      "slots": 257,
+      "playableCombinePool": 319,
+      "actualPicks": 257,
+      "officialOrderMismatchBeforeOverride": 113,
+      "compensatoryFlags": 33,
+      "compensatoryFlagsKnown": true
+    }
+  },
+  "observedRawInputsByYear": [
+    {
+      "year": 2018,
+      "combineRows": 336,
+      "draftSelections": 256,
+      "completedGameRows": 267,
+      "regularSeasonGameRows": 256
+    },
+    {
+      "year": 2019,
+      "combineRows": 336,
+      "draftSelections": 254,
+      "completedGameRows": 267,
+      "regularSeasonGameRows": 256
+    },
+    {
+      "year": 2020,
+      "combineRows": 337,
+      "draftSelections": 255,
+      "completedGameRows": 269,
+      "regularSeasonGameRows": 256
+    },
+    {
+      "year": 2021,
+      "combineRows": 464,
+      "draftSelections": 259,
+      "completedGameRows": 285,
+      "regularSeasonGameRows": 272
+    },
+    {
+      "year": 2022,
+      "combineRows": 324,
+      "draftSelections": 262,
+      "completedGameRows": 284,
+      "regularSeasonGameRows": 271
+    },
+    {
+      "year": 2023,
+      "combineRows": 319,
+      "draftSelections": 259,
+      "completedGameRows": 285,
+      "regularSeasonGameRows": 272
+    },
+    {
+      "year": 2024,
+      "combineRows": 321,
+      "draftSelections": 257,
+      "completedGameRows": 285,
+      "regularSeasonGameRows": 272
+    },
+    {
+      "year": 2025,
+      "combineRows": 329,
+      "draftSelections": 257,
+      "completedGameRows": 285,
+      "regularSeasonGameRows": 272
+    },
+    {
+      "year": 2026,
+      "combineRows": 319,
+      "draftSelections": 257,
+      "completedGameRows": 136,
+      "regularSeasonGameRows": 136
+    }
+  ],
+  "researchAlphaYears": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "blockedYears": [],
+  "2021InviteeSource": "https://www.giants.com/news/2021-nfl-scouting-combine-list-of-invited-prospects-new-format-nfl-draft",
+  "2020To2024OwnershipAudit": "Primary order rows, publication/as-of evidence, and normalized sequence hashes are in data/clean/additional_order_sources.json; source captures are text extracted from official pages, not original HTTP bytes.",
+  "2025OwnershipAudit": "Primary NFL.com round-by-round order compared to corrected reversal; primary owner sequence is pinned in research/build_scenarios.py.",
+  "2026OwnershipAudit": "NFL Football Operations April 22 order PDF is the primary owner source; 113 trade-reversal differences are overridden and retained in the manifest.",
+  "notSupportedAsFullRelease": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ]
+}

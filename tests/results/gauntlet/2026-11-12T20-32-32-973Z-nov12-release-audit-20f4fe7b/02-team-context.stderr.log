@@ -1,0 +1,21 @@
+test_all_32_teams_reconcile_source_snap_totals (__main__.ContextTests.test_all_32_teams_reconcile_source_snap_totals) ... ok
+test_contributor_stats_preserve_team_specific_sources (__main__.ContextTests.test_contributor_stats_preserve_team_specific_sources) ... ok
+test_depth_chart_units_are_not_schemes (__main__.ContextTests.test_depth_chart_units_are_not_schemes) ... ok
+test_exact_artifact_and_input_hashes (__main__.ContextTests.test_exact_artifact_and_input_hashes) ... FAIL
+test_missing_draft_day_facts_not_inferred (__main__.ContextTests.test_missing_draft_day_facts_not_inferred) ... ok
+
+======================================================================
+FAIL: test_exact_artifact_and_input_hashes (__main__.ContextTests.test_exact_artifact_and_input_hashes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/sites/redraft/research/test_team_context.py", line 18, in test_exact_artifact_and_input_hashes
+    self.assertEqual(row['sha256'],hashlib.sha256((ROOT/row['file']).read_bytes()).hexdigest())
+AssertionError: 'b4dd94e697ff7f75b477ed69711ae7613a95257ebde60e496c8e2d21095f07a3' != '7b6db9362136b0846e4e55730cdb5ec7fcab107b7c55b6fa2f6802d555fceb9e'
+- b4dd94e697ff7f75b477ed69711ae7613a95257ebde60e496c8e2d21095f07a3
++ 7b6db9362136b0846e4e55730cdb5ec7fcab107b7c55b6fa2f6802d555fceb9e
+
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.106s
+
+FAILED (failures=1)

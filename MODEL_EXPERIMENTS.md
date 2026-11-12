@@ -1,5 +1,11 @@
 # Model experiments — executed results
 
+## November 12 additions
+
+`analytics/project_scenarios.py` reconstructs the frozen pre-2018 1,519-row logistic fit and checks parity against 324 canonical 2018 predictions (zero mismatches at saved precision), then emits scenario-hashed artifacts for 2019–2026. This validates reproduction, not later-cohort calibration. Missing-all-measurements and unsupported source-position categories use explicitly marked position priors. H-back maps to TE for gameplay but is unseen by the frozen predictor; two-way positions are not a two-way development model.
+
+New executed/rejected experiments: `analytics/qb_uncertainty_REPORT.md` and `analytics/score_distribution.md`. The 2018 strict QB pool has only 15 trajectories and three rookie-role positives; four of sixteen observed holdout QB totals exceed the donor maximum. A four-origin QB comparison favors a position-only baseline on pooled Brier/MAE/RMSE, but does not establish adequate tail support. The scoring hurdle candidate has mixed proper-score results on the reserved pre-2018 test; it was not silently adopted to improve an already-examined diagnostic. Full release remains blocked.
+
 Rebuilt and rerun 2026-11-02 from freshly downloaded sources. Artifact `analytics/model.json`; seed 20180426; frozen feature/label cutoff 2018-04-26T00:00:00Z. Research alpha: the five-year modeling release gate has not passed.
 
 ## Rookie role target

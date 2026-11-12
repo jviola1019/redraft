@@ -1,0 +1,942 @@
+{
+  "version": "qb-uncertainty-one-cohort-diagnostic-v1",
+  "scope": "Static re-evaluation only; no runtime code changed and no held-out outcomes used for fitting.",
+  "inputs": {
+    "five_year_strict_labels.csv": {
+      "sha256": "ba0ee53f3f2b33a7150b51ead81ed7e62ece8477f739751374d6e1dd894ceae4",
+      "rows": 15
+    },
+    "five_year_frozen_2018_predictions.csv": {
+      "sha256": "a12e376e85bb09048b84f399da99d4b52e699922ac49023ab65e8c7de46d5094",
+      "rows": 16
+    }
+  },
+  "cutoffs": {
+    "donorCohort": 2013,
+    "donorLabelsAvailableBy": "2018-03-01",
+    "forecastDraft": 2018,
+    "holdoutOutcomeSeasons": [
+      2018,
+      2022
+    ]
+  },
+  "support": {
+    "QBDonors": 15,
+    "donorCohorts": 1,
+    "rookieRoleDonors_ge200Snaps": 3,
+    "noRookieRoleDonors": 12,
+    "donorTotalSnapMin": 0.0,
+    "donorTotalSnapMedian": 24.0,
+    "donorTotalSnapMax": 1965.0,
+    "holdoutQBs": 16,
+    "holdoutOutcomesAboveEveryDonorTrajectory": 4,
+    "holdoutRookieRoleCount": 5,
+    "holdoutAnyCareerRoleCount": 7
+  },
+  "candidates": {
+    "currentPooledRookieProbability": {
+      "n": 16,
+      "annualMAE": 260.9838681216435,
+      "annualRMSE": 415.43355554933964,
+      "totalMAE": 1233.885201440625,
+      "totalRMSE": 1979.7497044528177,
+      "rookieRoleBrier": 0.23256201294305695,
+      "anyCareerRoleBrier": 0.26262086315490063,
+      "totalIntervals": {
+        "80": {
+          "coverage": 0.75,
+          "coverageWilson95": [
+            0.5050168346449122,
+            0.8981793250878696
+          ],
+          "meanWidth": 1387.4375,
+          "below": 0,
+          "above": 4
+        },
+        "95": {
+          "coverage": 0.75,
+          "coverageWilson95": [
+            0.5050168346449122,
+            0.8981793250878696
+          ],
+          "meanWidth": 1965.0,
+          "below": 0,
+          "above": 4
+        }
+      }
+    },
+    "precutoffQBRoleRate_3of15": {
+      "n": 16,
+      "annualMAE": 265.165,
+      "annualRMSE": 414.06278173994605,
+      "totalMAE": 1240.7583333333332,
+      "totalRMSE": 1966.9502674049602,
+      "rookieRoleBrier": 0.2275,
+      "anyCareerRoleBrier": 0.2569444444444445,
+      "totalIntervals": {
+        "80": {
+          "coverage": 0.75,
+          "coverageWilson95": [
+            0.5050168346449122,
+            0.8981793250878696
+          ],
+          "meanWidth": 1485.0,
+          "below": 0,
+          "above": 4
+        },
+        "95": {
+          "coverage": 0.75,
+          "coverageWilson95": [
+            0.5050168346449122,
+            0.8981793250878696
+          ],
+          "meanWidth": 1965.0,
+          "below": 0,
+          "above": 4
+        }
+      }
+    },
+    "unconditionalQBDonors": {
+      "n": 16,
+      "annualMAE": 265.165,
+      "annualRMSE": 414.0627817399461,
+      "totalMAE": 1240.7583333333332,
+      "totalRMSE": 1966.9502674049602,
+      "rookieRoleBrier": 0.22750000000000006,
+      "anyCareerRoleBrier": 0.2569444444444444,
+      "totalIntervals": {
+        "80": {
+          "coverage": 0.75,
+          "coverageWilson95": [
+            0.5050168346449122,
+            0.8981793250878696
+          ],
+          "meanWidth": 1485.0,
+          "below": 0,
+          "above": 4
+        },
+        "95": {
+          "coverage": 0.75,
+          "coverageWilson95": [
+            0.5050168346449122,
+            0.8981793250878696
+          ],
+          "meanWidth": 1965.0,
+          "below": 0,
+          "above": 4
+        }
+      }
+    }
+  },
+  "rookieRoleBrierComparison": {
+    "currentPooledRookieProbability": 0.23256201294305695,
+    "precutoffQBRoleRate_3of15": 0.22750000000000006
+  },
+  "strictRollingOrigins": {
+    "policy": "Expanding origins; full five-year donor labels end by draftYear-5; rookie role fit uses only cohorts through draftYear-1; fixed C=10 logistic and fixed half-shrink sensitivity.",
+    "years": [
+      {
+        "draftYear": 2018,
+        "cutoff": "2018-04-01",
+        "donorCohorts": [
+          2013
+        ],
+        "nDonors": 15,
+        "rolePositiveDonors": 3,
+        "roleNegativeDonors": 12,
+        "rookieModelCohorts": [
+          2013,
+          2014,
+          2015,
+          2016,
+          2017
+        ],
+        "nTestQBs": 16,
+        "metrics": {
+          "positionOnly": {
+            "n": 16,
+            "annualMAE": 265.165,
+            "annualRMSE": 414.0627817399461,
+            "totalMAE": 1240.7583333333332,
+            "totalRMSE": 1966.9502674049602,
+            "rookieRoleBrier": 0.22750000000000006,
+            "anyCareerRoleBrier": 0.2569444444444444,
+            "totalIntervals": {
+              "80": {
+                "coverage": 0.75,
+                "coverageWilson95": [
+                  0.5050168346449122,
+                  0.8981793250878696
+                ],
+                "meanWidth": 1485.0,
+                "below": 0,
+                "above": 4
+              },
+              "95": {
+                "coverage": 0.75,
+                "coverageWilson95": [
+                  0.5050168346449122,
+                  0.8981793250878696
+                ],
+                "meanWidth": 1965.0,
+                "below": 0,
+                "above": 4
+              }
+            }
+          },
+          "precutoffQBRoleRate": {
+            "n": 16,
+            "annualMAE": 265.165,
+            "annualRMSE": 414.06278173994605,
+            "totalMAE": 1240.7583333333332,
+            "totalRMSE": 1966.9502674049602,
+            "rookieRoleBrier": 0.2275,
+            "anyCareerRoleBrier": 0.2569444444444445,
+            "totalIntervals": {
+              "80": {
+                "coverage": 0.75,
+                "coverageWilson95": [
+                  0.5050168346449122,
+                  0.8981793250878696
+                ],
+                "meanWidth": 1485.0,
+                "below": 0,
+                "above": 4
+              },
+              "95": {
+                "coverage": 0.75,
+                "coverageWilson95": [
+                  0.5050168346449122,
+                  0.8981793250878696
+                ],
+                "meanWidth": 1965.0,
+                "below": 0,
+                "above": 4
+              }
+            }
+          },
+          "pooledRoleModel": {
+            "n": 16,
+            "annualMAE": 275.59260523491247,
+            "annualRMSE": 433.8052207475264,
+            "totalMAE": 1306.870056959017,
+            "totalRMSE": 2041.0881732622067,
+            "rookieRoleBrier": 0.31278671689702353,
+            "anyCareerRoleBrier": 0.3291933607590932,
+            "totalIntervals": {
+              "80": {
+                "coverage": 0.625,
+                "coverageWilson95": [
+                  0.38641040545502714,
+                  0.8151876744113636
+                ],
+                "meanWidth": 1159.125,
+                "below": 1,
+                "above": 5
+              },
+              "95": {
+                "coverage": 0.6875,
+                "coverageWilson95": [
+                  0.44404355834740666,
+                  0.8583535614521796
+                ],
+                "meanWidth": 1715.3125,
+                "below": 1,
+                "above": 4
+              }
+            }
+          },
+          "halfShrinkToQBRate": {
+            "n": 16,
+            "annualMAE": 269.85463595078954,
+            "annualRMSE": 421.38448463887994,
+            "totalMAE": 1273.1433445740447,
+            "totalRMSE": 1997.9750580451937,
+            "rookieRoleBrier": 0.2578284457226597,
+            "anyCareerRoleBrier": 0.2845168798754827,
+            "totalIntervals": {
+              "80": {
+                "coverage": 0.75,
+                "coverageWilson95": [
+                  0.5050168346449122,
+                  0.8981793250878696
+                ],
+                "meanWidth": 1445.3125,
+                "below": 0,
+                "above": 4
+              },
+              "95": {
+                "coverage": 0.75,
+                "coverageWilson95": [
+                  0.5050168346449122,
+                  0.8981793250878696
+                ],
+                "meanWidth": 1965.0,
+                "below": 0,
+                "above": 4
+              }
+            }
+          }
+        }
+      },
+      {
+        "draftYear": 2019,
+        "cutoff": "2019-04-01",
+        "donorCohorts": [
+          2013,
+          2014
+        ],
+        "nDonors": 33,
+        "rolePositiveDonors": 7,
+        "roleNegativeDonors": 26,
+        "rookieModelCohorts": [
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "nTestQBs": 17,
+        "metrics": {
+          "positionOnly": {
+            "n": 17,
+            "annualMAE": 211.77076648841359,
+            "annualRMSE": 310.09778053056107,
+            "totalMAE": 908.3155080213903,
+            "totalRMSE": 1348.1235276107373,
+            "rookieRoleBrier": 0.21433587208988278,
+            "anyCareerRoleBrier": 0.24237022632744562,
+            "totalIntervals": {
+              "80": {
+                "coverage": 0.8235294117647058,
+                "coverageWilson95": [
+                  0.5897054143116588,
+                  0.9380887336237901
+                ],
+                "meanWidth": 1866.0,
+                "below": 0,
+                "above": 3
+              },
+              "95": {
+                "coverage": 1.0,
+                "coverageWilson95": [
+                  0.8156818649911483,
+                  1.0
+                ],
+                "meanWidth": 5011.0,
+                "below": 0,
+                "above": 0
+              }
+            }
+          },
+          "precutoffQBRoleRate": {
+            "n": 17,
+            "annualMAE": 211.77076648841359,
+            "annualRMSE": 310.09778053056107,
+            "totalMAE": 908.3155080213903,
+            "totalRMSE": 1348.123527610737,
+            "rookieRoleBrier": 0.21433587208988278,
+            "anyCareerRoleBrier": 0.24237022632744562,
+            "totalIntervals": {
+              "80": {
+                "coverage": 0.8235294117647058,
+                "coverageWilson95": [
+                  0.5897054143116588,
+                  0.9380887336237901
+                ],
+                "meanWidth": 1866.0,
+                "below": 0,
+                "above": 3
+              },
+              "95": {
+                "coverage": 1.0,
+                "coverageWilson95": [
+                  0.8156818649911483,
+                  1.0
+                ],
+                "meanWidth": 5011.0,
+                "below": 0,
+                "above": 0
+              }
+            }
+          },
+          "pooledRoleModel": {
+            "n": 17,
+            "annualMAE": 242.4494447456692,
+            "annualRMSE": 338.2833228612079,
+            "totalMAE": 1076.3211237150113,
+            "totalRMSE": 1482.2949020802248,
+            "rookieRoleBrier": 0.28492744215553184,
+            "anyCareerRoleBrier": 0.2984179550157162,
+            "totalIntervals": {
+              "80": {
+                "coverage": 0.7647058823529411,
+                "coverageWilson95": [
+                  0.5273820188043501,
+                  0.9044495567791988
+                ],
+                "meanWidth": 2493.823529411765,
+                "below": 0,
+                "above": 4
+              },
+              "95": {
+                "coverage": 0.8823529411764706,
+                "coverageWilson95": [
+                  0.6566364940511412,
+                  0.9671202262362074
+                ],
+                "meanWidth": 4565.294117647059,
+                "below": 0,
+                "above": 2
+              }
+            }
+          },
+          "halfShrinkToQBRate": {
+            "n": 17,
+            "annualMAE": 225.50207720768398,
+            "annualRMSE": 321.56681152700213,
+            "totalMAE": 992.3183158682009,
+            "totalRMSE": 1402.9966304304205,
+            "rookieRoleBrier": 0.24212254324581853,
+            "anyCareerRoleBrier": 0.2663840461308163,
+            "totalIntervals": {
+              "80": {
+                "coverage": 0.8235294117647058,
+                "coverageWilson95": [
+                  0.5897054143116588,
+                  0.9380887336237901
+                ],
+                "meanWidth": 1983.7058823529412,
+                "below": 0,
+                "above": 3
+              },
+              "95": {
+                "coverage": 1.0,
+                "coverageWilson95": [
+                  0.8156818649911483,
+                  1.0
+                ],
+                "meanWidth": 4995.705882352941,
+                "below": 0,
+                "above": 0
+              }
+            }
+          }
+        }
+      },
+      {
+        "draftYear": 2020,
+        "cutoff": "2020-04-01",
+        "donorCohorts": [
+          2013,
+          2014,
+          2015
+        ],
+        "nDonors": 45,
+        "rolePositiveDonors": 9,
+        "roleNegativeDonors": 36,
+        "rookieModelCohorts": [
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "nTestQBs": 17,
+        "metrics": {
+          "positionOnly": {
+            "n": 17,
+            "annualMAE": 298.7333333333333,
+            "annualRMSE": 426.61188117085595,
+            "totalMAE": 1454.2549019607843,
+            "totalRMSE": 1981.735165952771,
+            "rookieRoleBrier": 0.18117647058823536,
+            "anyCareerRoleBrier": 0.2188235294117647,
+            "totalIntervals": {
+              "80": {
+                "coverage": 0.7058823529411765,
+                "coverageWilson95": [
+                  0.4686688993346016,
+                  0.8672001038970478
+                ],
+                "meanWidth": 1965.0,
+                "below": 0,
+                "above": 5
+              },
+              "95": {
+                "coverage": 0.9411764705882353,
+                "coverageWilson95": [
+                  0.7301796936242461,
+                  0.9895395990150025
+                ],
+                "meanWidth": 4946.0,
+                "below": 0,
+                "above": 1
+              }
+            }
+          },
+          "precutoffQBRoleRate": {
+            "n": 17,
+            "annualMAE": 298.7333333333333,
+            "annualRMSE": 426.61188117085595,
+            "totalMAE": 1454.2549019607843,
+            "totalRMSE": 1981.735165952771,
+            "rookieRoleBrier": 0.18117647058823533,
+            "anyCareerRoleBrier": 0.2188235294117647,
+            "totalIntervals": {
+              "80": {
+                "coverage": 0.7058823529411765,
+                "coverageWilson95": [
+                  0.4686688993346016,
+                  0.8672001038970478
+                ],
+                "meanWidth": 1965.0,
+                "below": 0,
+                "above": 5
+              },
+              "95": {
+                "coverage": 0.9411764705882353,
+                "coverageWilson95": [
+                  0.7301796936242461,
+                  0.9895395990150025
+                ],
+                "meanWidth": 4946.0,
+                "below": 0,
+                "above": 1
+              }
+            }
+          },
+          "pooledRoleModel": {
+            "n": 17,
+            "annualMAE": 312.6679850724793,
+            "annualRMSE": 404.7281858777309,
+            "totalMAE": 1510.6981029088365,
+            "totalRMSE": 1845.1710533087405,
+            "rookieRoleBrier": 0.1634417320398584,
+            "anyCareerRoleBrier": 0.23030008747955225,
+            "totalIntervals": {
+              "80": {
+                "coverage": 0.8823529411764706,
+                "coverageWilson95": [
+                  0.6566364940511412,
+                  0.9671202262362074
+                ],
+                "meanWidth": 3790.6470588235293,
+                "below": 0,
+                "above": 2
+              },
+              "95": {
+                "coverage": 0.9411764705882353,
+                "coverageWilson95": [
+                  0.7301796936242461,
+                  0.9895395990150025
+                ],
+                "meanWidth": 4995.705882352941,
+                "below": 0,
+                "above": 1
+              }
+            }
+          },
+          "halfShrinkToQBRate": {
+            "n": 17,
+            "annualMAE": 305.4949075689194,
+            "annualRMSE": 413.48751221128555,
+            "totalMAE": 1482.4765024348105,
+            "totalRMSE": 1903.3953044999064,
+            "rookieRoleBrier": 0.16638587898591006,
+            "anyCareerRoleBrier": 0.22122999588608153,
+            "totalIntervals": {
+              "80": {
+                "coverage": 0.8823529411764706,
+                "coverageWilson95": [
+                  0.6566364940511412,
+                  0.9671202262362074
+                ],
+                "meanWidth": 3546.0588235294117,
+                "below": 0,
+                "above": 2
+              },
+              "95": {
+                "coverage": 0.9411764705882353,
+                "coverageWilson95": [
+                  0.7301796936242461,
+                  0.9895395990150025
+                ],
+                "meanWidth": 4991.882352941177,
+                "below": 0,
+                "above": 1
+              }
+            }
+          }
+        }
+      },
+      {
+        "draftYear": 2021,
+        "cutoff": "2021-04-01",
+        "donorCohorts": [
+          2013,
+          2014,
+          2015,
+          2016
+        ],
+        "nDonors": 62,
+        "rolePositiveDonors": 13,
+        "roleNegativeDonors": 49,
+        "rookieModelCohorts": [
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "nTestQBs": 16,
+        "metrics": {
+          "positionOnly": {
+            "n": 16,
+            "annualMAE": 256.90362903225804,
+            "annualRMSE": 344.1166241851485,
+            "totalMAE": 1226.2298387096773,
+            "totalRMSE": 1563.6650226534196,
+            "rookieRoleBrier": 0.22541623309053072,
+            "anyCareerRoleBrier": 0.23517169614984393,
+            "totalIntervals": {
+              "80": {
+                "coverage": 0.9375,
+                "coverageWilson95": [
+                  0.7167126242970107,
+                  0.9888806552353576
+                ],
+                "meanWidth": 3769.0,
+                "below": 0,
+                "above": 1
+              },
+              "95": {
+                "coverage": 1.0,
+                "coverageWilson95": [
+                  0.8063923194655637,
+                  1.0000000000000002
+                ],
+                "meanWidth": 4946.0,
+                "below": 0,
+                "above": 0
+              }
+            }
+          },
+          "precutoffQBRoleRate": {
+            "n": 16,
+            "annualMAE": 256.90362903225804,
+            "annualRMSE": 344.11662418514845,
+            "totalMAE": 1226.2298387096776,
+            "totalRMSE": 1563.6650226534196,
+            "rookieRoleBrier": 0.22541623309053072,
+            "anyCareerRoleBrier": 0.2351716961498439,
+            "totalIntervals": {
+              "80": {
+                "coverage": 0.9375,
+                "coverageWilson95": [
+                  0.7167126242970107,
+                  0.9888806552353576
+                ],
+                "meanWidth": 3769.0,
+                "below": 0,
+                "above": 1
+              },
+              "95": {
+                "coverage": 1.0,
+                "coverageWilson95": [
+                  0.8063923194655637,
+                  1.0000000000000002
+                ],
+                "meanWidth": 4946.0,
+                "below": 0,
+                "above": 0
+              }
+            }
+          },
+          "pooledRoleModel": {
+            "n": 16,
+            "annualMAE": 269.51993325454293,
+            "annualRMSE": 349.69291194646905,
+            "totalMAE": 1266.1903100748068,
+            "totalRMSE": 1594.6357916206132,
+            "rookieRoleBrier": 0.24357721029695023,
+            "anyCareerRoleBrier": 0.25982540113314095,
+            "totalIntervals": {
+              "80": {
+                "coverage": 0.8125,
+                "coverageWilson95": [
+                  0.5699111903802586,
+                  0.9340840092857187
+                ],
+                "meanWidth": 3066.4375,
+                "below": 0,
+                "above": 3
+              },
+              "95": {
+                "coverage": 1.0,
+                "coverageWilson95": [
+                  0.8063923194655637,
+                  1.0000000000000002
+                ],
+                "meanWidth": 4742.1875,
+                "below": 0,
+                "above": 0
+              }
+            }
+          },
+          "halfShrinkToQBRate": {
+            "n": 16,
+            "annualMAE": 263.21178114340046,
+            "annualRMSE": 343.2622182608457,
+            "totalMAE": 1246.210074392242,
+            "totalRMSE": 1560.1210323777616,
+            "rookieRoleBrier": 0.2273319856368469,
+            "anyCareerRoleBrier": 0.24341336594183088,
+            "totalIntervals": {
+              "80": {
+                "coverage": 0.875,
+                "coverageWilson95": [
+                  0.639771727342413,
+                  0.9650225122567595
+                ],
+                "meanWidth": 3507.125,
+                "below": 0,
+                "above": 2
+              },
+              "95": {
+                "coverage": 1.0,
+                "coverageWilson95": [
+                  0.8063923194655637,
+                  1.0000000000000002
+                ],
+                "meanWidth": 4941.8125,
+                "below": 0,
+                "above": 0
+              }
+            }
+          }
+        }
+      }
+    ],
+    "pooledAcrossFourDraftClasses": {
+      "positionOnly": {
+        "n": 66,
+        "draftClasses": 4,
+        "annualMAE": 258.05557214372465,
+        "totalMAE": 1206.5986018543203,
+        "rookieRoleBrier": 0.21167226598449243,
+        "anyCareerRoleBrier": 0.23809321359204833,
+        "annualRMSE": 376.7186763473801,
+        "totalRMSE": 1735.036279651435,
+        "totalIntervals": {
+          "80": {
+            "coverage": 0.803030303030303,
+            "meanWidth": 2260.469696969697,
+            "below": 0,
+            "above": 13
+          },
+          "95": {
+            "coverage": 0.9242424242424242,
+            "meanWidth": 4240.075757575758,
+            "below": 0,
+            "above": 5
+          }
+        }
+      },
+      "precutoffQBRoleRate": {
+        "n": 66,
+        "draftClasses": 4,
+        "annualMAE": 258.05557214372465,
+        "totalMAE": 1206.5986018543203,
+        "rookieRoleBrier": 0.21167226598449243,
+        "anyCareerRoleBrier": 0.23809321359204833,
+        "annualRMSE": 376.7186763473801,
+        "totalRMSE": 1735.0362796514348,
+        "totalIntervals": {
+          "80": {
+            "coverage": 0.803030303030303,
+            "meanWidth": 2260.469696969697,
+            "below": 0,
+            "above": 13
+          },
+          "95": {
+            "coverage": 0.9242424242424242,
+            "meanWidth": 4240.075757575758,
+            "below": 0,
+            "above": 5
+          }
+        }
+      },
+      "pooledRoleModel": {
+        "n": 66,
+        "draftClasses": 4,
+        "annualMAE": 275.133286708179,
+        "totalMAE": 1290.1256473507058,
+        "rookieRoleBrier": 0.2503651332791699,
+        "anyCareerRoleBrier": 0.27897737746508044,
+        "annualRMSE": 383.31967673768827,
+        "totalRMSE": 1751.942612260179,
+        "totalIntervals": {
+          "80": {
+            "coverage": 0.7727272727272727,
+            "meanWidth": 2643.1060606060605,
+            "below": 1,
+            "above": 14
+          },
+          "95": {
+            "coverage": 0.8787878787878788,
+            "meanWidth": 4028.1363636363635,
+            "below": 1,
+            "above": 7
+          }
+        }
+      },
+      "halfShrinkToQBRate": {
+        "n": 66,
+        "draftClasses": 4,
+        "annualMAE": 266.0001729501409,
+        "totalMAE": 1248.1994941607845,
+        "rookieRoleBrier": 0.222836516358962,
+        "anyCareerRoleBrier": 0.25358064617218606,
+        "annualRMSE": 377.20488523924325,
+        "totalRMSE": 1731.4665197940271,
+        "totalIntervals": {
+          "80": {
+            "coverage": 0.8333333333333334,
+            "meanWidth": 2624.9242424242425,
+            "below": 0,
+            "above": 11
+          },
+          "95": {
+            "coverage": 0.9242424242424242,
+            "meanWidth": 4246.939393939394,
+            "below": 0,
+            "above": 5
+          }
+        }
+      }
+    },
+    "sourceCoverage": {
+      "2013": {
+        "expectedGames": 256,
+        "observedGames": 256,
+        "rows": 22821,
+        "sha256": "9d1fdd557875b9a2c71d88e583da24a739dfca671edf8223d6171e39a421000e"
+      },
+      "2014": {
+        "expectedGames": 256,
+        "observedGames": 256,
+        "rows": 22880,
+        "sha256": "84540709d9483552185c8ca3ef30b2f66fb94b30c3e6c21e7a27205f337f21d3"
+      },
+      "2015": {
+        "expectedGames": 256,
+        "observedGames": 256,
+        "rows": 22864,
+        "sha256": "841496252ada825c3c50d3ba9b4b26d3f4fabd0fedc5fb44f286ddaaa5bdb7e0"
+      },
+      "2016": {
+        "expectedGames": 256,
+        "observedGames": 256,
+        "rows": 22904,
+        "sha256": "a778e24e9eb665ffe8f16093b03c5a263dca0250b3aa92bd6002f61f534bea59"
+      },
+      "2017": {
+        "expectedGames": 256,
+        "observedGames": 256,
+        "rows": 22876,
+        "sha256": "eab2fad2df99249d4061ed9c5c34d312cdba07cf3159d027d255bdc9b6526917"
+      },
+      "2018": {
+        "expectedGames": 256,
+        "observedGames": 256,
+        "rows": 22895,
+        "sha256": "9a408b78a55f799110aed70de3564e157faf089ce9bed780d0368bf49ae13e0b"
+      },
+      "2019": {
+        "expectedGames": 256,
+        "observedGames": 256,
+        "rows": 22884,
+        "sha256": "0cd52be8fa57f18503b670cb8263246c4f548375b768cbcad1c7a7462c98970d"
+      },
+      "2020": {
+        "expectedGames": 256,
+        "observedGames": 256,
+        "rows": 23790,
+        "sha256": "512e35f17d076eb5d99b933c4a144eb95dcddf40c0320dbb397cae3c35683716"
+      },
+      "2021": {
+        "expectedGames": 272,
+        "observedGames": 272,
+        "rows": 25271,
+        "sha256": "8e4dae054a4749cf2d4919508d9161a6068fd67509979aefa385bfb3803d0ee5"
+      },
+      "2022": {
+        "expectedGames": 271,
+        "observedGames": 271,
+        "rows": 25168,
+        "sha256": "0018a4833fbf0f825286c1c27450c6254391b548d6c55bcde728e93e4816815a"
+      },
+      "2023": {
+        "expectedGames": 272,
+        "observedGames": 272,
+        "rows": 25329,
+        "sha256": "303b61aa5c33ffda863f93a750fc14483f397f9187ad502b1ce71e9b516a64c0"
+      },
+      "2024": {
+        "expectedGames": 272,
+        "observedGames": 272,
+        "rows": 25398,
+        "sha256": "a2aa58efe093f8aa0ad5aadf09f81d8ec690a1183bd2dde68d20e7f109a9c335"
+      },
+      "2025": {
+        "expectedGames": 272,
+        "observedGames": 272,
+        "rows": 25396,
+        "sha256": "3fc2deb0e9ad86d34d4578cb80bb21c95253e088ee22ca028adf46f7485eff1f"
+      }
+    },
+    "excludedUnknownIds": {
+      "2013": 22,
+      "2014": 11,
+      "2015": 20,
+      "2016": 14,
+      "2017": 10,
+      "2018": 42,
+      "2019": 4,
+      "2020": 1,
+      "2021": 131
+    }
+  },
+  "decision": {
+    "productionChangeRecommended": false,
+    "recommendedNextCandidate": "Use the expanding pre-cutoff QB donor role rate in place of player-specific QB rookie-role probabilities, then evaluate on an untouched later set of draft classes.",
+    "reason": "Across four strict rolling origins (66 QBs), the donor-rate baseline has lower pooled rookie-role Brier and total-snap MAE/RMSE than the individual QB logistic role model, and modestly better aggregate interval coverage. This is screening evidence from four inspected classes, not a final deployment decision. As of 2026-11-12, no 2022+ test class has complete five-season outcomes (2026 is incomplete). All candidates share a one-cohort 2018 support ceiling, and a material fraction of 2018 outcomes exceeds every donor trajectory; the evidence cannot identify a better tail model.",
+    "uncertaintyStatus": "unsupported-for-high-end-QB-tails",
+    "recommendedHandling": "Consider the simple pre-cutoff QB role-rate baseline as a candidate for an untouched evaluation. Keep source-backed donor trajectories and label QB high-end uncertainty unsupported; do not inflate intervals or synthesize unsupported career paths."
+  },
+  "failedApproaches": [
+    {
+      "approach": "Replace player-specific pooled rookie-role probabilities with the pre-cutoff 3/15 QB role rate",
+      "result": "On the 2018 holdout it improves rookie-role Brier and total RMSE slightly, but worsens total MAE; N=16 gives no stable selection evidence."
+    },
+    {
+      "approach": "Widen percentile intervals until nominal coverage is reached",
+      "result": "Rejected: it changes width without adding empirical upper-tail support; no donor exceeds the 2013 maximum trajectory."
+    },
+    {
+      "approach": "Fit a QB-only hierarchical or regularized model and cohort bootstrap",
+      "result": "Not estimable from one complete strict donor cohort. Repeated player resampling would not represent between-cohort parameter uncertainty."
+    },
+    {
+      "approach": "Borrow non-QB trajectories to create QB career ceilings",
+      "result": "Rejected: position transfer has no evaluated conditional exchangeability evidence in the available artifacts."
+    }
+  ]
+}

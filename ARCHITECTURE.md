@@ -42,3 +42,9 @@ Stable teams/players/colleges have namespaced identifiers; time-varying identity
 The generic `fact_provenance(entity_type,entity_id)` lineage index needs ETL reconciliation because SQL cannot enforce a polymorphic entity FK. All concrete document/dataset references are foreign-key checked. The schema’s source/public-ID protections do not automatically enforce the aggregate runtime JSON contract; both require tests.
 
 Index class/position/eligibility, feature cutoff/name, team/roster intervals, season/type, owner/state and daily score. Aggregate JSON is appropriate for a small alpha; larger detailed ensembles need normalized exports/summary accumulators rather than unbounded row rewriting.
+
+## Multi-year runtime registry (November 12)
+
+`lib/server-data.ts` registers immutable dataset/model/scouting bundles for 2018–2026. Every API transition resolves the stored game year through `getScenario`; creation validates requested years against the registry. Daily configuration pins its selected year and versions once per UTC date. Later classes use a reproduced pre-2018 role predictor, explicitly retaining unsupported fallbacks; that architecture does not imply later-class calibration. `analytics/runtime_loader.mjs` imports this same registry for engine diagnostics to avoid an inconsistent research-only scenario constructor.
+
+Local play uses a loopback-bound Vite server, local D1 and the documented development sign-in; public deployment still requires appropriate production identity and durable services. Source delivery and live Site deployment are distinct operations.

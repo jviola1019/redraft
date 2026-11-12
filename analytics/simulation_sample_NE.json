@@ -97,7 +97,7 @@
             "pointsFor": 330,
             "pointsAgainst": 298,
             "playoff": true,
-            "seed": 6,
+            "seed": 5,
             "conferenceChampion": false,
             "champion": false
           },
@@ -109,7 +109,7 @@
             "pointsFor": 378,
             "pointsAgainst": 301,
             "playoff": true,
-            "seed": 4,
+            "seed": 6,
             "conferenceChampion": false,
             "champion": false
           },
@@ -121,7 +121,7 @@
             "pointsFor": 381,
             "pointsAgainst": 256,
             "playoff": true,
-            "seed": 5,
+            "seed": 4,
             "conferenceChampion": false,
             "champion": false
           },
@@ -3002,34 +3002,34 @@
             "awayScore": 12
           },
           {
-            "id": "2018-WC-18-TB-SEA",
+            "id": "2018-WC-18-CAR-SEA",
             "season": 2018,
             "week": 18,
             "type": "WC",
             "home": "SEA",
-            "away": "TB",
-            "homeScore": 22,
-            "awayScore": 18
+            "away": "CAR",
+            "homeScore": 21,
+            "awayScore": 17
           },
           {
-            "id": "2018-WC-18-ATL-CAR",
+            "id": "2018-WC-18-TB-ATL",
             "season": 2018,
             "week": 18,
             "type": "WC",
-            "home": "CAR",
-            "away": "ATL",
-            "homeScore": 34,
-            "awayScore": 26
+            "home": "ATL",
+            "away": "TB",
+            "homeScore": 25,
+            "awayScore": 23
           },
           {
-            "id": "2018-DIV-19-CAR-DET",
+            "id": "2018-DIV-19-ATL-DET",
             "season": 2018,
             "week": 19,
             "type": "DIV",
             "home": "DET",
-            "away": "CAR",
-            "homeScore": 37,
-            "awayScore": 17
+            "away": "ATL",
+            "homeScore": 32,
+            "awayScore": 25
           },
           {
             "id": "2018-DIV-19-SEA-PHI",
@@ -10389,7 +10389,7 @@
             "pointsFor": 412,
             "pointsAgainst": 358,
             "playoff": true,
-            "seed": 4,
+            "seed": 6,
             "conferenceChampion": false,
             "champion": false
           },
@@ -10401,7 +10401,7 @@
             "pointsFor": 391,
             "pointsAgainst": 348,
             "playoff": true,
-            "seed": 6,
+            "seed": 4,
             "conferenceChampion": false,
             "champion": false
           },
@@ -13350,34 +13350,34 @@
             "awayScore": 12
           },
           {
-            "id": "2020-WC-18-NO-ARI",
+            "id": "2020-WC-18-TB-ARI",
             "season": 2020,
             "week": 18,
             "type": "WC",
             "home": "ARI",
-            "away": "NO",
-            "homeScore": 29,
-            "awayScore": 16
+            "away": "TB",
+            "homeScore": 21,
+            "awayScore": 0
           },
           {
-            "id": "2020-WC-18-SF-TB",
+            "id": "2020-WC-18-SF-NO",
             "season": 2020,
             "week": 18,
             "type": "WC",
-            "home": "TB",
+            "home": "NO",
             "away": "SF",
-            "homeScore": 11,
-            "awayScore": 28
+            "homeScore": 33,
+            "awayScore": 29
           },
           {
-            "id": "2020-DIV-19-SF-DET",
+            "id": "2020-DIV-19-NO-DET",
             "season": 2020,
             "week": 19,
             "type": "DIV",
             "home": "DET",
-            "away": "SF",
-            "homeScore": 27,
-            "awayScore": 34
+            "away": "NO",
+            "homeScore": 38,
+            "awayScore": 8
           },
           {
             "id": "2020-DIV-19-ARI-PHI",
@@ -13390,14 +13390,14 @@
             "awayScore": 20
           },
           {
-            "id": "2020-CON-20-SF-PHI",
+            "id": "2020-CON-20-PHI-DET",
             "season": 2020,
             "week": 20,
             "type": "CON",
-            "home": "PHI",
-            "away": "SF",
-            "homeScore": 27,
-            "awayScore": 9
+            "home": "DET",
+            "away": "PHI",
+            "homeScore": 13,
+            "awayScore": 18
           },
           {
             "id": "2020-SB-22-PHI-IND",
@@ -15633,7 +15633,7 @@
             "pointsFor": 363,
             "pointsAgainst": 335,
             "playoff": true,
-            "seed": 5,
+            "seed": 6,
             "conferenceChampion": false,
             "champion": false
           },
@@ -15657,7 +15657,7 @@
             "pointsFor": 410,
             "pointsAgainst": 422,
             "playoff": true,
-            "seed": 6,
+            "seed": 5,
             "conferenceChampion": false,
             "champion": false
           },
@@ -18634,24 +18634,24 @@
             "awayScore": 13
           },
           {
-            "id": "2021-WC-19-LAC-CIN",
+            "id": "2021-WC-19-KC-CIN",
             "season": 2021,
             "week": 19,
             "type": "WC",
             "home": "CIN",
-            "away": "LAC",
-            "homeScore": 33,
-            "awayScore": 18
+            "away": "KC",
+            "homeScore": 19,
+            "awayScore": 10
           },
           {
-            "id": "2021-WC-19-KC-JAX",
+            "id": "2021-WC-19-LAC-JAX",
             "season": 2021,
             "week": 19,
             "type": "WC",
             "home": "JAX",
-            "away": "KC",
-            "homeScore": 29,
-            "awayScore": 14
+            "away": "LAC",
+            "homeScore": 32,
+            "awayScore": 13
           },
           {
             "id": "2021-DIV-20-JAX-BUF",
@@ -26280,9 +26280,9 @@
             "pointsFor": 386,
             "pointsAgainst": 303,
             "playoff": true,
-            "seed": 3,
-            "conferenceChampion": true,
-            "champion": true
+            "seed": 4,
+            "conferenceChampion": false,
+            "champion": false
           },
           {
             "team": "CAR",
@@ -26292,7 +26292,7 @@
             "pointsFor": 381,
             "pointsAgainst": 297,
             "playoff": true,
-            "seed": 4,
+            "seed": 6,
             "conferenceChampion": false,
             "champion": false
           },
@@ -26316,9 +26316,9 @@
             "pointsFor": 382,
             "pointsAgainst": 254,
             "playoff": true,
-            "seed": 5,
-            "conferenceChampion": false,
-            "champion": false
+            "seed": 3,
+            "conferenceChampion": true,
+            "champion": true
           },
           {
             "team": "LAC",
@@ -26340,7 +26340,7 @@
             "pointsFor": 324,
             "pointsAgainst": 301,
             "playoff": true,
-            "seed": 6,
+            "seed": 5,
             "conferenceChampion": false,
             "champion": false
           },
@@ -29209,6 +29209,16 @@
             "awayScore": 13
           },
           {
+            "id": "2018-WC-18-CAR-ATL",
+            "season": 2018,
+            "week": 18,
+            "type": "WC",
+            "home": "ATL",
+            "away": "CAR",
+            "homeScore": 31,
+            "awayScore": 30
+          },
+          {
             "id": "2018-WC-18-TB-SEA",
             "season": 2018,
             "week": 18,
@@ -29219,54 +29229,44 @@
             "awayScore": 18
           },
           {
-            "id": "2018-WC-18-ATL-CAR",
-            "season": 2018,
-            "week": 18,
-            "type": "WC",
-            "home": "CAR",
-            "away": "ATL",
-            "homeScore": 34,
-            "awayScore": 26
-          },
-          {
-            "id": "2018-DIV-19-CAR-DET",
+            "id": "2018-DIV-19-SEA-DET",
             "season": 2018,
             "week": 19,
             "type": "DIV",
             "home": "DET",
-            "away": "CAR",
-            "homeScore": 37,
-            "awayScore": 17
+            "away": "SEA",
+            "homeScore": 35,
+            "awayScore": 11
           },
           {
-            "id": "2018-DIV-19-SEA-PHI",
+            "id": "2018-DIV-19-ATL-PHI",
             "season": 2018,
             "week": 19,
             "type": "DIV",
             "home": "PHI",
-            "away": "SEA",
+            "away": "ATL",
             "homeScore": 21,
-            "awayScore": 30
+            "awayScore": 35
           },
           {
-            "id": "2018-CON-20-SEA-DET",
+            "id": "2018-CON-20-ATL-DET",
             "season": 2018,
             "week": 20,
             "type": "CON",
             "home": "DET",
-            "away": "SEA",
+            "away": "ATL",
             "homeScore": 13,
-            "awayScore": 30
+            "awayScore": 24
           },
           {
-            "id": "2018-SB-22-SEA-NYJ",
+            "id": "2018-SB-22-ATL-NYJ",
             "season": 2018,
             "week": 22,
             "type": "SB",
             "home": "NYJ",
-            "away": "SEA",
-            "homeScore": 25,
-            "awayScore": 27
+            "away": "ATL",
+            "homeScore": 14,
+            "awayScore": 29
           }
         ],
         "players": [
@@ -31328,7 +31328,7 @@
             "scope": "Cohort-only model award; not an NFL-wide MVP forecast"
           }
         ],
-        "champion": "SEA",
+        "champion": "ATL",
         "starPicks": [
           {
             "prospectId": "p2018-096d9eedb6",
@@ -31616,7 +31616,7 @@
             "playoff": true,
             "seed": 2,
             "conferenceChampion": true,
-            "champion": true
+            "champion": false
           },
           {
             "team": "ATL",
@@ -31627,7 +31627,7 @@
             "pointsAgainst": 301,
             "playoff": true,
             "seed": 1,
-            "conferenceChampion": true,
+            "conferenceChampion": false,
             "champion": false
           },
           {
@@ -31639,8 +31639,8 @@
             "pointsAgainst": 256,
             "playoff": true,
             "seed": 2,
-            "conferenceChampion": false,
-            "champion": false
+            "conferenceChampion": true,
+            "champion": true
           },
           {
             "team": "BUF",
@@ -31698,7 +31698,7 @@
             "pointsFor": 420,
             "pointsAgainst": 306,
             "playoff": true,
-            "seed": 5,
+            "seed": 6,
             "conferenceChampion": false,
             "champion": false
           },
@@ -31710,7 +31710,7 @@
             "pointsFor": 342,
             "pointsAgainst": 304,
             "playoff": true,
-            "seed": 6,
+            "seed": 5,
             "conferenceChampion": false,
             "champion": false
           },
@@ -34591,24 +34591,24 @@
             "awayScore": 25
           },
           {
-            "id": "2019-WC-18-NYG-DET",
+            "id": "2019-WC-18-TB-DET",
             "season": 2019,
             "week": 18,
             "type": "WC",
             "home": "DET",
-            "away": "NYG",
-            "homeScore": 35,
-            "awayScore": 28
+            "away": "TB",
+            "homeScore": 13,
+            "awayScore": 20
           },
           {
-            "id": "2019-WC-18-TB-SEA",
+            "id": "2019-WC-18-NYG-SEA",
             "season": 2019,
             "week": 18,
             "type": "WC",
             "home": "SEA",
-            "away": "TB",
-            "homeScore": 11,
-            "awayScore": 25
+            "away": "NYG",
+            "homeScore": 5,
+            "awayScore": 29
           },
           {
             "id": "2019-DIV-19-TB-ATL",
@@ -34621,34 +34621,34 @@
             "awayScore": 26
           },
           {
-            "id": "2019-DIV-19-DET-PHI",
+            "id": "2019-DIV-19-NYG-PHI",
             "season": 2019,
             "week": 19,
             "type": "DIV",
             "home": "PHI",
-            "away": "DET",
-            "homeScore": 14,
-            "awayScore": 17
+            "away": "NYG",
+            "homeScore": 31,
+            "awayScore": 25
           },
           {
-            "id": "2019-CON-20-DET-ATL",
+            "id": "2019-CON-20-PHI-ATL",
             "season": 2019,
             "week": 20,
             "type": "CON",
             "home": "ATL",
-            "away": "DET",
-            "homeScore": 23,
-            "awayScore": 13
+            "away": "PHI",
+            "homeScore": 29,
+            "awayScore": 35
           },
           {
-            "id": "2019-SB-22-ATL-KC",
+            "id": "2019-SB-22-PHI-KC",
             "season": 2019,
             "week": 22,
             "type": "SB",
             "home": "KC",
-            "away": "ATL",
-            "homeScore": 35,
-            "awayScore": 20
+            "away": "PHI",
+            "homeScore": 12,
+            "awayScore": 18
           }
         ],
         "players": [
@@ -36710,7 +36710,7 @@
             "scope": "Cohort-only model award; not an NFL-wide MVP forecast"
           }
         ],
-        "champion": "KC",
+        "champion": "PHI",
         "starPicks": [
           {
             "prospectId": "p2018-4e8f14dad6",
@@ -36790,8 +36790,8 @@
             "pointsFor": 438,
             "pointsAgainst": 266,
             "playoff": true,
-            "seed": 1,
-            "conferenceChampion": false,
+            "seed": 2,
+            "conferenceChampion": true,
             "champion": false
           },
           {
@@ -36802,7 +36802,7 @@
             "pointsFor": 414,
             "pointsAgainst": 270,
             "playoff": true,
-            "seed": 2,
+            "seed": 1,
             "conferenceChampion": false,
             "champion": false
           },
@@ -36887,7 +36887,7 @@
             "pointsAgainst": 346,
             "playoff": true,
             "seed": 3,
-            "conferenceChampion": true,
+            "conferenceChampion": false,
             "champion": false
           },
           {
@@ -37005,8 +37005,8 @@
             "ties": 0,
             "pointsFor": 318,
             "pointsAgainst": 335,
-            "playoff": true,
-            "seed": 4,
+            "playoff": false,
+            "seed": null,
             "conferenceChampion": false,
             "champion": false
           },
@@ -37017,8 +37017,8 @@
             "ties": 0,
             "pointsFor": 348,
             "pointsAgainst": 400,
-            "playoff": false,
-            "seed": null,
+            "playoff": true,
+            "seed": 4,
             "conferenceChampion": false,
             "champion": false
           },
@@ -39705,14 +39705,14 @@
             "awayScore": 0
           },
           {
-            "id": "2020-WC-18-KC-LAC",
+            "id": "2020-WC-18-KC-HOU",
             "season": 2020,
             "week": 18,
             "type": "WC",
-            "home": "LAC",
+            "home": "HOU",
             "away": "KC",
-            "homeScore": 26,
-            "awayScore": 21
+            "homeScore": 30,
+            "awayScore": 15
           },
           {
             "id": "2020-WC-18-DEN-BUF",
@@ -39725,44 +39725,44 @@
             "awayScore": 26
           },
           {
-            "id": "2020-WC-18-JAX-PIT",
+            "id": "2020-WC-18-JAX-CLE",
             "season": 2020,
             "week": 18,
             "type": "WC",
-            "home": "PIT",
+            "home": "CLE",
             "away": "JAX",
-            "homeScore": 26,
-            "awayScore": 34
+            "homeScore": 18,
+            "awayScore": 23
           },
           {
-            "id": "2020-DIV-19-JAX-HOU",
-            "season": 2020,
-            "week": 19,
-            "type": "DIV",
-            "home": "HOU",
-            "away": "JAX",
-            "homeScore": 11,
-            "awayScore": 20
-          },
-          {
-            "id": "2020-DIV-19-BUF-LAC",
+            "id": "2020-DIV-19-JAX-LAC",
             "season": 2020,
             "week": 19,
             "type": "DIV",
             "home": "LAC",
-            "away": "BUF",
-            "homeScore": 24,
-            "awayScore": 34
+            "away": "JAX",
+            "homeScore": 15,
+            "awayScore": 25
           },
           {
-            "id": "2020-CON-20-JAX-BUF",
+            "id": "2020-DIV-19-BUF-HOU",
+            "season": 2020,
+            "week": 19,
+            "type": "DIV",
+            "home": "HOU",
+            "away": "BUF",
+            "homeScore": 24,
+            "awayScore": 21
+          },
+          {
+            "id": "2020-CON-20-JAX-HOU",
             "season": 2020,
             "week": 20,
             "type": "CON",
-            "home": "BUF",
+            "home": "HOU",
             "away": "JAX",
-            "homeScore": 29,
-            "awayScore": 14
+            "homeScore": 15,
+            "awayScore": 4
           },
           {
             "id": "2020-WC-18-SEA-PHI",
@@ -39825,14 +39825,14 @@
             "awayScore": 8
           },
           {
-            "id": "2020-SB-22-PHI-BUF",
+            "id": "2020-SB-22-PHI-HOU",
             "season": 2020,
             "week": 22,
             "type": "SB",
-            "home": "BUF",
+            "home": "HOU",
             "away": "PHI",
-            "homeScore": 19,
-            "awayScore": 20
+            "homeScore": 25,
+            "awayScore": 28
           }
         ],
         "players": [
@@ -47296,7 +47296,7 @@
             "playoff": true,
             "seed": 1,
             "conferenceChampion": true,
-            "champion": true
+            "champion": false
           },
           {
             "team": "BUF",
@@ -47343,7 +47343,7 @@
             "pointsAgainst": 373,
             "playoff": true,
             "seed": 1,
-            "conferenceChampion": true,
+            "conferenceChampion": false,
             "champion": false
           },
           {
@@ -47426,7 +47426,7 @@
             "pointsFor": 428,
             "pointsAgainst": 346,
             "playoff": true,
-            "seed": 5,
+            "seed": 6,
             "conferenceChampion": false,
             "champion": false
           },
@@ -47438,7 +47438,7 @@
             "pointsFor": 398,
             "pointsAgainst": 347,
             "playoff": true,
-            "seed": 6,
+            "seed": 5,
             "conferenceChampion": false,
             "champion": false
           },
@@ -47449,8 +47449,8 @@
             "ties": 0,
             "pointsFor": 415,
             "pointsAgainst": 355,
-            "playoff": true,
-            "seed": 7,
+            "playoff": false,
+            "seed": null,
             "conferenceChampion": false,
             "champion": false
           },
@@ -47461,10 +47461,10 @@
             "ties": 0,
             "pointsFor": 426,
             "pointsAgainst": 410,
-            "playoff": false,
-            "seed": null,
-            "conferenceChampion": false,
-            "champion": false
+            "playoff": true,
+            "seed": 7,
+            "conferenceChampion": true,
+            "champion": true
           },
           {
             "team": "LAR",
@@ -50453,74 +50453,74 @@
             "awayScore": 15
           },
           {
-            "id": "2022-WC-19-SEA-DAL",
+            "id": "2022-WC-19-TB-DAL",
             "season": 2022,
             "week": 19,
             "type": "WC",
             "home": "DAL",
-            "away": "SEA",
-            "homeScore": 42,
-            "awayScore": 9
+            "away": "TB",
+            "homeScore": 8,
+            "awayScore": 14
           },
           {
-            "id": "2022-WC-19-PHI-SF",
+            "id": "2022-WC-19-NO-SF",
             "season": 2022,
             "week": 19,
             "type": "WC",
             "home": "SF",
-            "away": "PHI",
-            "homeScore": 27,
-            "awayScore": 26
+            "away": "NO",
+            "homeScore": 24,
+            "awayScore": 6
           },
           {
-            "id": "2022-WC-19-NO-DET",
+            "id": "2022-WC-19-PHI-DET",
             "season": 2022,
             "week": 19,
             "type": "WC",
             "home": "DET",
-            "away": "NO",
-            "homeScore": 19,
-            "awayScore": 17
+            "away": "PHI",
+            "homeScore": 40,
+            "awayScore": 15
           },
           {
-            "id": "2022-DIV-20-DET-ATL",
+            "id": "2022-DIV-20-TB-ATL",
             "season": 2022,
             "week": 20,
             "type": "DIV",
             "home": "ATL",
-            "away": "DET",
-            "homeScore": 24,
-            "awayScore": 8
+            "away": "TB",
+            "homeScore": 16,
+            "awayScore": 27
           },
           {
-            "id": "2022-DIV-20-SF-DAL",
+            "id": "2022-DIV-20-DET-SF",
             "season": 2022,
             "week": 20,
             "type": "DIV",
-            "home": "DAL",
-            "away": "SF",
-            "homeScore": 15,
-            "awayScore": 8
+            "home": "SF",
+            "away": "DET",
+            "homeScore": 30,
+            "awayScore": 13
           },
           {
-            "id": "2022-CON-21-DAL-ATL",
+            "id": "2022-CON-21-TB-SF",
             "season": 2022,
             "week": 21,
             "type": "CON",
-            "home": "ATL",
-            "away": "DAL",
-            "homeScore": 30,
-            "awayScore": 25
+            "home": "SF",
+            "away": "TB",
+            "homeScore": 19,
+            "awayScore": 32
           },
           {
-            "id": "2022-SB-23-ATL-NYJ",
+            "id": "2022-SB-23-TB-NYJ",
             "season": 2022,
             "week": 23,
             "type": "SB",
             "home": "NYJ",
-            "away": "ATL",
-            "homeScore": 29,
-            "awayScore": 19
+            "away": "TB",
+            "homeScore": 26,
+            "awayScore": 33
           }
         ],
         "players": [
@@ -52582,7 +52582,7 @@
             "scope": "Cohort-only model award; not an NFL-wide MVP forecast"
           }
         ],
-        "champion": "NYJ",
+        "champion": "TB",
         "starPicks": [
           {
             "prospectId": "p2018-773db4540c",
