@@ -144,8 +144,12 @@ export function actualSeasonIsComplete(dataset: Dataset, year: number): boolean 
     });
 }
 function initialStandings(dataset: Dataset): TeamSeason[] { return dataset.teams.map(t => ({ team: t.id, wins: t.priorWins, losses: t.priorLosses, ties: t.priorTies, pointsFor: t.priorPointsFor, pointsAgainst: t.priorPointsAgainst, playoff: false, seed: null, conferenceChampion: false, champion: false })); }
-/** Future schedules replace historical standings-dependent opponents with alternate standings. */
-export function generateSchedule(year: number, dataset: Dataset, prior: TeamSeason[]): Fixture[] {
+/** Future schedules use prior simulated division standings and their tiebreaks.
+ * If prior game records are unavailable, record/point-differential ordering is an
+ * explicit fallback; the complete recorded starting-season schedule is preserved.
+ * NFL tiebreak procedures apply to both playoffs and regular-season scheduling:
+ * https://www.nfl.com/standings/tie-breaking-procedures */
+export function generateSchedule(year: number, dataset: Dataset, prior: TeamSeason[], priorGames?: SimGame[]): Fixture[] {
     if (!Number.isInteger(year) || year < 2018) throw new Error('No pre-cutoff schedule support for this season.');
     const regularGames = year >= 2021 ? 17 : 16, expectedGames = dataset.teams.length * regularGames / 2;
     const observed = dataset.games.filter(g => g.season === year && g.type === 'REG');
@@ -154,12 +158,18 @@ export function generateSchedule(year: number, dataset: Dataset, prior: TeamSeas
         dataset.teams.every(t => observed.filter(g => g.home === t.id || g.away === t.id).length === regularGames))
         return observed.map(g => ({ home: g.home, away: g.away, week: g.week }));
     const groups = new Map<string, string[]>();
+    const priorRegular = priorGames?.filter(g => g.season === year - 1 && g.type === 'REG');
     for (const conference of ['AFC', 'NFC'])
         for (const div of DIVISIONS) {
-            const teams = dataset.teams.filter(t => t.conference === conference && t.division === div).sort((a, b) => compareTeams(prior.find(t => t.team === a.id)!, prior.find(t => t.team === b.id)!));
+            const teams = dataset.teams.filter(t => t.conference === conference && t.division === div);
             if (teams.length !== 4)
                 throw new Error('Schedule requires eight four-team divisions.');
-            groups.set(`${conference}-${div}`, teams.map(t => t.id));
+            const standings = teams.map(team => prior.find(t => t.team === team.id));
+            if (standings.some(t => !t)) throw new Error('Schedule requires prior standings for every franchise.');
+            const ranked = priorRegular?.length
+                ? rankTiedTeams(standings as TeamSeason[], dataset, priorRegular, 'division')
+                : (standings as TeamSeason[]).sort((a, b) => compareTeams(a, b));
+            groups.set(`${conference}-${div}`, ranked.map(t => t.team));
         }
     const fixtures: Fixture[] = [], week = (round: number) => round < 8 ? round + 1 : round + 2;
     const add = (a: string, b: string, round: number, flip = false) => fixtures.push({ home: flip ? b : a, away: flip ? a : b, week: week(round) });
@@ -307,8 +317,8 @@ function draftImpact(players: PlayerSeason[], dataset: Dataset): Record<string, 
         result[key] -= mean;
     return result;
 }
-function playSeason(year: number, dataset: Dataset, prior: TeamSeason[], strength: Record<string, number>, players: PlayerSeason[], seed: string, model: ReturnType<typeof strengthModel>, game: GameState): SeasonResult {
-    const games: SimGame[] = generateSchedule(year, dataset, prior).map(f => scoreGame(f.home, f.away, year, f.week, 'REG', strength, seed, model));
+function playSeason(year: number, dataset: Dataset, prior: TeamSeason[], priorGames: SimGame[] | undefined, strength: Record<string, number>, players: PlayerSeason[], seed: string, model: ReturnType<typeof strengthModel>, game: GameState): SeasonResult {
+    const games: SimGame[] = generateSchedule(year, dataset, prior, priorGames).map(f => scoreGame(f.home, f.away, year, f.week, 'REG', strength, seed, model));
     const teams: TeamSeason[] = dataset.teams.map(t => ({ team: t.id, wins: 0, losses: 0, ties: 0, pointsFor: 0, pointsAgainst: 0, playoff: false, seed: null, conferenceChampion: false, champion: false })), map = new Map(teams.map(t => [t.team, t]));
     for (const g of games) {
         const h = map.get(g.home)!, a = map.get(g.away)!;
@@ -350,14 +360,16 @@ function playSeason(year: number, dataset: Dataset, prior: TeamSeason[], strengt
 function world(game: GameState, selections: Selection[], dataset: Dataset, models: RuntimeModels | undefined, index: number): SimWorld {
     const seed = `${game.seed}|ensemble|${index}`, model = strengthModel(dataset, models), background = { ...model.initial }, seasons: SeasonResult[] = [];
     let prior = initialStandings(dataset);
+    let priorGames: SimGame[] | undefined;
     for (let year = game.year; year <= game.year + 4; year++) {
         const players = cohort(selections, dataset, year, seed, models), impact = draftImpact(players, dataset), strength: Record<string, number> = {};
         // The fitted coefficient multiplies lagged realized point differential exactly once.
         for (const t of dataset.teams)
             strength[t.id] = model.coefficient * background[t.id] + normal(seed, 'background-roster', year, t.id) * model.innovation + impact[t.id];
-        const season = playSeason(year, dataset, prior, strength, players, seed, model, game);
+        const season = playSeason(year, dataset, prior, priorGames, strength, players, seed, model, game);
         seasons.push(season);
         prior = season.teams;
+        priorGames = season.games;
         for (const t of season.teams)
             background[t.team] = (t.pointsFor - t.pointsAgainst) / (t.wins + t.losses + t.ties);
     }
@@ -418,7 +430,7 @@ export function summarizeResults(game: GameState, replicates: ReplicateResult[],
             `The playable pool contains ${dataset.prospects.filter(p => p.eligibilitySource === 'combine-participant').length} recorded combine participants. The historical baseline also includes reference-only non-combine selections, so unequal prospect universes limit comparisons. Other eligible prospects and original publication timestamps are not fully reconstructed.`,
             'Future veterans, contracts, coaching, injuries, trades and draft intake are represented only through an aggregate team-strength process. Individual future roster transactions and league-wide MVP awards are not modeled.',
             'Five-year participation trajectories are sampled from the complete pre-cutoff 2013 cohort. That single cohort cannot establish independent historical calibration; conversion from snaps to team-strength points remains an assumption. Ensemble intervals measure simulation randomness, not full model uncertainty.',
-            `The ${game.year} season uses the recorded schedule when complete; otherwise a schedule is generated. Later seasons regenerate standings-dependent opponents. Week placement, home assignments and the 17th-opponent rotation are approximations. Playoff tiebreaks implement score-level criteria through net points; unavailable net touchdowns and final tie resolution remain approximations.`,
+            `The ${game.year} season uses the recorded schedule when complete; otherwise a schedule is generated. Later seasons regenerate standings-dependent opponents using prior simulated division tiebreaks. If prior game records are unavailable, the initial generated schedule falls back to record and point differential. Week placement, home assignments and the 17th-opponent rotation are approximations. Tiebreaks implement score-level criteria through net points; unavailable net touchdowns and final tie resolution remain approximations.`,
             'Scores are rounded continuous draws, with one-point scores mapped to two, rather than possession-by-possession football scores. Overtime is simplified; individual football box scores are not generated.',
             'Trade pricing uses the published Johnson chart with a one-point extension after pick224. Trade frequency is checked against a prior-year count benchmark; acceptance, team styles and composite score weights remain heuristic. Future and conditional picks are unsupported.',
             `The historical baseline uses actual final draft allocations; later real trade obligations are not reconstructed. Draft-class MVP is an illustrative award among ${game.year} prospects only. Two-way prospects use their first source-listed role for gameplay; dual-role development is not modeled.`

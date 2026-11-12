@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { actualSeasonIsComplete, divisionalMatchups, playoffSeeds, rankTiedTeams, wildcardMatchups } from '../lib/simulation';
+import { actualSeasonIsComplete, divisionalMatchups, generateSchedule, playoffSeeds, rankTiedTeams, wildcardMatchups } from '../lib/simulation';
 import type { Dataset, SimGame, TeamSeason } from '../lib/types';
 
 const dataset = JSON.parse(readFileSync('data/clean/scenario_2018.json', 'utf8')) as Dataset;
@@ -51,5 +51,22 @@ test('actual record completeness accepts the 2022 BUF-CIN cancellation and rejec
     const gameWithBadScore = invalid.games.find(g => g.season === 2022 && g.type === 'REG')!;
     gameWithBadScore.homeScore = Number.NaN;
     assert.equal(actualSeasonIsComplete(invalid, 2022), false);
+});
+
+test('next-season same-place opponents use prior division tiebreaks before point differential', () => {
+    const prior = standings(dataset.teams.map(t => t.id), 4);
+    const set = (team: string, wins: number, pointsFor = 300, pointsAgainst = 300) => Object.assign(prior.find(t => t.team === team)!, { wins, losses: 16 - wins, pointsFor, pointsAgainst });
+    set('CLE', 8, 200, 400); set('PIT', 8, 400, 200); set('BAL', 6); set('CIN', 4);
+    set('KC', 12); set('DEN', 10); set('LAC', 7); set('OAK', 5);
+    const priorGames = [game('cle-pit', 'CLE', 'PIT', 17, 10), game('pit-cle', 'PIT', 'CLE', 10, 17)].map(g => ({...g, season: 2018}));
+    const plays = (schedule: ReturnType<typeof generateSchedule>, a: string, b: string) => schedule.some(g => (g.home === a && g.away === b) || (g.home === b && g.away === a));
+    const schedule = generateSchedule(2019, dataset, prior, priorGames);
+    assert.equal(plays(schedule, 'CLE', 'KC'), true, 'Head-to-head division winner gets the first-place AFC West opponent.');
+    assert.equal(plays(schedule, 'CLE', 'DEN'), false);
+    assert.equal(plays(schedule, 'PIT', 'DEN'), true);
+    assert.deepEqual(generateSchedule(2019, dataset, prior, priorGames), schedule);
+    const reversed = priorGames.map(g => ({...g, homeScore:g.awayScore, awayScore:g.homeScore}));
+    assert.equal(plays(generateSchedule(2019, dataset, prior, reversed), 'PIT', 'KC'), true);
+    assert.deepEqual(generateSchedule(2018, dataset, prior, priorGames), generateSchedule(2018, dataset, prior), 'The complete recorded starting schedule is unchanged.');
 });
 

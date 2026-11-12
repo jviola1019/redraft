@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import {rankedScores,compareRanks,rankCorrelationSummary} from './rank_sensitivity.mjs';
+const tied=rankedScores([{name:'A',score:50.4},{name:'B',score:50.1},{name:'C',score:48}]);
+assert.deepEqual(tied.map(r=>r.sharedRank),[1,1,3]);
+assert.deepEqual(tied.map(r=>r.averageRank),[1.5,1.5,3]);
+assert.equal(compareRanks(tied,rankedScores([{name:'B',score:50.4},{name:'A',score:50.1},{name:'C',score:48}])).topPolicyChanged,false);
+assert.equal(compareRanks(tied,tied).spearmanToDefault,1);
+const reversed=rankedScores([{name:'A',score:1},{name:'B',score:2},{name:'C',score:3}]);
+const ordered=rankedScores([{name:'A',score:3},{name:'B',score:2},{name:'C',score:1}]);
+assert.equal(compareRanks(ordered,reversed).spearmanToDefault,-1);
+assert.equal(compareRanks(ordered,rankedScores([{name:'A',score:2},{name:'B',score:2},{name:'C',score:2}])).spearmanToDefault,null);
+assert.equal(compareRanks(ordered,tied).topPolicyChanged,true);
+assert.deepEqual(rankCorrelationSummary([{spearmanToDefault:null}]),{minRankCorrelation:null,rankCorrelationStatus:'undefined-no-rank-variance',undefinedRankComparisons:1});
+assert.throws(()=>compareRanks(ordered,rankedScores([{name:'A',score:3},{name:'A',score:2},{name:'C',score:1}])),/identical unique/);
+console.log('9 ranking checks passed: integer ties, shared/average ranks, set-valued leaders, undefined constant correlation.');
