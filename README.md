@@ -1,6 +1,4 @@
-> **Current status:** source recovery is complete, including a tested replacement for the missing year-contract suite. Fresh structural checks pass; full statistical release is blocked. See [current evidence](docs/release/CURRENT_RELEASE.md). Earlier recovery notices below describe the interruption.
-
-> **Recovery checkpoint:** This branch preserves critical source and season data but omits some test evidence. The original frozen checkout could not be fully recovered byte-for-byte. See [recovery status](docs/security/RECOVERY_STATUS_2026-11-12.md).
+> **Current status:** playable research alpha for 2018–2026. Source is restored, fresh structural checks pass, and hosted desktop/phone browser smoke tests pass. Full statistical release remains blocked. See [current evidence](docs/release/CURRENT_RELEASE.md).
 
 # REDRAFT — The NFL Draft Time Machine
 
@@ -40,7 +38,7 @@ The original release criteria remain unmet. Quarterback tail uncertainty, scorin
 
 Eligibility is restricted to verified/source-recorded combine participants or invitees, not every draft-eligible player. The actual historical baseline includes additional reference-only players. These unequal pools limit decision comparisons. Original publication timestamps are incomplete. Full net-touchdown tiebreaks, detailed overtime, contracts and future-pick trades are not implemented.
 
-Browser checks have a runnable test and CI job, but the local Chromium attempt was blocked by environment socket restrictions. HTTP/server tests do not certify mobile Safari, accessibility compliance or visual quality. No approved visual-regression baseline or human recognition study exists.
+[Hosted implementation checks](https://github.com/jviola1019/redraft/actions/runs/43323677851) passed, including Chromium and WebKit on desktop and iPhone-sized emulated viewports. Scouting, dialog dismissal and save/reload passed without runtime errors or horizontal overflow. Local Chromium remains blocked by environment socket restrictions. Neither emulation nor these smoke checks certify a physical iPhone, complete accessibility, the entire browser gameplay journey or visual quality. No approved visual-regression baseline or human recognition study exists.
 
 ## Reproduce checks
 

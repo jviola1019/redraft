@@ -1,0 +1,109 @@
+{
+  "runId": 43323677851,
+  "jobId": 131550601399,
+  "url": "https://github.com/jviola1019/redraft/actions/runs/43323677851/job/131550601399",
+  "commit": "091cf5f5acee31c39ace48b77b23962bde73f023",
+  "startedAt": "2026-11-12T22:51:09Z",
+  "completedAt": "2026-11-12T22:59:17Z",
+  "status": "completed",
+  "conclusion": "success",
+  "steps": [
+    {
+      "name": "Set up job",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run actions/checkout@v7",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run actions/setup-node@v7",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run pnpm/action-setup@v6",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run pnpm install --frozen-lockfile",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run pnpm exec tsc --noEmit",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run node tests/run.mjs",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run python3 tests/warehouse_test.py",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run node tests/api.integration.mjs",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run node tests/playoff-backtest.mjs",
+      "conclusion": "success"
+    },
+    {
+      "name": "Every registered class, team and fixed draft seed",
+      "conclusion": "success"
+    },
+    {
+      "name": "All-class distribution diagnostics; retain adverse findings",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run pnpm run build",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run pnpm run db:local-init",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run node tests/local-http.mjs",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run pnpm exec playwright install --with-deps chromium webkit",
+      "conclusion": "success"
+    },
+    {
+      "name": "Chromium desktop and phone viewport",
+      "conclusion": "success"
+    },
+    {
+      "name": "WebKit desktop and phone viewport",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run actions/upload-artifact@v4",
+      "conclusion": "success"
+    },
+    {
+      "name": "Post Run pnpm/action-setup@v6",
+      "conclusion": "success"
+    },
+    {
+      "name": "Post Run actions/setup-node@v7",
+      "conclusion": "success"
+    },
+    {
+      "name": "Post Run actions/checkout@v7",
+      "conclusion": "success"
+    },
+    {
+      "name": "Complete job",
+      "conclusion": "success"
+    }
+  ],
+  "artifact": {
+    "id": 13991388499,
+    "sha256": "ba4380b6e9a0b67e6e8f1e128d30e4b0618ce21fc8f4d900e5480652ef912358"
+  },
+  "scope": "Implementation and browser smoke tests; not statistical release clearance, full UI journey, or physical-iPhone testing."
+}

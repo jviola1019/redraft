@@ -1,0 +1,110 @@
+{
+  "runId": 43321787282,
+  "jobId": 131544019288,
+  "url": "https://github.com/jviola1019/redraft/actions/runs/43321787282/job/131544019288",
+  "commit": "d170418d520f815805b07ae702e634f1d05547ab",
+  "startedAt": "2026-11-12T22:38:40Z",
+  "completedAt": "2026-11-12T22:46:21Z",
+  "status": "completed",
+  "conclusion": "success",
+  "steps": [
+    {
+      "name": "Set up job",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run actions/checkout@v7",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run actions/setup-node@v7",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run pnpm/action-setup@v6",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run pnpm install --frozen-lockfile",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run pnpm exec tsc --noEmit",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run node tests/run.mjs",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run python3 tests/warehouse_test.py",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run node tests/api.integration.mjs",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run node tests/playoff-backtest.mjs",
+      "conclusion": "success"
+    },
+    {
+      "name": "Every registered class, team and fixed draft seed",
+      "conclusion": "success"
+    },
+    {
+      "name": "All-class distribution diagnostics; retain adverse findings",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run pnpm run build",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run pnpm run db:local-init",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run node tests/local-http.mjs",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run pnpm exec playwright install --with-deps chromium webkit",
+      "conclusion": "success"
+    },
+    {
+      "name": "Chromium desktop and phone viewport",
+      "conclusion": "success"
+    },
+    {
+      "name": "WebKit desktop and phone viewport",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run actions/upload-artifact@v4",
+      "conclusion": "success"
+    },
+    {
+      "name": "Post Run pnpm/action-setup@v6",
+      "conclusion": "success"
+    },
+    {
+      "name": "Post Run actions/setup-node@v7",
+      "conclusion": "success"
+    },
+    {
+      "name": "Post Run actions/checkout@v7",
+      "conclusion": "success"
+    },
+    {
+      "name": "Complete job",
+      "conclusion": "success"
+    }
+  ],
+  "artifact": {
+    "id": 13992010650,
+    "sha256": "e9cf3d79c35c18d8fe2fc19e5948ff70fd9d78505e2b881b6f0439be965eb156"
+  },
+  "scope": "Implementation tests, not statistical release clearance or physical-iPhone testing.",
+  "visualReview": "First capture set is not an approved baseline: fade-in timing and full-page fixed-element capture required test improvements."
+}

@@ -4,7 +4,7 @@
 
 The authorized source repository is https://github.com/jviola1019/redraft . Local play uses Node 24, pinned pnpm, a production build and Wrangler's local D1 emulator; exact commands are in INSTALL.md. The loopback-only development sign-in is not public authentication. Do not expose it to a network interface or treat it as multi-user account security.
 
-The current source is a research alpha, not a newly deployed or statistically cleared public release. A GitHub source ZIP is installable code and data, not a prebuilt native application. Raw downloads, dependencies and local saves are excluded. CI is provided for actual build/API/Chromium/WebKit checks; a workflow file existing is not evidence of a passing run. Preserve dated audit reports and immutable source commits. Existing Site deployment status is separate from repository delivery.
+The current source is a research alpha, not a newly deployed or statistically cleared public release. A GitHub source ZIP is installable code and data, not a prebuilt native application. Raw downloads, dependencies and local saves are excluded. Actual build/API/Chromium/WebKit checks passed in [hosted run 43323677851](https://github.com/jviola1019/redraft/actions/runs/43323677851); this does not clear failed statistical gates or certify a deployed Site. Preserve dated audit reports and immutable source commits. Existing Site deployment status is separate from repository delivery.
 
 Preserve the existing Site project identity in `.openai/hosting.json`. The restored source must be committed/pushed early and the final archive built from the exact deployed commit. Do not recreate a Site merely because transient source is absent. Deployment success is not statistical validation.
 

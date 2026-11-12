@@ -1,2 +1,7 @@
-# Verification checkpoint — 2026-11-02
-Restored remote commit9556c9f after automated workspace maintenance. TypeScript passes. Fresh tests/run.mjs:36/36 pass; warehouse_test.py:20/20 pass. Production build succeeds and emits client/server artifacts. Full API integration harness and complete browser verification remain unfinished. Raw data files are deliberately untracked and require re-download; fresh research/test_data.py has3 missing-file errors after restoration, not a verified full pass. Earlier14/14 data result is retained as historical execution evidence. Product remains a research alpha. No human recognition study has been performed.
+# Recovery status
+
+Production source, every 2018–2026 scenario and model, dependencies and install scripts are preserved in https://github.com/jviola1019/redraft . Fresh evidence is in [the current release report](docs/release/CURRENT_RELEASE.md).
+
+The original missing year-contract test was replaced, reviewed and run. Missing original report bytes remain documented in the historical recovery manifest; new runs provide fresh evidence and are not represented as recovered originals.
+
+The full release remains blocked by adverse statistical findings and incomplete historical/personnel systems. Source recovery does not clear those scientific and product requirements.

@@ -1,0 +1,22 @@
+{
+  "reviewedAt": "2026-11-12",
+  "method": "Visual inspection of the four named viewport captures after downloading and verifying the CI artifact digest.",
+  "screenshots": {
+    "webkit-desktop-draft.png": "de2206d307a60bcbe4b92dac559ad1ec131f2081751feefa3d37271e202a0963",
+    "webkit-phone-draft.png": "797608e2ab0d3020b8f674ba98b260a4f23f25b45b3149154ca6f83427c0f048",
+    "webkit-phone-profile.png": "c2bcc8f6ce1dd5b9c610669cc7158ee2465073262262706e7d8188697f770a18",
+    "chromium-desktop-profile.png": "428b03e78927f61fd33918550cdbc6ec2f5770ae96ba215264872d4f56057def"
+  },
+  "observations": [
+    "Desktop draft content is opaque after entry fade; pixel football field and guided cards render.",
+    "Phone draft header and navigation fit the viewport; prospect cards require scrolling.",
+    "Phone profile is a bottom sheet; close and draft controls fit inside viewport.",
+    "Desktop profile fits viewport; body can scroll; transient scouting toast overlays some lower content."
+  ],
+  "limitations": [
+    "No approved regression baseline",
+    "No physical iPhone test",
+    "No novice usability or full accessibility certification",
+    "No complete seven-round browser journey"
+  ]
+}

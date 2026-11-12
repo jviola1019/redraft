@@ -1,0 +1,36 @@
+{
+  "at": "2026-11-12T22:45:45.607Z",
+  "results": [
+    {
+      "engine": "chromium",
+      "viewport": "desktop",
+      "status": "passed",
+      "durationMs": 9327,
+      "checks": [
+        "new historical draft",
+        "scouting",
+        "profile dialog",
+        "keyboard dismissal",
+        "save/reload",
+        "no horizontal overflow",
+        "no browser errors"
+      ]
+    },
+    {
+      "engine": "chromium",
+      "viewport": "phone",
+      "status": "passed",
+      "durationMs": 4219,
+      "checks": [
+        "new historical draft",
+        "scouting",
+        "profile dialog",
+        "keyboard dismissal",
+        "save/reload",
+        "no horizontal overflow",
+        "no browser errors"
+      ]
+    }
+  ],
+  "limitation": "Phone viewport/device emulation is not a physical iPhone test. Screenshots require human review; no approved visual regression baseline exists."
+}

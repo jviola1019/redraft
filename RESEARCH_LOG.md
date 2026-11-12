@@ -52,3 +52,7 @@ Playwright's official emulation and browser documentation was reviewed. Phone vi
 - Every source-audited class 2018–2026 was exercised in the same all-team structural matrix; all 864 draft cases passed before final provenance refresh. These are software invariants, not forecast calibration.
 - Fresh inspection of the official 2012 snap file returned HTTP 200 but only a 154-byte CSV header. Loader-supported years cannot be equated to available observations. Receipt: `analytics/qb_2012_extension_REPORT.md`.
 - The current schedule source had a new hash after reacquisition. The fixed audit caught a stale prior-context manifest rather than silently accepting old provenance. The regeneration and final rerun are recorded in the release audit.
+
+## 2026-11-12 — hosted browser capture review
+
+Official Playwright documentation checked: https://playwright.dev/docs/screenshots and https://playwright.dev/docs/api/class-page#page-screenshot . Full-page capture represents an entire scrollable page; it is unsuitable as the sole evidence for a fixed phone dialog in its actual viewport. Inspection of run 43321787282 also caught a desktop capture during its finite CSS entry fade. The revised harness waits for finite entry animations, asserts opacity and dialog bounds/focus, then captures the viewport. This improves test evidence; it is not a claim of visual-regression or physical-device certification.

@@ -1,3 +1,5 @@
+> **Update:** production source is restored on `main`. The missing year-contract test was replaced and its 76-test suite passed. Fresh gauntlet, all-year, API, build and HTTP evidence is committed. The list below records missing *original transfer bytes*, not the current test inventory. See [current release evidence](../release/CURRENT_RELEASE.md).
+
 # Recovery checkpoint status — 2026-11-12
 
 ## Scope

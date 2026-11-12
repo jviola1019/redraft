@@ -20,7 +20,11 @@ Tested implementation: `d170418d520f815805b07ae702e634f1d05547ab`; tree `7910d02
 | Install, typecheck, build | Passed on Linux / Node 24.22.1 | Other operating systems unverified |
 | Local HTTP | Passed sign-in, API, scout and save/reload | Browser interaction not implied |
 | Dependency audit | Zero known advisories | Point-in-time audit only |
-| Browser | Chromium blocked locally before page creation | Hosted Chromium/WebKit checks pending; no physical-iPhone certification |
+| Hosted browsers | Chromium and WebKit: desktop + iPhone-sized viewport PASS | Scouting, dialog dismissal, save/reload, overflow and runtime errors; no physical-iPhone certification |
+
+Hosted [workflow 43323677851](https://github.com/jviola1019/redraft/actions/runs/43323677851) passed all implementation steps on browser-test revision `091cf5f5acee31c39ace48b77b23962bde73f023`. Runtime/model source is unchanged from the implementation above. [Retained browser receipts](../../tests/results/hosted-browser/43323677851/receipt.json) preserve the job and downloaded-artifact digest. Chromium and WebKit each passed desktop and iPhone-sized viewport checks for scouting, dialog bounds/focus, keyboard dismissal, save/reload, completed entry animations, horizontal overflow and runtime errors.
+
+Four [viewport captures were visually inspected](../../tests/results/hosted-browser/43323677851/review.json). Draft text is opaque after entry; dialog controls fit the phone viewport. The phone board requires scrolling, and transient scouting feedback overlays some lower content. This is a limited review, not an approved visual-regression baseline, physical-device test, novice usability study, complete accessibility audit or full seven-round browser journey. The first capture set had entry-timing/full-page artifacts; its original receipt and the local launch failure remain retained.
 
 ## Statistical disposition
 

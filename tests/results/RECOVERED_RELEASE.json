@@ -29,7 +29,16 @@
     "topRankChanges": 2,
     "minRankCorrelation": 0.8
   },
-  "browser": "Local Chromium launch blocked by OS socket restrictions; GitHub CI pending",
+  "browser": {
+    "local": "Chromium launch blocked by OS socket restrictions",
+    "hosted": "Chromium and WebKit desktop/phone smoke tests passed",
+    "runId": 43323677851,
+    "receipt": "tests/results/hosted-browser/43323677851/receipt.json",
+    "physicalIPhone": "unverified",
+    "visualRegressionBaseline": "not approved",
+    "testCommit": "091cf5f5acee31c39ace48b77b23962bde73f023",
+    "visualReview": "Four named viewport captures inspected; review.json records scope and limitations"
+  },
   "limitations": [
     "Unresolved predictive calibration and QB support",
     "Incomplete draft-day rosters and schemes",

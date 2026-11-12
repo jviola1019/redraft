@@ -53,4 +53,4 @@ Raw downloads, installed dependencies, local saves and credentials are excluded.
 
 After build and local database initialization, run `node tests/local-http.mjs` for real local sign-in, API, server-rendering and save/reload checks. Run `pnpm exec playwright install --with-deps chromium webkit` and `pnpm run test:browser` where browser execution is permitted. `REDRAFT_BROWSER=webkit pnpm run test:browser` checks WebKit with desktop and phone emulation. These tests do not substitute for a physical iPhone.
 
-The GitHub workflow runs software/API/build/browser checks. Its presence is not evidence that a hosted run passed. Statistical checks require separately acquired raw datasets, and their failures must remain visible.
+The GitHub workflow runs software/API/build/browser checks. [Run 43323677851](https://github.com/jviola1019/redraft/actions/runs/43323677851) passed on the implementation commit recorded in [current release evidence](docs/release/CURRENT_RELEASE.md). Statistical checks require separately acquired raw datasets, and their failures remain visible; a green implementation workflow is not scientific clearance.

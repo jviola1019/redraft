@@ -4,7 +4,7 @@
 
 The recovered 2018–2026 research-alpha implementation was freshly tested. Structural checks passed; statistical release remains blocked (33 pass, 9 fail, 7 unsupported). See [current evidence](docs/release/CURRENT_RELEASE.md) for the authoritative scope and links. Older dated entries below are historical records.
 
-This checkout is being rebuilt after the earlier transient source was unavailable. No persistent background work is implied after a session ends. Preserve the existing Site identity and checkpoint actual source early.
+The dated reconstruction entries below describe earlier checkpoints; the recovered implementation and fresh evidence are now on GitHub. No persistent background work is implied after a session ends. Preserve the existing Site identity and checkpoint actual source early.
 
 ## Freshly established
 
@@ -32,3 +32,7 @@ Recovered committed source81c6e3e after workspace maintenance removed local file
 Run:tests/results/gauntlet/2026-11-04T20-10-00-917Z-frozen-nov4-4f1691a8/REPORT.md. Structural/execution PASSED; statistical NOT PASSED(exit2); no source drift.15data,5context,20warehouse,48domain,15model,7five-year and8statistical-integrity checks passed.15APIcases/304requests passed.96drafts,192pairedreplicates,32deterministicreplays,1,920seasons and503,808regular-season games reconciled. Four256-pair distribution ensembles and four128-pair score policies executed.
 
 Remaining statistical failures are retained; do not represent this as full model validation. Cleveland scoring mean45.0457 versus observed46.2899; shutout rate0.0161 versus0.0103. Build passed and client artifact spot-check passed; browser/mobile verification blocked. New UI static rendering36cases andTypeScript passed.
+
+## 2026-11-12 — recovered release and hosted browser verification
+
+Full source and fresh evidence are on jviola1019/redraft. The all-class matrix, API, build and HTTP checks passed. Hosted workflow 43323677851 also passed strengthened Chromium/WebKit desktop/phone smoke checks; four viewport captures were inspected. Scientific status remains 33 pass / 9 fail / 7 unsupported. See the current release report and acceptance matrix before continuing; do not repeat frozen tests without a relevant change or treat a green implementation workflow as model clearance. The next substantive work remains additional valid historical outcome support, model/distribution validation, full roster/future-personnel implementation and broader end-to-end/physical-device testing.
