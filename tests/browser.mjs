@@ -12,6 +12,16 @@ const pw = await import(modulePath ? pathToFileURL(modulePath).href : 'playwrigh
 let server, browser, log = '';
 const results = [];
 const base = process.env.REDRAFT_BASE_URL || 'http://127.0.0.1:4173';
+// Wait for finite entry transitions, not the stadium's continuous animation.
+// A visible locator can still be almost transparent during a CSS fade.
+async function settledEntry(page) {
+  await page.evaluate(async () => {
+    const animations = [...document.querySelectorAll('.fade-in, .modal')]
+      .flatMap(element => element.getAnimations())
+      .filter(animation => Number.isFinite(animation.effect?.getComputedTiming().endTime));
+    await Promise.all(animations.map(animation => animation.finished.catch(() => {})));
+  });
+}
 try {
   if (process.argv.includes('--start-server')) {
     const lock = '.vinext/dev/lock.json';
@@ -59,18 +69,30 @@ try {
     await page.getByRole('button', { name: 'Review & pick', exact: true }).first().click();
     const dialog = page.getByRole('dialog');
     await dialog.waitFor();
-    await page.screenshot({ path: `${out}/${engine}-${label}-profile.png`, fullPage: true });
+    await settledEntry(page);
+    const dialogBounds = await dialog.boundingBox();
+    const viewport = page.viewportSize();
+    assert.ok(dialogBounds && viewport && dialogBounds.x >= -1 && dialogBounds.y >= -1
+      && dialogBounds.x + dialogBounds.width <= viewport.width + 1
+      && dialogBounds.y + dialogBounds.height <= viewport.height + 1, 'Dialog must fit inside the viewport');
+    assert.equal(await dialog.evaluate(element => element.contains(document.activeElement)), true, 'Dialog receives keyboard focus');
+    // Full-page capture can resize the viewport and misplace fixed bottom sheets.
+    await page.screenshot({ path: `${out}/${engine}-${label}-profile.png`, fullPage: false, animations: 'disabled' });
     await page.keyboard.press('Escape');
+    await dialog.waitFor({ state: 'detached' });
     await page.getByRole('button', { name: 'Save', exact: true }).click();
     await page.reload({ waitUntil: 'networkidle' });
     await page.getByRole('button', { name: 'Continue your saved draft' }).click();
     await page.getByRole('heading', { name: 'You’re up. Make your pick.' }).waitFor();
+    await settledEntry(page);
+    assert.equal(await page.locator('.draft-page').evaluate(element => Number(getComputedStyle(element).opacity)), 1, 'Draft content must finish fading into view');
     assert.equal(await page.getByRole('button', { name: 'Scouted', exact: true }).count() > 0, true, 'Scouting must survive reload');
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
     assert.ok(overflow <= 1, `${label} has ${overflow}px horizontal overflow`);
-    await page.screenshot({ path: `${out}/${engine}-${label}-draft.png`, fullPage: true });
+    await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }));
+    await page.screenshot({ path: `${out}/${engine}-${label}-draft.png`, fullPage: false, animations: 'disabled' });
     assert.deepEqual(errors, [], 'Browser runtime errors');
-    results.push({ engine, viewport: label, status: 'passed', durationMs: Math.round(performance.now() - started), checks: ['new historical draft', 'scouting', 'profile dialog', 'keyboard dismissal', 'save/reload', 'no horizontal overflow', 'no browser errors'] });
+    results.push({ engine, viewport: label, status: 'passed', durationMs: Math.round(performance.now() - started), checks: ['new historical draft', 'scouting', 'profile dialog inside viewport', 'dialog focus', 'keyboard dismissal', 'save/reload', 'entry animation completes', 'no horizontal overflow', 'no browser errors'] });
     await context.close();
   }
 } catch (error) {
