@@ -1,0 +1,2363 @@
+{
+  "verifiedDate": "2026-11-02",
+  "source": "https://www.neworleanssaints.com/news/nfl-releases-full-list-of-2018-combine-participants-20343293",
+  "officialCount": 336,
+  "datasetCount": 336,
+  "matched": 336,
+  "unmatched": [],
+  "matches": [
+    {
+      "officialName": "JOSH ADAMS",
+      "officialCollege": "NOTRE DAME",
+      "combineName": "Josh Adams",
+      "combineCollege": "Notre Dame",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "OLA ADENIYI",
+      "officialCollege": "TOLEDO",
+      "combineName": "Ola Adeniyi",
+      "combineCollege": "Toledo",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JORDAN AKINS",
+      "officialCollege": "CENTRAL FLORIDA",
+      "combineName": "Jordan Akins",
+      "combineCollege": "Central Florida",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JAIRE ALEXANDER",
+      "officialCollege": "LOUISVILLE",
+      "combineName": "Jaire Alexander",
+      "combineCollege": "Louisville",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "AUSTIN ALLEN",
+      "officialCollege": "ARKANSAS",
+      "combineName": "Austin Allen",
+      "combineCollege": "Arkansas",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "BRIAN ALLEN",
+      "officialCollege": "MICHIGAN ST",
+      "combineName": "Brian Allen",
+      "combineCollege": "Michigan State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JOSH ALLEN",
+      "officialCollege": "WYOMING",
+      "combineName": "Josh Allen",
+      "combineCollege": "Wyoming",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "MARCUS ALLEN",
+      "officialCollege": "PENN ST",
+      "combineName": "Marcus Allen",
+      "combineCollege": "Penn State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "MARK ANDREWS",
+      "officialCollege": "OKLAHOMA",
+      "combineName": "Mark Andrews",
+      "combineCollege": "Oklahoma",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "TROY APKE",
+      "officialCollege": "PENN ST",
+      "combineName": "Troy Apke",
+      "combineCollege": "Penn State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DORANCE ARMSTRONG",
+      "officialCollege": "KANSAS",
+      "combineName": "Dorance Armstrong",
+      "combineCollege": "Kansas",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "ADE ARUNA",
+      "officialCollege": "TULANE",
+      "combineName": "Ade Aruna",
+      "combineCollege": "Tulane",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "MARCELL ATEMAN",
+      "officialCollege": "OKLAHOMA ST",
+      "combineName": "Marcell Ateman",
+      "combineCollege": "Oklahoma State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JOHN ATKINS",
+      "officialCollege": "GEORGIA",
+      "combineName": "John Atkins",
+      "combineCollege": "Georgia",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "ANTHONY AVERETT",
+      "officialCollege": "ALABAMA",
+      "combineName": "Anthony Averett",
+      "combineCollege": "Alabama",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "GENARD AVERY",
+      "officialCollege": "MEMPHIS",
+      "combineName": "Genard Avery",
+      "combineCollege": "Memphis",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "MIKE BADGLEY",
+      "officialCollege": "MIAMI-FL",
+      "combineName": "Mike Badgley",
+      "combineCollege": "Miami (FL)",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JEROME BAKER",
+      "officialCollege": "OHIO ST",
+      "combineName": "Jerome Baker",
+      "combineCollege": "Ohio State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "KALEN BALLAGE",
+      "officialCollege": "ARIZONA ST",
+      "combineName": "Kalen Ballage",
+      "combineCollege": "Arizona State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "SAQUON BARKLEY",
+      "officialCollege": "PENN ST",
+      "combineName": "Saquon Barkley",
+      "combineCollege": "Penn State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "J T BARRETT",
+      "officialCollege": "OHIO ST",
+      "combineName": "J.T. Barrett",
+      "combineCollege": "Ohio State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JESSIE BATES",
+      "officialCollege": "WAKE FOREST",
+      "combineName": "Jessie Bates",
+      "combineCollege": "Wake Forest",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "MARCUS BAUGH",
+      "officialCollege": "OHIO ST",
+      "combineName": "Marcus Baugh",
+      "combineCollege": "Ohio State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "NICK BAWDEN",
+      "officialCollege": "SAN DIEGO ST",
+      "combineName": "Nick Bawden",
+      "combineCollege": "San Diego State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DAVIN BELLAMY",
+      "officialCollege": "GEORGIA",
+      "combineName": "Davin Bellamy",
+      "combineCollege": "Georgia",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "KURT BENKERT",
+      "officialCollege": "VIRGINIA",
+      "combineName": "Kurt Benkert",
+      "combineCollege": "Virginia",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "BRAXTON BERRIOS",
+      "officialCollege": "MIAMI-FL",
+      "combineName": "Braxton Berrios",
+      "combineCollege": "Miami (FL)",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "KEISHAWN BIERRIA",
+      "officialCollege": "WASHINGTON",
+      "combineName": "Keishawn Bierria",
+      "combineCollege": "Washington",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "QUIN BLANDING",
+      "officialCollege": "VIRGINIA",
+      "combineName": "Quin Blanding",
+      "combineCollege": "Virginia",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DAVE BRIGHT",
+      "officialCollege": "STANFORD",
+      "combineName": "David Bright",
+      "combineCollege": "Stanford",
+      "method": "audited_alias_and_school"
+    },
+    {
+      "officialName": "DREW BROWN",
+      "officialCollege": "NEBRASKA",
+      "combineName": "Drew Brown",
+      "combineCollege": "Nebraska",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DREW BROWN",
+      "officialCollege": "VIRGINIA",
+      "combineName": "Andrew Brown",
+      "combineCollege": "Virginia",
+      "method": "audited_alias_and_school"
+    },
+    {
+      "officialName": "ORLANDO BROWN",
+      "officialCollege": "OKLAHOMA",
+      "combineName": "Orlando Brown",
+      "combineCollege": "Oklahoma",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "TONY BROWN",
+      "officialCollege": "ALABAMA",
+      "combineName": "Tony Brown",
+      "combineCollege": "Alabama",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "TAVEN BRYAN",
+      "officialCollege": "FLORIDA",
+      "combineName": "Taven Bryan",
+      "combineCollege": "Florida",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "OREN BURKS",
+      "officialCollege": "VANDERBILT",
+      "combineName": "Oren Burks",
+      "combineCollege": "Vanderbilt",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DEONTAY BURNETT",
+      "officialCollege": "SOUTHERN CALIFORNIA",
+      "combineName": "Deontay Burnett",
+      "combineCollege": "USC",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JASON CABINDA",
+      "officialCollege": "PENN ST",
+      "combineName": "Jason Cabinda",
+      "combineCollege": "Penn State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DEON CAIN",
+      "officialCollege": "CLEMSON",
+      "combineName": "Deon Cain",
+      "combineCollege": "Clemson",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "ANTONIO CALLAWAY",
+      "officialCollege": "FLORIDA",
+      "combineName": "Antonio Callaway",
+      "combineCollege": "Florida",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "CHRIS CAMPBELL",
+      "officialCollege": "PENN ST",
+      "combineName": "Chris Campbell",
+      "combineCollege": "Penn State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DYLAN CANTRELL",
+      "officialCollege": "TEXAS TECH",
+      "combineName": "Dylan Cantrell",
+      "combineCollege": "Texas Tech",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "ALEX CAPPA",
+      "officialCollege": "HUMBOLDT ST",
+      "combineName": "Alex Cappa",
+      "combineCollege": "Humboldt State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "TANNER CAREW",
+      "officialCollege": "OREGON",
+      "combineName": "Tanner Carew",
+      "combineCollege": "Oregon",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DANIEL CARLSON",
+      "officialCollege": "AUBURN",
+      "combineName": "Daniel Carlson",
+      "combineCollege": "Auburn",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DARREN CARRINGTON",
+      "officialCollege": "UTAH",
+      "combineName": "Darren Carrington II",
+      "combineCollege": "Utah",
+      "method": "audited_alias_and_school"
+    },
+    {
+      "officialName": "LORENZO CARTER",
+      "officialCollege": "GEORGIA",
+      "combineName": "Lorenzo Carter",
+      "combineCollege": "Georgia",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "ANDRE CHACHERE",
+      "officialCollege": "SAN JOSE ST",
+      "combineName": "Andre Chachere",
+      "combineCollege": "San Jose State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "SEAN CHANDLER",
+      "officialCollege": "TEMPLE",
+      "combineName": "Sean Chandler",
+      "combineCollege": "Temple",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "D J CHARK",
+      "officialCollege": "LOUISIANA ST",
+      "combineName": "D.J. Chark",
+      "combineCollege": "LSU",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "GERON CHRISTIAN",
+      "officialCollege": "LOUISVILLE",
+      "combineName": "Geron Christian",
+      "combineCollege": "Louisville",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "BRADLEY CHUBB",
+      "officialCollege": "NORTH CAROLINA ST",
+      "combineName": "Bradley Chubb",
+      "combineCollege": "North Carolina State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "NICK CHUBB",
+      "officialCollege": "GEORGIA",
+      "combineName": "Nick Chubb",
+      "combineCollege": "Georgia",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JACK CICHY",
+      "officialCollege": "WISCONSIN",
+      "combineName": "Jack Cichy",
+      "combineCollege": "Wisconsin",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "WILL CLAPP",
+      "officialCollege": "LOUISIANA ST",
+      "combineName": "Will Clapp",
+      "combineCollege": "LSU",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "SIMMIE COBBS",
+      "officialCollege": "INDIANA",
+      "combineName": "Simmie Cobbs",
+      "combineCollege": "Indiana",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "MASON COLE",
+      "officialCollege": "MICHIGAN",
+      "combineName": "Mason Cole",
+      "combineCollege": "Michigan",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "LAVON COLEMAN",
+      "officialCollege": "WASHINGTON",
+      "combineName": "Lavon Coleman",
+      "combineCollege": "Washington",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "TYLER CONKLIN",
+      "officialCollege": "CENTRAL MICHIGAN",
+      "combineName": "Tyler Conklin",
+      "combineCollege": "Central Michigan",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "AUSTIN CORBETT",
+      "officialCollege": "NEVADA",
+      "combineName": "Austin Corbett",
+      "combineCollege": "Nevada",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "KEKE COUTEE",
+      "officialCollege": "TEXAS TECH",
+      "combineName": "Keke Coutee",
+      "combineCollege": "Texas Tech",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "CHRIS COVINGTON",
+      "officialCollege": "INDIANA",
+      "combineName": "Chris Covington",
+      "combineCollege": "Indiana",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JUSTIN CRAWFORD",
+      "officialCollege": "WEST VIRGINIA",
+      "combineName": "Justin Crawford",
+      "combineCollege": "West Virginia",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "TYRELL CROSBY",
+      "officialCollege": "OREGON",
+      "combineName": "Tyrell Crosby",
+      "combineCollege": "Oregon",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DANE CRUIKSHANK",
+      "officialCollege": "ARIZONA",
+      "combineName": "Dane Cruikshank",
+      "combineCollege": "Arizona",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "TREVOR DANIEL",
+      "officialCollege": "TENNESSEE",
+      "combineName": "Trevor Daniel",
+      "combineCollege": "Tennessee",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JAMES DANIELS",
+      "officialCollege": "IOWA",
+      "combineName": "James Daniels",
+      "combineCollege": "Iowa",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "SAM DARNOLD",
+      "officialCollege": "SOUTHERN CALIFORNIA",
+      "combineName": "Sam Darnold",
+      "combineCollege": "USC",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "MARCUS DAVENPORT",
+      "officialCollege": "UTSA",
+      "combineName": "Marcus Davenport",
+      "combineCollege": "Texas-San Antonio",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JOSEPH DAVIDSON",
+      "officialCollege": "BOWLING GREEN",
+      "combineName": "Joseph Davidson",
+      "combineCollege": "Bowling Green",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "CARLTON DAVIS",
+      "officialCollege": "AUBURN",
+      "combineName": "Carlton Davis",
+      "combineCollege": "Auburn",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DUKE DAWSON",
+      "officialCollege": "FLORIDA",
+      "combineName": "Duke Dawson",
+      "combineCollege": "Florida",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DEE DELANEY",
+      "officialCollege": "MIAMI-FL",
+      "combineName": "Dee Delaney",
+      "combineCollege": "Miami (FL)",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "NICK DELUCA",
+      "officialCollege": "NORTH DAKOTA ST",
+      "combineName": "Nick Deluca",
+      "combineCollege": "North Dakota State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JAMIL DEMBY",
+      "officialCollege": "MAINE",
+      "combineName": "Jamil Demby",
+      "combineCollege": "Maine",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "MATT DICKERSON",
+      "officialCollege": "UCLA",
+      "combineName": "Matt Dickerson",
+      "combineCollege": "UCLA",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "MICHAEL DICKSON",
+      "officialCollege": "TEXAS",
+      "combineName": "Michael Dickson",
+      "combineCollege": "Texas",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "WILL DISSLY",
+      "officialCollege": "WASHINGTON",
+      "combineName": "Will Dissly",
+      "combineCollege": "Washington",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "GARRET DOOLEY",
+      "officialCollege": "WISCONSIN",
+      "combineName": "Garret Dooley",
+      "combineCollege": "Wisconsin",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "CHASE EDMONDS",
+      "officialCollege": "FORDHAM",
+      "combineName": "Chase Edmonds",
+      "combineCollege": "Fordham",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "TERRELL EDMUNDS",
+      "officialCollege": "VIRGINIA TECH",
+      "combineName": "Terrell Edmunds",
+      "combineCollege": "Virginia Tech",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "TREMAINE EDMUNDS",
+      "officialCollege": "VIRGINIA TECH",
+      "combineName": "Tremaine Edmunds",
+      "combineCollege": "Virginia Tech",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DUKE EJIOFOR",
+      "officialCollege": "WAKE FOREST",
+      "combineName": "Duke Ejiofor",
+      "combineCollege": "Wake Forest",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DESHON ELLIOTT",
+      "officialCollege": "TEXAS",
+      "combineName": "Deshon Elliott",
+      "combineCollege": "Texas",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DONNIE ERNSBERGER",
+      "officialCollege": "WESTERN MICHIGAN",
+      "combineName": "Donnie Ernsberger",
+      "combineCollege": "Western Michigan",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DANNY ETLING",
+      "officialCollege": "LOUISIANA ST",
+      "combineName": "Danny Etling",
+      "combineCollege": "LSU",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "RASHAAN EVANS",
+      "officialCollege": "ALABAMA",
+      "combineName": "Rashaan Evans",
+      "combineCollege": "Alabama",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "BRANDON FACYSON",
+      "officialCollege": "VIRGINIA TECH",
+      "combineName": "Brandon Facyson",
+      "combineCollege": "Virginia Tech",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "LUKE FALK",
+      "officialCollege": "WASHINGTON ST",
+      "combineName": "Luke Falk",
+      "combineCollege": "Washington State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "RASHARD FANT",
+      "officialCollege": "INDIANA",
+      "combineName": "Rashard Fant",
+      "combineCollege": "Indiana",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "FOLEY FATUKASI",
+      "officialCollege": "CONNECTICUT",
+      "combineName": "Foley Fatukasi",
+      "combineCollege": "Connecticut",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "RILEY FERGUSON",
+      "officialCollege": "MEMPHIS",
+      "combineName": "Riley Ferguson",
+      "combineCollege": "Memphis",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "KYLIE FITTS",
+      "officialCollege": "UTAH",
+      "combineName": "Kylie Fitts",
+      "combineCollege": "Utah",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "MINKAH FITZPATRICK",
+      "officialCollege": "ALABAMA",
+      "combineName": "Minkah Fitzpatrick",
+      "combineCollege": "Alabama",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DIMITRI FLOWERS",
+      "officialCollege": "OKLAHOMA",
+      "combineName": "Dimitri Flowers",
+      "combineCollege": "Oklahoma",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "QUINTON FLOWERS",
+      "officialCollege": "SOUTH FLORIDA",
+      "combineName": "Quinton Flowers",
+      "combineCollege": "South Florida",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "TRE FLOWERS",
+      "officialCollege": "OKLAHOMA ST",
+      "combineName": "Tre Flowers",
+      "combineCollege": "Oklahoma State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "ROBERT FOSTER",
+      "officialCollege": "ALABAMA",
+      "combineName": "Robert Foster",
+      "combineCollege": "Alabama",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JARVION FRANKLIN",
+      "officialCollege": "WESTERN MICHIGAN",
+      "combineName": "Jarvion Franklin",
+      "combineCollege": "West. Michigan",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JOHN FRANKLIN-MYERS",
+      "officialCollege": "STEPHEN F AUSTIN",
+      "combineName": "John Franklin-Myers",
+      "combineCollege": "Stephen F. Austin",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JOSHUA FRAZIER",
+      "officialCollege": "ALABAMA",
+      "combineName": "Joshua Frazier",
+      "combineCollege": "Alabama",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "ROYCE FREEMAN",
+      "officialCollege": "OREGON",
+      "combineName": "Royce Freeman",
+      "combineCollege": "Oregon",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "TROY FUMAGALLI",
+      "officialCollege": "WISCONSIN",
+      "combineName": "Troy Fumagalli",
+      "combineCollege": "Wisconsin",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "MICHAEL GALLUP",
+      "officialCollege": "COLORADO ST",
+      "combineName": "Michael Gallup",
+      "combineCollege": "Colorado State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "NICK GATES",
+      "officialCollege": "NEBRASKA",
+      "combineName": "Nick Gates",
+      "combineCollege": "Nebraska",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "RASHAAN GAULDEN",
+      "officialCollege": "TENNESSEE",
+      "combineName": "Rashaan Gaulden",
+      "combineCollege": "Tennessee",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "MIKE GESICKI",
+      "officialCollege": "PENN ST",
+      "combineName": "Mike Gesicki",
+      "combineCollege": "Penn State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DALLAS GOEDERT",
+      "officialCollege": "SOUTH DAKOTA ST",
+      "combineName": "Dallas Goedert",
+      "combineCollege": "South Dakota State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "COLBY GOSSETT",
+      "officialCollege": "APPALACHIAN ST",
+      "combineName": "Colby Gossett",
+      "combineCollege": "Appalachian State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DAVON GRAYSON",
+      "officialCollege": "EAST CAROLINA",
+      "combineName": "Davon Grayson",
+      "combineCollege": "East Carolina",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "RASHEEM GREEN",
+      "officialCollege": "SOUTHERN CALIFORNIA",
+      "combineName": "Rasheem Green",
+      "combineCollege": "USC",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "SHAQ GRIFFIN",
+      "officialCollege": "CENTRAL FLORIDA",
+      "combineName": "Shaquem Griffin",
+      "combineCollege": "Central Florida",
+      "method": "audited_alias_and_school"
+    },
+    {
+      "officialName": "DERRIUS GUICE",
+      "officialCollege": "LOUISIANA ST",
+      "combineName": "Derrius Guice",
+      "combineCollege": "LSU",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "GRANT HALEY",
+      "officialCollege": "PENN ST",
+      "combineName": "Grant Haley",
+      "combineCollege": "Penn State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DAESEAN HAMILTON",
+      "officialCollege": "PENN ST",
+      "combineName": "Daesean Hamilton",
+      "combineCollege": "Penn State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "SHAUN DION HAMILTON",
+      "officialCollege": "ALABAMA",
+      "combineName": "Shaun dion Hamilton",
+      "combineCollege": "Alabama",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DA'SHAWN HAND",
+      "officialCollege": "ALABAMA",
+      "combineName": "Dashawn Hand",
+      "combineCollege": "Alabama",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DAVONTAE HARRIS",
+      "officialCollege": "ILLINOIS ST",
+      "combineName": "Davontae Harris",
+      "combineCollege": "Illinois State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "MARCELL HARRIS",
+      "officialCollege": "FLORIDA",
+      "combineName": "Marcell Harris",
+      "combineCollege": "Florida",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DES HARRISON",
+      "officialCollege": "WEST GEORGIA",
+      "combineName": "Desmond Harrison",
+      "combineCollege": "West Georgia",
+      "method": "audited_alias_and_school"
+    },
+    {
+      "officialName": "RONNIE HARRISON",
+      "officialCollege": "ALABAMA",
+      "combineName": "Ronnie Harrison",
+      "combineCollege": "Alabama",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "MARQUIS HAYNES",
+      "officialCollege": "MISSISSIPPI",
+      "combineName": "Marquis Haynes",
+      "combineCollege": "Mississippi",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "TAYLOR HEARN",
+      "officialCollege": "CLEMSON",
+      "combineName": "Taylor Hearn",
+      "combineCollege": "Clemson",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JAMES HEARNS",
+      "officialCollege": "LOUISVILLE",
+      "combineName": "James Hearns",
+      "combineCollege": "Louisville",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "QUADREE HENDERSON",
+      "officialCollege": "PITTSBURGH",
+      "combineName": "Quadree Henderson",
+      "combineCollege": "Pittsburgh",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "ZAY HENDERSON",
+      "officialCollege": "TEXAS A&M",
+      "combineName": "Zaycoven Henderson",
+      "combineCollege": "Texas A&M",
+      "method": "audited_alias_and_school"
+    },
+    {
+      "officialName": "WILL HERNANDEZ",
+      "officialCollege": "UTEP",
+      "combineName": "Will Hernandez",
+      "combineCollege": "Texas-El Paso",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "CHRIS HERNDON",
+      "officialCollege": "MIAMI-FL",
+      "combineName": "Chris Herndon",
+      "combineCollege": "Miami (FL)",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "KYLE HICKS",
+      "officialCollege": "TEXAS CHRISTIAN",
+      "combineName": "Kyle Hicks",
+      "combineCollege": "TCU",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "B J HILL",
+      "officialCollege": "NORTH CAROLINA ST",
+      "combineName": "B.J. Hill",
+      "combineCollege": "North Carolina State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "HOLTON HILL",
+      "officialCollege": "TEXAS",
+      "combineName": "Holton Hill",
+      "combineCollege": "Texas",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "NYHEIM HINES",
+      "officialCollege": "NORTH CAROLINA ST",
+      "combineName": "Nyheim Hines",
+      "combineCollege": "North Carolina State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JEFF HOLLAND",
+      "officialCollege": "AUBURN",
+      "combineName": "Jeff Holland",
+      "combineCollege": "Auburn",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JALYN HOLMES",
+      "officialCollege": "OHIO ST",
+      "combineName": "Jalyn Holmes",
+      "combineCollege": "Ohio State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "SAM HUBBARD",
+      "officialCollege": "OHIO ST",
+      "combineName": "Sam Hubbard",
+      "combineCollege": "Ohio State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "MIKE HUGHES",
+      "officialCollege": "CENTRAL FLORIDA",
+      "combineName": "Mike Hughes",
+      "combineCollege": "Central Florida",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "HAYDEN HURST",
+      "officialCollege": "SOUTH CAROLINA",
+      "combineName": "Hayden Hurst",
+      "combineCollege": "South Carolina",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "MO HURST",
+      "officialCollege": "MICHIGAN",
+      "combineName": "Maurice Hurst",
+      "combineCollege": "Michigan",
+      "method": "audited_alias_and_school"
+    },
+    {
+      "officialName": "GODWIN IGWEBUIKE",
+      "officialCollege": "NORTHWESTERN",
+      "combineName": "Godwin Igwebuike",
+      "combineCollege": "Northwestern",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JOEL IYIEGBUNIWE",
+      "officialCollege": "WESTERN KENTUCKY",
+      "combineName": "Joel Iyiegbuniwe",
+      "combineCollege": "Western Kentucky",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "RYAN IZZO",
+      "officialCollege": "FLORIDA ST",
+      "combineName": "Ryan Izzo",
+      "combineCollege": "Florida State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DARIUS JACKSON",
+      "officialCollege": "JACKSONVILLE ST-AL",
+      "combineName": "Darius Jackson",
+      "combineCollege": "Jacksonville State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DONTE JACKSON",
+      "officialCollege": "LOUISIANA ST",
+      "combineName": "Donte Jackson",
+      "combineCollege": "LSU",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "J C JACKSON",
+      "officialCollege": "MARYLAND",
+      "combineName": "J.C. Jackson",
+      "combineCollege": "Maryland",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JOSH JACKSON",
+      "officialCollege": "IOWA",
+      "combineName": "Josh Jackson",
+      "combineCollege": "Iowa",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JUSTIN JACKSON",
+      "officialCollege": "NORTHWESTERN",
+      "combineName": "Justin Jackson",
+      "combineCollege": "Northwestern",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "LAMAR JACKSON",
+      "officialCollege": "LOUISVILLE",
+      "combineName": "Lamar Jackson",
+      "combineCollege": "Louisville",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "LEON JACOBS",
+      "officialCollege": "WISCONSIN",
+      "combineName": "Leon Jacobs",
+      "combineCollege": "Wisconsin",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "NATRELL JAMERSON",
+      "officialCollege": "WISCONSIN",
+      "combineName": "Natrell Jamerson",
+      "combineCollege": "Wisconsin",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DERWIN JAMES",
+      "officialCollege": "FLORIDA ST",
+      "combineName": "Derwin James",
+      "combineCollege": "Florida State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "RICHIE JAMES",
+      "officialCollege": "MIDDLE TENNESSEE ST",
+      "combineName": "Richie James",
+      "combineCollege": "Middle Tennessee State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "MALIK JEFFERSON",
+      "officialCollege": "TEXAS",
+      "combineName": "Malik Jefferson",
+      "combineCollege": "Texas",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JOSEY JEWELL",
+      "officialCollege": "IOWA",
+      "combineName": "Josey Jewell",
+      "combineCollege": "Iowa",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DANNY JOHNSON",
+      "officialCollege": "SOUTHERN A&M",
+      "combineName": "Danny Johnson",
+      "combineCollege": "Southern",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "KERRYON JOHNSON",
+      "officialCollege": "AUBURN",
+      "combineName": "Kerryon Johnson",
+      "combineCollege": "Auburn",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "TARON JOHNSON",
+      "officialCollege": "WEBER ST",
+      "combineName": "Taron Johnson",
+      "combineCollege": "Weber State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "CHRIS JONES",
+      "officialCollege": "NEBRASKA",
+      "combineName": "Chris Jones",
+      "combineCollege": "Nebraska",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JAMARCO JONES",
+      "officialCollege": "OHIO ST",
+      "combineName": "Jamarco Jones",
+      "combineCollege": "Ohio State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JUSTIN JONES",
+      "officialCollege": "NORTH CAROLINA ST",
+      "combineName": "Justin Jones",
+      "combineCollege": "North Carolina State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "RONALD JONES",
+      "officialCollege": "SOUTHERN CALIFORNIA",
+      "combineName": "Ronald Jones",
+      "combineCollege": "USC",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "SAM JONES",
+      "officialCollege": "ARIZONA ST",
+      "combineName": "Sam Jones",
+      "combineCollege": "Arizona State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JARYD JONES-SMITH",
+      "officialCollege": "PITTSBURGH",
+      "combineName": "Jaryd Jones-Smith",
+      "combineCollege": "Pittsburgh",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "MICHAEL JOSEPH",
+      "officialCollege": "DUBUQUE",
+      "combineName": "Michael Joseph",
+      "combineCollege": "Dubuque",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "PETER KALAMBAYI",
+      "officialCollege": "STANFORD",
+      "combineName": "Peter Kalambayi",
+      "combineCollege": "Stanford",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JOSHUA KALU",
+      "officialCollege": "NEBRASKA",
+      "combineName": "Joshua Kalu",
+      "combineCollege": "Nebraska",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JOHN KELLY",
+      "officialCollege": "TENNESSEE",
+      "combineName": "John Kelly",
+      "combineCollege": "Tennessee",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "KAM KELLY",
+      "officialCollege": "SAN DIEGO ST",
+      "combineName": "Kameron Kelly",
+      "combineCollege": "San Diego State",
+      "method": "audited_alias_and_school"
+    },
+    {
+      "officialName": "ARDEN KEY",
+      "officialCollege": "LOUISIANA ST",
+      "combineName": "Arden Key",
+      "combineCollege": "LSU",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JAMARCUS KING",
+      "officialCollege": "SOUTH CAROLINA",
+      "combineName": "Jamarcus King",
+      "combineCollege": "South Carolina",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "CHRISTIAN KIRK",
+      "officialCollege": "TEXAS A&M",
+      "combineName": "Christian Kirk",
+      "combineCollege": "Texas A&M",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "MICAH KISER",
+      "officialCollege": "VIRGINIA",
+      "combineName": "Micah Kiser",
+      "combineCollege": "Virginia",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "CHRIS LACY",
+      "officialCollege": "OKLAHOMA ST",
+      "combineName": "Chris Lacy",
+      "combineCollege": "Oklahoma State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "HAROLD LANDRY",
+      "officialCollege": "BOSTON COL",
+      "combineName": "Harold Landry",
+      "combineCollege": "Boston Col.",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JORDAN LASLEY",
+      "officialCollege": "UCLA",
+      "combineName": "Jordan Lasley",
+      "combineCollege": "UCLA",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "KYLE LAULETTA",
+      "officialCollege": "RICHMOND",
+      "combineName": "Kyle Lauletta",
+      "combineCollege": "Richmond",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "ALLEN LAZARD",
+      "officialCollege": "IOWA ST",
+      "combineName": "Allen Lazard",
+      "combineCollege": "Iowa State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "TANNER LEE",
+      "officialCollege": "NEBRASKA",
+      "combineName": "Tanner Lee",
+      "combineCollege": "Nebraska",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DARIUS LEONARD",
+      "officialCollege": "SOUTH CAROLINA ST",
+      "combineName": "Darius Leonard",
+      "combineCollege": "South Carolina State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "RICK LEONARD",
+      "officialCollege": "FLORIDA ST",
+      "combineName": "Rick Leonard",
+      "combineCollege": "Florida State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "TYQUAN LEWIS",
+      "officialCollege": "OHIO ST",
+      "combineName": "Tyquan Lewis",
+      "combineCollege": "Ohio State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "CHASE LITTON",
+      "officialCollege": "MARSHALL",
+      "combineName": "Chase Litton",
+      "combineCollege": "Marshall",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JAMES LOONEY",
+      "officialCollege": "CALIFORNIA",
+      "combineName": "James Looney",
+      "combineCollege": "California",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "LOWELL LOTULELEI",
+      "officialCollege": "UTAH",
+      "combineName": "Lowell Lotulelei",
+      "combineCollege": "Utah",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "AVONTE MADDOX",
+      "officialCollege": "PITTSBURGH",
+      "combineName": "Avonte Maddox",
+      "combineCollege": "Pittsburgh",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "COLE MADISON",
+      "officialCollege": "WASHINGTON ST",
+      "combineName": "Cole Madison",
+      "combineCollege": "Washington State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "K J MALONE",
+      "officialCollege": "LOUISIANA ST",
+      "combineName": "K.J. Malone",
+      "combineCollege": "LSU",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "TJ MARTIN",
+      "officialCollege": "WASHINGTON ST",
+      "combineName": "Tavares Martin",
+      "combineCollege": "Washington State",
+      "method": "audited_alias_and_school"
+    },
+    {
+      "officialName": "HERCULES MATA'AFA",
+      "officialCollege": "WASHINGTON ST",
+      "combineName": "Hercules Mata'afa",
+      "combineCollege": "Washington State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "BAKER MAYFIELD",
+      "officialCollege": "OKLAHOMA",
+      "combineName": "Baker Mayfield",
+      "combineCollege": "Oklahoma",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "RAY-RAY MCCLOUD",
+      "officialCollege": "CLEMSON",
+      "combineName": "Ray-ray McCloud",
+      "combineCollege": "Clemson",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "MIKE MCCRAY",
+      "officialCollege": "MICHIGAN",
+      "combineName": "Mike McCray",
+      "combineCollege": "Michigan",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "K C MCDERMOTT",
+      "officialCollege": "MIAMI-FL",
+      "combineName": "Kc McDermott",
+      "combineCollege": "Miami (FL)",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "TARVARUS MCFADDEN",
+      "officialCollege": "FLORIDA ST",
+      "combineName": "Tarvarus McFadden",
+      "combineCollege": "Florida State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "MIKE MCGLINCHEY",
+      "officialCollege": "NOTRE DAME",
+      "combineName": "Mike McGlinchey",
+      "combineCollege": "Notre Dame",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "R J MCINTOSH",
+      "officialCollege": "MIAMI-FL",
+      "combineName": "R.J. McIntosh",
+      "combineCollege": "Miami (FL)",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "KAHLIL MCKENZIE",
+      "officialCollege": "TENNESSEE",
+      "combineName": "Kahlil McKenzie",
+      "combineCollege": "Tennessee",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "QUENTON MEEKS",
+      "officialCollege": "STANFORD",
+      "combineName": "Quenton Meeks",
+      "combineCollege": "Stanford",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "SONY MICHEL",
+      "officialCollege": "GEORGIA",
+      "combineName": "Sony Michel",
+      "combineCollege": "Georgia",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "ANTHONY MILLER",
+      "officialCollege": "MEMPHIS",
+      "combineName": "Anthony Miller",
+      "combineCollege": "Memphis",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "KOLTON MILLER",
+      "officialCollege": "UCLA",
+      "combineName": "Kolton Miller",
+      "combineCollege": "UCLA",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "STEVEN MITCHELL",
+      "officialCollege": "SOUTHERN CALIFORNIA",
+      "combineName": "Steven Mitchell",
+      "combineCollege": "USC",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "D J MOORE",
+      "officialCollege": "MARYLAND",
+      "combineName": "D.J. Moore",
+      "combineCollege": "Maryland",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "J'MON MOORE",
+      "officialCollege": "MISSOURI",
+      "combineName": "Jmon Moore",
+      "combineCollege": "Missouri",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "KAM MOORE",
+      "officialCollege": "BOSTON COL",
+      "combineName": "Kamrin Moore",
+      "combineCollege": "Boston Col.",
+      "method": "audited_alias_and_school"
+    },
+    {
+      "officialName": "SKAI MOORE",
+      "officialCollege": "SOUTH CAROLINA",
+      "combineName": "Skai Moore",
+      "combineCollege": "South Carolina",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "RYAN NALL",
+      "officialCollege": "OREGON ST",
+      "combineName": "Ryan Nall",
+      "combineCollege": "Oregon State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "SIRAN NEAL",
+      "officialCollege": "JACKSONVILLE ST-AL",
+      "combineName": "Siran Neal",
+      "combineCollege": "Jacksonville State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "NICK NELSON",
+      "officialCollege": "WISCONSIN",
+      "combineName": "Nick Nelson",
+      "combineCollege": "Wisconsin",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "QUENTON NELSON",
+      "officialCollege": "NOTRE DAME",
+      "combineName": "Quenton Nelson",
+      "combineCollege": "Notre Dame",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "BILAL NICHOLS",
+      "officialCollege": "DELAWARE",
+      "combineName": "Bilal Nichols",
+      "combineCollege": "Delaware",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "PARRY NICKERSON",
+      "officialCollege": "TULANE",
+      "combineName": "Parry Nickerson",
+      "combineCollege": "Tulane",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DERRICK NNADI",
+      "officialCollege": "FLORIDA ST",
+      "combineName": "Derrick Nnadi",
+      "combineCollege": "Florida State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "KENDRICK NORTON",
+      "officialCollege": "MIAMI-FL",
+      "combineName": "Kendrick Norton",
+      "combineCollege": "Miami (FL)",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JOE NOTEBOOM",
+      "officialCollege": "TEXAS CHRISTIAN",
+      "combineName": "Joseph Noteboom",
+      "combineCollege": "TCU",
+      "method": "audited_alias_and_school"
+    },
+    {
+      "officialName": "CHENNA NWOSU",
+      "officialCollege": "SOUTHERN CALIFORNIA",
+      "combineName": "Uchenna Nwosu",
+      "combineCollege": "USC",
+      "method": "audited_alias_and_school"
+    },
+    {
+      "officialName": "DORIAN O'DANIEL",
+      "officialCollege": "CLEMSON",
+      "combineName": "Dorian O'daniel",
+      "combineCollege": "Clemson",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "CHUKS OKORAFOR",
+      "officialCollege": "WESTERN MICHIGAN",
+      "combineName": "Chukwuma Okorafor",
+      "combineCollege": "West. Michigan",
+      "method": "audited_alias_and_school"
+    },
+    {
+      "officialName": "OBO OKORONKWO",
+      "officialCollege": "OKLAHOMA",
+      "combineName": "Ogbonnia Okoronkwo",
+      "combineCollege": "Oklahoma",
+      "method": "audited_alias_and_school"
+    },
+    {
+      "officialName": "ISAIAH OLIVER",
+      "officialCollege": "COLORADO",
+      "combineName": "Isaiah Oliver",
+      "combineCollege": "Colorado",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "BRIAN O'NEILL",
+      "officialCollege": "PITTSBURGH",
+      "combineName": "Brian O'neill",
+      "combineCollege": "Pittsburgh",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "BRANDON PARKER",
+      "officialCollege": "NORTH CAROLINA A&T ST",
+      "combineName": "Brandon Parker",
+      "combineCollege": "North Carolina A&T",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "TIMON PARRIS",
+      "officialCollege": "STONY BROOK",
+      "combineName": "Timon Parris",
+      "combineCollege": "Stony Brook",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DA'RON PAYNE",
+      "officialCollege": "ALABAMA",
+      "combineName": "Daron Payne",
+      "combineCollege": "Alabama",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "RASHAAD PENNY",
+      "officialCollege": "SAN DIEGO ST",
+      "combineName": "Rashaad Penny",
+      "combineCollege": "San Diego State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DANTE PETTIS",
+      "officialCollege": "WASHINGTON",
+      "combineName": "Dante Pettis",
+      "combineCollege": "Washington",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "KAMRYN PETTWAY",
+      "officialCollege": "AUBURN",
+      "combineName": "Kamryn Pettway",
+      "combineCollege": "Auburn",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "CAM PHILLIPS",
+      "officialCollege": "VIRGINIA TECH",
+      "combineName": "Cam Phillips",
+      "combineCollege": "Virginia Tech",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DARIUS PHILLIPS",
+      "officialCollege": "WESTERN MICHIGAN",
+      "combineName": "Darius Phillips",
+      "combineCollege": "West. Michigan",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "HARRISON PHILLIPS",
+      "officialCollege": "STANFORD",
+      "combineName": "Harrison Phillips",
+      "combineCollege": "Stanford",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "SKYLER PHILLIPS",
+      "officialCollege": "IDAHO ST",
+      "combineName": "Skyler Phillips",
+      "combineCollege": "Idaho State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "EDDY PINEIRO",
+      "officialCollege": "FLORIDA",
+      "combineName": "Eddy Pineiro",
+      "combineCollege": "Florida",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "BILLY PRICE",
+      "officialCollege": "OHIO ST",
+      "combineName": "Billy Price",
+      "combineCollege": "Ohio State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "BYRON PRINGLE",
+      "officialCollege": "KANSAS ST",
+      "combineName": "Byron Pringle",
+      "combineCollege": "Kansas State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JAKE PUGH",
+      "officialCollege": "FLORIDA ST",
+      "combineName": "Jacob Pugh",
+      "combineCollege": "Florida State",
+      "method": "audited_alias_and_school"
+    },
+    {
+      "officialName": "SCOTT QUESSENBERRY",
+      "officialCollege": "UCLA",
+      "combineName": "Scott Quessenberry",
+      "combineCollege": "UCLA",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "TREY QUINN",
+      "officialCollege": "SMU",
+      "combineName": "Trey Quinn",
+      "combineCollege": "SMU",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "FRANK RAGNOW",
+      "officialCollege": "ARKANSAS",
+      "combineName": "Frank Ragnow",
+      "combineCollege": "Arkansas",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "MARTINAS RANKIN",
+      "officialCollege": "MISSISSIPPI ST",
+      "combineName": "Martinas Rankin",
+      "combineCollege": "Mississippi State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "MAX REDFIELD",
+      "officialCollege": "INDIANA-PENN",
+      "combineName": "Max Redfield",
+      "combineCollege": "Indiana (PA)",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "D J REED",
+      "officialCollege": "KANSAS ST",
+      "combineName": "D.J. Reed",
+      "combineCollege": "Kansas State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JUSTIN REID",
+      "officialCollege": "STANFORD",
+      "combineName": "Justin Reid",
+      "combineCollege": "Stanford",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DEMARIO RICHARD",
+      "officialCollege": "ARIZONA ST",
+      "combineName": "Demario Richard",
+      "combineCollege": "Arizona State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "WILL RICHARDSON",
+      "officialCollege": "NORTH CAROLINA ST",
+      "combineName": "Will Richardson",
+      "combineCollege": "North Carolina State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "CALVIN RIDLEY",
+      "officialCollege": "ALABAMA",
+      "combineName": "Calvin Ridley",
+      "combineCollege": "Alabama",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "STEPHEN ROBERTS",
+      "officialCollege": "AUBURN",
+      "combineName": "Stephen Roberts",
+      "combineCollege": "Auburn",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "KOREY ROBERTSON",
+      "officialCollege": "SOUTHERN MISSISSIPPI",
+      "combineName": "Korey Robertson",
+      "combineCollege": "Southern Miss",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JA'VON ROLLAND-JONES",
+      "officialCollege": "ARKANSAS ST",
+      "combineName": "Javon Rolland-Jones",
+      "combineCollege": "Arkansas State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JOSH ROSEN",
+      "officialCollege": "UCLA",
+      "combineName": "Josh Rosen",
+      "combineCollege": "UCLA",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "BUNMI ROTIMI",
+      "officialCollege": "OLD DOMINION",
+      "combineName": "Olubunmi Rotimi",
+      "combineCollege": "Old Dominion",
+      "method": "audited_alias_and_school"
+    },
+    {
+      "officialName": "MASON RUDOLPH",
+      "officialCollege": "OKLAHOMA ST",
+      "combineName": "Mason Rudolph",
+      "combineCollege": "Oklahoma State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "CHRISTIAN SAM",
+      "officialCollege": "ARIZONA ST",
+      "combineName": "Christian Sam",
+      "combineCollege": "Arizona State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JAYLEN SAMUELS",
+      "officialCollege": "NORTH CAROLINA ST",
+      "combineName": "Jaylen Samuels",
+      "combineCollege": "North Carolina State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DOMINICK SANDERS",
+      "officialCollege": "GEORGIA",
+      "combineName": "Dominick Sanders",
+      "combineCollege": "Georgia",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "TEGRAY SCALES",
+      "officialCollege": "INDIANA",
+      "combineName": "Tegray Scales",
+      "combineCollege": "Indiana",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "BO SCARBROUGH",
+      "officialCollege": "ALABAMA",
+      "combineName": "Bo Scarbrough",
+      "combineCollege": "Alabama",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DALTON SCHULTZ",
+      "officialCollege": "STANFORD",
+      "combineName": "Dalton Schultz",
+      "combineCollege": "Stanford",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "J K SCOTT",
+      "officialCollege": "ALABAMA",
+      "combineName": "Jk Scott",
+      "combineCollege": "Alabama",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JALEEL SCOTT",
+      "officialCollege": "NEW MEXICO ST",
+      "combineName": "Jaleel Scott",
+      "combineCollege": "New Mexico State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DEADRIN SENAT",
+      "officialCollege": "SOUTH FLORIDA",
+      "combineName": "Deadrin Senat",
+      "combineCollege": "South Florida",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "GREG SENAT",
+      "officialCollege": "WAGNER",
+      "combineName": "Greg Senat",
+      "combineCollege": "Wagner",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "TIM SETTLE",
+      "officialCollege": "VIRGINIA TECH",
+      "combineName": "Tim Settle",
+      "combineCollege": "Virginia Tech",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "COLEMAN SHELTON",
+      "officialCollege": "WASHINGTON",
+      "combineName": "Coleman Shelton",
+      "combineCollege": "Washington",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "NATHAN SHEPHERD",
+      "officialCollege": "FORT HAYS ST",
+      "combineName": "Nathan Shepherd",
+      "combineCollege": "Fort Hays State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "NIC SHIMONEK",
+      "officialCollege": "TEXAS TECH",
+      "combineName": "Nic Shimonek",
+      "combineCollege": "Texas Tech",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "ANDRE SMITH",
+      "officialCollege": "NORTH CAROLINA",
+      "combineName": "Andre Smith",
+      "combineCollege": "North Carolina",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "BRADEN SMITH",
+      "officialCollege": "AUBURN",
+      "combineName": "Braden Smith",
+      "combineCollege": "Auburn",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "ROQUAN SMITH",
+      "officialCollege": "GEORGIA",
+      "combineName": "Roquan Smith",
+      "combineCollege": "Georgia",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "TRE'QUAN SMITH",
+      "officialCollege": "CENTRAL FLORIDA",
+      "combineName": "Trequan Smith",
+      "combineCollege": "Central Florida",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "VAN SMITH",
+      "officialCollege": "CLEMSON",
+      "combineName": "Van Smith",
+      "combineCollege": "Clemson",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DURHAM SMYTHE",
+      "officialCollege": "NOTRE DAME",
+      "combineName": "Durham Smythe",
+      "combineCollege": "Notre Dame",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "BREELAND SPEAKS",
+      "officialCollege": "MISSISSIPPI",
+      "combineName": "Breeland Speaks",
+      "combineCollege": "Mississippi",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "EQUANIMEOUS ST BROWN",
+      "officialCollege": "NOTRE DAME",
+      "combineName": "Equanimeous St. brown",
+      "combineCollege": "Notre Dame",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "TAYLOR STALLWORTH",
+      "officialCollege": "SOUTH CAROLINA",
+      "combineName": "Taylor Stallworth",
+      "combineCollege": "South Carolina",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "M J STEWART",
+      "officialCollege": "NORTH CAROLINA",
+      "combineName": "M.J. Stewart",
+      "combineCollege": "North Carolina",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "KENTAVIUS STREET",
+      "officialCollege": "NORTH CAROLINA ST",
+      "combineName": "Kentavius Street",
+      "combineCollege": "North Carolina State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "GREG STROMAN",
+      "officialCollege": "VIRGINIA TECH",
+      "combineName": "Greg Stroman",
+      "combineCollege": "Virginia Tech",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "CHANDON SULLIVAN",
+      "officialCollege": "GEORGIA ST",
+      "combineName": "Chandon Sullivan",
+      "combineCollege": "Georgia State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "COURTLAND SUTTON",
+      "officialCollege": "SMU",
+      "combineName": "Courtland Sutton",
+      "combineCollege": "SMU",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JOSH SWEAT",
+      "officialCollege": "FLORIDA ST",
+      "combineName": "Josh Sweat",
+      "combineCollege": "Florida State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "AUDEN TATE",
+      "officialCollege": "FLORIDA ST",
+      "combineName": "Auden Tate",
+      "combineCollege": "Florida State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "ROD TAYLOR",
+      "officialCollege": "MISSISSIPPI",
+      "combineName": "Rod Taylor",
+      "combineCollege": "Mississippi",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "WYATT TELLER",
+      "officialCollege": "VIRGINIA TECH",
+      "combineName": "Wyatt Teller",
+      "combineCollege": "Virginia Tech",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "CHAD THOMAS",
+      "officialCollege": "MIAMI-FL",
+      "combineName": "Chad Thomas",
+      "combineCollege": "Miami (FL)",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "IAN THOMAS",
+      "officialCollege": "INDIANA",
+      "combineName": "Ian Thomas",
+      "combineCollege": "Indiana",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "J T THOMAS",
+      "officialCollege": "OKLAHOMA",
+      "combineName": "Jordan Thomas",
+      "combineCollege": "Oklahoma",
+      "method": "audited_alias_and_school"
+    },
+    {
+      "officialName": "JORDAN THOMAS",
+      "officialCollege": "MISSISSIPPI ST",
+      "combineName": "Jordan Thomas",
+      "combineCollege": "Mississippi State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "MATTHEW THOMAS",
+      "officialCollege": "FLORIDA ST",
+      "combineName": "Matthew Thomas",
+      "combineCollege": "Florida State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "ROC THOMAS",
+      "officialCollege": "JACKSONVILLE ST-AL",
+      "combineName": "Roc Thomas",
+      "combineCollege": "Jacksonville State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "TRENT THOMPSON",
+      "officialCollege": "GEORGIA",
+      "combineName": "Trenton Thompson",
+      "combineCollege": "Georgia",
+      "method": "audited_alias_and_school"
+    },
+    {
+      "officialName": "HENRE' TOLIVER",
+      "officialCollege": "ARKANSAS",
+      "combineName": "Henre Toliver",
+      "combineCollege": "Arkansas",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "KEVIN TOLIVER",
+      "officialCollege": "LOUISIANA ST",
+      "combineName": "Kevin Toliver",
+      "combineCollege": "LSU",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "BRETT TOTH",
+      "officialCollege": "ARMY",
+      "combineName": "Brett Toth",
+      "combineCollege": "Army",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JOHNNY TOWNSEND",
+      "officialCollege": "FLORIDA",
+      "combineName": "Johnny Townsend",
+      "combineCollege": "Florida",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "SHANE TRIPUCKA",
+      "officialCollege": "TEXAS A&M",
+      "combineName": "Shane Tripucka",
+      "combineCollege": "Texas A&M",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "KEMOKO TURAY",
+      "officialCollege": "RUTGERS",
+      "combineName": "Kemoko Turay",
+      "combineCollege": "Rutgers",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "LEKA UHATAFE",
+      "officialCollege": "UTAH",
+      "combineName": "Salesi Uhatafe",
+      "combineCollege": "Utah",
+      "method": "audited_alias_and_school"
+    },
+    {
+      "officialName": "MARQUEZ VALDES-SCANTLING",
+      "officialCollege": "SOUTH FLORIDA",
+      "combineName": "Marquez Valdes-Scantling",
+      "combineCollege": "South Florida",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "LEIGHTON VANDER ESCH",
+      "officialCollege": "BOISE ST",
+      "combineName": "Leighton Vander esch",
+      "combineCollege": "Boise State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "VITA VEA",
+      "officialCollege": "WASHINGTON",
+      "combineName": "Vita Vea",
+      "combineCollege": "Washington",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "AZEEM VICTOR",
+      "officialCollege": "WASHINGTON",
+      "combineName": "Azeem Victor",
+      "combineCollege": "Washington",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "D'MONTRE WADE",
+      "officialCollege": "MURRAY ST",
+      "combineName": "Dmontre Wade",
+      "combineCollege": "Murray State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "AKRUM WADLEY",
+      "officialCollege": "IOWA",
+      "combineName": "Akrum Wadley",
+      "combineCollege": "Iowa",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "TREY WALKER",
+      "officialCollege": "LOUISIANA-LAFAYETTE",
+      "combineName": "Trey Walker",
+      "combineCollege": "Louisiana-Lafayette",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "LEVI WALLACE",
+      "officialCollege": "ALABAMA",
+      "combineName": "Levi Wallace",
+      "combineCollege": "Alabama",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "MARK WALTON",
+      "officialCollege": "MIAMI-FL",
+      "combineName": "Mark Walton",
+      "combineCollege": "Miami (FL)",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DENZEL WARD",
+      "officialCollege": "OHIO ST",
+      "combineName": "Denzel Ward",
+      "combineCollege": "Ohio State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "FRED WARNER",
+      "officialCollege": "BRIGHAM YOUNG",
+      "combineName": "Fred Warner",
+      "combineCollege": "BYU",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "CHRIS WARREN",
+      "officialCollege": "TEXAS",
+      "combineName": "Chris Warren",
+      "combineCollege": "Texas",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JAMES WASHINGTON",
+      "officialCollege": "OKLAHOMA ST",
+      "combineName": "James Washington",
+      "combineCollege": "Oklahoma State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "ARMANI WATTS",
+      "officialCollege": "TEXAS A&M",
+      "combineName": "Armani Watts",
+      "combineCollege": "Texas A&M",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JESTER WEAH",
+      "officialCollege": "PITTSBURGH",
+      "combineName": "Jester Weah",
+      "combineCollege": "Pittsburgh",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "TOBY WEATHERSBY",
+      "officialCollege": "LOUISIANA ST",
+      "combineName": "Toby Weathersby",
+      "combineCollege": "LSU",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DAMON WEBB",
+      "officialCollege": "OHIO ST",
+      "combineName": "Damon Webb",
+      "combineCollege": "Ohio State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DAVID WELLS",
+      "officialCollege": "SAN DIEGO ST",
+      "combineName": "David Wells",
+      "combineCollege": "San Diego State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "SEAN WELSH",
+      "officialCollege": "IOWA",
+      "combineName": "Sean Welsh",
+      "combineCollege": "Iowa",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "KA'RAUN WHITE",
+      "officialCollege": "WEST VIRGINIA",
+      "combineName": "Karaun White",
+      "combineCollege": "West Virginia",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "KYZIR WHITE",
+      "officialCollege": "WEST VIRGINIA",
+      "combineName": "Kyzir White",
+      "combineCollege": "West Virginia",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "MIKE WHITE",
+      "officialCollege": "WESTERN KENTUCKY",
+      "combineName": "Mike White",
+      "combineCollege": "Western Kentucky",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JORDAN WHITEHEAD",
+      "officialCollege": "PITTSBURGH",
+      "combineName": "Jordan Whitehead",
+      "combineCollege": "Pittsburgh",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JOJO WICKER",
+      "officialCollege": "ARIZONA ST",
+      "combineName": "Jojo Wicker",
+      "combineCollege": "Arizona State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JAKE WIENEKE",
+      "officialCollege": "SOUTH DAKOTA ST",
+      "combineName": "Jake Wieneke",
+      "combineCollege": "South Dakota State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JORDAN WILKINS",
+      "officialCollege": "MISSISSIPPI",
+      "combineName": "Jordan Wilkins",
+      "combineCollege": "Mississippi",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "CONNOR WILLIAMS",
+      "officialCollege": "TEXAS",
+      "combineName": "Connor Williams",
+      "combineCollege": "Texas",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "DARREL WILLIAMS",
+      "officialCollege": "LOUISIANA ST",
+      "combineName": "Darrel Williams",
+      "combineCollege": "LSU",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "CED WILSON",
+      "officialCollege": "BOISE ST",
+      "combineName": "Cedrick Wilson",
+      "combineCollege": "Boise State",
+      "method": "audited_alias_and_school"
+    },
+    {
+      "officialName": "EDDY WILSON",
+      "officialCollege": "PURDUE",
+      "combineName": "Eddy Wilson",
+      "combineCollege": "Purdue",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JEFF WILSON",
+      "officialCollege": "NORTH TEXAS",
+      "combineName": "Jeff Wilson",
+      "combineCollege": "North Texas",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "JAVON WIMS",
+      "officialCollege": "GEORGIA",
+      "combineName": "Javon Wims",
+      "combineCollege": "Georgia",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "ANTHONY WINBUSH",
+      "officialCollege": "BALL ST",
+      "combineName": "Anthony Winbush",
+      "combineCollege": "Ball State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "RYAN WINSLOW",
+      "officialCollege": "PITTSBURGH",
+      "combineName": "Ryan Winslow",
+      "combineCollege": "Pittsburgh",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "LOGAN WOODSIDE",
+      "officialCollege": "TOLEDO",
+      "combineName": "Logan Woodside",
+      "combineCollege": "Toledo",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "CHRIS WORLEY",
+      "officialCollege": "OHIO ST",
+      "combineName": "Chris Worley",
+      "combineCollege": "Ohio State",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "ISAIAH WYNN",
+      "officialCollege": "GEORGIA",
+      "combineName": "Isaiah Wynn",
+      "combineCollege": "Georgia",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "ISAAC YIADOM",
+      "officialCollege": "BOSTON COL",
+      "combineName": "Isaac Yiadom",
+      "combineCollege": "Boston Col.",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "KENNY YOUNG",
+      "officialCollege": "UCLA",
+      "combineName": "Kenny Young",
+      "combineCollege": "UCLA",
+      "method": "exact_normalized_name_and_school"
+    },
+    {
+      "officialName": "TREVON YOUNG",
+      "officialCollege": "LOUISVILLE",
+      "combineName": "Trevon Young",
+      "combineCollege": "Louisville",
+      "method": "exact_normalized_name_and_school"
+    }
+  ],
+  "note": "Alias map is explicit and school-constrained. No fuzzy automatic joins. Two Drew Browns and two Jordan Thomases require college discrimination."
+}

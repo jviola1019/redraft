@@ -1,0 +1,22 @@
+{
+  "id": "forecast-audit",
+  "kind": "diagnostic",
+  "command": [
+    "python3",
+    "analytics/forecast_audit.py"
+  ],
+  "startedAt": "2026-11-12T22:36:16.305Z",
+  "finishedAt": "2026-11-12T22:36:16.795Z",
+  "durationMs": 490.2109840000003,
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "error": null,
+  "status": "passed",
+  "stdout": "07-forecast-audit.stdout.log",
+  "stderr": "07-forecast-audit.stderr.log",
+  "artifacts": [
+    "artifacts/analytics/forecast_audit.json",
+    "artifacts/analytics/forecast_audit_predictions.csv"
+  ]
+}

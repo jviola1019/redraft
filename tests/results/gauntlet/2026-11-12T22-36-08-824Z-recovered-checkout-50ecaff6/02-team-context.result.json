@@ -1,0 +1,19 @@
+{
+  "id": "team-context",
+  "kind": "structural",
+  "command": [
+    "python3",
+    "research/test_team_context.py"
+  ],
+  "startedAt": "2026-11-12T22:36:10.418Z",
+  "finishedAt": "2026-11-12T22:36:10.652Z",
+  "durationMs": 234.01938900000005,
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "error": null,
+  "status": "passed",
+  "stdout": "02-team-context.stdout.log",
+  "stderr": "02-team-context.stderr.log",
+  "artifacts": []
+}

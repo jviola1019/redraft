@@ -1,0 +1,23 @@
+{
+  "id": "distribution-kc",
+  "kind": "diagnostic",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "analytics/simulation_diagnostics.mjs",
+    "256",
+    "KC"
+  ],
+  "startedAt": "2026-11-12T22:38:20.925Z",
+  "finishedAt": "2026-11-12T22:38:32.441Z",
+  "durationMs": 11516.431660000002,
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "error": null,
+  "status": "passed",
+  "stdout": "14-distribution-kc.stdout.log",
+  "stderr": "14-distribution-kc.stderr.log",
+  "artifacts": [
+    "artifacts/analytics/simulation_diagnostics_KC.json"
+  ]
+}

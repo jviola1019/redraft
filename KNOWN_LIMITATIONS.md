@@ -1,5 +1,9 @@
 # Known limitations and release acceptance
 
+## Current verified checkpoint
+
+The recovered 2018–2026 research-alpha implementation was freshly tested. Structural checks passed; statistical release remains blocked (33 pass, 9 fail, 7 unsupported). See [current evidence](docs/release/CURRENT_RELEASE.md) for the authoritative scope and links. Older dated entries below are historical records.
+
 ## Current coverage — November 12, 2026
 
 The application now enables **2018–2026** as research-alpha scenarios. Later sections retain dated historical findings; older 2018-only coverage descriptions are superseded. All years remain unsupported as a full release. Source limitations differ by year: see `data/processed/scenario-coverage.json` and `research/SCENARIO_LIMITATIONS.md`. Eligibility does not include every draft-eligible player; 2021 includes 323 verified invitees, 144 with all measurement fields unavailable. Exact-match identity reconciliation can leave the same person separately represented in the alternate eligible pool and actual baseline reference pool.

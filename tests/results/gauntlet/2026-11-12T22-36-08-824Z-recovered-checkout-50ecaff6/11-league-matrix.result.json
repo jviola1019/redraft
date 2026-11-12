@@ -1,0 +1,20 @@
+{
+  "id": "league-matrix",
+  "kind": "structural",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "tests/league-matrix.mjs",
+    "/workspace/scratch/781ed5af9c46/redraft/tests/results/gauntlet/2026-11-12T22-36-08-824Z-recovered-checkout-50ecaff6/league-matrix.json"
+  ],
+  "startedAt": "2026-11-12T22:37:12.948Z",
+  "finishedAt": "2026-11-12T22:37:56.819Z",
+  "durationMs": 43870.656607,
+  "exitCode": 0,
+  "signal": null,
+  "timedOut": false,
+  "error": null,
+  "status": "passed",
+  "stdout": "11-league-matrix.stdout.log",
+  "stderr": "11-league-matrix.stderr.log",
+  "artifacts": []
+}

@@ -509,7 +509,7 @@
           "team": "CLE",
           "draftSeed": "redraft-validation-2026-11-02",
           "engineVersion": "redraft-research-0.7-multiyear-playoffs",
-          "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:c3f102575a36+scoring-trailing3-v1",
+          "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:f16356d6371a+scoring-trailing3-v1",
           "datasetVersion": "nflverse-2018-combine-only-v2"
         }
       }
@@ -575,7 +575,7 @@
           "team": "KC",
           "draftSeed": "redraft-validation-2026-11-02",
           "engineVersion": "redraft-research-0.7-multiyear-playoffs",
-          "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:c3f102575a36+scoring-trailing3-v1",
+          "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:f16356d6371a+scoring-trailing3-v1",
           "datasetVersion": "nflverse-2018-combine-only-v2"
         }
       }
@@ -641,7 +641,7 @@
           "team": "NE",
           "draftSeed": "redraft-validation-2026-11-02",
           "engineVersion": "redraft-research-0.7-multiyear-playoffs",
-          "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:c3f102575a36+scoring-trailing3-v1",
+          "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:f16356d6371a+scoring-trailing3-v1",
           "datasetVersion": "nflverse-2018-combine-only-v2"
         }
       }
@@ -707,7 +707,7 @@
           "team": "SF",
           "draftSeed": "redraft-validation-2026-11-02",
           "engineVersion": "redraft-research-0.7-multiyear-playoffs",
-          "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:c3f102575a36+scoring-trailing3-v1",
+          "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:f16356d6371a+scoring-trailing3-v1",
           "datasetVersion": "nflverse-2018-combine-only-v2"
         }
       }
@@ -769,7 +769,7 @@
         "team": "CLE",
         "draftSeed": "redraft-validation-2026-11-02",
         "engineVersion": "redraft-research-0.7-multiyear-playoffs",
-        "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:c3f102575a36+scoring-trailing3-v1",
+        "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:f16356d6371a+scoring-trailing3-v1",
         "datasetVersion": "nflverse-2018-combine-only-v2"
       },
       "stale": false,
@@ -811,7 +811,7 @@
         "team": "KC",
         "draftSeed": "redraft-validation-2026-11-02",
         "engineVersion": "redraft-research-0.7-multiyear-playoffs",
-        "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:c3f102575a36+scoring-trailing3-v1",
+        "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:f16356d6371a+scoring-trailing3-v1",
         "datasetVersion": "nflverse-2018-combine-only-v2"
       },
       "stale": false,
@@ -853,7 +853,7 @@
         "team": "NE",
         "draftSeed": "redraft-validation-2026-11-02",
         "engineVersion": "redraft-research-0.7-multiyear-playoffs",
-        "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:c3f102575a36+scoring-trailing3-v1",
+        "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:f16356d6371a+scoring-trailing3-v1",
         "datasetVersion": "nflverse-2018-combine-only-v2"
       },
       "stale": false,
@@ -895,7 +895,7 @@
         "team": "SF",
         "draftSeed": "redraft-validation-2026-11-02",
         "engineVersion": "redraft-research-0.7-multiyear-playoffs",
-        "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:c3f102575a36+scoring-trailing3-v1",
+        "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:f16356d6371a+scoring-trailing3-v1",
         "datasetVersion": "nflverse-2018-combine-only-v2"
       },
       "stale": false,

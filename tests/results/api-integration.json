@@ -1,5 +1,5 @@
 {
-  "executedAt": "2026-11-12T20:33:31.597Z",
+  "executedAt": "2026-11-12T22:37:12.896Z",
   "runtime": {
     "node": "v24.22.1",
     "os": "linux",
@@ -13,7 +13,7 @@
       "year": 2018,
       "picks": 256,
       "playableCandidates": 336,
-      "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:c3f102575a36+scoring-trailing3-v1",
+      "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:f16356d6371a+scoring-trailing3-v1",
       "teamContextAvailable": true
     },
     {
@@ -84,9 +84,9 @@
     "lib/server-data.ts": "64a7f0c5d75ce231805b9aba756d15bbd3d29de01e8d8bb473686f3811a767f1",
     "analytics/model.json": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0",
     "analytics/five_year_strict_2018.json": "a717e2d683ab57c8f79f963d672598810593bae69945c8d00db82857d6c647e1",
-    "analytics/scoring_recalibration.json": "f7094c79bfd4bce2ea5c61a9e8aee1a8806892fbe677f2862937eec3616b1336",
-    "data/clean/team_context_2018.json": "c3f102575a364807b57e84559946f46544dc457bb878241cb77b343e1ef9c8bf",
-    "data/clean/team_context_source_manifest.json": "e2e1a4dc0332ca1a7c3e35ec860cc29c81a3c4a87859102553f7239ce4565254",
+    "analytics/scoring_recalibration.json": "484c709f0e1687fa77e6fba118a267801b919e4a98dc8138ce3dea7dead64812",
+    "data/clean/team_context_2018.json": "f16356d6371a130b5310c6f035db434fcbad52464acb3b5b950d74430eb06de3",
+    "data/clean/team_context_source_manifest.json": "af8d90bda2e0030888c0c926c8d31f18057e93f5ab860e59401f7f695a79a499",
     "data/processed/scenario-coverage.json": "0d42970e685e510b6554c7fea7675e7f3a5aecb525aabb1c6b7e155ec0058ca3",
     "tests/api.integration.mjs": "0c4ae7c37eea21af6906a9baa5728d794666863f3cb841353db3e82c2f2372b4",
     "data/processed/scenario-2018.json": "b7895eef7862ccfb45cff5f2f4b6e347abd809c1905ed274883d55cc237f59d8",
@@ -116,9 +116,9 @@
     "lib/server-data.ts": "64a7f0c5d75ce231805b9aba756d15bbd3d29de01e8d8bb473686f3811a767f1",
     "analytics/model.json": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0",
     "analytics/five_year_strict_2018.json": "a717e2d683ab57c8f79f963d672598810593bae69945c8d00db82857d6c647e1",
-    "analytics/scoring_recalibration.json": "f7094c79bfd4bce2ea5c61a9e8aee1a8806892fbe677f2862937eec3616b1336",
-    "data/clean/team_context_2018.json": "c3f102575a364807b57e84559946f46544dc457bb878241cb77b343e1ef9c8bf",
-    "data/clean/team_context_source_manifest.json": "e2e1a4dc0332ca1a7c3e35ec860cc29c81a3c4a87859102553f7239ce4565254",
+    "analytics/scoring_recalibration.json": "484c709f0e1687fa77e6fba118a267801b919e4a98dc8138ce3dea7dead64812",
+    "data/clean/team_context_2018.json": "f16356d6371a130b5310c6f035db434fcbad52464acb3b5b950d74430eb06de3",
+    "data/clean/team_context_source_manifest.json": "af8d90bda2e0030888c0c926c8d31f18057e93f5ab860e59401f7f695a79a499",
     "data/processed/scenario-coverage.json": "0d42970e685e510b6554c7fea7675e7f3a5aecb525aabb1c6b7e155ec0058ca3",
     "tests/api.integration.mjs": "0c4ae7c37eea21af6906a9baa5728d794666863f3cb841353db3e82c2f2372b4",
     "data/processed/scenario-2018.json": "b7895eef7862ccfb45cff5f2f4b6e347abd809c1905ed274883d55cc237f59d8",
@@ -145,89 +145,89 @@
     {
       "name": "five-year donor labels precede the draft and do not claim independent validation",
       "status": "passed",
-      "durationMs": 0.52
+      "durationMs": 0.5
     },
     {
       "name": "auth, CSRF, strict schema and body-size limits",
       "status": "passed",
-      "durationMs": 16.76
+      "durationMs": 19
     },
     {
       "name": "versioned creation and request replay",
       "status": "passed",
-      "durationMs": 54.24
+      "durationMs": 57.13
     },
     {
       "name": "owner isolation, aliases and canonical identifier rejection",
       "status": "passed",
-      "durationMs": 47.23
+      "durationMs": 59.28
     },
     {
       "name": "group scouting costs once and preserves blind ranges",
       "status": "passed",
-      "durationMs": 48.53
+      "durationMs": 53.21
     },
     {
       "name": "stale revision and concurrent CAS cannot lose updates",
       "status": "passed",
-      "durationMs": 31.81
+      "durationMs": 31.91
     },
     {
       "name": "counteroffers and accepted trades conserve ownership",
       "status": "passed",
-      "durationMs": 55.37
+      "durationMs": 87.75
     },
     {
       "name": "historical full draft, reveal and persisted recovery",
       "status": "passed",
-      "durationMs": 692.66
+      "durationMs": 624.03
     },
     {
       "name": "retired source versions allow review but block mutations",
       "status": "passed",
-      "durationMs": 30.54
+      "durationMs": 29.62
     },
     {
       "name": "historical 256-pair simulation survives a database reopen",
       "status": "passed",
-      "durationMs": 12608.73
+      "durationMs": 12519.34
     },
     {
       "name": "daily conditions, aliases and one official attempt are shared",
       "status": "passed",
-      "durationMs": 58.06
+      "durationMs": 58.16
     },
     {
       "name": "identical daily decisions yield identical seven-round drafts",
       "status": "passed",
-      "durationMs": 723.08
+      "durationMs": 678.93
     },
     {
       "name": "daily 256-pair results remain blind with immutable server scores",
       "status": "passed",
-      "durationMs": 25702.52
+      "durationMs": 25973.31
     },
     {
       "name": "UTC rollover closes old attempts and reveals completed draft identities",
       "status": "passed",
-      "durationMs": 95.65
+      "durationMs": 121.52
     },
     {
       "name": "frozen daily versions and rate limits are enforced",
       "status": "passed",
-      "durationMs": 1.45
+      "durationMs": 1.29
     },
     {
       "name": "all registered scenarios use exact bundles through draft, simulation, and reload",
       "status": "passed",
-      "durationMs": 5606.69
+      "durationMs": 4921.29
     }
   ],
   "passed": 16,
   "failed": 0,
   "requests": 445,
-  "maximumResponseBytes": 1949485,
-  "durationMs": 45783.857131,
+  "maximumResponseBytes": 1949343,
+  "durationMs": 45245.634834,
   "limitations": [
     "Does not establish Safari/WebKit behavior or production Worker CPU limits.",
     "Synthetic identities and disposable SQLite database are isolated test fixtures."

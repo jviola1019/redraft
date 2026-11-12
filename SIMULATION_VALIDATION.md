@@ -1,5 +1,9 @@
 # Simulation validation — executed diagnostics
 
+## Current verified checkpoint
+
+The recovered 2018–2026 research-alpha implementation was freshly tested. Structural checks passed; statistical release remains blocked (33 pass, 9 fail, 7 unsupported). See [current evidence](docs/release/CURRENT_RELEASE.md) for the authoritative scope and links. Older dated entries below are historical records.
+
 ## November 12 implementation audit
 
 The current engine is `redraft-research-0.7-multiyear-playoffs`. All registered classes 2018–2026 pass the same finite structural matrix: 864 full drafts, 1,728 baseline/alternate replicate pairs, 288 deterministic replays, 17,280 simulated seasons, 4,663,296 regular-season games and 222,336 playoff games. These counts exclude repeated deterministic replay inspections and are not independent real-world observations. Reports: `tests/results/year-matrix-2026-11-12/`.

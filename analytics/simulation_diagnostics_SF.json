@@ -6,7 +6,7 @@
     "team": "SF",
     "draftSeed": "redraft-validation-2026-11-02",
     "engineVersion": "redraft-research-0.7-multiyear-playoffs",
-    "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:c3f102575a36+scoring-trailing3-v1",
+    "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:f16356d6371a+scoring-trailing3-v1",
     "datasetVersion": "nflverse-2018-combine-only-v2"
   },
   "observed2018Through2022": {
@@ -327,9 +327,9 @@
     }
   ],
   "performance": {
-    "draftMilliseconds": 260.890226,
-    "simulationMilliseconds": 10678.527829999999,
-    "millisecondsPerPairedFiveSeasonReplicate": 41.712999335937496,
+    "draftMilliseconds": 311.9858929999999,
+    "simulationMilliseconds": 10650.833713,
+    "millisecondsPerPairedFiveSeasonReplicate": 41.60481919140625,
     "hardware": {
       "platform": "linux",
       "arch": "x64",
@@ -346,9 +346,9 @@
     "lib/server-data.ts": "64a7f0c5d75ce231805b9aba756d15bbd3d29de01e8d8bb473686f3811a767f1",
     "analytics/model.json": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0",
     "analytics/five_year_strict_2018.json": "a717e2d683ab57c8f79f963d672598810593bae69945c8d00db82857d6c647e1",
-    "analytics/scoring_recalibration.json": "f7094c79bfd4bce2ea5c61a9e8aee1a8806892fbe677f2862937eec3616b1336",
-    "data/clean/team_context_2018.json": "c3f102575a364807b57e84559946f46544dc457bb878241cb77b343e1ef9c8bf",
-    "data/clean/team_context_source_manifest.json": "e2e1a4dc0332ca1a7c3e35ec860cc29c81a3c4a87859102553f7239ce4565254",
+    "analytics/scoring_recalibration.json": "484c709f0e1687fa77e6fba118a267801b919e4a98dc8138ce3dea7dead64812",
+    "data/clean/team_context_2018.json": "f16356d6371a130b5310c6f035db434fcbad52464acb3b5b950d74430eb06de3",
+    "data/clean/team_context_source_manifest.json": "af8d90bda2e0030888c0c926c8d31f18057e93f5ab860e59401f7f695a79a499",
     "data/processed/scenario-2018.json": "b7895eef7862ccfb45cff5f2f4b6e347abd809c1905ed274883d55cc237f59d8",
     "data/processed/scenario-2019.json": "88ef4b175bfc7ddf8c2d32541b1b8371836f09f6e961f4bb8a36b0db0bf5f28c",
     "data/processed/scenario-2020.json": "527ff4f9770199052a6405d9d56cf503f150b998dddbcfbd947e686c060b624b",

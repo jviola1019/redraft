@@ -1,5 +1,9 @@
 # Fresh testing evidence
 
+## Current verified checkpoint
+
+The recovered 2018–2026 research-alpha implementation was freshly tested. Structural checks passed; statistical release remains blocked (33 pass, 9 fail, 7 unsupported). See [current evidence](docs/release/CURRENT_RELEASE.md) for the authoritative scope and links. Older dated entries below are historical records.
+
 Earlier session counts are not evidence for the reconstructed checkout. This report is updated only from current files and executions. Synthetic fixtures stay test-only.
 
 | Check | Fresh result | Scope |

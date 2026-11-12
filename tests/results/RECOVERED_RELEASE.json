@@ -1,0 +1,39 @@
+{
+  "at": "2026-11-12T22:39:55.264821+00:00",
+  "release": "research-alpha; full release blocked",
+  "implementationCommit": "d170418d520f815805b07ae702e634f1d05547ab",
+  "implementationTree": "7910d022c56382b531817011b1fbf7ad39279ad9",
+  "gauntlet": "tests/results/gauntlet/2026-11-12T22-36-08-824Z-recovered-checkout-50ecaff6",
+  "structural": "passed",
+  "sourceDrift": [],
+  "statistical": {
+    "pass": 33,
+    "fail": 9,
+    "unsupported": 7,
+    "stale": 0
+  },
+  "allYearMatrix": {
+    "draftCases": 864,
+    "pairedReplicates": 1728,
+    "replayPairs": 288,
+    "seasons": 17280,
+    "regularGames": 4663296,
+    "postseasonGames": 222336
+  },
+  "api": {
+    "passed": 16,
+    "failed": 0,
+    "requests": 445
+  },
+  "ranking": {
+    "topRankChanges": 2,
+    "minRankCorrelation": 0.8
+  },
+  "browser": "Local Chromium launch blocked by OS socket restrictions; GitHub CI pending",
+  "limitations": [
+    "Unresolved predictive calibration and QB support",
+    "Incomplete draft-day rosters and schemes",
+    "Individual future draft/personnel/contract policies incomplete",
+    "Not a statistically cleared full release"
+  ]
+}

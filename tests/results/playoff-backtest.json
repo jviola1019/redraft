@@ -1,0 +1,502 @@
+{
+  "at": "2026-11-12T22:36:22.188Z",
+  "scope": "Observed playoff qualification, wild-card pairings, divisional reseeding and home-field, 2018–2025. Does not validate predicted team quality or playoff probabilities.",
+  "results": [
+    {
+      "year": 2018,
+      "status": "passed",
+      "expectedTeams": [
+        "BAL",
+        "CHI",
+        "DAL",
+        "HOU",
+        "IND",
+        "KC",
+        "LAC",
+        "LAR",
+        "NE",
+        "NO",
+        "PHI",
+        "SEA"
+      ],
+      "predictedTeams": [
+        "BAL",
+        "CHI",
+        "DAL",
+        "HOU",
+        "IND",
+        "KC",
+        "LAC",
+        "LAR",
+        "NE",
+        "NO",
+        "PHI",
+        "SEA"
+      ],
+      "expectedWC": [
+        "BAL-LAC",
+        "CHI-PHI",
+        "DAL-SEA",
+        "HOU-IND"
+      ],
+      "predictedWC": [
+        "BAL-LAC",
+        "CHI-PHI",
+        "DAL-SEA",
+        "HOU-IND"
+      ],
+      "expectedDIV": [
+        "KC-IND",
+        "LAR-DAL",
+        "NE-LAC",
+        "NO-PHI"
+      ],
+      "predictedDIV": [
+        "KC-IND",
+        "LAR-DAL",
+        "NE-LAC",
+        "NO-PHI"
+      ]
+    },
+    {
+      "year": 2019,
+      "status": "passed",
+      "expectedTeams": [
+        "BAL",
+        "BUF",
+        "GB",
+        "HOU",
+        "KC",
+        "MIN",
+        "NE",
+        "NO",
+        "PHI",
+        "SEA",
+        "SF",
+        "TEN"
+      ],
+      "predictedTeams": [
+        "BAL",
+        "BUF",
+        "GB",
+        "HOU",
+        "KC",
+        "MIN",
+        "NE",
+        "NO",
+        "PHI",
+        "SEA",
+        "SF",
+        "TEN"
+      ],
+      "expectedWC": [
+        "HOU-BUF",
+        "NE-TEN",
+        "NO-MIN",
+        "PHI-SEA"
+      ],
+      "predictedWC": [
+        "HOU-BUF",
+        "NE-TEN",
+        "NO-MIN",
+        "PHI-SEA"
+      ],
+      "expectedDIV": [
+        "BAL-TEN",
+        "GB-SEA",
+        "KC-HOU",
+        "SF-MIN"
+      ],
+      "predictedDIV": [
+        "BAL-TEN",
+        "GB-SEA",
+        "KC-HOU",
+        "SF-MIN"
+      ]
+    },
+    {
+      "year": 2020,
+      "status": "passed",
+      "expectedTeams": [
+        "BAL",
+        "BUF",
+        "CHI",
+        "CLE",
+        "GB",
+        "IND",
+        "KC",
+        "LAR",
+        "NO",
+        "PIT",
+        "SEA",
+        "TB",
+        "TEN",
+        "WAS"
+      ],
+      "predictedTeams": [
+        "BAL",
+        "BUF",
+        "CHI",
+        "CLE",
+        "GB",
+        "IND",
+        "KC",
+        "LAR",
+        "NO",
+        "PIT",
+        "SEA",
+        "TB",
+        "TEN",
+        "WAS"
+      ],
+      "expectedWC": [
+        "BUF-IND",
+        "NO-CHI",
+        "PIT-CLE",
+        "SEA-LAR",
+        "TEN-BAL",
+        "WAS-TB"
+      ],
+      "predictedWC": [
+        "BUF-IND",
+        "NO-CHI",
+        "PIT-CLE",
+        "SEA-LAR",
+        "TEN-BAL",
+        "WAS-TB"
+      ],
+      "expectedDIV": [
+        "BUF-BAL",
+        "GB-LAR",
+        "KC-CLE",
+        "NO-TB"
+      ],
+      "predictedDIV": [
+        "BUF-BAL",
+        "GB-LAR",
+        "KC-CLE",
+        "NO-TB"
+      ]
+    },
+    {
+      "year": 2021,
+      "status": "passed",
+      "expectedTeams": [
+        "ARI",
+        "BUF",
+        "CIN",
+        "DAL",
+        "GB",
+        "KC",
+        "LAR",
+        "NE",
+        "OAK",
+        "PHI",
+        "PIT",
+        "SF",
+        "TB",
+        "TEN"
+      ],
+      "predictedTeams": [
+        "ARI",
+        "BUF",
+        "CIN",
+        "DAL",
+        "GB",
+        "KC",
+        "LAR",
+        "NE",
+        "OAK",
+        "PHI",
+        "PIT",
+        "SF",
+        "TB",
+        "TEN"
+      ],
+      "expectedWC": [
+        "BUF-NE",
+        "CIN-OAK",
+        "DAL-SF",
+        "KC-PIT",
+        "LAR-ARI",
+        "TB-PHI"
+      ],
+      "predictedWC": [
+        "BUF-NE",
+        "CIN-OAK",
+        "DAL-SF",
+        "KC-PIT",
+        "LAR-ARI",
+        "TB-PHI"
+      ],
+      "expectedDIV": [
+        "GB-SF",
+        "KC-BUF",
+        "TB-LAR",
+        "TEN-CIN"
+      ],
+      "predictedDIV": [
+        "GB-SF",
+        "KC-BUF",
+        "TB-LAR",
+        "TEN-CIN"
+      ]
+    },
+    {
+      "year": 2022,
+      "status": "passed",
+      "expectedTeams": [
+        "BAL",
+        "BUF",
+        "CIN",
+        "DAL",
+        "JAX",
+        "KC",
+        "LAC",
+        "MIA",
+        "MIN",
+        "NYG",
+        "PHI",
+        "SEA",
+        "SF",
+        "TB"
+      ],
+      "predictedTeams": [
+        "BAL",
+        "BUF",
+        "CIN",
+        "DAL",
+        "JAX",
+        "KC",
+        "LAC",
+        "MIA",
+        "MIN",
+        "NYG",
+        "PHI",
+        "SEA",
+        "SF",
+        "TB"
+      ],
+      "expectedWC": [
+        "BUF-MIA",
+        "CIN-BAL",
+        "JAX-LAC",
+        "MIN-NYG",
+        "SF-SEA",
+        "TB-DAL"
+      ],
+      "predictedWC": [
+        "BUF-MIA",
+        "CIN-BAL",
+        "JAX-LAC",
+        "MIN-NYG",
+        "SF-SEA",
+        "TB-DAL"
+      ],
+      "expectedDIV": [
+        "BUF-CIN",
+        "KC-JAX",
+        "PHI-NYG",
+        "SF-DAL"
+      ],
+      "predictedDIV": [
+        "BUF-CIN",
+        "KC-JAX",
+        "PHI-NYG",
+        "SF-DAL"
+      ]
+    },
+    {
+      "year": 2023,
+      "status": "passed",
+      "expectedTeams": [
+        "BAL",
+        "BUF",
+        "CLE",
+        "DAL",
+        "DET",
+        "GB",
+        "HOU",
+        "KC",
+        "LAR",
+        "MIA",
+        "PHI",
+        "PIT",
+        "SF",
+        "TB"
+      ],
+      "predictedTeams": [
+        "BAL",
+        "BUF",
+        "CLE",
+        "DAL",
+        "DET",
+        "GB",
+        "HOU",
+        "KC",
+        "LAR",
+        "MIA",
+        "PHI",
+        "PIT",
+        "SF",
+        "TB"
+      ],
+      "expectedWC": [
+        "BUF-PIT",
+        "DAL-GB",
+        "DET-LAR",
+        "HOU-CLE",
+        "KC-MIA",
+        "TB-PHI"
+      ],
+      "predictedWC": [
+        "BUF-PIT",
+        "DAL-GB",
+        "DET-LAR",
+        "HOU-CLE",
+        "KC-MIA",
+        "TB-PHI"
+      ],
+      "expectedDIV": [
+        "BAL-HOU",
+        "BUF-KC",
+        "DET-TB",
+        "SF-GB"
+      ],
+      "predictedDIV": [
+        "BAL-HOU",
+        "BUF-KC",
+        "DET-TB",
+        "SF-GB"
+      ]
+    },
+    {
+      "year": 2024,
+      "status": "passed",
+      "expectedTeams": [
+        "BAL",
+        "BUF",
+        "DEN",
+        "DET",
+        "GB",
+        "HOU",
+        "KC",
+        "LAC",
+        "LAR",
+        "MIN",
+        "PHI",
+        "PIT",
+        "TB",
+        "WAS"
+      ],
+      "predictedTeams": [
+        "BAL",
+        "BUF",
+        "DEN",
+        "DET",
+        "GB",
+        "HOU",
+        "KC",
+        "LAC",
+        "LAR",
+        "MIN",
+        "PHI",
+        "PIT",
+        "TB",
+        "WAS"
+      ],
+      "expectedWC": [
+        "BAL-PIT",
+        "BUF-DEN",
+        "HOU-LAC",
+        "LAR-MIN",
+        "PHI-GB",
+        "TB-WAS"
+      ],
+      "predictedWC": [
+        "BAL-PIT",
+        "BUF-DEN",
+        "HOU-LAC",
+        "LAR-MIN",
+        "PHI-GB",
+        "TB-WAS"
+      ],
+      "expectedDIV": [
+        "BUF-BAL",
+        "DET-WAS",
+        "KC-HOU",
+        "PHI-LAR"
+      ],
+      "predictedDIV": [
+        "BUF-BAL",
+        "DET-WAS",
+        "KC-HOU",
+        "PHI-LAR"
+      ]
+    },
+    {
+      "year": 2025,
+      "status": "passed",
+      "expectedTeams": [
+        "BUF",
+        "CAR",
+        "CHI",
+        "DEN",
+        "GB",
+        "HOU",
+        "JAX",
+        "LAC",
+        "LAR",
+        "NE",
+        "PHI",
+        "PIT",
+        "SEA",
+        "SF"
+      ],
+      "predictedTeams": [
+        "BUF",
+        "CAR",
+        "CHI",
+        "DEN",
+        "GB",
+        "HOU",
+        "JAX",
+        "LAC",
+        "LAR",
+        "NE",
+        "PHI",
+        "PIT",
+        "SEA",
+        "SF"
+      ],
+      "expectedWC": [
+        "CAR-LAR",
+        "CHI-GB",
+        "JAX-BUF",
+        "NE-LAC",
+        "PHI-SF",
+        "PIT-HOU"
+      ],
+      "predictedWC": [
+        "CAR-LAR",
+        "CHI-GB",
+        "JAX-BUF",
+        "NE-LAC",
+        "PHI-SF",
+        "PIT-HOU"
+      ],
+      "expectedDIV": [
+        "CHI-LAR",
+        "DEN-BUF",
+        "NE-HOU",
+        "SEA-SF"
+      ],
+      "predictedDIV": [
+        "CHI-LAR",
+        "DEN-BUF",
+        "NE-HOU",
+        "SEA-SF"
+      ]
+    }
+  ]
+}

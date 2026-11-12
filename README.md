@@ -1,3 +1,5 @@
+> **Current status:** source recovery is complete, including a tested replacement for the missing year-contract suite. Fresh structural checks pass; full statistical release is blocked. See [current evidence](docs/release/CURRENT_RELEASE.md). Earlier recovery notices below describe the interruption.
+
 > **Recovery checkpoint:** This branch preserves critical source and season data but omits some test evidence. The original frozen checkout could not be fully recovered byte-for-byte. See [recovery status](docs/security/RECOVERY_STATUS_2026-11-12.md).
 
 # REDRAFT — The NFL Draft Time Machine

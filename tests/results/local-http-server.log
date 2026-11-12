@@ -1,0 +1,13 @@
+
+  vinext dev  (Vite 8.1.6)
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mProxy environment variables detected. We'll use your proxy for fetch requests.[0m
+
+
+Sites local sign-in: seedy@sites.test
+  ➜  Local:   http://127.0.0.1:4174/
+ GET /api/game 401 in 3.7s
+ GET / 200 in 3.8s (compile: 1794523048.8s, render: 3.7s)
+ GET /api/game 200 in 39ms
+ POST /api/game 201 in 48ms
+ POST /api/game 200 in 45ms

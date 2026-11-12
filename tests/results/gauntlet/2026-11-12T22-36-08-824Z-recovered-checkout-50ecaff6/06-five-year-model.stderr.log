@@ -1,0 +1,12 @@
+test_donors_are_real_label_vectors (__main__.FiveYearChecks.test_donors_are_real_label_vectors) ... ok
+test_frozen_metrics_recompute (__main__.FiveYearChecks.test_frozen_metrics_recompute) ... ok
+test_missing_2012_not_used_as_zero (__main__.FiveYearChecks.test_missing_2012_not_used_as_zero) ... ok
+test_qb_support_limit_visible (__main__.FiveYearChecks.test_qb_support_limit_visible) ... ok
+test_retrospective_not_mislabeled_historical (__main__.FiveYearChecks.test_retrospective_not_mislabeled_historical) ... ok
+test_rolling_label_availability (__main__.FiveYearChecks.test_rolling_label_availability) ... ok
+test_strict_labels_complete_by_cutoff (__main__.FiveYearChecks.test_strict_labels_complete_by_cutoff) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.011s
+
+OK

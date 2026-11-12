@@ -1,5 +1,9 @@
 # Reconstruction checkpoint
 
+## Current verified checkpoint
+
+The recovered 2018–2026 research-alpha implementation was freshly tested. Structural checks passed; statistical release remains blocked (33 pass, 9 fail, 7 unsupported). See [current evidence](docs/release/CURRENT_RELEASE.md) for the authoritative scope and links. Older dated entries below are historical records.
+
 This checkout is being rebuilt after the earlier transient source was unavailable. No persistent background work is implied after a session ends. Preserve the existing Site identity and checkpoint actual source early.
 
 ## Freshly established

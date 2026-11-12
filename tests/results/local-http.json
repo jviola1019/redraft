@@ -1,0 +1,12 @@
+{
+  "at": "2026-11-12T22:37:41.988Z",
+  "status": "passed",
+  "checks": [
+    "unauthenticated 401",
+    "loopback sign-in and rendered homepage",
+    "real bootstrap and local D1",
+    "new game, scouting transaction, persistent reload"
+  ],
+  "durationMs": 13292,
+  "limitation": "HTTP and server rendering only; does not replace a browser or physical iPhone test."
+}

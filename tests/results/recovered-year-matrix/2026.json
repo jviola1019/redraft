@@ -1,0 +1,2547 @@
+{
+  "version": "league-structural-matrix-v1",
+  "startedAt": "2026-11-12T22:37:24.585Z",
+  "finishedAt": "2026-11-12T22:37:53.715Z",
+  "durationMs": 29130.135577,
+  "configuration": {
+    "scenarioYear": 2026,
+    "teams": [
+      "ARI",
+      "ATL",
+      "BAL",
+      "BUF",
+      "CAR",
+      "CHI",
+      "CIN",
+      "CLE",
+      "DAL",
+      "DEN",
+      "DET",
+      "GB",
+      "HOU",
+      "IND",
+      "JAX",
+      "KC",
+      "LAC",
+      "LAR",
+      "MIA",
+      "MIN",
+      "NE",
+      "NO",
+      "NYG",
+      "NYJ",
+      "OAK",
+      "PHI",
+      "PIT",
+      "SEA",
+      "SF",
+      "TB",
+      "TEN",
+      "WAS"
+    ],
+    "seeds": [
+      "redraft-structural-matrix-v1-a",
+      "redraft-structural-matrix-v1-b",
+      "redraft-structural-matrix-v1-c"
+    ],
+    "fixedGameTime": "2026-11-04T00:00:00Z",
+    "pairedReplicatesPerCase": 2,
+    "replay": "First seed and replicate for every team",
+    "modelVersion": "redraft-2026-pre2018-logistic-C10-v1+blind-g5-v1+nflverse-2026-combine-pool-v1",
+    "engineVersion": "redraft-research-0.7-multiyear-playoffs",
+    "datasetVersion": "nflverse-2026-combine-pool-v1"
+  },
+  "planned": {
+    "draftCases": 96,
+    "pairedReplicates": 192,
+    "deterministicDraftAndPairReplays": 32
+  },
+  "actual": {
+    "draftCases": 96,
+    "passedCases": 96,
+    "failedCases": 0,
+    "pairedReplicates": 192,
+    "replayPairs": 32,
+    "assertions": 5852589,
+    "worlds": 384,
+    "seasons": 1920,
+    "regularGames": 522240,
+    "postseasonGames": 24960
+  },
+  "runtime": {
+    "node": "v24.22.1",
+    "platform": "linux",
+    "architecture": "x64",
+    "cpu": "AMD EPYC 9V74 80-Core Processor",
+    "logicalCpus": 9
+  },
+  "sourceHashes": {
+    "lib/engine.ts": "3826b204aea464dd4532cdd1901950bcc5452e7a4455780ee92e5c27a37015c7",
+    "lib/simulation.ts": "1ad4f1edbe10a83c80a424952735bb07e32a663bc23ae23b5df258a9b28e1727",
+    "lib/scouting.ts": "6a2850cb8f15f6effb6b12fd15f79602e5e0c6a20ff84951e7bdb2695aeba1d6",
+    "lib/server-data.ts": "64a7f0c5d75ce231805b9aba756d15bbd3d29de01e8d8bb473686f3811a767f1",
+    "analytics/model.json": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0",
+    "analytics/five_year_strict_2018.json": "a717e2d683ab57c8f79f963d672598810593bae69945c8d00db82857d6c647e1",
+    "analytics/scoring_recalibration.json": "484c709f0e1687fa77e6fba118a267801b919e4a98dc8138ce3dea7dead64812",
+    "data/clean/team_context_2018.json": "f16356d6371a130b5310c6f035db434fcbad52464acb3b5b950d74430eb06de3",
+    "data/clean/team_context_source_manifest.json": "af8d90bda2e0030888c0c926c8d31f18057e93f5ab860e59401f7f695a79a499",
+    "data/processed/scenario-2018.json": "b7895eef7862ccfb45cff5f2f4b6e347abd809c1905ed274883d55cc237f59d8",
+    "data/processed/scenario-2019.json": "88ef4b175bfc7ddf8c2d32541b1b8371836f09f6e961f4bb8a36b0db0bf5f28c",
+    "data/processed/scenario-2020.json": "527ff4f9770199052a6405d9d56cf503f150b998dddbcfbd947e686c060b624b",
+    "data/processed/scenario-2021.json": "16b574b788658ea916a48a61cdf4a24df76e72305dc16054f32971ec5ed4aec4",
+    "data/processed/scenario-2022.json": "ea6846602cddfe179544b1d845c811a1848c59de69084c210c03080ac4d46f63",
+    "data/processed/scenario-2023.json": "14587193998afcb61ca2c95c50ee641ba709246a5b3a9c8187855b94e894611f",
+    "data/processed/scenario-2024.json": "6a6d794cdf0747d7a03ba92549d4d8165b149a19b04eb32588b679e6c50e8323",
+    "data/processed/scenario-2025.json": "8f80dab73fa8b50a92a6b0ec499419dfd07eade6398ebda59b5117aac62b13b7",
+    "data/processed/scenario-2026.json": "c30d6a697573fc39488b13a91eb7c3863aa780c14a81f446e06dd0e3a86638ca",
+    "data/processed/scenario-coverage.json": "0d42970e685e510b6554c7fea7675e7f3a5aecb525aabb1c6b7e155ec0058ca3",
+    "analytics/model-2019.json": "2da02bcb4d6da178a635852e61c4ee7488f9551f346c9560f680ce99f13176cf",
+    "analytics/model-2020.json": "35d80e75ae50e8ada8c9ad96db2fd965e38f9dea06bc0f298b899f51497c3bdc",
+    "analytics/model-2021.json": "c89d6915e04159845d48c0692fe899ff66430c404a2d30cafade478ba629a17b",
+    "analytics/model-2022.json": "9579d70620a4f20ede36008bdcc745d913f8ba1aa7f64b4276104561491b8457",
+    "analytics/model-2023.json": "3b7a67a1f83c32ba8461abe9608f3f2c18e8a17e34b60c20768099d9b23c78cb",
+    "analytics/model-2024.json": "1c4b07f22dc40575623920f108335d8990c07a53511db5e0c6bd740398102e9d",
+    "analytics/model-2025.json": "4b753663702af949cc2474da986eadbe1e23966ce58778928590353c0f774397",
+    "analytics/model-2026.json": "a4380ba61137af8813883ec3b021acfb73ee755fd51fdef1004d9f68d25f8ad4"
+  },
+  "finalHashes": {
+    "lib/engine.ts": "3826b204aea464dd4532cdd1901950bcc5452e7a4455780ee92e5c27a37015c7",
+    "lib/simulation.ts": "1ad4f1edbe10a83c80a424952735bb07e32a663bc23ae23b5df258a9b28e1727",
+    "lib/scouting.ts": "6a2850cb8f15f6effb6b12fd15f79602e5e0c6a20ff84951e7bdb2695aeba1d6",
+    "lib/server-data.ts": "64a7f0c5d75ce231805b9aba756d15bbd3d29de01e8d8bb473686f3811a767f1",
+    "analytics/model.json": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0",
+    "analytics/five_year_strict_2018.json": "a717e2d683ab57c8f79f963d672598810593bae69945c8d00db82857d6c647e1",
+    "analytics/scoring_recalibration.json": "484c709f0e1687fa77e6fba118a267801b919e4a98dc8138ce3dea7dead64812",
+    "data/clean/team_context_2018.json": "f16356d6371a130b5310c6f035db434fcbad52464acb3b5b950d74430eb06de3",
+    "data/clean/team_context_source_manifest.json": "af8d90bda2e0030888c0c926c8d31f18057e93f5ab860e59401f7f695a79a499",
+    "data/processed/scenario-2018.json": "b7895eef7862ccfb45cff5f2f4b6e347abd809c1905ed274883d55cc237f59d8",
+    "data/processed/scenario-2019.json": "88ef4b175bfc7ddf8c2d32541b1b8371836f09f6e961f4bb8a36b0db0bf5f28c",
+    "data/processed/scenario-2020.json": "527ff4f9770199052a6405d9d56cf503f150b998dddbcfbd947e686c060b624b",
+    "data/processed/scenario-2021.json": "16b574b788658ea916a48a61cdf4a24df76e72305dc16054f32971ec5ed4aec4",
+    "data/processed/scenario-2022.json": "ea6846602cddfe179544b1d845c811a1848c59de69084c210c03080ac4d46f63",
+    "data/processed/scenario-2023.json": "14587193998afcb61ca2c95c50ee641ba709246a5b3a9c8187855b94e894611f",
+    "data/processed/scenario-2024.json": "6a6d794cdf0747d7a03ba92549d4d8165b149a19b04eb32588b679e6c50e8323",
+    "data/processed/scenario-2025.json": "8f80dab73fa8b50a92a6b0ec499419dfd07eade6398ebda59b5117aac62b13b7",
+    "data/processed/scenario-2026.json": "c30d6a697573fc39488b13a91eb7c3863aa780c14a81f446e06dd0e3a86638ca",
+    "data/processed/scenario-coverage.json": "0d42970e685e510b6554c7fea7675e7f3a5aecb525aabb1c6b7e155ec0058ca3",
+    "analytics/model-2019.json": "2da02bcb4d6da178a635852e61c4ee7488f9551f346c9560f680ce99f13176cf",
+    "analytics/model-2020.json": "35d80e75ae50e8ada8c9ad96db2fd965e38f9dea06bc0f298b899f51497c3bdc",
+    "analytics/model-2021.json": "c89d6915e04159845d48c0692fe899ff66430c404a2d30cafade478ba629a17b",
+    "analytics/model-2022.json": "9579d70620a4f20ede36008bdcc745d913f8ba1aa7f64b4276104561491b8457",
+    "analytics/model-2023.json": "3b7a67a1f83c32ba8461abe9608f3f2c18e8a17e34b60c20768099d9b23c78cb",
+    "analytics/model-2024.json": "1c4b07f22dc40575623920f108335d8990c07a53511db5e0c6bd740398102e9d",
+    "analytics/model-2025.json": "4b753663702af949cc2474da986eadbe1e23966ce58778928590353c0f774397",
+    "analytics/model-2026.json": "a4380ba61137af8813883ec3b021acfb73ee755fd51fdef1004d9f68d25f8ad4"
+  },
+  "sourceChanged": false,
+  "rows": [
+    {
+      "team": "ARI",
+      "seed": "redraft-structural-matrix-v1-a",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "e75afd491b78b77c6bd76d00cb11d578693b92b579c512ed4bbec61481f2558d",
+          "worldHash": "6813b1e9af2297d0c646f1d0deee645305511ca3e7ce69461ad678c44fc5ccd9",
+          "baselineWins": 28,
+          "alternateWins": 30
+        },
+        {
+          "index": 1,
+          "hash": "7832b5ddf0bf6ef6532e2001ef8da8a56cf5be9b7c219a9cfa307b793372667d",
+          "worldHash": "b9c31adb8416e67f616d995df2ed503c526f39ad8f5e50f7acaa57fcef3d0da7",
+          "baselineWins": 35,
+          "alternateWins": 45
+        }
+      ],
+      "replay": true,
+      "trades": 19,
+      "draftHash": "324310ba252b3a528a00d5f801fa64643b4578000cc4900b0acfc564d425047f",
+      "durationMs": 606.1448389999999
+    },
+    {
+      "team": "ARI",
+      "seed": "redraft-structural-matrix-v1-b",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "ae3e5cbb78a7efebd528c3218b4017eb2f205df1a29a575e1dfa7dc3929ccda4",
+          "worldHash": "e4d370a2b69347ce125e823dc1a640c8ba63a829885d6d680eaf2bb795511f62",
+          "baselineWins": 43,
+          "alternateWins": 34
+        },
+        {
+          "index": 1,
+          "hash": "6533c169cc1f4491fa92c0949966bfe0d8428757933ea27338ffaee0dbf69d1f",
+          "worldHash": "7e59e20aabb3a0d247cd5b65bfa67c41b1c9abb1741666c1e40fb7f165993a08",
+          "baselineWins": 35,
+          "alternateWins": 32
+        }
+      ],
+      "replay": false,
+      "trades": 28,
+      "draftHash": "d5973edcbd533c17b061b1f02eebf6039930bc72f7e945f30c8f9b74ea3c130b",
+      "durationMs": 266.933303
+    },
+    {
+      "team": "ARI",
+      "seed": "redraft-structural-matrix-v1-c",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "9c6432e7da2a710cfcfc905bb1637d9de3e96bebec158f3daa18e5b20e120370",
+          "worldHash": "3903c588cc4b6bd0e9b37bfe275faa5a8513ce851aa916225003d44401b54cc8",
+          "baselineWins": 56,
+          "alternateWins": 53
+        },
+        {
+          "index": 1,
+          "hash": "73cd8c342342ee947177abe57c3ef29d2e524bc2bc24c36e1f8502bb753ed7f6",
+          "worldHash": "3ec4a17b5d5129240bb66cbd8f0d5e0f943d68b964c54841a154212a1b675f6f",
+          "baselineWins": 34,
+          "alternateWins": 36
+        }
+      ],
+      "replay": false,
+      "trades": 27,
+      "draftHash": "f847ac42b62d281c845ebd89a76ea84cfdda7345a896d44597891d70ee97f831",
+      "durationMs": 240.41437799999994
+    },
+    {
+      "team": "ATL",
+      "seed": "redraft-structural-matrix-v1-a",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "191b7949079257d668b6f567efd68496af7e581a63f53c0ae7e2d8783a37f250",
+          "worldHash": "907aaec52dcd12175891b583082f205ae8287eef2763116b574b3fe02e3dc214",
+          "baselineWins": 37,
+          "alternateWins": 34
+        },
+        {
+          "index": 1,
+          "hash": "d3bf5cc8a17b3992960a43e2e01ed2051e68ed27404f138f878f899ecfebf551",
+          "worldHash": "90fc035dc173d38c87705b280511d4eb7e93d3971f3241c3a7c7f8e25be50570",
+          "baselineWins": 47,
+          "alternateWins": 46
+        }
+      ],
+      "replay": true,
+      "trades": 19,
+      "draftHash": "a0983f147892a387d8a054558d4225fde35057b11ef073b2460ac6a064cdf2ea",
+      "durationMs": 416.1047800000001
+    },
+    {
+      "team": "ATL",
+      "seed": "redraft-structural-matrix-v1-b",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "a5960c6500d0f044ef1ef34efff210c22ddbc383e0b22efd216042082b959fad",
+          "worldHash": "e28db0771adf42a78e50ee74d528be3c7b0c17dd6ecd5b98985d979ed7f3c217",
+          "baselineWins": 48,
+          "alternateWins": 45
+        },
+        {
+          "index": 1,
+          "hash": "0bf0b6c10cbbb2d6f2abe651c1e9a095b4d6351231cb78e85326008ed0669e14",
+          "worldHash": "e677e91cf90cdbcc55d7c720af0a033534c97d64e8d35573db8fb2c657d21646",
+          "baselineWins": 45,
+          "alternateWins": 50
+        }
+      ],
+      "replay": false,
+      "trades": 28,
+      "draftHash": "53f73a837d2e4844af4ca19f25de9e246020b16183c8dcb54a841d0b45f9dc32",
+      "durationMs": 246.1405960000002
+    },
+    {
+      "team": "ATL",
+      "seed": "redraft-structural-matrix-v1-c",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "e4f946e7c1245b30fcc3d70371a304d0b9828d73bf0fa951256c114353db06d5",
+          "worldHash": "6fb1fa6c9af59d8f5c528e81be0174dbd67d3218961a5011578f6dec52fe29da",
+          "baselineWins": 50,
+          "alternateWins": 48
+        },
+        {
+          "index": 1,
+          "hash": "5397947e3b13a5d430072aa27d1a11c654299d120c170dae6fe67575f6c27094",
+          "worldHash": "345e6beaa86fe9dfa826c602817610f04b175c4553d228bb8e9b1a67f3e73420",
+          "baselineWins": 23,
+          "alternateWins": 24
+        }
+      ],
+      "replay": false,
+      "trades": 29,
+      "draftHash": "66bc765b4fb814a297433a5c2f6a17881976438c0e32b2163d27f9fbb88d97f2",
+      "durationMs": 287.01912300000004
+    },
+    {
+      "team": "BAL",
+      "seed": "redraft-structural-matrix-v1-a",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "ffb861fc6ebcd3c3a4e751db6be9d5ec36a95d567c79dabd05ed59bd5e13af08",
+          "worldHash": "6ee5f64adc174870131e7f769afc4a0d2fcfca64df033fef5f7c88f4b2232b97",
+          "baselineWins": 30,
+          "alternateWins": 30
+        },
+        {
+          "index": 1,
+          "hash": "1ec36ad6ea4eeb028babb7bf4ceedbef4c6c393ecde0a36bda6f060ece23593a",
+          "worldHash": "4f5e3a64a12dee5c025109e2cbfe38ed70f1eb25df3cd4b43a7804a195ff216c",
+          "baselineWins": 39,
+          "alternateWins": 38
+        }
+      ],
+      "replay": true,
+      "trades": 18,
+      "draftHash": "9df65cb830f4303dae16042e5f2c9c517e8be9f011b5e3094776d224a3a17a0f",
+      "durationMs": 428.97396500000013
+    },
+    {
+      "team": "BAL",
+      "seed": "redraft-structural-matrix-v1-b",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "98feeae379d001891d31969ec7cc4f51086d5fbe601ea616ae6584371af99325",
+          "worldHash": "6b53fa34616b4f6f10fe2bd68dbe844b48da7bd6e53bffba19df308837616fed",
+          "baselineWins": 47,
+          "alternateWins": 44
+        },
+        {
+          "index": 1,
+          "hash": "181d20f5135598f3870e5a35e2b79b5a76fe2a5da84b8d07e6ca8aef25c6d711",
+          "worldHash": "d822133076fd75cef9e6864d7040f18f157ded33f303b68490f098e4daadd384",
+          "baselineWins": 60,
+          "alternateWins": 58
+        }
+      ],
+      "replay": false,
+      "trades": 28,
+      "draftHash": "3f5c65bca815ece7e4d4b7ab8a8883fafd8889cc19b43f09ca224f1e43d38e35",
+      "durationMs": 239.01365699999997
+    },
+    {
+      "team": "BAL",
+      "seed": "redraft-structural-matrix-v1-c",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "746617156ff06153834bae0837f99140423a1a7c0698c0985a80588caae34d13",
+          "worldHash": "3bc9a71b1bec609f8cee93000e55575658ff2ffc91b15a9f2149d421ca0dfba2",
+          "baselineWins": 54,
+          "alternateWins": 54
+        },
+        {
+          "index": 1,
+          "hash": "271e87b27c1cbe3a76232ab25c20cdb0a892cfa274a71a0c2103d0dfbc27c16d",
+          "worldHash": "1a309ee0106120c64fc058ad87b698da0dd626c24c1c9a814db5e8d45c0a5ac8",
+          "baselineWins": 51,
+          "alternateWins": 50
+        }
+      ],
+      "replay": false,
+      "trades": 28,
+      "draftHash": "eb1c8b97158931d05f18f3d1d0acaa7e3ff96441e8c46e087c2c5b9b2bdfac26",
+      "durationMs": 266.62361599999986
+    },
+    {
+      "team": "BUF",
+      "seed": "redraft-structural-matrix-v1-a",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "e645ec8892b48a382e56834fdb953b56f40b64ad711f2db75d804d35a86d99a3",
+          "worldHash": "b04634e073c991b63848fed04a56504eb32a49021720b77a1ce9136ee0b36ca4",
+          "baselineWins": 40,
+          "alternateWins": 38
+        },
+        {
+          "index": 1,
+          "hash": "e5fb7bb6c9a289aaacbb610124bfbb607731495b4becbbf3a1d3a62f8454b437",
+          "worldHash": "9167c8d12222c1f5abe5e2aba19312566c7bab405f5c6d75e15382a680b5d544",
+          "baselineWins": 39,
+          "alternateWins": 34
+        }
+      ],
+      "replay": true,
+      "trades": 19,
+      "draftHash": "201561fffbda2bdabee86f6213fcde687479649f9eb98bebdadab81d2880d138",
+      "durationMs": 415.77397999999994
+    },
+    {
+      "team": "BUF",
+      "seed": "redraft-structural-matrix-v1-b",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "56237d60718705d1f0ea98c1d9753f07a4578b368f96d8a1dd1e9eb6373ab91a",
+          "worldHash": "879eb3bd3ed37ddc5bb65cb150b5ca2b5a22bb9ab35881de0e8c9183710a33a6",
+          "baselineWins": 17,
+          "alternateWins": 14
+        },
+        {
+          "index": 1,
+          "hash": "0cd5b86ee7d113749d03dc72504ed2076daf20d729f1669f3ee7e2ab609b0b89",
+          "worldHash": "d1dfb1e304cbfba2afdefa521ca4b8d8f2b10766dda1e91fae2bda240e1bd40a",
+          "baselineWins": 39,
+          "alternateWins": 38
+        }
+      ],
+      "replay": false,
+      "trades": 27,
+      "draftHash": "0da86b272654cfa294f4de5af4bfd660f3cd3ee0bb8b087e5f43d3dfeb5330ef",
+      "durationMs": 243.33171100000027
+    },
+    {
+      "team": "BUF",
+      "seed": "redraft-structural-matrix-v1-c",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "783b6ae3a905e359b2f5c95de8298f484e38b63ee32a6c95424414addfd8f0d3",
+          "worldHash": "52865655e6c1f045ce560f756931ad47077f247337a7dd686cb5a53f6c90549b",
+          "baselineWins": 44,
+          "alternateWins": 46
+        },
+        {
+          "index": 1,
+          "hash": "b87a32a18dd9a82f73cf35c6ebb9cd40de6db023e4ed10bbd06231b9cfaa4c79",
+          "worldHash": "90fc047e0c450c3d726e7bc1f60aacbc7d3a4033123763bb6ceafc63d2645e7d",
+          "baselineWins": 52,
+          "alternateWins": 53
+        }
+      ],
+      "replay": false,
+      "trades": 28,
+      "draftHash": "4b94ee3d421b422af119c06a5b1c20bfa2594a796c6810af368f93398a0755b6",
+      "durationMs": 336.53691400000025
+    },
+    {
+      "team": "CAR",
+      "seed": "redraft-structural-matrix-v1-a",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "3ab6e51636267cb897d6018ff81e00c77a15a30bef093bc2efb6723cf71bd565",
+          "worldHash": "63f6e2aa71a36a5395e3bdf756e4d53a6decbbd45aedbc398766a210c7565334",
+          "baselineWins": 59,
+          "alternateWins": 58
+        },
+        {
+          "index": 1,
+          "hash": "f8b21b2b3b31c02d222481f30da4ca5431ccd4b42a944cbcd536496cbb20a463",
+          "worldHash": "947831ec1330ba85d5f2e3873e094c3c17728a7759451d228d8476cd6206a5d4",
+          "baselineWins": 29,
+          "alternateWins": 30
+        }
+      ],
+      "replay": true,
+      "trades": 18,
+      "draftHash": "da8a58be226e20dd808439033ceec0f1216658c9f1df13e8155301766ed4bb59",
+      "durationMs": 431.06524400000035
+    },
+    {
+      "team": "CAR",
+      "seed": "redraft-structural-matrix-v1-b",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "b0eb326745304d86bc7a316c4419ab96efc68a86b6a211d45ecdc2a4ee03ce2b",
+          "worldHash": "eccbec0ba8a631f3a86fd39e10fd60eebb7e1371eb3769eb9d21de4aec7562fc",
+          "baselineWins": 45,
+          "alternateWins": 42
+        },
+        {
+          "index": 1,
+          "hash": "755b58556b9013aeb0d9786ab16432d953c7eab64336d30154e4de1d0c0517d0",
+          "worldHash": "6ee4084f4c2497dc7a6a3d9873a90fc54caaa99c8dc18343fbee21126ca8f81b",
+          "baselineWins": 25,
+          "alternateWins": 24
+        }
+      ],
+      "replay": false,
+      "trades": 27,
+      "draftHash": "ab1f46b8b2fff5ce9a625096b2eb8db5938069252c60a4077fce6c9e8577fd55",
+      "durationMs": 261.70635500000026
+    },
+    {
+      "team": "CAR",
+      "seed": "redraft-structural-matrix-v1-c",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "3c0ba8918dc4397414b655623134db70718db26c0cb208203d34e8fba9e7a7e1",
+          "worldHash": "b8dfb0811146e9845b1c68d698b314209a04c83afba2d86dd4e710158d58f818",
+          "baselineWins": 43,
+          "alternateWins": 37
+        },
+        {
+          "index": 1,
+          "hash": "a04c1f1f9559cea5e66c389b5cdf1bad9d9522ff969d303b14d36a0e99b0fa48",
+          "worldHash": "9655c08a475d5f21ec95c90bc3c0024070e25a7da54a2fe2c32f0ea35f787458",
+          "baselineWins": 40,
+          "alternateWins": 38
+        }
+      ],
+      "replay": false,
+      "trades": 28,
+      "draftHash": "9ea73048b0d67295717b59b4e3a92b70cc51af0bd1ab9513a84dfd83a93047a8",
+      "durationMs": 230.03394800000024
+    },
+    {
+      "team": "CHI",
+      "seed": "redraft-structural-matrix-v1-a",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "2d5bb59086179dd32c6862624c06d977bdfcef6130a8fc2d307edf3b69f14393",
+          "worldHash": "3d25e96f59f4c49a668197df12f435db977d98ebc2c4d3d0175915821686931a",
+          "baselineWins": 59,
+          "alternateWins": 58
+        },
+        {
+          "index": 1,
+          "hash": "3779498c85980f6bc69ad3b769da2a9d15ee0037bf9a8394d3deeee654e1be49",
+          "worldHash": "b609ef10a9b80c07aa03ba21bc4a9a50366dcc4df006812940f032c4592db4fa",
+          "baselineWins": 32,
+          "alternateWins": 36
+        }
+      ],
+      "replay": true,
+      "trades": 17,
+      "draftHash": "00a023ea93b146fc5f13e79f73f721d0ed71e1b18003032920f878d56d42b68f",
+      "durationMs": 428.79725300000064
+    },
+    {
+      "team": "CHI",
+      "seed": "redraft-structural-matrix-v1-b",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "41f48067ae18917f74f63d42025a4aa7662f0cac2cb085ee08a035b62697f716",
+          "worldHash": "ff57693a2a9d9fd1db0c40e34e3fa4c87bc8a3174528faa18886b156ec35437d",
+          "baselineWins": 28,
+          "alternateWins": 25
+        },
+        {
+          "index": 1,
+          "hash": "5f66452142c5c8abae1c46b936a6292f5b8637c47e078a969bb30185e0783a31",
+          "worldHash": "0bd75c6117582c41cebba879f24e406807ac9f6835e83762cd7029e5702e34ae",
+          "baselineWins": 50,
+          "alternateWins": 51
+        }
+      ],
+      "replay": false,
+      "trades": 28,
+      "draftHash": "9a80555d3b5d3cc3756ac0b110df91156097014c0c1e4dd471ee37a9429fc075",
+      "durationMs": 233.48381100000006
+    },
+    {
+      "team": "CHI",
+      "seed": "redraft-structural-matrix-v1-c",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "7d2210b8c3ea585725de7548a507fd9e42de30bddf28218926258ea645af9ccf",
+          "worldHash": "7aead8c23fe1c5701efc0f655bf4a58cc1f216c9cc2eda3d958c19f6904635fc",
+          "baselineWins": 51,
+          "alternateWins": 48
+        },
+        {
+          "index": 1,
+          "hash": "e05cb0871a40ad3aaf03a6803d89782c4e163cd440258879c894bbc807cc2d90",
+          "worldHash": "b3e772f59ce3995cec64362edcec26986b2530f2f255c26d56a36ace357cf801",
+          "baselineWins": 30,
+          "alternateWins": 30
+        }
+      ],
+      "replay": false,
+      "trades": 28,
+      "draftHash": "17ad9215c488da012c519508aff9e02bbc9f6ec8ae41ccaffe53c68f30480579",
+      "durationMs": 224.0997239999997
+    },
+    {
+      "team": "CIN",
+      "seed": "redraft-structural-matrix-v1-a",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "3bb3f214ddf8ee554d1c2eec115169a0dad18eb39308234b0c9b4c7ae3dc402d",
+          "worldHash": "da51b0bcae9ca901e67054961d8332f6f91656b0bc6f47167436170b45c06361",
+          "baselineWins": 59,
+          "alternateWins": 56
+        },
+        {
+          "index": 1,
+          "hash": "6777c9afce1a55ce9d52d2220621be0057c1a3d4c8ca769ce096ed5d2445ec04",
+          "worldHash": "a50da94090e05f2d7e55f064278ed2d7b5f4fd044beb1fe6ee3c1c7866a181a8",
+          "baselineWins": 37,
+          "alternateWins": 35
+        }
+      ],
+      "replay": true,
+      "trades": 17,
+      "draftHash": "59bd122c9616ac3d71b2e2dee7e1f8c855d20e2bd84f263b9052bb5d3312cfc9",
+      "durationMs": 406.72252899999967
+    },
+    {
+      "team": "CIN",
+      "seed": "redraft-structural-matrix-v1-b",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "c5efd7280a8673d903975e4705c2fa84d1628950c8976c04f43167a69d3d673a",
+          "worldHash": "756cd15edd889b90ecae55dde99ca27bd4736c1af4a164d95f32ab08868c16e5",
+          "baselineWins": 41,
+          "alternateWins": 44
+        },
+        {
+          "index": 1,
+          "hash": "3a3080979035c427e4cc8bc4a54e5de1bb9f84ba8229c30e886e9109e92058ad",
+          "worldHash": "2f2d0bfe34285fae614abc940bf6a270a40c1b92fbe83177c783cbfbcfa21a10",
+          "baselineWins": 40,
+          "alternateWins": 35
+        }
+      ],
+      "replay": false,
+      "trades": 27,
+      "draftHash": "1935fc7edd0bc1c078251f05e012c9e974dfefab8a8198e33b41f4598021fbe8",
+      "durationMs": 218.17351400000007
+    },
+    {
+      "team": "CIN",
+      "seed": "redraft-structural-matrix-v1-c",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "16528abcee591654a4cdfe4daefc3620f05629c8ae8dbefb4b5f5a14f886fdcc",
+          "worldHash": "e476c684192ff5219d6784552ec4c4a66c7e61de0918172b5c1b510b21ede856",
+          "baselineWins": 41,
+          "alternateWins": 42
+        },
+        {
+          "index": 1,
+          "hash": "48686e5704846b547d1eb0434c4478c1cf2845117a310dcc9ace97533e559e58",
+          "worldHash": "6ac0cd39db706a29669960e58fe84cd30afeb74bcec0eace7bb89968ecfb9ac9",
+          "baselineWins": 34,
+          "alternateWins": 38
+        }
+      ],
+      "replay": false,
+      "trades": 29,
+      "draftHash": "8464c677a7182a8b76518bbe072db99125d10fc64050bd3849c5729cca4cb171",
+      "durationMs": 271.831588
+    },
+    {
+      "team": "CLE",
+      "seed": "redraft-structural-matrix-v1-a",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "2c8ca9bf4aa2eca95fd737bc1c71b602717fb92b7781d128d4c7ded83422e97c",
+          "worldHash": "629e622696409153cf711be3b3aa534c180c1465511359f518da5cfd18c1444c",
+          "baselineWins": 55,
+          "alternateWins": 51
+        },
+        {
+          "index": 1,
+          "hash": "b383ef75ff3aa81bafe64f106c86928f40cc104c0628a3f7154a84f32f27f181",
+          "worldHash": "c8bb989d43a23d793baa5557cc9bead489250931222e48c5e5e77a7f8bfc9a8c",
+          "baselineWins": 42,
+          "alternateWins": 43
+        }
+      ],
+      "replay": true,
+      "trades": 19,
+      "draftHash": "36e99cb1941a05d1639008c6deec72a0f624251705261a4cc2896bfb5165cf94",
+      "durationMs": 450.496846
+    },
+    {
+      "team": "CLE",
+      "seed": "redraft-structural-matrix-v1-b",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "89dff92b8fa3299d9eeb4f21cd182244ac9a7c707d54da41df90bcf52b155c58",
+          "worldHash": "cdef2f69ebb7a91c5eb8692ee924bbdb7091b6c1e4e64224e6257cb1bdfca7d9",
+          "baselineWins": 48,
+          "alternateWins": 46
+        },
+        {
+          "index": 1,
+          "hash": "34db1779706188c891dfc37017a5fe52851910e6e1b90499ae64fd5824f07c97",
+          "worldHash": "4723f010f1c05eb06689cb7d9b3fe2e7441625024a999b5b1f27c7787043456a",
+          "baselineWins": 41,
+          "alternateWins": 47
+        }
+      ],
+      "replay": false,
+      "trades": 28,
+      "draftHash": "d5a95093850d26486db9ad394a5c04343bc960ff24544a5e05b8414f3c878c7a",
+      "durationMs": 240.0589689999997
+    },
+    {
+      "team": "CLE",
+      "seed": "redraft-structural-matrix-v1-c",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "1aa5d74fb07fc92576b6b9bbdb48dcfd0b18aa612152568924b2094b2a79e60b",
+          "worldHash": "1f45cda316e5711ce54276b99a0707ec311a71c32c95a31be59845806cc606ae",
+          "baselineWins": 54,
+          "alternateWins": 52
+        },
+        {
+          "index": 1,
+          "hash": "3311496028018fe0526a72cfb08558026cd5ed1302b9d576f478acbb050e6aa0",
+          "worldHash": "4d69a05eb4cb7c4fad14d13da872b4d64c1afa4490125453270d0e3491ac839f",
+          "baselineWins": 34,
+          "alternateWins": 36
+        }
+      ],
+      "replay": false,
+      "trades": 27,
+      "draftHash": "6dd80805ffd59ceadc1ca597cb254033f1b12d6c415b456bdb25371372a12b5f",
+      "durationMs": 233.80190099999982
+    },
+    {
+      "team": "DAL",
+      "seed": "redraft-structural-matrix-v1-a",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "3d9439526e3231169e25a3af91c903444aced7c2b21fec5e5ef2511f1172b2d4",
+          "worldHash": "69b4012b44de0bf817e03603768ad339c143b9bb3a1203ecb8999b0ff5c598ca",
+          "baselineWins": 27,
+          "alternateWins": 27
+        },
+        {
+          "index": 1,
+          "hash": "ee6316b11cf0796700bc0e66c7a1816934365d5f8cfbe2d36cdc7f7684b06772",
+          "worldHash": "53e972f98c5037bbb2c01b83ffd15af1c332b1498facbf3b1e1ef3727ba62dcd",
+          "baselineWins": 42,
+          "alternateWins": 49
+        }
+      ],
+      "replay": true,
+      "trades": 18,
+      "draftHash": "4c1cae9b72990f93e80db72d377fec48b795e7df47e0851d6f7f9a882494077c",
+      "durationMs": 471.35557999999946
+    },
+    {
+      "team": "DAL",
+      "seed": "redraft-structural-matrix-v1-b",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "42e35e4c28b072611a055127347fa33a64061383e2c5c9e970625ed105866577",
+          "worldHash": "ac5a622be8f2795446b614e9cd42251db360d76be3b5a7e578244313ab6ce696",
+          "baselineWins": 38,
+          "alternateWins": 36
+        },
+        {
+          "index": 1,
+          "hash": "848170ffe4ebd5b8a6b4d4c811dece9f8d37bb6c43607c0283dfe1f61fb71dfe",
+          "worldHash": "87f0e7036d8a3f1240040cbc8df8804de4e1f3083c89df5bf38864fdb7cff770",
+          "baselineWins": 37,
+          "alternateWins": 43
+        }
+      ],
+      "replay": false,
+      "trades": 27,
+      "draftHash": "4ba534593ffc6de934626ea60493a492b57bbfb621926d9d73c7132a03abb914",
+      "durationMs": 241.39602999999988
+    },
+    {
+      "team": "DAL",
+      "seed": "redraft-structural-matrix-v1-c",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "b3e161369234f4045452f733c8188dbe935ff4aa5a378aa881701d3ad1702fe5",
+          "worldHash": "4c730d5d629db9caeff11614f5dbf84838f70d1700080a10ee06ec9f93f614dd",
+          "baselineWins": 49,
+          "alternateWins": 56
+        },
+        {
+          "index": 1,
+          "hash": "a9b74196b48eaaecf440e7fbfee539a34fb9b41ea02bd55ae22de4464400abb0",
+          "worldHash": "66b1b660771edb939333bc3c52433b3a0e484aebf3f47b176e77fc7679d1c2c0",
+          "baselineWins": 44,
+          "alternateWins": 43
+        }
+      ],
+      "replay": false,
+      "trades": 29,
+      "draftHash": "0a853db4da5eca7c5d923cf934a12258ca6f27fc4b50a14baf94a8cb45677e79",
+      "durationMs": 269.79122500000085
+    },
+    {
+      "team": "DEN",
+      "seed": "redraft-structural-matrix-v1-a",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "2638b6fc7c1011876e38e95406c4dc4536d3605bb9419026cdcbbdda5d371e08",
+          "worldHash": "26f771bc467179c40f1cd1eeba4f81bd9fcae94d6bb0ff2bd45336ec42ded00d",
+          "baselineWins": 46,
+          "alternateWins": 46
+        },
+        {
+          "index": 1,
+          "hash": "ce3c8d276fd2677aa03ab004a0ce2b80ca12f18a6707675710aaf1235ca86183",
+          "worldHash": "ca823804dd32d35830d353ac7da5948342b4051925a2b2c9c2505c8aaeecbb8c",
+          "baselineWins": 48,
+          "alternateWins": 52
+        }
+      ],
+      "replay": true,
+      "trades": 17,
+      "draftHash": "009ca834027b3bb352926cb6a674bc55e8320a81d6d7c2b7d8f0116aba35cb12",
+      "durationMs": 434.7664100000002
+    },
+    {
+      "team": "DEN",
+      "seed": "redraft-structural-matrix-v1-b",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "70963c3c40dae9625bbef6937c13ba23dc61a8dc5c216daef3ffb9a2206c22ad",
+          "worldHash": "322eeacca5fdfb868b3dd5f0f93806967fe38f6f373024a1fa8bf0855fd61571",
+          "baselineWins": 35,
+          "alternateWins": 35
+        },
+        {
+          "index": 1,
+          "hash": "804e0572d6119ac71414e1f4e133197e4191b151d6cdec0583056fac69084369",
+          "worldHash": "4c91dbbee672a746014149a2fbf3b838f2031f0f076be8099bccb85b5a747a86",
+          "baselineWins": 47,
+          "alternateWins": 37
+        }
+      ],
+      "replay": false,
+      "trades": 28,
+      "draftHash": "33f708bb726fdeddf844d60fac62fd107f4209c833b910415bcb6f4de3bba7d7",
+      "durationMs": 263.36865599999874
+    },
+    {
+      "team": "DEN",
+      "seed": "redraft-structural-matrix-v1-c",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "bdf0cc27d912a871f45781c999785478edc5e1644319fb54d692420822923a2c",
+          "worldHash": "40cd0b2651e34f8b17f93f8600c98623de2c2264cb68193f0955a9c92a4392c7",
+          "baselineWins": 22,
+          "alternateWins": 22
+        },
+        {
+          "index": 1,
+          "hash": "d3c4db96468fff99090bdd9c82385055cb0380145b3f972a7965bfcfea559af3",
+          "worldHash": "4af2e32aa91a088142a40470a2b1b77c7ad82d777d37c27dde4f1e2d87689fd5",
+          "baselineWins": 64,
+          "alternateWins": 63
+        }
+      ],
+      "replay": false,
+      "trades": 28,
+      "draftHash": "a7b8354f929f60f41cec02a97d5dede80431f9ca37021205b4e818a611872438",
+      "durationMs": 237.01550199999838
+    },
+    {
+      "team": "DET",
+      "seed": "redraft-structural-matrix-v1-a",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "60db6ead3a0e23e4424cdf6d016a56ab95d17fe2bdfdbba729b05df9ca9e6f3a",
+          "worldHash": "bfd52b9bcbc08508a02964ae09003204639d3e429b5037a06d6cdcd6671ea215",
+          "baselineWins": 37,
+          "alternateWins": 38
+        },
+        {
+          "index": 1,
+          "hash": "bec8b0441a93440f75c7b85658e0dfac2b0bc1457d8473e4ae61d6212fb999aa",
+          "worldHash": "f361adcdc10977738bad6a7604c4c4deda6b77e26b8f65eeb32baf9598e9c855",
+          "baselineWins": 55,
+          "alternateWins": 45
+        }
+      ],
+      "replay": true,
+      "trades": 19,
+      "draftHash": "394187d3a1327d8a191ca8681f2646cb80adca9291eef03688a1d7e23304505c",
+      "durationMs": 449.2555309999989
+    },
+    {
+      "team": "DET",
+      "seed": "redraft-structural-matrix-v1-b",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "1356045233740a7bb9b66898e8da7f83dcad255d2cda22d14b86cfb1bcae761b",
+          "worldHash": "66e2d5160d12abf3428620d1887df3f2c091f4a1c866359145bd8605f4b0b4cb",
+          "baselineWins": 39,
+          "alternateWins": 45
+        },
+        {
+          "index": 1,
+          "hash": "9daa7a66dbc10e909545587c8d872b7108e529fd73b0d32a7823f092c4061250",
+          "worldHash": "8be43c1a736d3e223e583c83f7874ec9c69dd157dea90f2d34776052d2a6d3a2",
+          "baselineWins": 42,
+          "alternateWins": 41
+        }
+      ],
+      "replay": false,
+      "trades": 26,
+      "draftHash": "9894821eb457a712c51b85c998aec9aadd01dbfb9f0ea1cadab3f33baaf19794",
+      "durationMs": 230.3832710000006
+    },
+    {
+      "team": "DET",
+      "seed": "redraft-structural-matrix-v1-c",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "fbfc7c1aa4eb160525d61b1fcc513b644938f406e3233e42f6a161995f9cd8b4",
+          "worldHash": "19585f817eefc9589b08e756ef8313e5f169efda5a6ced4a1e697d601c74e4f4",
+          "baselineWins": 48,
+          "alternateWins": 47
+        },
+        {
+          "index": 1,
+          "hash": "855f40e4609613cbdd4205cfdd89ae47790c3c784bbcbf4357d312b11018d626",
+          "worldHash": "1a6e354b3a5d09cbcab909a87c5a0b2e69e7dc9fc7d71fb14e9813e1e2503bf1",
+          "baselineWins": 32,
+          "alternateWins": 33
+        }
+      ],
+      "replay": false,
+      "trades": 28,
+      "draftHash": "6b64663625e184b6620b2185ec9d7ca6d28b8a4d7ec177d5d58847d064eb4f83",
+      "durationMs": 226.81217500000093
+    },
+    {
+      "team": "GB",
+      "seed": "redraft-structural-matrix-v1-a",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "cba3dc98228ce5e69affe2ad4adec39adc2c68c82a1004ebd18081fc63b3e018",
+          "worldHash": "c3d9a70ab1e25c70999b17fef3f637f4a87b8215c4b35b3585ec6a88e9c738bd",
+          "baselineWins": 42,
+          "alternateWins": 41
+        },
+        {
+          "index": 1,
+          "hash": "3539ee1ff2ff5256fd98520f64c44bb6cd04b63d7fbeabaebba623592efb7bd1",
+          "worldHash": "2b17dc77116264333e01732ce4536dae733c72163d68bd4cc6eab0ebc46e0897",
+          "baselineWins": 53,
+          "alternateWins": 50
+        }
+      ],
+      "replay": true,
+      "trades": 18,
+      "draftHash": "91752c6abdbf2b34d41375aac395245c242f11243a432cd0b3e3d6433babede2",
+      "durationMs": 449.1513479999994
+    },
+    {
+      "team": "GB",
+      "seed": "redraft-structural-matrix-v1-b",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "37dc2715bf31fb25d2f4defe24c6be051a1e505a91e6ece5960921709fd3c0f5",
+          "worldHash": "ef4b10e6b187ef0ab66926d4f6d77984f842322654f41ae436905a01f6c785c3",
+          "baselineWins": 50,
+          "alternateWins": 50
+        },
+        {
+          "index": 1,
+          "hash": "884d6958cca451a1ee48ed0d773167d0484be86098ca0623b47084e3a65e7c5e",
+          "worldHash": "ca7ccbbce20934a23114d2b7a6b02493af58c468abd2c9d4a0535801c1082ffb",
+          "baselineWins": 50,
+          "alternateWins": 47
+        }
+      ],
+      "replay": false,
+      "trades": 28,
+      "draftHash": "e25a6d06f0b894aa28e3d3a036c8a9c0f98b47c60e5ddd2039528d1e2dfed321",
+      "durationMs": 233.35092199999963
+    },
+    {
+      "team": "GB",
+      "seed": "redraft-structural-matrix-v1-c",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "ffe3ff59ee779595fbb25a162d126beaa2b4d0e2ee7015fa6b1884303044d296",
+          "worldHash": "392dc598e560abe9fdee465c7ad64e12f06cf9c1f55c5494bd682ef059db80b2",
+          "baselineWins": 30,
+          "alternateWins": 33
+        },
+        {
+          "index": 1,
+          "hash": "c8b9674f4b6e760120e5e5df81369569ed42609df06ca84433c5f3b739c9d97d",
+          "worldHash": "2351c5ac65ed8047bd83db03bc0c35e2a365efa3af3cbdd025e54bf46661f089",
+          "baselineWins": 45,
+          "alternateWins": 37
+        }
+      ],
+      "replay": false,
+      "trades": 29,
+      "draftHash": "907169992c0c93c76856faa05bfc45409d0e67a54c628c211b9a9cd438335671",
+      "durationMs": 234.66418200000044
+    },
+    {
+      "team": "HOU",
+      "seed": "redraft-structural-matrix-v1-a",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "52bd08d160a4c1736a8aeb861a6bcb4d34c89390120db27e2ff38a17c0344ac7",
+          "worldHash": "cad588c732ac81fc51d29c5d0160b9bc8e87c7658ce7454039f31d2699bb9246",
+          "baselineWins": 49,
+          "alternateWins": 51
+        },
+        {
+          "index": 1,
+          "hash": "a966cf25312710eb9029e6af998166a618c85237fb126861554f5bee3e3066e8",
+          "worldHash": "ebd8d902142af945a81b1f03f4cd19555cf906d37111bf1f9679f3511df4132f",
+          "baselineWins": 47,
+          "alternateWins": 53
+        }
+      ],
+      "replay": true,
+      "trades": 19,
+      "draftHash": "5eac3669737d76d15df53149ba0ab5420006533d1a10e4afd780fb88a3ae6fb6",
+      "durationMs": 435.774875000001
+    },
+    {
+      "team": "HOU",
+      "seed": "redraft-structural-matrix-v1-b",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "71b2f2d790de3f2099819e64a8c426659cda35d7ddbf93b76f0d2be196a3c34d",
+          "worldHash": "f6bb1cc934c1f5a48f7d740fc6cb5cb100a21d004c2a14946168440aa4195dea",
+          "baselineWins": 46,
+          "alternateWins": 46
+        },
+        {
+          "index": 1,
+          "hash": "3d9977d293f48520ca96c2606f23b19143b9faf7580542f7737ce299756778ae",
+          "worldHash": "4f74d6feebb2ca936f7450e305dfac5ffe5326020773daa8f73c82a8e6547034",
+          "baselineWins": 48,
+          "alternateWins": 54
+        }
+      ],
+      "replay": false,
+      "trades": 27,
+      "draftHash": "3052f55c1e1f22a8e0260dd8a296e3c9c2928db85101dd07e59249bcd3861244",
+      "durationMs": 261.9539819999991
+    },
+    {
+      "team": "HOU",
+      "seed": "redraft-structural-matrix-v1-c",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "7132afd4d943bdf6224f9d3426ed1be69e5aedf03b2495c224b7d24669151647",
+          "worldHash": "c133c94278680cb3eb12e16101fef2b7f9f6a6d345c1a6f072fbcb890f3f5656",
+          "baselineWins": 33,
+          "alternateWins": 33
+        },
+        {
+          "index": 1,
+          "hash": "3c3cc793c01480182e583da94ad7b1ebfd147e3a976648dc20b7bbcaf67e3ebf",
+          "worldHash": "e4aa2f627d1dd94d3a77aeb4b4b5b8ee0b8b1cbd3f28aff3b79bfdbd98fe9e70",
+          "baselineWins": 41,
+          "alternateWins": 44
+        }
+      ],
+      "replay": false,
+      "trades": 28,
+      "draftHash": "f69c37a1a9e66670b921060847507c4917eca8226024692296c354fd3b25e53a",
+      "durationMs": 225.18044700000064
+    },
+    {
+      "team": "IND",
+      "seed": "redraft-structural-matrix-v1-a",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "27a0cb1d32573fb837206dc64f4152de608e6cd4283c9e762c53c656a2327dde",
+          "worldHash": "48e2f9765956e1811e02261e745bd25ab5c3a62d036780acb7bff5db879dd757",
+          "baselineWins": 30,
+          "alternateWins": 28
+        },
+        {
+          "index": 1,
+          "hash": "a16ee7ca63d7a2f1c95a6a7677f4e7cb411b0dd0b5faa8ccb12f2fb1bc860648",
+          "worldHash": "219360dbe3ef625a51256175f21cdade6a36f7ebfc094b4f15d6f2db2d455f70",
+          "baselineWins": 38,
+          "alternateWins": 34
+        }
+      ],
+      "replay": true,
+      "trades": 19,
+      "draftHash": "1f5797c8edcff1e990ff7f33580284981a942a2c9696bd74ab387bdd872e2667",
+      "durationMs": 431.82232699999986
+    },
+    {
+      "team": "IND",
+      "seed": "redraft-structural-matrix-v1-b",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "305692d207072563b597b08e8e982a9c75039c14b3e6f2bd54f7c435cba11069",
+          "worldHash": "ab10a9b91651838aee06859a20a6cc4690200fb77b9b13e9a58ec7c638139b69",
+          "baselineWins": 36,
+          "alternateWins": 38
+        },
+        {
+          "index": 1,
+          "hash": "d9e80e8572ccde21ec341c4fe2da0008fb9182d7747ac25f118e46fdb48db4b3",
+          "worldHash": "c5b78a5d3a103e2da2053a876be4011d92833cebfd722e05f75fa2a658631957",
+          "baselineWins": 39,
+          "alternateWins": 28
+        }
+      ],
+      "replay": false,
+      "trades": 27,
+      "draftHash": "a42c6d6e2e83ad67bed1f2917d50ed41dd77977c119f0d6bfbafbca51f1b8c79",
+      "durationMs": 253.57494099999894
+    },
+    {
+      "team": "IND",
+      "seed": "redraft-structural-matrix-v1-c",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "5aa1d3515b2b4cde53aa234870d575d2a042c605b769e4568eec727125fef450",
+          "worldHash": "975088c7ce8d3b26e216127d78df7b59032cd2bffd7e994b71f6d2f28fb50d6b",
+          "baselineWins": 43,
+          "alternateWins": 40
+        },
+        {
+          "index": 1,
+          "hash": "8e0f4550ffddeb3f7d97fd611c390866f5b7843068c1f18815a8226ff04fd62c",
+          "worldHash": "b3f1575ce90f4cb8b530a33208b2bf248152902e29620734b6812dfbf9c414ee",
+          "baselineWins": 30,
+          "alternateWins": 27
+        }
+      ],
+      "replay": false,
+      "trades": 28,
+      "draftHash": "fd250bef4c76911c987a75cbb4e6304472273ee7e67a1578871e6b55ad51aae1",
+      "durationMs": 223.76224399999955
+    },
+    {
+      "team": "JAX",
+      "seed": "redraft-structural-matrix-v1-a",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "ebaa13992141abc57a9791512d0084432e71d803c00a80c75c662730a27541e6",
+          "worldHash": "1789e6918fba1406bd12fc10d65bb9ced3bb88ec82d024f061807d8a4d0c5ff2",
+          "baselineWins": 33,
+          "alternateWins": 43
+        },
+        {
+          "index": 1,
+          "hash": "556acfbc668c0bd82ef3102494353918eb95ecc7b24d06d34a04158184f3f65c",
+          "worldHash": "56182c7af19f8669a868dfe87eda792c62002d74d55b6cea9b340fbbbf43e223",
+          "baselineWins": 43,
+          "alternateWins": 45
+        }
+      ],
+      "replay": true,
+      "trades": 19,
+      "draftHash": "00f912473ff8ba91d344c5b7698aeb31d3a0aa6717986aab33129a3363c576c4",
+      "durationMs": 474.110369
+    },
+    {
+      "team": "JAX",
+      "seed": "redraft-structural-matrix-v1-b",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "7d22b5e9dadfda061994c31cbce10f0f1d05b9c76a8b2a072c0077a66d8e0b29",
+          "worldHash": "b817bb754e9a4ba1992977325f7e2f08953437e2580a1e82acca8ff0bcdda562",
+          "baselineWins": 48,
+          "alternateWins": 46
+        },
+        {
+          "index": 1,
+          "hash": "346d9633b6cba3ee6ad40d9fad0fb60e1a0f04f46db96b4188c7d0759a2bcd00",
+          "worldHash": "14df51edc19a46605b8453e690f4281555851bfb432683c5f2f88a6b262597cd",
+          "baselineWins": 35,
+          "alternateWins": 37
+        }
+      ],
+      "replay": false,
+      "trades": 28,
+      "draftHash": "33e8c1e852d1564558cc68842d64d2996963e653488fcb973f0c0ea9f2f73cdc",
+      "durationMs": 271.14152900000045
+    },
+    {
+      "team": "JAX",
+      "seed": "redraft-structural-matrix-v1-c",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "dda2f1d89d91d41f6a0c26781b7a4bc23ab84a2e9a5b6aac73770a2c420aa18a",
+          "worldHash": "49df4d26c974cdd4a6ff2a70e96de7626c2f21151e498052dfec48112d05c431",
+          "baselineWins": 51,
+          "alternateWins": 46
+        },
+        {
+          "index": 1,
+          "hash": "45a995bfb5401c69ded4c6bcb0121271a7cef9f818cb2204eba0e2e833fd4c6a",
+          "worldHash": "3c8a400de4ce29dc8b954fdf1a82ed18e9275a1a2cdf688316920403a78c7cfc",
+          "baselineWins": 57,
+          "alternateWins": 49
+        }
+      ],
+      "replay": false,
+      "trades": 27,
+      "draftHash": "14924b2e2a4c5ae62ddfffce3ccbe0c572fcc2ecb02554c017fe56347d97c635",
+      "durationMs": 270.3122139999996
+    },
+    {
+      "team": "KC",
+      "seed": "redraft-structural-matrix-v1-a",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "a085fac85919cd6049cac7874463cd439b3fd946c77c61bdcb788e15c234dc84",
+          "worldHash": "5ffa6f17f88079890f1c66223dce854a5626b040da494c05ee88546e1e9ff4cd",
+          "baselineWins": 40,
+          "alternateWins": 41
+        },
+        {
+          "index": 1,
+          "hash": "9aeb23558603a211609798d71630a34e0aa775b82aed60005bac1b6100798081",
+          "worldHash": "4ba7c6d2e7d023bb7e8232f19305aa8bcb84081b336de8a660c140fb0bf38c81",
+          "baselineWins": 35,
+          "alternateWins": 41
+        }
+      ],
+      "replay": true,
+      "trades": 18,
+      "draftHash": "c5fd7821cdf1d42b6b592f0c7156ba744cf94f3be5b489fb05ec1c0b5ce344fe",
+      "durationMs": 416.2683649999999
+    },
+    {
+      "team": "KC",
+      "seed": "redraft-structural-matrix-v1-b",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "cb2a025994afd5cc5563405de62d2897e8798eb80846d708c8936831c477890d",
+          "worldHash": "9c2081851f8fc561c4bff5cec2dca71a93cd78f94939ce6279d6c11e04df53d8",
+          "baselineWins": 36,
+          "alternateWins": 41
+        },
+        {
+          "index": 1,
+          "hash": "d04d0a43413c51f29fb053816c208994441f97e58825096d628cb2d11b354959",
+          "worldHash": "19504e1e5ddb1f7797bbf2c735cacc74fe22524aad93eed0c95931b190ba28a3",
+          "baselineWins": 34,
+          "alternateWins": 41
+        }
+      ],
+      "replay": false,
+      "trades": 26,
+      "draftHash": "bf11a1fd804c6e0e79976eb5568db449048b4dd440d3953bfc633ee973f04709",
+      "durationMs": 305.1372859999992
+    },
+    {
+      "team": "KC",
+      "seed": "redraft-structural-matrix-v1-c",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "3b288febd5123ee8e2ff94aaf1863358a5792234b679e3a8c2877e7c1459c7a6",
+          "worldHash": "a6a55b761ab8831bdc34d571506de87fda0eafdb6868a778c656dea9449c11e8",
+          "baselineWins": 54,
+          "alternateWins": 55
+        },
+        {
+          "index": 1,
+          "hash": "cc3257429d675d86c935c362cf73086bc01032f4a3ad68998cbdf4993868a97f",
+          "worldHash": "6ce5bf8c6236b37ed7676f8639fbbe2ec9ae61fe8df44455aa42992735dc69b4",
+          "baselineWins": 35,
+          "alternateWins": 37
+        }
+      ],
+      "replay": false,
+      "trades": 28,
+      "draftHash": "772126d3386d72d3d9125f6292c031731a5021b2bd6e0450abe7e74967f51c00",
+      "durationMs": 224.9240600000012
+    },
+    {
+      "team": "LAC",
+      "seed": "redraft-structural-matrix-v1-a",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "b70b74c7cc24de582e26d20233eca133c4009c246b532d3d3d835963f9c18146",
+          "worldHash": "db1877672899fde12d6b805379e9141b257de219b2f6ed3529448ec31c0805db",
+          "baselineWins": 41,
+          "alternateWins": 38
+        },
+        {
+          "index": 1,
+          "hash": "3a618c6c33b0fb18ca52e7827399ba0168d4d0ec26300b272e2c23bbee220c5e",
+          "worldHash": "0e9a2d17f1eb422fbe49b22327e82234d256f61bde9203bad3fde12a816d65cc",
+          "baselineWins": 43,
+          "alternateWins": 46
+        }
+      ],
+      "replay": true,
+      "trades": 19,
+      "draftHash": "7f4df0d678c1d0816505c4dd12243025763436668ea18c11fe04a39fbb4162ce",
+      "durationMs": 398.81961799999954
+    },
+    {
+      "team": "LAC",
+      "seed": "redraft-structural-matrix-v1-b",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "8497eea15ca9dc331cfd33dace253e66037c5179d76dbaa6f09583c23efcbef1",
+          "worldHash": "06171cb34146e01b052dc5e2cb3050e04179cc4590ac8d2cf61d38d7e9155040",
+          "baselineWins": 42,
+          "alternateWins": 38
+        },
+        {
+          "index": 1,
+          "hash": "50c9fc6e631715886346696ccdaab1be015ac761d1eb117c806e686b7078d81d",
+          "worldHash": "3d86834db71810c66c686dc90478b09af1e93efe32dc81e38a435b166286d634",
+          "baselineWins": 40,
+          "alternateWins": 40
+        }
+      ],
+      "replay": false,
+      "trades": 26,
+      "draftHash": "2d5b1f87a34a266bbca123cce77b8c560c8b87c495df0a257d359b0a8a2e84ec",
+      "durationMs": 229.41301999999996
+    },
+    {
+      "team": "LAC",
+      "seed": "redraft-structural-matrix-v1-c",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "2b6d60d48fa2d2e46d3dff0cba798e09b16b1c47f7f59f6143a4b16064a2e3b2",
+          "worldHash": "059bd14fdb98b0ae6022918320827f370b6850ec3837ff6339a53ac6d0e4a31a",
+          "baselineWins": 60,
+          "alternateWins": 59
+        },
+        {
+          "index": 1,
+          "hash": "106613ba99ce26e89bbda1616f435c62f2056cf6d80cb4077e38321474f36c69",
+          "worldHash": "5ff60774967007037479562c1b760030c23862b3a510e1b51e9c7154e3a81739",
+          "baselineWins": 53,
+          "alternateWins": 52
+        }
+      ],
+      "replay": false,
+      "trades": 29,
+      "draftHash": "c9654187e7191dab62156dba04ff08d92baa556c9fab1b0b4b7dfb6a79002029",
+      "durationMs": 239.15950300000077
+    },
+    {
+      "team": "LAR",
+      "seed": "redraft-structural-matrix-v1-a",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "e7f112a138fe151a91a915c0f4d9a9f9daeb386c384cce01a9e4d971df46d56c",
+          "worldHash": "32b2934fafa9e5662037c8d857f6a25391eef23b7d495d82fc6170be38d43a03",
+          "baselineWins": 50,
+          "alternateWins": 49
+        },
+        {
+          "index": 1,
+          "hash": "98f9f6e5f57d4865753526e0425b956d0106acd3a5dcc170f6ce1be83acd8dea",
+          "worldHash": "74eaf5ace3ac65844c69e52c9bae5afbbdcd95327017e7db28fed9a979ecda98",
+          "baselineWins": 46,
+          "alternateWins": 46
+        }
+      ],
+      "replay": true,
+      "trades": 19,
+      "draftHash": "0b4730c899563796db3da950190d75e581d7f8127faec97055757a55e57055cb",
+      "durationMs": 392.4768670000012
+    },
+    {
+      "team": "LAR",
+      "seed": "redraft-structural-matrix-v1-b",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "b89f995cf9ed6c165f1affcc407482e6912652abc2e6e5ef14859eee4bddecfd",
+          "worldHash": "3b1c87dac1b5b10cb9ee752354dba47f4af3fad8df419e093c71141f5616fa20",
+          "baselineWins": 54,
+          "alternateWins": 58
+        },
+        {
+          "index": 1,
+          "hash": "73aaa4038c847ee55ec988c6b8fa4a54d59c0e50559d3c9fe525f32e1d6f95e4",
+          "worldHash": "dc2ead7b0e6091fe3404d7f3a3c99810893b9a0a03f4965d78557fc93f263cb2",
+          "baselineWins": 47,
+          "alternateWins": 48
+        }
+      ],
+      "replay": false,
+      "trades": 27,
+      "draftHash": "060fffbef987dd1718c30039785fa0da298db0b0f518810a2deecdaf5c8ab14a",
+      "durationMs": 225.38582700000188
+    },
+    {
+      "team": "LAR",
+      "seed": "redraft-structural-matrix-v1-c",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "ec09abed84701a34e001346e3e1ae08708146e341cf6778903ecbe341eab155a",
+          "worldHash": "b172a4a4694978e6b889d24bfc9b92152b30643b0e4527a4b8e68944206c9fc6",
+          "baselineWins": 39,
+          "alternateWins": 40
+        },
+        {
+          "index": 1,
+          "hash": "79fd47ad8a4dc19e8cb52542d58480800555c0f363b2375dccab07bd8f15643d",
+          "worldHash": "9877bc958c5028ef7fbd0b9640422e4cda0f3e6eaabd55ecc359b773c4011130",
+          "baselineWins": 37,
+          "alternateWins": 35
+        }
+      ],
+      "replay": false,
+      "trades": 29,
+      "draftHash": "66d5953b25ead93b8932233d8f80327204cda35c1deaad84955da8e94cfa093e",
+      "durationMs": 225.0607259999997
+    },
+    {
+      "team": "MIA",
+      "seed": "redraft-structural-matrix-v1-a",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "b4b2affaa865c4ca38335e3058dcc7088d7cb38fa0efacb7766df739039bd2de",
+          "worldHash": "a25e3d65387a33418749e9ea616d5bb10b97b3b9fd20c5d13724d3fc4fb69042",
+          "baselineWins": 42,
+          "alternateWins": 46
+        },
+        {
+          "index": 1,
+          "hash": "ea14dc7686bc6a744dcc76760700ea4c48b441058f518902600256826d90b111",
+          "worldHash": "97fcc9cca0cd3e197bd01a96755c3345487f4dbffc2d429504a979c28b8b100c",
+          "baselineWins": 45,
+          "alternateWins": 46
+        }
+      ],
+      "replay": true,
+      "trades": 19,
+      "draftHash": "03585c40b5550dc4898b59e974418d88ce2d77f61b79637622a80ea79fc0d693",
+      "durationMs": 396.3830080000007
+    },
+    {
+      "team": "MIA",
+      "seed": "redraft-structural-matrix-v1-b",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "0c5eb14c6e9f99ebc2d6dcb330e2b58857a971709d51aff24fa7a43459bbfbea",
+          "worldHash": "3e6e12823329f6289648757ed5c4269e1d5224970d46cb3494123cd5bf3325ae",
+          "baselineWins": 50,
+          "alternateWins": 47
+        },
+        {
+          "index": 1,
+          "hash": "c9e789a57fb1057c688ea7940a38fe303e18d9b78bbdcd0841bfc2bc20d2e23b",
+          "worldHash": "8c800d24583e0e51b121a2630088946683bd90f0058f40599c4ad8df3aac7ab0",
+          "baselineWins": 43,
+          "alternateWins": 42
+        }
+      ],
+      "replay": false,
+      "trades": 27,
+      "draftHash": "9aae161bb06d7ba0dfd38373e3cd531f1da96268f5ce598ff0e3e1aaad5c3317",
+      "durationMs": 224.53300899999886
+    },
+    {
+      "team": "MIA",
+      "seed": "redraft-structural-matrix-v1-c",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "cf58cd0ad739fcafde3bf64117413b923fd407fa116d448481c19fdc4c5d5e6c",
+          "worldHash": "3380855cb9a1734b3fe96f18e70adbc590c8e30148cfcf171c5a04d3295ae48c",
+          "baselineWins": 46,
+          "alternateWins": 46
+        },
+        {
+          "index": 1,
+          "hash": "1edd0a7154c997ab8eaa1c057502933e8e6460eacee3e81f3e476f39801742a6",
+          "worldHash": "de6e88bb8bfc9604b0362d2d4d3221b354c7d0e1ce20ebf9ea854fa65f27439e",
+          "baselineWins": 53,
+          "alternateWins": 54
+        }
+      ],
+      "replay": false,
+      "trades": 29,
+      "draftHash": "dfa0c99af7d016aa7b38a26d5779c5e34416d9e7f7f2b0c93d21259c7bf090c2",
+      "durationMs": 223.7686649999996
+    },
+    {
+      "team": "MIN",
+      "seed": "redraft-structural-matrix-v1-a",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "2885e03805659c03e326740d6eaecee149496f613a5ff63e72a6c7521bfa2e73",
+          "worldHash": "9c93bed905c2c98ec207969c21d8eba1dd3469075a50b15b80e79b5b67adb6a7",
+          "baselineWins": 47,
+          "alternateWins": 50
+        },
+        {
+          "index": 1,
+          "hash": "149eab245b6c3ac26d4aff26f5b489a6efe65b9fabef0f27255c019e8fc7127a",
+          "worldHash": "5f02ada0a52bf7eb1dacdbdc6ada411d18446cc05f39403fbdabd1331d5673cf",
+          "baselineWins": 54,
+          "alternateWins": 51
+        }
+      ],
+      "replay": true,
+      "trades": 19,
+      "draftHash": "5ff5ec4e9be9d0d135620ad01bf8ff701b21e77b47f90b3e2c730460bbd4d209",
+      "durationMs": 389.29461900000024
+    },
+    {
+      "team": "MIN",
+      "seed": "redraft-structural-matrix-v1-b",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "3a8115859a76748ec99eb4a145fce4a3633808cf8ba039a09e89355a32c7539b",
+          "worldHash": "589d12c0f2a56dfeadd5d65ea61bc49b3a8f7d06d1d2714e3a79adcfcd3cafdf",
+          "baselineWins": 41,
+          "alternateWins": 40
+        },
+        {
+          "index": 1,
+          "hash": "cfc64df55a96d706e29eaffbe370c41ca019f8e6b38aec091af6a410bf7a5142",
+          "worldHash": "9f67bf19100fec1dfec7a0bf8d3213ecbe35a8a0b36126e55b782c72feac9333",
+          "baselineWins": 28,
+          "alternateWins": 28
+        }
+      ],
+      "replay": false,
+      "trades": 27,
+      "draftHash": "daa3ed0a98d43adc487c6dbdc6de9854dab91de1ba622a1033b08dd6ad68998f",
+      "durationMs": 222.1029579999995
+    },
+    {
+      "team": "MIN",
+      "seed": "redraft-structural-matrix-v1-c",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "f997c5949181e2e1a25111eb8858a77817953c625c4c1ae3636fd1514766c0d0",
+          "worldHash": "77a35de717260b3337e2284be5335c437e4fd83c160d5db5664b0476f56e2d59",
+          "baselineWins": 29,
+          "alternateWins": 31
+        },
+        {
+          "index": 1,
+          "hash": "30d039306a5c1844f6d128f62a19793be30a40c16d6b24c5061ff1bcab79f924",
+          "worldHash": "0f8662df78430b2eea31754cecdb2e4b0e3f35021509eabf4c7840eca6ce6588",
+          "baselineWins": 52,
+          "alternateWins": 50
+        }
+      ],
+      "replay": false,
+      "trades": 29,
+      "draftHash": "0b3db54add29b971e25000687d7ab5be14e910959a4a5d4a75f7600f113c9e62",
+      "durationMs": 220.1508360000007
+    },
+    {
+      "team": "NE",
+      "seed": "redraft-structural-matrix-v1-a",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "f3ef276561991b006b0cf1ea5393eb7ea5019e079ed173346d68a2dc9447c205",
+          "worldHash": "f6d2ce629ae6e7d5993b315ffddcb686584cc04f1a0d4f6c503f03bad3358354",
+          "baselineWins": 38,
+          "alternateWins": 38
+        },
+        {
+          "index": 1,
+          "hash": "f7c8bc9f88eaf3f33b7e555cbcc9e216a61d44299fae40ed994150088c156942",
+          "worldHash": "211492e45f794d0014325c24667386b12fee439a6e58be2409d0fe612f24baaa",
+          "baselineWins": 31,
+          "alternateWins": 28
+        }
+      ],
+      "replay": true,
+      "trades": 18,
+      "draftHash": "ae70dfa0ec3352a812795a8c59753afa00963fcda1a1c9a8febb2092365ba5e6",
+      "durationMs": 432.4460020000006
+    },
+    {
+      "team": "NE",
+      "seed": "redraft-structural-matrix-v1-b",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "69826598e30c546ec7320ab032a8eb4aa7a6b67a2182553090f8c454c200e3e5",
+          "worldHash": "2bf4a86e6f47ed5c24ccde74626c12865f7aca5412ba27cae17a151d72b6ad7b",
+          "baselineWins": 50,
+          "alternateWins": 57
+        },
+        {
+          "index": 1,
+          "hash": "91e459f87dc2320a1c7e046ab3f6cb9a5afdbccc1dda0f2b589913c525e166fb",
+          "worldHash": "7885138f822750ad73559053475d7647a6d9ce32a35e12096e2166d6c127a509",
+          "baselineWins": 42,
+          "alternateWins": 45
+        }
+      ],
+      "replay": false,
+      "trades": 27,
+      "draftHash": "824da0691ef168b2788c427d0c439d1eca13aa2edf5a0e8d44add2badb67c22f",
+      "durationMs": 247.80115599999772
+    },
+    {
+      "team": "NE",
+      "seed": "redraft-structural-matrix-v1-c",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "25858f3d102ca6a1b34ce94672eef29e3c98e5536e7d4bd291763a2704a486b9",
+          "worldHash": "ce1dc559bae93e43c3c6ebeafae5ac5178769314753b5dedbd4171d1ad36f067",
+          "baselineWins": 49,
+          "alternateWins": 49
+        },
+        {
+          "index": 1,
+          "hash": "dbea89489aac5b003676edde0db6ae3452b94313639a5e78b4e9448ff474c1fc",
+          "worldHash": "9b446f70df949ead40e89477bbca03480d17ba9dec7d6154bc6dc733373dd7d9",
+          "baselineWins": 55,
+          "alternateWins": 56
+        }
+      ],
+      "replay": false,
+      "trades": 27,
+      "draftHash": "e67789d52ecae76471da17cd4d8f3a459c1017caf758dec95e4b27b22a1c960f",
+      "durationMs": 257.26750900000116
+    },
+    {
+      "team": "NO",
+      "seed": "redraft-structural-matrix-v1-a",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "a7e5384607f2107dd5645d8a83081a01125d75ebc3327fcd7e438fe56e3a0358",
+          "worldHash": "b0f3f676c7d9012a4cb26892f27fee5d8e1f6406d03a7222bcedb05f72a6e1ad",
+          "baselineWins": 37,
+          "alternateWins": 38
+        },
+        {
+          "index": 1,
+          "hash": "7105da318e56f8e25a1fc33c8c0cca2c3ab0923b591818041298fa684753809c",
+          "worldHash": "45985c7d7875a60ea0566f88a23415760c03a579859f96950246041a3d00aa72",
+          "baselineWins": 51,
+          "alternateWins": 54
+        }
+      ],
+      "replay": true,
+      "trades": 18,
+      "draftHash": "453ec793e400a6c05d8dda3fff2a7eff2439888ff739865d0357225f6b219663",
+      "durationMs": 419.06476400000247
+    },
+    {
+      "team": "NO",
+      "seed": "redraft-structural-matrix-v1-b",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "d45c44f15ec330bad07ac4df90892e34a975084649e6a241cad32b77d1886a8b",
+          "worldHash": "7ce3df95b37f74b7c9d0d8a2e46ea9348d476a1ea81c2cf92c2f9c25d81ee408",
+          "baselineWins": 27,
+          "alternateWins": 26
+        },
+        {
+          "index": 1,
+          "hash": "9246f2c95520c08610f3607b1d213f195900097632fb794c246a61e7be12393f",
+          "worldHash": "37cc9f9cbfda26c12b322d9213d7d9e2af7ae7017bcca9e3745db69e41c0644a",
+          "baselineWins": 51,
+          "alternateWins": 51
+        }
+      ],
+      "replay": false,
+      "trades": 27,
+      "draftHash": "8006775e38d1f9fc580274e4b4ffa1286d73588bee042b10a4deccf2ee21f7f0",
+      "durationMs": 221.61710099999982
+    },
+    {
+      "team": "NO",
+      "seed": "redraft-structural-matrix-v1-c",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "791a77c1b415a68444d1f12a3a4df928d27727f57cddfd6f1d97699b445b349d",
+          "worldHash": "48f6f8912eb94f24656d1eb5ea5229ed8e69a8bd27a1c7d41203511bbc9dbdaf",
+          "baselineWins": 47,
+          "alternateWins": 49
+        },
+        {
+          "index": 1,
+          "hash": "f3c5ed428d6a28dab9a1c1f8df48146db71e5b95beec30495dd2352b7faadd0f",
+          "worldHash": "1ba2d41dba2e3777f38517af75a23bc3c0e3736e25fb32eb002b845699740c2a",
+          "baselineWins": 45,
+          "alternateWins": 44
+        }
+      ],
+      "replay": false,
+      "trades": 27,
+      "draftHash": "cd6327a2120788bac5f6415abb96b25f1563c97e180da9405ccd8ffa8d6ca398",
+      "durationMs": 221.9880830000002
+    },
+    {
+      "team": "NYG",
+      "seed": "redraft-structural-matrix-v1-a",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "cc13b34175b2ba6dd5bb0408b266864bb825cafbbf3301df4bb28a6dec8fc744",
+          "worldHash": "b1a01fda200b52ed3df14571e8a5d0aaaa6372f5681872a3d170aad51ef20381",
+          "baselineWins": 33,
+          "alternateWins": 34
+        },
+        {
+          "index": 1,
+          "hash": "b45620614b0ed112a2a3f5ece980bc1ca5577a52b82276599639b6168305c8f5",
+          "worldHash": "e4338d237649d3214cb65c57c02394bf8c42a31d5052c1f6f924edf166f5a03b",
+          "baselineWins": 34,
+          "alternateWins": 36
+        }
+      ],
+      "replay": true,
+      "trades": 19,
+      "draftHash": "f576bd9604d7ec7f8e72fb0b229e94199dbb0c921403bdd3d966a91162c5ad7f",
+      "durationMs": 392.6467969999976
+    },
+    {
+      "team": "NYG",
+      "seed": "redraft-structural-matrix-v1-b",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "3dbb926875ace74c66d4b0ff6423dd33a9eb9659cddfea1684f90a2bfee31a01",
+          "worldHash": "1ea852875571e7a02fd214947b083a9b04ca50ec9c7a63650d73e87ac71e094f",
+          "baselineWins": 53,
+          "alternateWins": 56
+        },
+        {
+          "index": 1,
+          "hash": "82e3b358698cc9c59cea6f13b033834b1cda61452c7bc136df35c2b30632a76b",
+          "worldHash": "c66afadf821981a98058a65eb265abd2024060688d732547c41047442bab7893",
+          "baselineWins": 56,
+          "alternateWins": 61
+        }
+      ],
+      "replay": false,
+      "trades": 26,
+      "draftHash": "72ccffe8255df611339fee0bc85e2e42ab1979319aeade02608182352776dd08",
+      "durationMs": 223.78738099999828
+    },
+    {
+      "team": "NYG",
+      "seed": "redraft-structural-matrix-v1-c",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "2b97d9b7c649dc20e07a2c263ebf1f08fd7913624b5050e350106ec9159f4fbe",
+          "worldHash": "fe82db824b8a390c3bb9bdbd6759d9e36ad520e0c369770f277c8c7c1be1a982",
+          "baselineWins": 36,
+          "alternateWins": 37
+        },
+        {
+          "index": 1,
+          "hash": "f0b2d7d9d90e3347bb5b9bc20ab879033606b09fcd00939767f334c33386fd0e",
+          "worldHash": "ee0b6a38d049791e4f246fa8a8be6905188537098464c9e4e01b0fc11abc3523",
+          "baselineWins": 38,
+          "alternateWins": 37
+        }
+      ],
+      "replay": false,
+      "trades": 28,
+      "draftHash": "ab3b9f66549fa95d5807c64228710c0db2aa9831f2bc9a0aea95df797232904a",
+      "durationMs": 218.94268999999986
+    },
+    {
+      "team": "NYJ",
+      "seed": "redraft-structural-matrix-v1-a",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "4a6ae2fc64436c6fbe0cd10388df343e78342c4c96445169977c6f6c4bb97572",
+          "worldHash": "b90b0675cefeaa3cd6084c71cf033942ca9df219b49efd9a0923ea03ae06882f",
+          "baselineWins": 43,
+          "alternateWins": 41
+        },
+        {
+          "index": 1,
+          "hash": "e765fa0609d25c8316e394e8d908eadc4bdd50ed5da21c57795a842614aa78d2",
+          "worldHash": "f3b56c2cf97655bad5bd93f3c4f5eeca4a1e0b240a0645c20e4ac66cc2711eca",
+          "baselineWins": 61,
+          "alternateWins": 61
+        }
+      ],
+      "replay": true,
+      "trades": 19,
+      "draftHash": "eba4ec0b373044f8909d6cc6f578af4f8f4e3b779c63143905e5fd657e1669e7",
+      "durationMs": 461.33660600000076
+    },
+    {
+      "team": "NYJ",
+      "seed": "redraft-structural-matrix-v1-b",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "f2348dbf43787bd47a58c688f035bc9d3d9b8e7042f31fdf05e549a5b74385b8",
+          "worldHash": "027d467987efe8ed754f4e1a816e9b226fee709f41f839fd078f83728719859e",
+          "baselineWins": 45,
+          "alternateWins": 52
+        },
+        {
+          "index": 1,
+          "hash": "af80cfbc5916a02e378068f21c7fd3f356d464c287f439ef98c5bb76ec8e3b2d",
+          "worldHash": "045a706f0713780ba1c9fa86315fa70c9a45fc3457f5df2786586ab9515619ae",
+          "baselineWins": 35,
+          "alternateWins": 37
+        }
+      ],
+      "replay": false,
+      "trades": 28,
+      "draftHash": "a17acf1c2119daffe722b9a783e4df7ac7b07db4ef8e1eee3c2447ddf1a2707d",
+      "durationMs": 231.03818799999863
+    },
+    {
+      "team": "NYJ",
+      "seed": "redraft-structural-matrix-v1-c",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "57b34692861ec3935b1bd0812bb718582b6c717392b4351d890e1ba8a783182a",
+          "worldHash": "cc02235f69e4694a3d0122cd1f7216c1078ccdc53578bc812a6edcc7f38237cb",
+          "baselineWins": 24,
+          "alternateWins": 26
+        },
+        {
+          "index": 1,
+          "hash": "617f398eef10fd6b047f079d3ba1a61954f1ea02e3710397a68b14bd0a8779d5",
+          "worldHash": "c004772176f31a12045bd248489b8a64250dd15f3c21c5a71a1eaa42d47139a3",
+          "baselineWins": 50,
+          "alternateWins": 50
+        }
+      ],
+      "replay": false,
+      "trades": 28,
+      "draftHash": "19db2332ae524e060b24051a363a05ad502f445bf952ace47381258a833506f5",
+      "durationMs": 233.48058700000183
+    },
+    {
+      "team": "OAK",
+      "seed": "redraft-structural-matrix-v1-a",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "7b3519b3c16998a54572701a7048a9b453a25bffeab454fcacd35c72cec3f67c",
+          "worldHash": "cca168dd84ed1141acf7ca1fe00c076d924626494f6ab3acb698743efdb680a7",
+          "baselineWins": 41,
+          "alternateWins": 42
+        },
+        {
+          "index": 1,
+          "hash": "c5e7676d460bf65fd19978c8995b9ceb31a375528ca09299d31c03a78b8ddc7f",
+          "worldHash": "06aacc6a2d0443517040f0fd4120bc5f5e557c0fedc95707a2a939952d7e13e1",
+          "baselineWins": 52,
+          "alternateWins": 53
+        }
+      ],
+      "replay": true,
+      "trades": 18,
+      "draftHash": "46d6e97353951cff3d5e09294834965e2770ec2173e75a96f486448c1314f6ac",
+      "durationMs": 387.7218090000024
+    },
+    {
+      "team": "OAK",
+      "seed": "redraft-structural-matrix-v1-b",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "8fe56fbdaaa055cf3583c919ee75f7d981c68c0de30fe8ebe0390b54d50f9e31",
+          "worldHash": "197b22afc76c47d1cee1be374f084b5a01697236af125a6af8f1034e36f3d687",
+          "baselineWins": 57,
+          "alternateWins": 55
+        },
+        {
+          "index": 1,
+          "hash": "00a83d7aa4b2605bd8e22a34026a78a1fec39134c424068e882666973c1f94bf",
+          "worldHash": "f651455c347922ae26c0dbe7ca052810f78d2f595088977359390fa6e0a72371",
+          "baselineWins": 51,
+          "alternateWins": 52
+        }
+      ],
+      "replay": false,
+      "trades": 25,
+      "draftHash": "153bef1bbb909d1d2f3d5b060d3eed552e8302a04f3ace3514262753842386a2",
+      "durationMs": 219.96681499999977
+    },
+    {
+      "team": "OAK",
+      "seed": "redraft-structural-matrix-v1-c",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "f40afb364f8e06ccc8b2fc5eced1cf0abb80dd1479de8dd6315e89aa0cbfe2ff",
+          "worldHash": "9e4e59c39d712e7aef369a9efb422f77b8a2fd3fef4b2cfa76162b2e4680bc02",
+          "baselineWins": 28,
+          "alternateWins": 33
+        },
+        {
+          "index": 1,
+          "hash": "40d32b5af03db0f2502e8902cef1c4d5b03c4ee2b96889806b3713e95e4066dd",
+          "worldHash": "7542d76c28a5a5d25c7bd46f66b4b7195760a5e545c11b76a778fb76b3b1342f",
+          "baselineWins": 46,
+          "alternateWins": 41
+        }
+      ],
+      "replay": false,
+      "trades": 29,
+      "draftHash": "07ba1ac7600d56df6778c645d5add940e4b3f28792ef484945e1fef9eb2952e2",
+      "durationMs": 225.54898899999898
+    },
+    {
+      "team": "PHI",
+      "seed": "redraft-structural-matrix-v1-a",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "83f3a222a1637d85b575eb97c88fa4fce52026bc0f502e9b4ff47ecef84cc55e",
+          "worldHash": "6ed995b1fd807f510c694254ba8dd56ae8764ca0e32f2b2bc97cacb5b6c1248e",
+          "baselineWins": 60,
+          "alternateWins": 59
+        },
+        {
+          "index": 1,
+          "hash": "9cebedd6376cdd50ec59ef1d36917456a56181b90e758d613c72dbc6908fd412",
+          "worldHash": "44d4b33a7c660a03397840cafb0e593c95cc6d91e4c4a8f6d93a111e54d5b605",
+          "baselineWins": 57,
+          "alternateWins": 59
+        }
+      ],
+      "replay": true,
+      "trades": 19,
+      "draftHash": "77cd9118ec49ad72df6194b4b3185d45574c5fb8b91cbbb180d1e6b4be51501d",
+      "durationMs": 388.9964260000015
+    },
+    {
+      "team": "PHI",
+      "seed": "redraft-structural-matrix-v1-b",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "215fa881b83bbb20321e8f8d8e7a94ff66989dfc4fa189e01ca7b8a0297792cd",
+          "worldHash": "5c914c9e4a6f12c982427387860d3909236e51f8427fad9de97df906d6b0ebc5",
+          "baselineWins": 56,
+          "alternateWins": 49
+        },
+        {
+          "index": 1,
+          "hash": "9fb3fac67a80897d6da81283179feebda2364118ea569b96de265441b7dc94ee",
+          "worldHash": "2581b0ac70446f1b0bf2b1624d5d7cb4b4ca533c419ddb0b20b0ffb9e3862ddc",
+          "baselineWins": 52,
+          "alternateWins": 46
+        }
+      ],
+      "replay": false,
+      "trades": 27,
+      "draftHash": "b1ff85f9a682739c8a2e2290ef2e0a57d6c15af6c64b28e62a53085827a344ef",
+      "durationMs": 220.4366450000016
+    },
+    {
+      "team": "PHI",
+      "seed": "redraft-structural-matrix-v1-c",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "f77f5cdd93e305843c66d88b2b0547770f1222d0ac020f8376bb6aed0412be7d",
+          "worldHash": "488e2717f35697d607d2bd2057edf6d6889b9d0a3efd0c69bc89d7d080ed03c3",
+          "baselineWins": 48,
+          "alternateWins": 45
+        },
+        {
+          "index": 1,
+          "hash": "947769a9f22d8a9b65b41204c9b5169575cf05d1fda295db0827fce8d21f1a76",
+          "worldHash": "daa9387ee8348351b89d405232df0262cf67d12257f6fe2e909e67a82c832ff0",
+          "baselineWins": 43,
+          "alternateWins": 43
+        }
+      ],
+      "replay": false,
+      "trades": 26,
+      "draftHash": "632ce2ba67606ca8493d18302b8828d323770651f5dd2c9e27a70716651d73c3",
+      "durationMs": 353.59316899999976
+    },
+    {
+      "team": "PIT",
+      "seed": "redraft-structural-matrix-v1-a",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "55f4a76cb66bea15d40629978b50427893bdce398bb1b18fd25ddb9260994369",
+          "worldHash": "81b145bfb5eb393257c0bb251cab9a7e7c6e88839c385b2eb78433af6b502597",
+          "baselineWins": 48,
+          "alternateWins": 50
+        },
+        {
+          "index": 1,
+          "hash": "a1144021c7b79e2e71ed18552288bd5d6418d1b0574664690b183a52bf9ff95d",
+          "worldHash": "e6869b2075ebfabd1d39a3851ada99bfe5c1f2e1cf1c8cbd26f0c5df870c726b",
+          "baselineWins": 42,
+          "alternateWins": 44
+        }
+      ],
+      "replay": true,
+      "trades": 19,
+      "draftHash": "c1b5a49f1f6a9c9cac1431c849952c4c597e61862152805284e15cb752fccdc6",
+      "durationMs": 452.319657
+    },
+    {
+      "team": "PIT",
+      "seed": "redraft-structural-matrix-v1-b",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "fac13081962a7e0023a6b30219c89a044d7e5575dd5bb42b8c447c07d4b1b251",
+          "worldHash": "b1fe60ed7b42bac99c65612fa7e1d999c051c0717d9b384f976f0b3121996efa",
+          "baselineWins": 40,
+          "alternateWins": 42
+        },
+        {
+          "index": 1,
+          "hash": "ccb7ace34cb897f086648e9abef39b5f31a6bd8457391e3690ced4e4856903ba",
+          "worldHash": "17d0e08c8d577873a76f555652ed6dcaab4c2910b26ac0e639747c4119461685",
+          "baselineWins": 37,
+          "alternateWins": 42
+        }
+      ],
+      "replay": false,
+      "trades": 26,
+      "draftHash": "3535ebb8c6c9d92e36ef27123a93a88379a058341b25fa5100764832f32dba6f",
+      "durationMs": 268.5728670000026
+    },
+    {
+      "team": "PIT",
+      "seed": "redraft-structural-matrix-v1-c",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "26ad6996356024812b26cbf510752042fc0cccd17de52b8db0e9339261f7f599",
+          "worldHash": "0cb599e4871ed9aed37be4c9d20a09d60ac94d6ac3ec8d2a7f1dda36d2f0cbfd",
+          "baselineWins": 44,
+          "alternateWins": 41
+        },
+        {
+          "index": 1,
+          "hash": "b66c2a00084d3a6cf2c62368afc47c5bc8f5fb03db9f89f87498f206c2685652",
+          "worldHash": "fca539b918659ff011ed6198aa3c025e29c80b0d44f287c34af47c3361e2a702",
+          "baselineWins": 39,
+          "alternateWins": 35
+        }
+      ],
+      "replay": false,
+      "trades": 26,
+      "draftHash": "e14a171f1802e821baaee35d504added15d9347325323fb83e9847c08abfedf7",
+      "durationMs": 262.8161199999995
+    },
+    {
+      "team": "SEA",
+      "seed": "redraft-structural-matrix-v1-a",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "4c03215d2c4dc4b1e9d706d38ab97c89a41909f1e53c9264960a4d018970b5c3",
+          "worldHash": "d686426562a144adacb2b8dda1f1b9cd8011fd4841cd4a74a22d2b545de33f5b",
+          "baselineWins": 54,
+          "alternateWins": 53
+        },
+        {
+          "index": 1,
+          "hash": "94fe83c706b815c477a2a354867425db8150f8e0e2cf45ff9790b0b5290fceb3",
+          "worldHash": "613ea35a044b7a50815fba990c7e65a42895ae00b1867285b296828e0270de88",
+          "baselineWins": 40,
+          "alternateWins": 33
+        }
+      ],
+      "replay": true,
+      "trades": 18,
+      "draftHash": "7eed02c31d3245f0df65d673d1f99ae6f0b89a26b309104b3d37afc2b759c139",
+      "durationMs": 382.4441570000017
+    },
+    {
+      "team": "SEA",
+      "seed": "redraft-structural-matrix-v1-b",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "cff35d038e9371fc9e904da020d269456ede3a4d2c09f52d6c7aedd58f865795",
+          "worldHash": "f47d8abd4a00ea3386664e5a7cb663842c65f77d6d0fb11d950236029ef996e9",
+          "baselineWins": 50,
+          "alternateWins": 37
+        },
+        {
+          "index": 1,
+          "hash": "b054cc7601c08920237ba5c2731e5a9061927e3f8b2483d3166be7b59744b7ef",
+          "worldHash": "1246d794a2d6d83f68058900bebf6c984b6117740a604b255b5388fe63bbc3a1",
+          "baselineWins": 49,
+          "alternateWins": 45
+        }
+      ],
+      "replay": false,
+      "trades": 27,
+      "draftHash": "8f473d6fbe8ab6a82cf0cf1fa801aff11a69513c0edf0c3e014d141bf224eb57",
+      "durationMs": 213.65406000000075
+    },
+    {
+      "team": "SEA",
+      "seed": "redraft-structural-matrix-v1-c",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "8adc528cb938986c49a79ba1c5cfe8313cd586aa108c1e33a1649f4020527f3e",
+          "worldHash": "cdd42cdbc4f1d52e9403b981db831470999761f837ed2aca5cb8cfdf465b4f31",
+          "baselineWins": 36,
+          "alternateWins": 32
+        },
+        {
+          "index": 1,
+          "hash": "8e70a1a05afa329246951ef6da41773c6c334f4629af5f307c4330fe528e3bf8",
+          "worldHash": "7866b012e17d074d88074e718c855ac76321b81c3e18fc2d7b4e910682ca00e3",
+          "baselineWins": 57,
+          "alternateWins": 55
+        }
+      ],
+      "replay": false,
+      "trades": 29,
+      "draftHash": "d1dc644e49cfafc6cd5410106912ee7e9b1440a969401541621d76a0f7656f55",
+      "durationMs": 214.06709399999818
+    },
+    {
+      "team": "SF",
+      "seed": "redraft-structural-matrix-v1-a",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "01227074c03baa855ad1202eb08793b1e9c3411b6bc4d356e4504dc965dd8326",
+          "worldHash": "a9f274db22d107d81a79020a8fcb8a16c1d3dcdabf0ec8a96767bef2a2a8dc63",
+          "baselineWins": 30,
+          "alternateWins": 27
+        },
+        {
+          "index": 1,
+          "hash": "59b8c1752ac292960a65da493fe1af6e00351dc5b6c8efade496c7680239fdd1",
+          "worldHash": "9c4ab07e56591b6a893a4a1348531cdd225471ee7140e035c887468e2dee69ef",
+          "baselineWins": 44,
+          "alternateWins": 42
+        }
+      ],
+      "replay": true,
+      "trades": 17,
+      "draftHash": "8ca2d6cd706c924e89f8f4300cd269a2d8d7cbe6d5a124bc9a3fa457b032e28a",
+      "durationMs": 441.20354000000225
+    },
+    {
+      "team": "SF",
+      "seed": "redraft-structural-matrix-v1-b",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "abb99fef26121583194b661c52f7c404d2437fb3a6bb6fd6b6e31f1582238c8b",
+          "worldHash": "0c30825809b1c94e30562b5bb0013ffd70a975c02bf6964e344dc135c8ed5b6d",
+          "baselineWins": 54,
+          "alternateWins": 53
+        },
+        {
+          "index": 1,
+          "hash": "c387e379e0510ac66ee9313484dfa986a37b34fa324d1f08ec00289c4bf61e82",
+          "worldHash": "d8beeb52ec24fda442fb3da472dc6215a62c1ee2a6d31ff82360cd23bf758fe0",
+          "baselineWins": 48,
+          "alternateWins": 47
+        }
+      ],
+      "replay": false,
+      "trades": 28,
+      "draftHash": "0742c190f16ed47213b3a8f37b2331a8dabb6b8be07052811ed4775e1565c77a",
+      "durationMs": 216.14360999999917
+    },
+    {
+      "team": "SF",
+      "seed": "redraft-structural-matrix-v1-c",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "1e6069f975873ea7f930d3a9da93c488f8ca8e281f2aeb4b0bd6f137e54f23ab",
+          "worldHash": "76903d9e52bfa9c46a4ff4e3aa41e90a4bda6577a573e0afef6266784040d4a7",
+          "baselineWins": 52,
+          "alternateWins": 49
+        },
+        {
+          "index": 1,
+          "hash": "189efd3e393dead2ebd43c3e49f8620c457fa43a8303fa9266d569533c5ef1f3",
+          "worldHash": "2558e5457d20fb74b18dfc8db7b452eaeb8cf94c95a37e1f81cc83d49a741d80",
+          "baselineWins": 34,
+          "alternateWins": 41
+        }
+      ],
+      "replay": false,
+      "trades": 29,
+      "draftHash": "9f6f56f6a8905ac4c0e5a5d152f0186121bb84f637b71038c520d9f778557139",
+      "durationMs": 214.61481999999887
+    },
+    {
+      "team": "TB",
+      "seed": "redraft-structural-matrix-v1-a",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "53b604d60ca95307e6ac6a43039de74f46e5b3be6b10360ce15d6cc817397133",
+          "worldHash": "276646a65d34710efe7f9d38643c5efe566decbf7f832747bae005162e30fca5",
+          "baselineWins": 40,
+          "alternateWins": 44
+        },
+        {
+          "index": 1,
+          "hash": "dd71987f6eda9455cc11413fd85d97822becfa61ac00af8e4c6796c2d9c48c9f",
+          "worldHash": "681dc802c2cc83218465ea12ea93d03606410247d906c0d76411647503721ad5",
+          "baselineWins": 47,
+          "alternateWins": 48
+        }
+      ],
+      "replay": true,
+      "trades": 18,
+      "draftHash": "672f0290fa9d5b19b317918c3298fb6ab9b05914209c7de68e2df8916874ddb3",
+      "durationMs": 383.26452699999936
+    },
+    {
+      "team": "TB",
+      "seed": "redraft-structural-matrix-v1-b",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "030b3ff9902b5126a73a66d506427803f6e27ce3c87bb7b70d2f601ef3253655",
+          "worldHash": "b39c33499619b469b36e6e2f490642d383dd4f30b32a304cf5314bdda8a203d9",
+          "baselineWins": 34,
+          "alternateWins": 36
+        },
+        {
+          "index": 1,
+          "hash": "d9eaf1a1f57d64b6a2487920af5b4c8fb973c0bbffb71b33d76cc8b77bbfc7ec",
+          "worldHash": "898c34ef5dd762152f18f40cd68d62c3e4af3f0162408557c902d1bbc7f02856",
+          "baselineWins": 43,
+          "alternateWins": 50
+        }
+      ],
+      "replay": false,
+      "trades": 26,
+      "draftHash": "0294e3e29f378c932510cea4cc81ab82f65f223855ba2725f7a0856112e73ea0",
+      "durationMs": 214.48488799999905
+    },
+    {
+      "team": "TB",
+      "seed": "redraft-structural-matrix-v1-c",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "290b15fc6a126902ebd3bbc320533dac3054d872ddc763cf2059e0b7ac228394",
+          "worldHash": "e25b1056312b698f5ffd8b6ba7afa8c934765ba1cf079358fad90a16882f2e62",
+          "baselineWins": 25,
+          "alternateWins": 33
+        },
+        {
+          "index": 1,
+          "hash": "da9e1f96c86dd3773fd2cdced9f13cb95970210ae364896e94fa984bd09b958f",
+          "worldHash": "fbdd4332ca7f11bcc2011e5a87b25e3cdabde970b776950ee0ec42318a055a77",
+          "baselineWins": 40,
+          "alternateWins": 52
+        }
+      ],
+      "replay": false,
+      "trades": 29,
+      "draftHash": "59d22a5ffabd7ec1ebeb70aaba6f8bd8d39558e4f9b144eb1dd14478ca17fc9c",
+      "durationMs": 214.21962799999892
+    },
+    {
+      "team": "TEN",
+      "seed": "redraft-structural-matrix-v1-a",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "3ec27c11f6fb6b367a55ad4adfaf2a4874e73e03b14b3b2dc52afefa979d15e3",
+          "worldHash": "5fdc24be65f2aea07248f7843d0b2ec4e8c962a2821386352423488b5c3e2f03",
+          "baselineWins": 50,
+          "alternateWins": 50
+        },
+        {
+          "index": 1,
+          "hash": "adc9ee77559a1b271164c9b9a0e99bd8fc2efb0b9212656ac5197e04f5f7cd60",
+          "worldHash": "880da676489ecaec328e744e108938916f396431219ce7f3afc26c891403ead2",
+          "baselineWins": 18,
+          "alternateWins": 26
+        }
+      ],
+      "replay": true,
+      "trades": 18,
+      "draftHash": "fe70b93eb4f0426845a74005aa0ab9102a1edd3f82511dae7e8ebad9bd034d7e",
+      "durationMs": 384.1759949999978
+    },
+    {
+      "team": "TEN",
+      "seed": "redraft-structural-matrix-v1-b",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "43aa25466b686a9800af39a061bb9815192b8657caad8c5dbe0c3f2332f5c5a8",
+          "worldHash": "025145cf2da6167fd405ba68f9821c9fed389d74befc904f0a415954d3dfd1ec",
+          "baselineWins": 31,
+          "alternateWins": 26
+        },
+        {
+          "index": 1,
+          "hash": "4cbbfc74146396e48772cb36009215bc37e6260fa5e67c98167b6e6647677851",
+          "worldHash": "f4a4ac3c819ce9c42863e49d85d6db3c9cc7f5b24c011cc3b838a8766164daa6",
+          "baselineWins": 44,
+          "alternateWins": 43
+        }
+      ],
+      "replay": false,
+      "trades": 28,
+      "draftHash": "deafa7c93d109dfb6653c272a3623e8ff63e87a1fa6c43e7a97cab7b474826f2",
+      "durationMs": 222.3282889999973
+    },
+    {
+      "team": "TEN",
+      "seed": "redraft-structural-matrix-v1-c",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "c8eb1da6aeb0b0d5e0813b27e9cba5fa2252b67cc6ca10bb6071d9526ec728bd",
+          "worldHash": "c2ff0778aa29e9c7b08a15b54ae7fd0e13e13951b96f8d21057e8ebcc370b327",
+          "baselineWins": 36,
+          "alternateWins": 37
+        },
+        {
+          "index": 1,
+          "hash": "727816e646c314214129fd330ad9b54caa4a1ac1e8a97a17532a9806bf05c8ae",
+          "worldHash": "db4e904241af53b11480a772909171992648c8987e029c889f1390befb4e573b",
+          "baselineWins": 36,
+          "alternateWins": 37
+        }
+      ],
+      "replay": false,
+      "trades": 27,
+      "draftHash": "887e9cdaef2cacf0751bde0149fc9bc2b581d5e2631591b7ddc8dbfa836bc3f5",
+      "durationMs": 292.1065119999985
+    },
+    {
+      "team": "WAS",
+      "seed": "redraft-structural-matrix-v1-a",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "59edf115ed70735fb9271b2a29e4c5db4046a7d10e0c7df16d73a3a6f96343f2",
+          "worldHash": "01004f5c156c30318a418c52579262a8d17908da9ce401fc5c87b27524ce778d",
+          "baselineWins": 32,
+          "alternateWins": 31
+        },
+        {
+          "index": 1,
+          "hash": "3e3d9958b887dcd7fd062048d2be8526b4f7a0537e018bf96a61fb61235a4012",
+          "worldHash": "2f103b51608f74c5a29ec107fadfb3ad41cd300f288c20c68c8d7c9f6f1166a4",
+          "baselineWins": 30,
+          "alternateWins": 26
+        }
+      ],
+      "replay": true,
+      "trades": 19,
+      "draftHash": "350f3808c9b8c771c823765fce3ba5c40cb51cb857da1fffdd2c736b3186e5e4",
+      "durationMs": 383.99809599999935
+    },
+    {
+      "team": "WAS",
+      "seed": "redraft-structural-matrix-v1-b",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "e6db8141f0f3914ca8bfd93de3ee780cd1de3a9122ac074e1054bee2d0b99290",
+          "worldHash": "a03fd45180bd8ccfe7ac636810f052bd6c7b5d635ba691698cf432026fc60d29",
+          "baselineWins": 28,
+          "alternateWins": 33
+        },
+        {
+          "index": 1,
+          "hash": "4b24065548f5d0e2a5d1f090f12dd998df05d164097d68fc89af75f09da0644b",
+          "worldHash": "be5c75dc3f91493b483660e7501f6df5fe30deb600c3c60be51cf90b6cb22b60",
+          "baselineWins": 22,
+          "alternateWins": 26
+        }
+      ],
+      "replay": false,
+      "trades": 27,
+      "draftHash": "16791068aa7216a092686aa7dc8244c6bda93e822b165f3efa4937d47278a485",
+      "durationMs": 218.46317400000044
+    },
+    {
+      "team": "WAS",
+      "seed": "redraft-structural-matrix-v1-c",
+      "status": "passed",
+      "replicates": [
+        {
+          "index": 0,
+          "hash": "19e09a1361a575a5f32537b8285ac903bc22292bde83eebc56dfd7a6b812c58f",
+          "worldHash": "d58ce5718eaffbe1a02263d5f7c474adf97aef95840c6a02223327b8a0f04904",
+          "baselineWins": 31,
+          "alternateWins": 34
+        },
+        {
+          "index": 1,
+          "hash": "7f135472a8e627f1e4ab1c6cc8138283154859ef3976a77c000a83bfdc6282c5",
+          "worldHash": "05b63994d21b6c9b2f202f740f1288c8bbd080ca6985c808c892ee350a98ce91",
+          "baselineWins": 32,
+          "alternateWins": 33
+        }
+      ],
+      "replay": false,
+      "trades": 28,
+      "draftHash": "9c773e6eb4001768c94648024effc6d677958ec2d0f9d15efc405f98793b7fcd",
+      "durationMs": 228.0687930000022
+    }
+  ],
+  "failures": [],
+  "status": "passed",
+  "limitations": [
+    "Finite prespecified seed coverage is not exhaustive verification.",
+    "Autocompleted drafts exercise one CPU policy; adversarial user trades are covered separately by domain/API tests.",
+    "Structural consistency does not establish forecast calibration, causal validity, exact NFL tiebreakers or complete historical rosters.",
+    "Monte Carlo replicate indices are fixed; failures are retained and never resampled."
+  ]
+}

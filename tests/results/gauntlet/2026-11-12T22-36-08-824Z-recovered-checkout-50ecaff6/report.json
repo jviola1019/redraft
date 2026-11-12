@@ -1,0 +1,972 @@
+{
+  "version": "redraft-gauntlet-v1",
+  "runId": "2026-11-12T22-36-08-824Z-recovered-checkout-50ecaff6",
+  "startedAt": "2026-11-12T22:36:08.824Z",
+  "finishedAt": "2026-11-12T22:39:05.887Z",
+  "runtime": {
+    "node": "v24.22.1",
+    "python": {
+      "status": 0,
+      "output": "Python 3.12.14"
+    },
+    "platform": "linux",
+    "architecture": "x64",
+    "cpu": "AMD EPYC 9V74 80-Core Processor",
+    "logicalCpus": 9,
+    "memoryBytes": 10451427328
+  },
+  "git": {
+    "head": "2bfe6131ad8b2b71b6b120500e6e015665dc1e4f",
+    "status": "M analytics/scoring_recalibration.json\n M data/clean/source_manifest.json\n M data/clean/team_context_2018.json\n M data/clean/team_context_source_manifest.json\n?? tests/results/dependency-audit-recovery.json"
+  },
+  "steps": [
+    {
+      "id": "data",
+      "kind": "structural",
+      "command": [
+        "python3",
+        "research/test_data.py"
+      ],
+      "startedAt": "2026-11-12T22:36:08.962Z",
+      "finishedAt": "2026-11-12T22:36:10.416Z",
+      "durationMs": 1453.884633,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "status": "passed",
+      "stdout": "01-data.stdout.log",
+      "stderr": "01-data.stderr.log",
+      "artifacts": [
+        "artifacts/data/clean/order_reconciliation.json",
+        "artifacts/data/clean/eligibility_audit_2018.json"
+      ]
+    },
+    {
+      "id": "team-context",
+      "kind": "structural",
+      "command": [
+        "python3",
+        "research/test_team_context.py"
+      ],
+      "startedAt": "2026-11-12T22:36:10.418Z",
+      "finishedAt": "2026-11-12T22:36:10.652Z",
+      "durationMs": 234.01938900000005,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "status": "passed",
+      "stdout": "02-team-context.stdout.log",
+      "stderr": "02-team-context.stderr.log",
+      "artifacts": []
+    },
+    {
+      "id": "warehouse",
+      "kind": "structural",
+      "command": [
+        "python3",
+        "tests/warehouse_test.py"
+      ],
+      "startedAt": "2026-11-12T22:36:10.652Z",
+      "finishedAt": "2026-11-12T22:36:10.822Z",
+      "durationMs": 170.26725899999997,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "status": "passed",
+      "stdout": "03-warehouse.stdout.log",
+      "stderr": "03-warehouse.stderr.log",
+      "artifacts": []
+    },
+    {
+      "id": "domain",
+      "kind": "structural",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "tests/run.mjs"
+      ],
+      "startedAt": "2026-11-12T22:36:10.823Z",
+      "finishedAt": "2026-11-12T22:36:13.760Z",
+      "durationMs": 2937.138511,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "status": "passed",
+      "stdout": "04-domain.stdout.log",
+      "stderr": "04-domain.stderr.log",
+      "artifacts": []
+    },
+    {
+      "id": "model",
+      "kind": "structural",
+      "command": [
+        "python3",
+        "analytics/test_models.py"
+      ],
+      "startedAt": "2026-11-12T22:36:13.760Z",
+      "finishedAt": "2026-11-12T22:36:16.047Z",
+      "durationMs": 2286.343387,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "status": "passed",
+      "stdout": "05-model.stdout.log",
+      "stderr": "05-model.stderr.log",
+      "artifacts": []
+    },
+    {
+      "id": "five-year-model",
+      "kind": "structural",
+      "command": [
+        "python3",
+        "analytics/five_year_tests.py"
+      ],
+      "startedAt": "2026-11-12T22:36:16.047Z",
+      "finishedAt": "2026-11-12T22:36:16.305Z",
+      "durationMs": 257.5660309999994,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "status": "passed",
+      "stdout": "06-five-year-model.stdout.log",
+      "stderr": "06-five-year-model.stderr.log",
+      "artifacts": []
+    },
+    {
+      "id": "forecast-audit",
+      "kind": "diagnostic",
+      "command": [
+        "python3",
+        "analytics/forecast_audit.py"
+      ],
+      "startedAt": "2026-11-12T22:36:16.305Z",
+      "finishedAt": "2026-11-12T22:36:16.795Z",
+      "durationMs": 490.2109840000003,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "status": "passed",
+      "stdout": "07-forecast-audit.stdout.log",
+      "stderr": "07-forecast-audit.stderr.log",
+      "artifacts": [
+        "artifacts/analytics/forecast_audit.json",
+        "artifacts/analytics/forecast_audit_predictions.csv"
+      ]
+    },
+    {
+      "id": "scoring-backtest",
+      "kind": "diagnostic",
+      "command": [
+        "python3",
+        "analytics/scoring_recalibration.py"
+      ],
+      "startedAt": "2026-11-12T22:36:16.796Z",
+      "finishedAt": "2026-11-12T22:36:17.259Z",
+      "durationMs": 462.58190399999967,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "status": "passed",
+      "stdout": "08-scoring-backtest.stdout.log",
+      "stderr": "08-scoring-backtest.stderr.log",
+      "artifacts": [
+        "artifacts/analytics/scoring_recalibration.json"
+      ]
+    },
+    {
+      "id": "typecheck",
+      "kind": "structural",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit"
+      ],
+      "startedAt": "2026-11-12T22:36:17.260Z",
+      "finishedAt": "2026-11-12T22:36:26.808Z",
+      "durationMs": 9548.411038999999,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "status": "passed",
+      "stdout": "09-typecheck.stdout.log",
+      "stderr": "09-typecheck.stderr.log",
+      "artifacts": []
+    },
+    {
+      "id": "api",
+      "kind": "structural",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "tests/api.integration.mjs"
+      ],
+      "startedAt": "2026-11-12T22:36:26.808Z",
+      "finishedAt": "2026-11-12T22:37:12.947Z",
+      "durationMs": 46139.10389,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "status": "passed",
+      "stdout": "10-api.stdout.log",
+      "stderr": "10-api.stderr.log",
+      "artifacts": [
+        "artifacts/tests/results/api-integration.json"
+      ]
+    },
+    {
+      "id": "league-matrix",
+      "kind": "structural",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "tests/league-matrix.mjs",
+        "/workspace/scratch/781ed5af9c46/redraft/tests/results/gauntlet/2026-11-12T22-36-08-824Z-recovered-checkout-50ecaff6/league-matrix.json"
+      ],
+      "startedAt": "2026-11-12T22:37:12.948Z",
+      "finishedAt": "2026-11-12T22:37:56.819Z",
+      "durationMs": 43870.656607,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "status": "passed",
+      "stdout": "11-league-matrix.stdout.log",
+      "stderr": "11-league-matrix.stderr.log",
+      "artifacts": []
+    },
+    {
+      "id": "distribution-cle",
+      "kind": "diagnostic",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "analytics/simulation_diagnostics.mjs",
+        "256",
+        "CLE"
+      ],
+      "startedAt": "2026-11-12T22:37:56.820Z",
+      "finishedAt": "2026-11-12T22:38:08.755Z",
+      "durationMs": 11935.67016899999,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "status": "passed",
+      "stdout": "12-distribution-cle.stdout.log",
+      "stderr": "12-distribution-cle.stderr.log",
+      "artifacts": [
+        "artifacts/analytics/simulation_diagnostics.json"
+      ]
+    },
+    {
+      "id": "distribution-ne",
+      "kind": "diagnostic",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "analytics/simulation_diagnostics.mjs",
+        "256",
+        "NE"
+      ],
+      "startedAt": "2026-11-12T22:38:08.756Z",
+      "finishedAt": "2026-11-12T22:38:20.925Z",
+      "durationMs": 12168.390694999995,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "status": "passed",
+      "stdout": "13-distribution-ne.stdout.log",
+      "stderr": "13-distribution-ne.stderr.log",
+      "artifacts": [
+        "artifacts/analytics/simulation_diagnostics_NE.json"
+      ]
+    },
+    {
+      "id": "distribution-kc",
+      "kind": "diagnostic",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "analytics/simulation_diagnostics.mjs",
+        "256",
+        "KC"
+      ],
+      "startedAt": "2026-11-12T22:38:20.925Z",
+      "finishedAt": "2026-11-12T22:38:32.441Z",
+      "durationMs": 11516.431660000002,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "status": "passed",
+      "stdout": "14-distribution-kc.stdout.log",
+      "stderr": "14-distribution-kc.stderr.log",
+      "artifacts": [
+        "artifacts/analytics/simulation_diagnostics_KC.json"
+      ]
+    },
+    {
+      "id": "distribution-sf",
+      "kind": "diagnostic",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "analytics/simulation_diagnostics.mjs",
+        "256",
+        "SF"
+      ],
+      "startedAt": "2026-11-12T22:38:32.442Z",
+      "finishedAt": "2026-11-12T22:38:44.042Z",
+      "durationMs": 11599.443780000001,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "status": "passed",
+      "stdout": "15-distribution-sf.stdout.log",
+      "stderr": "15-distribution-sf.stderr.log",
+      "artifacts": [
+        "artifacts/analytics/simulation_diagnostics_SF.json"
+      ]
+    },
+    {
+      "id": "score-sensitivity",
+      "kind": "diagnostic",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "analytics/score_sensitivity.mjs"
+      ],
+      "startedAt": "2026-11-12T22:38:44.043Z",
+      "finishedAt": "2026-11-12T22:39:04.748Z",
+      "durationMs": 20705.081372999994,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "status": "passed",
+      "stdout": "16-score-sensitivity.stdout.log",
+      "stderr": "16-score-sensitivity.stderr.log",
+      "artifacts": [
+        "artifacts/analytics/score_sensitivity.json"
+      ]
+    },
+    {
+      "id": "statistical-integrity-tests",
+      "kind": "structural",
+      "command": [
+        "python3",
+        "analytics/test_statistical_gates.py"
+      ],
+      "startedAt": "2026-11-12T22:39:04.749Z",
+      "finishedAt": "2026-11-12T22:39:05.379Z",
+      "durationMs": 629.7913129999943,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "status": "passed",
+      "stdout": "17-statistical-integrity-tests.stdout.log",
+      "stderr": "17-statistical-integrity-tests.stderr.log",
+      "artifacts": []
+    },
+    {
+      "id": "statistical-gates",
+      "kind": "statistical",
+      "command": [
+        "python3",
+        "analytics/statistical_gates.py"
+      ],
+      "startedAt": "2026-11-12T22:39:05.379Z",
+      "finishedAt": "2026-11-12T22:39:05.637Z",
+      "durationMs": 258.3928059999889,
+      "exitCode": 2,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "status": "failed",
+      "stdout": "18-statistical-gates.stdout.log",
+      "stderr": "18-statistical-gates.stderr.log",
+      "artifacts": [
+        "artifacts/analytics/statistical_gates.json",
+        "artifacts/analytics/STATISTICAL_GATES.md"
+      ]
+    }
+  ],
+  "sourceDigestBefore": "5593963870048294a8a85a3c960cc7212916afa6789cd223b229671d67d8f7d5",
+  "sourceDigestAfter": "5593963870048294a8a85a3c960cc7212916afa6789cd223b229671d67d8f7d5",
+  "sourceDrift": [],
+  "finalHashes": {
+    "analytics/additional_order_sources.py": "932cf733d683cadfe85295ae12dddb19fbd05ff7546ae71cfc56e3e13b0e1aaf",
+    "analytics/all_year_diagnostics.mjs": "bab628b8a2f01030f54c127ef6f9f54e8a46762cec15ca93769bc7ac1ad92334",
+    "analytics/coarsening_comparison.json": "83ca7b49bac9855a2fa4b9df980eb01d25858f0de56e21e538a2d1a351b55dcf",
+    "analytics/features/combine_model_features.csv": "6c97111e98445a69f1bf3b483f2c97dcc36ad11582cb82f54b8d45d0b71c1c19",
+    "analytics/features/pooling_candidates.csv": "f487c588b2f3065be67344e69b041f7d1f5a5e04238d76dae0ef856fe716f037",
+    "analytics/five_year.py": "f66e57954eeafb6258f88ec558a643f4c02c1d8379fa72d5c1a58ccf9b7dc06e",
+    "analytics/five_year_frozen_2018_predictions.csv": "a12e376e85bb09048b84f399da99d4b52e699922ac49023ab65e8c7de46d5094",
+    "analytics/five_year_research.json": "abcb4aa2e3b2760fd21048cd65d3689f2b3e3b656af98856ebd9c193863fd4b0",
+    "analytics/five_year_retrospective_predictions.csv": "c34438073ca7b2e97993a1182aa8726f16ff5663d6467ae67376e32d3b99720f",
+    "analytics/five_year_rolling_predictions.csv": "8eb31575c40970ae7fa058fd5348d2a2521915ba7cee971fba1a8b789c5d1db8",
+    "analytics/five_year_strict_2018.json": "a717e2d683ab57c8f79f963d672598810593bae69945c8d00db82857d6c647e1",
+    "analytics/five_year_strict_labels.csv": "ba0ee53f3f2b33a7150b51ead81ed7e62ece8477f739751374d6e1dd894ceae4",
+    "analytics/five_year_tests.py": "a7917849680f66c4a8c562bef45345287cc06d0391de359de45890e164e0a546",
+    "analytics/forecast_audit.py": "0e7a1ad8a647b5bea9bf54d28da9e661773c9a6dfb9a60d6e6647f7ada2cb64f",
+    "analytics/identity_audit.py": "e84c29e80bb257ade16f7923fd7cdbccb0c77ab9d49ec761982a154cabee4fd3",
+    "analytics/model-2019.json": "2da02bcb4d6da178a635852e61c4ee7488f9551f346c9560f680ce99f13176cf",
+    "analytics/model-2020.json": "35d80e75ae50e8ada8c9ad96db2fd965e38f9dea06bc0f298b899f51497c3bdc",
+    "analytics/model-2021.json": "c89d6915e04159845d48c0692fe899ff66430c404a2d30cafade478ba629a17b",
+    "analytics/model-2022.json": "9579d70620a4f20ede36008bdcc745d913f8ba1aa7f64b4276104561491b8457",
+    "analytics/model-2023.json": "3b7a67a1f83c32ba8461abe9608f3f2c18e8a17e34b60c20768099d9b23c78cb",
+    "analytics/model-2024.json": "1c4b07f22dc40575623920f108335d8990c07a53511db5e0c6bd740398102e9d",
+    "analytics/model-2025.json": "4b753663702af949cc2474da986eadbe1e23966ce58778928590353c0f774397",
+    "analytics/model-2026.json": "a4380ba61137af8813883ec3b021acfb73ee755fd51fdef1004d9f68d25f8ad4",
+    "analytics/model.json": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0",
+    "analytics/outcomes/coarsening_test_predictions.csv": "5d1c2c7e0b2f2720bd6e07711395c60a15070a13e5ba4a0975da5e334af32038",
+    "analytics/outcomes/pooling_test_predictions.csv": "e9814d420dfd5cfb9c47b630aaf7ecced72e0af9a90c17637eb4a8e79d7daeeb",
+    "analytics/outcomes/prospect_test_predictions.csv": "9311cec69da6f6b27471fe8eab215dbe1369e0747f6dedfd1a0377fa34aeb274",
+    "analytics/outcomes/rookie_snap_labels.csv": "bd5be961e835e63f9a4a0792f5695bac73f94f1c21f127655d971d02c926c429",
+    "analytics/outcomes/team_test_predictions.csv": "b76c7830ea9af91821f58adb20ecd0ca5ae5d1f1f16d5da2848b6086a4733046",
+    "analytics/plot_diagnostics.py": "006e7ebf15f28412668968aaa9602d89a19e409413023d43e8f2c22e286722b5",
+    "analytics/pooling_validation.json": "530f5477e483fdbb8103de8ffe8243d8489ceaf19ff93371d745922351f59a27",
+    "analytics/pooling_validation.py": "c02e2199be32a8b81a0119f19ddad3726b8650393113bbab6e26aac391f49e75",
+    "analytics/project_scenarios.py": "0b238343e000e1c85396f223f0cca3c8c8ecfb49dbbd3635688300512b52e341",
+    "analytics/qb_uncertainty.py": "07f16400cdb59083f6272cc8c8fd5f23be785483dc943e95b995e4696b11313b",
+    "analytics/render_reports.py": "26c787ab8a680c02b7643877491a96e8df55600c323b89e0afdca712889dc44d",
+    "analytics/runtime_loader.mjs": "03bc9745ea2b19c4a08f0b696228bb2d7ed396d4542055c2a697f0c4a88b0b85",
+    "analytics/score_distribution.py": "653ecf8b6fa061d46d42ef281bab5953b6869c3fc54a25724dbe474880fb0baf",
+    "analytics/score_sensitivity.mjs": "30e23fb603ed1ad860513f5af1c1ea02c92093685ad7d87ab8cc01286b239e63",
+    "analytics/scoring_origin_audit.py": "006f7dac23451df09919dd9a11fb42006d8f1c65767fe39d80ccf937ca046a4a",
+    "analytics/scoring_recalibration.json": "484c709f0e1687fa77e6fba118a267801b919e4a98dc8138ce3dea7dead64812",
+    "analytics/scoring_recalibration.py": "c157014e0f1d193c317da1d245b42f61640017b5872b2bc6bc9736b190e0bdec",
+    "analytics/simulation_diagnostics.mjs": "1f2e546e36e443310e37f28e694763d5318507f0df63eb0b736ff58ff270008a",
+    "analytics/statistical_gates.py": "4e1285c0d516a120d38f2e3e1765b6d5629b2054ab2238fa703195f7eb11cbfa",
+    "analytics/test_models.py": "40c4b7db2cb048f691e1d30c64d50f79dcd9a3cf5120a1077f4fa6d25d0c109b",
+    "analytics/test_qb_uncertainty.py": "4696ce2cfa0d045ce14b253d8719e14c1640dd7b2da0c008cb149848e28d1a8f",
+    "analytics/test_statistical_gates.py": "a8f539d08f142a69ab84ba2405d0512611df1cc7cbfede4e0c0816770ba1c394",
+    "analytics/train_models.py": "e1821927ca475f22a3b5cb5aa7245c04058c477010bd3259a5217fc328570c6c",
+    "app/api/game/route.ts": "48229f6b114ff302960677660b1c564db130263a124af082e923e18f8b8cd5ed",
+    "app/chatgpt-auth.ts": "4265a2e7c2dcb3a6f4b7026f762bf5b6e4caec76cc13c0a45987ee9a9f2e42cc",
+    "app/globals.css": "182263e79df7e1e1c4299b6054162f9d039978fa2d74204143abd4663a9f7cd6",
+    "app/layout.tsx": "8f2fd46dc1d0d6c07debd840e45483f9f506d9ebbb5cba8c67f48c6f19b86f56",
+    "app/page.tsx": "b35f8ece448a663d2e993e973fb2d0efc2327750b73aab0b38e9913f72ef71fb",
+    "components/connector-error.tsx": "2d0d04559952ce9c9a327cca499f4b99f35d885cccfce375230e116695d3f155",
+    "components/redraft/draft-console.tsx": "3e27e1ee973fd107926bbf18fe953d489067baeae71a0ee31a25612d6abfd382",
+    "components/redraft/guided-board.tsx": "8c7dcb462f535f20e2b3295caa9d6a41fcd42a2a20c3ac187db74dc39b0964ef",
+    "components/redraft/methodology.tsx": "5e1c90247ef468028f952b2d7b359bd1485f54498ef186ee03d3e93b1cd26fb4",
+    "components/redraft/pixel-field.tsx": "ccb9f0b120fe152fcb552a4b07f832808d7709c1f78924a64de570d51050a01b",
+    "components/redraft/primitives.tsx": "c89c0683d1279bdfa0155b18e6c6d476e463081518cff394dd5c1bf5dcd13102",
+    "components/redraft/results.tsx": "c5e942781bf17d29d0f4e1caca88fa3bc13694c397bb57396a9342a281aeb6c1",
+    "components/redraft/stadium.tsx": "2f59bd79a8b3b58b49dc3ca99258d879696e39d10af5ca22c3fd25179228334e",
+    "components/redraft/team-context.tsx": "0e0c7c9b8db146329e5a1316a273b5141ca62d397e774178100b256e073984af",
+    "components/redraft/types.ts": "b4a4ce2ac48021754ac3ddc85853ae91fab688cd875a3e4ac0df132ec9ebbb38",
+    "components/ui/accordion.tsx": "a4f153089ba886dfcf73fac26b5c01ca933fa12fbe88df6fb723912bfffdfbb0",
+    "components/ui/alert-dialog.tsx": "9a8d950f2b9b4352d5ebb762fb44d5c28c2d353aa29712071973656a8736e311",
+    "components/ui/alert.tsx": "2cc59b5f7bda91c1670884b1bf46bfc8a2a6f226cef184f5762acc037188885b",
+    "components/ui/aspect-ratio.tsx": "b1c157886236782cb92d8fbcd4749532aaf6d8aabefd6e157ca40358f902f407",
+    "components/ui/attachment.tsx": "ae8a25dd1a896d3964e3ef54d97e51221b418cde287dfd794428b89951c5c790",
+    "components/ui/avatar.tsx": "58a846bf1617b94b9681921db9b8461d0145f311424663d11678a06b6153cb34",
+    "components/ui/badge.tsx": "46a0de5224f6a5d5d63d45246534288518dce888f031064bff925bbc7fe6ad97",
+    "components/ui/breadcrumb.tsx": "d4c0831bba2212e778248f54a6ace6ef378df8bba4616d1abf27787a31eabae5",
+    "components/ui/bubble.tsx": "870cc0c5cfc8a515053f7e41e706a6bd017a909b45f1305fd3b164a52cc4483b",
+    "components/ui/button-group.tsx": "784c89d8ee683e1bc972ae69e6ea8225a7f63abe22aa1b5fc3423ae8a2a399c0",
+    "components/ui/button.tsx": "cc36af0f8b5019c33cc039fbf03bb952a513072b15b55b53c592b78af3e5f4c4",
+    "components/ui/calendar.tsx": "3855fbe0d3f8ad3a4b93071f98b76a9f6782d46ec8b05f5d2ddbee1e4e39bc84",
+    "components/ui/card.tsx": "c48dd3b96be90a7066f1aebf294f0af9d00ebcdc367d5d4aca55429ade570c1c",
+    "components/ui/carousel.tsx": "b7ea0dda3903d972c186f739e23da61f547bc83b5a0bf13b16856577846d5fc3",
+    "components/ui/chart.tsx": "45aa5ea4a386f4fb5b8869ff4bab3a08cf89255190ee322043baf84c3e950b6a",
+    "components/ui/checkbox.tsx": "b23ab9d4deeedf2ac8f512c368361ede681aa383437ef48563a6f9b7dbe95f27",
+    "components/ui/collapsible.tsx": "c6598e5584f4258b5d9fefadbc5ad6a66888ad58729f4b634a0bb2d9c513188b",
+    "components/ui/combobox.tsx": "2d68e78b2dc7e38a085f222dede60a80b4f8229a6e91732c484605e204d46735",
+    "components/ui/command.tsx": "361193df1e3d64a9e9b5048f045264782fcb387aab3f00f2b805fdcbf538b16a",
+    "components/ui/context-menu.tsx": "2cf1fcf59df0649a3e2a126d1df2f639145f6b6bf5689ee54af1f40ab1245017",
+    "components/ui/dialog.tsx": "dce39c6adc47d997bd2567f8b7a72f466b0134715105cd42f9194007b8ecdb14",
+    "components/ui/direction.tsx": "84ae2ad658207f0e0f367978e5508cd8027cd00c29c41d3d13db21a708c3d1e6",
+    "components/ui/drawer.tsx": "cb6eaf58eb0757ca91af284e5d925b89a42ad7eb19cb3f44c575a3487aa9350f",
+    "components/ui/dropdown-menu.tsx": "98f0dcdae38225b73734aceeb9213dd751fea2c72ea520df31003cd133deac8a",
+    "components/ui/empty.tsx": "ae95bdcf367a076ae02e7925f14522a148798f72d9651749c6d55497dba584c0",
+    "components/ui/field.tsx": "ba67d76f017ac059fc86cf8c344e0b2991c4322d3619e125498c19b87f6eefbd",
+    "components/ui/form.tsx": "315b46bb75ab7d1c6061b5d750aa4bedf6e7a455e15e2d7f9182f053d5972b1e",
+    "components/ui/hover-card.tsx": "f5d8df42c59370ec14d61bcc54f7d68e9bb7dfa0d6a872b2f7cffc2aafbf23b8",
+    "components/ui/input-group.tsx": "6afbd58fea4c438e6252dc4568bddc122e84ababead4ad5cee50ace01100c9a0",
+    "components/ui/input-otp.tsx": "161946daa89f0eda2575b9271c0494e35807c4ffb55598a49f67160c17fec299",
+    "components/ui/input.tsx": "8c4612a7c41319ac5049daa3b34b080f9784b6245c17780eb87c127e58e473db",
+    "components/ui/item.tsx": "6e2144d6d87142dbbe56d568810bf546318c8aa661447ebb0d76ebbf382cb45f",
+    "components/ui/kbd.tsx": "6088c3a5432338b1719c17e9b5d0e1fa74fd1f66060f248fc88909d33a82cd13",
+    "components/ui/label.tsx": "a476e41f08b9de5bd447de66a33d8bc2ad18f2fa6b96c064778bab4b6f439f4c",
+    "components/ui/marker.tsx": "3d798763f094b2bb5e7ade2d5cd1b9bab498bc8ca7fd4cfaf4e5835bdedc34a0",
+    "components/ui/menubar.tsx": "9243af8afcea03703398ccd1c2a8c0a87ad6cbaf2bd272fb609f5b79fe46aebb",
+    "components/ui/message-scroller.tsx": "bb7660a248e4e9589c3816c7c1c199ea1381a70d2c8476ae895b567a7a4d86cf",
+    "components/ui/message.tsx": "9d2952bf3b641081f09aa2739535e6bbd1be0a4946789752a2c20d8aaef43185",
+    "components/ui/native-select.tsx": "007516b111fca8c98a6c40c94ab91bb68cc5b52afce1ed1f5e510c3d86e7347c",
+    "components/ui/navigation-menu.tsx": "889d358a77de88e9cb6f39ea4895ea4c76eaf01d731b74e44f1c41e97a78a044",
+    "components/ui/pagination.tsx": "374ad135c3d4ff3ec080a0009cd9745cdd0e12faa89d2b0e86074f11e5127fd1",
+    "components/ui/popover.tsx": "31c350309ff5d3034e6ecf1b0eda75ba8855bdbf987fc7ad6d71f0ef07c5a447",
+    "components/ui/progress.tsx": "c8c26e8f5f041c3cdf4915347dc1d9c022f9448f149990fadcaf303e952fa57d",
+    "components/ui/radio-group.tsx": "fe5ce39636d0818c2bf9c4eebddff893d1225fa2c81b5fa4bb8cbb39a8c913ce",
+    "components/ui/resizable.tsx": "bc63958467aa00557c551bb0d96a5ae4c965c1e1ba2380e595949d933b132f7c",
+    "components/ui/scroll-area.tsx": "8bd9d986b2844c9a87de825c6de4787b6739b36c3dc9a05ccf3eb107160e4043",
+    "components/ui/select.tsx": "0b796a108a4eb5ba52d9ad938b7aea36dc56ae66c703a6d0a23dbc24f96daff3",
+    "components/ui/separator.tsx": "6da346505c8629a4668420d2a5ca48891383bbe0b0ceb14163537c671879427e",
+    "components/ui/sheet.tsx": "63863cf2df8f8973e52b3459ac9bdbf81be1262dbc70eb53d5271ffb03488e16",
+    "components/ui/sidebar.tsx": "4a8d73e7730a2b1fcecfca31299ed26db65c2307b84197a59c6ec7c01c7ad28e",
+    "components/ui/skeleton.tsx": "ba48dd5be5a6a1378bd4e011028654b5bf419f1e7d20ee4b9f8330c1264e7239",
+    "components/ui/slider.tsx": "0e37484f4b416e79ac18c655cac961aefacf6e67085cfc2b320ea8af545635a3",
+    "components/ui/sonner.tsx": "13ccc9b0fe4248e622f83a1d3b2f0566b72b5e04162d7d0c8db8945ecc71b55f",
+    "components/ui/spinner.tsx": "3e6e6e8d37fb4069f8e43e55318f8db06fbc36e6c8be0096da3c9337c1c798b9",
+    "components/ui/switch.tsx": "386d4d4deb39f34126f9700fe9bf5393d238485dd94018bba9d154dda84c62ae",
+    "components/ui/table.tsx": "20e5a7f224959c6b75802995706a97e9da171f693d4b6b1b436388fcd9df96f3",
+    "components/ui/tabs.tsx": "865d0194331b9b2be36723fa79d3575dc83078b4cb941cafee87cb72fc2cff46",
+    "components/ui/textarea.tsx": "253cdeb487c73beaaccdf47fc163e36e7d5b7ae6ddf09a4f64998a109a112979",
+    "components/ui/toggle-group.tsx": "69f643e889e933f05c1439084480d8646f66a161c7d1cf0730ee926382ade35e",
+    "components/ui/toggle.tsx": "ba4d0b0a2b2fee75dc36dfc19e32082e721024b919050c97fd5dc70faa924e16",
+    "components/ui/tooltip.tsx": "a0784eb77831a799fad7991df4f1b666f876201565a80175e1aa68733574a2e4",
+    "data/clean/scenario_2018.json": "b7895eef7862ccfb45cff5f2f4b6e347abd809c1905ed274883d55cc237f59d8",
+    "data/clean/team_context_2018.json": "f16356d6371a130b5310c6f035db434fcbad52464acb3b5b950d74430eb06de3",
+    "data/clean/team_context_quality.json": "a75c7fb4e2b89874608c23b946e6b883e0031a2c82b4081f31a98b820bfd9ed5",
+    "data/clean/team_context_source_manifest.json": "af8d90bda2e0030888c0c926c8d31f18057e93f5ab860e59401f7f695a79a499",
+    "data/processed/scenario-2018.json": "b7895eef7862ccfb45cff5f2f4b6e347abd809c1905ed274883d55cc237f59d8",
+    "data/processed/scenario-2019.json": "88ef4b175bfc7ddf8c2d32541b1b8371836f09f6e961f4bb8a36b0db0bf5f28c",
+    "data/processed/scenario-2020.json": "527ff4f9770199052a6405d9d56cf503f150b998dddbcfbd947e686c060b624b",
+    "data/processed/scenario-2021.json": "16b574b788658ea916a48a61cdf4a24df76e72305dc16054f32971ec5ed4aec4",
+    "data/processed/scenario-2022.json": "ea6846602cddfe179544b1d845c811a1848c59de69084c210c03080ac4d46f63",
+    "data/processed/scenario-2023.json": "14587193998afcb61ca2c95c50ee641ba709246a5b3a9c8187855b94e894611f",
+    "data/processed/scenario-2024.json": "6a6d794cdf0747d7a03ba92549d4d8165b149a19b04eb32588b679e6c50e8323",
+    "data/processed/scenario-2025.json": "8f80dab73fa8b50a92a6b0ec499419dfd07eade6398ebda59b5117aac62b13b7",
+    "data/processed/scenario-2026.json": "c30d6a697573fc39488b13a91eb7c3863aa780c14a81f446e06dd0e3a86638ca",
+    "data/processed/scenario-coverage.json": "0d42970e685e510b6554c7fea7675e7f3a5aecb525aabb1c6b7e155ec0058ca3",
+    "data/processed/trade-values.json": "cfc86c071618d003d0409cec72075934c4905b0bbcae24e4c3ca0f5414992db6",
+    "data/raw/combine.csv": "5648886b1bb9de8a0c42b05ee7b1d9cbe58897676caaa2f6a4a3d3c9228235bb",
+    "data/raw/combine_invitees_2018.html": "ef7ad749031bdc69081f7191884cbdc081d7e5ae320ca5cf26be2f04e4876a67",
+    "data/raw/correction_bills_255.html": "76f63b9250c7291ff30c38d938bf5c45bfd70c4c73f3fc4be62d206763ce522b",
+    "data/raw/correction_bucs_255.html": "1aa1664b0b1ca0903c31acf9e3fd704c9efb53e6d53081d49fc1f0aaa8013b0a",
+    "data/raw/depth_charts_2017.csv": "cc8a9e6991236510ada3fd1a71ed0ebd3df91f2130c8abbf11e69150adc0eb7d",
+    "data/raw/dictionary_depth_charts.csv": "faf36b0e8e943127d232edc36ccd11125a39d278e2ff42404038e0a3763bf165",
+    "data/raw/dictionary_rosters.csv": "86c058e9053066ee50ddf573164591dcc6eb16bf6c8b1c6fe7a48803a870d799",
+    "data/raw/draft_picks.csv": "c64c6a93d541f2631583bb6245b2075c7e2105190be3b3ee2d13be787f8684fc",
+    "data/raw/games.csv": "924d1b149d01b3aa6fc87c64116a489d44f50f4d8eac4bf8c8874bec6f1b75d3",
+    "data/raw/johnson_2014.html": "d0ee2bf5e9da075a673079ea867e26961861ea5737164150a1ddd61be91cdfc3",
+    "data/raw/license_nflverse.html": "0578490ac771826c9c0d2cbfd41e6bd9d27b9c5c5e80a6c4b1756bfecab71a86",
+    "data/raw/order_2018.html": "6fea4ec5cd63aebaa18f9b13ba7964a3da9974f7ca31066db2bf25f66674ae11",
+    "data/raw/raiders_2018_draft_release.pdf": "017cdac00523f880fc4d2721f5829f858361ef2d476170f2533664901f58a249",
+    "data/raw/roster_2017.csv": "22584ad80445611edff6dcbc6dce9ab596bdc484430d8aac298725da15697fd4",
+    "data/raw/snap_counts_2012.csv": "802475aec59f0b125de85a6c35eb69e289a512bcf62d6be007d385ea8d613ebd",
+    "data/raw/snap_counts_2013.csv": "9d1fdd557875b9a2c71d88e583da24a739dfca671edf8223d6171e39a421000e",
+    "data/raw/snap_counts_2014.csv": "84540709d9483552185c8ca3ef30b2f66fb94b30c3e6c21e7a27205f337f21d3",
+    "data/raw/snap_counts_2015.csv": "841496252ada825c3c50d3ba9b4b26d3f4fabd0fedc5fb44f286ddaaa5bdb7e0",
+    "data/raw/snap_counts_2016.csv": "a778e24e9eb665ffe8f16093b03c5a263dca0250b3aa92bd6002f61f534bea59",
+    "data/raw/snap_counts_2017.csv": "eab2fad2df99249d4061ed9c5c34d312cdba07cf3159d027d255bdc9b6526917",
+    "data/raw/snap_counts_2018.csv": "9a408b78a55f799110aed70de3564e157faf089ce9bed780d0368bf49ae13e0b",
+    "data/raw/snap_counts_2019.csv": "0cd52be8fa57f18503b670cb8263246c4f548375b768cbcad1c7a7462c98970d",
+    "data/raw/snap_counts_2020.csv": "512e35f17d076eb5d99b933c4a144eb95dcddf40c0320dbb397cae3c35683716",
+    "data/raw/snap_counts_2021.csv": "8e4dae054a4749cf2d4919508d9161a6068fd67509979aefa385bfb3803d0ee5",
+    "data/raw/snap_counts_2022.csv": "0018a4833fbf0f825286c1c27450c6254391b548d6c55bcde728e93e4816815a",
+    "data/raw/snap_counts_2023.csv": "303b61aa5c33ffda863f93a750fc14483f397f9187ad502b1ce71e9b516a64c0",
+    "data/raw/snap_counts_2024.csv": "a2aa58efe093f8aa0ad5aadf09f81d8ec690a1183bd2dde68d20e7f109a9c335",
+    "data/raw/snap_counts_2025.csv": "3fc2deb0e9ad86d34d4578cb80bb21c95253e088ee22ca028adf46f7485eff1f",
+    "data/raw/source_manifest.json": "d9899745a99aba6da64059dee32e398989a0e3e60a84da7c7e46efc90ecb7a9f",
+    "data/raw/trades.csv": "3180574aca356c5f89488ecce6babe88703967109f98775bce7c1620ef4c9f53",
+    "data/raw/trades_2018.html": "7844bf14ab6ce4cf6f3fb426210c77da0538de94f700641237212a874dccad7b",
+    "db/index.ts": "dc7610b00b918e0ffff1360a63626f16655ced3064b2eaf96095a4101fb14bcd",
+    "db/schema.ts": "32be1772252d0acab4d136fc7f54cbde795515acaae80f3d1e1a4eaa014dbc9d",
+    "docs/warehouse/001_analytical_schema.sql": "8b9774286da9c636f4a0cc588dfb57ad33c8dd36f043fe2ca2e7904c785df4c5",
+    "drizzle/0000_spotty_patriot.sql": "c1647856b8b5266e73145bdbe68e46a4ef68e6c13b97e39a817faf976866c497",
+    "drizzle/meta/0000_snapshot.json": "cda41583e679a880840f7b0e9a64f65f4d6d793625f9245c7e83f8432893a34e",
+    "drizzle/meta/_journal.json": "d4e07e5809ef56fa9bf52f5a618f6dbae2742c8bdee94cc92418ef7b23c02d9d",
+    "lib/connector-context.ts": "bbddff68689cb0f6926fecd4b8b96f12f2054277c296e97b0df07d4ad5ece24e",
+    "lib/connector-contract.mts": "e1a7b24a8793af34b595690d9b1300c897c7321c14f215cedf58ad95799d7c3e",
+    "lib/connector-errors.mts": "a22edf13d6873ae832c4a2a0d579fc666c73ec996ef0722d39172649d38f0871",
+    "lib/connector-preview.d.ts": "abd69a94f7f61f1359063bb557574faae35e8ff5a028cc4c04b9ee248ef52642",
+    "lib/connectors.ts": "1c93d747e384c8e17e3e3dd5361b24412babf5eba2a11d2ae7a75f4e0924112c",
+    "lib/engine.ts": "3826b204aea464dd4532cdd1901950bcc5452e7a4455780ee92e5c27a37015c7",
+    "lib/scouting.ts": "6a2850cb8f15f6effb6b12fd15f79602e5e0c6a20ff84951e7bdb2695aeba1d6",
+    "lib/server-data.ts": "64a7f0c5d75ce231805b9aba756d15bbd3d29de01e8d8bb473686f3811a767f1",
+    "lib/simulation.ts": "1ad4f1edbe10a83c80a424952735bb07e32a663bc23ae23b5df258a9b28e1727",
+    "lib/types.ts": "7215ba52814cc47a8894eef0600b2012e6b3fdac30a384fdff5c9a2a0342e6ed",
+    "lib/utils.ts": "53f3d3d070f0a9082934da25b875f9499855c2b0693868dd28be8c23d8730f68",
+    "package.json": "90ce20aebeb6ba7fd8c4abdca912a204674391226308e2c3bbebb515435cf7d2",
+    "pnpm-lock.yaml": "4a4b64b3ac637b860611db6979dfe8b304e980bdcc8993d3817f6f5764451b78",
+    "research/audit_class_coverage.py": "21e74738d44aaa8fe36908350e41f84e936279ef05215167e8e7b7f0153651c9",
+    "research/audit_expansion.py": "1226b3927a2915a7a98bf8ce8c08bd6188abafd761e935985b426e9700ac0e69",
+    "research/build_scenarios.py": "a2078388363a933165d1440c786d3ccc94ca1ee217abab87d6fb7cf9a662b72f",
+    "research/clean.py": "a3472251fc15c211d1f7b547883fe89a0851d3324642402cfbca9c516836c616",
+    "research/diagnostics.py": "8062bb73f12b4c2517545542fa8757f722fc974039d70b4f9de4c1009cae45bf",
+    "research/identity_risk.py": "a1526972900513329f090e4d10f7cfed72259be76ce2aff4697b0bbda284e12d",
+    "research/ingest.py": "9724a9c6aade45e252fa99d5fc2d550649b76885add35fadaca7adf28346c71b",
+    "research/reconcile_order.py": "82e0bdc398e99c105c3d6a3e673630897d2ddf691fb58bff53ffe2ad73dfe05e",
+    "research/team_context.py": "f560b5e35f034c74547807d1f99715172da1a75d73b57b9ed8967b4192841fa3",
+    "research/test_data.py": "b4f97eac06361230e783da4ec0371b344e7bebb82e239addd84b650f263eb5b6",
+    "research/test_team_context.py": "6529f0bbe554203081ddb4106ee8fc7883142aabcb9f886352547f1c08c4d906",
+    "research/trades.py": "d4fb1e4de6f33df0f38841100a390f3079aa94e2834dc146d6b5412f7f45179d",
+    "research/verify_invitees.py": "8894f0f3233f2edc2f911a7891309983c90b66a4758bcb23039a16b4854d0750",
+    "scripts/connector-preview/connector-preview-session.mjs": "57224ad185a25115a14fccc68d3217e55b199260c3dd98a2c807beffec1a0a9b",
+    "scripts/connector-preview/host-binding.mjs": "9e44ab6864133a5c82f834a5904ebb7d6104cb783c24efba3c0fe1a161182cea",
+    "scripts/connector-preview/protocol.mjs": "ff55873dacd7c0ad65f6e6510e7d449fabd118876b39375a410d95b1a859a014",
+    "scripts/connector-preview/worker.mjs": "bd9c98fc68f29d975fe10508dfc9029bb681dc5789a62861d5c938bdea2064bb",
+    "scripts/execution-profile.mjs": "2e71116f4d2b70cff8bb70436f8dd5c709ec7ff62893424530f404e0193d3630",
+    "scripts/gauntlet.mjs": "4961b6a00fa55ac6c2807ceb2fc49d91c4d4403c803a8daa50a79db7b5e6a1e6",
+    "scripts/install-ci.mjs": "4a5a92d60a08d0ba54effd8373da2da06284312c55b767287c68a0bec7200da7",
+    "scripts/local-db-init.mjs": "5481d681672884f88f3df3bd460475d07d914ddefbea58ad16d05f36f965f357",
+    "scripts/local-dev.mjs": "efa2362ae0f57ccbe7e8c1af1ad0cd98941a5b1e91e19e481150597857fe35bf",
+    "scripts/npm-install.mjs": "9715c6a32d1d4a0289ef6376a0e819c3b6a6416b8a9877733d9fb4339ce626b6",
+    "scripts/pnpm-install.mjs": "a83164e344c1947053def83b546be8115deaa827314bbaead7afe6b6451c5cdf",
+    "scripts/run-framework.mjs": "9bf9f41a29314cabe0238b8e9c540ec3f7b5a6adafc7c8fb6c3940722d061dca",
+    "scripts/setup.mjs": "ca625210661b2f5040b8f7188cb0562238c03a4115610224a2607653454a3b26",
+    "scripts/sites-env.mjs": "21d7bde6acb9f716287e652c1b0e43ae4803d79be367ca2192fcba14740b5338",
+    "scripts/tool-environment.mjs": "6da99286e0eb7905595ca851e68983bedf94a0f93814819d61f2b1f3a0342ba2",
+    "scripts/vite/connector-preview-plugin.mjs": "a6a9fe2086e302f94a3f91e3c1a68a45bb3aa07d4a79faf01b14732191eb4e80",
+    "scripts/vite/sites-vite-plugin.ts": "07af20e7097d9ed1d76f7c446d02997550b8fc5ca89668b249e25eabd62c6834",
+    "tests/all-years.mjs": "e3a90251775aea28087be52156f092b47140d2f6363eeb0b80c2073f889d7a92",
+    "tests/api.integration.mjs": "0c4ae7c37eea21af6906a9baa5728d794666863f3cb841353db3e82c2f2372b4",
+    "tests/api.smoke.mjs": "66ecdf5dac5e651100cb1fc90da77e0384297a241e3f3b9f57d29cbe4f4db19b",
+    "tests/architecture.test.ts": "0ecbcbc967e6e9098edc1eab90fd36961fc9e8a6ce3c3345d34bb8f8973a6ba6",
+    "tests/browser.mjs": "b71f03af2feaca2d3221ac7ef9d54feefd3f6af1f6267853e7816d815ebc007a",
+    "tests/calibrate-trades.ts": "2c961c500338872c276ec5ae4a635e96154c98204af2a9ec3b337464556c32c2",
+    "tests/context-policy.test.ts": "39f62cdff5742b6af4a0172097961694cd1c5b383ff604ae467685cb0af79b94",
+    "tests/engine.test.ts": "7e9cdcccae0c43d02b851d1e92ecc79f03cbef52ee1a3e891a07e4fa8f93e5e1",
+    "tests/five-year.test.ts": "592915e0022f2280ddacf7c5424cba6e624a80d92aeb0a013368da1fe06c96f0",
+    "tests/league-matrix.mjs": "eeb5db76296d69531e64f216263ff1dd598e3ba239e5bebe940cedb728ad4324",
+    "tests/local-http.mjs": "17944d4850dfa32ecbda78bf53a1765909449a7fb24c5c8e9757318a69ef3a4f",
+    "tests/playoff-backtest.mjs": "379788d163ebddbb6c939c9db31609fcb98eedf20114d7f4a99fbc08754a7495",
+    "tests/playoff-rules.test.ts": "bdec5bb75ab2dc8d262af05de1d35ecd43eea82da680805f6a68bf8b7bb4bdb5",
+    "tests/qa-simulation.test.ts": "496f17105c14091f4de8ef75af2ca159d63566de99f5283fee452c33748f8fec",
+    "tests/run.mjs": "6c83f7933658f7e8881481ecee7c1a63f0b130bdf6d02df74d0696fcde774917",
+    "tests/scenario-data.test.ts": "18686110e058c944ff0b43ca5906fd7bdee81eba4481c7e09e5f38970760b8ad",
+    "tests/scouting.test.ts": "e97910338cc811ae89541b6df31bd61a513f463ec3ad57f20903b3644e4b16c1",
+    "tests/warehouse_test.py": "d23cd9fa36f3e195c11783103fd47fc4699d9dcd88561bb654446cd7de081f6d",
+    "tests/year-contract.test.ts": "2385ac843289a5f3cf743dc3f48f33d3eaa0f97849565d866581c690b47a6271",
+    "tsconfig.json": "a4c1cc83b63ef9d39641d3babaefffa063dccbbc93338e18017b5013d713163e"
+  },
+  "artifacts": [
+    "artifacts/data/clean/order_reconciliation.json",
+    "artifacts/data/clean/eligibility_audit_2018.json",
+    "artifacts/analytics/forecast_audit.json",
+    "artifacts/analytics/forecast_audit_predictions.csv",
+    "artifacts/analytics/scoring_recalibration.json",
+    "artifacts/tests/results/api-integration.json",
+    "artifacts/analytics/simulation_diagnostics.json",
+    "artifacts/analytics/simulation_diagnostics_NE.json",
+    "artifacts/analytics/simulation_diagnostics_KC.json",
+    "artifacts/analytics/simulation_diagnostics_SF.json",
+    "artifacts/analytics/score_sensitivity.json",
+    "artifacts/analytics/statistical_gates.json",
+    "artifacts/analytics/STATISTICAL_GATES.md"
+  ],
+  "coverage": {
+    "expectedSteps": 18,
+    "completedSteps": 18,
+    "finiteMatrix": "32 teams × 3 draft seeds × 2 paired replicates, plus one deterministic replay per team",
+    "productionBrowser": "not run",
+    "humanRecognitionStudy": "not run",
+    "publicLoadAndAbuseTest": "not run"
+  },
+  "matrix": {
+    "status": "passed",
+    "actual": {
+      "draftCases": 96,
+      "passedCases": 96,
+      "failedCases": 0,
+      "pairedReplicates": 192,
+      "replayPairs": 32,
+      "assertions": 5759437,
+      "worlds": 384,
+      "seasons": 1920,
+      "regularGames": 503808,
+      "postseasonGames": 23424
+    }
+  },
+  "distributions": [
+    {
+      "path": "artifacts/analytics/simulation_diagnostics.json",
+      "team": "CLE",
+      "replicates": 256,
+      "distributionFlags": [
+        {
+          "metric": "totalScoreMean",
+          "observed": 46.289855072463766,
+          "simulatedMean": 45.045713843368915,
+          "interval": [
+            44.20579268292683,
+            45.9344512195122
+          ]
+        },
+        {
+          "metric": "zeroScoreRate",
+          "observed": 0.010297482837528604,
+          "simulatedMean": 0.016061178067835354,
+          "interval": [
+            0.011432926829268292,
+            0.021341463414634148
+          ]
+        }
+      ],
+      "convergence": {
+        "replicates": 256,
+        "pairedMeanWinDifference": 0.015625,
+        "pairedStandardError": 0.19388386820591907,
+        "mean95Interval": [
+          -0.36438738168360135,
+          0.39563738168360135
+        ],
+        "probabilityImprovement": 0.421875,
+        "probabilityMcse": 0.030866173104060757
+      },
+      "configuration": {
+        "team": "CLE",
+        "draftSeed": "redraft-validation-2026-11-02",
+        "engineVersion": "redraft-research-0.7-multiyear-playoffs",
+        "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:f16356d6371a+scoring-trailing3-v1",
+        "datasetVersion": "nflverse-2018-combine-only-v2"
+      }
+    },
+    {
+      "path": "artifacts/analytics/simulation_diagnostics_NE.json",
+      "team": "NE",
+      "replicates": 256,
+      "distributionFlags": [
+        {
+          "metric": "totalScoreMean",
+          "observed": 46.289855072463766,
+          "simulatedMean": 45.045713843368915,
+          "interval": [
+            44.20579268292683,
+            45.9344512195122
+          ]
+        },
+        {
+          "metric": "zeroScoreRate",
+          "observed": 0.010297482837528604,
+          "simulatedMean": 0.016061178067835354,
+          "interval": [
+            0.011432926829268292,
+            0.021341463414634148
+          ]
+        }
+      ],
+      "convergence": {
+        "replicates": 256,
+        "pairedMeanWinDifference": -0.59765625,
+        "pairedStandardError": 0.20176756435762314,
+        "mean95Interval": [
+          -0.9931206761409413,
+          -0.20219182385905865
+        ],
+        "probabilityImprovement": 0.39453125,
+        "probabilityMcse": 0.03054686095098382
+      },
+      "configuration": {
+        "team": "NE",
+        "draftSeed": "redraft-validation-2026-11-02",
+        "engineVersion": "redraft-research-0.7-multiyear-playoffs",
+        "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:f16356d6371a+scoring-trailing3-v1",
+        "datasetVersion": "nflverse-2018-combine-only-v2"
+      }
+    },
+    {
+      "path": "artifacts/analytics/simulation_diagnostics_KC.json",
+      "team": "KC",
+      "replicates": 256,
+      "distributionFlags": [
+        {
+          "metric": "totalScoreMean",
+          "observed": 46.289855072463766,
+          "simulatedMean": 45.045713843368915,
+          "interval": [
+            44.20579268292683,
+            45.9344512195122
+          ]
+        },
+        {
+          "metric": "zeroScoreRate",
+          "observed": 0.010297482837528604,
+          "simulatedMean": 0.016061178067835354,
+          "interval": [
+            0.011432926829268292,
+            0.021341463414634148
+          ]
+        }
+      ],
+      "convergence": {
+        "replicates": 256,
+        "pairedMeanWinDifference": 1,
+        "pairedStandardError": 0.2088718530113432,
+        "mean95Interval": [
+          0.5906111680977673,
+          1.4093888319022327
+        ],
+        "probabilityImprovement": 0.5546875,
+        "probabilityMcse": 0.031062517438611176
+      },
+      "configuration": {
+        "team": "KC",
+        "draftSeed": "redraft-validation-2026-11-02",
+        "engineVersion": "redraft-research-0.7-multiyear-playoffs",
+        "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:f16356d6371a+scoring-trailing3-v1",
+        "datasetVersion": "nflverse-2018-combine-only-v2"
+      }
+    },
+    {
+      "path": "artifacts/analytics/simulation_diagnostics_SF.json",
+      "team": "SF",
+      "replicates": 256,
+      "distributionFlags": [
+        {
+          "metric": "totalScoreMean",
+          "observed": 46.289855072463766,
+          "simulatedMean": 45.045713843368915,
+          "interval": [
+            44.20579268292683,
+            45.9344512195122
+          ]
+        },
+        {
+          "metric": "zeroScoreRate",
+          "observed": 0.010297482837528604,
+          "simulatedMean": 0.016061178067835354,
+          "interval": [
+            0.011432926829268292,
+            0.021341463414634148
+          ]
+        }
+      ],
+      "convergence": {
+        "replicates": 256,
+        "pairedMeanWinDifference": 0.5,
+        "pairedStandardError": 0.20359814803271895,
+        "mean95Interval": [
+          0.10094762985587086,
+          0.8990523701441291
+        ],
+        "probabilityImprovement": 0.5,
+        "probabilityMcse": 0.03125
+      },
+      "configuration": {
+        "team": "SF",
+        "draftSeed": "redraft-validation-2026-11-02",
+        "engineVersion": "redraft-research-0.7-multiyear-playoffs",
+        "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:f16356d6371a+scoring-trailing3-v1",
+        "datasetVersion": "nflverse-2018-combine-only-v2"
+      }
+    }
+  ],
+  "scoreSensitivity": {
+    "artifact": "artifacts/analytics/score_sensitivity.json",
+    "topRankChanges": 2,
+    "minRankCorrelation": 0.8
+  },
+  "warnings": [
+    {
+      "kind": "simulation-distribution",
+      "team": "CLE",
+      "flags": [
+        {
+          "metric": "totalScoreMean",
+          "observed": 46.289855072463766,
+          "simulatedMean": 45.045713843368915,
+          "interval": [
+            44.20579268292683,
+            45.9344512195122
+          ]
+        },
+        {
+          "metric": "zeroScoreRate",
+          "observed": 0.010297482837528604,
+          "simulatedMean": 0.016061178067835354,
+          "interval": [
+            0.011432926829268292,
+            0.021341463414634148
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "simulation-distribution",
+      "team": "NE",
+      "flags": [
+        {
+          "metric": "totalScoreMean",
+          "observed": 46.289855072463766,
+          "simulatedMean": 45.045713843368915,
+          "interval": [
+            44.20579268292683,
+            45.9344512195122
+          ]
+        },
+        {
+          "metric": "zeroScoreRate",
+          "observed": 0.010297482837528604,
+          "simulatedMean": 0.016061178067835354,
+          "interval": [
+            0.011432926829268292,
+            0.021341463414634148
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "simulation-distribution",
+      "team": "KC",
+      "flags": [
+        {
+          "metric": "totalScoreMean",
+          "observed": 46.289855072463766,
+          "simulatedMean": 45.045713843368915,
+          "interval": [
+            44.20579268292683,
+            45.9344512195122
+          ]
+        },
+        {
+          "metric": "zeroScoreRate",
+          "observed": 0.010297482837528604,
+          "simulatedMean": 0.016061178067835354,
+          "interval": [
+            0.011432926829268292,
+            0.021341463414634148
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "simulation-distribution",
+      "team": "SF",
+      "flags": [
+        {
+          "metric": "totalScoreMean",
+          "observed": 46.289855072463766,
+          "simulatedMean": 45.045713843368915,
+          "interval": [
+            44.20579268292683,
+            45.9344512195122
+          ]
+        },
+        {
+          "metric": "zeroScoreRate",
+          "observed": 0.010297482837528604,
+          "simulatedMean": 0.016061178067835354,
+          "interval": [
+            0.011432926829268292,
+            0.021341463414634148
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "score-rank-instability",
+      "topRankChanges": 2,
+      "minRankCorrelation": 0.8,
+      "path": "artifacts/analytics/score_sensitivity.json"
+    },
+    {
+      "kind": "strict-2018-calibration-unsupported",
+      "detail": "2012 snap source is header-only. Only2013 has all five annual outcomes observable before2018 draft."
+    }
+  ],
+  "structuralStatus": "passed",
+  "statisticalStatus": "not-passed",
+  "releaseStatus": "research-alpha; this runner does not certify all acceptance criteria",
+  "interrupted": false,
+  "exitCode": 2
+}
