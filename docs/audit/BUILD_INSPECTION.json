@@ -1,12 +1,37 @@
 {
+  "runtimeSource": "25be24769f5b425f664298209baedab0ad677395",
   "clientChunks": 9,
-  "uncompressedBytes": 852674,
+  "uncompressedBytes": 852906,
   "targetedStringMatches": {
     "Travis Hunter": [],
     "Baker Mayfield": [],
     "five-year-2013-exposure-v2": [],
     "five_year_strict_2018.json": []
   },
-  "workerEntry": true,
-  "scope": "Targeted string scan only. This cannot establish complete anonymity."
+  "serverArtifacts": [
+    "server/__vite_rsc_assets_manifest.js",
+    "server/vinext-client-assets.js",
+    "server/index.js"
+  ],
+  "setupDomainTests": 89,
+  "localHttp": {
+    "at": "2026-11-20T02:16:45.888Z",
+    "status": "passed",
+    "checks": [
+      "unauthenticated 401",
+      "loopback sign-in and rendered homepage",
+      "real bootstrap and local D1",
+      "new game, scouting transaction, persistent reload"
+    ],
+    "durationMs": 12138,
+    "limitation": "HTTP and server rendering only; does not replace a browser or physical iPhone test."
+  },
+  "scope": "Production build from tracked source. Frozen install and local D1 initialization. HTTP checks target local development server. Restricted static marker scan cannot establish full anonymity.",
+  "builtWorkerSmoke": {
+    "command": "pnpm start",
+    "binding": "loopback only, local Wrangler and D1",
+    "config": "dist/server/wrangler.json",
+    "homepageStatus": 200,
+    "anonymousApiStatus": 401
+  }
 }

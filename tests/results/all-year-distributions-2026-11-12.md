@@ -1,6 +1,6 @@
 # All-year baseline distribution diagnostics
 
-Generated 2026-11-20T01:52:19.059Z; fixed seed matrix redraft-all-year-diagnostics-2026-11-12-v1; 128 paired replicates per draft class.
+Generated 2026-11-20T02:18:03.700Z; fixed seed matrix redraft-all-year-diagnostics-2026-11-12-v1; 128 paired replicates per draft class.
 
 The baseline is the scenario’s recorded actual draft; the alternate is one completed seven-round CPU draft for CLE. Each replicate uses the same keyed random seed/index for both worlds.
 
@@ -23,11 +23,11 @@ Central 95% Monte Carlo ranges capture simulation randomness only. They omit mod
 | 2020 | 2022 | recorded + complete | 45.10 [43.61, 46.55] | 0.03 [0.01, 0.06] | 0.00 [0.00, 0.01] | 9.90 [6.71, 14.11] | 0 | none | none |
 | 2020 | 2023 | recorded + complete | 45.04 [43.36, 46.90] | 0.03 [0.01, 0.06] | 0.00 [0.00, 0.01] | 9.68 [5.51, 13.18] | 0 | none | none |
 | 2020 | 2024 | recorded + complete | 45.01 [43.27, 46.58] | 0.03 [0.01, 0.06] | 0.00 [0.00, 0.01] | 9.74 [5.60, 13.69] | 0 | shutoutRate | actual-shutoutRate-outside-baseline-central-95-monte-carlo-range |
-| 2021 | 2021 | recorded + complete | 45.04 [43.41, 46.84] | 0.03 [0.01, 0.05] | 0.00 [0.00, 0.01] | 9.88 [6.02, 13.70] | 0 | none | none |
-| 2021 | 2022 | recorded + complete | 45.18 [43.82, 46.51] | 0.03 [0.01, 0.05] | 0.00 [0.00, 0.01] | 9.67 [6.45, 13.47] | 0 | meanTotal | actual-meanTotal-outside-baseline-central-95-monte-carlo-range |
-| 2021 | 2023 | recorded + complete | 44.99 [43.37, 46.57] | 0.03 [0.01, 0.06] | 0.00 [0.00, 0.01] | 9.78 [6.12, 13.57] | 0 | none | none |
-| 2021 | 2024 | recorded + complete | 45.02 [43.30, 46.67] | 0.03 [0.01, 0.06] | 0.00 [0.00, 0.01] | 9.73 [6.40, 13.77] | 0 | shutoutRate | actual-shutoutRate-outside-baseline-central-95-monte-carlo-range |
-| 2021 | 2025 | recorded + complete | 45.05 [43.43, 46.52] | 0.03 [0.01, 0.05] | 0.00 [0.00, 0.01] | 10.18 [6.69, 14.15] | 0 | none | none |
+| 2021 | 2021 | recorded + complete | 45.04 [43.40, 46.84] | 0.03 [0.01, 0.05] | 0.00 [0.00, 0.01] | 9.90 [6.02, 13.70] | 0 | none | none |
+| 2021 | 2022 | recorded + complete | 45.18 [43.80, 46.51] | 0.03 [0.01, 0.05] | 0.00 [0.00, 0.01] | 9.68 [6.44, 13.52] | 0 | meanTotal | actual-meanTotal-outside-baseline-central-95-monte-carlo-range |
+| 2021 | 2023 | recorded + complete | 44.98 [43.36, 46.56] | 0.03 [0.01, 0.06] | 0.00 [0.00, 0.01] | 9.78 [6.12, 13.83] | 0 | none | none |
+| 2021 | 2024 | recorded + complete | 45.01 [43.29, 46.66] | 0.03 [0.01, 0.06] | 0.00 [0.00, 0.01] | 9.76 [6.40, 13.97] | 0 | shutoutRate | actual-shutoutRate-outside-baseline-central-95-monte-carlo-range |
+| 2021 | 2025 | recorded + complete | 45.05 [43.41, 46.47] | 0.03 [0.01, 0.05] | 0.00 [0.00, 0.01] | 10.19 [6.75, 14.55] | 0 | none | none |
 | 2022 | 2022 | recorded + complete | 45.23 [43.83, 46.50] | 0.03 [0.01, 0.06] | 0.00 [0.00, 0.01] | 9.96 [6.82, 13.93] | 0 | meanTotal | actual-meanTotal-outside-baseline-central-95-monte-carlo-range |
 | 2022 | 2023 | recorded + complete | 45.02 [43.32, 46.41] | 0.03 [0.01, 0.06] | 0.00 [0.00, 0.01] | 9.70 [6.25, 13.13] | 0 | none | none |
 | 2022 | 2024 | recorded + complete | 44.96 [43.28, 46.89] | 0.03 [0.01, 0.06] | 0.00 [0.00, 0.01] | 9.95 [6.63, 13.20] | 0 | shutoutRate, teamWinVariance | actual-shutoutRate-outside-baseline-central-95-monte-carlo-range; actual-teamWinVariance-outside-baseline-central-95-monte-carlo-range |

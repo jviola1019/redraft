@@ -22,7 +22,7 @@
 
 ## Priority after this review
 
-1. Reconcile the 2021 invite and historical pick identity maps. Require dated or stable-ID evidence for each merge, audit school aliases and retain same-name different-person controls. Rebuild the baseline and repeat comparisons before attributing changes to user decisions.
+1. Resolve remaining 2021 invite and historical pick identities after the verified Trey Lance correction. Require dated or stable-ID evidence for each merge, audit school aliases and retain same-name different-person controls. Rebuild the baseline and repeat comparisons before attributing changes to user decisions.
 2. Benchmark CPU choice against pre-draft positional value and opportunity. Require better first-round position distributions on chronologically held-out classes while retaining meaningful team and seed diversity.
 3. Acquire dated older QB participation records or establish five-year predictive improvement over persistence on additional mature cohorts. Report coverage and interval width together.
 4. Evaluate a discrete football scoring model on historical forecast origins. Require held-out team-score and margin performance and a league-wide shared-season test before promotion.

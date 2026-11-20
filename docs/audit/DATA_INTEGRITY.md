@@ -21,7 +21,7 @@ The independent CSV checks find 1,519 unique feature/label identities from 2013â
 | 2018 | 336 | 39 | 256 | 217 | 0 | 613 / 2,688 |
 | 2019 | 336 | 35 | 254 | 219 | 0 | 554 / 2,688 |
 | 2020 | 337 | 25 | 255 | 230 | 0 | 736 / 2,696 |
-| 2021 | 323 | 83 | 259 | 176 | 144 | 1,429 / 2,584 |
+| 2021 | 323 | 82 | 259 | 177 | 144 | 1,429 / 2,584 |
 | 2022 | 324 | 39 | 262 | 223 | 0 | 1,002 / 2,592 |
 | 2023 | 319 | 42 | 259 | 217 | 0 | 954 / 2,552 |
 | 2024 | 321 | 31 | 257 | 226 | 0 | 1,018 / 2,568 |
@@ -60,3 +60,5 @@ The 2021 scenario is an important exception to the combine-participant label: it
 Local raw games contain complete postseason records through the 2025 season, and 150 completed 2026 regular-season games through November 16; no completed 2026 postseason exists. Thus observed complete five-season windows exist for draft classes **2018â€“2021** only. Class 2022 has four complete seasons; 2023 three; 2024 two; 2025 one; 2026 zero. The remaining seasons are incomplete or future, not negative outcomes. All nine classes having playable JSON does not imply all nine have five-year ground truth. These counts were independently read from `data/raw/games.csv`; scenario-level per-season regular-game counts are recorded in the diagnostic JSON. The diagnostic does not independently validate full postseason bracket advancement, source licensing, every raw identity, archival source truth, or model calibration.
 
 A [source-by-source identity review](identity_review/REVIEW.md) classifies the 53 same-name candidate groups. It records evidence for one alias and two distinct-person groups. The other 50 remain unverified.
+
+The independent information-flow and all-class integrity audit was rerun after the 2021 correction at source 25be247. All 18 paired complete-draft comparisons passed. The 2021 reference-only count fell to 82 and 177 recorded selections now map to the eligible pool.

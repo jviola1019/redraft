@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-20T01:45:26.356Z",
+  "at": "2026-11-20T02:05:08.623Z",
   "engine": "webkit",
   "executablePath": "Playwright default",
   "baseUrl": "http://127.0.0.1:4173",
@@ -8,11 +8,11 @@
       "engine": "webkit",
       "viewport": "desktop",
       "navigation": {
-        "domContentLoadedMs": 121,
-        "loadMs": 137
+        "domContentLoadedMs": 107,
+        "loadMs": 122
       },
       "status": "passed",
-      "durationMs": 13908,
+      "durationMs": 13814,
       "checks": [
         "new historical draft",
         "scouting",
@@ -31,11 +31,11 @@
       "engine": "webkit",
       "viewport": "phone",
       "navigation": {
-        "domContentLoadedMs": 102,
-        "loadMs": 119
+        "domContentLoadedMs": 104,
+        "loadMs": 122
       },
       "status": "passed",
-      "durationMs": 5726,
+      "durationMs": 5435,
       "checks": [
         "new historical draft",
         "scouting",
@@ -54,11 +54,11 @@
       "engine": "webkit",
       "viewport": "narrow-phone",
       "navigation": {
-        "domContentLoadedMs": 86,
-        "loadMs": 102
+        "domContentLoadedMs": 96,
+        "loadMs": 113
       },
       "status": "passed",
-      "durationMs": 4609,
+      "durationMs": 5022,
       "checks": [
         "new historical draft",
         "scouting",
@@ -77,11 +77,11 @@
       "engine": "webkit",
       "viewport": "tablet",
       "navigation": {
-        "domContentLoadedMs": 77,
-        "loadMs": 92
+        "domContentLoadedMs": 86,
+        "loadMs": 101
       },
       "status": "passed",
-      "durationMs": 5563,
+      "durationMs": 5346,
       "checks": [
         "new historical draft",
         "scouting",

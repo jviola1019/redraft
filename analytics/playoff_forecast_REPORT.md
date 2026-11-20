@@ -1,6 +1,6 @@
 # Historical baseline playoff-qualification prediction audit
 
-The simulated zero-intervention historical baseline has Brier 0.24012, versus 0.24492 for season-specific slot prevalence (skill 2.0%). Near-term predictions improve on that constant benchmark; later horizons show weak or negative skill. This is prediction scoring, not reconstruction of recorded playoff brackets, and does not validate draft intervention effects.
+The simulated zero-intervention historical baseline has Brier 0.24016, versus 0.24492 for season-specific slot prevalence (skill 1.9%). Near-term predictions improve on that constant benchmark; later horizons show weak or negative skill. This is prediction scoring, not reconstruction of recorded playoff brackets, and does not validate draft intervention effects.
 
 ## Fixed protocol
 
@@ -14,11 +14,11 @@ Brier is the mean squared probability error; lower is better. Skill is 1 minus B
 
 | Horizon | Forecast rows | Brier | Prevalence Brier | Skill | MC SE | Estimated finite-seed bias |
 |---|---:|---:|---:|---:|---:|---:|
-| 1 | 256 | 0.22538 | 0.24316 | 7.3% | 0.00363 | 0.00347 |
-| 2 | 224 | 0.23521 | 0.24442 | 3.8% | 0.00409 | 0.00376 |
-| 3 | 192 | 0.24708 | 0.24609 | -0.4% | 0.00485 | 0.00382 |
-| 4 | 160 | 0.25799 | 0.24609 | -4.8% | 0.00513 | 0.00384 |
-| 5 | 128 | 0.24541 | 0.24609 | 0.3% | 0.00577 | 0.00384 |
+| 1 | 256 | 0.22521 | 0.24316 | 7.4% | 0.00363 | 0.00347 |
+| 2 | 224 | 0.23530 | 0.24442 | 3.7% | 0.00407 | 0.00376 |
+| 3 | 192 | 0.24662 | 0.24609 | -0.2% | 0.00485 | 0.00382 |
+| 4 | 160 | 0.25788 | 0.24609 | -4.8% | 0.00519 | 0.00384 |
+| 5 | 128 | 0.24672 | 0.24609 | -0.3% | 0.00567 | 0.00383 |
 
 ## Results by actual season
 
@@ -29,15 +29,15 @@ Forecasts from multiple origins are retained separately; each year still has onl
 | 2018 | 32 | 0.20644 | 0.23438 | 11.9% | 0.00916 |
 | 2019 | 64 | 0.21552 | 0.23438 | 8.0% | 0.00700 |
 | 2020 | 96 | 0.24616 | 0.24609 | -0.0% | 0.00692 |
-| 2021 | 128 | 0.24096 | 0.24609 | 2.1% | 0.00566 |
-| 2022 | 160 | 0.24191 | 0.24609 | 1.7% | 0.00495 |
-| 2023 | 160 | 0.24200 | 0.24609 | 1.7% | 0.00519 |
-| 2024 | 160 | 0.25272 | 0.24609 | -2.7% | 0.00485 |
-| 2025 | 160 | 0.23612 | 0.24609 | 4.1% | 0.00491 |
+| 2021 | 128 | 0.24063 | 0.24609 | 2.2% | 0.00564 |
+| 2022 | 160 | 0.24204 | 0.24609 | 1.6% | 0.00493 |
+| 2023 | 160 | 0.24145 | 0.24609 | 1.9% | 0.00519 |
+| 2024 | 160 | 0.25261 | 0.24609 | -2.6% | 0.00491 |
+| 2025 | 160 | 0.23717 | 0.24609 | 3.6% | 0.00483 |
 
 ## Monte Carlo and evidence limits
 
-Overall delta-method seed Monte Carlo SE is 0.00213. The estimated upward Brier bias from using only 64 draws is 0.00372; subtracting it gives 0.23640. Raw Brier is the primary result. Per-team probability estimates have increments of 1/64 and a maximum binomial Monte Carlo SE of 6.25 percentage points. These estimates are not sufficiently precise for fine team rankings.
+Overall delta-method seed Monte Carlo SE is 0.00211. The estimated upward Brier bias from using only 64 draws is 0.00372; subtracting it gives 0.23645. Raw Brier is the primary result. Per-team probability estimates have increments of 1/64 and a maximum binomial Monte Carlo SE of 6.25 percentage points. These estimates are not sufficiently precise for fine team rankings.
 
 The Brier bias estimate is mean p-hat(1−p-hat)/(64−1). Monte Carlo SE uses the first-order Brier influence 2(p-hat−actual)(qualification draw−p-hat), summed within an entire origin/seed path before estimating variance across seeds. This retains within-path dependence among franchises and horizons and treats different origin seed streams as independent under the simulator. The first-order SE is approximate; it does not include generalization error, uncertain parameters, unmodeled roster changes, or uncertainty in the draft-to-strength conversion. Estimated finite-seed bias is shown separately, rather than hidden in the MC SE.
 
@@ -62,3 +62,5 @@ node analytics/test_playoff_forecast.mjs
 Dependencies are the same as the source checkout. The results JSON records runtime input hashes, model versions, per-origin and grouped summaries, every franchise forecast, and its 64 qualification draws. The protocol, implementation, tests and results remain isolated; no gameplay code changed. Tests pass for all-year labels including byes, exact 12/14 qualifier counts, exclusion of incomplete and future outcomes, future-score poisoning invariance, complete 960-row coverage, 256 unique actual team-seasons, probability bounds, 64 draws per row, and exact simulated slot totals.
 
 The result provides modest near-term predictive evidence relative to a weak prevalence benchmark. It does not establish strong five-year playoff forecasting, scientific accuracy of the alternate-history model, or causal value of user draft choices.
+
+The fixed protocol was rerun at gameplay revision 25be247 after correcting the 2021 historical pick identity. Source hashes, fitted model versions and updated scores are in playoff_forecast_results.json.

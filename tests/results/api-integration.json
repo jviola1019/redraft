@@ -1,5 +1,5 @@
 {
-  "executedAt": "2026-11-20T01:49:05.727Z",
+  "executedAt": "2026-11-20T02:14:47.648Z",
   "runtime": {
     "node": "v24.22.3",
     "os": "linux",
@@ -34,7 +34,7 @@
       "year": 2021,
       "picks": 259,
       "playableCandidates": 323,
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1+five-year-2013-exposure-v2+blind-g5-v1+nflverse-2021-combine-pool-v1",
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference+five-year-2013-exposure-v2+blind-g5-v1+nflverse-2021-combine-pool-v2-trey-reference",
       "teamContextAvailable": false
     },
     {
@@ -88,11 +88,11 @@
     "data/clean/team_context_2018.json": "a2667b83e75fc20afb9318c362cfa1a28745e2db4d7864084533a19294497301",
     "data/clean/team_context_source_manifest.json": "776ef8fd8b8200e9b9946e3ed014bd76061fc63586005d96142bf83f7656ec18",
     "data/processed/scenario-coverage.json": "0d42970e685e510b6554c7fea7675e7f3a5aecb525aabb1c6b7e155ec0058ca3",
-    "tests/api.integration.mjs": "874ec160cbd66e7abb2d30bc065160ae4fd450c1d20ead7594e2ad9d285fdda5",
+    "tests/api.integration.mjs": "0b256b86f84abe545902f66cb14115e2a015d189d14275de9680a16b35faf53f",
     "data/processed/scenario-2018.json": "b7895eef7862ccfb45cff5f2f4b6e347abd809c1905ed274883d55cc237f59d8",
     "data/processed/scenario-2019.json": "88ef4b175bfc7ddf8c2d32541b1b8371836f09f6e961f4bb8a36b0db0bf5f28c",
     "data/processed/scenario-2020.json": "527ff4f9770199052a6405d9d56cf503f150b998dddbcfbd947e686c060b624b",
-    "data/processed/scenario-2021.json": "16b574b788658ea916a48a61cdf4a24df76e72305dc16054f32971ec5ed4aec4",
+    "data/processed/scenario-2021.json": "37e217bfa4ca2ae97aa34a889b32b0dfef683f4884deefc6569e4b9e8eeaebc6",
     "data/processed/scenario-2022.json": "ea6846602cddfe179544b1d845c811a1848c59de69084c210c03080ac4d46f63",
     "data/processed/scenario-2023.json": "14587193998afcb61ca2c95c50ee641ba709246a5b3a9c8187855b94e894611f",
     "data/processed/scenario-2024.json": "6a6d794cdf0747d7a03ba92549d4d8165b149a19b04eb32588b679e6c50e8323",
@@ -100,7 +100,7 @@
     "data/processed/scenario-2026.json": "c30d6a697573fc39488b13a91eb7c3863aa780c14a81f446e06dd0e3a86638ca",
     "analytics/model-2019.json": "2da02bcb4d6da178a635852e61c4ee7488f9551f346c9560f680ce99f13176cf",
     "analytics/model-2020.json": "35d80e75ae50e8ada8c9ad96db2fd965e38f9dea06bc0f298b899f51497c3bdc",
-    "analytics/model-2021.json": "c89d6915e04159845d48c0692fe899ff66430c404a2d30cafade478ba629a17b",
+    "analytics/model-2021.json": "1e71a80b75350169b9c266185e773bbb7ab99a34df9d1698b7437b95ed21a649",
     "analytics/model-2022.json": "9579d70620a4f20ede36008bdcc745d913f8ba1aa7f64b4276104561491b8457",
     "analytics/model-2023.json": "3b7a67a1f83c32ba8461abe9608f3f2c18e8a17e34b60c20768099d9b23c78cb",
     "analytics/model-2024.json": "1c4b07f22dc40575623920f108335d8990c07a53511db5e0c6bd740398102e9d",
@@ -120,11 +120,11 @@
     "data/clean/team_context_2018.json": "a2667b83e75fc20afb9318c362cfa1a28745e2db4d7864084533a19294497301",
     "data/clean/team_context_source_manifest.json": "776ef8fd8b8200e9b9946e3ed014bd76061fc63586005d96142bf83f7656ec18",
     "data/processed/scenario-coverage.json": "0d42970e685e510b6554c7fea7675e7f3a5aecb525aabb1c6b7e155ec0058ca3",
-    "tests/api.integration.mjs": "874ec160cbd66e7abb2d30bc065160ae4fd450c1d20ead7594e2ad9d285fdda5",
+    "tests/api.integration.mjs": "0b256b86f84abe545902f66cb14115e2a015d189d14275de9680a16b35faf53f",
     "data/processed/scenario-2018.json": "b7895eef7862ccfb45cff5f2f4b6e347abd809c1905ed274883d55cc237f59d8",
     "data/processed/scenario-2019.json": "88ef4b175bfc7ddf8c2d32541b1b8371836f09f6e961f4bb8a36b0db0bf5f28c",
     "data/processed/scenario-2020.json": "527ff4f9770199052a6405d9d56cf503f150b998dddbcfbd947e686c060b624b",
-    "data/processed/scenario-2021.json": "16b574b788658ea916a48a61cdf4a24df76e72305dc16054f32971ec5ed4aec4",
+    "data/processed/scenario-2021.json": "37e217bfa4ca2ae97aa34a889b32b0dfef683f4884deefc6569e4b9e8eeaebc6",
     "data/processed/scenario-2022.json": "ea6846602cddfe179544b1d845c811a1848c59de69084c210c03080ac4d46f63",
     "data/processed/scenario-2023.json": "14587193998afcb61ca2c95c50ee641ba709246a5b3a9c8187855b94e894611f",
     "data/processed/scenario-2024.json": "6a6d794cdf0747d7a03ba92549d4d8165b149a19b04eb32588b679e6c50e8323",
@@ -132,7 +132,7 @@
     "data/processed/scenario-2026.json": "c30d6a697573fc39488b13a91eb7c3863aa780c14a81f446e06dd0e3a86638ca",
     "analytics/model-2019.json": "2da02bcb4d6da178a635852e61c4ee7488f9551f346c9560f680ce99f13176cf",
     "analytics/model-2020.json": "35d80e75ae50e8ada8c9ad96db2fd965e38f9dea06bc0f298b899f51497c3bdc",
-    "analytics/model-2021.json": "c89d6915e04159845d48c0692fe899ff66430c404a2d30cafade478ba629a17b",
+    "analytics/model-2021.json": "1e71a80b75350169b9c266185e773bbb7ab99a34df9d1698b7437b95ed21a649",
     "analytics/model-2022.json": "9579d70620a4f20ede36008bdcc745d913f8ba1aa7f64b4276104561491b8457",
     "analytics/model-2023.json": "3b7a67a1f83c32ba8461abe9608f3f2c18e8a17e34b60c20768099d9b23c78cb",
     "analytics/model-2024.json": "1c4b07f22dc40575623920f108335d8990c07a53511db5e0c6bd740398102e9d",
@@ -145,89 +145,89 @@
     {
       "name": "five-year donor labels precede the draft and do not claim independent validation",
       "status": "passed",
-      "durationMs": 0.51
+      "durationMs": 0.62
     },
     {
       "name": "auth, CSRF, strict schema and body-size limits",
       "status": "passed",
-      "durationMs": 17.31
+      "durationMs": 18.91
     },
     {
       "name": "versioned creation and request replay",
       "status": "passed",
-      "durationMs": 54.03
+      "durationMs": 54.21
     },
     {
       "name": "owner isolation, aliases and canonical identifier rejection",
       "status": "passed",
-      "durationMs": 52.68
+      "durationMs": 53.92
     },
     {
       "name": "group scouting costs once and preserves blind ranges",
       "status": "passed",
-      "durationMs": 50.28
+      "durationMs": 48.92
     },
     {
       "name": "stale revision and concurrent CAS cannot lose updates",
       "status": "passed",
-      "durationMs": 36.51
+      "durationMs": 38.18
     },
     {
       "name": "counteroffers and accepted trades conserve ownership",
       "status": "passed",
-      "durationMs": 60.49
+      "durationMs": 60.32
     },
     {
       "name": "historical full draft, reveal and persisted recovery",
       "status": "passed",
-      "durationMs": 648.82
+      "durationMs": 698.38
     },
     {
       "name": "retired source versions allow review but block mutations",
       "status": "passed",
-      "durationMs": 33.17
+      "durationMs": 37.05
     },
     {
       "name": "historical 256-pair simulation survives a database reopen",
       "status": "passed",
-      "durationMs": 14550.23
+      "durationMs": 13409.7
     },
     {
       "name": "daily conditions, aliases and one official attempt are shared",
       "status": "passed",
-      "durationMs": 54.23
+      "durationMs": 50.93
     },
     {
       "name": "identical daily decisions yield identical seven-round drafts",
       "status": "passed",
-      "durationMs": 929.93
+      "durationMs": 973.24
     },
     {
       "name": "daily 256-pair results remain blind with immutable server scores",
       "status": "passed",
-      "durationMs": 26969.22
+      "durationMs": 27642.07
     },
     {
       "name": "UTC rollover closes old attempts and reveals completed draft identities",
       "status": "passed",
-      "durationMs": 109.77
+      "durationMs": 96.76
     },
     {
       "name": "frozen daily versions and rate limits are enforced",
       "status": "passed",
-      "durationMs": 1.31
+      "durationMs": 1.46
     },
     {
       "name": "all registered scenarios use exact bundles through draft, simulation, and reload",
       "status": "passed",
-      "durationMs": 5148.84
+      "durationMs": 5002.28
     }
   ],
   "passed": 16,
   "failed": 0,
-  "requests": 455,
-  "maximumResponseBytes": 1953102,
-  "durationMs": 48727.346691,
+  "requests": 458,
+  "maximumResponseBytes": 1953119,
+  "durationMs": 48196.806102999995,
   "limitations": [
     "Does not establish Safari/WebKit behavior or production Worker CPU limits.",
     "Synthetic identities and disposable SQLite database are isolated test fixtures."

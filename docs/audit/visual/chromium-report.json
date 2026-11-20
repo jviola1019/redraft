@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-20T01:44:43.497Z",
+  "at": "2026-11-20T02:04:27.810Z",
   "engine": "chromium",
   "executablePath": "Playwright default",
   "baseUrl": "http://127.0.0.1:4173",
@@ -8,11 +8,11 @@
       "engine": "chromium",
       "viewport": "desktop",
       "navigation": {
-        "domContentLoadedMs": 123,
-        "loadMs": 134
+        "domContentLoadedMs": 97,
+        "loadMs": 109
       },
       "status": "passed",
-      "durationMs": 10909,
+      "durationMs": 10053,
       "checks": [
         "new historical draft",
         "scouting",
@@ -31,11 +31,11 @@
       "engine": "chromium",
       "viewport": "phone",
       "navigation": {
-        "domContentLoadedMs": 100,
-        "loadMs": 110
+        "domContentLoadedMs": 104,
+        "loadMs": 113
       },
       "status": "passed",
-      "durationMs": 4082,
+      "durationMs": 3559,
       "checks": [
         "new historical draft",
         "scouting",
@@ -54,11 +54,11 @@
       "engine": "chromium",
       "viewport": "narrow-phone",
       "navigation": {
-        "domContentLoadedMs": 249,
-        "loadMs": 258
+        "domContentLoadedMs": 101,
+        "loadMs": 109
       },
       "status": "passed",
-      "durationMs": 3236,
+      "durationMs": 3133,
       "checks": [
         "new historical draft",
         "scouting",
@@ -77,11 +77,11 @@
       "engine": "chromium",
       "viewport": "tablet",
       "navigation": {
-        "domContentLoadedMs": 120,
-        "loadMs": 141
+        "domContentLoadedMs": 108,
+        "loadMs": 119
       },
       "status": "passed",
-      "durationMs": 6221,
+      "durationMs": 5811,
       "checks": [
         "new historical draft",
         "scouting",
