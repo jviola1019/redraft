@@ -39,6 +39,8 @@ jobs:
         env:
           REDRAFT_BROWSER: webkit
         run: node tests/browser.mjs --start-server
+      - name: Complete historical and daily journeys in a phone viewport
+        run: node tests/browser-full-run.mjs --start-server
       - uses: actions/upload-artifact@v4
         if: always()
         with:

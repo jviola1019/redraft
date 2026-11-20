@@ -5,7 +5,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
-// Absolute import is replaced by a relative import only when integrated in research/.
 import {root,engine,loadScenario,hashes,cleanup} from '../analytics/runtime_loader.mjs';
 const rounds=[1,2,3,4,5,6,7], positions=['QB','RB','WR','TE','OL','DL','LB','DB','K','P','LS'];
 const windows={2018:['04-26','04-28'],2019:['04-25','04-27'],2020:['04-23','04-25'],2021:['04-29','05-01'],2022:['04-28','04-30'],2023:['04-27','04-29'],2024:['04-25','04-27'],2025:['04-24','04-26'],2026:['04-23','04-25']};
