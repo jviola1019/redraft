@@ -491,6 +491,17 @@ try {
             let view = await expect('POST', owner, { body: newPayload('historical', { year, team: 'ARI', seed: `scenario-api-${year}` }) }, 201);
             assert.equal(view.game.year, year);
             assert.equal(view.game.modelVersion, bundle.models.version);
+            if (year === 2021) {
+                assert.equal(source.actualPicks.find(p => p.overall === 3).prospectId, 'p2021-4a3e07404f');
+                const current = stored(view.game.id);
+                restore(view.game.id, { ...current, datasetVersion: 'nflverse-2021-combine-pool-v1', modelVersion: 'redraft-2021-pre2018-logistic-C10-v1+blind-g5-v1+nflverse-2021-combine-pool-v1' });
+                const retired = await load(owner, view.game.id);
+                assert.match(retired.compatibilityWarning, /retired model or dataset/);
+                await expect('POST', owner, { body: mutation(retired, 'advance', { pace: 'one' }) }, 409);
+                restore(view.game.id, current);
+                view = await load(owner, view.game.id);
+                assert.equal(view.compatibilityWarning, undefined);
+            }
             assert.equal(view.game.picks.length, source.picks.length);
             assert.equal(view.prospects.length, source.metadata.playableProspectCount);
             view = await finishDraft(owner, view);

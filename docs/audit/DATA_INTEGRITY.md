@@ -58,3 +58,5 @@ The 2021 scenario is an important exception to the combine-participant label: it
 ## Outcomes and calendar coverage
 
 Local raw games contain complete postseason records through the 2025 season, and 150 completed 2026 regular-season games through November 16; no completed 2026 postseason exists. Thus observed complete five-season windows exist for draft classes **2018–2021** only. Class 2022 has four complete seasons; 2023 three; 2024 two; 2025 one; 2026 zero. The remaining seasons are incomplete or future, not negative outcomes. All nine classes having playable JSON does not imply all nine have five-year ground truth. These counts were independently read from `data/raw/games.csv`; scenario-level per-season regular-game counts are recorded in the diagnostic JSON. The diagnostic does not independently validate full postseason bracket advancement, source licensing, every raw identity, archival source truth, or model calibration.
+
+A [source-by-source identity review](identity_review/REVIEW.md) classifies the 53 same-name candidate groups. It records evidence for one alias and two distinct-person groups. The other 50 remain unverified.

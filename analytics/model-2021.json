@@ -1,7 +1,7 @@
 {
-  "version": "redraft-2021-pre2018-logistic-C10-v1",
+  "version": "redraft-2021-pre2018-logistic-C10-v2-trey-reference",
   "scenarioYear": 2021,
-  "scenarioVersion": "nflverse-2021-combine-pool-v1",
+  "scenarioVersion": "nflverse-2021-combine-pool-v2-trey-reference",
   "scenarioInformationCutoff": "2021-04-29T23:59:00Z",
   "fitThroughSeason": 2017,
   "fitLabelCutoff": "2018-04-26T00:00:00Z",
@@ -53,7 +53,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-9444fec1cd",
@@ -71,7 +71,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-f590f26e11",
@@ -89,7 +89,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-b4b3dd695b",
@@ -107,7 +107,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-f9f1c60ef4",
@@ -125,7 +125,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-f56f7dfa11",
@@ -143,7 +143,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 2,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-2cd56ee1cd",
@@ -161,7 +161,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 3,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-fab07ed264",
@@ -179,7 +179,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-8adb4d07d3",
@@ -197,7 +197,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-5c598ca0fa",
@@ -215,7 +215,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-98db988644",
@@ -233,7 +233,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 2,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-714fdbd271",
@@ -251,7 +251,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-0948652e2a",
@@ -269,7 +269,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-c87402f68b",
@@ -287,7 +287,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 7,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-edd33ed681",
@@ -305,7 +305,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-0df5d2b27a",
@@ -323,7 +323,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-cfb0168b09",
@@ -341,7 +341,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-27d7ff8a3a",
@@ -359,7 +359,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-c72d1c7a76",
@@ -377,7 +377,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-dd31abfe5d",
@@ -395,7 +395,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 6,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-608f1ed873",
@@ -413,7 +413,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-9e2071f078",
@@ -431,7 +431,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-22f76ccfcf",
@@ -449,7 +449,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-44955b8b2e",
@@ -467,7 +467,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-acc1cd080f",
@@ -485,7 +485,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-036a7c8aed",
@@ -503,7 +503,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-8d5fd6aed8",
@@ -521,7 +521,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 5,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-b7b8290c37",
@@ -539,7 +539,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-cc9f43d159",
@@ -557,7 +557,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-f66e476121",
@@ -575,7 +575,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-e39e81b92e",
@@ -593,7 +593,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-5348aa113e",
@@ -611,7 +611,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 5,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-d22ba7e41e",
@@ -629,7 +629,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-34b8259eff",
@@ -647,7 +647,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 3,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-5ac1347fb8",
@@ -665,7 +665,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-25d6ffaa28",
@@ -683,7 +683,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-146b248ca8",
@@ -701,7 +701,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-8748a0a872",
@@ -719,7 +719,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-ba00c68d5d",
@@ -737,7 +737,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-3b37238d11",
@@ -755,7 +755,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-f0b61d5c0c",
@@ -773,7 +773,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-0390b6755f",
@@ -791,7 +791,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-50a6b9c6fc",
@@ -809,7 +809,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-89b0461afa",
@@ -827,7 +827,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-2290f67518",
@@ -845,7 +845,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-1a1a1338e9",
@@ -863,7 +863,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-47e93159eb",
@@ -881,7 +881,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-feb4bbd38e",
@@ -899,7 +899,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-487848b152",
@@ -917,7 +917,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-d154609750",
@@ -935,7 +935,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-f9c96da5a4",
@@ -953,7 +953,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-73c1d315aa",
@@ -971,7 +971,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-15575300d6",
@@ -989,7 +989,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-ddf6c1e060",
@@ -1007,7 +1007,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-80da7215be",
@@ -1025,7 +1025,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-eddecbc4cb",
@@ -1043,7 +1043,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 5,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-e4b98cf4f4",
@@ -1061,7 +1061,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-b6d7def257",
@@ -1079,7 +1079,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-502792e75f",
@@ -1097,7 +1097,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-1b38244a12",
@@ -1115,7 +1115,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-3770821506",
@@ -1133,7 +1133,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-c97a231e7b",
@@ -1151,7 +1151,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-971d13081c",
@@ -1169,7 +1169,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-1f72f1d869",
@@ -1187,7 +1187,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-abd97934e2",
@@ -1205,7 +1205,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-214b5112de",
@@ -1223,7 +1223,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-e6bfae14cc",
@@ -1241,7 +1241,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-579f2b1cf2",
@@ -1259,7 +1259,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-8bdcbcb23f",
@@ -1277,7 +1277,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-df5591f5c9",
@@ -1295,7 +1295,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-bc126d8800",
@@ -1313,7 +1313,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-bd4cb6dd3a",
@@ -1331,7 +1331,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-ce119597b8",
@@ -1349,7 +1349,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-88d9293602",
@@ -1367,7 +1367,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-440d2612bb",
@@ -1385,7 +1385,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 3,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-b90d6a3b7b",
@@ -1403,7 +1403,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 6,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-e459e8f977",
@@ -1421,7 +1421,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-9a1dd121ad",
@@ -1439,7 +1439,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 5,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-a12b029c08",
@@ -1457,7 +1457,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-90afa667d0",
@@ -1475,7 +1475,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 5,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-c5fa27e365",
@@ -1493,7 +1493,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-182d34d5de",
@@ -1511,7 +1511,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-cfae015fee",
@@ -1529,7 +1529,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 2,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-aa17303b57",
@@ -1547,7 +1547,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-8b1c0a846c",
@@ -1565,7 +1565,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-e15fbb902b",
@@ -1583,7 +1583,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-91f7c11ca6",
@@ -1601,7 +1601,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 5,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-99ea706d7e",
@@ -1619,7 +1619,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-9652389b0b",
@@ -1637,7 +1637,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-0de85be0fc",
@@ -1655,7 +1655,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-fd3d7e459f",
@@ -1673,7 +1673,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-7d3e44e6e0",
@@ -1691,7 +1691,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-9303e1f02d",
@@ -1709,7 +1709,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-802abbbd0d",
@@ -1727,7 +1727,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-ed3a5d37ce",
@@ -1745,7 +1745,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-ad86651b1e",
@@ -1763,7 +1763,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 2,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-cbe8d1742f",
@@ -1781,7 +1781,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 2,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-891d9a388a",
@@ -1799,7 +1799,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 2,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-7d3ae366fe",
@@ -1817,7 +1817,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-2b142b466b",
@@ -1835,7 +1835,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-e054cca9d0",
@@ -1853,7 +1853,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 4,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-89edabd061",
@@ -1871,7 +1871,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-a01789cd5e",
@@ -1889,7 +1889,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 6,
       "projectionSource": "unsupported unseen-position model diagnostic; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-f9f627aaf8",
@@ -1907,7 +1907,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-5f6062673e",
@@ -1925,7 +1925,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-fd3021aa08",
@@ -1943,7 +1943,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-4d3a53ad88",
@@ -1961,7 +1961,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 2,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-2f3622276d",
@@ -1979,7 +1979,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-92222aa5ef",
@@ -1997,7 +1997,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-b2d963a0b7",
@@ -2015,7 +2015,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-8e3367c789",
@@ -2033,7 +2033,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-5cea2065a9",
@@ -2051,7 +2051,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-73f040e10a",
@@ -2069,7 +2069,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-4bbcc66ec7",
@@ -2087,7 +2087,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-e675fb595c",
@@ -2105,7 +2105,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-257c68074b",
@@ -2123,7 +2123,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-ac96e80235",
@@ -2141,7 +2141,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-88e2a1d4d3",
@@ -2159,7 +2159,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-7817d9d68e",
@@ -2177,7 +2177,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-ff7c7b3a0f",
@@ -2195,7 +2195,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 6,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-8013aab0d5",
@@ -2213,7 +2213,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 6,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-b7fabbeef6",
@@ -2231,7 +2231,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-49a011a2e5",
@@ -2249,7 +2249,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 6,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-d786a563f7",
@@ -2267,7 +2267,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 3,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-c72e9b55eb",
@@ -2285,7 +2285,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-710db04844",
@@ -2303,7 +2303,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-aed320ffea",
@@ -2321,7 +2321,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-7568f3ce55",
@@ -2339,7 +2339,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-2f440f865d",
@@ -2357,7 +2357,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-99a27f69d6",
@@ -2375,7 +2375,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-6205a67796",
@@ -2393,7 +2393,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-3ef9467d4b",
@@ -2411,7 +2411,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-7949cfd0c4",
@@ -2429,7 +2429,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 2,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-179c8cc36b",
@@ -2447,7 +2447,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-d0c6d33efb",
@@ -2465,7 +2465,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-83a7d7b56f",
@@ -2483,7 +2483,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 3,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-b654f31e30",
@@ -2501,7 +2501,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-74ba25d951",
@@ -2519,7 +2519,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-123167eb18",
@@ -2537,7 +2537,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-26dcd39ab2",
@@ -2555,7 +2555,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-d9addbbc9f",
@@ -2573,7 +2573,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-f75c1a5221",
@@ -2591,7 +2591,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-f4322b897f",
@@ -2609,7 +2609,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 2,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-d2a34013be",
@@ -2627,7 +2627,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-17f002b187",
@@ -2645,7 +2645,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-e6e0b40c0c",
@@ -2663,7 +2663,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-5f548e3f09",
@@ -2681,7 +2681,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-3a7c52f4d8",
@@ -2699,7 +2699,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-4a13f787fd",
@@ -2717,7 +2717,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 2,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-0d809080ed",
@@ -2735,7 +2735,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-ed5ca47841",
@@ -2753,7 +2753,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-ce287518a3",
@@ -2771,7 +2771,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-99b08b1ca8",
@@ -2789,7 +2789,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-9c072188a6",
@@ -2807,7 +2807,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-51de403a4d",
@@ -2825,7 +2825,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-7759adc2d8",
@@ -2843,7 +2843,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-b584036f05",
@@ -2861,7 +2861,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 2,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-a0aa1167d7",
@@ -2879,7 +2879,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-06417a84e3",
@@ -2897,7 +2897,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-4058302bd5",
@@ -2915,7 +2915,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-ee3c96eca9",
@@ -2933,7 +2933,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 2,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-d708f52c42",
@@ -2951,7 +2951,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-a4ae2d0e5b",
@@ -2969,7 +2969,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-754fa990ce",
@@ -2987,7 +2987,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-d26ce9c1ca",
@@ -3005,7 +3005,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-1aa9d0874e",
@@ -3023,7 +3023,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-f442402ba7",
@@ -3041,7 +3041,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-77cf88b092",
@@ -3059,7 +3059,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-2d63bf3281",
@@ -3077,7 +3077,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-cba30bb441",
@@ -3095,7 +3095,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-53d9757ec3",
@@ -3113,7 +3113,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-d714436c94",
@@ -3131,7 +3131,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-a72a733577",
@@ -3149,7 +3149,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-a65ec911b9",
@@ -3167,7 +3167,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-0a71db5e72",
@@ -3185,7 +3185,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-969a3b7823",
@@ -3203,7 +3203,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-91c972e158",
@@ -3221,7 +3221,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 5,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-4634f6bfed",
@@ -3239,7 +3239,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 4,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-157e74c197",
@@ -3257,7 +3257,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-9a2987ae44",
@@ -3275,7 +3275,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 7,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-fa2c1d969e",
@@ -3293,7 +3293,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-a192920a8d",
@@ -3311,7 +3311,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 2,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-a651afe912",
@@ -3329,7 +3329,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-f287465774",
@@ -3347,7 +3347,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-bdcd31bf56",
@@ -3365,7 +3365,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-b3a8c2f7d7",
@@ -3383,7 +3383,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-4d730fe043",
@@ -3401,7 +3401,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-0802a56ffd",
@@ -3419,7 +3419,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-c6f53a7b27",
@@ -3437,7 +3437,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 4,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-dcce664136",
@@ -3455,7 +3455,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-f427899da8",
@@ -3473,7 +3473,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 2,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-1496049d8b",
@@ -3491,7 +3491,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-a10bb33a9b",
@@ -3509,7 +3509,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-cd4fefa707",
@@ -3527,7 +3527,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-0a3ab6a71f",
@@ -3545,7 +3545,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-4453e9855c",
@@ -3563,7 +3563,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 6,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-a51b27c06a",
@@ -3581,7 +3581,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 6,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-e4ef007d46",
@@ -3599,7 +3599,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-a5ae1c1cc9",
@@ -3617,7 +3617,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-59e0acfacc",
@@ -3635,7 +3635,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-75d6cc247e",
@@ -3653,7 +3653,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-671b8a0315",
@@ -3671,7 +3671,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-736125607a",
@@ -3689,7 +3689,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-ab9e4a40be",
@@ -3707,7 +3707,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-3d97815d17",
@@ -3725,7 +3725,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-2bd56021d5",
@@ -3743,7 +3743,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 6,
       "projectionSource": "unsupported unseen-position model diagnostic; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-dc2ff71c56",
@@ -3761,7 +3761,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-58162f0e66",
@@ -3779,7 +3779,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-66fb5f5762",
@@ -3797,7 +3797,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-dbb064afeb",
@@ -3815,7 +3815,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-eba8007a3c",
@@ -3833,7 +3833,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-47a7abbd77",
@@ -3851,7 +3851,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-e837e14fc9",
@@ -3869,7 +3869,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-a322f47419",
@@ -3887,7 +3887,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-a9a036ee69",
@@ -3905,7 +3905,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-f93cd2e646",
@@ -3923,7 +3923,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-e8808d7b3a",
@@ -3941,7 +3941,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-7c9518801c",
@@ -3959,7 +3959,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-7a60aa51c4",
@@ -3977,7 +3977,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-f73744ab21",
@@ -3995,7 +3995,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-bfa638ed15",
@@ -4013,7 +4013,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-5025f97d85",
@@ -4031,7 +4031,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-096faac76b",
@@ -4049,7 +4049,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-4f4de47cd4",
@@ -4067,7 +4067,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-c4a3ce6e68",
@@ -4085,7 +4085,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-0e4060ad2e",
@@ -4103,7 +4103,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-6acf4c4e2a",
@@ -4121,7 +4121,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-a13d19c7b7",
@@ -4139,7 +4139,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-29c9e10a4d",
@@ -4157,7 +4157,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-b98de4eb5d",
@@ -4175,7 +4175,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 2,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-a8595978c8",
@@ -4193,7 +4193,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-25c1c2ca88",
@@ -4211,7 +4211,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-8a1d4fa22c",
@@ -4229,7 +4229,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-adddd4748f",
@@ -4247,7 +4247,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 5,
       "projectionSource": "unsupported unseen-position model diagnostic; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-78ffc02687",
@@ -4265,7 +4265,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-853c4089a4",
@@ -4283,7 +4283,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-8138f05b8c",
@@ -4301,7 +4301,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-cc74f3461d",
@@ -4319,7 +4319,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-029883435f",
@@ -4337,7 +4337,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-5aab073d63",
@@ -4355,7 +4355,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-d6354c8b69",
@@ -4373,7 +4373,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-d19eee3bb3",
@@ -4391,7 +4391,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-b891a223a9",
@@ -4409,7 +4409,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-d55b12032c",
@@ -4427,7 +4427,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 3,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-e70490917e",
@@ -4445,7 +4445,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-117f3e3875",
@@ -4463,7 +4463,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-9e2bd6091b",
@@ -4481,7 +4481,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-631555b246",
@@ -4499,7 +4499,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-9ffb0f2141",
@@ -4517,7 +4517,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 6,
       "projectionSource": "unsupported unseen-position model diagnostic; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-d0d01aaf0e",
@@ -4535,7 +4535,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-ba75ba062c",
@@ -4553,7 +4553,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-16cf0d70e3",
@@ -4571,7 +4571,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-b4f3df71db",
@@ -4589,7 +4589,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-d5a08020c4",
@@ -4607,7 +4607,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 2,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-a5bfb61f21",
@@ -4625,7 +4625,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-4130204d9c",
@@ -4643,7 +4643,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-127111dd77",
@@ -4661,7 +4661,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 5,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-7e35539a6b",
@@ -4679,7 +4679,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 3,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-4cd88a8954",
@@ -4697,7 +4697,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-bcb07104ab",
@@ -4715,7 +4715,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-b99e3615da",
@@ -4733,7 +4733,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-1013f15d46",
@@ -4751,7 +4751,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-91df1debcb",
@@ -4769,7 +4769,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-35bcd9cf6b",
@@ -4787,7 +4787,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-748d605bb5",
@@ -4805,7 +4805,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-db0093c578",
@@ -4823,7 +4823,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 3,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-1737e3afdb",
@@ -4841,7 +4841,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-96894a1a96",
@@ -4859,7 +4859,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-9ec92532d6",
@@ -4877,7 +4877,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-bd3d27f768",
@@ -4895,7 +4895,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-f2fca3803e",
@@ -4913,7 +4913,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-2d86d962f5",
@@ -4931,7 +4931,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 7,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-7cb6bb7b9b",
@@ -4949,7 +4949,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-a4e74dc7a6",
@@ -4967,7 +4967,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-06c3c9fa70",
@@ -4985,7 +4985,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 2,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-933a414245",
@@ -5003,7 +5003,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-3a30c6a710",
@@ -5021,7 +5021,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-561874f70a",
@@ -5039,7 +5039,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-2f51b5452d",
@@ -5057,7 +5057,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-0f4ef5ebaa",
@@ -5075,7 +5075,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-8fffa3b8ba",
@@ -5093,7 +5093,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-0eac1e20e2",
@@ -5111,7 +5111,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-4a1d00bf77",
@@ -5129,7 +5129,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 6,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-dadf843089",
@@ -5147,7 +5147,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-5032ca39a2",
@@ -5165,7 +5165,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 2,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-76f8fd4e95",
@@ -5183,7 +5183,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-5f35ce0a4e",
@@ -5201,7 +5201,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-68a622b1c0",
@@ -5219,7 +5219,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-a6a1876e97",
@@ -5237,7 +5237,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-46056f8c4b",
@@ -5255,7 +5255,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 2,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-1b9e65e0ef",
@@ -5273,7 +5273,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-185176d233",
@@ -5291,7 +5291,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 6,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-8a335635e2",
@@ -5309,7 +5309,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-c1271f9bfa",
@@ -5327,7 +5327,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-74c2bebd99",
@@ -5345,7 +5345,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-5b179b2813",
@@ -5363,7 +5363,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 5,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-c1fe51ba93",
@@ -5381,7 +5381,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 6,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-33375050e5",
@@ -5399,7 +5399,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 5,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-4a3e07404f",
@@ -5417,7 +5417,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-a62ee706d9",
@@ -5435,7 +5435,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-f9957d041d",
@@ -5453,7 +5453,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-ba9316100b",
@@ -5471,7 +5471,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-14e6bcecaf",
@@ -5489,7 +5489,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 3,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-637e520af2",
@@ -5507,7 +5507,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-6cb6dda599",
@@ -5525,7 +5525,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-7a757e76f9",
@@ -5543,7 +5543,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-cb3af698f1",
@@ -5561,7 +5561,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-14c7ec79ab",
@@ -5579,7 +5579,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-50d5cf9cbd",
@@ -5597,7 +5597,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 5,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-e524d212c9",
@@ -5615,7 +5615,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-8959d09eb4",
@@ -5633,7 +5633,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-efb4a682e2",
@@ -5651,7 +5651,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-49528572a2",
@@ -5669,7 +5669,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-e52c65ef9f",
@@ -5687,7 +5687,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-30b9e7ed9e",
@@ -5705,7 +5705,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-1bc6fb8923",
@@ -5723,7 +5723,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-50f0933f12",
@@ -5741,7 +5741,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-ec24c59565",
@@ -5759,7 +5759,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-fb34dc3ef1",
@@ -5777,7 +5777,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-c1d2a95071",
@@ -5795,7 +5795,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "all measurements missing; runtime uses position prior",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-06b33c1b93",
@@ -5813,7 +5813,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 6,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-354f236089",
@@ -5831,7 +5831,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 1,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-b5b9a88cfe",
@@ -5849,25 +5849,7 @@
       "allMeasurementsMissing": false,
       "missingMeasurements": 0,
       "projectionSource": "frozen pre-2018 logistic model on 2021 scenario measurements",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1"
-    },
-    {
-      "prospectId": "p2021-ref-e9aacb6df1",
-      "name": "Trey Lance",
-      "sourcePosition": "QB",
-      "positionGroup": "QB",
-      "modelPositionFeature": "QB",
-      "roleProbability": 0.23838278359174592,
-      "rawModelProbability": null,
-      "target": "200+ rookie-season regular-season scrimmage snaps among identifiable combine participants, excluding specialists",
-      "supported": false,
-      "fallback": true,
-      "dualPosition": false,
-      "unseenModelPosition": false,
-      "allMeasurementsMissing": true,
-      "missingMeasurements": 8,
-      "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference"
     },
     {
       "prospectId": "p2021-ref-6b18056e5f",
@@ -5885,7 +5867,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-611238a980",
@@ -5903,7 +5885,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-cd3920b9ab",
@@ -5921,7 +5903,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-896c199799",
@@ -5939,7 +5921,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-a2a714e419",
@@ -5957,7 +5939,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-732ab13a35",
@@ -5975,7 +5957,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-fa129a525a",
@@ -5993,7 +5975,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-3222d43277",
@@ -6011,7 +5993,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-71c3f5e46c",
@@ -6029,7 +6011,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-3771baa19d",
@@ -6047,7 +6029,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-f8e02603de",
@@ -6065,7 +6047,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-0ff47504b0",
@@ -6083,7 +6065,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-131f0ca611",
@@ -6101,7 +6083,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-73920416f2",
@@ -6119,7 +6101,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-8bb58e1fde",
@@ -6137,7 +6119,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-f2f882d804",
@@ -6155,7 +6137,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-49a02187f8",
@@ -6173,7 +6155,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-7b115e36c3",
@@ -6191,7 +6173,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-291338f84e",
@@ -6209,7 +6191,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-a4b72c8846",
@@ -6227,7 +6209,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-e56e40b56d",
@@ -6245,7 +6227,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-e0d68bac8a",
@@ -6263,7 +6245,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-cf82f84fee",
@@ -6281,7 +6263,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-f4537c16e8",
@@ -6299,7 +6281,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-6458a90fcd",
@@ -6317,7 +6299,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-04a59ce6d6",
@@ -6335,7 +6317,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-9c8fc7087a",
@@ -6353,7 +6335,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-c0e23d835f",
@@ -6371,7 +6353,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-1ef7fa4b0f",
@@ -6389,7 +6371,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-7306a26c60",
@@ -6407,7 +6389,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-716d75f8b8",
@@ -6425,7 +6407,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-eb6bc21108",
@@ -6443,7 +6425,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-a0ef230052",
@@ -6461,7 +6443,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-b8e29e1cdb",
@@ -6479,7 +6461,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-cdbc9c32c6",
@@ -6497,7 +6479,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-660c87708a",
@@ -6515,7 +6497,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-e367495d1b",
@@ -6533,7 +6515,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-5f652f312f",
@@ -6551,7 +6533,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-755dbdd781",
@@ -6569,7 +6551,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-71ef6f5eb9",
@@ -6587,7 +6569,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-8f772d4060",
@@ -6605,7 +6587,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-9b0d0a889e",
@@ -6623,7 +6605,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-5a78b8b9d1",
@@ -6641,7 +6623,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-40832ecaec",
@@ -6659,7 +6641,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-2da082506a",
@@ -6677,7 +6659,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-ebe40ad401",
@@ -6695,7 +6677,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-f82819364a",
@@ -6713,7 +6695,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-526e582fb0",
@@ -6731,7 +6713,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-72eea691b4",
@@ -6749,7 +6731,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-64b39a7c87",
@@ -6767,7 +6749,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-e08e5e4fe3",
@@ -6785,7 +6767,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-50f7383757",
@@ -6803,7 +6785,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-8a17752627",
@@ -6821,7 +6803,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-fc7982e45b",
@@ -6839,7 +6821,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-3027427e8f",
@@ -6857,7 +6839,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-79f68d92e1",
@@ -6875,7 +6857,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-5458c1d04a",
@@ -6893,7 +6875,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-0259d45420",
@@ -6911,7 +6893,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-cfc63c088e",
@@ -6929,7 +6911,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-2bb8979b4b",
@@ -6947,7 +6929,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-0166b400ba",
@@ -6965,7 +6947,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-ef94a6da6f",
@@ -6983,7 +6965,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-6dee328a99",
@@ -7001,7 +6983,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-0aa74e1662",
@@ -7019,7 +7001,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-f8331c284c",
@@ -7037,7 +7019,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-084ccd38f6",
@@ -7055,7 +7037,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-59e9f01773",
@@ -7073,7 +7055,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-b61e440c0e",
@@ -7091,7 +7073,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-433ca7673d",
@@ -7109,7 +7091,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-34f6c0576b",
@@ -7127,7 +7109,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-340e6873e6",
@@ -7145,7 +7127,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-c6d37be51e",
@@ -7163,7 +7145,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-0ec3cf2fe9",
@@ -7181,7 +7163,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-6d00420cf0",
@@ -7199,7 +7181,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-4f3676b79d",
@@ -7217,7 +7199,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-bfe56faba1",
@@ -7235,7 +7217,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-3f2ee0473c",
@@ -7253,7 +7235,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-6df343e916",
@@ -7271,7 +7253,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-56ac90777f",
@@ -7289,7 +7271,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-4e9c61c6fa",
@@ -7307,7 +7289,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-ae6238522e",
@@ -7325,7 +7307,7 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     },
     {
       "prospectId": "p2021-ref-0b17fe5297",
@@ -7343,11 +7325,11 @@
       "allMeasurementsMissing": true,
       "missingMeasurements": 8,
       "projectionSource": "2018 pre-2018-fit position prior; no player-specific measurement model",
-      "modelVersion": "redraft-2021-pre2018-logistic-C10-v1:position-prior-fallback"
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference:position-prior-fallback"
     }
   ],
   "counts": {
-    "scenarioProspects": 406,
+    "scenarioProspects": 405,
     "playableProspects": 323,
     "measurementRows": 179,
     "playerSpecificSupported": 175,
@@ -7355,7 +7337,7 @@
     "dualPositionUnsupported": 0,
     "unseenModelPositionUnsupported": 12,
     "allMeasurementsMissingUnsupported": 144,
-    "referenceOnlyPositionFallbacks": 83
+    "referenceOnlyPositionFallbacks": 82
   },
   "scenarioProvenance": {
     "artifact": "data/processed/scenario-2021.json",
@@ -7404,6 +7386,11 @@
           "parsedInvitees": 323
         },
         "sha256": "d55b28f94e8d8bf4612fa4a819a6572a3d9d24b2be24f1553eb4cf12840ca591"
+      },
+      {
+        "path": "data/clean/audited_postdraft_reference_aliases.json",
+        "url": "audited postdraft reference identity only; never pre-draft features",
+        "sha256": "298527099e2e6ef4c69d34d6c5d5b919ae8cba0bf83b6abedcae2cc5ea596387"
       }
     ],
     "identityPolicy": "Scenario prospectId is the only output join key; scenario features are consumed from exact canonical-ID records, with no name matching."
@@ -7414,7 +7401,7 @@
     "analytics/outcomes/rookie_snap_labels.csv": "bd5be961e835e63f9a4a0792f5695bac73f94f1c21f127655d971d02c926c429",
     "analytics/model.json": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0",
     "data/clean/scenario_2018.json": "b7895eef7862ccfb45cff5f2f4b6e347abd809c1905ed274883d55cc237f59d8",
-    "data/processed/scenario-2021.json": "16b574b788658ea916a48a61cdf4a24df76e72305dc16054f32971ec5ed4aec4",
+    "data/processed/scenario-2021.json": "37e217bfa4ca2ae97aa34a889b32b0dfef683f4884deefc6569e4b9e8eeaebc6",
     "data/raw/combine.csv": "5648886b1bb9de8a0c42b05ee7b1d9cbe58897676caaa2f6a4a3d3c9228235bb"
   },
   "limitations": [

@@ -153,7 +153,7 @@ def discover_scenarios() -> list[tuple[int, Path, dict]]:
         year = metadata.get("draftYear")
         if not isinstance(year, int) or year <= 2018:
             continue
-        if path.stem != f"scenario-{year}" or metadata.get("version") != f"nflverse-{year}-combine-pool-v1":
+        if path.stem != f"scenario-{year}" or metadata.get("version") != ("nflverse-2021-combine-pool-v2-trey-reference" if year == 2021 else f"nflverse-{year}-combine-pool-v1"):
             raise ValueError(f"Scenario {path.name} does not match the audited year/version contract.")
         if not any(row.get("path") == "data/raw/combine.csv" and row.get("sha256") == sha256(RAW_COMBINE)
                    for row in metadata.get("sourceFiles", [])):
@@ -167,7 +167,7 @@ def discover_scenarios() -> list[tuple[int, Path, dict]]:
 def project_scenario(model, trainer, parity: dict, training_positions: set[str], year: int, scenario_path: Path, source: dict) -> dict:
     if source["metadata"].get("draftYear") != year:
         raise ValueError(f"The {year} scenario has the wrong draft year.")
-    version = f"redraft-{year}-pre2018-logistic-C10-v1"
+    version = "redraft-2021-pre2018-logistic-C10-v2-trey-reference" if year == 2021 else f"redraft-{year}-pre2018-logistic-C10-v1"
     playable = [p for p in source["prospects"] if p.get("playable") is True]
     nonplayable = [p for p in source["prospects"] if p.get("playable") is not True]
     if len(playable) != int(source["metadata"].get("playableProspectCount", -1)):

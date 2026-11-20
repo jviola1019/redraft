@@ -1,0 +1,8 @@
+test_exact_reference_join (test_reference_aliases.ReferenceAliasTests.test_exact_reference_join) ... ok
+test_guarded_identity_and_existing_target (test_reference_aliases.ReferenceAliasTests.test_guarded_identity_and_existing_target) ... ok
+test_source_builder_applies_only_reviewed_reference_alias (test_reference_aliases.ReferenceAliasTests.test_source_builder_applies_only_reviewed_reference_alias) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.255s
+
+OK

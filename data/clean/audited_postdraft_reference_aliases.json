@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "aliasArtifactVersion": "audited-postdraft-reference-aliases-v1",
+  "status": "approved-for-versioned-reference-regeneration",
+  "createdOn": "2026-11-20",
+  "scope": "Historical reference identity normalization only; must not be loaded by live runtime or pre-draft feature generation.",
+  "expectedInput": {
+    "scenarioPath": "data/processed/scenario-2021.json",
+    "scenarioVersion": "nflverse-2021-combine-pool-v1",
+    "scenarioSha256": "16b574b788658ea916a48a61cdf4a24df76e72305dc16054f32971ec5ed4aec4",
+    "informationCutoff": "2021-04-29T23:59:00Z",
+    "rawDraftPath": "data/raw/draft_picks.csv",
+    "rawDraftSha256": "77c3a570ae70721c95c04965b233ed53b7e7e26592344ce199fbfac2b156838f"
+  },
+  "aliases": [
+    {
+      "aliasId": "trey-lance-2021-reference-identity-v1",
+      "reviewGroupId": "cross-pool-040",
+      "draftYear": 2021,
+      "fromProspectId": "p2021-ref-e9aacb6df1",
+      "toCanonicalProspectId": "p2021-4a3e07404f",
+      "canonicalName": "Trey Lance",
+      "canonicalSchool": "North Dakota State",
+      "referenceSchoolAlias": "North Dakota St.",
+      "externalIdentity": {
+        "pfrPlayerId": "LancTr00",
+        "gsisId": "00-0037012"
+      },
+      "expectedHistoricalSelection": {
+        "overall": 3,
+        "round": 1,
+        "team": "SF",
+        "prospectId": "p2021-ref-e9aacb6df1"
+      },
+      "evidenceSourceIds": [
+        "sf-trey-2021",
+        "ndsu-trey-2021"
+      ],
+      "decision": "audited-same-person",
+      "evidenceTiming": "post-selection; not eligible pre-draft evidence",
+      "preDraftFeatureAllowed": false,
+      "eligibilityInferenceAllowed": false,
+      "measurementMergeAllowed": false,
+      "projectionMutationAllowed": false,
+      "applyOnlyTo": "postdraft-reference identity join during a new explicitly versioned regeneration",
+      "rationale": "Both primary reports identify the same school, name, quarterback role, draft year, selecting franchise and overall pick; the existing playable invitee identity already exists.",
+      "expectedEffectIfLaterApplied": {
+        "actualPick3ProspectId": "p2021-4a3e07404f",
+        "playablePoolCountChange": 0,
+        "unmergedReferenceOnlyIdentityCountChange": -1
+      },
+      "preservedCanonicalRecord": {
+        "id": "p2021-4a3e07404f",
+        "name": "Trey Lance",
+        "position": "QB",
+        "college": "North Dakota State",
+        "source": "https://www.giants.com/news/2021-nfl-scouting-combine-list-of-invited-prospects-new-format-nfl-draft",
+        "availableBy": "2021-04-29T23:59:00Z",
+        "eligibilitySource": "combine-participant",
+        "playable": true
+      },
+      "preservedAliasRecord": {
+        "id": "p2021-ref-e9aacb6df1",
+        "name": "Trey Lance",
+        "position": "QB",
+        "college": "North Dakota St.",
+        "source": "https://github.com/nflverse/nflverse-data/releases/tag/draft_picks",
+        "availableBy": "2021-04-29T23:59:00Z",
+        "eligibilitySource": "retrospective-draft-record",
+        "playable": false
+      }
+    }
+  ],
+  "sourceProvenance": [
+    {
+      "sourceId": "sf-trey-2021",
+      "publisher": "San Francisco 49ers",
+      "type": "official-team-report",
+      "url": "https://www.49ers.com/news/49ers-trey-lance-with-the-no-3-pick-in-the-2021-nfl-draft",
+      "publishedAtDisplay": "Apr 29, 2021 at 05:41 PM",
+      "publishedTimezone": "not stated in retrieved text",
+      "retrievedReference": "turn513618820view0",
+      "evidenceLocator": "Article heading and paragraph at retrieved lines 41\u201353",
+      "factualSummary": "Identifies Trey Lance as a North Dakota State quarterback chosen by San Francisco third overall in the 2021 draft.",
+      "retrievedOn": "2026-11-20",
+      "originalArchivedSnapshot": false,
+      "originalHtmlSha256": null,
+      "preservedMaterial": "source metadata and paraphrased factual finding only; not an original HTML archive"
+    },
+    {
+      "sourceId": "ndsu-trey-2021",
+      "publisher": "North Dakota State University Athletics",
+      "type": "official-university-report",
+      "url": "https://gobison.com/news/2021/4/29/football-san-francisco-49ers-draft-trey-lance-with-no-3-overall-pick",
+      "publishedAtDisplay": "4/29/2021 10:00:00 PM",
+      "publishedTimezone": "not stated in retrieved text",
+      "retrievedReference": "turn513618820view1",
+      "evidenceLocator": "Article heading/date and opening paragraph at retrieved lines 367\u2013370",
+      "factualSummary": "Reports that San Francisco selected its North Dakota State quarterback Trey Lance third overall on April 29, 2021.",
+      "retrievedOn": "2026-11-20",
+      "originalArchivedSnapshot": false,
+      "originalHtmlSha256": null,
+      "preservedMaterial": "source metadata and paraphrased factual finding only; not an original HTML archive"
+    }
+  ],
+  "regenerationRequirements": [
+    "Require exact input version/hash and source-ID guards or explicitly re-audit if inputs changed.",
+    "Never rewrite existing runs, frozen datasets, model versions, leaderboards or current gameplay.",
+    "Use a new scenario/model-reference version and rebuild historical references; retain an old-to-new identity migration manifest.",
+    "Keep official invitee membership and pre-draft measurement availability unchanged; this postdraft evidence cannot create eligible players or backfill measurements.",
+    "Recheck baseline uniqueness, canonical references, projections and comparative results after regeneration.",
+    "Exclude distinct-people groups and every unverified spelling/unresolved suggestion from alias application."
+  ]
+}

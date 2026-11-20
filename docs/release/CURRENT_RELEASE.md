@@ -66,3 +66,7 @@ python research/college_board_risk.py
 For full UI tests, first build, initialize the local database and install Playwright Chromium/WebKit. Run `node tests/browser-full-run.mjs --start-server` using a fresh local Daily identity. Its actions submit a real local score. The hosted configuration is recorded in .github/workflows/ci.yml.
 
 The exposure correction conditions each simulated season on its historical schedule length. Applying a future rule change to a five-year world is a scenario assumption. The league's later adoption of 17 games could not have informed an April 2018 GM. The draft boards do not receive these future rules as prospect traits. The resulting research forecasts must be interpreted conditional on the schedule regime.
+
+## Forecasting playoff qualification
+
+Eight completed drafts, 64 simulations per origin and all 32 franchises produced 960 evaluable forecasts over 256 distinct observed team-seasons. Overall Brier score was 0.24012 against 0.24492 for assigning every team its season's playoff-slot prevalence. The first-year forecast did better (0.22538 against 0.24316). At year four it did worse (0.25799 against 0.24609). Year five was close to the prevalence benchmark. The report separates Monte Carlo error from generalization uncertainty and describes the retrospective schedule and rule assumptions. Incomplete seasons never receive a historical qualification label. [Prediction audit by year and horizon](../../analytics/playoff_forecast_REPORT.md)

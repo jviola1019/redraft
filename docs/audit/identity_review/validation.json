@@ -1,0 +1,15 @@
+{
+  "groups": 53,
+  "classificationCounts": {
+    "distinct-people": 2,
+    "unresolved": 12,
+    "school-spelling-abbreviation-candidate": 38,
+    "sourced-same-person": 1
+  },
+  "stagedAuditedAliases": 1,
+  "aliasFromAndToExist": true,
+  "historicalSelectionGuardMatches": true,
+  "rawExternalIdentityGuardMatches": true,
+  "gameplayOrFrozenWorktreeChangedByThisReview": false,
+  "failures": []
+}

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checks": [
+    "All 2018–2025 labels include postseason bye teams and exact qualification slot counts",
+    "Removing one regular-season actual game excludes each incomplete year",
+    "2026 incomplete and 2027 future actuals excluded",
+    "Poisoning every origin-and-later recorded score leaves seed-0 baseline unchanged at all eight origins",
+    "960 complete all-franchise forecasts, 256 distinct actual team-seasons; valid probability bounds and exact 64 draws each"
+  ]
+}

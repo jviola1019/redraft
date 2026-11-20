@@ -1,0 +1,1876 @@
+{
+  "schemaVersion": 1,
+  "reviewVersion": "cross-pool-documentation-review-v1",
+  "reviewedOn": "2026-11-20",
+  "scope": "All 53 normalized-exact-name cross-eligibility candidate groups; not an exhaustive identity-resolution audit.",
+  "input": {
+    "path": "docs/audit/semantic_identity_candidates.json",
+    "sha256": "22e442ebb9179b1d94facaa7e212e3e1cad6edfc0dca9e52b81e2deb405e27d4"
+  },
+  "classificationCounts": {
+    "distinct-people": 2,
+    "unresolved": 12,
+    "school-spelling-abbreviation-candidate": 38,
+    "sourced-same-person": 1
+  },
+  "rules": {
+    "sourceRequiredForApplication": true,
+    "spellingRulesAreUnverifiedSuggestions": true,
+    "sameNameAloneNeverSufficient": true,
+    "newEligibilityOrMeasurementClaims": false
+  },
+  "sources": [
+    {
+      "sourceId": "sf-trey-2021",
+      "publisher": "San Francisco 49ers",
+      "type": "official-team-report",
+      "url": "https://www.49ers.com/news/49ers-trey-lance-with-the-no-3-pick-in-the-2021-nfl-draft",
+      "publishedAtDisplay": "Apr 29, 2021 at 05:41 PM",
+      "publishedTimezone": "not stated in retrieved text",
+      "retrievedReference": "turn513618820view0",
+      "evidenceLocator": "Article heading and paragraph at retrieved lines 41\u201353",
+      "factualSummary": "Identifies Trey Lance as a North Dakota State quarterback chosen by San Francisco third overall in the 2021 draft.",
+      "retrievedOn": "2026-11-20",
+      "originalArchivedSnapshot": false,
+      "originalHtmlSha256": null,
+      "preservedMaterial": "source metadata and paraphrased factual finding only; not an original HTML archive"
+    },
+    {
+      "sourceId": "ndsu-trey-2021",
+      "publisher": "North Dakota State University Athletics",
+      "type": "official-university-report",
+      "url": "https://gobison.com/news/2021/4/29/football-san-francisco-49ers-draft-trey-lance-with-no-3-overall-pick",
+      "publishedAtDisplay": "4/29/2021 10:00:00 PM",
+      "publishedTimezone": "not stated in retrieved text",
+      "retrievedReference": "turn513618820view1",
+      "evidenceLocator": "Article heading/date and opening paragraph at retrieved lines 367\u2013370",
+      "factualSummary": "Reports that San Francisco selected its North Dakota State quarterback Trey Lance third overall on April 29, 2021.",
+      "retrievedOn": "2026-11-20",
+      "originalArchivedSnapshot": false,
+      "originalHtmlSha256": null,
+      "preservedMaterial": "source metadata and paraphrased factual finding only; not an original HTML archive"
+    },
+    {
+      "sourceId": "rams-long-2019",
+      "publisher": "Los Angeles Rams",
+      "type": "official-team-report",
+      "url": "https://www.therams.com/news/a-look-at-each-pick-of-the-rams-2019-draft-class",
+      "publishedAtDisplay": "Apr 28, 2019 at 02:00 PM",
+      "retrievedReference": "turn428353609view0",
+      "evidenceLocator": "Retrieved lines 66\u201367",
+      "factualSummary": "Lists Michigan cornerback David Long as the Rams selection at pick 79 in 2019.",
+      "retrievedOn": "2026-11-20",
+      "originalArchivedSnapshot": false,
+      "originalHtmlSha256": null,
+      "preservedMaterial": "source metadata and paraphrased factual finding only; not an original HTML archive"
+    },
+    {
+      "sourceId": "titans-long-2019",
+      "publisher": "Tennessee Titans",
+      "type": "official-team-report",
+      "url": "https://www.tennesseetitans.com/news/titans-selected-west-virginia-linebacker-david-long-in-sixth-round",
+      "publishedAtDisplay": "Apr 27, 2019 at 02:55 PM",
+      "retrievedReference": "turn428353609view1",
+      "evidenceLocator": "Retrieved lines 58\u201360",
+      "factualSummary": "Reports West Virginia linebacker David Long selected by Tennessee at pick 188 in 2019.",
+      "retrievedOn": "2026-11-20",
+      "originalArchivedSnapshot": false,
+      "originalHtmlSha256": null,
+      "preservedMaterial": "source metadata and paraphrased factual finding only; not an original HTML archive"
+    },
+    {
+      "sourceId": "packers-johnson-2023",
+      "publisher": "Green Bay Packers",
+      "type": "official-team-report",
+      "url": "https://www.packers.com/news/2023-nfl-draft-packers-select-iowa-state-s-anthony-johnson-in-seventh-round-no-2",
+      "publishedAtDisplay": "Apr 29, 2023 at 05:20 PM",
+      "retrievedReference": "turn428353609view2",
+      "evidenceLocator": "Retrieved lines 59\u201360",
+      "factualSummary": "Reports Iowa State safety Anthony Johnson Jr. selected by Green Bay at pick 242 in 2023 after five years at Iowa State.",
+      "retrievedOn": "2026-11-20",
+      "originalArchivedSnapshot": false,
+      "originalHtmlSha256": null,
+      "preservedMaterial": "source metadata and paraphrased factual finding only; not an original HTML archive"
+    },
+    {
+      "sourceId": "saints-johnson-2023",
+      "publisher": "New Orleans Saints",
+      "type": "official-team-report",
+      "url": "https://www.neworleanssaints.com/news/new-orleans-saints-roster-undrafted-free-agents-2023-nfl-draft",
+      "publishedAtDisplay": "Apr 30, 2023 at 10:04 AM",
+      "retrievedReference": "turn428353609view3",
+      "evidenceLocator": "Retrieved lines 52 and 106\u2013111; source search result also identifies 2019\u201320 Louisville and 2021\u201322 Virginia seasons",
+      "factualSummary": "Lists Virginia defensive back Anthony Johnson among New Orleans undrafted free agents after the 2023 draft.",
+      "retrievedOn": "2026-11-20",
+      "originalArchivedSnapshot": false,
+      "originalHtmlSha256": null,
+      "preservedMaterial": "source metadata and paraphrased factual finding only; not an original HTML archive"
+    }
+  ],
+  "groups": [
+    {
+      "groupId": "cross-pool-001",
+      "year": 2019,
+      "name": "David Long",
+      "classification": "distinct-people",
+      "evidenceStatus": "sourced-do-not-merge",
+      "reason": "Official team reports distinguish Michigan CB pick 79 and West Virginia LB pick 188 in the same draft.",
+      "sourceIds": [
+        "rams-long-2019",
+        "titans-long-2019"
+      ],
+      "action": "preserve both IDs; forbid name-only merging",
+      "narrowSchoolKeys": [
+        "michigan",
+        "west virginia"
+      ],
+      "positionLabelsDiffer": true,
+      "records": [
+        {
+          "id": "p2019-623f86efad",
+          "name": "David Long",
+          "college": "Michigan",
+          "position": "CB",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": 79
+        },
+        {
+          "id": "p2019-daef0f39d2",
+          "name": "David Long",
+          "college": "West Virginia",
+          "position": "LB",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 188
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-002",
+      "year": 2021,
+      "name": "Aaron Robinson",
+      "classification": "unresolved",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized name alone is insufficient. Schools require an institution acronym, missing geographic qualifier, initials or nontrivial historical-name interpretation beyond the narrow lexical rules.",
+      "sourceIds": [],
+      "action": "hold separate; obtain primary identity and school evidence",
+      "narrowSchoolKeys": [
+        "ucf",
+        "central florida"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-9444fec1cd",
+          "name": "Aaron Robinson",
+          "college": "UCF",
+          "position": "CB",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-73920416f2",
+          "name": "Aaron Robinson",
+          "college": "Central Florida",
+          "position": "CB",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 71
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-003",
+      "year": 2021,
+      "name": "Alim McNeill",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "north carolina state",
+        "north carolina state"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-8adb4d07d3",
+          "name": "Alim McNeill",
+          "college": "North Carolina State",
+          "position": "DT",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-8bb58e1fde",
+          "name": "Alim McNeill",
+          "college": "North Carolina St.",
+          "position": "DT",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 72
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-004",
+      "year": 2021,
+      "name": "Asante Samuel Jr.",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "florida state",
+        "florida state"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-c72d1c7a76",
+          "name": "Asante Samuel Jr.",
+          "college": "Florida State",
+          "position": "CB",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-3222d43277",
+          "name": "Asante Samuel Jr.",
+          "college": "Florida St.",
+          "position": "CB",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 47
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-005",
+      "year": 2021,
+      "name": "Baron Browning",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "ohio state",
+        "ohio state"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-22f76ccfcf",
+          "name": "Baron Browning",
+          "college": "Ohio State",
+          "position": "LB",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-a4b72c8846",
+          "name": "Baron Browning",
+          "college": "Ohio St.",
+          "position": "LB",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 105
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-006",
+      "year": 2021,
+      "name": "Brevin Jordan",
+      "classification": "unresolved",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized name alone is insufficient. Schools require an institution acronym, missing geographic qualifier, initials or nontrivial historical-name interpretation beyond the narrow lexical rules.",
+      "sourceIds": [],
+      "action": "hold separate; obtain primary identity and school evidence",
+      "narrowSchoolKeys": [
+        "miami",
+        "miami fl"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-ba00c68d5d",
+          "name": "Brevin Jordan",
+          "college": "Miami",
+          "position": "TE",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-cdbc9c32c6",
+          "name": "Brevin Jordan",
+          "college": "Miami (FL)",
+          "position": "TE",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 147
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-007",
+      "year": 2021,
+      "name": "Chuba Hubbard",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "oklahoma state",
+        "oklahoma state"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-1b38244a12",
+          "name": "Chuba Hubbard",
+          "college": "Oklahoma State",
+          "position": "RB",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-c0e23d835f",
+          "name": "Chuba Hubbard",
+          "college": "Oklahoma St.",
+          "position": "RB",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 126
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-008",
+      "year": 2021,
+      "name": "Darren Hall",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "san diego state",
+        "san diego state"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-df5591f5c9",
+          "name": "Darren Hall",
+          "college": "San Diego State",
+          "position": "CB",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-e56e40b56d",
+          "name": "Darren Hall",
+          "college": "San Diego St.",
+          "position": "CB",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 108
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-009",
+      "year": 2021,
+      "name": "Dillon Radunz",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "north dakota state",
+        "north dakota state"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-aa17303b57",
+          "name": "Dillon Radunz",
+          "college": "North Dakota State",
+          "position": "T",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-3771baa19d",
+          "name": "Dillon Radunz",
+          "college": "North Dakota St.",
+          "position": "T",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 53
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-010",
+      "year": 2021,
+      "name": "Frank Darby",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "arizona state",
+        "arizona state"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-fd3021aa08",
+          "name": "Frank Darby",
+          "college": "Arizona State",
+          "position": "WR",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-e08e5e4fe3",
+          "name": "Frank Darby",
+          "college": "Arizona St.",
+          "position": "WR",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 187
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-011",
+      "year": 2021,
+      "name": "Hamsah Nasirildeen",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "florida state",
+        "florida state"
+      ],
+      "positionLabelsDiffer": true,
+      "records": [
+        {
+          "id": "p2021-73f040e10a",
+          "name": "Hamsah Nasirildeen",
+          "college": "Florida State",
+          "position": "S",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-64b39a7c87",
+          "name": "Hamsah Nasirildeen",
+          "college": "Florida St.",
+          "position": "CB",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 186
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-012",
+      "year": 2021,
+      "name": "Hunter Long",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "boston college",
+        "boston college"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-4bbcc66ec7",
+          "name": "Hunter Long",
+          "college": "Boston College",
+          "position": "TE",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-f2f882d804",
+          "name": "Hunter Long",
+          "college": "Boston Col.",
+          "position": "TE",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 81
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-013",
+      "year": 2021,
+      "name": "Isaiah McDuffie",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "boston college",
+        "boston college"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-88e2a1d4d3",
+          "name": "Isaiah McDuffie",
+          "college": "Boston College",
+          "position": "LB",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-cfc63c088e",
+          "name": "Isaiah McDuffie",
+          "college": "Boston Col.",
+          "position": "LB",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 220
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-014",
+      "year": 2021,
+      "name": "Jaelan Phillips",
+      "classification": "unresolved",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized name alone is insufficient. Schools require an institution acronym, missing geographic qualifier, initials or nontrivial historical-name interpretation beyond the narrow lexical rules.",
+      "sourceIds": [],
+      "action": "hold separate; obtain primary identity and school evidence",
+      "narrowSchoolKeys": [
+        "miami",
+        "miami fl"
+      ],
+      "positionLabelsDiffer": true,
+      "records": [
+        {
+          "id": "p2021-c72e9b55eb",
+          "name": "Jaelan Phillips",
+          "college": "Miami",
+          "position": "DE",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-cd3920b9ab",
+          "name": "Jaelan Phillips",
+          "college": "Miami (FL)",
+          "position": "DL",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 18
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-015",
+      "year": 2021,
+      "name": "Janarius Robinson",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "florida state",
+        "florida state"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-b654f31e30",
+          "name": "Janarius Robinson",
+          "college": "Florida State",
+          "position": "DE",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-716d75f8b8",
+          "name": "Janarius Robinson",
+          "college": "Florida St.",
+          "position": "DE",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 134
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-016",
+      "year": 2021,
+      "name": "Jermar Jefferson",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "oregon state",
+        "oregon state"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-0d809080ed",
+          "name": "Jermar Jefferson",
+          "college": "Oregon State",
+          "position": "RB",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-0b17fe5297",
+          "name": "Jermar Jefferson",
+          "college": "Oregon St.",
+          "position": "RB",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 257
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-017",
+      "year": 2021,
+      "name": "John Bates",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "boise state",
+        "boise state"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-51de403a4d",
+          "name": "John Bates",
+          "college": "Boise State",
+          "position": "TE",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-9c8fc7087a",
+          "name": "John Bates",
+          "college": "Boise St.",
+          "position": "TE",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 124
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-018",
+      "year": 2021,
+      "name": "Jonathon Cooper",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "ohio state",
+        "ohio state"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-a0aa1167d7",
+          "name": "Jonathon Cooper",
+          "college": "Ohio State",
+          "position": "DE",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-34f6c0576b",
+          "name": "Jonathon Cooper",
+          "college": "Ohio St.",
+          "position": "DE",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 239
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-019",
+      "year": 2021,
+      "name": "Jordan Smith",
+      "classification": "unresolved",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized name alone is insufficient. Schools require an institution acronym, missing geographic qualifier, initials or nontrivial historical-name interpretation beyond the narrow lexical rules.",
+      "sourceIds": [],
+      "action": "hold separate; obtain primary identity and school evidence",
+      "narrowSchoolKeys": [
+        "uab",
+        "alabama birmingham"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-06417a84e3",
+          "name": "Jordan Smith",
+          "college": "UAB",
+          "position": "LB",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-04a59ce6d6",
+          "name": "Jordan Smith",
+          "college": "Ala-Birmingham",
+          "position": "LB",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 121
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-020",
+      "year": 2021,
+      "name": "Josh Myers",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "ohio state",
+        "ohio state"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-d26ce9c1ca",
+          "name": "Josh Myers",
+          "college": "Ohio State",
+          "position": "C",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-131f0ca611",
+          "name": "Josh Myers",
+          "college": "Ohio St.",
+          "position": "C",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 62
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-021",
+      "year": 2021,
+      "name": "Justin Fields",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "ohio state",
+        "ohio state"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-77cf88b092",
+          "name": "Justin Fields",
+          "college": "Ohio State",
+          "position": "QB",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-6b18056e5f",
+          "name": "Justin Fields",
+          "college": "Ohio St.",
+          "position": "QB",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 11
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-022",
+      "year": 2021,
+      "name": "Kylin Hill",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "mississippi state",
+        "mississippi state"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-b3a8c2f7d7",
+          "name": "Kylin Hill",
+          "college": "Mississippi State",
+          "position": "RB",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-ae6238522e",
+          "name": "Kylin Hill",
+          "college": "Mississippi St.",
+          "position": "RB",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 256
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-023",
+      "year": 2021,
+      "name": "Luke Farrell",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "ohio state",
+        "ohio state"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-cd4fefa707",
+          "name": "Luke Farrell",
+          "college": "Ohio State",
+          "position": "TE",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-b8e29e1cdb",
+          "name": "Luke Farrell",
+          "college": "Ohio St.",
+          "position": "TE",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 145
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-024",
+      "year": 2021,
+      "name": "Marquiss Spencer",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "mississippi state",
+        "mississippi state"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-736125607a",
+          "name": "Marquiss Spencer",
+          "college": "Mississippi State",
+          "position": "DE",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-6df343e916",
+          "name": "Marquiss Spencer",
+          "college": "Mississippi St.",
+          "position": "DE",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 253
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-025",
+      "year": 2021,
+      "name": "Micah Parsons",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "penn state",
+        "penn state"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-dc2ff71c56",
+          "name": "Micah Parsons",
+          "college": "Penn State",
+          "position": "LB",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-611238a980",
+          "name": "Micah Parsons",
+          "college": "Penn St.",
+          "position": "LB",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 12
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-026",
+      "year": 2021,
+      "name": "Michal Menet",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "penn state",
+        "penn state"
+      ],
+      "positionLabelsDiffer": true,
+      "records": [
+        {
+          "id": "p2021-dbb064afeb",
+          "name": "Michal Menet",
+          "college": "Penn State",
+          "position": "C",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-4f3676b79d",
+          "name": "Michal Menet",
+          "college": "Penn St.",
+          "position": "OL",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 247
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-027",
+      "year": 2021,
+      "name": "Mike Strachan",
+      "classification": "unresolved",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized name alone is insufficient. Schools require an institution acronym, missing geographic qualifier, initials or nontrivial historical-name interpretation beyond the narrow lexical rules.",
+      "sourceIds": [],
+      "action": "hold separate; obtain primary identity and school evidence",
+      "narrowSchoolKeys": [
+        "charleston",
+        "charleston wv"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-eba8007a3c",
+          "name": "Mike Strachan",
+          "college": "Charleston",
+          "position": "WR",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-6dee328a99",
+          "name": "Mike Strachan",
+          "college": "Charleston (WV)",
+          "position": "WR",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 229
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-028",
+      "year": 2021,
+      "name": "Nahshon Wright",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "oregon state",
+        "oregon state"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-a322f47419",
+          "name": "Nahshon Wright",
+          "college": "Oregon State",
+          "position": "CB",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-291338f84e",
+          "name": "Nahshon Wright",
+          "college": "Oregon St.",
+          "position": "CB",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 99
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-029",
+      "year": 2021,
+      "name": "Pat Freiermuth",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "penn state",
+        "penn state"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-c4a3ce6e68",
+          "name": "Pat Freiermuth",
+          "college": "Penn State",
+          "position": "TE",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-f8e02603de",
+          "name": "Pat Freiermuth",
+          "college": "Penn St.",
+          "position": "TE",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 55
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-030",
+      "year": 2021,
+      "name": "Pete Werner",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "ohio state",
+        "ohio state"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-25c1c2ca88",
+          "name": "Pete Werner",
+          "college": "Ohio State",
+          "position": "LB",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-0ff47504b0",
+          "name": "Pete Werner",
+          "college": "Ohio St.",
+          "position": "LB",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 60
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-031",
+      "year": 2021,
+      "name": "Quincy Roche",
+      "classification": "unresolved",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized name alone is insufficient. Schools require an institution acronym, missing geographic qualifier, initials or nontrivial historical-name interpretation beyond the narrow lexical rules.",
+      "sourceIds": [],
+      "action": "hold separate; obtain primary identity and school evidence",
+      "narrowSchoolKeys": [
+        "miami",
+        "miami fl"
+      ],
+      "positionLabelsDiffer": true,
+      "records": [
+        {
+          "id": "p2021-853c4089a4",
+          "name": "Quincy Roche",
+          "college": "Miami",
+          "position": "DE",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-0259d45420",
+          "name": "Quincy Roche",
+          "college": "Miami (FL)",
+          "position": "DL",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 216
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-032",
+      "year": 2021,
+      "name": "Richie Grant",
+      "classification": "unresolved",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized name alone is insufficient. Schools require an institution acronym, missing geographic qualifier, initials or nontrivial historical-name interpretation beyond the narrow lexical rules.",
+      "sourceIds": [],
+      "action": "hold separate; obtain primary identity and school evidence",
+      "narrowSchoolKeys": [
+        "ucf",
+        "central florida"
+      ],
+      "positionLabelsDiffer": true,
+      "records": [
+        {
+          "id": "p2021-9e2bd6091b",
+          "name": "Richie Grant",
+          "college": "UCF",
+          "position": "S",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-fa129a525a",
+          "name": "Richie Grant",
+          "college": "Central Florida",
+          "position": "CB",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 40
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-033",
+      "year": 2021,
+      "name": "Rodarius Williams",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "oklahoma state",
+        "oklahoma state"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-b4f3df71db",
+          "name": "Rodarius Williams",
+          "college": "Oklahoma State",
+          "position": "CB",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-79f68d92e1",
+          "name": "Rodarius Williams",
+          "college": "Oklahoma St.",
+          "position": "CB",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 201
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-034",
+      "year": 2021,
+      "name": "Shaka Toney",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "penn state",
+        "penn state"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-1013f15d46",
+          "name": "Shaka Toney",
+          "college": "Penn State",
+          "position": "DE",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-6d00420cf0",
+          "name": "Shaka Toney",
+          "college": "Penn St.",
+          "position": "DE",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 246
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-035",
+      "year": 2021,
+      "name": "Shaun Wade",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "ohio state",
+        "ohio state"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-748d605bb5",
+          "name": "Shaun Wade",
+          "college": "Ohio State",
+          "position": "CB",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-755dbdd781",
+          "name": "Shaun Wade",
+          "college": "Ohio St.",
+          "position": "CB",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 160
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-036",
+      "year": 2021,
+      "name": "Teven Jenkins",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "oklahoma state",
+        "oklahoma state"
+      ],
+      "positionLabelsDiffer": true,
+      "records": [
+        {
+          "id": "p2021-933a414245",
+          "name": "Teven Jenkins",
+          "college": "Oklahoma State",
+          "position": "T",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-732ab13a35",
+          "name": "Teven Jenkins",
+          "college": "Oklahoma St.",
+          "position": "OL",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 39
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-037",
+      "year": 2021,
+      "name": "Tommy Doyle",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "miami ohio",
+        "miami ohio"
+      ],
+      "positionLabelsDiffer": true,
+      "records": [
+        {
+          "id": "p2021-0eac1e20e2",
+          "name": "Tommy Doyle",
+          "college": "Miami (Ohio)",
+          "position": "T",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-71ef6f5eb9",
+          "name": "Tommy Doyle",
+          "college": "Miami (OH)",
+          "position": "OL",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 161
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-038",
+      "year": 2021,
+      "name": "Tommy Togiai",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "ohio state",
+        "ohio state"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-dadf843089",
+          "name": "Tommy Togiai",
+          "college": "Ohio State",
+          "position": "DT",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-7306a26c60",
+          "name": "Tommy Togiai",
+          "college": "Ohio St.",
+          "position": "DT",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 132
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-039",
+      "year": 2021,
+      "name": "Tre Nixon",
+      "classification": "unresolved",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized name alone is insufficient. Schools require an institution acronym, missing geographic qualifier, initials or nontrivial historical-name interpretation beyond the narrow lexical rules.",
+      "sourceIds": [],
+      "action": "hold separate; obtain primary identity and school evidence",
+      "narrowSchoolKeys": [
+        "ucf",
+        "central florida"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-8a335635e2",
+          "name": "Tre Nixon",
+          "college": "UCF",
+          "position": "WR",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-c6d37be51e",
+          "name": "Tre Nixon",
+          "college": "Central Florida",
+          "position": "WR",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 242
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-040",
+      "year": 2021,
+      "name": "Trey Lance",
+      "classification": "sourced-same-person",
+      "evidenceStatus": "audited-postdraft-reference-alias",
+      "reason": "Exact name and quarterback role; two primary reports identify the North Dakota State player as the 2021 pick 3. State/St. is the local school spelling difference.",
+      "sourceIds": [
+        "sf-trey-2021",
+        "ndsu-trey-2021"
+      ],
+      "action": "stage one exact-ID postdraft-reference alias only; do not apply now",
+      "narrowSchoolKeys": [
+        "north dakota state",
+        "north dakota state"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-4a3e07404f",
+          "name": "Trey Lance",
+          "college": "North Dakota State",
+          "position": "QB",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-e9aacb6df1",
+          "name": "Trey Lance",
+          "college": "North Dakota St.",
+          "position": "QB",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 3
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-041",
+      "year": 2021,
+      "name": "Trey Sermon",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "ohio state",
+        "ohio state"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-f9957d041d",
+          "name": "Trey Sermon",
+          "college": "Ohio State",
+          "position": "RB",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-7b115e36c3",
+          "name": "Trey Sermon",
+          "college": "Ohio St.",
+          "position": "RB",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 88
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-042",
+      "year": 2021,
+      "name": "Tylan Wallace",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "oklahoma state",
+        "oklahoma state"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-7a757e76f9",
+          "name": "Tylan Wallace",
+          "college": "Oklahoma State",
+          "position": "WR",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-1ef7fa4b0f",
+          "name": "Tylan Wallace",
+          "college": "Oklahoma St.",
+          "position": "WR",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 131
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-043",
+      "year": 2021,
+      "name": "Will Fries",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "penn state",
+        "penn state"
+      ],
+      "positionLabelsDiffer": true,
+      "records": [
+        {
+          "id": "p2021-1bc6fb8923",
+          "name": "Will Fries",
+          "college": "Penn State",
+          "position": "T",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-bfe56faba1",
+          "name": "Will Fries",
+          "college": "Penn St.",
+          "position": "OL",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 248
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-044",
+      "year": 2021,
+      "name": "Wyatt Davis",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "ohio state",
+        "ohio state"
+      ],
+      "positionLabelsDiffer": true,
+      "records": [
+        {
+          "id": "p2021-ec24c59565",
+          "name": "Wyatt Davis",
+          "college": "Ohio State",
+          "position": "G",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-49a02187f8",
+          "name": "Wyatt Davis",
+          "college": "Ohio St.",
+          "position": "OL",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 86
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-045",
+      "year": 2021,
+      "name": "Wyatt Hubert",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "kansas state",
+        "kansas state"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-fb34dc3ef1",
+          "name": "Wyatt Hubert",
+          "college": "Kansas State",
+          "position": "DE",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-59e9f01773",
+          "name": "Wyatt Hubert",
+          "college": "Kansas St.",
+          "position": "DE",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 235
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-046",
+      "year": 2021,
+      "name": "Zach Davidson",
+      "classification": "unresolved",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized name alone is insufficient. Schools require an institution acronym, missing geographic qualifier, initials or nontrivial historical-name interpretation beyond the narrow lexical rules.",
+      "sourceIds": [],
+      "action": "hold separate; obtain primary identity and school evidence",
+      "narrowSchoolKeys": [
+        "central missouri",
+        "central missouri state"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2021-c1d2a95071",
+          "name": "Zach Davidson",
+          "college": "Central Missouri",
+          "position": "TE",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2021-ref-9b0d0a889e",
+          "name": "Zach Davidson",
+          "college": "Central Missouri St.",
+          "position": "TE",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 168
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-047",
+      "year": 2023,
+      "name": "Anthony Johnson",
+      "classification": "distinct-people",
+      "evidenceStatus": "sourced-do-not-merge",
+      "reason": "Official reports distinguish the five-year Iowa State player drafted by Green Bay from Virginia player signed undrafted by New Orleans in the same class.",
+      "sourceIds": [
+        "packers-johnson-2023",
+        "saints-johnson-2023"
+      ],
+      "action": "preserve both IDs; forbid name-only merging",
+      "narrowSchoolKeys": [
+        "virginia",
+        "iowa state"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2023-0964a0edb0",
+          "name": "Anthony Johnson",
+          "college": "Virginia",
+          "position": "CB",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2023-73e55f5a5c",
+          "name": "Anthony Johnson",
+          "college": "Iowa St.",
+          "position": "CB",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 242
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-048",
+      "year": 2023,
+      "name": "DeWayne McBride",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "alabama birmingham",
+        "alabama birmingham"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2023-ca14c7a3a1",
+          "name": "DeWayne McBride",
+          "college": "Alabama-Birmingham",
+          "position": "RB",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2023-ced5176e1d",
+          "name": "DeWayne McBride",
+          "college": "Ala-Birmingham",
+          "position": "RB",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 222
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-049",
+      "year": 2024,
+      "name": "Jalyx Hunt",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "houston christian",
+        "houston christian"
+      ],
+      "positionLabelsDiffer": true,
+      "records": [
+        {
+          "id": "p2024-5fdd300cce",
+          "name": "Jalyx Hunt",
+          "college": "Houston Christian University",
+          "position": "EDGE",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2024-651fc12395",
+          "name": "Jalyx Hunt",
+          "college": "Houston Christian",
+          "position": "DE",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 94
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-050",
+      "year": 2024,
+      "name": "Matt Lee",
+      "classification": "unresolved",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized name alone is insufficient. Schools require an institution acronym, missing geographic qualifier, initials or nontrivial historical-name interpretation beyond the narrow lexical rules.",
+      "sourceIds": [],
+      "action": "hold separate; obtain primary identity and school evidence",
+      "narrowSchoolKeys": [
+        "miami",
+        "miami fl"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2024-17833210fc",
+          "name": "Matt Lee",
+          "college": "Miami",
+          "position": "C",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2024-8a091ada5f",
+          "name": "Matt Lee",
+          "college": "Miami (FL)",
+          "position": "C",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 237
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-051",
+      "year": 2024,
+      "name": "Ryan Flournoy",
+      "classification": "school-spelling-abbreviation-candidate",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized player name; schools become equal under narrow terminal St./State or Col./College, Ala./Alabama, SE/Southeast, OH/Ohio, or University suffix spelling rules. This is not independently sourced identity verification.",
+      "sourceIds": [],
+      "action": "review primary player/draft sources before staging any ID alias",
+      "narrowSchoolKeys": [
+        "southeast missouri state",
+        "southeast missouri state"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2024-061cfab30d",
+          "name": "Ryan Flournoy",
+          "college": "Southeast Missouri St.",
+          "position": "WR",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2024-5d161dd1c8",
+          "name": "Ryan Flournoy",
+          "college": "SE Missouri St.",
+          "position": "WR",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 216
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-052",
+      "year": 2026,
+      "name": "Charles Demmings",
+      "classification": "unresolved",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized name alone is insufficient. Schools require an institution acronym, missing geographic qualifier, initials or nontrivial historical-name interpretation beyond the narrow lexical rules.",
+      "sourceIds": [],
+      "action": "hold separate; obtain primary identity and school evidence",
+      "narrowSchoolKeys": [
+        "stephen f austin state",
+        "s f austin"
+      ],
+      "positionLabelsDiffer": false,
+      "records": [
+        {
+          "id": "p2026-88720a0cee",
+          "name": "Charles Demmings",
+          "college": "Stephen F. Austin St.",
+          "position": "CB",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2026-87c27b595e",
+          "name": "Charles Demmings",
+          "college": "S.F. Austin",
+          "position": "CB",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 163
+        }
+      ]
+    },
+    {
+      "groupId": "cross-pool-053",
+      "year": 2026,
+      "name": "Jakobe Thomas",
+      "classification": "unresolved",
+      "evidenceStatus": "unverified-suggestion",
+      "reason": "Exact normalized name alone is insufficient. Schools require an institution acronym, missing geographic qualifier, initials or nontrivial historical-name interpretation beyond the narrow lexical rules.",
+      "sourceIds": [],
+      "action": "hold separate; obtain primary identity and school evidence",
+      "narrowSchoolKeys": [
+        "miami",
+        "miami fl"
+      ],
+      "positionLabelsDiffer": true,
+      "records": [
+        {
+          "id": "p2026-9824f8c6c2",
+          "name": "Jakobe Thomas",
+          "college": "Miami",
+          "position": "SAF",
+          "eligibilitySource": "combine-participant",
+          "actualOverall": null
+        },
+        {
+          "id": "p2026-630aeac844",
+          "name": "Jakobe Thomas",
+          "college": "Miami (FL)",
+          "position": "S",
+          "eligibilitySource": "retrospective-draft-record",
+          "actualOverall": 98
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Only one same-person identity alias is audited and staged. Other suggested matches lack individual primary-source verification.",
+    "Name-change pairs Gregory/Greg Rousseau and Jayson/Odafe Oweh are outside the original 53 normalized-exact-name groups.",
+    "Position-label differences are preserved as evidence and are not silently resolved by a school alias.",
+    "All retrieved sources are live pages, not original archived snapshots."
+  ]
+}
