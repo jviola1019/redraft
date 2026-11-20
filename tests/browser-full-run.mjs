@@ -121,6 +121,11 @@ try {
       assert.equal(await evidence.nth(index).locator('strong').innerText(),String(year));
       assert.equal(await evidence.nth(index).locator('span').innerText(),actual?labels[actual.state]:'Unavailable');
     }
+    if(latestGame.mode==='historical'){
+      const statuses=await evidence.locator('span').allTextContents();
+      assert.ok(statuses.includes('Recorded'),'Historical fixture includes observed wins');
+      assert.ok(statuses.some(value=>value==='Projection'||value==='Incomplete'),'Historical fixture crosses the history boundary');
+    }
     await page.getByRole('button',{name:'Your draft class',exact:true}).click();
     await page.getByRole('heading',{name:'The class you built',exact:true}).waitFor();
     assert.deepEqual(errors,[],'No browser runtime errors throughout complete journey');
@@ -131,7 +136,7 @@ try {
   await page.goto(`${base}/signin-with-chatgpt?return_to=/`,{waitUntil:'networkidle'});
   await page.getByRole('button',{name:'Start a draft',exact:true}).click();
   await page.getByLabel('Historical franchise').selectOption('CLE');
-  await page.getByLabel('Draft class',{exact:true}).selectOption('2018');
+  await page.getByLabel('Draft class',{exact:true}).selectOption('2025');
   await page.getByLabel('Run seed').fill('browser-full-seven-rounds');
   await clickAction(page.getByRole('button',{name:'Enter the draft room'}),'new');
   const historical=await finishDraft();

@@ -1,0 +1,16 @@
+{
+  "id": "rolling-prior-point-margin-v1",
+  "status": "Fixed before benchmark result computation. Simulator outcomes and its prevalence comparison were already exposed.",
+  "simulator": "../playoff_forecast_results.json, existing 64-draw audit; evaluate exactly its 960 rows without rerunning or tuning.",
+  "source": "../../data/raw/games.csv, nflverse schedule snapshot; use only season, game type, date, teams and final scores.",
+  "origins": [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+  "originCutoff": "April 1 at each origin. Require completed score dates strictly before cutoff and season strictly before origin for every training and feature input.",
+  "horizons": [1, 2, 3, 4, 5],
+  "strength": "Mean points scored minus points allowed per regular-season game in the season immediately preceding the draft origin, divided by 7. No draft, future schedule, postseason scores as a strength feature, or player inputs.",
+  "training": "Fit separate horizon slopes at each origin. For each completed 32-franchise strength season from 2002, pair its strength with qualification at strength year plus horizon, only when the target year is also completed before the origin. Each training target year gets its own intercept constrained to match its observed slot count. Minimize summed logistic negative log likelihood plus 0.5 times slope squared. Fit signed slopes.",
+  "prediction": "Use the fitted slope and calibrate a single league-wide intercept to the number of playoff slots then approved at the origin, 12 through 2019 and 14 from 2020.",
+  "ruleSource": "https://www.nfl.com/news/owners-approve-expanding-postseason-to-14-teams-0ap3000001107961",
+  "sensitivity": "Also compute benchmark probabilities with realized target-year format as a hindsight-aligned comparison against the simulator, without changing fitted slopes. Report raw Brier and benchmark-relative skill, and separately the inherited simulator finite-draw adjustment and path-level MC SE.",
+  "dependence": "Keep every franchise and overlapping origin forecast in its actual-season block. Report raw paired Brier differences by horizon and by actual season, plus ranges after dropping one season or two consecutive seasons. Treat these as descriptive stability, without exchangeability assumptions, p-values, or generalization confidence intervals.",
+  "judgment": "Descriptive retrospective comparison. Raw simulator Brier minus benchmark Brier is the primary paired gap; positive favors the simple benchmark. No tuning, gameplay changes, or intervention claims."
+}

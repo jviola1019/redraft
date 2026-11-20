@@ -1,0 +1,84 @@
+{
+  "provenance": "Authoritative runtime GET /api/game?action=leaderboard on isolated migrated SQLite at noon UTC",
+  "protocolSha256": "25cd696872473f3c54bedd3270cd86aa1539041185e30f95f0f751802d2764d5",
+  "fixtures": [
+    {
+      "date": "2026-11-01",
+      "team": "CIN",
+      "year": 2026,
+      "seed": "4cc0f3d4-be9d-4fb8-90ff-f6e71ca60af834bc0e23-7a86-433d-880b-18c198df9d99",
+      "blindSalt": "c19efb76-504a-48e6-b09e-71edd2fc8dbeae85c950-c4d4-4f61-9117-a0850f3093f1",
+      "modelVersion": "redraft-2026-pre2018-logistic-C10-v1+five-year-2013-exposure-v2+blind-g5-v1+nflverse-2026-combine-pool-v1",
+      "datasetVersion": "nflverse-2026-combine-pool-v1",
+      "engineVersion": "redraft-research-0.10-team-cpu-prior",
+      "scoringVersion": "research-score-v1",
+      "scoutingVersion": "blind-g5-v1",
+      "ensembleSize": 256
+    },
+    {
+      "date": "2026-11-02",
+      "team": "KC",
+      "year": 2020,
+      "seed": "ad3169ab-7650-4b71-893d-e2b76871745b392d0790-accc-4159-91ad-d44cde5440ce",
+      "blindSalt": "93d7a18a-e934-4acf-857a-5047bd32dd1a3c000c36-0130-4fa8-a6cc-96175ce67976",
+      "modelVersion": "redraft-2020-pre2018-logistic-C10-v1+five-year-2013-exposure-v2+blind-g5-v1+nflverse-2020-combine-pool-v1",
+      "datasetVersion": "nflverse-2020-combine-pool-v1",
+      "engineVersion": "redraft-research-0.10-team-cpu-prior",
+      "scoringVersion": "research-score-v1",
+      "scoutingVersion": "blind-g5-v1",
+      "ensembleSize": 256
+    },
+    {
+      "date": "2026-11-03",
+      "team": "DEN",
+      "year": 2025,
+      "seed": "edf14e2e-b5d3-4d83-a937-606b7e0d22a79f123678-207a-4d95-9b60-084566e9543f",
+      "blindSalt": "581802ba-5b3d-49da-b824-1ec501343f8c0154933b-aa21-4a94-b4c3-84936fa70abe",
+      "modelVersion": "redraft-2025-pre2018-logistic-C10-v1+five-year-2013-exposure-v2+blind-g5-v1+nflverse-2025-combine-pool-v1",
+      "datasetVersion": "nflverse-2025-combine-pool-v1",
+      "engineVersion": "redraft-research-0.10-team-cpu-prior",
+      "scoringVersion": "research-score-v1",
+      "scoutingVersion": "blind-g5-v1",
+      "ensembleSize": 256
+    },
+    {
+      "date": "2026-11-04",
+      "team": "CLE",
+      "year": 2025,
+      "seed": "02e615dc-9414-43e0-8b8b-03c291b761e5ff03a600-9160-4dd4-ab9b-b52cbd6fde77",
+      "blindSalt": "e3d7acd3-ae6f-4365-8789-de0866beb98aa2d34bbd-87ce-480b-bd3a-f23a01e8dd1e",
+      "modelVersion": "redraft-2025-pre2018-logistic-C10-v1+five-year-2013-exposure-v2+blind-g5-v1+nflverse-2025-combine-pool-v1",
+      "datasetVersion": "nflverse-2025-combine-pool-v1",
+      "engineVersion": "redraft-research-0.10-team-cpu-prior",
+      "scoringVersion": "research-score-v1",
+      "scoutingVersion": "blind-g5-v1",
+      "ensembleSize": 256
+    },
+    {
+      "date": "2026-11-05",
+      "team": "DET",
+      "year": 2025,
+      "seed": "6e609aa9-225a-4764-8a45-b7ddccd37cef922ce9e4-5746-46f7-ad6b-dfe3b94bed05",
+      "blindSalt": "4ef3406d-e2a1-432a-ba78-9658720d8597fc9a53e2-79d0-42fa-8a1d-e9b5028be005",
+      "modelVersion": "redraft-2025-pre2018-logistic-C10-v1+five-year-2013-exposure-v2+blind-g5-v1+nflverse-2025-combine-pool-v1",
+      "datasetVersion": "nflverse-2025-combine-pool-v1",
+      "engineVersion": "redraft-research-0.10-team-cpu-prior",
+      "scoringVersion": "research-score-v1",
+      "scoutingVersion": "blind-g5-v1",
+      "ensembleSize": 256
+    },
+    {
+      "date": "2026-11-06",
+      "team": "HOU",
+      "year": 2021,
+      "seed": "512da828-463f-4861-9ca1-aa4fe79c12a88d7fb92a-bce7-4c18-85de-a58304c4589c",
+      "blindSalt": "43affa4d-c519-4708-9314-8c84f8fc0b87b87690a9-f340-41b3-bfc4-37f7276d86a6",
+      "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference+five-year-2013-exposure-v2+blind-g5-v1+nflverse-2021-combine-pool-v2-trey-reference",
+      "datasetVersion": "nflverse-2021-combine-pool-v2-trey-reference",
+      "engineVersion": "redraft-research-0.10-team-cpu-prior",
+      "scoringVersion": "research-score-v1",
+      "scoutingVersion": "blind-g5-v1",
+      "ensembleSize": 256
+    }
+  ]
+}
