@@ -1,0 +1,1168 @@
+[
+  {
+    "year": 2019,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2019-623f86efad",
+        "name": "David Long",
+        "college": "Michigan",
+        "position": "CB",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": 79
+      },
+      {
+        "id": "p2019-daef0f39d2",
+        "name": "David Long",
+        "college": "West Virginia",
+        "position": "LB",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 188
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-9444fec1cd",
+        "name": "Aaron Robinson",
+        "college": "UCF",
+        "position": "CB",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-73920416f2",
+        "name": "Aaron Robinson",
+        "college": "Central Florida",
+        "position": "CB",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 71
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-8adb4d07d3",
+        "name": "Alim McNeill",
+        "college": "North Carolina State",
+        "position": "DT",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-8bb58e1fde",
+        "name": "Alim McNeill",
+        "college": "North Carolina St.",
+        "position": "DT",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 72
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-c72d1c7a76",
+        "name": "Asante Samuel Jr.",
+        "college": "Florida State",
+        "position": "CB",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-3222d43277",
+        "name": "Asante Samuel Jr.",
+        "college": "Florida St.",
+        "position": "CB",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 47
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-22f76ccfcf",
+        "name": "Baron Browning",
+        "college": "Ohio State",
+        "position": "LB",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-a4b72c8846",
+        "name": "Baron Browning",
+        "college": "Ohio St.",
+        "position": "LB",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 105
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-ba00c68d5d",
+        "name": "Brevin Jordan",
+        "college": "Miami",
+        "position": "TE",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-cdbc9c32c6",
+        "name": "Brevin Jordan",
+        "college": "Miami (FL)",
+        "position": "TE",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 147
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-1b38244a12",
+        "name": "Chuba Hubbard",
+        "college": "Oklahoma State",
+        "position": "RB",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-c0e23d835f",
+        "name": "Chuba Hubbard",
+        "college": "Oklahoma St.",
+        "position": "RB",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 126
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-df5591f5c9",
+        "name": "Darren Hall",
+        "college": "San Diego State",
+        "position": "CB",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-e56e40b56d",
+        "name": "Darren Hall",
+        "college": "San Diego St.",
+        "position": "CB",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 108
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-aa17303b57",
+        "name": "Dillon Radunz",
+        "college": "North Dakota State",
+        "position": "T",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-3771baa19d",
+        "name": "Dillon Radunz",
+        "college": "North Dakota St.",
+        "position": "T",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 53
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-fd3021aa08",
+        "name": "Frank Darby",
+        "college": "Arizona State",
+        "position": "WR",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-e08e5e4fe3",
+        "name": "Frank Darby",
+        "college": "Arizona St.",
+        "position": "WR",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 187
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-73f040e10a",
+        "name": "Hamsah Nasirildeen",
+        "college": "Florida State",
+        "position": "S",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-64b39a7c87",
+        "name": "Hamsah Nasirildeen",
+        "college": "Florida St.",
+        "position": "CB",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 186
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-4bbcc66ec7",
+        "name": "Hunter Long",
+        "college": "Boston College",
+        "position": "TE",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-f2f882d804",
+        "name": "Hunter Long",
+        "college": "Boston Col.",
+        "position": "TE",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 81
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-88e2a1d4d3",
+        "name": "Isaiah McDuffie",
+        "college": "Boston College",
+        "position": "LB",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-cfc63c088e",
+        "name": "Isaiah McDuffie",
+        "college": "Boston Col.",
+        "position": "LB",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 220
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-c72e9b55eb",
+        "name": "Jaelan Phillips",
+        "college": "Miami",
+        "position": "DE",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-cd3920b9ab",
+        "name": "Jaelan Phillips",
+        "college": "Miami (FL)",
+        "position": "DL",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 18
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-b654f31e30",
+        "name": "Janarius Robinson",
+        "college": "Florida State",
+        "position": "DE",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-716d75f8b8",
+        "name": "Janarius Robinson",
+        "college": "Florida St.",
+        "position": "DE",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 134
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-0d809080ed",
+        "name": "Jermar Jefferson",
+        "college": "Oregon State",
+        "position": "RB",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-0b17fe5297",
+        "name": "Jermar Jefferson",
+        "college": "Oregon St.",
+        "position": "RB",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 257
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-51de403a4d",
+        "name": "John Bates",
+        "college": "Boise State",
+        "position": "TE",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-9c8fc7087a",
+        "name": "John Bates",
+        "college": "Boise St.",
+        "position": "TE",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 124
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-a0aa1167d7",
+        "name": "Jonathon Cooper",
+        "college": "Ohio State",
+        "position": "DE",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-34f6c0576b",
+        "name": "Jonathon Cooper",
+        "college": "Ohio St.",
+        "position": "DE",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 239
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-06417a84e3",
+        "name": "Jordan Smith",
+        "college": "UAB",
+        "position": "LB",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-04a59ce6d6",
+        "name": "Jordan Smith",
+        "college": "Ala-Birmingham",
+        "position": "LB",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 121
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-d26ce9c1ca",
+        "name": "Josh Myers",
+        "college": "Ohio State",
+        "position": "C",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-131f0ca611",
+        "name": "Josh Myers",
+        "college": "Ohio St.",
+        "position": "C",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 62
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-77cf88b092",
+        "name": "Justin Fields",
+        "college": "Ohio State",
+        "position": "QB",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-6b18056e5f",
+        "name": "Justin Fields",
+        "college": "Ohio St.",
+        "position": "QB",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 11
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-b3a8c2f7d7",
+        "name": "Kylin Hill",
+        "college": "Mississippi State",
+        "position": "RB",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-ae6238522e",
+        "name": "Kylin Hill",
+        "college": "Mississippi St.",
+        "position": "RB",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 256
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-cd4fefa707",
+        "name": "Luke Farrell",
+        "college": "Ohio State",
+        "position": "TE",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-b8e29e1cdb",
+        "name": "Luke Farrell",
+        "college": "Ohio St.",
+        "position": "TE",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 145
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-736125607a",
+        "name": "Marquiss Spencer",
+        "college": "Mississippi State",
+        "position": "DE",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-6df343e916",
+        "name": "Marquiss Spencer",
+        "college": "Mississippi St.",
+        "position": "DE",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 253
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-dc2ff71c56",
+        "name": "Micah Parsons",
+        "college": "Penn State",
+        "position": "LB",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-611238a980",
+        "name": "Micah Parsons",
+        "college": "Penn St.",
+        "position": "LB",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 12
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-dbb064afeb",
+        "name": "Michal Menet",
+        "college": "Penn State",
+        "position": "C",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-4f3676b79d",
+        "name": "Michal Menet",
+        "college": "Penn St.",
+        "position": "OL",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 247
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-eba8007a3c",
+        "name": "Mike Strachan",
+        "college": "Charleston",
+        "position": "WR",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-6dee328a99",
+        "name": "Mike Strachan",
+        "college": "Charleston (WV)",
+        "position": "WR",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 229
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-a322f47419",
+        "name": "Nahshon Wright",
+        "college": "Oregon State",
+        "position": "CB",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-291338f84e",
+        "name": "Nahshon Wright",
+        "college": "Oregon St.",
+        "position": "CB",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 99
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-c4a3ce6e68",
+        "name": "Pat Freiermuth",
+        "college": "Penn State",
+        "position": "TE",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-f8e02603de",
+        "name": "Pat Freiermuth",
+        "college": "Penn St.",
+        "position": "TE",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 55
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-25c1c2ca88",
+        "name": "Pete Werner",
+        "college": "Ohio State",
+        "position": "LB",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-0ff47504b0",
+        "name": "Pete Werner",
+        "college": "Ohio St.",
+        "position": "LB",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 60
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-853c4089a4",
+        "name": "Quincy Roche",
+        "college": "Miami",
+        "position": "DE",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-0259d45420",
+        "name": "Quincy Roche",
+        "college": "Miami (FL)",
+        "position": "DL",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 216
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-9e2bd6091b",
+        "name": "Richie Grant",
+        "college": "UCF",
+        "position": "S",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-fa129a525a",
+        "name": "Richie Grant",
+        "college": "Central Florida",
+        "position": "CB",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 40
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-b4f3df71db",
+        "name": "Rodarius Williams",
+        "college": "Oklahoma State",
+        "position": "CB",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-79f68d92e1",
+        "name": "Rodarius Williams",
+        "college": "Oklahoma St.",
+        "position": "CB",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 201
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-1013f15d46",
+        "name": "Shaka Toney",
+        "college": "Penn State",
+        "position": "DE",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-6d00420cf0",
+        "name": "Shaka Toney",
+        "college": "Penn St.",
+        "position": "DE",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 246
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-748d605bb5",
+        "name": "Shaun Wade",
+        "college": "Ohio State",
+        "position": "CB",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-755dbdd781",
+        "name": "Shaun Wade",
+        "college": "Ohio St.",
+        "position": "CB",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 160
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-933a414245",
+        "name": "Teven Jenkins",
+        "college": "Oklahoma State",
+        "position": "T",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-732ab13a35",
+        "name": "Teven Jenkins",
+        "college": "Oklahoma St.",
+        "position": "OL",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 39
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-0eac1e20e2",
+        "name": "Tommy Doyle",
+        "college": "Miami (Ohio)",
+        "position": "T",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-71ef6f5eb9",
+        "name": "Tommy Doyle",
+        "college": "Miami (OH)",
+        "position": "OL",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 161
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-dadf843089",
+        "name": "Tommy Togiai",
+        "college": "Ohio State",
+        "position": "DT",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-7306a26c60",
+        "name": "Tommy Togiai",
+        "college": "Ohio St.",
+        "position": "DT",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 132
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-8a335635e2",
+        "name": "Tre Nixon",
+        "college": "UCF",
+        "position": "WR",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-c6d37be51e",
+        "name": "Tre Nixon",
+        "college": "Central Florida",
+        "position": "WR",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 242
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-4a3e07404f",
+        "name": "Trey Lance",
+        "college": "North Dakota State",
+        "position": "QB",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-e9aacb6df1",
+        "name": "Trey Lance",
+        "college": "North Dakota St.",
+        "position": "QB",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 3
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-f9957d041d",
+        "name": "Trey Sermon",
+        "college": "Ohio State",
+        "position": "RB",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-7b115e36c3",
+        "name": "Trey Sermon",
+        "college": "Ohio St.",
+        "position": "RB",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 88
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-7a757e76f9",
+        "name": "Tylan Wallace",
+        "college": "Oklahoma State",
+        "position": "WR",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-1ef7fa4b0f",
+        "name": "Tylan Wallace",
+        "college": "Oklahoma St.",
+        "position": "WR",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 131
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-1bc6fb8923",
+        "name": "Will Fries",
+        "college": "Penn State",
+        "position": "T",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-bfe56faba1",
+        "name": "Will Fries",
+        "college": "Penn St.",
+        "position": "OL",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 248
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-ec24c59565",
+        "name": "Wyatt Davis",
+        "college": "Ohio State",
+        "position": "G",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-49a02187f8",
+        "name": "Wyatt Davis",
+        "college": "Ohio St.",
+        "position": "OL",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 86
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-fb34dc3ef1",
+        "name": "Wyatt Hubert",
+        "college": "Kansas State",
+        "position": "DE",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-59e9f01773",
+        "name": "Wyatt Hubert",
+        "college": "Kansas St.",
+        "position": "DE",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 235
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2021-c1d2a95071",
+        "name": "Zach Davidson",
+        "college": "Central Missouri",
+        "position": "TE",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2021-ref-9b0d0a889e",
+        "name": "Zach Davidson",
+        "college": "Central Missouri St.",
+        "position": "TE",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 168
+      }
+    ]
+  },
+  {
+    "year": 2023,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2023-0964a0edb0",
+        "name": "Anthony Johnson",
+        "college": "Virginia",
+        "position": "CB",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2023-73e55f5a5c",
+        "name": "Anthony Johnson",
+        "college": "Iowa St.",
+        "position": "CB",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 242
+      }
+    ]
+  },
+  {
+    "year": 2023,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2023-ca14c7a3a1",
+        "name": "DeWayne McBride",
+        "college": "Alabama-Birmingham",
+        "position": "RB",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2023-ced5176e1d",
+        "name": "DeWayne McBride",
+        "college": "Ala-Birmingham",
+        "position": "RB",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 222
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2024-5fdd300cce",
+        "name": "Jalyx Hunt",
+        "college": "Houston Christian University",
+        "position": "EDGE",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2024-651fc12395",
+        "name": "Jalyx Hunt",
+        "college": "Houston Christian",
+        "position": "DE",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 94
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2024-17833210fc",
+        "name": "Matt Lee",
+        "college": "Miami",
+        "position": "C",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2024-8a091ada5f",
+        "name": "Matt Lee",
+        "college": "Miami (FL)",
+        "position": "C",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 237
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2024-061cfab30d",
+        "name": "Ryan Flournoy",
+        "college": "Southeast Missouri St.",
+        "position": "WR",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2024-5d161dd1c8",
+        "name": "Ryan Flournoy",
+        "college": "SE Missouri St.",
+        "position": "WR",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 216
+      }
+    ]
+  },
+  {
+    "year": 2026,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2026-88720a0cee",
+        "name": "Charles Demmings",
+        "college": "Stephen F. Austin St.",
+        "position": "CB",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2026-87c27b595e",
+        "name": "Charles Demmings",
+        "college": "S.F. Austin",
+        "position": "CB",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 163
+      }
+    ]
+  },
+  {
+    "year": 2026,
+    "candidateOnly": true,
+    "records": [
+      {
+        "id": "p2026-9824f8c6c2",
+        "name": "Jakobe Thomas",
+        "college": "Miami",
+        "position": "SAF",
+        "eligibilitySource": "combine-participant",
+        "actualOverall": null
+      },
+      {
+        "id": "p2026-630aeac844",
+        "name": "Jakobe Thomas",
+        "college": "Miami (FL)",
+        "position": "S",
+        "eligibilitySource": "retrospective-draft-record",
+        "actualOverall": 98
+      }
+    ]
+  }
+]
