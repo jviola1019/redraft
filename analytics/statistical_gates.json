@@ -103,8 +103,8 @@
       "scope": "evidence-integrity",
       "requirement": "Exact audit matches source artifact",
       "evidence": {
-        "evaluated": "e5e0bb35be07a01ea133331a200a15593b706772cf625c523e48e96d9b9b37f3",
-        "current": "e5e0bb35be07a01ea133331a200a15593b706772cf625c523e48e96d9b9b37f3"
+        "evaluated": "3ccb1d7fda59fa60ea691e154a89776896b24b347ec6ec2c2a596686e7cb3918",
+        "current": "3ccb1d7fda59fa60ea691e154a89776896b24b347ec6ec2c2a596686e7cb3918"
       }
     },
     {
@@ -548,7 +548,7 @@
         "configuration": {
           "team": "CLE",
           "draftSeed": "redraft-validation-2026-11-02",
-          "engineVersion": "redraft-research-0.9-schedule-exposure",
+          "engineVersion": "redraft-research-0.10-team-cpu-prior",
           "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-exposure-v2+prior-utilization-policy-v1:a2667b83e75f+scoring-trailing3-v1",
           "datasetVersion": "nflverse-2018-combine-only-v2"
         }
@@ -568,14 +568,14 @@
       "requirement": "Win-difference MCSE\u2264.25 wins and improvement-probability MCSE\u2264.032",
       "evidence": {
         "replicates": 256,
-        "pairedMeanWinDifference": 0.109375,
-        "pairedStandardError": 0.222540255088386,
+        "pairedMeanWinDifference": 0.4609375,
+        "pairedStandardError": 0.22960995589788016,
         "mean95Interval": [
-          -0.32680389997323656,
-          0.5455538999732366
+          0.010901986440154887,
+          0.9109730135598451
         ],
-        "probabilityImprovement": 0.45703125,
-        "probabilityMcse": 0.031134391562742603
+        "probabilityImprovement": 0.49609375,
+        "probabilityMcse": 0.031249046311131234
       }
     },
     {
@@ -614,7 +614,7 @@
         "configuration": {
           "team": "KC",
           "draftSeed": "redraft-validation-2026-11-02",
-          "engineVersion": "redraft-research-0.9-schedule-exposure",
+          "engineVersion": "redraft-research-0.10-team-cpu-prior",
           "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-exposure-v2+prior-utilization-policy-v1:a2667b83e75f+scoring-trailing3-v1",
           "datasetVersion": "nflverse-2018-combine-only-v2"
         }
@@ -634,14 +634,14 @@
       "requirement": "Win-difference MCSE\u2264.25 wins and improvement-probability MCSE\u2264.032",
       "evidence": {
         "replicates": 256,
-        "pairedMeanWinDifference": 1.25,
-        "pairedStandardError": 0.19725443905141957,
+        "pairedMeanWinDifference": 0.9453125,
+        "pairedStandardError": 0.19361888253953397,
         "mean95Interval": [
-          0.8633812994592176,
-          1.6366187005407824
+          0.5658194902225134,
+          1.3248055097774865
         ],
-        "probabilityImprovement": 0.5859375,
-        "probabilityMcse": 0.030784961457320535
+        "probabilityImprovement": 0.5234375,
+        "probabilityMcse": 0.031215648844579315
       }
     },
     {
@@ -680,7 +680,7 @@
         "configuration": {
           "team": "NE",
           "draftSeed": "redraft-validation-2026-11-02",
-          "engineVersion": "redraft-research-0.9-schedule-exposure",
+          "engineVersion": "redraft-research-0.10-team-cpu-prior",
           "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-exposure-v2+prior-utilization-policy-v1:a2667b83e75f+scoring-trailing3-v1",
           "datasetVersion": "nflverse-2018-combine-only-v2"
         }
@@ -700,14 +700,14 @@
       "requirement": "Win-difference MCSE\u2264.25 wins and improvement-probability MCSE\u2264.032",
       "evidence": {
         "replicates": 256,
-        "pairedMeanWinDifference": -0.8203125,
-        "pairedStandardError": 0.21500592698026294,
+        "pairedMeanWinDifference": -0.265625,
+        "pairedStandardError": 0.22202339003591315,
         "mean95Interval": [
-          -1.2417241168813153,
-          -0.39890088311868466
+          -0.7007908444703898,
+          0.16954084447038975
         ],
-        "probabilityImprovement": 0.34765625,
-        "probabilityMcse": 0.02976413673024351
+        "probabilityImprovement": 0.42578125,
+        "probabilityMcse": 0.030903805966839813
       }
     },
     {
@@ -746,7 +746,7 @@
         "configuration": {
           "team": "SF",
           "draftSeed": "redraft-validation-2026-11-02",
-          "engineVersion": "redraft-research-0.9-schedule-exposure",
+          "engineVersion": "redraft-research-0.10-team-cpu-prior",
           "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-exposure-v2+prior-utilization-policy-v1:a2667b83e75f+scoring-trailing3-v1",
           "datasetVersion": "nflverse-2018-combine-only-v2"
         }
@@ -766,14 +766,14 @@
       "requirement": "Win-difference MCSE\u2264.25 wins and improvement-probability MCSE\u2264.032",
       "evidence": {
         "replicates": 256,
-        "pairedMeanWinDifference": 0.46484375,
-        "pairedStandardError": 0.20192409307718306,
+        "pairedMeanWinDifference": 0.2265625,
+        "pairedStandardError": 0.20204451978432242,
         "mean95Interval": [
-          0.06907252756872118,
-          0.8606149724312788
+          -0.16944475877727194,
+          0.6225697587772719
         ],
-        "probabilityImprovement": 0.49609375,
-        "probabilityMcse": 0.031249046311131234
+        "probabilityImprovement": 0.4765625,
+        "probabilityMcse": 0.031215648844579315
       }
     },
     {
@@ -808,7 +808,7 @@
       "configuration": {
         "team": "CLE",
         "draftSeed": "redraft-validation-2026-11-02",
-        "engineVersion": "redraft-research-0.9-schedule-exposure",
+        "engineVersion": "redraft-research-0.10-team-cpu-prior",
         "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-exposure-v2+prior-utilization-policy-v1:a2667b83e75f+scoring-trailing3-v1",
         "datasetVersion": "nflverse-2018-combine-only-v2"
       },
@@ -836,21 +836,21 @@
       ],
       "convergence": {
         "replicates": 256,
-        "pairedMeanWinDifference": 0.109375,
-        "pairedStandardError": 0.222540255088386,
+        "pairedMeanWinDifference": 0.4609375,
+        "pairedStandardError": 0.22960995589788016,
         "mean95Interval": [
-          -0.32680389997323656,
-          0.5455538999732366
+          0.010901986440154887,
+          0.9109730135598451
         ],
-        "probabilityImprovement": 0.45703125,
-        "probabilityMcse": 0.031134391562742603
+        "probabilityImprovement": 0.49609375,
+        "probabilityMcse": 0.031249046311131234
       }
     },
     "KC": {
       "configuration": {
         "team": "KC",
         "draftSeed": "redraft-validation-2026-11-02",
-        "engineVersion": "redraft-research-0.9-schedule-exposure",
+        "engineVersion": "redraft-research-0.10-team-cpu-prior",
         "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-exposure-v2+prior-utilization-policy-v1:a2667b83e75f+scoring-trailing3-v1",
         "datasetVersion": "nflverse-2018-combine-only-v2"
       },
@@ -878,21 +878,21 @@
       ],
       "convergence": {
         "replicates": 256,
-        "pairedMeanWinDifference": 1.25,
-        "pairedStandardError": 0.19725443905141957,
+        "pairedMeanWinDifference": 0.9453125,
+        "pairedStandardError": 0.19361888253953397,
         "mean95Interval": [
-          0.8633812994592176,
-          1.6366187005407824
+          0.5658194902225134,
+          1.3248055097774865
         ],
-        "probabilityImprovement": 0.5859375,
-        "probabilityMcse": 0.030784961457320535
+        "probabilityImprovement": 0.5234375,
+        "probabilityMcse": 0.031215648844579315
       }
     },
     "NE": {
       "configuration": {
         "team": "NE",
         "draftSeed": "redraft-validation-2026-11-02",
-        "engineVersion": "redraft-research-0.9-schedule-exposure",
+        "engineVersion": "redraft-research-0.10-team-cpu-prior",
         "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-exposure-v2+prior-utilization-policy-v1:a2667b83e75f+scoring-trailing3-v1",
         "datasetVersion": "nflverse-2018-combine-only-v2"
       },
@@ -920,21 +920,21 @@
       ],
       "convergence": {
         "replicates": 256,
-        "pairedMeanWinDifference": -0.8203125,
-        "pairedStandardError": 0.21500592698026294,
+        "pairedMeanWinDifference": -0.265625,
+        "pairedStandardError": 0.22202339003591315,
         "mean95Interval": [
-          -1.2417241168813153,
-          -0.39890088311868466
+          -0.7007908444703898,
+          0.16954084447038975
         ],
-        "probabilityImprovement": 0.34765625,
-        "probabilityMcse": 0.02976413673024351
+        "probabilityImprovement": 0.42578125,
+        "probabilityMcse": 0.030903805966839813
       }
     },
     "SF": {
       "configuration": {
         "team": "SF",
         "draftSeed": "redraft-validation-2026-11-02",
-        "engineVersion": "redraft-research-0.9-schedule-exposure",
+        "engineVersion": "redraft-research-0.10-team-cpu-prior",
         "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-exposure-v2+prior-utilization-policy-v1:a2667b83e75f+scoring-trailing3-v1",
         "datasetVersion": "nflverse-2018-combine-only-v2"
       },
@@ -962,14 +962,14 @@
       ],
       "convergence": {
         "replicates": 256,
-        "pairedMeanWinDifference": 0.46484375,
-        "pairedStandardError": 0.20192409307718306,
+        "pairedMeanWinDifference": 0.2265625,
+        "pairedStandardError": 0.20204451978432242,
         "mean95Interval": [
-          0.06907252756872118,
-          0.8606149724312788
+          -0.16944475877727194,
+          0.6225697587772719
         ],
-        "probabilityImprovement": 0.49609375,
-        "probabilityMcse": 0.031249046311131234
+        "probabilityImprovement": 0.4765625,
+        "probabilityMcse": 0.031215648844579315
       }
     }
   },

@@ -1,3 +1,5 @@
+> The [latest fixture and Pages review](FIXTURE_REVIEW.md) supersedes the earlier CPU, test and delivery status below.
+
 # REDRAFT review · November 19, 2026, Chicago
 
 **Research alpha. Production and scientific clearance withheld.** The review build covers the 2018 through 2026 draft classes. It has two playable modes. Observed records are restricted to completed seasons. Each draft forecasts five seasons, so recent classes include future projections.

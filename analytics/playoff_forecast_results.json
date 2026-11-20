@@ -29,10 +29,11 @@
     "dependence": "Origins' horizons overlap actual team-seasons; aggregate row count is not independent sample size; seed Monte Carlo uncertainty is not generalization uncertainty"
   },
   "sourceHashes": {
-    "lib/engine.ts": "e5e0bb35be07a01ea133331a200a15593b706772cf625c523e48e96d9b9b37f3",
+    "lib/engine.ts": "3ccb1d7fda59fa60ea691e154a89776896b24b347ec6ec2c2a596686e7cb3918",
     "lib/simulation.ts": "e03f6afab57ae9c5288eaa343e58a9f977e2dee51c73ab77f06cdf6d75ac49ca",
     "lib/scouting.ts": "751b61f9f77e62c64e1623831dc75144b48d691f63497eb78298a978e63b6ca8",
     "lib/server-data.ts": "0ede48d68b376a2ad5adb3633680bfa0f067e3a2469aeff3d3b10338fb556be3",
+    "analytics/cpu-position-capital-v1.json": "a871357b55b4ac780f2eb63a12980610b49666b146dae11f8eeeb94e63aac971",
     "analytics/model.json": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0",
     "analytics/five_year_strict_2018.json": "a717e2d683ab57c8f79f963d672598810593bae69945c8d00db82857d6c647e1",
     "analytics/scoring_recalibration.json": "cd91ac43583c3186c18ec760fa860b5e3fae59aedaedf0cadb4b0cef90ec3377",
@@ -439,7 +440,7 @@
       "observedPrevalence": 0.4375
     }
   },
-  "runtimeMilliseconds": 23938.431674000003,
+  "runtimeMilliseconds": 22084.394564,
   "rows": [
     {
       "origin": 2018,

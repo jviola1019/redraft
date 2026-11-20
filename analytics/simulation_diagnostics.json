@@ -5,7 +5,7 @@
   "configuration": {
     "team": "CLE",
     "draftSeed": "redraft-validation-2026-11-02",
-    "engineVersion": "redraft-research-0.9-schedule-exposure",
+    "engineVersion": "redraft-research-0.10-team-cpu-prior",
     "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-exposure-v2+prior-utilization-policy-v1:a2667b83e75f+scoring-trailing3-v1",
     "datasetVersion": "nflverse-2018-combine-only-v2"
   },
@@ -241,69 +241,69 @@
   "convergence": [
     {
       "replicates": 8,
-      "pairedMeanWinDifference": 1.5,
-      "pairedStandardError": 1.7423301310929238,
+      "pairedMeanWinDifference": 1,
+      "pairedStandardError": 0.7319250547113998,
       "mean95Interval": [
-        -1.9149670569421304,
-        4.91496705694213
+        -0.4345731072343435,
+        2.4345731072343435
       ],
-      "probabilityImprovement": 0.625,
-      "probabilityMcse": 0.1711632992203644
+      "probabilityImprovement": 0.75,
+      "probabilityMcse": 0.15309310892394862
     },
     {
       "replicates": 16,
-      "pairedMeanWinDifference": 1.75,
-      "pairedStandardError": 0.8920949127381756,
+      "pairedMeanWinDifference": 1.1875,
+      "pairedStandardError": 0.7315437444199766,
       "mean95Interval": [
-        0.0014939710331758338,
-        3.4985060289668244
+        -0.24632573906315414,
+        2.6213257390631544
       ],
-      "probabilityImprovement": 0.75,
-      "probabilityMcse": 0.10825317547305482
+      "probabilityImprovement": 0.8125,
+      "probabilityMcse": 0.09757809372497497
     },
     {
       "replicates": 32,
-      "pairedMeanWinDifference": 1.40625,
-      "pairedStandardError": 0.6235618534521216,
+      "pairedMeanWinDifference": 1,
+      "pairedStandardError": 0.506012240066161,
       "mean95Interval": [
-        0.1840687672338417,
-        2.6284312327661583
+        0.008216009470324526,
+        1.9917839905296755
       ],
-      "probabilityImprovement": 0.59375,
-      "probabilityMcse": 0.08682074519880027
+      "probabilityImprovement": 0.65625,
+      "probabilityMcse": 0.08396166117267452
     },
     {
       "replicates": 64,
-      "pairedMeanWinDifference": 0.53125,
-      "pairedStandardError": 0.4027243225338116,
+      "pairedMeanWinDifference": 0.734375,
+      "pairedStandardError": 0.4399687643922839,
       "mean95Interval": [
-        -0.25808967216627066,
-        1.3205896721662707
+        -0.1279637782088764,
+        1.5967137782088763
       ],
-      "probabilityImprovement": 0.46875,
-      "probabilityMcse": 0.06237781024480981
+      "probabilityImprovement": 0.609375,
+      "probabilityMcse": 0.060986308578109355
     },
     {
       "replicates": 128,
-      "pairedMeanWinDifference": 0.3203125,
-      "pairedStandardError": 0.2988522981030041,
+      "pairedMeanWinDifference": 0.4921875,
+      "pairedStandardError": 0.288816332188689,
       "mean95Interval": [
-        -0.265438004281888,
-        0.906063004281888
+        -0.07389251108983041,
+        1.0582675110898303
       ],
-      "probabilityImprovement": 0.4609375,
+      "probabilityImprovement": 0.5390625,
       "probabilityMcse": 0.044059097483322575
     },
     {
       "replicates": 256,
-      "pairedMeanWinDifference": 0.109375,
-      "pairedStandardError": 0.222540255088386,
+      "pairedMeanWinDifference": 0.4609375,
+      "pairedStandardError": 0.22960995589788016,
       "mean95Interval": [
-        -0.32680389997323656,
-        0.5455538999732366
+        0.010901986440154887,
+        0.9109730135598451
       ],
-      "probabilityImprovement": 0.45703125,
-      "probabilityMcse": 0.031134391562742603
+      "probabilityImprovement": 0.49609375,
+      "probabilityMcse": 0.031249046311131234
     }
   ],
   "distributionFlags": [
@@ -327,9 +327,9 @@
     }
   ],
   "performance": {
-    "draftMilliseconds": 252.99015899999995,
-    "simulationMilliseconds": 11526.464262,
-    "millisecondsPerPairedFiveSeasonReplicate": 45.0252510234375,
+    "draftMilliseconds": 135.16846599999997,
+    "simulationMilliseconds": 11583.80233,
+    "millisecondsPerPairedFiveSeasonReplicate": 45.2492278515625,
     "hardware": {
       "platform": "linux",
       "arch": "x64",
@@ -340,10 +340,11 @@
     }
   },
   "sourceHashes": {
-    "lib/engine.ts": "e5e0bb35be07a01ea133331a200a15593b706772cf625c523e48e96d9b9b37f3",
+    "lib/engine.ts": "3ccb1d7fda59fa60ea691e154a89776896b24b347ec6ec2c2a596686e7cb3918",
     "lib/simulation.ts": "e03f6afab57ae9c5288eaa343e58a9f977e2dee51c73ab77f06cdf6d75ac49ca",
     "lib/scouting.ts": "751b61f9f77e62c64e1623831dc75144b48d691f63497eb78298a978e63b6ca8",
     "lib/server-data.ts": "0ede48d68b376a2ad5adb3633680bfa0f067e3a2469aeff3d3b10338fb556be3",
+    "analytics/cpu-position-capital-v1.json": "a871357b55b4ac780f2eb63a12980610b49666b146dae11f8eeeb94e63aac971",
     "analytics/model.json": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0",
     "analytics/five_year_strict_2018.json": "a717e2d683ab57c8f79f963d672598810593bae69945c8d00db82857d6c647e1",
     "analytics/scoring_recalibration.json": "cd91ac43583c3186c18ec760fa860b5e3fae59aedaedf0cadb4b0cef90ec3377",

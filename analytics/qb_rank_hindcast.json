@@ -174,7 +174,7 @@
     "data/raw/games.csv": "369967042aac4f7b431c8644c197c6829e8428f7776058e4a058506ea4dece76",
     "analytics/five_year_strict_2018.json": "a717e2d683ab57c8f79f963d672598810593bae69945c8d00db82857d6c647e1",
     "analytics/five_year_frozen_2018_predictions.csv": "a12e376e85bb09048b84f399da99d4b52e699922ac49023ab65e8c7de46d5094",
-    "analytics/forecast_audit.json": "c457016043462943bdc4ab89689b04f80633d0fcba2cca72de9c3008eb633eef",
+    "analytics/forecast_audit.json": "a31c9f9fadc8be9b7fefc44b7edc8884f6459fa5cb1c078cb3723de943a45ed7",
     "analytics/forecast_audit.py": "152b7587d4c8255e6f51e7198a7136d3b2405ad83eb18ae8fcf9ad45f6488197",
     "analytics/qb_five_year_hindcast.py": "7c31d21145f7c03c85f361f8205c9e3e04fd314e173bef39b3f5f24eb3df6d64",
     "analytics/five_year.py": "f66e57954eeafb6258f88ec558a643f4c02c1d8379fa72d5c1a58ccf9b7dc06e",
