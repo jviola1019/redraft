@@ -65,7 +65,10 @@ class StatisticalAuditChecks(unittest.TestCase):
         self.assertEqual(statuses['strict_label_cutoff'],'pass')
         self.assertEqual(statuses['strict_independent_chronological_validation'],'unsupported')
         self.assertEqual(statuses['coverage95_QB_snaps'],'fail')
-        self.assertEqual(statuses['coverage95_LB_snaps'],'fail')
+        rows=pd.read_csv(fa.A/'forecast_audit_predictions.csv')
+        lb=rows[rows.position=='LB']
+        covered=lb.snaps_actual.between(lb.snaps_lower95,lb.snaps_upper95).mean()
+        self.assertEqual(statuses['coverage95_LB_snaps'], 'pass' if covered>=.90 else 'fail')
         self.assertEqual(result['releaseStatus'],'blocked')
 
     def test_exact_forecast_metrics_from_saved_rows(self):

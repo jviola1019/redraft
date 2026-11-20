@@ -553,7 +553,7 @@
   },
   "runtimeArtifactChanged": false,
   "futureOutcomePoisoningTest": "passed",
-  "sourceHash": "924d1b149d01b3aa6fc87c64116a489d44f50f4d8eac4bf8c8874bec6f1b75d3",
+  "sourceHash": "369967042aac4f7b431c8644c197c6829e8428f7776058e4a058506ea4dece76",
   "decision": "Candidate supported for recency of unconditional total only; requires integrated simulation validation before adoption.",
   "limitations": [
     "Design responds to already examined post2017 scoring failures; no new untouched test claim.",

@@ -1,8 +1,8 @@
 {
-  "version": "exact-donor-audit-v1",
+  "version": "exact-donor-audit-v2-schedule-exposure",
   "asOf": "2026-11-04",
   "evaluationStatus": "Reused 2018 historical backtest; no new untouched test claim.",
-  "runtimeArtifactChanged": false,
+  "runtimeArtifactChanged": true,
   "cohort": 2018,
   "outcomeSeasons": [
     2018,
@@ -13,6 +13,7 @@
     2013
   ],
   "methods": {
+    "scheduleExposure": "Donor snaps scale by target scheduled games / 16; games scale, round half up, and cap at target schedule length. Actual outcomes unchanged.",
     "quantiles": "left inverse of exact weighted empirical CDF",
     "distributionScore": "CRPS, exact finite mixture; lower is better",
     "intervalScore": "proper interval score includes misses and width; lower is better",
@@ -21,120 +22,120 @@
   "overall": {
     "snaps": {
       "n": 287,
-      "mae": 1175.7830214496696,
-      "rmse": 1469.4362003948102,
-      "meanCrps": 788.254743614644,
-      "outsideDonorSupport": 12,
+      "mae": 1178.297070382774,
+      "rmse": 1466.5727262586654,
+      "meanCrps": 786.8365398637874,
+      "outsideDonorSupport": 11,
       "interval80": {
-        "coverage": 0.867595818815331,
-        "covered": 249,
+        "coverage": 0.8815331010452961,
+        "covered": 253,
         "wilson95": [
-          0.8234871760757962,
-          0.9019939876329961
+          0.8390138106796764,
+          0.9139737478616766
         ],
-        "meanWidth": 3251.94425087108,
-        "meanIntervalScore": 4484.313588850174
+        "meanWidth": 3333.339285714286,
+        "meanIntervalScore": 4480.477787456446
       },
       "interval95": {
-        "coverage": 0.9372822299651568,
-        "covered": 269,
+        "coverage": 0.9477351916376306,
+        "covered": 272,
         "wilson95": [
-          0.9030498356138723,
-          0.9599633022577241
+          0.9155686414401794,
+          0.9680742925558379
         ],
-        "meanWidth": 4095.1951219512193,
-        "meanIntervalScore": 5990.526132404179
+        "meanWidth": 4196.250871080139,
+        "meanIntervalScore": 5900.850174216026
       }
     },
     "games": {
       "n": 287,
-      "mae": 25.035148754216504,
-      "rmse": 28.27371558902265,
-      "meanCrps": 16.321293596686598,
-      "outsideDonorSupport": 15,
+      "mae": 24.894857936522087,
+      "rmse": 28.11782627404443,
+      "meanCrps": 16.21908781606833,
+      "outsideDonorSupport": 8,
       "interval80": {
-        "coverage": 0.8432055749128919,
-        "covered": 242,
+        "coverage": 0.8571428571428571,
+        "covered": 246,
         "wilson95": [
-          0.7966392973500114,
-          0.8807056754017994
+          0.8119341006940494,
+          0.8929172668903221
         ],
-        "meanWidth": 68.70383275261324,
-        "meanIntervalScore": 82.9198606271777
+        "meanWidth": 70.54703832752614,
+        "meanIntervalScore": 82.21951219512195
       },
       "interval95": {
-        "coverage": 0.9372822299651568,
-        "covered": 269,
+        "coverage": 0.9581881533101045,
+        "covered": 275,
         "wilson95": [
-          0.9030498356138723,
-          0.9599633022577241
+          0.928350070602013,
+          0.9759226595184248
         ],
-        "meanWidth": 76.7630662020906,
-        "meanIntervalScore": 88.88850174216027
+        "meanWidth": 78.7630662020906,
+        "meanIntervalScore": 86.28919860627178
       }
     }
   },
   "positionBaseline": {
     "snaps": {
       "n": 287,
-      "mae": 1206.1433668030263,
-      "rmse": 1514.8654456645338,
-      "meanCrps": 817.1897064366026,
-      "outsideDonorSupport": 12,
+      "mae": 1208.9564276576114,
+      "rmse": 1510.906971070328,
+      "meanCrps": 815.3867877185772,
+      "outsideDonorSupport": 11,
       "interval80": {
-        "coverage": 0.8606271777003485,
-        "covered": 247,
+        "coverage": 0.8745644599303136,
+        "covered": 251,
         "wilson95": [
-          0.8157769283910112,
-          0.8959510379015008
+          0.8312320025103654,
+          0.9080023586147075
         ],
-        "meanWidth": 3256.4773519163764,
-        "meanIntervalScore": 4591.285714285715
+        "meanWidth": 3348.098867595819,
+        "meanIntervalScore": 4570.527003484321
       },
       "interval95": {
-        "coverage": 0.9372822299651568,
-        "covered": 269,
+        "coverage": 0.9442508710801394,
+        "covered": 271,
         "wilson95": [
-          0.9030498356138723,
-          0.9599633022577241
+          0.911369857474451,
+          0.965396477813426
         ],
-        "meanWidth": 4224.759581881533,
-        "meanIntervalScore": 6214.585365853657
+        "meanWidth": 4328.792465156795,
+        "meanIntervalScore": 6111.466681184667
       }
     },
     "games": {
       "n": 287,
-      "mae": 25.562120855378808,
-      "rmse": 28.66685938841023,
-      "meanCrps": 16.578288540580843,
-      "outsideDonorSupport": 15,
+      "mae": 25.39845704386174,
+      "rmse": 28.476987524536323,
+      "meanCrps": 16.466871802098606,
+      "outsideDonorSupport": 8,
       "interval80": {
-        "coverage": 0.8362369337979094,
-        "covered": 240,
+        "coverage": 0.8571428571428571,
+        "covered": 246,
         "wilson95": [
-          0.7890349182851003,
-          0.8745568570504302
+          0.8119341006940494,
+          0.8929172668903221
         ],
-        "meanWidth": 69.81533101045297,
-        "meanIntervalScore": 84.2404181184669
+        "meanWidth": 71.70383275261324,
+        "meanIntervalScore": 83.27177700348432
       },
       "interval95": {
-        "coverage": 0.9233449477351916,
-        "covered": 265,
+        "coverage": 0.9547038327526133,
+        "covered": 274,
         "wilson95": [
-          0.8866708759751792,
-          0.9488358670638565
+          0.9240557182400575,
+          0.9733404131722403
         ],
-        "meanWidth": 76.64808362369338,
-        "meanIntervalScore": 89.33101045296168
+        "meanWidth": 78.64808362369338,
+        "meanIntervalScore": 86.03484320557492
       }
     }
   },
   "pairedCrpsVsPositionBaseline": {
-    "difference": -28.934962821958486,
+    "difference": -28.550247854789824,
     "playerBootstrap95": [
-      -66.11187002107738,
-      6.196063737187829
+      -65.73138960814241,
+      6.811460264899577
     ],
     "resamples": 2000,
     "note": "One cohort; does not measure between-era or team clustering uncertainty."
@@ -149,9 +150,9 @@
       },
       "snaps": {
         "n": 58,
-        "mae": 1303.547573501326,
-        "rmse": 1533.8178088340155,
-        "meanCrps": 854.3452930280871,
+        "mae": 1306.6372816244282,
+        "rmse": 1529.652442909087,
+        "meanCrps": 853.607227077736,
         "outsideDonorSupport": 3,
         "interval80": {
           "coverage": 0.9137931034482759,
@@ -160,26 +161,26 @@
             0.8135637093712647,
             0.962614616873809
           ],
-          "meanWidth": 4042.103448275862,
-          "meanIntervalScore": 4764.862068965517
+          "meanWidth": 4151.396551724138,
+          "meanIntervalScore": 4791.6551724137935
         },
         "interval95": {
-          "coverage": 0.9137931034482759,
-          "covered": 53,
+          "coverage": 0.9310344827586207,
+          "covered": 54,
           "wilson95": [
-            0.8135637093712647,
-            0.962614616873809
+            0.8356633368561964,
+            0.9728557529824217
           ],
-          "meanWidth": 4496.741379310345,
-          "meanIntervalScore": 5709.155172413792
+          "meanWidth": 4590.307112068966,
+          "meanIntervalScore": 5500.35021551724
         }
       },
       "games": {
         "n": 58,
-        "mae": 22.197659629511428,
-        "rmse": 25.37145968793346,
-        "meanCrps": 14.828526290273276,
-        "outsideDonorSupport": 1,
+        "mae": 21.87480581615042,
+        "rmse": 25.030686599139433,
+        "meanCrps": 14.761129104919409,
+        "outsideDonorSupport": 0,
         "interval80": {
           "coverage": 0.9137931034482759,
           "covered": 53,
@@ -187,18 +188,18 @@
             0.8135637093712647,
             0.962614616873809
           ],
-          "meanWidth": 74.01724137931035,
-          "meanIntervalScore": 78.32758620689656
+          "meanWidth": 76.01724137931035,
+          "meanIntervalScore": 78.60344827586206
         },
         "interval95": {
-          "coverage": 0.9827586206896551,
-          "covered": 57,
+          "coverage": 1.0,
+          "covered": 58,
           "wilson95": [
-            0.9085914190653199,
-            0.9969499615539326
+            0.9378821442127971,
+            1.0
           ],
-          "meanWidth": 79.0,
-          "meanIntervalScore": 79.6896551724138
+          "meanWidth": 81.0,
+          "meanIntervalScore": 81.0
         }
       }
     },
@@ -211,19 +212,19 @@
       },
       "snaps": {
         "n": 36,
-        "mae": 1008.8320987008772,
-        "rmse": 1161.7122229059344,
-        "meanCrps": 656.4386193769632,
+        "mae": 1010.3624329031611,
+        "rmse": 1161.2042946572485,
+        "meanCrps": 655.4363757882229,
         "outsideDonorSupport": 1,
         "interval80": {
-          "coverage": 0.8333333333333334,
-          "covered": 30,
+          "coverage": 0.8611111111111112,
+          "covered": 31,
           "wilson95": [
-            0.6810920568872054,
-            0.9212955240498188
+            0.713404696106438,
+            0.9391818499086717
           ],
-          "meanWidth": 2789.6666666666665,
-          "meanIntervalScore": 3421.6111111111113
+          "meanWidth": 2860.9149305555557,
+          "meanIntervalScore": 3434.9427083333335
         },
         "interval95": {
           "coverage": 0.9722222222222222,
@@ -232,35 +233,35 @@
             0.8583028134672614,
             0.9950795928601897
           ],
-          "meanWidth": 3549.3055555555557,
-          "meanIntervalScore": 4045.972222222222
+          "meanWidth": 3639.690972222222,
+          "meanIntervalScore": 4038.09375
         }
       },
       "games": {
         "n": 36,
-        "mae": 26.95126246306043,
-        "rmse": 29.608394692834228,
-        "meanCrps": 17.26344881735861,
-        "outsideDonorSupport": 2,
+        "mae": 27.00261034853801,
+        "rmse": 29.7202768776576,
+        "meanCrps": 17.233715396943587,
+        "outsideDonorSupport": 0,
         "interval80": {
-          "coverage": 0.75,
-          "covered": 27,
+          "coverage": 0.7777777777777778,
+          "covered": 28,
           "wilson95": [
-            0.5892954623327166,
-            0.8624952233700517
+            0.6191529705388181,
+            0.8828366802420353
           ],
-          "meanWidth": 72.13888888888889,
-          "meanIntervalScore": 85.19444444444444
+          "meanWidth": 74.13888888888889,
+          "meanIntervalScore": 83.58333333333333
         },
         "interval95": {
-          "coverage": 0.8888888888888888,
-          "covered": 32,
+          "coverage": 0.9444444444444444,
+          "covered": 34,
           "wilson95": [
-            0.7468519140963513,
-            0.9559335969968435
+            0.8185534279135275,
+            0.9846300133358382
           ],
-          "meanWidth": 78.11111111111111,
-          "meanIntervalScore": 91.44444444444443
+          "meanWidth": 80.11111111111111,
+          "meanIntervalScore": 85.66666666666667
         }
       }
     },
@@ -273,10 +274,10 @@
       },
       "snaps": {
         "n": 48,
-        "mae": 1179.9461901452992,
-        "rmse": 1523.4448709585333,
-        "meanCrps": 789.5515277695873,
-        "outsideDonorSupport": 4,
+        "mae": 1184.922264008191,
+        "rmse": 1519.844077655745,
+        "meanCrps": 787.5005669908961,
+        "outsideDonorSupport": 3,
         "interval80": {
           "coverage": 0.8333333333333334,
           "covered": 40,
@@ -284,35 +285,8 @@
             0.7042217159874441,
             0.9130448642351444
           ],
-          "meanWidth": 2821.8125,
-          "meanIntervalScore": 5064.729166666667
-        },
-        "interval95": {
-          "coverage": 0.875,
-          "covered": 42,
-          "wilson95": [
-            0.7529954171361317,
-            0.9414294856142802
-          ],
-          "meanWidth": 4184.0,
-          "meanIntervalScore": 5477.333333333332
-        }
-      },
-      "games": {
-        "n": 48,
-        "mae": 25.835326630840456,
-        "rmse": 28.588219882498574,
-        "meanCrps": 16.532469196059267,
-        "outsideDonorSupport": 3,
-        "interval80": {
-          "coverage": 0.7916666666666666,
-          "covered": 38,
-          "wilson95": [
-            0.6574109872738206,
-            0.882697270420944
-          ],
-          "meanWidth": 66.125,
-          "meanIntervalScore": 85.5
+          "meanWidth": 2892.83203125,
+          "meanIntervalScore": 5024.654947916667
         },
         "interval95": {
           "coverage": 0.9166666666666666,
@@ -321,8 +295,35 @@
             0.8044669820963272,
             0.9671162431819081
           ],
-          "meanWidth": 76.5,
-          "meanIntervalScore": 85.66666666666667
+          "meanWidth": 4310.5,
+          "meanIntervalScore": 5093.0
+        }
+      },
+      "games": {
+        "n": 48,
+        "mae": 25.7060714744302,
+        "rmse": 28.393220142158366,
+        "meanCrps": 16.357888909457696,
+        "outsideDonorSupport": 2,
+        "interval80": {
+          "coverage": 0.7916666666666666,
+          "covered": 38,
+          "wilson95": [
+            0.6574109872738206,
+            0.882697270420944
+          ],
+          "meanWidth": 68.125,
+          "meanIntervalScore": 83.33333333333333
+        },
+        "interval95": {
+          "coverage": 0.9375,
+          "covered": 45,
+          "wilson95": [
+            0.8316456194505365,
+            0.9785167670916107
+          ],
+          "meanWidth": 78.5,
+          "meanIntervalScore": 81.83333333333333
         }
       }
     },
@@ -335,19 +336,19 @@
       },
       "snaps": {
         "n": 46,
-        "mae": 1576.4553661420287,
-        "rmse": 1814.6304374466283,
-        "meanCrps": 996.3234744362659,
+        "mae": 1582.1161024802818,
+        "rmse": 1815.3720596055286,
+        "meanCrps": 996.0962047915417,
         "outsideDonorSupport": 0,
         "interval80": {
-          "coverage": 0.8478260869565217,
-          "covered": 39,
+          "coverage": 0.8913043478260869,
+          "covered": 41,
           "wilson95": [
-            0.71775860447939,
-            0.9242771777219454
+            0.7696217135574916,
+            0.9526685414190106
           ],
-          "meanWidth": 4441.434782608696,
-          "meanIntervalScore": 5096.652173913043
+          "meanWidth": 4553.869565217391,
+          "meanIntervalScore": 5055.146739130435
         },
         "interval95": {
           "coverage": 0.9782608695652174,
@@ -356,25 +357,25 @@
             0.8866470547848865,
             0.9961521457419497
           ],
-          "meanWidth": 5039.782608695652,
-          "meanIntervalScore": 5514.565217391304
+          "meanWidth": 5165.119565217391,
+          "meanIntervalScore": 5532.130434782609
         }
       },
       "games": {
         "n": 46,
-        "mae": 26.916805534989646,
-        "rmse": 29.548433224144688,
-        "meanCrps": 16.83150733479978,
-        "outsideDonorSupport": 1,
+        "mae": 26.72149553334926,
+        "rmse": 29.436532397475307,
+        "meanCrps": 16.714492560475914,
+        "outsideDonorSupport": 0,
         "interval80": {
-          "coverage": 0.8478260869565217,
-          "covered": 39,
+          "coverage": 0.8695652173913043,
+          "covered": 40,
           "wilson95": [
-            0.71775860447939,
-            0.9242771777219454
+            0.74334142220927,
+            0.9388215963796489
           ],
-          "meanWidth": 71.56521739130434,
-          "meanIntervalScore": 80.47826086956522
+          "meanWidth": 73.45652173913044,
+          "meanIntervalScore": 79.76086956521739
         },
         "interval95": {
           "coverage": 0.9782608695652174,
@@ -383,8 +384,8 @@
             0.8866470547848865,
             0.9961521457419497
           ],
-          "meanWidth": 78.80434782608695,
-          "meanIntervalScore": 84.02173913043478
+          "meanWidth": 80.80434782608695,
+          "meanIntervalScore": 84.28260869565217
         }
       }
     },
@@ -397,9 +398,9 @@
       },
       "snaps": {
         "n": 16,
-        "mae": 1233.885201440625,
-        "rmse": 1979.7497044528177,
-        "meanCrps": 1026.179664913499,
+        "mae": 1234.6698246359592,
+        "rmse": 1977.0736082507497,
+        "meanCrps": 1024.5252685466912,
         "outsideDonorSupport": 4,
         "interval80": {
           "coverage": 0.75,
@@ -408,8 +409,8 @@
             0.5050168346449122,
             0.8981793250878696
           ],
-          "meanWidth": 1387.4375,
-          "meanIntervalScore": 8592.4375
+          "meanWidth": 1401.45703125,
+          "meanIntervalScore": 8572.62890625
         },
         "interval95": {
           "coverage": 0.75,
@@ -418,15 +419,15 @@
             0.5050168346449122,
             0.8981793250878696
           ],
-          "meanWidth": 1965.0,
-          "meanIntervalScore": 24869.99999999998
+          "meanWidth": 1971.1875,
+          "meanIntervalScore": 24814.31249999998
         }
       },
       "games": {
         "n": 16,
-        "mae": 20.89921523402778,
-        "rmse": 29.874251891230777,
-        "meanCrps": 15.539583326185731,
+        "mae": 20.953197227430554,
+        "rmse": 29.81003455349742,
+        "meanCrps": 15.49352424392241,
         "outsideDonorSupport": 3,
         "interval80": {
           "coverage": 0.75,
@@ -445,8 +446,8 @@
             0.5699111903802586,
             0.9340840092857187
           ],
-          "meanWidth": 61.0,
-          "meanIntervalScore": 150.99999999999991
+          "meanWidth": 63.0,
+          "meanIntervalScore": 137.99999999999994
         }
       }
     },
@@ -459,9 +460,9 @@
       },
       "snaps": {
         "n": 28,
-        "mae": 672.8013792487205,
-        "rmse": 790.5801978910449,
-        "meanCrps": 426.921880658606,
+        "mae": 678.0996709674725,
+        "rmse": 792.7042828537026,
+        "meanCrps": 427.4167620632593,
         "outsideDonorSupport": 0,
         "interval80": {
           "coverage": 0.9285714285714286,
@@ -470,8 +471,8 @@
             0.7735463743160095,
             0.9801879358846942
           ],
-          "meanWidth": 2299.714285714286,
-          "meanIntervalScore": 2485.4285714285716
+          "meanWidth": 2339.6160714285716,
+          "meanIntervalScore": 2486.223214285714
         },
         "interval95": {
           "coverage": 1.0,
@@ -480,15 +481,15 @@
             0.8793566952341543,
             0.9999999999999998
           ],
-          "meanWidth": 3479.0,
-          "meanIntervalScore": 3479.0
+          "meanWidth": 3579.1785714285716,
+          "meanIntervalScore": 3579.1785714285716
         }
       },
       "games": {
         "n": 28,
-        "mae": 24.194593216715266,
-        "rmse": 26.677124109053384,
-        "meanCrps": 15.231768548937373,
+        "mae": 24.18333964275996,
+        "rmse": 26.675779151527365,
+        "meanCrps": 15.193352757615157,
         "outsideDonorSupport": 2,
         "interval80": {
           "coverage": 0.8928571428571429,
@@ -497,8 +498,8 @@
             0.7280414845132785,
             0.9628816331707
           ],
-          "meanWidth": 64.57142857142857,
-          "meanIntervalScore": 75.64285714285714
+          "meanWidth": 66.57142857142857,
+          "meanIntervalScore": 75.5
         },
         "interval95": {
           "coverage": 0.9285714285714286,
@@ -507,8 +508,8 @@
             0.7735463743160095,
             0.9801879358846942
           ],
-          "meanWidth": 70.85714285714286,
-          "meanIntervalScore": 90.85714285714285
+          "meanWidth": 72.85714285714286,
+          "meanIntervalScore": 87.14285714285712
         }
       }
     },
@@ -521,19 +522,19 @@
       },
       "snaps": {
         "n": 16,
-        "mae": 1134.8861987795917,
-        "rmse": 1276.5629383737514,
-        "meanCrps": 769.8159595619111,
+        "mae": 1123.3235346723852,
+        "rmse": 1259.7105783298966,
+        "meanCrps": 762.2404479198847,
         "outsideDonorSupport": 0,
         "interval80": {
-          "coverage": 0.9375,
-          "covered": 15,
+          "coverage": 1.0,
+          "covered": 16,
           "wilson95": [
-            0.7167126242970107,
-            0.9888806552353576
+            0.8063923194655637,
+            1.0
           ],
-          "meanWidth": 3349.125,
-          "meanIntervalScore": 3388.5
+          "meanWidth": 3459.0625,
+          "meanIntervalScore": 3459.0625
         },
         "interval95": {
           "coverage": 1.0,
@@ -542,35 +543,35 @@
             0.8063923194655637,
             1.0
           ],
-          "meanWidth": 3452.0,
-          "meanIntervalScore": 3452.0
+          "meanWidth": 3553.5625,
+          "meanIntervalScore": 3553.5625
         }
       },
       "games": {
         "n": 16,
-        "mae": 28.139749554545457,
-        "rmse": 30.95457983262574,
-        "meanCrps": 18.161655734669445,
-        "outsideDonorSupport": 3,
+        "mae": 27.71696871298701,
+        "rmse": 30.42081507099175,
+        "meanCrps": 17.720797504164942,
+        "outsideDonorSupport": 1,
         "interval80": {
-          "coverage": 0.6875,
-          "covered": 11,
+          "coverage": 0.75,
+          "covered": 12,
           "wilson95": [
-            0.44404355834740666,
-            0.8583535614521796
+            0.5050168346449122,
+            0.8981793250878696
           ],
-          "meanWidth": 73.6875,
-          "meanIntervalScore": 89.3125
+          "meanWidth": 75.6875,
+          "meanIntervalScore": 85.0625
         },
         "interval95": {
-          "coverage": 0.8125,
-          "covered": 13,
+          "coverage": 0.9375,
+          "covered": 15,
           "wilson95": [
-            0.5699111903802586,
-            0.9340840092857187
+            0.7167126242970107,
+            0.9888806552353576
           ],
-          "meanWidth": 79.0,
-          "meanIntervalScore": 96.49999999999999
+          "meanWidth": 81.0,
+          "meanIntervalScore": 83.5
         }
       }
     },
@@ -583,9 +584,9 @@
       },
       "snaps": {
         "n": 39,
-        "mae": 1016.2273678910593,
-        "rmse": 1296.0235965703673,
-        "meanCrps": 734.0050850550554,
+        "mae": 1016.5373168876087,
+        "rmse": 1291.3759492531628,
+        "meanCrps": 731.8149949951758,
         "outsideDonorSupport": 0,
         "interval80": {
           "coverage": 0.8717948717948718,
@@ -594,8 +595,8 @@
             0.7329425662025455,
             0.9439718246302862
           ],
-          "meanWidth": 3038.6666666666665,
-          "meanIntervalScore": 3810.7179487179487
+          "meanWidth": 3109.81891025641,
+          "meanIntervalScore": 3807.2227564102564
         },
         "interval95": {
           "coverage": 0.9743589743589743,
@@ -604,25 +605,25 @@
             0.8681900983014993,
             0.99545929689901
           ],
-          "meanWidth": 4358.692307692308,
-          "meanIntervalScore": 4496.128205128205
+          "meanWidth": 4460.1233974358975,
+          "meanIntervalScore": 4515.572115384615
         }
       },
       "games": {
         "n": 39,
-        "mae": 25.30864630008288,
-        "rmse": 28.466682815643907,
-        "meanCrps": 17.15783017519817,
+        "mae": 25.25782378325822,
+        "rmse": 28.312563146139357,
+        "meanCrps": 17.113605390200856,
         "outsideDonorSupport": 0,
         "interval80": {
-          "coverage": 0.9487179487179487,
-          "covered": 37,
+          "coverage": 0.9743589743589743,
+          "covered": 38,
           "wilson95": [
-            0.8311435995238639,
-            0.9858220445847259
+            0.8681900983014993,
+            0.99545929689901
           ],
-          "meanWidth": 72.17948717948718,
-          "meanIntervalScore": 75.0
+          "meanWidth": 73.97435897435898,
+          "meanIntervalScore": 76.28205128205128
         },
         "interval95": {
           "coverage": 1.0,
@@ -631,8 +632,8 @@
             0.9103331462924287,
             1.0
           ],
-          "meanWidth": 79.8974358974359,
-          "meanIntervalScore": 79.8974358974359
+          "meanWidth": 81.8974358974359,
+          "meanIntervalScore": 81.8974358974359
         }
       }
     }
@@ -641,752 +642,752 @@
     {
       "seed": 2026110400,
       "drawsPerProspect": 256,
-      "rmsMeanApproximationError": 86.30306856722093,
+      "rmsMeanApproximationError": 88.4251679223158,
       "subgroups": {
         "DB": {
           "n": 58,
-          "coverage95": 0.9310344827586207,
-          "rmsMeanApproximationError": 108.7226446119396
+          "coverage95": 0.9482758620689655,
+          "rmsMeanApproximationError": 111.32764850641567
         },
         "DL": {
           "n": 36,
           "coverage95": 0.9444444444444444,
-          "rmsMeanApproximationError": 62.56425121233229
+          "rmsMeanApproximationError": 64.22663148713288
         },
         "LB": {
           "n": 48,
           "coverage95": 0.875,
-          "rmsMeanApproximationError": 82.0097324327904
+          "rmsMeanApproximationError": 84.29279071869196
         },
         "OL": {
           "n": 46,
           "coverage95": 0.9782608695652174,
-          "rmsMeanApproximationError": 111.1109857083051
+          "rmsMeanApproximationError": 113.73801517489608
         },
         "QB": {
           "n": 16,
           "coverage95": 0.75,
-          "rmsMeanApproximationError": 31.962509595852975
+          "rmsMeanApproximationError": 32.068543305486465
         },
         "RB": {
           "n": 28,
           "coverage95": 1.0,
-          "rmsMeanApproximationError": 56.32341042971299
+          "rmsMeanApproximationError": 57.89724358335352
         },
         "TE": {
           "n": 16,
           "coverage95": 1.0,
-          "rmsMeanApproximationError": 67.18470758671636
+          "rmsMeanApproximationError": 69.31530253549937
         },
         "WR": {
           "n": 39,
           "coverage95": 0.9743589743589743,
-          "rmsMeanApproximationError": 78.93672777462689
+          "rmsMeanApproximationError": 80.60660121833409
         }
       }
     },
     {
       "seed": 2026110401,
       "drawsPerProspect": 256,
-      "rmsMeanApproximationError": 84.03126083298856,
+      "rmsMeanApproximationError": 86.14410139043774,
       "subgroups": {
         "DB": {
           "n": 58,
           "coverage95": 0.9310344827586207,
-          "rmsMeanApproximationError": 85.40372887391057
+          "rmsMeanApproximationError": 87.9241038236351
         },
         "DL": {
           "n": 36,
           "coverage95": 0.9444444444444444,
-          "rmsMeanApproximationError": 59.5682210996801
+          "rmsMeanApproximationError": 61.1448840581625
         },
         "LB": {
           "n": 48,
-          "coverage95": 0.8958333333333334,
-          "rmsMeanApproximationError": 76.27391499478101
+          "coverage95": 0.9166666666666666,
+          "rmsMeanApproximationError": 78.40387821818157
         },
         "OL": {
           "n": 46,
           "coverage95": 0.9565217391304348,
-          "rmsMeanApproximationError": 122.14629724800206
+          "rmsMeanApproximationError": 124.85704425576903
         },
         "QB": {
           "n": 16,
           "coverage95": 0.75,
-          "rmsMeanApproximationError": 36.44464251240568
+          "rmsMeanApproximationError": 36.556576697844356
         },
         "RB": {
           "n": 28,
           "coverage95": 1.0,
-          "rmsMeanApproximationError": 64.61750869488145
+          "rmsMeanApproximationError": 66.1539329600311
         },
         "TE": {
           "n": 16,
-          "coverage95": 0.9375,
-          "rmsMeanApproximationError": 85.78431408560218
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 88.22042971350868
         },
         "WR": {
           "n": 39,
           "coverage95": 0.9743589743589743,
-          "rmsMeanApproximationError": 80.75515372238281
+          "rmsMeanApproximationError": 82.61502463288828
         }
       }
     },
     {
       "seed": 2026110402,
       "drawsPerProspect": 256,
-      "rmsMeanApproximationError": 83.3657755966516,
+      "rmsMeanApproximationError": 85.40526618588581,
       "subgroups": {
         "DB": {
           "n": 58,
-          "coverage95": 0.9310344827586207,
-          "rmsMeanApproximationError": 108.37099084552291
+          "coverage95": 0.9482758620689655,
+          "rmsMeanApproximationError": 111.10565438103255
         },
         "DL": {
           "n": 36,
           "coverage95": 0.9444444444444444,
-          "rmsMeanApproximationError": 58.07153773763672
+          "rmsMeanApproximationError": 59.667732150374306
         },
         "LB": {
           "n": 48,
-          "coverage95": 0.875,
-          "rmsMeanApproximationError": 78.83475722300025
+          "coverage95": 0.8958333333333334,
+          "rmsMeanApproximationError": 81.05185895003548
         },
         "OL": {
           "n": 46,
           "coverage95": 0.9782608695652174,
-          "rmsMeanApproximationError": 97.83208054724224
+          "rmsMeanApproximationError": 99.9438614292768
         },
         "QB": {
           "n": 16,
           "coverage95": 0.75,
-          "rmsMeanApproximationError": 33.114034743492944
+          "rmsMeanApproximationError": 33.231420762170096
         },
         "RB": {
           "n": 28,
           "coverage95": 1.0,
-          "rmsMeanApproximationError": 52.773070110630364
+          "rmsMeanApproximationError": 53.97828554691469
         },
         "TE": {
           "n": 16,
           "coverage95": 1.0,
-          "rmsMeanApproximationError": 69.96692415763171
+          "rmsMeanApproximationError": 71.60422059094246
         },
         "WR": {
           "n": 39,
           "coverage95": 0.9743589743589743,
-          "rmsMeanApproximationError": 84.67117122301039
+          "rmsMeanApproximationError": 86.69814608566072
         }
       }
     },
     {
       "seed": 2026110403,
       "drawsPerProspect": 256,
-      "rmsMeanApproximationError": 82.31586277511354,
+      "rmsMeanApproximationError": 84.42941786627789,
       "subgroups": {
         "DB": {
           "n": 58,
           "coverage95": 0.9310344827586207,
-          "rmsMeanApproximationError": 94.88442298788159
+          "rmsMeanApproximationError": 97.34409913463291
         },
         "DL": {
           "n": 36,
           "coverage95": 0.9444444444444444,
-          "rmsMeanApproximationError": 71.60945654620127
+          "rmsMeanApproximationError": 73.5696128612223
         },
         "LB": {
           "n": 48,
-          "coverage95": 0.875,
-          "rmsMeanApproximationError": 77.58335052351018
+          "coverage95": 0.8958333333333334,
+          "rmsMeanApproximationError": 79.64272178715089
         },
         "OL": {
           "n": 46,
           "coverage95": 0.9782608695652174,
-          "rmsMeanApproximationError": 111.95940742006356
+          "rmsMeanApproximationError": 114.6611116505918
         },
         "QB": {
           "n": 16,
           "coverage95": 0.75,
-          "rmsMeanApproximationError": 36.073351438468706
+          "rmsMeanApproximationError": 36.45543476559793
         },
         "RB": {
           "n": 28,
           "coverage95": 1.0,
-          "rmsMeanApproximationError": 55.78450662223332
+          "rmsMeanApproximationError": 57.15562355420106
         },
         "TE": {
           "n": 16,
-          "coverage95": 0.9375,
-          "rmsMeanApproximationError": 70.4776041005003
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 72.59345264424465
         },
         "WR": {
           "n": 39,
           "coverage95": 0.9487179487179487,
-          "rmsMeanApproximationError": 68.86400182247792
+          "rmsMeanApproximationError": 70.7282748030821
         }
       }
     },
     {
       "seed": 2026110404,
       "drawsPerProspect": 256,
-      "rmsMeanApproximationError": 85.26625677625236,
+      "rmsMeanApproximationError": 87.37150730548458,
       "subgroups": {
         "DB": {
           "n": 58,
-          "coverage95": 0.9137931034482759,
-          "rmsMeanApproximationError": 103.95324789847665
+          "coverage95": 0.9310344827586207,
+          "rmsMeanApproximationError": 106.74827943086383
         },
         "DL": {
           "n": 36,
           "coverage95": 0.9444444444444444,
-          "rmsMeanApproximationError": 65.38941502597795
+          "rmsMeanApproximationError": 66.95562894689665
         },
         "LB": {
           "n": 48,
-          "coverage95": 0.875,
-          "rmsMeanApproximationError": 75.69909651288309
+          "coverage95": 0.9166666666666666,
+          "rmsMeanApproximationError": 77.96830465975665
         },
         "OL": {
           "n": 46,
-          "coverage95": 0.9565217391304348,
-          "rmsMeanApproximationError": 116.6200527055749
+          "coverage95": 0.9782608695652174,
+          "rmsMeanApproximationError": 119.05399902780869
         },
         "QB": {
           "n": 16,
           "coverage95": 0.75,
-          "rmsMeanApproximationError": 36.22974637387133
+          "rmsMeanApproximationError": 36.48599883870598
         },
         "RB": {
           "n": 28,
           "coverage95": 1.0,
-          "rmsMeanApproximationError": 60.2432596958957
+          "rmsMeanApproximationError": 61.812148798266
         },
         "TE": {
           "n": 16,
-          "coverage95": 0.9375,
-          "rmsMeanApproximationError": 74.88445274386193
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 76.9131193540337
         },
         "WR": {
           "n": 39,
           "coverage95": 0.9487179487179487,
-          "rmsMeanApproximationError": 70.32574741612599
+          "rmsMeanApproximationError": 71.9439069746006
         }
       }
     },
     {
       "seed": 2026110405,
       "drawsPerProspect": 256,
-      "rmsMeanApproximationError": 83.55539329166065,
+      "rmsMeanApproximationError": 85.81239905016317,
       "subgroups": {
         "DB": {
           "n": 58,
-          "coverage95": 0.9137931034482759,
-          "rmsMeanApproximationError": 105.95681893014083
+          "coverage95": 0.9310344827586207,
+          "rmsMeanApproximationError": 108.66446724535312
         },
         "DL": {
           "n": 36,
           "coverage95": 0.9722222222222222,
-          "rmsMeanApproximationError": 81.18212029471407
+          "rmsMeanApproximationError": 83.41315840203956
         },
         "LB": {
           "n": 48,
-          "coverage95": 0.875,
-          "rmsMeanApproximationError": 70.42103719776347
+          "coverage95": 0.9166666666666666,
+          "rmsMeanApproximationError": 72.36790101974947
         },
         "OL": {
           "n": 46,
           "coverage95": 0.9782608695652174,
-          "rmsMeanApproximationError": 93.11612467743649
+          "rmsMeanApproximationError": 95.6244807724279
         },
         "QB": {
           "n": 16,
           "coverage95": 0.75,
-          "rmsMeanApproximationError": 31.979240823168457
+          "rmsMeanApproximationError": 32.455631527700675
         },
         "RB": {
           "n": 28,
           "coverage95": 1.0,
-          "rmsMeanApproximationError": 69.40049356639841
+          "rmsMeanApproximationError": 71.36870761723091
         },
         "TE": {
           "n": 16,
-          "coverage95": 0.9375,
-          "rmsMeanApproximationError": 88.44925113061682
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 91.5205808320354
         },
         "WR": {
           "n": 39,
           "coverage95": 1.0,
-          "rmsMeanApproximationError": 71.96758034390248
+          "rmsMeanApproximationError": 73.8266960162753
         }
       }
     },
     {
       "seed": 2026110406,
       "drawsPerProspect": 256,
-      "rmsMeanApproximationError": 82.38385120037591,
+      "rmsMeanApproximationError": 84.50516345248982,
       "subgroups": {
         "DB": {
           "n": 58,
-          "coverage95": 0.9137931034482759,
-          "rmsMeanApproximationError": 95.36810541193732
+          "coverage95": 0.9310344827586207,
+          "rmsMeanApproximationError": 97.86223248557509
         },
         "DL": {
           "n": 36,
           "coverage95": 0.9722222222222222,
-          "rmsMeanApproximationError": 63.48366586058934
+          "rmsMeanApproximationError": 65.08330359895194
         },
         "LB": {
           "n": 48,
-          "coverage95": 0.875,
-          "rmsMeanApproximationError": 78.55461151502406
+          "coverage95": 0.8958333333333334,
+          "rmsMeanApproximationError": 80.79787893938021
         },
         "OL": {
           "n": 46,
           "coverage95": 0.9782608695652174,
-          "rmsMeanApproximationError": 110.97283635148584
+          "rmsMeanApproximationError": 113.60426399610188
         },
         "QB": {
           "n": 16,
           "coverage95": 0.75,
-          "rmsMeanApproximationError": 35.41721353546509
+          "rmsMeanApproximationError": 35.879922705079615
         },
         "RB": {
           "n": 28,
           "coverage95": 1.0,
-          "rmsMeanApproximationError": 46.89055639553774
+          "rmsMeanApproximationError": 48.421315144742614
         },
         "TE": {
           "n": 16,
-          "coverage95": 0.9375,
-          "rmsMeanApproximationError": 86.3504810399452
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 89.09604047143017
         },
         "WR": {
           "n": 39,
           "coverage95": 0.9743589743589743,
-          "rmsMeanApproximationError": 73.67139742967474
+          "rmsMeanApproximationError": 75.32103940798156
         }
       }
     },
     {
       "seed": 2026110407,
       "drawsPerProspect": 256,
-      "rmsMeanApproximationError": 87.54612622867064,
+      "rmsMeanApproximationError": 89.7215889485653,
       "subgroups": {
         "DB": {
           "n": 58,
-          "coverage95": 0.9137931034482759,
-          "rmsMeanApproximationError": 96.74748845986944
+          "coverage95": 0.9310344827586207,
+          "rmsMeanApproximationError": 99.4010441289349
         },
         "DL": {
           "n": 36,
           "coverage95": 0.9722222222222222,
-          "rmsMeanApproximationError": 64.02324730370505
+          "rmsMeanApproximationError": 65.89263847421648
         },
         "LB": {
           "n": 48,
-          "coverage95": 0.8958333333333334,
-          "rmsMeanApproximationError": 85.43732586681641
+          "coverage95": 0.9166666666666666,
+          "rmsMeanApproximationError": 87.72551697387006
         },
         "OL": {
           "n": 46,
           "coverage95": 0.9565217391304348,
-          "rmsMeanApproximationError": 126.74703084540533
+          "rmsMeanApproximationError": 129.5283332001198
         },
         "QB": {
           "n": 16,
           "coverage95": 0.75,
-          "rmsMeanApproximationError": 33.826580027383294
+          "rmsMeanApproximationError": 34.103609473013606
         },
         "RB": {
           "n": 28,
           "coverage95": 1.0,
-          "rmsMeanApproximationError": 71.46770323127362
+          "rmsMeanApproximationError": 73.27825498963566
         },
         "TE": {
           "n": 16,
           "coverage95": 1.0,
-          "rmsMeanApproximationError": 67.422539713567
+          "rmsMeanApproximationError": 69.20704965146291
         },
         "WR": {
           "n": 39,
-          "coverage95": 0.9743589743589743,
-          "rmsMeanApproximationError": 69.0225089147745
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 70.56549454544195
         }
       }
     },
     {
       "seed": 2026110408,
       "drawsPerProspect": 256,
-      "rmsMeanApproximationError": 84.2795080381449,
+      "rmsMeanApproximationError": 86.40703541286665,
       "subgroups": {
         "DB": {
           "n": 58,
-          "coverage95": 0.9137931034482759,
-          "rmsMeanApproximationError": 110.22533840906034
+          "coverage95": 0.9310344827586207,
+          "rmsMeanApproximationError": 112.96270674126608
         },
         "DL": {
           "n": 36,
           "coverage95": 0.9722222222222222,
-          "rmsMeanApproximationError": 73.13567289955955
+          "rmsMeanApproximationError": 75.13021407685244
         },
         "LB": {
           "n": 48,
-          "coverage95": 0.875,
-          "rmsMeanApproximationError": 73.7104254107415
+          "coverage95": 0.9166666666666666,
+          "rmsMeanApproximationError": 75.7536052181122
         },
         "OL": {
           "n": 46,
           "coverage95": 0.9565217391304348,
-          "rmsMeanApproximationError": 100.07295580263595
+          "rmsMeanApproximationError": 102.57950349549552
         },
         "QB": {
           "n": 16,
           "coverage95": 0.75,
-          "rmsMeanApproximationError": 31.201513737428943
+          "rmsMeanApproximationError": 31.459073769188468
         },
         "RB": {
           "n": 28,
           "coverage95": 1.0,
-          "rmsMeanApproximationError": 56.53876149738825
+          "rmsMeanApproximationError": 57.82158757987083
         },
         "TE": {
           "n": 16,
           "coverage95": 1.0,
-          "rmsMeanApproximationError": 76.23521069490101
+          "rmsMeanApproximationError": 78.36175407821555
         },
         "WR": {
           "n": 39,
           "coverage95": 1.0,
-          "rmsMeanApproximationError": 75.4129964084088
+          "rmsMeanApproximationError": 77.17570681871425
         }
       }
     },
     {
       "seed": 2026110409,
       "drawsPerProspect": 256,
-      "rmsMeanApproximationError": 85.79472661309835,
+      "rmsMeanApproximationError": 87.94808265721484,
       "subgroups": {
         "DB": {
           "n": 58,
-          "coverage95": 0.9310344827586207,
-          "rmsMeanApproximationError": 115.60073626816168
+          "coverage95": 0.9482758620689655,
+          "rmsMeanApproximationError": 118.85231689414397
         },
         "DL": {
           "n": 36,
           "coverage95": 0.9722222222222222,
-          "rmsMeanApproximationError": 77.83488472832538
+          "rmsMeanApproximationError": 79.81234699771213
         },
         "LB": {
           "n": 48,
-          "coverage95": 0.875,
-          "rmsMeanApproximationError": 85.11004043296793
+          "coverage95": 0.8958333333333334,
+          "rmsMeanApproximationError": 87.26324620822213
         },
         "OL": {
           "n": 46,
           "coverage95": 0.9782608695652174,
-          "rmsMeanApproximationError": 99.80076280078315
+          "rmsMeanApproximationError": 101.94633698396038
         },
         "QB": {
           "n": 16,
           "coverage95": 0.75,
-          "rmsMeanApproximationError": 26.30162700808612
+          "rmsMeanApproximationError": 26.491609690854233
         },
         "RB": {
           "n": 28,
           "coverage95": 1.0,
-          "rmsMeanApproximationError": 62.542926115337224
+          "rmsMeanApproximationError": 64.20025105339117
         },
         "TE": {
           "n": 16,
           "coverage95": 1.0,
-          "rmsMeanApproximationError": 61.78223364523629
+          "rmsMeanApproximationError": 63.25445486778461
         },
         "WR": {
           "n": 39,
           "coverage95": 0.9487179487179487,
-          "rmsMeanApproximationError": 58.13661257404813
+          "rmsMeanApproximationError": 59.27706519601123
         }
       }
     },
     {
       "seed": 2026110410,
       "drawsPerProspect": 256,
-      "rmsMeanApproximationError": 85.14405182291445,
+      "rmsMeanApproximationError": 87.24670069981904,
       "subgroups": {
         "DB": {
           "n": 58,
           "coverage95": 0.9482758620689655,
-          "rmsMeanApproximationError": 100.15208842730593
+          "rmsMeanApproximationError": 102.7560061625456
         },
         "DL": {
           "n": 36,
           "coverage95": 0.9722222222222222,
-          "rmsMeanApproximationError": 56.188504871949654
+          "rmsMeanApproximationError": 57.71931110472742
         },
         "LB": {
           "n": 48,
           "coverage95": 0.875,
-          "rmsMeanApproximationError": 69.93090407568496
+          "rmsMeanApproximationError": 71.80288883974596
         },
         "OL": {
           "n": 46,
-          "coverage95": 0.9565217391304348,
-          "rmsMeanApproximationError": 121.10998918546095
+          "coverage95": 0.9782608695652174,
+          "rmsMeanApproximationError": 123.88471315384848
         },
         "QB": {
           "n": 16,
           "coverage95": 0.75,
-          "rmsMeanApproximationError": 42.00218329575841
+          "rmsMeanApproximationError": 42.524976130100704
         },
         "RB": {
           "n": 28,
           "coverage95": 1.0,
-          "rmsMeanApproximationError": 68.48477792930966
+          "rmsMeanApproximationError": 70.00817456687481
         },
         "TE": {
           "n": 16,
-          "coverage95": 0.9375,
-          "rmsMeanApproximationError": 95.31149752210125
+          "coverage95": 1.0,
+          "rmsMeanApproximationError": 97.87332598748895
         },
         "WR": {
           "n": 39,
           "coverage95": 0.9743589743589743,
-          "rmsMeanApproximationError": 66.18533245839373
+          "rmsMeanApproximationError": 67.82508240532061
         }
       }
     },
     {
       "seed": 2026110411,
       "drawsPerProspect": 256,
-      "rmsMeanApproximationError": 89.08915071616299,
+      "rmsMeanApproximationError": 91.26862615732217,
       "subgroups": {
         "DB": {
           "n": 58,
           "coverage95": 0.9310344827586207,
-          "rmsMeanApproximationError": 103.16174728053494
+          "rmsMeanApproximationError": 105.85338190528128
         },
         "DL": {
           "n": 36,
           "coverage95": 0.9444444444444444,
-          "rmsMeanApproximationError": 72.35107399681563
+          "rmsMeanApproximationError": 74.43683313677738
         },
         "LB": {
           "n": 48,
           "coverage95": 0.8958333333333334,
-          "rmsMeanApproximationError": 65.15855249457567
+          "rmsMeanApproximationError": 66.95108444940327
         },
         "OL": {
           "n": 46,
           "coverage95": 0.9782608695652174,
-          "rmsMeanApproximationError": 138.6413296296103
+          "rmsMeanApproximationError": 141.7722916737639
         },
         "QB": {
           "n": 16,
           "coverage95": 0.75,
-          "rmsMeanApproximationError": 36.04698363139504
+          "rmsMeanApproximationError": 36.34873335143082
         },
         "RB": {
           "n": 28,
           "coverage95": 1.0,
-          "rmsMeanApproximationError": 51.159230106212256
+          "rmsMeanApproximationError": 52.27572632048868
         },
         "TE": {
           "n": 16,
           "coverage95": 1.0,
-          "rmsMeanApproximationError": 66.48149165551214
+          "rmsMeanApproximationError": 68.12651013364923
         },
         "WR": {
           "n": 39,
           "coverage95": 0.9487179487179487,
-          "rmsMeanApproximationError": 75.00651073106664
+          "rmsMeanApproximationError": 76.7441662650971
         }
       }
     },
     {
       "seed": 2026110412,
       "drawsPerProspect": 256,
-      "rmsMeanApproximationError": 85.58156341595934,
+      "rmsMeanApproximationError": 87.75211970865861,
       "subgroups": {
         "DB": {
           "n": 58,
           "coverage95": 0.9310344827586207,
-          "rmsMeanApproximationError": 103.0877994167978
+          "rmsMeanApproximationError": 105.70814487512102
         },
         "DL": {
           "n": 36,
           "coverage95": 0.9722222222222222,
-          "rmsMeanApproximationError": 76.20422140353027
+          "rmsMeanApproximationError": 78.14389041023212
         },
         "LB": {
           "n": 48,
-          "coverage95": 0.8958333333333334,
-          "rmsMeanApproximationError": 63.655074719791635
+          "coverage95": 0.9166666666666666,
+          "rmsMeanApproximationError": 65.43621450591903
         },
         "OL": {
           "n": 46,
           "coverage95": 0.9565217391304348,
-          "rmsMeanApproximationError": 114.56111098999628
+          "rmsMeanApproximationError": 117.28764182190746
         },
         "QB": {
           "n": 16,
           "coverage95": 0.75,
-          "rmsMeanApproximationError": 36.03811440900977
+          "rmsMeanApproximationError": 36.32440916781268
         },
         "RB": {
           "n": 28,
           "coverage95": 1.0,
-          "rmsMeanApproximationError": 59.60370096816088
+          "rmsMeanApproximationError": 61.114188301830495
         },
         "TE": {
           "n": 16,
           "coverage95": 1.0,
-          "rmsMeanApproximationError": 76.5821943445328
+          "rmsMeanApproximationError": 78.93950563544357
         },
         "WR": {
           "n": 39,
           "coverage95": 0.9487179487179487,
-          "rmsMeanApproximationError": 82.32519681285048
+          "rmsMeanApproximationError": 84.4847919363353
         }
       }
     },
     {
       "seed": 2026110413,
       "drawsPerProspect": 256,
-      "rmsMeanApproximationError": 75.99677081404492,
+      "rmsMeanApproximationError": 77.94992132696679,
       "subgroups": {
         "DB": {
           "n": 58,
           "coverage95": 0.9310344827586207,
-          "rmsMeanApproximationError": 95.15806227768333
+          "rmsMeanApproximationError": 97.83906405667103
         },
         "DL": {
           "n": 36,
           "coverage95": 0.9444444444444444,
-          "rmsMeanApproximationError": 56.38465190683179
+          "rmsMeanApproximationError": 57.84816103901976
         },
         "LB": {
           "n": 48,
-          "coverage95": 0.875,
-          "rmsMeanApproximationError": 68.302958533335
+          "coverage95": 0.9166666666666666,
+          "rmsMeanApproximationError": 69.93125124551709
         },
         "OL": {
           "n": 46,
           "coverage95": 0.9782608695652174,
-          "rmsMeanApproximationError": 93.50189015651685
+          "rmsMeanApproximationError": 95.96375726524626
         },
         "QB": {
           "n": 16,
           "coverage95": 0.75,
-          "rmsMeanApproximationError": 52.84565639619916
+          "rmsMeanApproximationError": 53.21740403167458
         },
         "RB": {
           "n": 28,
           "coverage95": 1.0,
-          "rmsMeanApproximationError": 56.81309559118678
+          "rmsMeanApproximationError": 58.259442352409415
         },
         "TE": {
           "n": 16,
           "coverage95": 1.0,
-          "rmsMeanApproximationError": 63.894481534836984
+          "rmsMeanApproximationError": 65.9299779827888
         },
         "WR": {
           "n": 39,
           "coverage95": 0.9487179487179487,
-          "rmsMeanApproximationError": 70.06455749796213
+          "rmsMeanApproximationError": 71.60064564530974
         }
       }
     },
     {
       "seed": 2026110414,
       "drawsPerProspect": 256,
-      "rmsMeanApproximationError": 79.34322753547112,
+      "rmsMeanApproximationError": 81.30418495496437,
       "subgroups": {
         "DB": {
           "n": 58,
           "coverage95": 0.9310344827586207,
-          "rmsMeanApproximationError": 95.5989669228774
+          "rmsMeanApproximationError": 98.2838833584137
         },
         "DL": {
           "n": 36,
           "coverage95": 0.9722222222222222,
-          "rmsMeanApproximationError": 52.57041126736085
+          "rmsMeanApproximationError": 53.864432863772244
         },
         "LB": {
           "n": 48,
-          "coverage95": 0.8958333333333334,
-          "rmsMeanApproximationError": 74.93422249376684
+          "coverage95": 0.9166666666666666,
+          "rmsMeanApproximationError": 76.8996028196516
         },
         "OL": {
           "n": 46,
           "coverage95": 0.9782608695652174,
-          "rmsMeanApproximationError": 108.01146317775711
+          "rmsMeanApproximationError": 110.19294817199808
         },
         "QB": {
           "n": 16,
           "coverage95": 0.75,
-          "rmsMeanApproximationError": 26.210421633692786
+          "rmsMeanApproximationError": 26.51028930300156
         },
         "RB": {
           "n": 28,
           "coverage95": 1.0,
-          "rmsMeanApproximationError": 42.7436133650134
+          "rmsMeanApproximationError": 43.83721500797356
         },
         "TE": {
           "n": 16,
           "coverage95": 1.0,
-          "rmsMeanApproximationError": 77.88109372053786
+          "rmsMeanApproximationError": 80.20890452824725
         },
         "WR": {
           "n": 39,
           "coverage95": 0.9743589743589743,
-          "rmsMeanApproximationError": 73.69755561578812
+          "rmsMeanApproximationError": 75.45933488458584
         }
       }
     },
     {
       "seed": 2026110415,
       "drawsPerProspect": 256,
-      "rmsMeanApproximationError": 84.42965357125934,
+      "rmsMeanApproximationError": 86.65178315580482,
       "subgroups": {
         "DB": {
           "n": 58,
-          "coverage95": 0.9137931034482759,
-          "rmsMeanApproximationError": 97.14288224038056
+          "coverage95": 0.9310344827586207,
+          "rmsMeanApproximationError": 99.81753111554583
         },
         "DL": {
           "n": 36,
           "coverage95": 0.9444444444444444,
-          "rmsMeanApproximationError": 66.15439069726604
+          "rmsMeanApproximationError": 68.16837619852622
         },
         "LB": {
           "n": 48,
-          "coverage95": 0.875,
-          "rmsMeanApproximationError": 78.03770710051278
+          "coverage95": 0.9166666666666666,
+          "rmsMeanApproximationError": 80.07736519975977
         },
         "OL": {
           "n": 46,
-          "coverage95": 0.9565217391304348,
-          "rmsMeanApproximationError": 111.91339256555287
+          "coverage95": 0.9782608695652174,
+          "rmsMeanApproximationError": 114.68613260424046
         },
         "QB": {
           "n": 16,
           "coverage95": 0.75,
-          "rmsMeanApproximationError": 32.83401533434777
+          "rmsMeanApproximationError": 33.09001081599896
         },
         "RB": {
           "n": 28,
           "coverage95": 1.0,
-          "rmsMeanApproximationError": 73.86862079903372
+          "rmsMeanApproximationError": 75.87006889564493
         },
         "TE": {
           "n": 16,
           "coverage95": 1.0,
-          "rmsMeanApproximationError": 63.6142960615093
+          "rmsMeanApproximationError": 65.8263439056108
         },
         "WR": {
           "n": 39,
           "coverage95": 0.9743589743589743,
-          "rmsMeanApproximationError": 78.07486727458611
+          "rmsMeanApproximationError": 79.89114557422432
         }
       }
     }
@@ -1403,14 +1404,18 @@
   "sourceHashes": {
     "analytics/five_year_strict_2018.json": "a717e2d683ab57c8f79f963d672598810593bae69945c8d00db82857d6c647e1",
     "analytics/five_year_frozen_2018_predictions.csv": "a12e376e85bb09048b84f399da99d4b52e699922ac49023ab65e8c7de46d5094",
-    "analytics/model.json": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0"
+    "analytics/model.json": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0",
+    "analytics/forecast_audit.py": "152b7587d4c8255e6f51e7198a7136d3b2405ad83eb18ae8fcf9ad45f6488197",
+    "lib/simulation.ts": "e03f6afab57ae9c5288eaa343e58a9f977e2dee51c73ab77f06cdf6d75ac49ca",
+    "lib/engine.ts": "e5e0bb35be07a01ea133331a200a15593b706772cf625c523e48e96d9b9b37f3",
+    "lib/server-data.ts": "0ede48d68b376a2ad5adb3633680bfa0f067e3a2469aeff3d3b10338fb556be3"
   },
   "limitations": [
     "2013 is the only fully observed strict donor cohort; no independent pre2018 five-year chronological validation exists.",
     "Exact integration removes Monte Carlo noise from this audit; it does not broaden donor support or fix undercoverage.",
     "Games means games with recorded snaps, not official appearances or starts.",
     "Forecasts precede capacity/opportunity transformations and are not validated causal wins.",
-    "A 17-game future season changes exposure; strict donors all come from 16-game seasons.",
+    "Strict donors come from 16-game seasons; deterministic 17/16 exposure scaling is an assumption and does not validate future-era transfer.",
     "No parameter, source revision, selection bias, or counterfactual model uncertainty is captured."
   ]
 }

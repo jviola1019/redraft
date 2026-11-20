@@ -1,5 +1,6 @@
 import { env } from 'cloudflare:workers';
 import { z } from 'zod';
+import { HttpError, readJsonBody } from '@/lib/request-body';
 import { getChatGPTUser } from '@/app/chatgpt-auth';
 import { dataset, models, scoutingPolicy, teamContexts, teamContextMetadata, selectedTeamContext, getScenario, years, coverage } from '@/lib/server-data';
 import { createGame, advance, scout, select, setBoard, proposeTrade, applyTrade, validateGame, random, rankLeaderboard, RULE_VERSION, SCORING_VERSION, ENSEMBLE_SIZE } from '@/lib/engine';
@@ -11,7 +12,6 @@ export const dynamic = 'force-dynamic';
 type StoredGame = GameState & { blindSalt: string; scoutingVersion: string };
 type RunRow = { id:string; owner:string; challenge_date:string|null; state:string; revision:number };
 type DailyConfig = { date:string; team:string; year:number; seed:string; blindSalt:string; modelVersion:string; datasetVersion:string; engineVersion:string; scoringVersion:string; scoutingVersion:string; ensembleSize:number };
-class HttpError extends Error { constructor(public status:number,message:string){super(message)} }
 const json = (body:unknown,status=200) => Response.json(body,{status,headers:{'Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff'}});
 const utcDate = () => new Date().toISOString().slice(0,10);
 const token = () => crypto.randomUUID()+crypto.randomUUID();
@@ -30,18 +30,6 @@ async function limited(owner:string){
   const row=await db().prepare('INSERT INTO rate_windows (id,count,expires_at) VALUES (?,1,?) ON CONFLICT(id) DO UPDATE SET count=count+1 RETURNING count').bind(id,(minute+2)*60000).first<{count:number}>();
   if((row?.count??0)>240)throw new HttpError(429,'Too many requests. Wait a minute and resume your saved draft.');
   if(row?.count===1)await db().prepare('DELETE FROM rate_windows WHERE expires_at < ?').bind(Date.now()).run();
-}
-async function readBody(request:Request){
-  const origin=request.headers.get('origin');
-  if(origin&&origin!==new URL(request.url).origin)throw new HttpError(403,'Cross-origin changes are not permitted.');
-  if(request.headers.get('sec-fetch-site')==='cross-site')throw new HttpError(403,'Cross-site changes are not permitted.');
-  if(!request.headers.get('content-type')?.toLowerCase().startsWith('application/json'))throw new HttpError(415,'Send application/json.');
-  if(Number(request.headers.get('content-length'))>16000)throw new HttpError(413,'Request is too large.');
-  const reader=request.body?.getReader();if(!reader)throw new HttpError(400,'Missing request body.');
-  const chunks:Uint8Array[]=[];let length=0;
-  while(true){const{value,done}=await reader.read();if(done)break;length+=value.length;if(length>16000){await reader.cancel();throw new HttpError(413,'Request is too large.');}chunks.push(value);}
-  const bytes=new Uint8Array(length);let at=0;for(const chunk of chunks){bytes.set(chunk,at);at+=chunk.length;}
-  try{return JSON.parse(new TextDecoder().decode(bytes));}catch{throw new HttpError(400,'Invalid JSON.');}
 }
 const base={id:z.string().uuid(),revision:z.number().int().nonnegative(),requestId:z.string().uuid()};
 const pickId=z.string().regex(/^bp_[a-f0-9]{32}$/);
@@ -113,7 +101,7 @@ export async function GET(request:Request){try{
   return json({teams:dataset.teams,teamsByYear,teamContextsByYear,teamContextMetadataByYear,teamContexts,teamContextMetadata,selectedTeamContext:null,years,coverage,scenarioModelsByYear,daily:{date:daily.date,team:daily.team,year:daily.year,endsAt:Date.parse(daily.date+'T00:00:00Z')+86400000,status:attempt?.status??'available',gameId:attempt?.game_id},history:history.results,leaderboard,user:{alias:await alias(owner)},methodology:{version:models.version,datasetVersion:dataset.metadata.version,ensembleSize:ENSEMBLE_SIZE,scoutingVersion:BLIND_POLICY_VERSION,status:'Research alpha',coverage:`Playable scenario years: ${years.join(', ')}. Other years are not enabled; check coverage for blockers.`,limitations:['All post-2018 classes use a frozen model trained through 2017, extrapolated without cohort-specific calibration; reference-only, unseen-position, and specialist rows use explicit fallbacks or remain unavailable.','No audited draft-day roster/position-use context is wired to post-2018 scenarios.','2026 season outcomes are incomplete; five-year labels for that draft class do not yet exist.','Shared profiles reduce identity clues; they do not guarantee anonymity.','The trained target is rookie participation, not five-year talent.','Five-year development, roster turnover, and CPU strategy remain explicit model assumptions.','Contracts, complete historical rosters, college production, and future-pick trades are not implemented.']}});
 }catch(error){return failure(error);}}
 export async function POST(request:Request){try{
-  const owner=await identity();const payload=schema.parse(await readBody(request));await limited(owner);
+  const owner=await identity();const payload=schema.parse(await readJsonBody(request));await limited(owner);
   const requestHash=await hash(JSON.stringify(payload));
   const receipt=await db().prepare('SELECT owner,game_id,request_hash FROM request_receipts WHERE id=?').bind(payload.requestId).first<{owner:string;game_id:string;request_hash:string}>();
   if(receipt){if(receipt.owner!==owner||receipt.request_hash!==requestHash)throw new HttpError(409,'Request identifier was already used for another action.');const row=await run(owner,receipt.game_id);const game=unpack(row);await scoreIfNeeded(row,game);return json(await view(game));}

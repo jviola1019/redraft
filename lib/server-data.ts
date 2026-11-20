@@ -81,7 +81,7 @@ const models2018: RuntimeModels = {
     ...base2018Policy.pooledModels,
     usagePolicy: usagePolicy2018,
     team: { ...base2018Policy.pooledModels.team, meanTotal },
-    version: `${base2018Policy.pooledModels.version}+five-year-2013-v1+${usagePolicy2018.version}:${usagePolicy2018.sourceSha256.slice(0, 12)}+scoring-trailing3-v1`,
+    version: `${base2018Policy.pooledModels.version}+five-year-2013-exposure-v2+${usagePolicy2018.version}:${usagePolicy2018.sourceSha256.slice(0, 12)}+scoring-trailing3-v1`,
 };
 base2018Policy.pooledModels.version = models2018.version;
 base2018Policy.pooledModels.modelVersion = models2018.version;
@@ -111,7 +111,7 @@ function createScenarioForecastBundle(dataset: Dataset, precedingSeason: number,
         team: { ...raw.team, initialStrength: marginStrengthsFromKnownRegularSeason(dataset, precedingSeason), meanTotal },
     };
     const scoutingPolicy = createScoutingPolicy(dataset, modelBase);
-    const version = `${artifact.version}+${BLIND_POLICY_VERSION}+${String(dataset.metadata.version)}`;
+    const version = `${artifact.version}+five-year-2013-exposure-v2+${BLIND_POLICY_VERSION}+${String(dataset.metadata.version)}`;
     const models: RuntimeModels = {
         ...scoutingPolicy.pooledModels,
         usagePolicy: undefined,

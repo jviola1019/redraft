@@ -360,7 +360,7 @@ try {
             for (const player of full.alternate.seasons[0].players) {
                 const position = positionGroup(byId.get(player.prospectId).position), group = ['K', 'P', 'LS'].includes(position) ? 'ST' : position;
                 const trajectory = full.alternate.seasons.map(season => season.players.find(p => p.prospectId === player.prospectId).games);
-                assert.ok(developmentModel.donors.some(d => d.position === group && JSON.stringify(d.games) === JSON.stringify(trajectory)), 'Five-year availability must retain one whole observed donor trajectory.');
+                assert.ok(developmentModel.donors.some(d => d.position === group && JSON.stringify(d.games.map((games, age) => { const n = full.alternate.seasons[age].year >= 2021 ? 17 : 16; return Math.min(n, Math.round(games * n / 16)); })) === JSON.stringify(trajectory)), 'Five-year availability must retain one whole donor trajectory adjusted for schedule exposure.');
                 if (full.baseline.seasons[0].players.some(p => p.prospectId === player.prospectId))
                     assert.deepEqual(full.baseline.seasons.map(season => season.players.find(p => p.prospectId === player.prospectId).games), trajectory, 'Common players must retain paired availability random streams.');
             }
@@ -476,7 +476,9 @@ try {
             assert.equal(source.picks.length, source.actualPicks.length);
             assert.equal(bundle.models.usagePolicy, undefined, `${year} must not borrow 2018's usage context.`);
             assert.ok(bundle.models.prospect.projections.some(p => p.supported === true));
-            assert.ok(bundle.models.version.includes(`redraft-${year}-pre2018-logistic-C10-v1`));
+            const artifact = JSON.parse(readFileSync(`analytics/model-${year}.json`, 'utf8'));
+            assert.ok(bundle.models.version.startsWith(artifact.version + '+'));
+            assert.ok(bundle.models.version.includes('five-year-2013-exposure-v2'));
             assert.equal(bundle.teamContexts.length, 0);
             assert.equal(bundle.teamContextMetadata.available, false);
             const priorSeason = year - 1;

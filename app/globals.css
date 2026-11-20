@@ -51,3 +51,58 @@
 .guided-board .guide-card.studied {
   border-top-color:#a15a36;
 }
+
+/* Responsive decision flow: keep the football room visible at every size. */
+.decision-steps{list-style:none;margin:4px 0 24px;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid var(--line);background:#eeeee2}
+.decision-steps li{display:flex;align-items:center;gap:12px;padding:15px 18px;min-width:0;border-right:1px solid var(--line)}
+.decision-steps li:last-child{border-right:0}
+.decision-steps li>span{width:27px;height:27px;border:1px solid #aab5a0;display:grid;place-items:center;font:700 12px ui-monospace,monospace;flex-shrink:0}
+.decision-steps strong{display:block;font-size:12px;line-height:1.5}
+.decision-steps small{display:block;color:var(--muted);font-size:11px;line-height:1.6}
+.decision-steps li[aria-current=step]{background:#e1e9d4}
+.decision-steps li[aria-current=step]>span{background:#315c49;color:#fffdf8;border-color:#315c49}
+.guided-heading p{max-width:530px;line-height:1.65}
+.guide-card{min-width:0}
+.guide-compare input{width:18px;height:18px;accent-color:#315c49;flex-shrink:0}
+.guide-card-top .mono{overflow-wrap:anywhere;min-width:0}
+.console-main p{max-width:470px}
+@media(min-width:601px) and (max-width:1000px){
+ .draft-console{grid-template-columns:minmax(0,1fr) 132px auto;gap:14px}
+ .draft-console .console-scene{display:block}
+ .console-main h2{font-size:21px}
+ .console-actions .btn{max-width:150px;white-space:normal}
+ .decision-steps li{padding:13px 12px;gap:9px}
+}
+@media(max-width:600px){
+ .draft-console{grid-template-columns:minmax(0,1fr) 112px;padding:16px 15px 0;gap:14px 12px;align-items:start}
+ .console-main{grid-column:1/-1}
+ .console-main h2{font-size:22px;line-height:1.3;margin:9px 0 7px}
+ .console-main p{font-size:12px;line-height:1.65}
+ .console-overline{font-size:10px;gap:10px}
+ .console-overline .console-turn{display:inline}
+ .draft-console .console-scene{display:block;grid-column:2;grid-row:2;align-self:center;box-shadow:2px 2px 0 #bdcba8}
+ .console-actions{grid-column:1;grid-row:2;align-items:stretch;gap:5px}
+ .console-actions .btn{max-width:none;width:100%;font-size:12px;padding:11px 10px}
+ .console-actions .text-button{font-size:11px;justify-content:center;text-align:center}
+ .console-ready{font-size:12px;max-width:none;min-height:44px;display:flex;gap:10px;align-items:center}
+ .console-ready>span{display:inline;margin:0}
+ .console-resources{gap:10px 20px;font-size:11px;padding:12px 0 14px}
+ .console-progress{margin:0 -15px -1px;margin-top:-14px}
+ .decision-steps{margin:7px 0 22px;grid-template-columns:1fr;background:var(--white)}
+ .decision-steps li{padding:10px 13px;gap:12px;border-right:0;border-bottom:1px solid var(--line)}
+ .decision-steps li:last-child{border-bottom:0}
+ .decision-steps li>div{display:flex;align-items:baseline;justify-content:space-between;gap:10px;flex:1;min-width:0}
+ .decision-steps small{font-size:10px;text-align:right;max-width:145px}
+ .decision-steps strong{font-size:12px}
+ .decision-steps li>span{width:25px;height:25px}
+ .guided-heading{align-items:start;gap:14px}
+ .guided-heading p{font-size:12px;line-height:1.65}
+ .guide-card{padding:20px}
+ .guide-card h3{font-size:25px}
+ .guide-measurements{padding:13px 0;gap:12px}
+ .guide-projection{padding:16px 0}
+ .guide-card-actions{gap:12px}
+ .guide-card-actions .btn{min-height:48px}
+ .guide-compare{gap:10px;min-height:48px;margin-top:8px}
+ .guided-cards{gap:22px}
+}

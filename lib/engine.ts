@@ -34,7 +34,7 @@ export interface RuntimeModels {
     };
     [key: string]: unknown;
 }
-export const RULE_VERSION = 'redraft-research-0.8-schedule-tiebreaks';
+export const RULE_VERSION = 'redraft-research-0.9-schedule-exposure';
 export const ENSEMBLE_SIZE = 256;
 export const SCORING_VERSION = 'research-score-v1';
 /** Fail closed on malformed or post-cutoff calibration metadata. */

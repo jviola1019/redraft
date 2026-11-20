@@ -9,7 +9,8 @@ const out = resolve('tests/results/browser');
 mkdirSync(out, { recursive: true });
 const modulePath = process.env.REDRAFT_PLAYWRIGHT_MODULE;
 const pw = await import(modulePath ? pathToFileURL(modulePath).href : 'playwright');
-let server, browser, log = '';
+let server, browser, log = '', stage = 'setup';
+const engine = process.env.REDRAFT_BROWSER || 'chromium';
 const results = [];
 const base = process.env.REDRAFT_BASE_URL || 'http://127.0.0.1:4173';
 // Wait for finite entry transitions, not the stadium's continuous animation.
@@ -43,7 +44,7 @@ try {
     }
     assert.ok(ready, `Server/API did not become ready: ${log.slice(-4000)}`);
   }
-  const engine = process.env.REDRAFT_BROWSER || 'chromium';
+  stage = 'browser launch';
   assert.ok(['chromium', 'webkit'].includes(engine));
   browser = await pw[engine].launch({ headless: true,
     ...(process.env.REDRAFT_BROWSER_EXECUTABLE ? { executablePath: process.env.REDRAFT_BROWSER_EXECUTABLE } : {}),
@@ -51,7 +52,10 @@ try {
   for (const [label, options] of [
     ['desktop', { viewport: { width: 1440, height: 1000 } }],
     ['phone', { ...pw.devices['iPhone 13'], defaultBrowserType: undefined, reducedMotion: 'reduce' }],
+    ['narrow-phone', { viewport: { width: 320, height: 568 }, isMobile: true, hasTouch: true, reducedMotion: 'reduce' }],
+    ['tablet', { viewport: { width: 768, height: 1024 }, hasTouch: true }],
   ]) {
+    stage = `${engine}/${label} journey`;
     const context = await browser.newContext(options), page = await context.newPage();
     page.setDefaultTimeout(30000);
     const errors = [];
@@ -80,29 +84,41 @@ try {
     await page.screenshot({ path: `${out}/${engine}-${label}-profile.png`, fullPage: false, animations: 'disabled' });
     await page.keyboard.press('Escape');
     await dialog.waitFor({ state: 'detached' });
+    // Exercise real selection and CPU progression; opening a profile is not a completed pick.
+    const progress = page.getByRole('progressbar', { name: 'Draft selections completed' });
+    const initialProgress = Number(await progress.getAttribute('aria-valuenow'));
+    await page.getByRole('button', { name: 'Review & pick', exact: true }).first().click();
+    await page.getByRole('dialog').getByRole('button', { name: 'Draft this prospect' }).click();
+    await page.getByRole('dialog').waitFor({ state: 'detached' });
+    await page.waitForFunction(initial => Number(document.querySelector('[aria-label="Draft selections completed"]').getAttribute('aria-valuenow')) > initial, initialProgress);
+    await page.getByRole('button', { name: 'Jump to my pick', exact: true }).click();
+    await page.getByRole('heading', { name: 'You’re up. Make your pick.' }).waitFor();
+    const savedProgress = Number(await progress.getAttribute('aria-valuenow'));
+    assert.ok(savedProgress > initialProgress + 1, 'CPU draft progresses to next user selection');
     await page.getByRole('button', { name: 'Save', exact: true }).click();
     await page.reload({ waitUntil: 'networkidle' });
     await page.getByRole('button', { name: 'Continue your saved draft' }).click();
     await page.getByRole('heading', { name: 'You’re up. Make your pick.' }).waitFor();
     await settledEntry(page);
     assert.equal(await page.locator('.draft-page').evaluate(element => Number(getComputedStyle(element).opacity)), 1, 'Draft content must finish fading into view');
-    assert.equal(await page.getByRole('button', { name: 'Scouted', exact: true }).count() > 0, true, 'Scouting must survive reload');
+    assert.equal(Number(await progress.getAttribute('aria-valuenow')), savedProgress, 'Draft selections must survive reload');
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
     assert.ok(overflow <= 1, `${label} has ${overflow}px horizontal overflow`);
     await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }));
     await page.screenshot({ path: `${out}/${engine}-${label}-draft.png`, fullPage: false, animations: 'disabled' });
     assert.deepEqual(errors, [], 'Browser runtime errors');
-    results.push({ engine, viewport: label, status: 'passed', durationMs: Math.round(performance.now() - started), checks: ['new historical draft', 'scouting', 'profile dialog inside viewport', 'dialog focus', 'keyboard dismissal', 'save/reload', 'entry animation completes', 'no horizontal overflow', 'no browser errors'] });
+    const navigation = await page.evaluate(() => { const n = performance.getEntriesByType('navigation')[0]; return n ? { domContentLoadedMs: Math.round(n.domContentLoadedEventEnd), loadMs: Math.round(n.loadEventEnd) } : null; });
+    results.push({ engine, viewport: label, navigation, status: 'passed', durationMs: Math.round(performance.now() - started), checks: ['new historical draft', 'scouting', 'profile dialog inside viewport', 'dialog focus', 'keyboard dismissal', 'confirmed user selection', 'CPU progression to next user pick', 'save/reload preserves draft progress', 'entry animation completes', 'no horizontal overflow', 'no browser errors'] });
     await context.close();
   }
 } catch (error) {
-  results.push({ status: 'failed', message: error.message });
+  results.push({ engine, stage, status: 'failed', message: error.message });
   console.error(error);
   process.exitCode = 1;
 } finally {
   await browser?.close();
   server?.kill('SIGTERM');
-  writeFileSync(`${out}/server.log`, log);
-  writeFileSync(`${out}/${process.env.REDRAFT_BROWSER || 'chromium'}-report.json`, JSON.stringify({ at: new Date().toISOString(), results, limitation: 'Phone viewport/device emulation is not a physical iPhone test. Screenshots require human review; no approved visual regression baseline exists.' }, null, 2));
+  if (server) writeFileSync(`${out}/server.log`, log);
+  writeFileSync(`${out}/${process.env.REDRAFT_BROWSER || 'chromium'}-report.json`, JSON.stringify({ at: new Date().toISOString(), engine, executablePath: process.env.REDRAFT_BROWSER_EXECUTABLE || 'Playwright default', baseUrl: base, results, limitation: 'Phone viewport/device emulation is not a physical iPhone test. Screenshots require human review; no approved visual regression baseline exists.' }, null, 2));
   console.log(JSON.stringify(results));
 }
