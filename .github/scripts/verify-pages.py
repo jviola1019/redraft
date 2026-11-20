@@ -49,7 +49,7 @@ def verify(directory):
         SITE,
         f"{REPO}/archive/{revision}.zip",
         f"{REPO}/blob/{revision}/INSTALL.md",
-        f"{REPO}/blob/{revision}/docs/release/CURRENT_RELEASE.md",
+        f"{REPO}/blob/{revision}/docs/release/FIXTURE_REVIEW.md",
         f"{REPO}/pull/1",
         REPO,
     }

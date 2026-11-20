@@ -27,6 +27,11 @@ jobs:
           destination: ./_jekyll
       - name: Assemble and validate the upload
         run: python3 .github/scripts/verify-pages.py _jekyll _site
+      - name: Check desktop and phone widths
+        run: |
+          npm install --prefix "$RUNNER_TEMP/pages-test" --no-save --no-package-lock --ignore-scripts playwright@1.62.1
+          chrome=$(command -v google-chrome)
+          NODE_PATH="$RUNNER_TEMP/pages-test/node_modules" node .github/scripts/smoke-pages.cjs _site "$chrome"
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site
