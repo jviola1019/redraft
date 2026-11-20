@@ -180,3 +180,8 @@ export function prospectViews(game: GameState, dataset: Dataset, models: Runtime
         };
     }).sort((a, b) => a.position.localeCompare(b.position) || a.blindName.localeCompare(b.blindName));
 }
+
+/** Keep response flags and all identifying fields on one server-clock snapshot. */
+export function prospectDisclosure(game: GameState, dataset: Dataset, models: RuntimeModels, policy: ScoutingPolicy, aliases: AliasCatalog, now: Date = new Date()) {
+    return { revealed: identityRevealed(game, now), prospects: prospectViews(game, dataset, models, policy, aliases, now) };
+}

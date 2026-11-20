@@ -1,0 +1,101 @@
+{
+  "at": "2026-11-20T01:45:26.356Z",
+  "engine": "webkit",
+  "executablePath": "Playwright default",
+  "baseUrl": "http://127.0.0.1:4173",
+  "results": [
+    {
+      "engine": "webkit",
+      "viewport": "desktop",
+      "navigation": {
+        "domContentLoadedMs": 121,
+        "loadMs": 137
+      },
+      "status": "passed",
+      "durationMs": 13908,
+      "checks": [
+        "new historical draft",
+        "scouting",
+        "profile dialog inside viewport",
+        "dialog focus",
+        "keyboard dismissal",
+        "confirmed user selection",
+        "CPU progression to next user pick",
+        "save/reload preserves draft progress",
+        "entry animation completes",
+        "no horizontal overflow",
+        "no browser errors"
+      ]
+    },
+    {
+      "engine": "webkit",
+      "viewport": "phone",
+      "navigation": {
+        "domContentLoadedMs": 102,
+        "loadMs": 119
+      },
+      "status": "passed",
+      "durationMs": 5726,
+      "checks": [
+        "new historical draft",
+        "scouting",
+        "profile dialog inside viewport",
+        "dialog focus",
+        "keyboard dismissal",
+        "confirmed user selection",
+        "CPU progression to next user pick",
+        "save/reload preserves draft progress",
+        "entry animation completes",
+        "no horizontal overflow",
+        "no browser errors"
+      ]
+    },
+    {
+      "engine": "webkit",
+      "viewport": "narrow-phone",
+      "navigation": {
+        "domContentLoadedMs": 86,
+        "loadMs": 102
+      },
+      "status": "passed",
+      "durationMs": 4609,
+      "checks": [
+        "new historical draft",
+        "scouting",
+        "profile dialog inside viewport",
+        "dialog focus",
+        "keyboard dismissal",
+        "confirmed user selection",
+        "CPU progression to next user pick",
+        "save/reload preserves draft progress",
+        "entry animation completes",
+        "no horizontal overflow",
+        "no browser errors"
+      ]
+    },
+    {
+      "engine": "webkit",
+      "viewport": "tablet",
+      "navigation": {
+        "domContentLoadedMs": 77,
+        "loadMs": 92
+      },
+      "status": "passed",
+      "durationMs": 5563,
+      "checks": [
+        "new historical draft",
+        "scouting",
+        "profile dialog inside viewport",
+        "dialog focus",
+        "keyboard dismissal",
+        "confirmed user selection",
+        "CPU progression to next user pick",
+        "save/reload preserves draft progress",
+        "entry animation completes",
+        "no horizontal overflow",
+        "no browser errors"
+      ]
+    }
+  ],
+  "limitation": "Phone viewport/device emulation is not a physical iPhone test. Screenshots require human review; no approved visual regression baseline exists."
+}

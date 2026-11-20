@@ -5,7 +5,7 @@ import { getChatGPTUser } from '@/app/chatgpt-auth';
 import { dataset, models, scoutingPolicy, teamContexts, teamContextMetadata, selectedTeamContext, getScenario, years, coverage } from '@/lib/server-data';
 import { createGame, advance, scout, select, setBoard, proposeTrade, applyTrade, validateGame, random, rankLeaderboard, RULE_VERSION, SCORING_VERSION, ENSEMBLE_SIZE } from '@/lib/engine';
 import { simulateReplicate, compactReplicate, summarizeResults } from '@/lib/simulation';
-import { aliasCatalog, prospectViews, identityRevealed, BLIND_POLICY_VERSION, type AliasCatalog } from '@/lib/scouting';
+import { aliasCatalog, prospectDisclosure, BLIND_POLICY_VERSION, type AliasCatalog } from '@/lib/scouting';
 import type { GameState } from '@/lib/types';
 
 export const dynamic = 'force-dynamic';
@@ -54,24 +54,24 @@ function remap(value:unknown,aliases:AliasCatalog):unknown{
 }
 async function view(game:StoredGame){
   const {dataset,models,scoutingPolicy,teamContexts,teamContextMetadata,selectedTeamContext}=getScenario(game.year);
-  const aliases=await aliasCatalog(game.blindSalt,dataset),revealed=identityRevealed(game);
+  const aliases=await aliasCatalog(game.blindSalt,dataset),{revealed,prospects:disclosedProspects}=prospectDisclosure(game,dataset,models,scoutingPolicy,aliases);
   const publicGame=remap(game,aliases) as Record<string,unknown>;
-  if(game.status==='drafting'||(game.mode==='daily'&&game.createdAt.slice(0,10)===utcDate()))publicGame.seed='Hidden until challenge closes or draft reveal';
+  if(!revealed)publicGame.seed='Hidden until challenge closes or draft reveal';
   if(game.status==='simulating'&&game.results){publicGame.results={...game.results,replicates:game.results.replicates.map(r=>({index:r.index,baseline:{...r.baseline,seasons:[]},alternate:{...r.alternate,seasons:[]}}))};}
   // Actual draft allocation in baseline player rows is itself an identity clue.
   if(!revealed&&game.status==='complete'&&game.results){
     const masked={...game.results,replicates:game.results.replicates.map(r=>({...r,baseline:{...r.baseline,seasons:r.baseline.seasons.map(s=>({...s,players:[],starPicks:[],awards:[]}))}}))};
     publicGame.results=remap(masked,aliases);
   }
-  let prospects=prospectViews(game,dataset,models,scoutingPolicy,aliases);
+  let prospects=disclosedProspects;
   const ok=compatible(game);
   if(!ok)prospects=prospects.map(p=>({...p,projection:{...p.projection,roleProbability:null,roleProbabilityLabel:'Model version unavailable',modelVersion:game.modelVersion,supported:false,fallback:true}}));
   return {game:{...publicGame,ensembleTarget:ENSEMBLE_SIZE,identityRevealed:revealed},prospects,teams:dataset.teams,teamContexts,teamContextMetadata,selectedTeamContext:selectedTeamContext(game.team),
     ...(revealed?{historicalSelections:remap(dataset.actualPicks,aliases)}:{}),
     ...(!ok?{compatibilityWarning:'This saved run uses a retired model or dataset. Review is available; further changes are disabled.'}:{})};
 }
-async function challenge():Promise<DailyConfig>{
-  const date=utcDate();let row=await db().prepare('SELECT config FROM daily_challenges WHERE date=?').bind(date).first<{config:string}>();
+async function challenge(now:Date=new Date()):Promise<DailyConfig>{
+  const date=now.toISOString().slice(0,10);let row=await db().prepare('SELECT config FROM daily_challenges WHERE date=?').bind(date).first<{config:string}>();
   if(!row){const year=years[Math.floor(random('daily-year-v1',date)*years.length)],bundle=getScenario(year),config:DailyConfig={date,team:bundle.dataset.teams[Math.floor(random('daily-team-v1',date)*bundle.dataset.teams.length)].id,year,seed:token(),blindSalt:token(),modelVersion:String(bundle.models.version),datasetVersion:String(bundle.dataset.metadata.version),engineVersion:RULE_VERSION,scoringVersion:SCORING_VERSION,scoutingVersion:BLIND_POLICY_VERSION,ensembleSize:ENSEMBLE_SIZE};
     await db().prepare('INSERT INTO daily_challenges (date,config,created_at) VALUES (?,?,?) ON CONFLICT(date) DO NOTHING').bind(date,JSON.stringify(config),new Date().toISOString()).run();
     row=await db().prepare('SELECT config FROM daily_challenges WHERE date=?').bind(date).first<{config:string}>();
@@ -106,9 +106,10 @@ export async function POST(request:Request){try{
   const receipt=await db().prepare('SELECT owner,game_id,request_hash FROM request_receipts WHERE id=?').bind(payload.requestId).first<{owner:string;game_id:string;request_hash:string}>();
   if(receipt){if(receipt.owner!==owner||receipt.request_hash!==requestHash)throw new HttpError(409,'Request identifier was already used for another action.');const row=await run(owner,receipt.game_id);const game=unpack(row);await scoreIfNeeded(row,game);return json(await view(game));}
   if(payload.action==='new'){
+    const createdAt=new Date();
     let config:DailyConfig|undefined;
     if(payload.mode==='daily'){
-      if(payload.seed||payload.team||payload.year)throw new HttpError(400,'Daily conditions cannot be changed.');config=await challenge();
+      if(payload.seed||payload.team||payload.year)throw new HttpError(400,'Daily conditions cannot be changed.');config=await challenge(createdAt);
       const existing=await db().prepare('SELECT game_id FROM daily_attempts WHERE owner=? AND date=?').bind(owner,config.date).first<{game_id:string}>();
       if(existing)return json(await view(unpack(await run(owner,existing.game_id))));
       const pinned=getScenario(config.year);
@@ -116,7 +117,7 @@ export async function POST(request:Request){try{
     }
     const year=config?.year??payload.year??2018,bundle=getScenario(year),{dataset,models}=bundle;
     if(payload.team&&!dataset.teams.some(t=>t.id===payload.team))throw new HttpError(400,'Unsupported historical franchise for this draft year.');
-    const now=new Date().toISOString();const game:StoredGame={...createGame({id:crypto.randomUUID(),team:config?.team??payload.team,year,seed:config?.seed??payload.seed??token(),mode:payload.mode,now,modelVersion:String(models.version)},dataset),blindSalt:config?.blindSalt??token(),scoutingVersion:BLIND_POLICY_VERSION};
+    const now=createdAt.toISOString();const game:StoredGame={...createGame({id:crypto.randomUUID(),team:config?.team??payload.team,year,seed:config?.seed??payload.seed??token(),mode:payload.mode,now,modelVersion:String(models.version)},dataset),blindSalt:config?.blindSalt??token(),scoutingVersion:BLIND_POLICY_VERSION};
     const statements=[db().prepare('INSERT INTO game_runs (id,owner,mode,challenge_date,team,year,status,revision,state,created_at,updated_at) VALUES (?,?,?,?,?,?,?,?,?,?,?)').bind(game.id,owner,game.mode,config?.date??null,game.team,game.year,game.status,0,JSON.stringify(game),now,now),db().prepare('INSERT INTO request_receipts (id,owner,game_id,request_hash,created_at) VALUES (?,?,?,?,?)').bind(payload.requestId,owner,game.id,requestHash,now)];
     if(config)statements.push(db().prepare('INSERT INTO daily_attempts (id,owner,date,game_id,created_at) VALUES (?,?,?,?,?)').bind(crypto.randomUUID(),owner,config.date,game.id,now));
     try{await db().batch(statements);}catch{throw new HttpError(409,'Another request created this draft. Refresh your saved drafts.');}

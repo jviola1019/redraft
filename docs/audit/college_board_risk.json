@@ -1,0 +1,191 @@
+[
+  {
+    "year": 2018,
+    "sourceSha256": "b7895eef7862ccfb45cff5f2f4b6e347abd809c1905ed274883d55cc237f59d8",
+    "prospects": 336,
+    "missingCollege": 0,
+    "positionOnly": {
+      "uniqueProspects": 1,
+      "fewerThanFive": 7,
+      "medianMatchingProspects": 27.0
+    },
+    "collegePosition": {
+      "uniqueProspects": 265,
+      "fewerThanFive": 336,
+      "medianMatchingProspects": 1.0
+    },
+    "positionHeightWeight": {
+      "uniqueProspects": 285,
+      "fewerThanFive": 336,
+      "medianMatchingProspects": 1.0
+    }
+  },
+  {
+    "year": 2019,
+    "sourceSha256": "88ef4b175bfc7ddf8c2d32541b1b8371836f09f6e961f4bb8a36b0db0bf5f28c",
+    "prospects": 336,
+    "missingCollege": 0,
+    "positionOnly": {
+      "uniqueProspects": 1,
+      "fewerThanFive": 7,
+      "medianMatchingProspects": 33.0
+    },
+    "collegePosition": {
+      "uniqueProspects": 248,
+      "fewerThanFive": 336,
+      "medianMatchingProspects": 1.0
+    },
+    "positionHeightWeight": {
+      "uniqueProspects": 281,
+      "fewerThanFive": 336,
+      "medianMatchingProspects": 1.0
+    }
+  },
+  {
+    "year": 2020,
+    "sourceSha256": "527ff4f9770199052a6405d9d56cf503f150b998dddbcfbd947e686c060b624b",
+    "prospects": 337,
+    "missingCollege": 0,
+    "positionOnly": {
+      "uniqueProspects": 0,
+      "fewerThanFive": 5,
+      "medianMatchingProspects": 44
+    },
+    "collegePosition": {
+      "uniqueProspects": 215,
+      "fewerThanFive": 337,
+      "medianMatchingProspects": 1
+    },
+    "positionHeightWeight": {
+      "uniqueProspects": 273,
+      "fewerThanFive": 337,
+      "medianMatchingProspects": 1
+    }
+  },
+  {
+    "year": 2021,
+    "sourceSha256": "16b574b788658ea916a48a61cdf4a24df76e72305dc16054f32971ec5ed4aec4",
+    "prospects": 323,
+    "missingCollege": 0,
+    "positionOnly": {
+      "uniqueProspects": 2,
+      "fewerThanFive": 14,
+      "medianMatchingProspects": 30
+    },
+    "collegePosition": {
+      "uniqueProspects": 230,
+      "fewerThanFive": 323,
+      "medianMatchingProspects": 1
+    },
+    "positionHeightWeight": {
+      "uniqueProspects": 161,
+      "fewerThanFive": 184,
+      "medianMatchingProspects": 2
+    }
+  },
+  {
+    "year": 2022,
+    "sourceSha256": "ea6846602cddfe179544b1d845c811a1848c59de69084c210c03080ac4d46f63",
+    "prospects": 324,
+    "missingCollege": 0,
+    "positionOnly": {
+      "uniqueProspects": 1,
+      "fewerThanFive": 4,
+      "medianMatchingProspects": 24.0
+    },
+    "collegePosition": {
+      "uniqueProspects": 258,
+      "fewerThanFive": 324,
+      "medianMatchingProspects": 1.0
+    },
+    "positionHeightWeight": {
+      "uniqueProspects": 274,
+      "fewerThanFive": 324,
+      "medianMatchingProspects": 1.0
+    }
+  },
+  {
+    "year": 2023,
+    "sourceSha256": "14587193998afcb61ca2c95c50ee641ba709246a5b3a9c8187855b94e894611f",
+    "prospects": 319,
+    "missingCollege": 0,
+    "positionOnly": {
+      "uniqueProspects": 1,
+      "fewerThanFive": 1,
+      "medianMatchingProspects": 27
+    },
+    "collegePosition": {
+      "uniqueProspects": 243,
+      "fewerThanFive": 319,
+      "medianMatchingProspects": 1
+    },
+    "positionHeightWeight": {
+      "uniqueProspects": 265,
+      "fewerThanFive": 319,
+      "medianMatchingProspects": 1
+    }
+  },
+  {
+    "year": 2024,
+    "sourceSha256": "6a6d794cdf0747d7a03ba92549d4d8165b149a19b04eb32588b679e6c50e8323",
+    "prospects": 321,
+    "missingCollege": 0,
+    "positionOnly": {
+      "uniqueProspects": 0,
+      "fewerThanFive": 10,
+      "medianMatchingProspects": 27
+    },
+    "collegePosition": {
+      "uniqueProspects": 224,
+      "fewerThanFive": 316,
+      "medianMatchingProspects": 1
+    },
+    "positionHeightWeight": {
+      "uniqueProspects": 264,
+      "fewerThanFive": 321,
+      "medianMatchingProspects": 1
+    }
+  },
+  {
+    "year": 2025,
+    "sourceSha256": "8f80dab73fa8b50a92a6b0ec499419dfd07eade6398ebda59b5117aac62b13b7",
+    "prospects": 329,
+    "missingCollege": 0,
+    "positionOnly": {
+      "uniqueProspects": 1,
+      "fewerThanFive": 7,
+      "medianMatchingProspects": 31
+    },
+    "collegePosition": {
+      "uniqueProspects": 232,
+      "fewerThanFive": 329,
+      "medianMatchingProspects": 1
+    },
+    "positionHeightWeight": {
+      "uniqueProspects": 280,
+      "fewerThanFive": 329,
+      "medianMatchingProspects": 1
+    }
+  },
+  {
+    "year": 2026,
+    "sourceSha256": "c30d6a697573fc39488b13a91eb7c3863aa780c14a81f446e06dd0e3a86638ca",
+    "prospects": 319,
+    "missingCollege": 0,
+    "positionOnly": {
+      "uniqueProspects": 0,
+      "fewerThanFive": 7,
+      "medianMatchingProspects": 28
+    },
+    "collegePosition": {
+      "uniqueProspects": 225,
+      "fewerThanFive": 319,
+      "medianMatchingProspects": 1
+    },
+    "positionHeightWeight": {
+      "uniqueProspects": 275,
+      "fewerThanFive": 319,
+      "medianMatchingProspects": 1
+    }
+  }
+]

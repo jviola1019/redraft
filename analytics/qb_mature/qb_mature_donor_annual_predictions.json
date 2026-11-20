@@ -1,0 +1,7252 @@
+[
+  {
+    "cohort": 2019,
+    "pfrId": "BrowJa08",
+    "age": 0,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 181.15151515151516,
+      "crps": 38.88888888888886,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 180.4,
+      "crps": 37.45777777777778,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 985.0
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "BrowJa08",
+    "age": 1,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 171.4848484848485,
+      "crps": 35.16345270890724,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 816.0,
+      "intervalScore80": 816.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 108.06666666666666,
+      "crps": 20.173333333333318,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 364.0,
+      "intervalScore80": 364.0,
+      "lower95": 0.0,
+      "upper95": 816.0,
+      "intervalScore95": 816.0
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "BrowJa08",
+    "age": 2,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 91.63257575757576,
+      "crps": 10.277662993572065,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 155.125,
+      "intervalScore80": 155.125,
+      "lower95": 0.0,
+      "upper95": 1181.5,
+      "intervalScore95": 1181.5
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 27.270833333333332,
+      "crps": 6.001944444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "BrowJa08",
+    "age": 3,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 129.39962121212122,
+      "crps": 23.24718778696048,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 437.75,
+      "intervalScore80": 437.75,
+      "lower95": 0.0,
+      "upper95": 1171.9375,
+      "intervalScore95": 1171.9375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 67.43333333333334,
+      "crps": 14.091111111111118,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "BrowJa08",
+    "age": 4,
+    "candidate": {
+      "actual": 469.0,
+      "mean": 95.88257575757576,
+      "crps": 351.0299586776859,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 280.5,
+      "intervalScore80": 2165.5,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 469.0,
+      "mean": 42.99583333333333,
+      "crps": 393.1752777777777,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 3475.5625000000005,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 7820.499999999994
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "FinlRy00",
+    "age": 0,
+    "candidate": {
+      "actual": 190.0,
+      "mean": 181.15151515151516,
+      "crps": 119.67676767676767,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "baseline": {
+      "actual": 190.0,
+      "mean": 180.4,
+      "crps": 126.79111111111112,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 985.0
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "FinlRy00",
+    "age": 1,
+    "candidate": {
+      "actual": 90.0,
+      "mean": 171.4848484848485,
+      "crps": 68.31496786042237,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 816.0,
+      "intervalScore80": 816.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "baseline": {
+      "actual": 90.0,
+      "mean": 108.06666666666666,
+      "crps": 58.84,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 364.0,
+      "intervalScore80": 364.0,
+      "lower95": 0.0,
+      "upper95": 816.0,
+      "intervalScore95": 816.0
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "FinlRy00",
+    "age": 2,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 91.63257575757576,
+      "crps": 10.277662993572065,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 155.125,
+      "intervalScore80": 155.125,
+      "lower95": 0.0,
+      "upper95": 1181.5,
+      "intervalScore95": 1181.5
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 27.270833333333332,
+      "crps": 6.001944444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "FinlRy00",
+    "age": 3,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 129.39962121212122,
+      "crps": 23.24718778696048,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 437.75,
+      "intervalScore80": 437.75,
+      "lower95": 0.0,
+      "upper95": 1171.9375,
+      "intervalScore95": 1171.9375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 67.43333333333334,
+      "crps": 14.091111111111118,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "FinlRy00",
+    "age": 4,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 95.88257575757576,
+      "crps": 14.28374655647383,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 280.5,
+      "intervalScore80": 280.5,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 42.99583333333333,
+      "crps": 10.16694444444444,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "FitzNi01",
+    "age": 0,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 181.15151515151516,
+      "crps": 38.88888888888886,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 180.4,
+      "crps": 37.45777777777778,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 985.0
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "FitzNi01",
+    "age": 1,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 171.4848484848485,
+      "crps": 35.16345270890724,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 816.0,
+      "intervalScore80": 816.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 108.06666666666666,
+      "crps": 20.173333333333318,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 364.0,
+      "intervalScore80": 364.0,
+      "lower95": 0.0,
+      "upper95": 816.0,
+      "intervalScore95": 816.0
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "FitzNi01",
+    "age": 2,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 91.63257575757576,
+      "crps": 10.277662993572065,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 155.125,
+      "intervalScore80": 155.125,
+      "lower95": 0.0,
+      "upper95": 1181.5,
+      "intervalScore95": 1181.5
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 27.270833333333332,
+      "crps": 6.001944444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "FitzNi01",
+    "age": 3,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 129.39962121212122,
+      "crps": 23.24718778696048,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 437.75,
+      "intervalScore80": 437.75,
+      "lower95": 0.0,
+      "upper95": 1171.9375,
+      "intervalScore95": 1171.9375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 67.43333333333334,
+      "crps": 14.091111111111118,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "FitzNi01",
+    "age": 4,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 95.88257575757576,
+      "crps": 14.28374655647383,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 280.5,
+      "intervalScore80": 280.5,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 42.99583333333333,
+      "crps": 10.16694444444444,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "GrieWi00",
+    "age": 0,
+    "candidate": {
+      "actual": 87.0,
+      "mean": 181.15151515151516,
+      "crps": 61.70707070707067,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "baseline": {
+      "actual": 87.0,
+      "mean": 180.4,
+      "crps": 67.92444444444448,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 985.0
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "GrieWi00",
+    "age": 1,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 171.4848484848485,
+      "crps": 35.16345270890724,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 816.0,
+      "intervalScore80": 816.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 108.06666666666666,
+      "crps": 20.173333333333318,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 364.0,
+      "intervalScore80": 364.0,
+      "lower95": 0.0,
+      "upper95": 816.0,
+      "intervalScore95": 816.0
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "GrieWi00",
+    "age": 2,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 91.63257575757576,
+      "crps": 10.277662993572065,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 155.125,
+      "intervalScore80": 155.125,
+      "lower95": 0.0,
+      "upper95": 1181.5,
+      "intervalScore95": 1181.5
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 27.270833333333332,
+      "crps": 6.001944444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "GrieWi00",
+    "age": 3,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 129.39962121212122,
+      "crps": 23.24718778696048,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 437.75,
+      "intervalScore80": 437.75,
+      "lower95": 0.0,
+      "upper95": 1171.9375,
+      "intervalScore95": 1171.9375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 67.43333333333334,
+      "crps": 14.091111111111118,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "GrieWi00",
+    "age": 4,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 95.88257575757576,
+      "crps": 14.28374655647383,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 280.5,
+      "intervalScore80": 280.5,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 42.99583333333333,
+      "crps": 10.16694444444444,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "HaskDw00",
+    "age": 0,
+    "candidate": {
+      "actual": 433.0,
+      "mean": 181.15151515151516,
+      "crps": 267.2828282828283,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "baseline": {
+      "actual": 433.0,
+      "mean": 180.4,
+      "crps": 272.5911111111111,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 985.0
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "HaskDw00",
+    "age": 1,
+    "candidate": {
+      "actual": 428.0,
+      "mean": 171.4848484848485,
+      "crps": 251.89072543618,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 816.0,
+      "intervalScore80": 816.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "baseline": {
+      "actual": 428.0,
+      "mean": 108.06666666666666,
+      "crps": 283.7733333333334,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 364.0,
+      "intervalScore80": 1004.0000000000001,
+      "lower95": 0.0,
+      "upper95": 816.0,
+      "intervalScore95": 816.0
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "HaskDw00",
+    "age": 2,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 91.63257575757576,
+      "crps": 10.277662993572065,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 155.125,
+      "intervalScore80": 155.125,
+      "lower95": 0.0,
+      "upper95": 1181.5,
+      "intervalScore95": 1181.5
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 27.270833333333332,
+      "crps": 6.001944444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "HaskDw00",
+    "age": 3,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 129.39962121212122,
+      "crps": 23.24718778696048,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 437.75,
+      "intervalScore80": 437.75,
+      "lower95": 0.0,
+      "upper95": 1171.9375,
+      "intervalScore95": 1171.9375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 67.43333333333334,
+      "crps": 14.091111111111118,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "HaskDw00",
+    "age": 4,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 95.88257575757576,
+      "crps": 14.28374655647383,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 280.5,
+      "intervalScore80": 280.5,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 42.99583333333333,
+      "crps": 10.16694444444444,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "JackTy01",
+    "age": 0,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 181.15151515151516,
+      "crps": 38.88888888888886,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 180.4,
+      "crps": 37.45777777777778,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 985.0
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "JackTy01",
+    "age": 1,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 171.4848484848485,
+      "crps": 35.16345270890724,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 816.0,
+      "intervalScore80": 816.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 108.06666666666666,
+      "crps": 20.173333333333318,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 364.0,
+      "intervalScore80": 364.0,
+      "lower95": 0.0,
+      "upper95": 816.0,
+      "intervalScore95": 816.0
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "JackTy01",
+    "age": 2,
+    "candidate": {
+      "actual": 171.0,
+      "mean": 91.63257575757576,
+      "crps": 116.37614784205694,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 155.125,
+      "intervalScore80": 313.875,
+      "lower95": 0.0,
+      "upper95": 1181.5,
+      "intervalScore95": 1181.5
+    },
+    "baseline": {
+      "actual": 171.0,
+      "mean": 27.270833333333332,
+      "crps": 122.4602777777778,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 667.6875000000001,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 417.1874999999998
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "JackTy01",
+    "age": 3,
+    "candidate": {
+      "actual": 34.0,
+      "mean": 129.39962121212122,
+      "crps": 31.360824150596883,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 437.75,
+      "intervalScore80": 437.75,
+      "lower95": 0.0,
+      "upper95": 1171.9375,
+      "intervalScore95": 1171.9375
+    },
+    "baseline": {
+      "actual": 34.0,
+      "mean": 67.43333333333334,
+      "crps": 23.29944444444446,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "JackTy01",
+    "age": 4,
+    "candidate": {
+      "actual": 18.0,
+      "mean": 95.88257575757576,
+      "crps": 20.344352617079878,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 280.5,
+      "intervalScore80": 280.5,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 18.0,
+      "mean": 42.99583333333333,
+      "crps": 15.60027777777779,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "JoneDa05",
+    "age": 0,
+    "candidate": {
+      "actual": 816.0,
+      "mean": 181.15151515151516,
+      "crps": 519.7373737373737,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "baseline": {
+      "actual": 816.0,
+      "mean": 180.4,
+      "crps": 518.6577777777776,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 985.0
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "JoneDa05",
+    "age": 1,
+    "candidate": {
+      "actual": 868.0,
+      "mean": 171.4848484848485,
+      "crps": 587.951331496786,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 816.0,
+      "intervalScore80": 1336.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "baseline": {
+      "actual": 868.0,
+      "mean": 108.06666666666666,
+      "crps": 672.0400000000001,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 364.0,
+      "intervalScore80": 5404.000000000001,
+      "lower95": 0.0,
+      "upper95": 816.0,
+      "intervalScore95": 2895.999999999998
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "JoneDa05",
+    "age": 2,
+    "candidate": {
+      "actual": 673.0,
+      "mean": 91.63257575757576,
+      "crps": 557.5276629935721,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 155.125,
+      "intervalScore80": 5333.875000000001,
+      "lower95": 0.0,
+      "upper95": 1181.5,
+      "intervalScore95": 1181.5
+    },
+    "baseline": {
+      "actual": 673.0,
+      "mean": 27.270833333333332,
+      "crps": 624.4602777777778,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 5687.687500000001,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 20497.18749999998
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "JoneDa05",
+    "age": 3,
+    "candidate": {
+      "actual": 1040.0,
+      "mean": 129.39962121212122,
+      "crps": 812.4441574839302,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 437.75,
+      "intervalScore80": 6460.250000000001,
+      "lower95": 0.0,
+      "upper95": 1171.9375,
+      "intervalScore95": 1171.9375
+    },
+    "baseline": {
+      "actual": 1040.0,
+      "mean": 67.43333333333334,
+      "crps": 919.2244444444447,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 7980.687500000002,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 24527.749999999978
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "JoneDa05",
+    "age": 4,
+    "candidate": {
+      "actual": 325.0,
+      "mean": 95.88257575757576,
+      "crps": 224.48450413223145,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 280.5,
+      "intervalScore80": 725.5,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 325.0,
+      "mean": 42.99583333333333,
+      "crps": 249.17527777777778,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 2035.5625000000002,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 2060.499999999998
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "LockDr00",
+    "age": 0,
+    "candidate": {
+      "actual": 306.0,
+      "mean": 181.15151515151516,
+      "crps": 186.46464646464648,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "baseline": {
+      "actual": 306.0,
+      "mean": 180.4,
+      "crps": 196.3911111111111,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 985.0
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "LockDr00",
+    "age": 1,
+    "candidate": {
+      "actual": 835.0,
+      "mean": 171.4848484848485,
+      "crps": 560.951331496786,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 816.0,
+      "intervalScore80": 1006.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "baseline": {
+      "actual": 835.0,
+      "mean": 108.06666666666666,
+      "crps": 639.0399999999998,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 364.0,
+      "intervalScore80": 5074.000000000001,
+      "lower95": 0.0,
+      "upper95": 816.0,
+      "intervalScore95": 1575.9999999999993
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "LockDr00",
+    "age": 2,
+    "candidate": {
+      "actual": 234.0,
+      "mean": 91.63257575757576,
+      "crps": 171.7397842056933,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 155.125,
+      "intervalScore80": 943.8750000000001,
+      "lower95": 0.0,
+      "upper95": 1181.5,
+      "intervalScore95": 1181.5
+    },
+    "baseline": {
+      "actual": 234.0,
+      "mean": 27.270833333333332,
+      "crps": 185.46027777777778,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 1297.6875000000002,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 2937.1874999999977
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "LockDr00",
+    "age": 3,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 129.39962121212122,
+      "crps": 23.24718778696048,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 437.75,
+      "intervalScore80": 437.75,
+      "lower95": 0.0,
+      "upper95": 1171.9375,
+      "intervalScore95": 1171.9375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 67.43333333333334,
+      "crps": 14.091111111111118,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "LockDr00",
+    "age": 4,
+    "candidate": {
+      "actual": 145.0,
+      "mean": 95.88257575757576,
+      "crps": 87.91253443526172,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 280.5,
+      "intervalScore80": 280.5,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 145.0,
+      "mean": 42.99583333333333,
+      "crps": 87.24194444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 235.5625,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "McSoTr00",
+    "age": 0,
+    "candidate": {
+      "actual": 1.0,
+      "mean": 181.15151515151516,
+      "crps": 39.04040404040407,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "baseline": {
+      "actual": 1.0,
+      "mean": 180.4,
+      "crps": 37.79111111111109,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 985.0
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "McSoTr00",
+    "age": 1,
+    "candidate": {
+      "actual": 20.0,
+      "mean": 171.4848484848485,
+      "crps": 40.73921028466478,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 816.0,
+      "intervalScore80": 816.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "baseline": {
+      "actual": 20.0,
+      "mean": 108.06666666666666,
+      "crps": 26.173333333333318,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 364.0,
+      "intervalScore80": 364.0,
+      "lower95": 0.0,
+      "upper95": 816.0,
+      "intervalScore95": 816.0
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "McSoTr00",
+    "age": 2,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 91.63257575757576,
+      "crps": 10.277662993572065,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 155.125,
+      "intervalScore80": 155.125,
+      "lower95": 0.0,
+      "upper95": 1181.5,
+      "intervalScore95": 1181.5
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 27.270833333333332,
+      "crps": 6.001944444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "McSoTr00",
+    "age": 3,
+    "candidate": {
+      "actual": 148.0,
+      "mean": 129.39962121212122,
+      "crps": 84.55021808999082,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 437.75,
+      "intervalScore80": 437.75,
+      "lower95": 0.0,
+      "upper95": 1171.9375,
+      "intervalScore95": 1171.9375
+    },
+    "baseline": {
+      "actual": 148.0,
+      "mean": 67.43333333333334,
+      "crps": 85.04111111111108,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "McSoTr00",
+    "age": 4,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 95.88257575757576,
+      "crps": 14.28374655647383,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 280.5,
+      "intervalScore80": 280.5,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 42.99583333333333,
+      "crps": 10.16694444444444,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "MinsGa00",
+    "age": 0,
+    "candidate": {
+      "actual": 906.0,
+      "mean": 181.15151515151516,
+      "crps": 592.4040404040404,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 1482.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "baseline": {
+      "actual": 906.0,
+      "mean": 180.4,
+      "crps": 593.191111111111,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 1482.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 985.0
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "MinsGa00",
+    "age": 1,
+    "candidate": {
+      "actual": 558.0,
+      "mean": 171.4848484848485,
+      "crps": 349.95133149678605,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 816.0,
+      "intervalScore80": 816.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "baseline": {
+      "actual": 558.0,
+      "mean": 108.06666666666666,
+      "crps": 396.43999999999994,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 364.0,
+      "intervalScore80": 2304.0000000000005,
+      "lower95": 0.0,
+      "upper95": 816.0,
+      "intervalScore95": 816.0
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "MinsGa00",
+    "age": 2,
+    "candidate": {
+      "actual": 166.0,
+      "mean": 91.63257575757576,
+      "crps": 111.98220844811753,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 155.125,
+      "intervalScore80": 263.875,
+      "lower95": 0.0,
+      "upper95": 1181.5,
+      "intervalScore95": 1181.5
+    },
+    "baseline": {
+      "actual": 166.0,
+      "mean": 27.270833333333332,
+      "crps": 117.46027777777778,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 617.6875000000001,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 217.18749999999994
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "MinsGa00",
+    "age": 3,
+    "candidate": {
+      "actual": 151.0,
+      "mean": 129.39962121212122,
+      "crps": 86.09567263544535,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 437.75,
+      "intervalScore80": 437.75,
+      "lower95": 0.0,
+      "upper95": 1171.9375,
+      "intervalScore95": 1171.9375
+    },
+    "baseline": {
+      "actual": 151.0,
+      "mean": 67.43333333333334,
+      "crps": 86.84111111111112,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "MinsGa00",
+    "age": 4,
+    "candidate": {
+      "actual": 972.0,
+      "mean": 95.88257575757576,
+      "crps": 801.9352617079891,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 280.5,
+      "intervalScore80": 7195.500000000001,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 972.0,
+      "mean": 42.99583333333333,
+      "crps": 896.1752777777776,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 8505.562500000002,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 27940.499999999975
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "MurrKy00",
+    "age": 0,
+    "candidate": {
+      "actual": 1009.0,
+      "mean": 181.15151515151516,
+      "crps": 685.5858585858587,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 2512.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 1788.9999999999993
+    },
+    "baseline": {
+      "actual": 1009.0,
+      "mean": 180.4,
+      "crps": 685.6577777777777,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 2512.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 1944.999999999999
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "MurrKy00",
+    "age": 1,
+    "candidate": {
+      "actual": 1102.0,
+      "mean": 171.4848484848485,
+      "crps": 794.1937557392104,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 816.0,
+      "intervalScore80": 3676.0000000000005,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 2817.999999999998
+    },
+    "baseline": {
+      "actual": 1102.0,
+      "mean": 108.06666666666666,
+      "crps": 906.0400000000002,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 364.0,
+      "intervalScore80": 7744.000000000001,
+      "lower95": 0.0,
+      "upper95": 816.0,
+      "intervalScore95": 12255.999999999989
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "MurrKy00",
+    "age": 2,
+    "candidate": {
+      "actual": 940.0,
+      "mean": 91.63257575757576,
+      "crps": 792.1640266299357,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 155.125,
+      "intervalScore80": 8003.875000000002,
+      "lower95": 0.0,
+      "upper95": 1181.5,
+      "intervalScore95": 1181.5
+    },
+    "baseline": {
+      "actual": 940.0,
+      "mean": 27.270833333333332,
+      "crps": 891.4602777777776,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 8357.687500000002,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 31177.18749999997
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "MurrKy00",
+    "age": 3,
+    "candidate": {
+      "actual": 719.0,
+      "mean": 129.39962121212122,
+      "crps": 527.3380968778696,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 437.75,
+      "intervalScore80": 3250.2500000000005,
+      "lower95": 0.0,
+      "upper95": 1171.9375,
+      "intervalScore95": 1171.9375
+    },
+    "baseline": {
+      "actual": 719.0,
+      "mean": 67.43333333333334,
+      "crps": 598.2244444444444,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 4770.687500000001,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 11687.74999999999
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "MurrKy00",
+    "age": 4,
+    "candidate": {
+      "actual": 538.0,
+      "mean": 95.88257575757576,
+      "crps": 411.66632231404964,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 280.5,
+      "intervalScore80": 2855.5000000000005,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 538.0,
+      "mean": 42.99583333333333,
+      "crps": 462.1752777777778,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 4165.562500000001,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 10580.49999999999
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "RypiBr00",
+    "age": 0,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 181.15151515151516,
+      "crps": 38.88888888888886,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 180.4,
+      "crps": 37.45777777777778,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 985.0
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "RypiBr00",
+    "age": 1,
+    "candidate": {
+      "actual": 83.0,
+      "mean": 171.4848484848485,
+      "crps": 65.55739210284662,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 816.0,
+      "intervalScore80": 816.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "baseline": {
+      "actual": 83.0,
+      "mean": 108.06666666666666,
+      "crps": 55.573333333333295,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 364.0,
+      "intervalScore80": 364.0,
+      "lower95": 0.0,
+      "upper95": 816.0,
+      "intervalScore95": 816.0
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "RypiBr00",
+    "age": 2,
+    "candidate": {
+      "actual": 3.0,
+      "mean": 91.63257575757576,
+      "crps": 11.14887511478419,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 155.125,
+      "intervalScore80": 155.125,
+      "lower95": 0.0,
+      "upper95": 1181.5,
+      "intervalScore95": 1181.5
+    },
+    "baseline": {
+      "actual": 3.0,
+      "mean": 27.270833333333332,
+      "crps": 6.601944444444442,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "RypiBr00",
+    "age": 3,
+    "candidate": {
+      "actual": 175.0,
+      "mean": 129.39962121212122,
+      "crps": 99.3229453627181,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 437.75,
+      "intervalScore80": 437.75,
+      "lower95": 0.0,
+      "upper95": 1171.9375,
+      "intervalScore95": 1171.9375
+    },
+    "baseline": {
+      "actual": 175.0,
+      "mean": 67.43333333333334,
+      "crps": 101.76611111111113,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "RypiBr00",
+    "age": 4,
+    "candidate": {
+      "actual": 78.0,
+      "mean": 95.88257575757576,
+      "crps": 44.83298898071625,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 280.5,
+      "intervalScore80": 280.5,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 78.0,
+      "mean": 42.99583333333333,
+      "crps": 37.133611111111115,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "ShurKy01",
+    "age": 0,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 181.15151515151516,
+      "crps": 38.88888888888886,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 180.4,
+      "crps": 37.45777777777778,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 985.0
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "ShurKy01",
+    "age": 1,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 171.4848484848485,
+      "crps": 35.16345270890724,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 816.0,
+      "intervalScore80": 816.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 108.06666666666666,
+      "crps": 20.173333333333318,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 364.0,
+      "intervalScore80": 364.0,
+      "lower95": 0.0,
+      "upper95": 816.0,
+      "intervalScore95": 816.0
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "ShurKy01",
+    "age": 2,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 91.63257575757576,
+      "crps": 10.277662993572065,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 155.125,
+      "intervalScore80": 155.125,
+      "lower95": 0.0,
+      "upper95": 1181.5,
+      "intervalScore95": 1181.5
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 27.270833333333332,
+      "crps": 6.001944444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "ShurKy01",
+    "age": 3,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 129.39962121212122,
+      "crps": 23.24718778696048,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 437.75,
+      "intervalScore80": 437.75,
+      "lower95": 0.0,
+      "upper95": 1171.9375,
+      "intervalScore95": 1171.9375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 67.43333333333334,
+      "crps": 14.091111111111118,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "ShurKy01",
+    "age": 4,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 95.88257575757576,
+      "crps": 14.28374655647383,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 280.5,
+      "intervalScore80": 280.5,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 42.99583333333333,
+      "crps": 10.16694444444444,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "SticEa00",
+    "age": 0,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 181.15151515151516,
+      "crps": 38.88888888888886,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 180.4,
+      "crps": 37.45777777777778,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 985.0
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "SticEa00",
+    "age": 1,
+    "candidate": {
+      "actual": 2.0,
+      "mean": 171.4848484848485,
+      "crps": 35.58769513314968,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 816.0,
+      "intervalScore80": 816.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "baseline": {
+      "actual": 2.0,
+      "mean": 108.06666666666666,
+      "crps": 20.573333333333338,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 364.0,
+      "intervalScore80": 364.0,
+      "lower95": 0.0,
+      "upper95": 816.0,
+      "intervalScore95": 816.0
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "SticEa00",
+    "age": 2,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 91.63257575757576,
+      "crps": 10.277662993572065,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 155.125,
+      "intervalScore80": 155.125,
+      "lower95": 0.0,
+      "upper95": 1181.5,
+      "intervalScore95": 1181.5
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 27.270833333333332,
+      "crps": 6.001944444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "SticEa00",
+    "age": 3,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 129.39962121212122,
+      "crps": 23.24718778696048,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 437.75,
+      "intervalScore80": 437.75,
+      "lower95": 0.0,
+      "upper95": 1171.9375,
+      "intervalScore95": 1171.9375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 67.43333333333334,
+      "crps": 14.091111111111118,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "SticEa00",
+    "age": 4,
+    "candidate": {
+      "actual": 320.0,
+      "mean": 95.88257575757576,
+      "crps": 220.09056473829202,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 280.5,
+      "intervalScore80": 675.5,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 320.0,
+      "mean": 42.99583333333333,
+      "crps": 244.17527777777784,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 1985.5625000000002,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 1860.4999999999986
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "StidJa00",
+    "age": 0,
+    "candidate": {
+      "actual": 15.0,
+      "mean": 181.15151515151516,
+      "crps": 41.161616161616166,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "baseline": {
+      "actual": 15.0,
+      "mean": 180.4,
+      "crps": 42.45777777777778,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 985.0
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "StidJa00",
+    "age": 1,
+    "candidate": {
+      "actual": 85.0,
+      "mean": 171.4848484848485,
+      "crps": 66.34527089072537,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 816.0,
+      "intervalScore80": 816.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "baseline": {
+      "actual": 85.0,
+      "mean": 108.06666666666666,
+      "crps": 56.50666666666663,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 364.0,
+      "intervalScore80": 364.0,
+      "lower95": 0.0,
+      "upper95": 816.0,
+      "intervalScore95": 816.0
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "StidJa00",
+    "age": 2,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 91.63257575757576,
+      "crps": 10.277662993572065,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 155.125,
+      "intervalScore80": 155.125,
+      "lower95": 0.0,
+      "upper95": 1181.5,
+      "intervalScore95": 1181.5
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 27.270833333333332,
+      "crps": 6.001944444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "StidJa00",
+    "age": 3,
+    "candidate": {
+      "actual": 156.0,
+      "mean": 129.39962121212122,
+      "crps": 88.67143021120292,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 437.75,
+      "intervalScore80": 437.75,
+      "lower95": 0.0,
+      "upper95": 1171.9375,
+      "intervalScore95": 1171.9375
+    },
+    "baseline": {
+      "actual": 156.0,
+      "mean": 67.43333333333334,
+      "crps": 89.84111111111112,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "StidJa00",
+    "age": 4,
+    "candidate": {
+      "actual": 134.0,
+      "mean": 95.88257575757576,
+      "crps": 80.30268595041322,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 280.5,
+      "intervalScore80": 280.5,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 134.0,
+      "mean": 42.99583333333333,
+      "crps": 77.83361111111111,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "TaamJo01",
+    "age": 0,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 181.15151515151516,
+      "crps": 38.88888888888886,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 180.4,
+      "crps": 37.45777777777778,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 985.0
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "TaamJo01",
+    "age": 1,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 171.4848484848485,
+      "crps": 35.16345270890724,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 816.0,
+      "intervalScore80": 816.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 108.06666666666666,
+      "crps": 20.173333333333318,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 364.0,
+      "intervalScore80": 364.0,
+      "lower95": 0.0,
+      "upper95": 816.0,
+      "intervalScore95": 816.0
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "TaamJo01",
+    "age": 2,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 91.63257575757576,
+      "crps": 10.277662993572065,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 155.125,
+      "intervalScore80": 155.125,
+      "lower95": 0.0,
+      "upper95": 1181.5,
+      "intervalScore95": 1181.5
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 27.270833333333332,
+      "crps": 6.001944444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "TaamJo01",
+    "age": 3,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 129.39962121212122,
+      "crps": 23.24718778696048,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 437.75,
+      "intervalScore80": 437.75,
+      "lower95": 0.0,
+      "upper95": 1171.9375,
+      "intervalScore95": 1171.9375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 67.43333333333334,
+      "crps": 14.091111111111118,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "TaamJo01",
+    "age": 4,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 95.88257575757576,
+      "crps": 14.28374655647383,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 280.5,
+      "intervalScore80": 280.5,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 42.99583333333333,
+      "crps": 10.16694444444444,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "ThorCl00",
+    "age": 0,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 181.15151515151516,
+      "crps": 38.88888888888886,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 180.4,
+      "crps": 37.45777777777778,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 985.0
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "ThorCl00",
+    "age": 1,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 171.4848484848485,
+      "crps": 35.16345270890724,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 816.0,
+      "intervalScore80": 816.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 108.06666666666666,
+      "crps": 20.173333333333318,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 364.0,
+      "intervalScore80": 364.0,
+      "lower95": 0.0,
+      "upper95": 816.0,
+      "intervalScore95": 816.0
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "ThorCl00",
+    "age": 2,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 91.63257575757576,
+      "crps": 10.277662993572065,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 155.125,
+      "intervalScore80": 155.125,
+      "lower95": 0.0,
+      "upper95": 1181.5,
+      "intervalScore95": 1181.5
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 27.270833333333332,
+      "crps": 6.001944444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "ThorCl00",
+    "age": 3,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 129.39962121212122,
+      "crps": 23.24718778696048,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 437.75,
+      "intervalScore80": 437.75,
+      "lower95": 0.0,
+      "upper95": 1171.9375,
+      "intervalScore95": 1171.9375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 67.43333333333334,
+      "crps": 14.091111111111118,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2019,
+    "pfrId": "ThorCl00",
+    "age": 4,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 95.88257575757576,
+      "crps": 14.28374655647383,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 280.5,
+      "intervalScore80": 280.5,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 42.99583333333333,
+      "crps": 10.16694444444444,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "BryaKe01",
+    "age": 0,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 173.51111111111112,
+      "crps": 33.62962962962965,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 180.4,
+      "crps": 37.45777777777778,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 985.0
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "BryaKe01",
+    "age": 1,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 189.47916666666669,
+      "crps": 37.688055555555565,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 1024.25,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 1124.125
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 114.82083333333333,
+      "crps": 21.434166666666655,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 386.75,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 867.0
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "BryaKe01",
+    "age": 2,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 130.33333333333331,
+      "crps": 19.22783950617284,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 661.9375,
+      "intervalScore80": 661.9375,
+      "lower95": 0.0,
+      "upper95": 1113.5,
+      "intervalScore95": 1113.5
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 27.270833333333332,
+      "crps": 6.001944444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "BryaKe01",
+    "age": 3,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 130.2861111111111,
+      "crps": 21.7851851851852,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 446.25,
+      "intervalScore80": 446.25,
+      "lower95": 0.0,
+      "upper95": 990.25,
+      "intervalScore95": 990.25
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 67.43333333333334,
+      "crps": 14.091111111111118,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "BryaKe01",
+    "age": 4,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 107.525,
+      "crps": 15.235987654320994,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 301.75,
+      "intervalScore80": 301.75,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 42.99583333333333,
+      "crps": 10.16694444444444,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "BurrJo01",
+    "age": 0,
+    "candidate": {
+      "actual": 709.0,
+      "mean": 173.51111111111112,
+      "crps": 456.31851851851854,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "baseline": {
+      "actual": 709.0,
+      "mean": 180.4,
+      "crps": 440.1911111111111,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 985.0
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "BurrJo01",
+    "age": 1,
+    "candidate": {
+      "actual": 1007.0,
+      "mean": 189.47916666666669,
+      "crps": 684.9102777777774,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 1024.25,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 1124.125
+    },
+    "baseline": {
+      "actual": 1007.0,
+      "mean": 114.82083333333333,
+      "crps": 798.7925,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 6589.250000000001,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 6466.999999999995
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "BurrJo01",
+    "age": 2,
+    "candidate": {
+      "actual": 1091.0,
+      "mean": 130.33333333333331,
+      "crps": 854.583395061728,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 661.9375,
+      "intervalScore80": 4952.562500000001,
+      "lower95": 0.0,
+      "upper95": 1113.5,
+      "intervalScore95": 1113.5
+    },
+    "baseline": {
+      "actual": 1091.0,
+      "mean": 27.270833333333332,
+      "crps": 1042.460277777778,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 9867.687500000002,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 37217.18749999996
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "BurrJo01",
+    "age": 3,
+    "candidate": {
+      "actual": 602.0,
+      "mean": 130.2861111111111,
+      "crps": 421.3740740740742,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 446.25,
+      "intervalScore80": 2003.7500000000002,
+      "lower95": 0.0,
+      "upper95": 990.25,
+      "intervalScore95": 990.25
+    },
+    "baseline": {
+      "actual": 602.0,
+      "mean": 67.43333333333334,
+      "crps": 481.2244444444445,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 3600.6875000000005,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 7007.7499999999945
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "BurrJo01",
+    "age": 4,
+    "candidate": {
+      "actual": 1132.0,
+      "mean": 107.525,
+      "crps": 935.1415432098767,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 301.75,
+      "intervalScore80": 8604.250000000002,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 2599.3749999999986
+    },
+    "baseline": {
+      "actual": 1132.0,
+      "mean": 42.99583333333333,
+      "crps": 1056.1752777777779,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 10105.562500000002,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 34340.49999999997
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "DaviKe04",
+    "age": 0,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 173.51111111111112,
+      "crps": 33.62962962962965,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 180.4,
+      "crps": 37.45777777777778,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 985.0
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "DaviKe04",
+    "age": 1,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 189.47916666666669,
+      "crps": 37.688055555555565,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 1024.25,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 1124.125
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 114.82083333333333,
+      "crps": 21.434166666666655,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 386.75,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 867.0
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "DaviKe04",
+    "age": 2,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 130.33333333333331,
+      "crps": 19.22783950617284,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 661.9375,
+      "intervalScore80": 661.9375,
+      "lower95": 0.0,
+      "upper95": 1113.5,
+      "intervalScore95": 1113.5
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 27.270833333333332,
+      "crps": 6.001944444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "DaviKe04",
+    "age": 3,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 130.2861111111111,
+      "crps": 21.7851851851852,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 446.25,
+      "intervalScore80": 446.25,
+      "lower95": 0.0,
+      "upper95": 990.25,
+      "intervalScore95": 990.25
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 67.43333333333334,
+      "crps": 14.091111111111118,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "DaviKe04",
+    "age": 4,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 107.525,
+      "crps": 15.235987654320994,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 301.75,
+      "intervalScore80": 301.75,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 42.99583333333333,
+      "crps": 10.16694444444444,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "EasoJa00",
+    "age": 0,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 173.51111111111112,
+      "crps": 33.62962962962965,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 180.4,
+      "crps": 37.45777777777778,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 985.0
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "EasoJa00",
+    "age": 1,
+    "candidate": {
+      "actual": 5.0,
+      "mean": 189.47916666666669,
+      "crps": 38.688055555555565,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 1024.25,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 1124.125
+    },
+    "baseline": {
+      "actual": 5.0,
+      "mean": 114.82083333333333,
+      "crps": 22.43416666666667,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 386.75,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 867.0
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "EasoJa00",
+    "age": 2,
+    "candidate": {
+      "actual": 7.0,
+      "mean": 130.33333333333331,
+      "crps": 21.183395061728362,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 661.9375,
+      "intervalScore80": 661.9375,
+      "lower95": 0.0,
+      "upper95": 1113.5,
+      "intervalScore95": 1113.5
+    },
+    "baseline": {
+      "actual": 7.0,
+      "mean": 27.270833333333332,
+      "crps": 7.485277777777775,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "EasoJa00",
+    "age": 3,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 130.2861111111111,
+      "crps": 21.7851851851852,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 446.25,
+      "intervalScore80": 446.25,
+      "lower95": 0.0,
+      "upper95": 990.25,
+      "intervalScore95": 990.25
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 67.43333333333334,
+      "crps": 14.091111111111118,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "EasoJa00",
+    "age": 4,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 107.525,
+      "crps": 15.235987654320994,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 301.75,
+      "intervalScore80": 301.75,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 42.99583333333333,
+      "crps": 10.16694444444444,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "FromJa00",
+    "age": 0,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 173.51111111111112,
+      "crps": 33.62962962962965,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 180.4,
+      "crps": 37.45777777777778,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 985.0
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "FromJa00",
+    "age": 1,
+    "candidate": {
+      "actual": 113.0,
+      "mean": 189.47916666666669,
+      "crps": 81.81027777777783,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 1024.25,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 1124.125
+    },
+    "baseline": {
+      "actual": 113.0,
+      "mean": 114.82083333333333,
+      "crps": 70.62583333333332,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 386.75,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 867.0
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "FromJa00",
+    "age": 2,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 130.33333333333331,
+      "crps": 19.22783950617284,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 661.9375,
+      "intervalScore80": 661.9375,
+      "lower95": 0.0,
+      "upper95": 1113.5,
+      "intervalScore95": 1113.5
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 27.270833333333332,
+      "crps": 6.001944444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "FromJa00",
+    "age": 3,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 130.2861111111111,
+      "crps": 21.7851851851852,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 446.25,
+      "intervalScore80": 446.25,
+      "lower95": 0.0,
+      "upper95": 990.25,
+      "intervalScore95": 990.25
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 67.43333333333334,
+      "crps": 14.091111111111118,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "FromJa00",
+    "age": 4,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 107.525,
+      "crps": 15.235987654320994,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 301.75,
+      "intervalScore80": 301.75,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 42.99583333333333,
+      "crps": 10.16694444444444,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "GordAn01",
+    "age": 0,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 173.51111111111112,
+      "crps": 33.62962962962965,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 180.4,
+      "crps": 37.45777777777778,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 985.0
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "GordAn01",
+    "age": 1,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 189.47916666666669,
+      "crps": 37.688055555555565,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 1024.25,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 1124.125
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 114.82083333333333,
+      "crps": 21.434166666666655,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 386.75,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 867.0
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "GordAn01",
+    "age": 2,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 130.33333333333331,
+      "crps": 19.22783950617284,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 661.9375,
+      "intervalScore80": 661.9375,
+      "lower95": 0.0,
+      "upper95": 1113.5,
+      "intervalScore95": 1113.5
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 27.270833333333332,
+      "crps": 6.001944444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "GordAn01",
+    "age": 3,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 130.2861111111111,
+      "crps": 21.7851851851852,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 446.25,
+      "intervalScore80": 446.25,
+      "lower95": 0.0,
+      "upper95": 990.25,
+      "intervalScore95": 990.25
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 67.43333333333334,
+      "crps": 14.091111111111118,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "GordAn01",
+    "age": 4,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 107.525,
+      "crps": 15.235987654320994,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 301.75,
+      "intervalScore80": 301.75,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 42.99583333333333,
+      "crps": 10.16694444444444,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "HerbJu00",
+    "age": 0,
+    "candidate": {
+      "actual": 1097.0,
+      "mean": 173.51111111111112,
+      "crps": 783.607407407407,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 3392.0000000000005,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 5308.999999999996
+    },
+    "baseline": {
+      "actual": 1097.0,
+      "mean": 180.4,
+      "crps": 773.6577777777778,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 3392.0000000000005,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 5464.999999999996
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "HerbJu00",
+    "age": 1,
+    "candidate": {
+      "actual": 1191.0,
+      "mean": 189.47916666666669,
+      "crps": 849.7297222222223,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 2691.75,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 3799.1249999999977
+    },
+    "baseline": {
+      "actual": 1191.0,
+      "mean": 114.82083333333333,
+      "crps": 982.7924999999999,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 8429.250000000002,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 13826.999999999989
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "HerbJu00",
+    "age": 2,
+    "candidate": {
+      "actual": 1162.0,
+      "mean": 130.33333333333331,
+      "crps": 921.4278395061726,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 661.9375,
+      "intervalScore80": 5662.562500000001,
+      "lower95": 0.0,
+      "upper95": 1113.5,
+      "intervalScore95": 3053.499999999998
+    },
+    "baseline": {
+      "actual": 1162.0,
+      "mean": 27.270833333333332,
+      "crps": 1113.4602777777777,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 10577.687500000002,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 40057.18749999996
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "HerbJu00",
+    "age": 3,
+    "candidate": {
+      "actual": 838.0,
+      "mean": 130.2861111111111,
+      "crps": 620.8212962962967,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 446.25,
+      "intervalScore80": 4363.750000000001,
+      "lower95": 0.0,
+      "upper95": 990.25,
+      "intervalScore95": 990.25
+    },
+    "baseline": {
+      "actual": 838.0,
+      "mean": 67.43333333333334,
+      "crps": 717.2244444444445,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 5960.687500000001,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 16447.749999999985
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "HerbJu00",
+    "age": 4,
+    "candidate": {
+      "actual": 1045.0,
+      "mean": 107.525,
+      "crps": 854.2026543209873,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 301.75,
+      "intervalScore80": 7734.250000000001,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 1045.0,
+      "mean": 42.99583333333333,
+      "crps": 969.1752777777775,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 9235.562500000002,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 30860.499999999975
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "HurtJa00",
+    "age": 0,
+    "candidate": {
+      "actual": 334.0,
+      "mean": 173.51111111111112,
+      "crps": 213.98518518518514,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "baseline": {
+      "actual": 334.0,
+      "mean": 180.4,
+      "crps": 213.1911111111111,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 985.0
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "HurtJa00",
+    "age": 1,
+    "candidate": {
+      "actual": 954.0,
+      "mean": 189.47916666666669,
+      "crps": 643.6880555555558,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 1024.25,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 1124.125
+    },
+    "baseline": {
+      "actual": 954.0,
+      "mean": 114.82083333333333,
+      "crps": 745.7925000000002,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 6059.250000000001,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 4346.999999999996
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "HurtJa00",
+    "age": 2,
+    "candidate": {
+      "actual": 1028.0,
+      "mean": 130.33333333333331,
+      "crps": 797.1833950617283,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 661.9375,
+      "intervalScore80": 4322.5625,
+      "lower95": 0.0,
+      "upper95": 1113.5,
+      "intervalScore95": 1113.5
+    },
+    "baseline": {
+      "actual": 1028.0,
+      "mean": 27.270833333333332,
+      "crps": 979.4602777777777,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 9237.687500000002,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 34697.18749999997
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "HurtJa00",
+    "age": 3,
+    "candidate": {
+      "actual": 1103.0,
+      "mean": 130.2861111111111,
+      "crps": 867.2768518518515,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 446.25,
+      "intervalScore80": 7013.750000000001,
+      "lower95": 0.0,
+      "upper95": 990.25,
+      "intervalScore95": 5500.249999999996
+    },
+    "baseline": {
+      "actual": 1103.0,
+      "mean": 67.43333333333334,
+      "crps": 982.2244444444444,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 8610.687500000002,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 27047.749999999978
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "HurtJa00",
+    "age": 4,
+    "candidate": {
+      "actual": 934.0,
+      "mean": 107.525,
+      "crps": 753.0693209876547,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 301.75,
+      "intervalScore80": 6624.250000000001,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 934.0,
+      "mean": 42.99583333333333,
+      "crps": 858.1752777777778,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 8125.562500000002,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 26420.499999999978
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "LeweBr00",
+    "age": 0,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 173.51111111111112,
+      "crps": 33.62962962962965,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 180.4,
+      "crps": 37.45777777777778,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 985.0
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "LeweBr00",
+    "age": 1,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 189.47916666666669,
+      "crps": 37.688055555555565,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 1024.25,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 1124.125
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 114.82083333333333,
+      "crps": 21.434166666666655,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 386.75,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 867.0
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "LeweBr00",
+    "age": 2,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 130.33333333333331,
+      "crps": 19.22783950617284,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 661.9375,
+      "intervalScore80": 661.9375,
+      "lower95": 0.0,
+      "upper95": 1113.5,
+      "intervalScore95": 1113.5
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 27.270833333333332,
+      "crps": 6.001944444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "LeweBr00",
+    "age": 3,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 130.2861111111111,
+      "crps": 21.7851851851852,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 446.25,
+      "intervalScore80": 446.25,
+      "lower95": 0.0,
+      "upper95": 990.25,
+      "intervalScore95": 990.25
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 67.43333333333334,
+      "crps": 14.091111111111118,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "LeweBr00",
+    "age": 4,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 107.525,
+      "crps": 15.235987654320994,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 301.75,
+      "intervalScore80": 301.75,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 42.99583333333333,
+      "crps": 10.16694444444444,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "LoveJo03",
+    "age": 0,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 173.51111111111112,
+      "crps": 33.62962962962965,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 180.4,
+      "crps": 37.45777777777778,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 985.0
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "LoveJo03",
+    "age": 1,
+    "candidate": {
+      "actual": 131.0,
+      "mean": 189.47916666666669,
+      "crps": 89.41027777777762,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 1024.25,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 1124.125
+    },
+    "baseline": {
+      "actual": 131.0,
+      "mean": 114.82083333333333,
+      "crps": 79.0258333333333,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 386.75,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 867.0
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "LoveJo03",
+    "age": 2,
+    "candidate": {
+      "actual": 26.0,
+      "mean": 130.33333333333331,
+      "crps": 28.269506172839527,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 661.9375,
+      "intervalScore80": 661.9375,
+      "lower95": 0.0,
+      "upper95": 1113.5,
+      "intervalScore95": 1113.5
+    },
+    "baseline": {
+      "actual": 26.0,
+      "mean": 27.270833333333332,
+      "crps": 13.88527777777778,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "LoveJo03",
+    "age": 3,
+    "candidate": {
+      "actual": 1083.0,
+      "mean": 130.2861111111111,
+      "crps": 848.1657407407413,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 446.25,
+      "intervalScore80": 6813.750000000001,
+      "lower95": 0.0,
+      "upper95": 990.25,
+      "intervalScore95": 4700.249999999996
+    },
+    "baseline": {
+      "actual": 1083.0,
+      "mean": 67.43333333333334,
+      "crps": 962.2244444444447,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 8410.687500000002,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 26247.749999999978
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "LoveJo03",
+    "age": 4,
+    "candidate": {
+      "actual": 868.0,
+      "mean": 107.525,
+      "crps": 692.9359876543209,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 301.75,
+      "intervalScore80": 5964.250000000001,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 868.0,
+      "mean": 42.99583333333333,
+      "crps": 792.175277777778,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 7465.562500000001,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 23780.499999999978
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "LutoJa00",
+    "age": 0,
+    "candidate": {
+      "actual": 191.0,
+      "mean": 173.51111111111112,
+      "crps": 126.94074074074072,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "baseline": {
+      "actual": 191.0,
+      "mean": 180.4,
+      "crps": 127.39111111111109,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 985.0
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "LutoJa00",
+    "age": 1,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 189.47916666666669,
+      "crps": 37.688055555555565,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 1024.25,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 1124.125
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 114.82083333333333,
+      "crps": 21.434166666666655,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 386.75,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 867.0
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "LutoJa00",
+    "age": 2,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 130.33333333333331,
+      "crps": 19.22783950617284,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 661.9375,
+      "intervalScore80": 661.9375,
+      "lower95": 0.0,
+      "upper95": 1113.5,
+      "intervalScore95": 1113.5
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 27.270833333333332,
+      "crps": 6.001944444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "LutoJa00",
+    "age": 3,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 130.2861111111111,
+      "crps": 21.7851851851852,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 446.25,
+      "intervalScore80": 446.25,
+      "lower95": 0.0,
+      "upper95": 990.25,
+      "intervalScore95": 990.25
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 67.43333333333334,
+      "crps": 14.091111111111118,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "LutoJa00",
+    "age": 4,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 107.525,
+      "crps": 15.235987654320994,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 301.75,
+      "intervalScore80": 301.75,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 42.99583333333333,
+      "crps": 10.16694444444444,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "McDoCo00",
+    "age": 0,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 173.51111111111112,
+      "crps": 33.62962962962965,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 180.4,
+      "crps": 37.45777777777778,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 985.0
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "McDoCo00",
+    "age": 1,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 189.47916666666669,
+      "crps": 37.688055555555565,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 1024.25,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 1124.125
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 114.82083333333333,
+      "crps": 21.434166666666655,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 386.75,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 867.0
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "McDoCo00",
+    "age": 2,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 130.33333333333331,
+      "crps": 19.22783950617284,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 661.9375,
+      "intervalScore80": 661.9375,
+      "lower95": 0.0,
+      "upper95": 1113.5,
+      "intervalScore95": 1113.5
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 27.270833333333332,
+      "crps": 6.001944444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "McDoCo00",
+    "age": 3,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 130.2861111111111,
+      "crps": 21.7851851851852,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 446.25,
+      "intervalScore80": 446.25,
+      "lower95": 0.0,
+      "upper95": 990.25,
+      "intervalScore95": 990.25
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 67.43333333333334,
+      "crps": 14.091111111111118,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "McDoCo00",
+    "age": 4,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 107.525,
+      "crps": 15.235987654320994,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 301.75,
+      "intervalScore80": 301.75,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 42.99583333333333,
+      "crps": 10.16694444444444,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "MontSt01",
+    "age": 0,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 173.51111111111112,
+      "crps": 33.62962962962965,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 180.4,
+      "crps": 37.45777777777778,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 985.0
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "MontSt01",
+    "age": 1,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 189.47916666666669,
+      "crps": 37.688055555555565,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 1024.25,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 1124.125
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 114.82083333333333,
+      "crps": 21.434166666666655,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 386.75,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 867.0
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "MontSt01",
+    "age": 2,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 130.33333333333331,
+      "crps": 19.22783950617284,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 661.9375,
+      "intervalScore80": 661.9375,
+      "lower95": 0.0,
+      "upper95": 1113.5,
+      "intervalScore95": 1113.5
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 27.270833333333332,
+      "crps": 6.001944444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "MontSt01",
+    "age": 3,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 130.2861111111111,
+      "crps": 21.7851851851852,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 446.25,
+      "intervalScore80": 446.25,
+      "lower95": 0.0,
+      "upper95": 990.25,
+      "intervalScore95": 990.25
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 67.43333333333334,
+      "crps": 14.091111111111118,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "MontSt01",
+    "age": 4,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 107.525,
+      "crps": 15.235987654320994,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 301.75,
+      "intervalScore80": 301.75,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 42.99583333333333,
+      "crps": 10.16694444444444,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "MorgJa00",
+    "age": 0,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 173.51111111111112,
+      "crps": 33.62962962962965,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 180.4,
+      "crps": 37.45777777777778,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 985.0
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "MorgJa00",
+    "age": 1,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 189.47916666666669,
+      "crps": 37.688055555555565,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 1024.25,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 1124.125
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 114.82083333333333,
+      "crps": 21.434166666666655,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 386.75,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 867.0
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "MorgJa00",
+    "age": 2,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 130.33333333333331,
+      "crps": 19.22783950617284,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 661.9375,
+      "intervalScore80": 661.9375,
+      "lower95": 0.0,
+      "upper95": 1113.5,
+      "intervalScore95": 1113.5
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 27.270833333333332,
+      "crps": 6.001944444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "MorgJa00",
+    "age": 3,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 130.2861111111111,
+      "crps": 21.7851851851852,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 446.25,
+      "intervalScore80": 446.25,
+      "lower95": 0.0,
+      "upper95": 990.25,
+      "intervalScore95": 990.25
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 67.43333333333334,
+      "crps": 14.091111111111118,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "MorgJa00",
+    "age": 4,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 107.525,
+      "crps": 15.235987654320994,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 301.75,
+      "intervalScore80": 301.75,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 42.99583333333333,
+      "crps": 10.16694444444444,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "PattSh00",
+    "age": 0,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 173.51111111111112,
+      "crps": 33.62962962962965,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 180.4,
+      "crps": 37.45777777777778,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 985.0
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "PattSh00",
+    "age": 1,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 189.47916666666669,
+      "crps": 37.688055555555565,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 1024.25,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 1124.125
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 114.82083333333333,
+      "crps": 21.434166666666655,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 386.75,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 867.0
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "PattSh00",
+    "age": 2,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 130.33333333333331,
+      "crps": 19.22783950617284,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 661.9375,
+      "intervalScore80": 661.9375,
+      "lower95": 0.0,
+      "upper95": 1113.5,
+      "intervalScore95": 1113.5
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 27.270833333333332,
+      "crps": 6.001944444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "PattSh00",
+    "age": 3,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 130.2861111111111,
+      "crps": 21.7851851851852,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 446.25,
+      "intervalScore80": 446.25,
+      "lower95": 0.0,
+      "upper95": 990.25,
+      "intervalScore95": 990.25
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 67.43333333333334,
+      "crps": 14.091111111111118,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "PattSh00",
+    "age": 4,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 107.525,
+      "crps": 15.235987654320994,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 301.75,
+      "intervalScore80": 301.75,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 42.99583333333333,
+      "crps": 10.16694444444444,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "StanNa00",
+    "age": 0,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 173.51111111111112,
+      "crps": 33.62962962962965,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 180.4,
+      "crps": 37.45777777777778,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 985.0
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "StanNa00",
+    "age": 1,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 189.47916666666669,
+      "crps": 37.688055555555565,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 1024.25,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 1124.125
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 114.82083333333333,
+      "crps": 21.434166666666655,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 386.75,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 867.0
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "StanNa00",
+    "age": 2,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 130.33333333333331,
+      "crps": 19.22783950617284,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 661.9375,
+      "intervalScore80": 661.9375,
+      "lower95": 0.0,
+      "upper95": 1113.5,
+      "intervalScore95": 1113.5
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 27.270833333333332,
+      "crps": 6.001944444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "StanNa00",
+    "age": 3,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 130.2861111111111,
+      "crps": 21.7851851851852,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 446.25,
+      "intervalScore80": 446.25,
+      "lower95": 0.0,
+      "upper95": 990.25,
+      "intervalScore95": 990.25
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 67.43333333333334,
+      "crps": 14.091111111111118,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "StanNa00",
+    "age": 4,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 107.525,
+      "crps": 15.235987654320994,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 301.75,
+      "intervalScore80": 301.75,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 42.99583333333333,
+      "crps": 10.16694444444444,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "TagoTu00",
+    "age": 0,
+    "candidate": {
+      "actual": 571.0,
+      "mean": 173.51111111111112,
+      "crps": 366.7185185185184,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "baseline": {
+      "actual": 571.0,
+      "mean": 180.4,
+      "crps": 355.39111111111106,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 985.0,
+      "intervalScore95": 985.0
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "TagoTu00",
+    "age": 1,
+    "candidate": {
+      "actual": 777.0,
+      "mean": 189.47916666666669,
+      "crps": 510.02138888888885,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 1024.25,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 1124.125
+    },
+    "baseline": {
+      "actual": 777.0,
+      "mean": 114.82083333333333,
+      "crps": 580.7924999999999,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 4289.250000000001,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 867.0
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "TagoTu00",
+    "age": 2,
+    "candidate": {
+      "actual": 705.0,
+      "mean": 130.33333333333331,
+      "crps": 522.0639506172838,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 661.9375,
+      "intervalScore80": 1092.5625,
+      "lower95": 0.0,
+      "upper95": 1113.5,
+      "intervalScore95": 1113.5
+    },
+    "baseline": {
+      "actual": 705.0,
+      "mean": 27.270833333333332,
+      "crps": 656.4602777777777,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 6007.687500000001,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 21777.18749999998
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "TagoTu00",
+    "age": 3,
+    "candidate": {
+      "actual": 1045.0,
+      "mean": 130.2861111111111,
+      "crps": 811.8546296296291,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 446.25,
+      "intervalScore80": 6433.750000000001,
+      "lower95": 0.0,
+      "upper95": 990.25,
+      "intervalScore95": 3180.249999999998
+    },
+    "baseline": {
+      "actual": 1045.0,
+      "mean": 67.43333333333334,
+      "crps": 924.2244444444443,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 8030.687500000002,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 24727.749999999978
+    }
+  },
+  {
+    "cohort": 2020,
+    "pfrId": "TagoTu00",
+    "age": 4,
+    "candidate": {
+      "actual": 717.0,
+      "mean": 107.525,
+      "crps": 560.1832098765432,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 301.75,
+      "intervalScore80": 4454.250000000001,
+      "lower95": 0.0,
+      "upper95": 1094.375,
+      "intervalScore95": 1094.375
+    },
+    "baseline": {
+      "actual": 717.0,
+      "mean": 42.99583333333333,
+      "crps": 641.1752777777778,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 5955.562500000001,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 17740.499999999985
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "BookIa00",
+    "age": 0,
+    "candidate": {
+      "actual": 50.0,
+      "mean": 191.43850806451613,
+      "crps": 49.32757219042671,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1158.125,
+      "intervalScore95": 1158.125
+    },
+    "baseline": {
+      "actual": 50.0,
+      "mean": 191.675,
+      "crps": 56.465555555555596,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1046.5625,
+      "intervalScore95": 1046.5625
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "BookIa00",
+    "age": 1,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 209.0211693548387,
+      "crps": 44.29524908949014,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 1024.25,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 1124.125
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 114.82083333333333,
+      "crps": 21.434166666666655,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 386.75,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 867.0
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "BookIa00",
+    "age": 2,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 154.95362903225805,
+      "crps": 25.43808532778357,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 769.25,
+      "intervalScore80": 769.25,
+      "lower95": 0.0,
+      "upper95": 1136.875,
+      "intervalScore95": 1136.875
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 27.270833333333332,
+      "crps": 6.001944444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "BookIa00",
+    "age": 3,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 175.12399193548384,
+      "crps": 31.64309638397509,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 823.4375,
+      "intervalScore80": 823.4375,
+      "lower95": 0.0,
+      "upper95": 1185.75,
+      "intervalScore95": 1185.75
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 67.43333333333334,
+      "crps": 14.091111111111118,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "BookIa00",
+    "age": 4,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 123.83266129032256,
+      "crps": 19.2471709157128,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 376.125,
+      "intervalScore80": 376.125,
+      "lower95": 0.0,
+      "upper95": 1111.375,
+      "intervalScore95": 1111.375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 42.99583333333333,
+      "crps": 10.16694444444444,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "EhliSa00",
+    "age": 0,
+    "candidate": {
+      "actual": 18.0,
+      "mean": 191.43850806451613,
+      "crps": 41.6582173517169,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1158.125,
+      "intervalScore95": 1158.125
+    },
+    "baseline": {
+      "actual": 18.0,
+      "mean": 191.675,
+      "crps": 45.79888888888888,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1046.5625,
+      "intervalScore95": 1046.5625
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "EhliSa00",
+    "age": 1,
+    "candidate": {
+      "actual": 222.0,
+      "mean": 209.0211693548387,
+      "crps": 132.76097489594173,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 1024.25,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 1124.125
+    },
+    "baseline": {
+      "actual": 222.0,
+      "mean": 114.82083333333333,
+      "crps": 128.85083333333336,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 386.75,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 867.0
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "EhliSa00",
+    "age": 2,
+    "candidate": {
+      "actual": 3.0,
+      "mean": 154.95362903225805,
+      "crps": 26.143730489073874,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 769.25,
+      "intervalScore80": 769.25,
+      "lower95": 0.0,
+      "upper95": 1136.875,
+      "intervalScore95": 1136.875
+    },
+    "baseline": {
+      "actual": 3.0,
+      "mean": 27.270833333333332,
+      "crps": 6.601944444444442,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "EhliSa00",
+    "age": 3,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 175.12399193548384,
+      "crps": 31.64309638397509,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 823.4375,
+      "intervalScore80": 823.4375,
+      "lower95": 0.0,
+      "upper95": 1185.75,
+      "intervalScore95": 1185.75
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 67.43333333333334,
+      "crps": 14.091111111111118,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "EhliSa00",
+    "age": 4,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 123.83266129032256,
+      "crps": 19.2471709157128,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 376.125,
+      "intervalScore80": 376.125,
+      "lower95": 0.0,
+      "upper95": 1111.375,
+      "intervalScore95": 1111.375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 42.99583333333333,
+      "crps": 10.16694444444444,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "FielJu00",
+    "age": 0,
+    "candidate": {
+      "actual": 635.0,
+      "mean": 191.43850806451613,
+      "crps": 400.19652380333,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1158.125,
+      "intervalScore95": 1158.125
+    },
+    "baseline": {
+      "actual": 635.0,
+      "mean": 191.675,
+      "crps": 394.5905555555555,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1046.5625,
+      "intervalScore95": 1046.5625
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "FielJu00",
+    "age": 1,
+    "candidate": {
+      "actual": 917.0,
+      "mean": 209.0211693548387,
+      "crps": 585.3920232830383,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 1024.25,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 1124.125
+    },
+    "baseline": {
+      "actual": 917.0,
+      "mean": 114.82083333333333,
+      "crps": 708.7925,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 5689.250000000001,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 2866.999999999998
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "FielJu00",
+    "age": 2,
+    "candidate": {
+      "actual": 829.0,
+      "mean": 154.95362903225805,
+      "crps": 590.6497788761707,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 769.25,
+      "intervalScore80": 1366.75,
+      "lower95": 0.0,
+      "upper95": 1136.875,
+      "intervalScore95": 1136.875
+    },
+    "baseline": {
+      "actual": 829.0,
+      "mean": 27.270833333333332,
+      "crps": 780.4602777777778,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 7247.687500000001,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 26737.187499999978
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "FielJu00",
+    "age": 3,
+    "candidate": {
+      "actual": 408.0,
+      "mean": 175.12399193548384,
+      "crps": 253.80841896462005,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 823.4375,
+      "intervalScore80": 823.4375,
+      "lower95": 0.0,
+      "upper95": 1185.75,
+      "intervalScore95": 1185.75
+    },
+    "baseline": {
+      "actual": 408.0,
+      "mean": 67.43333333333334,
+      "crps": 291.19111111111107,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 1660.6875000000002,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "FielJu00",
+    "age": 4,
+    "candidate": {
+      "actual": 501.0,
+      "mean": 123.83266129032256,
+      "crps": 355.94878381893847,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 376.125,
+      "intervalScore80": 1624.8750000000002,
+      "lower95": 0.0,
+      "upper95": 1111.375,
+      "intervalScore95": 1111.375
+    },
+    "baseline": {
+      "actual": 501.0,
+      "mean": 42.99583333333333,
+      "crps": 425.17527777777764,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 3795.5625000000005,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 9100.499999999993
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "FranFe00",
+    "age": 0,
+    "candidate": {
+      "actual": 14.0,
+      "mean": 191.43850806451613,
+      "crps": 41.013056061394366,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1158.125,
+      "intervalScore95": 1158.125
+    },
+    "baseline": {
+      "actual": 14.0,
+      "mean": 191.675,
+      "crps": 44.46555555555557,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1046.5625,
+      "intervalScore95": 1046.5625
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "FranFe00",
+    "age": 1,
+    "candidate": {
+      "actual": 54.0,
+      "mean": 209.0211693548387,
+      "crps": 59.5775071540063,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 1024.25,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 1124.125
+    },
+    "baseline": {
+      "actual": 54.0,
+      "mean": 114.82083333333333,
+      "crps": 43.09249999999996,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 386.75,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 867.0
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "FranFe00",
+    "age": 2,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 154.95362903225805,
+      "crps": 25.43808532778357,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 769.25,
+      "intervalScore80": 769.25,
+      "lower95": 0.0,
+      "upper95": 1136.875,
+      "intervalScore95": 1136.875
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 27.270833333333332,
+      "crps": 6.001944444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "FranFe00",
+    "age": 3,
+    "candidate": {
+      "actual": 45.0,
+      "mean": 175.12399193548384,
+      "crps": 46.43543509365239,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 823.4375,
+      "intervalScore80": 823.4375,
+      "lower95": 0.0,
+      "upper95": 1185.75,
+      "intervalScore95": 1185.75
+    },
+    "baseline": {
+      "actual": 45.0,
+      "mean": 67.43333333333334,
+      "crps": 28.291111111111107,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "FranFe00",
+    "age": 4,
+    "candidate": {
+      "actual": 15.0,
+      "mean": 123.83266129032256,
+      "crps": 23.53749349635791,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 376.125,
+      "intervalScore80": 376.125,
+      "lower95": 0.0,
+      "upper95": 1111.375,
+      "intervalScore95": 1111.375
+    },
+    "baseline": {
+      "actual": 15.0,
+      "mean": 42.99583333333333,
+      "crps": 14.600277777777777,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "JoneMa05",
+    "age": 0,
+    "candidate": {
+      "actual": 1065.0,
+      "mean": 191.43850806451613,
+      "crps": 728.6219270291359,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 2598.375,
+      "lower95": 0.0,
+      "upper95": 1158.125,
+      "intervalScore95": 1158.125
+    },
+    "baseline": {
+      "actual": 1065.0,
+      "mean": 191.675,
+      "crps": 721.4488888888889,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 2598.375,
+      "lower95": 0.0,
+      "upper95": 1046.5625,
+      "intervalScore95": 1784.0624999999993
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "JoneMa05",
+    "age": 1,
+    "candidate": {
+      "actual": 830.0,
+      "mean": 209.0211693548387,
+      "crps": 524.8436361862642,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 1024.25,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 1124.125
+    },
+    "baseline": {
+      "actual": 830.0,
+      "mean": 114.82083333333333,
+      "crps": 626.7258333333335,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 4819.250000000001,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 867.0
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "JoneMa05",
+    "age": 2,
+    "candidate": {
+      "actual": 635.0,
+      "mean": 154.95362903225805,
+      "crps": 439.3977627471385,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 769.25,
+      "intervalScore80": 769.25,
+      "lower95": 0.0,
+      "upper95": 1136.875,
+      "intervalScore95": 1136.875
+    },
+    "baseline": {
+      "actual": 635.0,
+      "mean": 27.270833333333332,
+      "crps": 586.4602777777778,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 5307.687500000001,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 18977.18749999998
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "JoneMa05",
+    "age": 3,
+    "candidate": {
+      "actual": 497.0,
+      "mean": 175.12399193548384,
+      "crps": 317.6471286420394,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 823.4375,
+      "intervalScore80": 823.4375,
+      "lower95": 0.0,
+      "upper95": 1185.75,
+      "intervalScore95": 1185.75
+    },
+    "baseline": {
+      "actual": 497.0,
+      "mean": 67.43333333333334,
+      "crps": 376.22444444444443,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 2550.6875000000005,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 2807.7499999999977
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "JoneMa05",
+    "age": 4,
+    "candidate": {
+      "actual": 546.0,
+      "mean": 123.83266129032256,
+      "crps": 393.6907193028096,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 376.125,
+      "intervalScore80": 2074.875,
+      "lower95": 0.0,
+      "upper95": 1111.375,
+      "intervalScore95": 1111.375
+    },
+    "baseline": {
+      "actual": 546.0,
+      "mean": 42.99583333333333,
+      "crps": 470.17527777777764,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 4245.562500000001,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 10900.49999999999
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "LancTr00",
+    "age": 0,
+    "candidate": {
+      "actual": 178.0,
+      "mean": 191.43850806451613,
+      "crps": 109.56547541623314,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1158.125,
+      "intervalScore95": 1158.125
+    },
+    "baseline": {
+      "actual": 178.0,
+      "mean": 191.675,
+      "crps": 120.39055555555555,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1046.5625,
+      "intervalScore95": 1046.5625
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "LancTr00",
+    "age": 1,
+    "candidate": {
+      "actual": 84.0,
+      "mean": 209.0211693548387,
+      "crps": 71.19041037981262,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 1024.25,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 1124.125
+    },
+    "baseline": {
+      "actual": 84.0,
+      "mean": 114.82083333333333,
+      "crps": 57.09249999999996,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 386.75,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 867.0
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "LancTr00",
+    "age": 2,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 154.95362903225805,
+      "crps": 25.43808532778357,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 769.25,
+      "intervalScore80": 769.25,
+      "lower95": 0.0,
+      "upper95": 1136.875,
+      "intervalScore95": 1136.875
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 27.270833333333332,
+      "crps": 6.001944444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "LancTr00",
+    "age": 3,
+    "candidate": {
+      "actual": 98.0,
+      "mean": 175.12399193548384,
+      "crps": 69.8769673517171,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 823.4375,
+      "intervalScore80": 823.4375,
+      "lower95": 0.0,
+      "upper95": 1185.75,
+      "intervalScore95": 1185.75
+    },
+    "baseline": {
+      "actual": 98.0,
+      "mean": 67.43333333333334,
+      "crps": 55.04111111111112,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "LancTr00",
+    "age": 4,
+    "candidate": {
+      "actual": 100.0,
+      "mean": 123.83266129032256,
+      "crps": 61.61410639958385,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 376.125,
+      "intervalScore80": 376.125,
+      "lower95": 0.0,
+      "upper95": 1111.375,
+      "intervalScore95": 1111.375
+    },
+    "baseline": {
+      "actual": 100.0,
+      "mean": 42.99583333333333,
+      "crps": 52.90027777777778,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "LawrTr00",
+    "age": 0,
+    "candidate": {
+      "actual": 1078.0,
+      "mean": 191.43850806451613,
+      "crps": 740.4868463839749,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 2728.375,
+      "lower95": 0.0,
+      "upper95": 1158.125,
+      "intervalScore95": 1158.125
+    },
+    "baseline": {
+      "actual": 1078.0,
+      "mean": 191.675,
+      "crps": 734.448888888889,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 2728.375,
+      "lower95": 0.0,
+      "upper95": 1046.5625,
+      "intervalScore95": 2304.062499999999
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "LawrTr00",
+    "age": 1,
+    "candidate": {
+      "actual": 1096.0,
+      "mean": 209.0211693548387,
+      "crps": 726.7912168314253,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 1741.75,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 1124.125
+    },
+    "baseline": {
+      "actual": 1096.0,
+      "mean": 114.82083333333333,
+      "crps": 887.7925000000002,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 7479.250000000001,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 10026.999999999993
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "LawrTr00",
+    "age": 2,
+    "candidate": {
+      "actual": 1047.0,
+      "mean": 154.95362903225805,
+      "crps": 774.6074401664931,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 769.25,
+      "intervalScore80": 3546.7500000000005,
+      "lower95": 0.0,
+      "upper95": 1136.875,
+      "intervalScore95": 1136.875
+    },
+    "baseline": {
+      "actual": 1047.0,
+      "mean": 27.270833333333332,
+      "crps": 998.4602777777776,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 9427.687500000002,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 35457.18749999997
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "LawrTr00",
+    "age": 3,
+    "candidate": {
+      "actual": 536.0,
+      "mean": 175.12399193548384,
+      "crps": 346.5826125130071,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 823.4375,
+      "intervalScore80": 823.4375,
+      "lower95": 0.0,
+      "upper95": 1185.75,
+      "intervalScore95": 1185.75
+    },
+    "baseline": {
+      "actual": 536.0,
+      "mean": 67.43333333333334,
+      "crps": 415.2244444444445,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 2940.6875000000005,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 4367.749999999996
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "LawrTr00",
+    "age": 4,
+    "candidate": {
+      "actual": 1114.0,
+      "mean": 123.83266129032256,
+      "crps": 888.3076547866809,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 376.125,
+      "intervalScore80": 7754.875000000001,
+      "lower95": 0.0,
+      "upper95": 1111.375,
+      "intervalScore95": 1216.375
+    },
+    "baseline": {
+      "actual": 1114.0,
+      "mean": 42.99583333333333,
+      "crps": 1038.1752777777776,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 9925.562500000002,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 33620.49999999997
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "MillDa02",
+    "age": 0,
+    "candidate": {
+      "actual": 743.0,
+      "mean": 191.43850806451613,
+      "crps": 473.5392657388139,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1158.125,
+      "intervalScore95": 1158.125
+    },
+    "baseline": {
+      "actual": 743.0,
+      "mean": 191.675,
+      "crps": 460.1405555555556,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1046.5625,
+      "intervalScore95": 1046.5625
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "MillDa02",
+    "age": 1,
+    "candidate": {
+      "actual": 855.0,
+      "mean": 209.0211693548387,
+      "crps": 541.7791200572317,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 1024.25,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 1124.125
+    },
+    "baseline": {
+      "actual": 855.0,
+      "mean": 114.82083333333333,
+      "crps": 648.3924999999999,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 5069.250000000001,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 867.0
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "MillDa02",
+    "age": 2,
+    "candidate": {
+      "actual": 53.0,
+      "mean": 154.95362903225805,
+      "crps": 46.0832466181061,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 769.25,
+      "intervalScore80": 769.25,
+      "lower95": 0.0,
+      "upper95": 1136.875,
+      "intervalScore95": 1136.875
+    },
+    "baseline": {
+      "actual": 53.0,
+      "mean": 27.270833333333332,
+      "crps": 29.868611111111115,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "MillDa02",
+    "age": 3,
+    "candidate": {
+      "actual": 72.0,
+      "mean": 175.12399193548384,
+      "crps": 57.7580157388137,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 823.4375,
+      "intervalScore80": 823.4375,
+      "lower95": 0.0,
+      "upper95": 1185.75,
+      "intervalScore95": 1185.75
+    },
+    "baseline": {
+      "actual": 72.0,
+      "mean": 67.43333333333334,
+      "crps": 40.89111111111109,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "MillDa02",
+    "age": 4,
+    "candidate": {
+      "actual": 292.0,
+      "mean": 123.83266129032256,
+      "crps": 186.68063865764822,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 376.125,
+      "intervalScore80": 376.125,
+      "lower95": 0.0,
+      "upper95": 1111.375,
+      "intervalScore95": 1111.375
+    },
+    "baseline": {
+      "actual": 292.0,
+      "mean": 42.99583333333333,
+      "crps": 216.17527777777778,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 1705.5625000000002,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 740.4999999999995
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "NewmJa00",
+    "age": 0,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 191.43850806451613,
+      "crps": 38.99491090010409,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1158.125,
+      "intervalScore95": 1158.125
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 191.675,
+      "crps": 39.79888888888891,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1046.5625,
+      "intervalScore95": 1046.5625
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "NewmJa00",
+    "age": 1,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 209.0211693548387,
+      "crps": 44.29524908949014,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 1024.25,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 1124.125
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 114.82083333333333,
+      "crps": 21.434166666666655,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 386.75,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 867.0
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "NewmJa00",
+    "age": 2,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 154.95362903225805,
+      "crps": 25.43808532778357,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 769.25,
+      "intervalScore80": 769.25,
+      "lower95": 0.0,
+      "upper95": 1136.875,
+      "intervalScore95": 1136.875
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 27.270833333333332,
+      "crps": 6.001944444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "NewmJa00",
+    "age": 3,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 175.12399193548384,
+      "crps": 31.64309638397509,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 823.4375,
+      "intervalScore80": 823.4375,
+      "lower95": 0.0,
+      "upper95": 1185.75,
+      "intervalScore95": 1185.75
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 67.43333333333334,
+      "crps": 14.091111111111118,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "NewmJa00",
+    "age": 4,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 123.83266129032256,
+      "crps": 19.2471709157128,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 376.125,
+      "intervalScore80": 376.125,
+      "lower95": 0.0,
+      "upper95": 1111.375,
+      "intervalScore95": 1111.375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 42.99583333333333,
+      "crps": 10.16694444444444,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "RamsPe00",
+    "age": 0,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 191.43850806451613,
+      "crps": 38.99491090010409,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1158.125,
+      "intervalScore95": 1158.125
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 191.675,
+      "crps": 39.79888888888891,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1046.5625,
+      "intervalScore95": 1046.5625
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "RamsPe00",
+    "age": 1,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 209.0211693548387,
+      "crps": 44.29524908949014,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 1024.25,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 1124.125
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 114.82083333333333,
+      "crps": 21.434166666666655,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 386.75,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 867.0
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "RamsPe00",
+    "age": 2,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 154.95362903225805,
+      "crps": 25.43808532778357,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 769.25,
+      "intervalScore80": 769.25,
+      "lower95": 0.0,
+      "upper95": 1136.875,
+      "intervalScore95": 1136.875
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 27.270833333333332,
+      "crps": 6.001944444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "RamsPe00",
+    "age": 3,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 175.12399193548384,
+      "crps": 31.64309638397509,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 823.4375,
+      "intervalScore80": 823.4375,
+      "lower95": 0.0,
+      "upper95": 1185.75,
+      "intervalScore95": 1185.75
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 67.43333333333334,
+      "crps": 14.091111111111118,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "RamsPe00",
+    "age": 4,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 123.83266129032256,
+      "crps": 19.2471709157128,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 376.125,
+      "intervalScore80": 376.125,
+      "lower95": 0.0,
+      "upper95": 1111.375,
+      "intervalScore95": 1111.375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 42.99583333333333,
+      "crps": 10.16694444444444,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "SmitZa01",
+    "age": 0,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 191.43850806451613,
+      "crps": 38.99491090010409,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1158.125,
+      "intervalScore95": 1158.125
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 191.675,
+      "crps": 39.79888888888891,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1046.5625,
+      "intervalScore95": 1046.5625
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "SmitZa01",
+    "age": 1,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 209.0211693548387,
+      "crps": 44.29524908949014,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 1024.25,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 1124.125
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 114.82083333333333,
+      "crps": 21.434166666666655,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 386.75,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 867.0
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "SmitZa01",
+    "age": 2,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 154.95362903225805,
+      "crps": 25.43808532778357,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 769.25,
+      "intervalScore80": 769.25,
+      "lower95": 0.0,
+      "upper95": 1136.875,
+      "intervalScore95": 1136.875
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 27.270833333333332,
+      "crps": 6.001944444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "SmitZa01",
+    "age": 3,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 175.12399193548384,
+      "crps": 31.64309638397509,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 823.4375,
+      "intervalScore80": 823.4375,
+      "lower95": 0.0,
+      "upper95": 1185.75,
+      "intervalScore95": 1185.75
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 67.43333333333334,
+      "crps": 14.091111111111118,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "SmitZa01",
+    "age": 4,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 123.83266129032256,
+      "crps": 19.2471709157128,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 376.125,
+      "intervalScore80": 376.125,
+      "lower95": 0.0,
+      "upper95": 1111.375,
+      "intervalScore95": 1111.375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 42.99583333333333,
+      "crps": 10.16694444444444,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "ThomZa03",
+    "age": 0,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 191.43850806451613,
+      "crps": 38.99491090010409,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1158.125,
+      "intervalScore95": 1158.125
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 191.675,
+      "crps": 39.79888888888891,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1046.5625,
+      "intervalScore95": 1046.5625
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "ThomZa03",
+    "age": 1,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 209.0211693548387,
+      "crps": 44.29524908949014,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 1024.25,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 1124.125
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 114.82083333333333,
+      "crps": 21.434166666666655,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 386.75,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 867.0
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "ThomZa03",
+    "age": 2,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 154.95362903225805,
+      "crps": 25.43808532778357,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 769.25,
+      "intervalScore80": 769.25,
+      "lower95": 0.0,
+      "upper95": 1136.875,
+      "intervalScore95": 1136.875
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 27.270833333333332,
+      "crps": 6.001944444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "ThomZa03",
+    "age": 3,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 175.12399193548384,
+      "crps": 31.64309638397509,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 823.4375,
+      "intervalScore80": 823.4375,
+      "lower95": 0.0,
+      "upper95": 1185.75,
+      "intervalScore95": 1185.75
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 67.43333333333334,
+      "crps": 14.091111111111118,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "ThomZa03",
+    "age": 4,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 123.83266129032256,
+      "crps": 19.2471709157128,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 376.125,
+      "intervalScore80": 376.125,
+      "lower95": 0.0,
+      "upper95": 1111.375,
+      "intervalScore95": 1111.375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 42.99583333333333,
+      "crps": 10.16694444444444,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "ThomKe05",
+    "age": 0,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 191.43850806451613,
+      "crps": 38.99491090010409,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1158.125,
+      "intervalScore95": 1158.125
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 191.675,
+      "crps": 39.79888888888891,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1046.5625,
+      "intervalScore95": 1046.5625
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "ThomKe05",
+    "age": 1,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 209.0211693548387,
+      "crps": 44.29524908949014,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 1024.25,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 1124.125
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 114.82083333333333,
+      "crps": 21.434166666666655,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 386.75,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 867.0
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "ThomKe05",
+    "age": 2,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 154.95362903225805,
+      "crps": 25.43808532778357,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 769.25,
+      "intervalScore80": 769.25,
+      "lower95": 0.0,
+      "upper95": 1136.875,
+      "intervalScore95": 1136.875
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 27.270833333333332,
+      "crps": 6.001944444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "ThomKe05",
+    "age": 3,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 175.12399193548384,
+      "crps": 31.64309638397509,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 823.4375,
+      "intervalScore80": 823.4375,
+      "lower95": 0.0,
+      "upper95": 1185.75,
+      "intervalScore95": 1185.75
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 67.43333333333334,
+      "crps": 14.091111111111118,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "ThomKe05",
+    "age": 4,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 123.83266129032256,
+      "crps": 19.2471709157128,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 376.125,
+      "intervalScore80": 376.125,
+      "lower95": 0.0,
+      "upper95": 1111.375,
+      "intervalScore95": 1111.375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 42.99583333333333,
+      "crps": 10.16694444444444,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "TrasKy00",
+    "age": 0,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 191.43850806451613,
+      "crps": 38.99491090010409,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1158.125,
+      "intervalScore95": 1158.125
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 191.675,
+      "crps": 39.79888888888891,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1046.5625,
+      "intervalScore95": 1046.5625
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "TrasKy00",
+    "age": 1,
+    "candidate": {
+      "actual": 10.0,
+      "mean": 209.0211693548387,
+      "crps": 46.02508779916752,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 1024.25,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 1124.125
+    },
+    "baseline": {
+      "actual": 10.0,
+      "mean": 114.82083333333333,
+      "crps": 23.91749999999999,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 386.75,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 867.0
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "TrasKy00",
+    "age": 2,
+    "candidate": {
+      "actual": 3.0,
+      "mean": 154.95362903225805,
+      "crps": 26.143730489073874,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 769.25,
+      "intervalScore80": 769.25,
+      "lower95": 0.0,
+      "upper95": 1136.875,
+      "intervalScore95": 1136.875
+    },
+    "baseline": {
+      "actual": 3.0,
+      "mean": 27.270833333333332,
+      "crps": 6.601944444444442,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "TrasKy00",
+    "age": 3,
+    "candidate": {
+      "actual": 19.0,
+      "mean": 175.12399193548384,
+      "crps": 36.94954799687835,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 823.4375,
+      "intervalScore80": 823.4375,
+      "lower95": 0.0,
+      "upper95": 1185.75,
+      "intervalScore95": 1185.75
+    },
+    "baseline": {
+      "actual": 19.0,
+      "mean": 67.43333333333334,
+      "crps": 18.299444444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "TrasKy00",
+    "age": 4,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 123.83266129032256,
+      "crps": 19.2471709157128,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 376.125,
+      "intervalScore80": 376.125,
+      "lower95": 0.0,
+      "upper95": 1111.375,
+      "intervalScore95": 1111.375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 42.99583333333333,
+      "crps": 10.16694444444444,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "WhitBr00",
+    "age": 0,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 191.43850806451613,
+      "crps": 38.99491090010409,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1158.125,
+      "intervalScore95": 1158.125
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 191.675,
+      "crps": 39.79888888888891,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1046.5625,
+      "intervalScore95": 1046.5625
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "WhitBr00",
+    "age": 1,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 209.0211693548387,
+      "crps": 44.29524908949014,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 1024.25,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 1124.125
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 114.82083333333333,
+      "crps": 21.434166666666655,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 386.75,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 867.0
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "WhitBr00",
+    "age": 2,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 154.95362903225805,
+      "crps": 25.43808532778357,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 769.25,
+      "intervalScore80": 769.25,
+      "lower95": 0.0,
+      "upper95": 1136.875,
+      "intervalScore95": 1136.875
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 27.270833333333332,
+      "crps": 6.001944444444447,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 115.8125,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 164.6875
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "WhitBr00",
+    "age": 3,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 175.12399193548384,
+      "crps": 31.64309638397509,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 823.4375,
+      "intervalScore80": 823.4375,
+      "lower95": 0.0,
+      "upper95": 1185.75,
+      "intervalScore95": 1185.75
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 67.43333333333334,
+      "crps": 14.091111111111118,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "WhitBr00",
+    "age": 4,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 123.83266129032256,
+      "crps": 19.2471709157128,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 376.125,
+      "intervalScore80": 376.125,
+      "lower95": 0.0,
+      "upper95": 1111.375,
+      "intervalScore95": 1111.375
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 42.99583333333333,
+      "crps": 10.16694444444444,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "WilsZa00",
+    "age": 0,
+    "candidate": {
+      "actual": 741.0,
+      "mean": 191.43850806451613,
+      "crps": 472.1199109001042,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1158.125,
+      "intervalScore95": 1158.125
+    },
+    "baseline": {
+      "actual": 741.0,
+      "mean": 191.675,
+      "crps": 458.6738888888889,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1046.5625,
+      "intervalScore95": 1046.5625
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "WilsZa00",
+    "age": 1,
+    "candidate": {
+      "actual": 504.0,
+      "mean": 209.0211693548387,
+      "crps": 304.0049265088449,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 1024.25,
+      "intervalScore80": 1024.25,
+      "lower95": 0.0,
+      "upper95": 1124.125,
+      "intervalScore95": 1124.125
+    },
+    "baseline": {
+      "actual": 504.0,
+      "mean": 114.82083333333333,
+      "crps": 344.19250000000005,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 386.75,
+      "intervalScore80": 1559.2500000000002,
+      "lower95": 0.0,
+      "upper95": 867.0,
+      "intervalScore95": 867.0
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "WilsZa00",
+    "age": 2,
+    "candidate": {
+      "actual": 688.0,
+      "mean": 154.95362903225805,
+      "crps": 479.5610691987515,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 769.25,
+      "intervalScore80": 769.25,
+      "lower95": 0.0,
+      "upper95": 1136.875,
+      "intervalScore95": 1136.875
+    },
+    "baseline": {
+      "actual": 688.0,
+      "mean": 27.270833333333332,
+      "crps": 639.4602777777778,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 115.8125,
+      "intervalScore80": 5837.687500000001,
+      "lower95": 0.0,
+      "upper95": 164.6875,
+      "intervalScore95": 21097.18749999998
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "WilsZa00",
+    "age": 3,
+    "candidate": {
+      "actual": 0.0,
+      "mean": 175.12399193548384,
+      "crps": 31.64309638397509,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 823.4375,
+      "intervalScore80": 823.4375,
+      "lower95": 0.0,
+      "upper95": 1185.75,
+      "intervalScore95": 1185.75
+    },
+    "baseline": {
+      "actual": 0.0,
+      "mean": 67.43333333333334,
+      "crps": 14.091111111111118,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 268.8125,
+      "intervalScore80": 268.8125,
+      "lower95": 0.0,
+      "upper95": 437.75,
+      "intervalScore95": 437.75
+    }
+  },
+  {
+    "cohort": 2021,
+    "pfrId": "WilsZa00",
+    "age": 4,
+    "candidate": {
+      "actual": 26.0,
+      "mean": 123.83266129032256,
+      "crps": 27.30765478668053,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 376.125,
+      "intervalScore80": 376.125,
+      "lower95": 0.0,
+      "upper95": 1111.375,
+      "intervalScore95": 1111.375
+    },
+    "baseline": {
+      "actual": 26.0,
+      "mean": 42.99583333333333,
+      "crps": 18.266944444444448,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 134.9375,
+      "intervalScore80": 134.9375,
+      "lower95": 0.0,
+      "upper95": 280.5,
+      "intervalScore95": 280.5
+    }
+  }
+]

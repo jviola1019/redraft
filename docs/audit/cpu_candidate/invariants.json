@@ -1,0 +1,139 @@
+{
+  "baselineReplays": 108,
+  "candidateReplays": 18,
+  "pairedPoisonChecks": 18,
+  "candidateFitRows": 1272,
+  "candidateFitCohorts": [
+    2013,
+    2017
+  ],
+  "runs": [
+    {
+      "year": 2018,
+      "seed": "cpu-policy-audit-0",
+      "replayEqual": true,
+      "historyPoisonEqual": true,
+      "tradePoisonEqual": true
+    },
+    {
+      "year": 2018,
+      "seed": "cpu-policy-audit-1",
+      "replayEqual": true,
+      "historyPoisonEqual": true,
+      "tradePoisonEqual": true
+    },
+    {
+      "year": 2019,
+      "seed": "cpu-policy-audit-0",
+      "replayEqual": true,
+      "historyPoisonEqual": true,
+      "tradePoisonEqual": true
+    },
+    {
+      "year": 2019,
+      "seed": "cpu-policy-audit-1",
+      "replayEqual": true,
+      "historyPoisonEqual": true,
+      "tradePoisonEqual": true
+    },
+    {
+      "year": 2020,
+      "seed": "cpu-policy-audit-0",
+      "replayEqual": true,
+      "historyPoisonEqual": true,
+      "tradePoisonEqual": true
+    },
+    {
+      "year": 2020,
+      "seed": "cpu-policy-audit-1",
+      "replayEqual": true,
+      "historyPoisonEqual": true,
+      "tradePoisonEqual": true
+    },
+    {
+      "year": 2021,
+      "seed": "cpu-policy-audit-0",
+      "replayEqual": true,
+      "historyPoisonEqual": true,
+      "tradePoisonEqual": true
+    },
+    {
+      "year": 2021,
+      "seed": "cpu-policy-audit-1",
+      "replayEqual": true,
+      "historyPoisonEqual": true,
+      "tradePoisonEqual": true
+    },
+    {
+      "year": 2022,
+      "seed": "cpu-policy-audit-0",
+      "replayEqual": true,
+      "historyPoisonEqual": true,
+      "tradePoisonEqual": true
+    },
+    {
+      "year": 2022,
+      "seed": "cpu-policy-audit-1",
+      "replayEqual": true,
+      "historyPoisonEqual": true,
+      "tradePoisonEqual": true
+    },
+    {
+      "year": 2023,
+      "seed": "cpu-policy-audit-0",
+      "replayEqual": true,
+      "historyPoisonEqual": true,
+      "tradePoisonEqual": true
+    },
+    {
+      "year": 2023,
+      "seed": "cpu-policy-audit-1",
+      "replayEqual": true,
+      "historyPoisonEqual": true,
+      "tradePoisonEqual": true
+    },
+    {
+      "year": 2024,
+      "seed": "cpu-policy-audit-0",
+      "replayEqual": true,
+      "historyPoisonEqual": true,
+      "tradePoisonEqual": true
+    },
+    {
+      "year": 2024,
+      "seed": "cpu-policy-audit-1",
+      "replayEqual": true,
+      "historyPoisonEqual": true,
+      "tradePoisonEqual": true
+    },
+    {
+      "year": 2025,
+      "seed": "cpu-policy-audit-0",
+      "replayEqual": true,
+      "historyPoisonEqual": true,
+      "tradePoisonEqual": true
+    },
+    {
+      "year": 2025,
+      "seed": "cpu-policy-audit-1",
+      "replayEqual": true,
+      "historyPoisonEqual": true,
+      "tradePoisonEqual": true
+    },
+    {
+      "year": 2026,
+      "seed": "cpu-policy-audit-0",
+      "replayEqual": true,
+      "historyPoisonEqual": true,
+      "tradePoisonEqual": true
+    },
+    {
+      "year": 2026,
+      "seed": "cpu-policy-audit-1",
+      "replayEqual": true,
+      "historyPoisonEqual": true,
+      "tradePoisonEqual": true
+    }
+  ],
+  "failures": []
+}

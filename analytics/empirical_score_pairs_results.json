@@ -1,0 +1,249 @@
+{
+  "protocol": {
+    "donorWindowSeasons": 10,
+    "marginKernelBandwidth": 6,
+    "minimumDonors": 100,
+    "evaluationWindows": [
+      [
+        2014,
+        2015
+      ],
+      [
+        2016,
+        2017
+      ]
+    ],
+    "adoptionCriteria": {
+      "totalMarginHomeAwayCRPS": "Each candidate mean CRPS <= baseline in EACH window",
+      "totalMarginHomeAwayMAE": "Each candidate MAE <= 1.01 times baseline in EACH window",
+      "shutoutBrier": "Candidate <= baseline in EACH window",
+      "coverage": "For total, margin, home and away, absolute 90% coverage error <= baseline error + .01 in EACH window",
+      "league": "Must validate a cutoff-safe shared team-season dependence model before adoption; marginal score-pair resampling cannot pass this gate"
+    },
+    "noTuningAfterAssessment": true,
+    "status": "Retrospective fixed-design exploration; all assessment outcomes previously exposed"
+  },
+  "sourceSha256": "369967042aac4f7b431c8644c197c6829e8428f7776058e4a058506ea4dece76",
+  "assessments": [
+    {
+      "years": [
+        2014,
+        2015
+      ],
+      "games": 512,
+      "fits": [
+        {
+          "testSeason": 2014,
+          "fitThrough": 2013,
+          "law": {
+            "homeAdvantage": 2.5697869955156936,
+            "strengthCoefficient": 0.39644368781267453,
+            "meanTotal": 43.11182735426009,
+            "marginSd": 14.445807694023355,
+            "totalSd": 14.266579492228965,
+            "rho": 0.012379766436716467,
+            "seasonShockSd": 0.0,
+            "fitThroughSeason": 2013
+          },
+          "donors": 2560
+        },
+        {
+          "testSeason": 2015,
+          "fitThrough": 2014,
+          "law": {
+            "homeAdvantage": 2.564330543933054,
+            "strengthCoefficient": 0.40906901395111167,
+            "meanTotal": 43.25,
+            "marginSd": 14.471860360221974,
+            "totalSd": 14.242408296647454,
+            "rho": 0.018075297140617654,
+            "seasonShockSd": 0.0,
+            "fitThroughSeason": 2014
+          },
+          "donors": 2560
+        }
+      ],
+      "metrics": {
+        "normal": {
+          "totalCRPS": 7.789528921479359,
+          "totalMAE": 11.038724899291992,
+          "total90": 0.91796875,
+          "marginCRPS": 8.049585114000365,
+          "marginMAE": 11.179469108581543,
+          "margin90": 0.890625,
+          "homeCRPS": 5.778234725585207,
+          "homeMAE": 8.121987342834473,
+          "home90": 0.8984375,
+          "awayCRPS": 5.419216332724318,
+          "awayMAE": 7.655302047729492,
+          "away90": 0.912109375,
+          "shutoutBrier": 0.017831141594797373,
+          "predictedShutoutRate": 0.04091167449951172
+        },
+        "empiricalPairs": {
+          "totalCRPS": 7.79567133076489,
+          "totalMAE": 11.026461601257324,
+          "total90": 0.923828125,
+          "marginCRPS": 8.238391843624413,
+          "marginMAE": 11.45127010345459,
+          "margin90": 0.90625,
+          "homeCRPS": 5.853988730581477,
+          "homeMAE": 8.203641891479492,
+          "home90": 0.888671875,
+          "awayCRPS": 5.487206349382177,
+          "awayMAE": 7.767126083374023,
+          "away90": 0.939453125,
+          "shutoutBrier": 0.017334728501737118,
+          "predictedShutoutRate": 0.0259857177734375
+        }
+      },
+      "gates": {
+        "totalCRPS": false,
+        "totalMAE": true,
+        "total90Coverage": true,
+        "marginCRPS": false,
+        "marginMAE": false,
+        "margin90Coverage": true,
+        "homeCRPS": false,
+        "homeMAE": false,
+        "home90Coverage": true,
+        "awayCRPS": false,
+        "awayMAE": false,
+        "away90Coverage": false,
+        "shutoutBrier": true
+      },
+      "allMarginalGatesPass": false,
+      "effectiveDonorCount": {
+        "min": 1759.0077909028091,
+        "median": 2394.687350822228
+      }
+    },
+    {
+      "years": [
+        2016,
+        2017
+      ],
+      "games": 512,
+      "fits": [
+        {
+          "testSeason": 2016,
+          "fitThrough": 2015,
+          "law": {
+            "homeAdvantage": 2.501470588235294,
+            "strengthCoefficient": 0.4054632414351056,
+            "meanTotal": 43.39901960784314,
+            "marginSd": 14.432800034647736,
+            "totalSd": 14.211293811667101,
+            "rho": 0.01989252135249283,
+            "seasonShockSd": 0.0,
+            "fitThroughSeason": 2015
+          },
+          "donors": 2560
+        },
+        {
+          "testSeason": 2017,
+          "fitThrough": 2016,
+          "law": {
+            "homeAdvantage": 2.505304428044279,
+            "strengthCoefficient": 0.40454352106846103,
+            "meanTotal": 43.52606088560886,
+            "marginSd": 14.321471029467645,
+            "totalSd": 14.169749078759308,
+            "rho": 0.018429442789689297,
+            "seasonShockSd": 0.0,
+            "fitThroughSeason": 2016
+          },
+          "donors": 2560
+        }
+      ],
+      "metrics": {
+        "normal": {
+          "totalCRPS": 7.753927855868824,
+          "totalMAE": 10.917552471160889,
+          "total90": 0.90625,
+          "marginCRPS": 7.495833648717962,
+          "marginMAE": 10.385369777679443,
+          "margin90": 0.9140625,
+          "homeCRPS": 5.532784793293104,
+          "homeMAE": 7.741189002990723,
+          "home90": 0.916015625,
+          "awayCRPS": 5.303339901263826,
+          "awayMAE": 7.447451114654541,
+          "away90": 0.921875,
+          "shutoutBrier": 0.026800908031873405,
+          "predictedShutoutRate": 0.037923336029052734
+        },
+        "empiricalPairs": {
+          "totalCRPS": 7.746824620291591,
+          "totalMAE": 10.909135818481445,
+          "total90": 0.90234375,
+          "marginCRPS": 7.605685924179852,
+          "marginMAE": 10.581998825073242,
+          "margin90": 0.939453125,
+          "homeCRPS": 5.575743326917291,
+          "homeMAE": 7.84193229675293,
+          "home90": 0.923828125,
+          "awayCRPS": 5.334249193314463,
+          "awayMAE": 7.539096832275391,
+          "away90": 0.92578125,
+          "shutoutBrier": 0.026728032855316997,
+          "predictedShutoutRate": 0.022833824157714844
+        }
+      },
+      "gates": {
+        "totalCRPS": true,
+        "totalMAE": true,
+        "total90Coverage": true,
+        "marginCRPS": false,
+        "marginMAE": false,
+        "margin90Coverage": false,
+        "homeCRPS": false,
+        "homeMAE": false,
+        "home90Coverage": true,
+        "awayCRPS": false,
+        "awayMAE": false,
+        "away90Coverage": true,
+        "shutoutBrier": true
+      },
+      "allMarginalGatesPass": false,
+      "effectiveDonorCount": {
+        "min": 1762.006180487088,
+        "median": 2414.99814799092
+      }
+    }
+  ],
+  "league": {
+    "season": 2017,
+    "simulations": 1000,
+    "fitThrough": 2016,
+    "teamSeasonShockSd": 4.704734728281837,
+    "metrics": {
+      "normalSharedShock": {
+        "meanWithinTeamWinSd": 2.790424156352093,
+        "pooledWinQuantiles": [
+          3.0,
+          8.0,
+          13.0
+        ],
+        "probabilityAnyTeamAtLeast14Wins": 0.617,
+        "probabilityAnyTeamAtMost2Wins": 0.638,
+        "meanWithinTeamSeasonPointsSd": 53.88594136128273
+      },
+      "empiricalMarginalOnly": {
+        "meanWithinTeamWinSd": 1.9748009873015682,
+        "pooledWinQuantiles": [
+          5.0,
+          8.0,
+          11.0
+        ],
+        "probabilityAnyTeamAtLeast14Wins": 0.06,
+        "probabilityAnyTeamAtMost2Wins": 0.061,
+        "meanWithinTeamSeasonPointsSd": 40.399133016427086
+      }
+    },
+    "gatePass": false,
+    "limit": "Donor draws preserve exact observed score pairs but independently resample each game, removing shared team-season shocks. This league check is descriptive, not a validation against observed seasons. No draft impacts, postseason, schedule regeneration or five-year path."
+  },
+  "adopt": false,
+  "decision": "Do not adopt. Report every predefined gate and joint-season limitation; score-pair support is empirical, not a generative NFL scoring mechanism."
+}
