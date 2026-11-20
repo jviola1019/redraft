@@ -9,7 +9,7 @@ import {engine, sim, loadScenario, cleanup, hashes} from '../analytics/runtime_l
 const scenarioYear = Number(process.env.REDRAFT_SCENARIO_YEAR || 2018);
 const { dataset, models } = loadScenario(scenarioYear);
 const output = resolve(process.argv[2] || 'tests/results/league-matrix.json');
-const seeds = ['redraft-structural-matrix-v1-a', 'redraft-structural-matrix-v1-b', 'redraft-structural-matrix-v1-c'];
+import {matrixSeeds as seeds} from './matrix-receipt.mjs';
 const fixedTime = '2026-11-04T00:00:00Z';
 const startedAt = new Date().toISOString(), started = performance.now(), sourceHashes = hashes();
 const teams = dataset.teams.map(t => t.id).sort(), teamSet = new Set(teams);

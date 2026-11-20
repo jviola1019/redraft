@@ -3,7 +3,7 @@ import { z } from 'zod';
 import { HttpError, readJsonBody } from '@/lib/request-body';
 import { getChatGPTUser } from '@/app/chatgpt-auth';
 import { dataset, models, scoutingPolicy, teamContexts, teamContextMetadata, selectedTeamContext, getScenario, years, coverage } from '@/lib/server-data';
-import { createGame, advance, scout, select, setBoard, proposeTrade, applyTrade, validateGame, random, rankLeaderboard, RULE_VERSION, SCORING_VERSION, ENSEMBLE_SIZE } from '@/lib/engine';
+import { createGame, advance, scout, select, setBoard, proposeTrade, applyTrade, validateGame, random, rankLeaderboard, supportsEngineVersion, RULE_VERSION, SCORING_VERSION, ENSEMBLE_SIZE } from '@/lib/engine';
 import { simulateReplicate, compactReplicate, summarizeResults } from '@/lib/simulation';
 import { aliasCatalog, prospectDisclosure, BLIND_POLICY_VERSION, type AliasCatalog } from '@/lib/scouting';
 import type { GameState } from '@/lib/types';
@@ -45,7 +45,7 @@ const schema=z.discriminatedUnion('action',[
 ]);
 async function run(owner:string,id:string){const row=await db().prepare('SELECT id,owner,challenge_date,state,revision FROM game_runs WHERE id=? AND owner=?').bind(id,owner).first<RunRow>();if(!row)throw new HttpError(404,'Draft not found.');return row;}
 const unpack=(row:RunRow)=>JSON.parse(row.state) as StoredGame;
-function compatible(game:StoredGame,bundle=getScenario(game.year)){return game.modelVersion===bundle.models.version&&game.datasetVersion===bundle.dataset.metadata.version&&game.engineVersion===RULE_VERSION&&game.scoringVersion===SCORING_VERSION&&game.scoutingVersion===BLIND_POLICY_VERSION&&game.ensembleSize===ENSEMBLE_SIZE;}
+function compatible(game:StoredGame,bundle=getScenario(game.year)){return game.modelVersion===bundle.models.version&&game.datasetVersion===bundle.dataset.metadata.version&&supportsEngineVersion(game.engineVersion)&&game.scoringVersion===SCORING_VERSION&&game.scoutingVersion===BLIND_POLICY_VERSION&&game.ensembleSize===ENSEMBLE_SIZE;}
 function remap(value:unknown,aliases:AliasCatalog):unknown{
   if(typeof value==='string')return aliases.toPublic.get(value)??value;
   if(Array.isArray(value))return value.map(v=>remap(v,aliases));
@@ -113,11 +113,11 @@ export async function POST(request:Request){try{
       const existing=await db().prepare('SELECT game_id FROM daily_attempts WHERE owner=? AND date=?').bind(owner,config.date).first<{game_id:string}>();
       if(existing)return json(await view(unpack(await run(owner,existing.game_id))));
       const pinned=getScenario(config.year);
-      if(config.modelVersion!==pinned.models.version||config.datasetVersion!==pinned.dataset.metadata.version||config.engineVersion!==RULE_VERSION||config.scoutingVersion!==BLIND_POLICY_VERSION||config.scoringVersion!==SCORING_VERSION||config.ensembleSize!==ENSEMBLE_SIZE)throw new HttpError(409,'Today’s challenge is pinned to a different version. It remains frozen until the next UTC day.');
+      if(config.modelVersion!==pinned.models.version||config.datasetVersion!==pinned.dataset.metadata.version||!supportsEngineVersion(config.engineVersion)||config.scoutingVersion!==BLIND_POLICY_VERSION||config.scoringVersion!==SCORING_VERSION||config.ensembleSize!==ENSEMBLE_SIZE)throw new HttpError(409,'Today’s challenge is pinned to a different version. It remains frozen until the next UTC day.');
     }
     const year=config?.year??payload.year??2018,bundle=getScenario(year),{dataset,models}=bundle;
     if(payload.team&&!dataset.teams.some(t=>t.id===payload.team))throw new HttpError(400,'Unsupported historical franchise for this draft year.');
-    const now=createdAt.toISOString();const game:StoredGame={...createGame({id:crypto.randomUUID(),team:config?.team??payload.team,year,seed:config?.seed??payload.seed??token(),mode:payload.mode,now,modelVersion:String(models.version)},dataset),blindSalt:config?.blindSalt??token(),scoutingVersion:BLIND_POLICY_VERSION};
+    const now=createdAt.toISOString();const game:StoredGame={...createGame({id:crypto.randomUUID(),team:config?.team??payload.team,year,seed:config?.seed??payload.seed??token(),mode:payload.mode,now,modelVersion:String(models.version),engineVersion:config && supportsEngineVersion(config.engineVersion) ? config.engineVersion : undefined},dataset),blindSalt:config?.blindSalt??token(),scoutingVersion:BLIND_POLICY_VERSION};
     const statements=[db().prepare('INSERT INTO game_runs (id,owner,mode,challenge_date,team,year,status,revision,state,created_at,updated_at) VALUES (?,?,?,?,?,?,?,?,?,?,?)').bind(game.id,owner,game.mode,config?.date??null,game.team,game.year,game.status,0,JSON.stringify(game),now,now),db().prepare('INSERT INTO request_receipts (id,owner,game_id,request_hash,created_at) VALUES (?,?,?,?,?)').bind(payload.requestId,owner,game.id,requestHash,now)];
     if(config)statements.push(db().prepare('INSERT INTO daily_attempts (id,owner,date,game_id,created_at) VALUES (?,?,?,?,?)').bind(crypto.randomUUID(),owner,config.date,game.id,now));
     try{await db().batch(statements);}catch{throw new HttpError(409,'Another request created this draft. Refresh your saved drafts.');}

@@ -17,7 +17,7 @@ const origin = 'https://redraft.integration.test', scratch = mkdtempSync(join(tm
 const context = new AsyncLocalStorage();
 globalThis.__redraftHeadersContext = context;
 globalThis.__redraftTestEnv = {};
-const tracked = ['app/api/game/route.ts', 'lib/scouting.ts', 'lib/engine.ts', 'lib/simulation.ts', 'lib/server-data.ts', 'analytics/model.json', 'analytics/five_year_strict_2018.json', 'analytics/scoring_recalibration.json', 'data/clean/team_context_2018.json', 'data/clean/team_context_source_manifest.json', 'data/processed/scenario-coverage.json', 'tests/api.integration.mjs',
+const tracked = ['app/api/game/route.ts', 'lib/scouting.ts', 'lib/score-sensitivity.ts', 'lib/engine.ts', 'lib/simulation.ts', 'lib/server-data.ts', 'analytics/model.json', 'analytics/cpu-position-capital-v1.json', 'analytics/five_year_strict_2018.json', 'analytics/scoring_recalibration.json', 'data/clean/team_context_2018.json', 'data/clean/team_context_source_manifest.json', 'data/processed/scenario-coverage.json', 'tests/api.integration.mjs',
     ...readdirSync('data/processed').filter(f => /^scenario-\d{4}\.json$/.test(f)).sort().map(f => 'data/processed/' + f),
     ...readdirSync('analytics').filter(f => /^model-\d{4}\.json$/.test(f)).sort().map(f => 'analytics/' + f),
     ...readdirSync('drizzle').filter(f => f.endsWith('.sql')).sort().map(f => 'drizzle/' + f)];
@@ -95,7 +95,8 @@ const scenarioMatrix = pinnedScenarios.years.map(year => {
     return { year, picks: scenario.picks.length, playableCandidates: scenario.metadata.playableProspectCount, modelVersion: bundle.models.version, teamContextAvailable: bundle.teamContexts.length > 0 };
 });
 const developmentModel = JSON.parse(readFileSync('analytics/five_year_strict_2018.json', 'utf8'));
-const { positionGroup } = await import(pathToFileURL(join(root, 'lib/engine.ts')).href);
+const { advance, LEGACY_RULE_VERSION, positionGroup, RULE_VERSION } = await import(pathToFileURL(join(root, 'lib/engine.ts')).href);
+const { decisionScoreSensitivity } = await import(pathToFileURL(join(root, 'lib/score-sensitivity.ts')).href);
 const cases = [], started = performance.now(), nativeDate = Date, quick = process.argv.includes('--quick');
 let requests = 0, maximumResponseBytes = 0;
 async function call(method, owner, { body, action = 'bootstrap', id, headers: extra = {}, rawBody } = {}) {
@@ -411,6 +412,14 @@ try {
             assertBlind(dailyB);
             assert.equal(dailyA.game.results.decisionScore, dailyB.game.results.decisionScore);
             assert.deepEqual(dailyA.game.results.summary, dailyB.game.results.summary);
+            const { decisionScore, scoreComponents } = stored(dailyA.game.id).results;
+            const officialTotal = scoreComponents.reduce((sum, c) => sum + c.weight * c.score, 0);
+            const alternatives = scoreComponents.flatMap(({ score, weight }) => [-0.5, 0.5].map(delta =>
+                Math.round((officialTotal + score * weight * delta) / (1 + weight * delta))));
+            const expectedRange = { low: Math.min(decisionScore, ...alternatives), high: Math.max(decisionScore, ...alternatives) };
+            assert.deepEqual(decisionScoreSensitivity(decisionScore, scoreComponents), expectedRange);
+            for (const { game: { results } } of [dailyA, dailyB])
+                assert.deepEqual(decisionScoreSensitivity(results.decisionScore, results.scoreComponents), expectedRange);
             for (const s of dailyA.game.results.replicates[0].baseline.seasons) {
                 assert.equal(s.players.length, 0, 'Actual baseline player allocation is sealed until close.');
                 assert.equal(s.starPicks.length, 0);
@@ -424,7 +433,9 @@ try {
             assert.equal(one('SELECT score FROM daily_leaderboard_entries WHERE owner=?', 'daily-a').score, dailyA.game.results.decisionScore);
             await expect('POST', 'daily-a', { body: { ...mutation(dailyA, 'save'), score: 100 } }, 400);
             const replay = await mutate('daily-a', dailyA, 'simulate');
-            assert.equal(replay.game.results.decisionScore, dailyA.game.results.decisionScore);
+            assert.equal(replay.game.results.decisionScore, decisionScore);
+            assert.deepEqual(replay.game.results.scoreComponents, scoreComponents);
+            assert.deepEqual(stored(dailyA.game.id).results.scoreComponents, scoreComponents);
             assert.equal(one('SELECT count(*) AS n FROM daily_leaderboard_entries WHERE owner=?', 'daily-a').n, 1);
         });
     await check('UTC rollover closes old attempts and reveals completed draft identities', async () => {
@@ -445,6 +456,31 @@ try {
         }
         finally {
             globalThis.Date = nativeDate;
+        }
+    });
+    await check('saved drafts and daily challenges retain their supported engine version', async () => {
+        const date = new nativeDate().toISOString().slice(0, 10);
+        const original = one('SELECT config FROM daily_challenges WHERE date=?', date).config;
+        const config = { ...JSON.parse(original), engineVersion: LEGACY_RULE_VERSION };
+        database.sql.prepare('UPDATE daily_challenges SET config=? WHERE date=?').run(JSON.stringify(config), date);
+        try {
+            const fresh = await expect('POST', 'versioned-engine-owner', { body: newPayload() }, 201);
+            assert.equal(fresh.game.engineVersion, RULE_VERSION);
+            const daily = await expect('POST', 'versioned-engine-owner', { body: newPayload('daily') }, 201);
+            assert.equal(daily.game.engineVersion, LEGACY_RULE_VERSION);
+            const saved = stored(daily.game.id);
+            const { dataset, models } = pinnedScenarios.getScenario(daily.game.year);
+            const expected = advance(saved, dataset, models, 'one');
+            const resumed = await load('versioned-engine-owner', daily.game.id);
+            assert.equal(resumed.compatibilityWarning, undefined);
+            await mutate('versioned-engine-owner', resumed, 'advance', { pace: 'one' });
+            const updated = stored(daily.game.id);
+            assert.equal(updated.engineVersion, LEGACY_RULE_VERSION);
+            assert.deepEqual(updated.selections, expected.selections);
+            assert.deepEqual(updated.trades, expected.trades);
+        }
+        finally {
+            database.sql.prepare('UPDATE daily_challenges SET config=? WHERE date=?').run(original, date);
         }
     });
     await check('frozen daily versions and rate limits are enforced', async () => {

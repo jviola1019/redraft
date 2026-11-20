@@ -24,7 +24,7 @@ export const supportedYears=registry.years;
 export function cleanup(){fs.rmSync(dir,{recursive:true,force:true});}
 export function hashes(){return Object.fromEntries([
   'lib/engine.ts','lib/simulation.ts','lib/scouting.ts','lib/server-data.ts',
-  'analytics/model.json','analytics/five_year_strict_2018.json','analytics/scoring_recalibration.json',
+  'analytics/cpu-position-capital-v1.json','analytics/model.json','analytics/five_year_strict_2018.json','analytics/scoring_recalibration.json',
   'data/clean/team_context_2018.json','data/clean/team_context_source_manifest.json',
   ...fs.readdirSync(path.join(root,'data/processed')).filter(p=>/^scenario-.*\.json$/.test(p)).map(p=>'data/processed/'+p),
   ...fs.readdirSync(path.join(root,'analytics')).filter(p=>/^model-\d{4}\.json$/.test(p)).map(p=>'analytics/'+p)

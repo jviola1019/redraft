@@ -1,12 +1,12 @@
 # CPU draft behavior backtest
 
-Audit date: 2026-11-20. This is a bounded, descriptive backtest of the frozen production policy. No runtime tuning was performed.
+Audit date: 2026-11-20. This is a bounded, descriptive backtest of the legacy CPU policy. The current engine and its paired comparison are documented in the [team-conditional choice experiment](cpu_team_prior/REPORT.md).
 
 **Finding:** Completing drafts legally does not make the CPU behavior historically plausible. Across 108 complete auto-drafts (12 fixed seeds for each class, 2018–2026), the CPU selected **one first-round quarterback in total**. Actual drafts selected 31 across the nine classes. The round-one position mix strongly favors offensive linemen, especially in recent classes. Whole-draft aggregate shares hide this concentration.
 
 ## Method and reproduction
 
-Run `node research/cpu_behavior_audit.mjs --output docs/audit/cpu_behavior_results.json`. The script loads the production scenario registry and engine through `analytics/runtime_loader.mjs`, performs all comparisons independently and records hashes of runtime/model/scenario inputs and raw trades. All 108 drafts filled their class's slots with unique playable candidates; eligibility failures were zero.
+Run `node research/cpu_behavior_audit.mjs --legacy-engine --output /tmp/cpu_behavior_legacy.json`. The script loads the production scenario registry and engine through `analytics/runtime_loader.mjs`, performs all comparisons independently and records hashes of runtime/model/scenario inputs and raw trades. All 108 drafts filled their class's slots with unique playable candidates; eligibility failures were zero.
 
 The 12 seeds are fixed before examining results. The designated user franchise rotates through 12 franchises; `autoComplete` applies the CPU picking policy to that franchise too, but `maybeCpuTrade` excludes it from CPU trades. Thus this measures a production auto-completed session, not a hypothetical 32-team symmetric trading league. No user board changes or user trade proposals are included.
 
