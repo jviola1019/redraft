@@ -106,3 +106,7 @@
  .guide-compare{gap:10px;min-height:48px;margin-top:8px}
  .guided-cards{gap:22px}
 }
+
+/* Keep status announcements available to assistive technology while reviewing a prospect. */
+body:has(.modal-backdrop) .toast{clip-path:inset(50%);pointer-events:none}
+#available-prospects{scroll-margin-block-start:5rem}

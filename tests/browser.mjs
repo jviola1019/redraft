@@ -68,12 +68,18 @@ try {
     await page.getByLabel('Run seed').fill(`browser-${label}`);
     await page.getByRole('button', { name: 'Enter the draft room' }).click();
     await page.getByRole('heading', { name: 'You’re up. Make your pick.' }).waitFor();
+    await page.getByRole('button', { name: 'See prospects' }).click();
+    await page.waitForFunction(() => document.activeElement?.id === 'available-prospects');
     await page.getByRole('button', { name: 'Scout · 1 point', exact: true }).first().click();
     await page.getByRole('button', { name: 'Scouted', exact: true }).first().waitFor();
     await page.getByRole('button', { name: 'Review & pick', exact: true }).first().click();
     const dialog = page.getByRole('dialog');
     await dialog.waitFor();
     await settledEntry(page);
+    const statusCannotCoverDialog = await page.locator('.toast').evaluateAll(elements =>
+      elements.every(element => getComputedStyle(element).pointerEvents === 'none'
+        && getComputedStyle(element).clipPath !== 'none'));
+    assert.ok(statusCannotCoverDialog, 'A status notification must not cover scouting details');
     const dialogBounds = await dialog.boundingBox();
     const viewport = page.viewportSize();
     assert.ok(dialogBounds && viewport && dialogBounds.x >= -1 && dialogBounds.y >= -1
