@@ -1,3 +1,5 @@
+> November 19, 2026 review evidence and remaining blockers are in [the current release report](docs/release/CURRENT_RELEASE.md). Earlier dated results below describe their own revisions.
+
 # Known limitations and release acceptance
 
 ## Current verified checkpoint

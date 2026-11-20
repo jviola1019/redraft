@@ -4,10 +4,14 @@
 [33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mProxy environment variables detected. We'll use your proxy for fetch requests.[0m
 
 
+1:54:37 AM [vite] (rsc) Re-optimizing dependencies because lockfile has changed
+1:54:37 AM [vite] (ssr) Re-optimizing dependencies because lockfile has changed
 Sites local sign-in: seedy@sites.test
+1:54:37 AM [vite] (sites_connector_preview) Re-optimizing dependencies because lockfile has changed
+1:54:39 AM [vite] (client) Re-optimizing dependencies because lockfile has changed
   ➜  Local:   http://127.0.0.1:4174/
  GET /api/game 401 in 3.7s
- GET / 200 in 3.8s (compile: 1794523048.8s, render: 3.7s)
- GET /api/game 200 in 39ms
- POST /api/game 201 in 48ms
- POST /api/game 200 in 45ms
+ GET / 200 in 3.7s (compile: 1795139675.6s, render: 3.6s)
+ GET /api/game 200 in 32ms
+ POST /api/game 201 in 36ms
+ POST /api/game 200 in 31ms

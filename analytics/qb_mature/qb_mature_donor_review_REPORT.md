@@ -55,3 +55,5 @@ RD_ROOT=/path/to/redraft RD_QB_OUT=/path/to/results python test_qb_mature_donor_
 ```
 
 Keep PROTOCOL.md beside the script and results. All files are in `/tmp/rd2-qb-mature`; nothing was written to the repository or deployment.
+
+![Historical QB snap totals and forecast intervals by cohort](five-year-qb-coverage.png)

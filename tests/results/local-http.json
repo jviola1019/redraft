@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-12T22:37:41.988Z",
+  "at": "2026-11-20T01:54:47.592Z",
   "status": "passed",
   "checks": [
     "unauthenticated 401",
@@ -7,6 +7,6 @@
     "real bootstrap and local D1",
     "new game, scouting transaction, persistent reload"
   ],
-  "durationMs": 13292,
+  "durationMs": 12108,
   "limitation": "HTTP and server rendering only; does not replace a browser or physical iPhone test."
 }

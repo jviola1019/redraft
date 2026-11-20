@@ -1,6 +1,6 @@
 {
   "version": "research-release-gates-2026-11-04-v1",
-  "asOf": "2026-11-12",
+  "asOf": "2026-11-20",
   "policy": {
     "version": "research-release-gates-2026-11-04-v1",
     "minimumDonorsPerConditionalStratum": 10,
@@ -12,8 +12,8 @@
   },
   "releaseStatus": "blocked",
   "counts": {
-    "pass": 33,
-    "fail": 9,
+    "pass": 40,
+    "fail": 6,
     "unsupported": 7,
     "stale": 0
   },
@@ -78,6 +78,46 @@
       }
     },
     {
+      "id": "forecast_source_analytics/forecast_audit.py",
+      "status": "pass",
+      "scope": "evidence-integrity",
+      "requirement": "Exact audit matches source artifact",
+      "evidence": {
+        "evaluated": "152b7587d4c8255e6f51e7198a7136d3b2405ad83eb18ae8fcf9ad45f6488197",
+        "current": "152b7587d4c8255e6f51e7198a7136d3b2405ad83eb18ae8fcf9ad45f6488197"
+      }
+    },
+    {
+      "id": "forecast_source_lib/simulation.ts",
+      "status": "pass",
+      "scope": "evidence-integrity",
+      "requirement": "Exact audit matches source artifact",
+      "evidence": {
+        "evaluated": "e03f6afab57ae9c5288eaa343e58a9f977e2dee51c73ab77f06cdf6d75ac49ca",
+        "current": "e03f6afab57ae9c5288eaa343e58a9f977e2dee51c73ab77f06cdf6d75ac49ca"
+      }
+    },
+    {
+      "id": "forecast_source_lib/engine.ts",
+      "status": "pass",
+      "scope": "evidence-integrity",
+      "requirement": "Exact audit matches source artifact",
+      "evidence": {
+        "evaluated": "e5e0bb35be07a01ea133331a200a15593b706772cf625c523e48e96d9b9b37f3",
+        "current": "e5e0bb35be07a01ea133331a200a15593b706772cf625c523e48e96d9b9b37f3"
+      }
+    },
+    {
+      "id": "forecast_source_lib/server-data.ts",
+      "status": "pass",
+      "scope": "evidence-integrity",
+      "requirement": "Exact audit matches source artifact",
+      "evidence": {
+        "evaluated": "0ede48d68b376a2ad5adb3633680bfa0f067e3a2469aeff3d3b10338fb556be3",
+        "current": "0ede48d68b376a2ad5adb3633680bfa0f067e3a2469aeff3d3b10338fb556be3"
+      }
+    },
+    {
       "id": "conditional_support_DB",
       "status": "pass",
       "scope": "forecast-support",
@@ -96,14 +136,14 @@
       "requirement": "Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes",
       "evidence": {
         "n": 58,
-        "coverage": 0.9137931034482759,
-        "covered": 53,
+        "coverage": 0.9310344827586207,
+        "covered": 54,
         "wilson95": [
-          0.8135637093712647,
-          0.962614616873809
+          0.8356633368561964,
+          0.9728557529824217
         ],
-        "meanWidth": 4496.741379310345,
-        "meanIntervalScore": 5709.155172413792,
+        "meanWidth": 4590.307112068966,
+        "meanIntervalScore": 5500.35021551724,
         "outsideDonorSupport": 3
       }
     },
@@ -114,15 +154,15 @@
       "requirement": "Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes",
       "evidence": {
         "n": 58,
-        "coverage": 0.9827586206896551,
-        "covered": 57,
+        "coverage": 1.0,
+        "covered": 58,
         "wilson95": [
-          0.9085914190653199,
-          0.9969499615539326
+          0.9378821442127971,
+          1.0
         ],
-        "meanWidth": 79.0,
-        "meanIntervalScore": 79.6896551724138,
-        "outsideDonorSupport": 1
+        "meanWidth": 81.0,
+        "meanIntervalScore": 81.0,
+        "outsideDonorSupport": 0
       }
     },
     {
@@ -150,27 +190,27 @@
           0.8583028134672614,
           0.9950795928601897
         ],
-        "meanWidth": 3549.3055555555557,
-        "meanIntervalScore": 4045.972222222222,
+        "meanWidth": 3639.690972222222,
+        "meanIntervalScore": 4038.09375,
         "outsideDonorSupport": 1
       }
     },
     {
       "id": "coverage95_DL_games",
-      "status": "fail",
+      "status": "pass",
       "scope": "forecast-calibration",
       "requirement": "Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes",
       "evidence": {
         "n": 36,
-        "coverage": 0.8888888888888888,
-        "covered": 32,
+        "coverage": 0.9444444444444444,
+        "covered": 34,
         "wilson95": [
-          0.7468519140963513,
-          0.9559335969968435
+          0.8185534279135275,
+          0.9846300133358382
         ],
-        "meanWidth": 78.11111111111111,
-        "meanIntervalScore": 91.44444444444443,
-        "outsideDonorSupport": 2
+        "meanWidth": 80.11111111111111,
+        "meanIntervalScore": 85.66666666666667,
+        "outsideDonorSupport": 0
       }
     },
     {
@@ -187,24 +227,6 @@
     },
     {
       "id": "coverage95_LB_snaps",
-      "status": "fail",
-      "scope": "forecast-calibration",
-      "requirement": "Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes",
-      "evidence": {
-        "n": 48,
-        "coverage": 0.875,
-        "covered": 42,
-        "wilson95": [
-          0.7529954171361317,
-          0.9414294856142802
-        ],
-        "meanWidth": 4184.0,
-        "meanIntervalScore": 5477.333333333332,
-        "outsideDonorSupport": 4
-      }
-    },
-    {
-      "id": "coverage95_LB_games",
       "status": "pass",
       "scope": "forecast-calibration",
       "requirement": "Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes",
@@ -216,9 +238,27 @@
           0.8044669820963272,
           0.9671162431819081
         ],
-        "meanWidth": 76.5,
-        "meanIntervalScore": 85.66666666666667,
+        "meanWidth": 4310.5,
+        "meanIntervalScore": 5093.0,
         "outsideDonorSupport": 3
+      }
+    },
+    {
+      "id": "coverage95_LB_games",
+      "status": "pass",
+      "scope": "forecast-calibration",
+      "requirement": "Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes",
+      "evidence": {
+        "n": 48,
+        "coverage": 0.9375,
+        "covered": 45,
+        "wilson95": [
+          0.8316456194505365,
+          0.9785167670916107
+        ],
+        "meanWidth": 78.5,
+        "meanIntervalScore": 81.83333333333333,
+        "outsideDonorSupport": 2
       }
     },
     {
@@ -246,8 +286,8 @@
           0.8866470547848865,
           0.9961521457419497
         ],
-        "meanWidth": 5039.782608695652,
-        "meanIntervalScore": 5514.565217391304,
+        "meanWidth": 5165.119565217391,
+        "meanIntervalScore": 5532.130434782609,
         "outsideDonorSupport": 0
       }
     },
@@ -264,9 +304,9 @@
           0.8866470547848865,
           0.9961521457419497
         ],
-        "meanWidth": 78.80434782608695,
-        "meanIntervalScore": 84.02173913043478,
-        "outsideDonorSupport": 1
+        "meanWidth": 80.80434782608695,
+        "meanIntervalScore": 84.28260869565217,
+        "outsideDonorSupport": 0
       }
     },
     {
@@ -294,8 +334,8 @@
           0.5050168346449122,
           0.8981793250878696
         ],
-        "meanWidth": 1965.0,
-        "meanIntervalScore": 24869.99999999998,
+        "meanWidth": 1971.1875,
+        "meanIntervalScore": 24814.31249999998,
         "outsideDonorSupport": 4
       }
     },
@@ -312,8 +352,8 @@
           0.5699111903802586,
           0.9340840092857187
         ],
-        "meanWidth": 61.0,
-        "meanIntervalScore": 150.99999999999991,
+        "meanWidth": 63.0,
+        "meanIntervalScore": 137.99999999999994,
         "outsideDonorSupport": 3
       }
     },
@@ -342,8 +382,8 @@
           0.8793566952341543,
           0.9999999999999998
         ],
-        "meanWidth": 3479.0,
-        "meanIntervalScore": 3479.0,
+        "meanWidth": 3579.1785714285716,
+        "meanIntervalScore": 3579.1785714285716,
         "outsideDonorSupport": 0
       }
     },
@@ -360,8 +400,8 @@
           0.7735463743160095,
           0.9801879358846942
         ],
-        "meanWidth": 70.85714285714286,
-        "meanIntervalScore": 90.85714285714285,
+        "meanWidth": 72.85714285714286,
+        "meanIntervalScore": 87.14285714285712,
         "outsideDonorSupport": 2
       }
     },
@@ -390,27 +430,27 @@
           0.8063923194655637,
           1.0
         ],
-        "meanWidth": 3452.0,
-        "meanIntervalScore": 3452.0,
+        "meanWidth": 3553.5625,
+        "meanIntervalScore": 3553.5625,
         "outsideDonorSupport": 0
       }
     },
     {
       "id": "coverage95_TE_games",
-      "status": "fail",
+      "status": "pass",
       "scope": "forecast-calibration",
       "requirement": "Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes",
       "evidence": {
         "n": 16,
-        "coverage": 0.8125,
-        "covered": 13,
+        "coverage": 0.9375,
+        "covered": 15,
         "wilson95": [
-          0.5699111903802586,
-          0.9340840092857187
+          0.7167126242970107,
+          0.9888806552353576
         ],
-        "meanWidth": 79.0,
-        "meanIntervalScore": 96.49999999999999,
-        "outsideDonorSupport": 3
+        "meanWidth": 81.0,
+        "meanIntervalScore": 83.5,
+        "outsideDonorSupport": 1
       }
     },
     {
@@ -438,8 +478,8 @@
           0.8681900983014993,
           0.99545929689901
         ],
-        "meanWidth": 4358.692307692308,
-        "meanIntervalScore": 4496.128205128205,
+        "meanWidth": 4460.1233974358975,
+        "meanIntervalScore": 4515.572115384615,
         "outsideDonorSupport": 0
       }
     },
@@ -456,8 +496,8 @@
           0.9103331462924287,
           1.0
         ],
-        "meanWidth": 79.8974358974359,
-        "meanIntervalScore": 79.8974358974359,
+        "meanWidth": 81.8974358974359,
+        "meanIntervalScore": 81.8974358974359,
         "outsideDonorSupport": 0
       }
     },
@@ -482,10 +522,10 @@
       "scope": "forecast-validity",
       "requirement": "Paired CRPS improvement confidence interval excludes zero on independent evidence; reused cohort only supports an audit",
       "evidence": {
-        "difference": -28.934962821958486,
+        "difference": -28.550247854789824,
         "playerBootstrap95": [
-          -66.11187002107738,
-          6.196063737187829
+          -65.73138960814241,
+          6.811460264899577
         ],
         "resamples": 2000,
         "note": "One cohort; does not measure between-era or team clustering uncertainty."
@@ -508,8 +548,8 @@
         "configuration": {
           "team": "CLE",
           "draftSeed": "redraft-validation-2026-11-02",
-          "engineVersion": "redraft-research-0.8-schedule-tiebreaks",
-          "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:f16356d6371a+scoring-trailing3-v1",
+          "engineVersion": "redraft-research-0.9-schedule-exposure",
+          "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-exposure-v2+prior-utilization-policy-v1:a2667b83e75f+scoring-trailing3-v1",
           "datasetVersion": "nflverse-2018-combine-only-v2"
         }
       }
@@ -574,8 +614,8 @@
         "configuration": {
           "team": "KC",
           "draftSeed": "redraft-validation-2026-11-02",
-          "engineVersion": "redraft-research-0.8-schedule-tiebreaks",
-          "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:f16356d6371a+scoring-trailing3-v1",
+          "engineVersion": "redraft-research-0.9-schedule-exposure",
+          "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-exposure-v2+prior-utilization-policy-v1:a2667b83e75f+scoring-trailing3-v1",
           "datasetVersion": "nflverse-2018-combine-only-v2"
         }
       }
@@ -640,8 +680,8 @@
         "configuration": {
           "team": "NE",
           "draftSeed": "redraft-validation-2026-11-02",
-          "engineVersion": "redraft-research-0.8-schedule-tiebreaks",
-          "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:f16356d6371a+scoring-trailing3-v1",
+          "engineVersion": "redraft-research-0.9-schedule-exposure",
+          "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-exposure-v2+prior-utilization-policy-v1:a2667b83e75f+scoring-trailing3-v1",
           "datasetVersion": "nflverse-2018-combine-only-v2"
         }
       }
@@ -706,8 +746,8 @@
         "configuration": {
           "team": "SF",
           "draftSeed": "redraft-validation-2026-11-02",
-          "engineVersion": "redraft-research-0.8-schedule-tiebreaks",
-          "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:f16356d6371a+scoring-trailing3-v1",
+          "engineVersion": "redraft-research-0.9-schedule-exposure",
+          "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-exposure-v2+prior-utilization-policy-v1:a2667b83e75f+scoring-trailing3-v1",
           "datasetVersion": "nflverse-2018-combine-only-v2"
         }
       }
@@ -768,8 +808,8 @@
       "configuration": {
         "team": "CLE",
         "draftSeed": "redraft-validation-2026-11-02",
-        "engineVersion": "redraft-research-0.8-schedule-tiebreaks",
-        "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:f16356d6371a+scoring-trailing3-v1",
+        "engineVersion": "redraft-research-0.9-schedule-exposure",
+        "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-exposure-v2+prior-utilization-policy-v1:a2667b83e75f+scoring-trailing3-v1",
         "datasetVersion": "nflverse-2018-combine-only-v2"
       },
       "stale": false,
@@ -810,8 +850,8 @@
       "configuration": {
         "team": "KC",
         "draftSeed": "redraft-validation-2026-11-02",
-        "engineVersion": "redraft-research-0.8-schedule-tiebreaks",
-        "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:f16356d6371a+scoring-trailing3-v1",
+        "engineVersion": "redraft-research-0.9-schedule-exposure",
+        "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-exposure-v2+prior-utilization-policy-v1:a2667b83e75f+scoring-trailing3-v1",
         "datasetVersion": "nflverse-2018-combine-only-v2"
       },
       "stale": false,
@@ -852,8 +892,8 @@
       "configuration": {
         "team": "NE",
         "draftSeed": "redraft-validation-2026-11-02",
-        "engineVersion": "redraft-research-0.8-schedule-tiebreaks",
-        "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:f16356d6371a+scoring-trailing3-v1",
+        "engineVersion": "redraft-research-0.9-schedule-exposure",
+        "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-exposure-v2+prior-utilization-policy-v1:a2667b83e75f+scoring-trailing3-v1",
         "datasetVersion": "nflverse-2018-combine-only-v2"
       },
       "stale": false,
@@ -894,8 +934,8 @@
       "configuration": {
         "team": "SF",
         "draftSeed": "redraft-validation-2026-11-02",
-        "engineVersion": "redraft-research-0.8-schedule-tiebreaks",
-        "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-v1+prior-utilization-policy-v1:f16356d6371a+scoring-trailing3-v1",
+        "engineVersion": "redraft-research-0.9-schedule-exposure",
+        "modelVersion": "redraft-2018-model-v1+blind-g5-v1+five-year-2013-exposure-v2+prior-utilization-policy-v1:a2667b83e75f+scoring-trailing3-v1",
         "datasetVersion": "nflverse-2018-combine-only-v2"
       },
       "stale": false,
@@ -955,8 +995,8 @@
     ],
     "drawsPerProspect": 256,
     "rmsMeanApproximationErrorRange": [
-      75.99677081404492,
-      89.08915071616299
+      77.94992132696679,
+      91.26862615732217
     ],
     "note": "Numerical precision audit only; more seeds cannot remedy donor support or causal validity."
   },

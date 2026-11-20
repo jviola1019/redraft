@@ -99,3 +99,5 @@ Inspect the baseline → repair the participation unit mismatch and score compar
 - `tests/year-contract.test.ts`
 
 See ../erd/ for the conceptual, logical and physical diagrams, and ../../ARCHITECTURE.md for service boundaries.
+
+The source revision named above had 77 passing domain tests in an isolated baseline checkout. Its archived November 12 statistical decision used 49 checks. The new report identifies the three original checks that changed and the four new source validations. Two intermediate November 20 UTC gauntlets detected a research audit script changing during execution. Each reported exit 1 even though its individual structural steps passed. A separate detached checkout was used for the final run. See the final evidence package for its manifest, actual source revision, per-step logs and unchanged statistical thresholds.

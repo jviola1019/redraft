@@ -1,5 +1,9 @@
 # Model experiments — executed results
 
+## November 19 review
+
+New five-year QB hindcasts, mature-cohort donor comparisons, historical score-pair and CPU policy experiments are indexed in [the November 19 research decision table](docs/release/CURRENT_RELEASE.md).
+
 ## November 12 additions
 
 `analytics/project_scenarios.py` reconstructs the frozen pre-2018 1,519-row logistic fit and checks parity against 324 canonical 2018 predictions (zero mismatches at saved precision), then emits scenario-hashed artifacts for 2019–2026. This validates reproduction, not later-cohort calibration. Missing-all-measurements and unsupported source-position categories use explicitly marked position priors. H-back maps to TE for gameplay but is unseen by the frozen predictor; two-way positions are not a two-way development model.

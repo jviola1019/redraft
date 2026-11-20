@@ -1,6 +1,6 @@
 # All-year baseline distribution diagnostics
 
-Generated 2026-11-12T23:16:50.436Z; fixed seed matrix redraft-all-year-diagnostics-2026-11-12-v1; 128 paired replicates per draft class.
+Generated 2026-11-20T01:52:19.059Z; fixed seed matrix redraft-all-year-diagnostics-2026-11-12-v1; 128 paired replicates per draft class.
 
 The baseline is the scenario’s recorded actual draft; the alternate is one completed seven-round CPU draft for CLE. Each replicate uses the same keyed random seed/index for both worlds.
 

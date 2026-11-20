@@ -38,3 +38,13 @@ Each successful viewport writes profile and draft screenshots plus elapsed journ
 The pre-change smoke suite stopped after scouting/profile/save; it did not confirm a selection or advance CPU picks, and covered only desktop and iPhone emulation. The expanded suite adds those missing user actions and two viewport sizes. The old saved Chromium report already recorded a missing executable, so neither a valid visual baseline nor comparable before performance measurements exists.
 
 Before release, run both engines in an environment with installed browsers, inspect all eight screenshot pairs, and record actual pass/failure results. Screen-reader use, physical touch devices, throttled mobile performance, and production deployment timings remain unverified.
+
+## Hosted verification update
+
+GitHub Actions run [44654963667](https://github.com/jviola1019/redraft/actions/runs/44654963667) passed the expanded Chromium and WebKit journeys at all four viewport configurations. Artifact 14592558825 was downloaded and its SHA-256 matched the GitHub digest. Both reports and the WebKit phone images are in visual/. An earlier WebKit phone screenshot was recovered from hosted artifact 13991388499. A screenshot comparison is now available.
+
+![WebKit phone draft room, before and after](visual/phone-comparison.png)
+
+On the phone the heading previously wrapped around a narrow action column. The new console gives instructions the full width and makes the pixel field visible. The console now occupies more vertical space, pushing the first prospect below the initial viewport. The screenshots are from different draft picks, so a pixel-difference percentage would conflate content and layout. These screenshots support a layout review. They do not measure novice comprehension or provide a maintained approved-image regression baseline.
+
+The side-by-side review exposed two issues that a horizontal-overflow assertion missed. A feedback toast covered prospect details on phones and the visible console instruction required manually finding the board below the fold. The follow-up gives the console a real “See prospects” action with a focus target and visually clips notifications while a modal is open. Regression assertions exercise focus and confirm that an active notification cannot obscure the dialog. The hosted run for this revision is linked in CURRENT_RELEASE.md.

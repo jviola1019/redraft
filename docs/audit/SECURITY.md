@@ -126,3 +126,9 @@ Four contract tests passed under Node 24.22.3 using Node's TypeScript support an
 Highest-priority unresolved controls: prove authenticated header sanitization at the deployed edge; verify D1/Worker/R2 access and DNS/TLS; add/verify response CSP and framing policy with browser compatibility checks; establish unauthenticated abuse limits and budgets; verify current dependency advisories, immutable CI dependencies/provenance, retention/deletion and restoration procedures. No current vulnerability-free dependency claim is made.
 
 Reference guidance for operator follow-up: OWASP ASVS and API Security Top 10, Cloudflare Workers/D1 security documentation, and the platform identity documentation. This report's implementation findings are grounded in the repository and explicitly bounded tests, not an assertion that general guidance proves production safety.
+
+## Integrated follow-up
+
+The frozen install, domain suite, route integration, hosted build and browser evidence are indexed in the release report. The dependency inventory went from seven moderate advisories to zero in the scan documented in DEPENDENCY_PATCH.md. DAILY_BOUNDARY.md covers a subsequent UTC disclosure race. Production edge and operational controls still require independent verification.
+
+[Full 92-item register with per-item verification, severity, remediation and residual risk](SECURITY_REGISTER.md).
