@@ -1,0 +1,1293 @@
+{
+  "protocolSha256": "ae1d4aaeab2b75bb7faf4d0259e17f849fc5e6a808764e42ccdf6162dbc4331b",
+  "gamesSha256": "369967042aac4f7b431c8644c197c6829e8428f7776058e4a058506ea4dece76",
+  "source": {
+    "2010": {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2010.parquet",
+      "sha256": "f5fdc509e7dd715fd6737228825f5a72da7ea8e6d4fbd87df2cb35c82ef66dbf",
+      "bytes": 20352790,
+      "scheduled": 256,
+      "valid": 251,
+      "losses": {
+        "invalid_clock": 4,
+        "final_score_mismatch": 1
+      }
+    },
+    "2011": {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2011.parquet",
+      "sha256": "466a4959458f439b62b3365607566039aaea9b53d216f85c65948b4d264b267f",
+      "bytes": 20469258,
+      "scheduled": 256,
+      "valid": 251,
+      "losses": {
+        "final_score_mismatch": 4,
+        "invalid_clock": 1
+      }
+    },
+    "2012": {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2012.parquet",
+      "sha256": "9ff8fbbf5f1393a808b3ee7f20202ae73155f0fad04b8a2f2a97af999383c820",
+      "bytes": 20700098,
+      "scheduled": 256,
+      "valid": 250,
+      "losses": {
+        "invalid_clock": 1,
+        "final_score_mismatch": 5
+      }
+    },
+    "2013": {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2013.parquet",
+      "sha256": "67647c438e958905d0960166556dc73ee926591f6c36f5218c45857c2933fe1f",
+      "bytes": 20910695,
+      "scheduled": 256,
+      "valid": 248,
+      "losses": {
+        "final_score_mismatch": 7,
+        "invalid_clock": 1
+      }
+    },
+    "2014": {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2014.parquet",
+      "sha256": "78c932eea1b5c72fc7dd7ccfd409945ec8078173580c0ba86543427ad5592dc0",
+      "bytes": 20751523,
+      "scheduled": 256,
+      "valid": 250,
+      "losses": {
+        "final_score_mismatch": 4,
+        "invalid_clock": 1,
+        "nonmonotone_score": 1
+      }
+    },
+    "2015": {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2015.parquet",
+      "sha256": "3b8dae1b67cfb1ddd88858e3d4bbedf0237218b234e597b10b1c5e6789ec21a8",
+      "bytes": 20978312,
+      "scheduled": 256,
+      "valid": 250,
+      "losses": {
+        "final_score_mismatch": 5,
+        "invalid_clock": 1
+      }
+    },
+    "2016": {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2016.parquet",
+      "sha256": "093913c52f49f4e7d23080f2d7462d24d0cd952b8e3f9c936323ee51e1cd659f",
+      "bytes": 20586714,
+      "scheduled": 256,
+      "valid": 252,
+      "losses": {
+        "final_score_mismatch": 2,
+        "invalid_clock": 2
+      }
+    }
+  },
+  "draws": 4096,
+  "seed": 20261120,
+  "fitByYear": {
+    "2013": {
+      "donorGames": 752,
+      "meanPace": [
+        11.777925531914894,
+        11.732712765957446
+      ],
+      "stateCounts": [
+        [
+          503,
+          3446,
+          440,
+          722,
+          1340,
+          788,
+          395,
+          773,
+          450
+        ],
+        [
+          665,
+          3397,
+          328,
+          926,
+          1337,
+          602,
+          520,
+          726,
+          322
+        ]
+      ],
+      "expectedStatePoints": [
+        [
+          1.6170487369707482,
+          1.857890690466261,
+          2.0945933118395574,
+          1.9550856306488578,
+          1.9493613808287233,
+          2.306396833776308,
+          1.8688492694815377,
+          1.4330817736464618,
+          1.1419643425333839
+        ],
+        [
+          1.3609001725288703,
+          1.7215008956204132,
+          1.9020762429546394,
+          1.762269621817335,
+          1.7558028058347848,
+          1.914656170918213,
+          1.700142954813848,
+          1.3294051234680215,
+          1.0570820663141844
+        ]
+      ]
+    },
+    "2014": {
+      "donorGames": 749,
+      "meanPace": [
+        11.853137516688918,
+        11.82109479305741
+      ],
+      "stateCounts": [
+        [
+          496,
+          3440,
+          470,
+          670,
+          1357,
+          829,
+          378,
+          781,
+          457
+        ],
+        [
+          708,
+          3394,
+          313,
+          976,
+          1349,
+          552,
+          526,
+          722,
+          314
+        ]
+      ],
+      "expectedStatePoints": [
+        [
+          1.6878465129851183,
+          1.9180668140506019,
+          2.0929061784897027,
+          1.9856578204404292,
+          2.0013428426486826,
+          2.287359011559882,
+          1.920411133345461,
+          1.3563638158219415,
+          1.0932792131761766
+        ],
+        [
+          1.2900562927311479,
+          1.7030238936825322,
+          1.8846621901374518,
+          1.8609344651735757,
+          1.8166773530205436,
+          1.8977998228938155,
+          1.6411589209692774,
+          1.3885224872588413,
+          1.0032982718037864
+        ]
+      ]
+    },
+    "2015": {
+      "donorGames": 748,
+      "meanPace": [
+        11.76336898395722,
+        11.73663101604278
+      ],
+      "stateCounts": [
+        [
+          528,
+          3350,
+          482,
+          694,
+          1345,
+          805,
+          385,
+          726,
+          484
+        ],
+        [
+          726,
+          3309,
+          330,
+          964,
+          1349,
+          564,
+          539,
+          666,
+          332
+        ]
+      ],
+      "expectedStatePoints": [
+        [
+          1.6446129156251832,
+          1.9735701191340915,
+          1.9636029398842183,
+          1.9859155050536716,
+          2.0427798692128825,
+          2.3589137138260945,
+          1.7872513629126088,
+          1.4101899649063137,
+          1.0853029298161219
+        ],
+        [
+          1.351223354654115,
+          1.7550925464782339,
+          1.9072336998704629,
+          1.8563068523912583,
+          1.8351349143852995,
+          2.0076965225064742,
+          1.6089366055466334,
+          1.4270371944442544,
+          1.0581261364451364
+        ]
+      ]
+    },
+    "2016": {
+      "donorGames": 748,
+      "meanPace": [
+        11.751336898395722,
+        11.735294117647058
+      ],
+      "stateCounts": [
+        [
+          519,
+          3349,
+          491,
+          673,
+          1355,
+          785,
+          395,
+          751,
+          472
+        ],
+        [
+          753,
+          3291,
+          325,
+          957,
+          1342,
+          553,
+          521,
+          701,
+          335
+        ]
+      ],
+      "expectedStatePoints": [
+        [
+          1.7033877901345524,
+          1.9859081015057374,
+          2.027744572069861,
+          1.9746404166795446,
+          2.076561540957586,
+          2.2919740588624724,
+          1.7523172567541172,
+          1.4046968767253678,
+          1.068875947715538
+        ],
+        [
+          1.4269778677750542,
+          1.7337694253058453,
+          1.9087344028520496,
+          1.9623577305696511,
+          1.8510486277476568,
+          1.9206923755162653,
+          1.7298101790855414,
+          1.3985170052585785,
+          1.0809474050853363
+        ]
+      ]
+    },
+    "2017": {
+      "donorGames": 752,
+      "meanPace": [
+        11.56781914893617,
+        11.542553191489361
+      ],
+      "stateCounts": [
+        [
+          492,
+          3288,
+          538,
+          648,
+          1323,
+          778,
+          392,
+          773,
+          467
+        ],
+        [
+          798,
+          3206,
+          314,
+          963,
+          1308,
+          531,
+          524,
+          706,
+          330
+        ]
+      ],
+      "expectedStatePoints": [
+        [
+          1.7532408975247233,
+          2.05192402931955,
+          2.017113810869336,
+          2.0039018868110112,
+          2.0976237606005874,
+          2.2026407873970797,
+          1.7843874214118622,
+          1.4535150187109234,
+          1.0245478154050023
+        ],
+        [
+          1.5173041987827531,
+          1.7593887388103187,
+          1.8153120060553438,
+          1.942181722019673,
+          1.8902977063259323,
+          2.032550190977674,
+          1.8774666194021032,
+          1.4051354472790476,
+          1.1105562104811917
+        ]
+      ]
+    }
+  },
+  "windows": [
+    {
+      "years": [
+        2013,
+        2014,
+        2015
+      ],
+      "games": 768,
+      "baseline": {
+        "score": {
+          "total": {
+            "crps": 7.874446365594243,
+            "mae": 11.189117749532064,
+            "bias": -0.3268893559773763,
+            "coverage": 0.9166666666666666
+          },
+          "margin": {
+            "crps": 7.9543525568054365,
+            "mae": 11.040555000305176,
+            "bias": 0.12314891815185547,
+            "coverage": 0.90234375
+          },
+          "home": {
+            "crps": 5.824414023663849,
+            "mae": 8.174127578735352,
+            "bias": -0.10187021891276042,
+            "coverage": 0.8919270833333334
+          },
+          "away": {
+            "crps": 5.392371996693934,
+            "mae": 7.643209139506022,
+            "bias": -0.22501913706461588,
+            "coverage": 0.9244791666666666
+          },
+          "shutouts": {
+            "brier": 0.01570780451099078,
+            "predicted": 0.03205998738606771,
+            "observed": 0.015625
+          },
+          "joint": {
+            "energy": 8.80070337703979,
+            "tieRate": 0.0031979878743489585,
+            "observedTieRate": 0.0026041666666666665,
+            "onePointTeamRate": 0.0
+          }
+        },
+        "season": {
+          "meanTeamWinsSd": 2.7761387221417038,
+          "meanTeamPointsSd": 54.526452396014264,
+          "sameTeamResidualCorrelation": 0.11218891883559272
+        }
+      },
+      "candidate": {
+        "score": {
+          "total": {
+            "crps": 7.890424194124837,
+            "mae": 11.194181442260742,
+            "bias": -0.2824694315592448,
+            "coverage": 0.9401041666666666
+          },
+          "margin": {
+            "crps": 8.028127338116368,
+            "mae": 11.056682586669922,
+            "bias": 0.19597689310709634,
+            "coverage": 0.9361979166666666
+          },
+          "home": {
+            "crps": 5.852421678214644,
+            "mae": 8.18648624420166,
+            "bias": -0.04324626922607422,
+            "coverage": 0.9348958333333334
+          },
+          "away": {
+            "crps": 5.427908015049373,
+            "mae": 7.6438093185424805,
+            "bias": -0.23922316233317056,
+            "coverage": 0.9583333333333334
+          },
+          "shutouts": {
+            "brier": 0.015603764913976192,
+            "predicted": 0.028085072835286457,
+            "observed": 0.015625
+          },
+          "joint": {
+            "energy": 8.85283276287601,
+            "tieRate": 0.004088083902994792,
+            "observedTieRate": 0.0026041666666666665,
+            "onePointTeamRate": 2.6067097981770832e-05
+          }
+        },
+        "season": {
+          "meanTeamWinsSd": 2.707202613744313,
+          "meanTeamPointsSd": 60.61954330188818,
+          "sameTeamResidualCorrelation": 0.09464737497185188
+        }
+      },
+      "criteria": {
+        "totalCrpsImproves": false,
+        "otherCrps": {
+          "margin": true,
+          "home": true,
+          "away": true
+        },
+        "mae": {
+          "total": true,
+          "margin": true,
+          "home": true,
+          "away": true
+        },
+        "coverage": {
+          "total": false,
+          "margin": false,
+          "home": false,
+          "away": false
+        },
+        "dispersion": {
+          "meanTeamWinsSd": true,
+          "meanTeamPointsSd": false
+        },
+        "positiveSharedDependence": true,
+        "jointEnergyImproves": false,
+        "shutoutBrierNoWorse": true
+      },
+      "passes": false,
+      "pairedWeekBootstrap": {
+        "joint.energy": {
+          "delta": 0.052129385836218074,
+          "interval95": [
+            0.025243108758272584,
+            0.08205034476284466
+          ]
+        },
+        "total.crps": {
+          "delta": 0.015977828530594707,
+          "interval95": [
+            -0.010403040670285494,
+            0.04180889616386871
+          ]
+        },
+        "margin.crps": {
+          "delta": 0.07377478131093085,
+          "interval95": [
+            0.04158494139653639,
+            0.10574558991604185
+          ]
+        },
+        "shutouts.brier": {
+          "delta": -0.00010403959701458614,
+          "interval95": [
+            -0.000185859943178591,
+            -9.648229263607803e-06
+          ]
+        },
+        "total.coverage": {
+          "delta": 0.0234375,
+          "interval95": [
+            0.011687932689878215,
+            0.03636363636363636
+          ]
+        },
+        "margin.coverage": {
+          "delta": 0.033854166666666664,
+          "interval95": [
+            0.02230971128608924,
+            0.04539559014267185
+          ]
+        }
+      }
+    },
+    {
+      "years": [
+        2016,
+        2017
+      ],
+      "games": 512,
+      "baseline": {
+        "score": {
+          "total": {
+            "crps": 7.773490846739151,
+            "mae": 10.93947458267212,
+            "bias": 1.3381867408752441,
+            "coverage": 0.900390625
+          },
+          "margin": {
+            "crps": 7.493859478854574,
+            "mae": 10.385016918182373,
+            "bias": -0.04288625717163086,
+            "coverage": 0.9140625
+          },
+          "home": {
+            "crps": 5.543576344498433,
+            "mae": 7.743605136871338,
+            "bias": 0.6476502418518066,
+            "coverage": 0.916015625
+          },
+          "away": {
+            "crps": 5.302068913821131,
+            "mae": 7.458121299743652,
+            "bias": 0.6905364990234375,
+            "coverage": 0.923828125
+          },
+          "shutouts": {
+            "brier": 0.026638394338078797,
+            "predicted": 0.02947092056274414,
+            "observed": 0.02734375
+          },
+          "joint": {
+            "energy": 8.497703346213404,
+            "tieRate": 0.0031862258911132812,
+            "observedTieRate": 0.00390625,
+            "onePointTeamRate": 0.0
+          }
+        },
+        "season": {
+          "meanTeamWinsSd": 2.7779095403717946,
+          "meanTeamPointsSd": 54.03498363787921,
+          "sameTeamResidualCorrelation": 0.11035096083486677
+        }
+      },
+      "candidate": {
+        "score": {
+          "total": {
+            "crps": 7.780910329078324,
+            "mae": 10.959128856658936,
+            "bias": 1.3908028602600098,
+            "coverage": 0.91796875
+          },
+          "margin": {
+            "crps": 7.564060174277984,
+            "mae": 10.382346630096436,
+            "bias": 0.029175281524658203,
+            "coverage": 0.947265625
+          },
+          "home": {
+            "crps": 5.566853929194622,
+            "mae": 7.742146015167236,
+            "bias": 0.709989070892334,
+            "coverage": 0.939453125
+          },
+          "away": {
+            "crps": 5.31888090679422,
+            "mae": 7.472311019897461,
+            "bias": 0.6808137893676758,
+            "coverage": 0.953125
+          },
+          "shutouts": {
+            "brier": 0.026642586570233107,
+            "predicted": 0.02461719512939453,
+            "observed": 0.02734375
+          },
+          "joint": {
+            "energy": 8.539930850436114,
+            "tieRate": 0.003970146179199219,
+            "observedTieRate": 0.00390625,
+            "onePointTeamRate": 1.8358230590820312e-05
+          }
+        },
+        "season": {
+          "meanTeamWinsSd": 2.6969412957657934,
+          "meanTeamPointsSd": 58.50338947564379,
+          "sameTeamResidualCorrelation": 0.09348510369973954
+        }
+      },
+      "criteria": {
+        "totalCrpsImproves": false,
+        "otherCrps": {
+          "margin": true,
+          "home": true,
+          "away": true
+        },
+        "mae": {
+          "total": true,
+          "margin": true,
+          "home": true,
+          "away": true
+        },
+        "coverage": {
+          "total": false,
+          "margin": false,
+          "home": false,
+          "away": false
+        },
+        "dispersion": {
+          "meanTeamWinsSd": true,
+          "meanTeamPointsSd": false
+        },
+        "positiveSharedDependence": true,
+        "jointEnergyImproves": false,
+        "shutoutBrierNoWorse": false
+      },
+      "passes": false,
+      "pairedWeekBootstrap": {
+        "joint.energy": {
+          "delta": 0.042227504222711626,
+          "interval95": [
+            0.01799529017331989,
+            0.06598486591018063
+          ]
+        },
+        "total.crps": {
+          "delta": 0.007419482339173555,
+          "interval95": [
+            -0.014065816031061402,
+            0.030238061485834505
+          ]
+        },
+        "margin.crps": {
+          "delta": 0.07020069542340934,
+          "interval95": [
+            0.050510430835670486,
+            0.09015382826709553
+          ]
+        },
+        "shutouts.brier": {
+          "delta": 4.19223215430975e-06,
+          "interval95": [
+            -0.0001356626678978009,
+            0.00016019516750057414
+          ]
+        },
+        "total.coverage": {
+          "delta": 0.017578125,
+          "interval95": [
+            0.007858546168958742,
+            0.027450980392156862
+          ]
+        },
+        "margin.coverage": {
+          "delta": 0.033203125,
+          "interval95": [
+            0.021442495126705652,
+            0.045364891518737675
+          ]
+        }
+      }
+    }
+  ],
+  "byYear": {
+    "2013": {
+      "baseline": {
+        "score": {
+          "total": {
+            "crps": 8.130106394644827,
+            "mae": 11.33355712890625,
+            "bias": -1.9482955932617188,
+            "coverage": 0.89453125
+          },
+          "margin": {
+            "crps": 7.768509695772082,
+            "mae": 10.74610710144043,
+            "bias": -0.6106529235839844,
+            "coverage": 0.9140625
+          },
+          "home": {
+            "crps": 5.873269606381655,
+            "mae": 8.167428970336914,
+            "bias": -1.2794742584228516,
+            "coverage": 0.87890625
+          },
+          "away": {
+            "crps": 5.413813557475805,
+            "mae": 7.63397216796875,
+            "bias": -0.6688213348388672,
+            "coverage": 0.91796875
+          },
+          "shutouts": {
+            "brier": 0.012270406587049365,
+            "predicted": 0.03526782989501953,
+            "observed": 0.01171875
+          },
+          "joint": {
+            "energy": 8.849053170305787,
+            "tieRate": 0.00312042236328125,
+            "observedTieRate": 0.00390625,
+            "onePointTeamRate": 0.0
+          }
+        },
+        "season": {
+          "meanTeamWinsSd": 2.7668826058425946,
+          "meanTeamPointsSd": 54.55577920589972,
+          "sameTeamResidualCorrelation": 0.11249389847900515
+        }
+      },
+      "candidate": {
+        "score": {
+          "total": {
+            "crps": 8.172177877509966,
+            "mae": 11.365893363952637,
+            "bias": -1.9602689743041992,
+            "coverage": 0.921875
+          },
+          "margin": {
+            "crps": 7.868298542918637,
+            "mae": 10.7878999710083,
+            "bias": -0.566798210144043,
+            "coverage": 0.94140625
+          },
+          "home": {
+            "crps": 5.952578786993399,
+            "mae": 8.192984580993652,
+            "bias": -1.263533592224121,
+            "coverage": 0.9375
+          },
+          "away": {
+            "crps": 5.466974066570401,
+            "mae": 7.653837203979492,
+            "bias": -0.6967353820800781,
+            "coverage": 0.95703125
+          },
+          "shutouts": {
+            "brier": 0.012029094155877829,
+            "predicted": 0.030431747436523438,
+            "observed": 0.01171875
+          },
+          "joint": {
+            "energy": 8.937807495619909,
+            "tieRate": 0.004101753234863281,
+            "observedTieRate": 0.00390625,
+            "onePointTeamRate": 2.8133392333984375e-05
+          }
+        },
+        "season": {
+          "meanTeamWinsSd": 2.710229082419132,
+          "meanTeamPointsSd": 60.603302402362246,
+          "sameTeamResidualCorrelation": 0.09623173477387505
+        }
+      },
+      "criteria": {
+        "totalCrpsImproves": false,
+        "otherCrps": {
+          "margin": false,
+          "home": false,
+          "away": true
+        },
+        "mae": {
+          "total": true,
+          "margin": true,
+          "home": true,
+          "away": true
+        },
+        "coverage": {
+          "total": false,
+          "margin": false,
+          "home": false,
+          "away": false
+        },
+        "dispersion": {
+          "meanTeamWinsSd": true,
+          "meanTeamPointsSd": false
+        },
+        "positiveSharedDependence": true,
+        "jointEnergyImproves": false,
+        "shutoutBrierNoWorse": true
+      },
+      "passes": false
+    },
+    "2014": {
+      "baseline": {
+        "score": {
+          "total": {
+            "crps": 7.875412032939494,
+            "mae": 11.429323196411133,
+            "bias": 0.5704460144042969,
+            "coverage": 0.92578125
+          },
+          "margin": {
+            "crps": 8.3506301920861,
+            "mae": 11.621622085571289,
+            "bias": 0.01786041259765625,
+            "coverage": 0.89453125
+          },
+          "home": {
+            "crps": 5.976794256828725,
+            "mae": 8.44970703125,
+            "bias": 0.29415321350097656,
+            "coverage": 0.890625
+          },
+          "away": {
+            "crps": 5.445297599304467,
+            "mae": 7.776851654052734,
+            "bias": 0.2762928009033203,
+            "coverage": 0.92578125
+          },
+          "shutouts": {
+            "brier": 0.026665374403819442,
+            "predicted": 0.03115367889404297,
+            "observed": 0.02734375
+          },
+          "joint": {
+            "energy": 8.994326367009403,
+            "tieRate": 0.0032014846801757812,
+            "observedTieRate": 0.00390625,
+            "onePointTeamRate": 0.0
+          }
+        },
+        "season": {
+          "meanTeamWinsSd": 2.7966638324341857,
+          "meanTeamPointsSd": 54.7355109006588,
+          "sameTeamResidualCorrelation": 0.11401070777510769
+        }
+      },
+      "candidate": {
+        "score": {
+          "total": {
+            "crps": 7.866593567887321,
+            "mae": 11.426711082458496,
+            "bias": 0.6331052780151367,
+            "coverage": 0.94921875
+          },
+          "margin": {
+            "crps": 8.376246142899618,
+            "mae": 11.586396217346191,
+            "bias": 0.10982036590576172,
+            "coverage": 0.9375
+          },
+          "home": {
+            "crps": 5.960028946166858,
+            "mae": 8.4553861618042,
+            "bias": 0.3714628219604492,
+            "coverage": 0.93359375
+          },
+          "away": {
+            "crps": 5.4596767127513885,
+            "mae": 7.768215179443359,
+            "bias": 0.2616424560546875,
+            "coverage": 0.9609375
+          },
+          "shutouts": {
+            "brier": 0.02667079959064722,
+            "predicted": 0.026393890380859375,
+            "observed": 0.02734375
+          },
+          "joint": {
+            "energy": 9.00418476124019,
+            "tieRate": 0.004153251647949219,
+            "observedTieRate": 0.00390625,
+            "onePointTeamRate": 3.0040740966796875e-05
+          }
+        },
+        "season": {
+          "meanTeamWinsSd": 2.717083459144564,
+          "meanTeamPointsSd": 60.56522937255038,
+          "sameTeamResidualCorrelation": 0.09470077407801729
+        }
+      },
+      "criteria": {
+        "totalCrpsImproves": true,
+        "otherCrps": {
+          "margin": true,
+          "home": true,
+          "away": true
+        },
+        "mae": {
+          "total": true,
+          "margin": true,
+          "home": true,
+          "away": true
+        },
+        "coverage": {
+          "total": false,
+          "margin": false,
+          "home": false,
+          "away": false
+        },
+        "dispersion": {
+          "meanTeamWinsSd": true,
+          "meanTeamPointsSd": false
+        },
+        "positiveSharedDependence": true,
+        "jointEnergyImproves": false,
+        "shutoutBrierNoWorse": false
+      },
+      "passes": false
+    },
+    "2015": {
+      "baseline": {
+        "score": {
+          "total": {
+            "crps": 7.617820669198409,
+            "mae": 10.804472923278809,
+            "bias": 0.39718151092529297,
+            "coverage": 0.9296875
+          },
+          "margin": {
+            "crps": 7.743917782558128,
+            "mae": 10.753935813903809,
+            "bias": 0.9622392654418945,
+            "coverage": 0.8984375
+          },
+          "home": {
+            "crps": 5.623178207781166,
+            "mae": 7.905246734619141,
+            "bias": 0.6797103881835938,
+            "coverage": 0.90625
+          },
+          "away": {
+            "crps": 5.318004833301529,
+            "mae": 7.518803596496582,
+            "bias": -0.2825288772583008,
+            "coverage": 0.9296875
+          },
+          "shutouts": {
+            "brier": 0.008187632542103529,
+            "predicted": 0.029758453369140625,
+            "observed": 0.0078125
+          },
+          "joint": {
+            "energy": 8.558730593804183,
+            "tieRate": 0.0032720565795898438,
+            "observedTieRate": 0.0,
+            "onePointTeamRate": 0.0
+          }
+        },
+        "season": {
+          "meanTeamWinsSd": 2.76486972814833,
+          "meanTeamPointsSd": 54.28806708148428,
+          "sameTeamResidualCorrelation": 0.11006215025266528
+        }
+      },
+      "candidate": {
+        "score": {
+          "total": {
+            "crps": 7.6325011369772255,
+            "mae": 10.789939880371094,
+            "bias": 0.4797554016113281,
+            "coverage": 0.94921875
+          },
+          "margin": {
+            "crps": 7.839837328530848,
+            "mae": 10.795751571655273,
+            "bias": 1.0449085235595703,
+            "coverage": 0.9296875
+          },
+          "home": {
+            "crps": 5.644657301483676,
+            "mae": 7.911087989807129,
+            "bias": 0.7623319625854492,
+            "coverage": 0.93359375
+          },
+          "away": {
+            "crps": 5.35707326582633,
+            "mae": 7.50937557220459,
+            "bias": -0.2825765609741211,
+            "coverage": 0.95703125
+          },
+          "shutouts": {
+            "brier": 0.008111400995403528,
+            "predicted": 0.027429580688476562,
+            "observed": 0.0078125
+          },
+          "joint": {
+            "energy": 8.61650603176793,
+            "tieRate": 0.004009246826171875,
+            "observedTieRate": 0.0,
+            "onePointTeamRate": 2.002716064453125e-05
+          }
+        },
+        "season": {
+          "meanTeamWinsSd": 2.694295299669242,
+          "meanTeamPointsSd": 60.690098130751934,
+          "sameTeamResidualCorrelation": 0.0930096160636633
+        }
+      },
+      "criteria": {
+        "totalCrpsImproves": false,
+        "otherCrps": {
+          "margin": false,
+          "home": true,
+          "away": true
+        },
+        "mae": {
+          "total": true,
+          "margin": true,
+          "home": true,
+          "away": true
+        },
+        "coverage": {
+          "total": false,
+          "margin": false,
+          "home": false,
+          "away": false
+        },
+        "dispersion": {
+          "meanTeamWinsSd": true,
+          "meanTeamPointsSd": false
+        },
+        "positiveSharedDependence": true,
+        "jointEnergyImproves": false,
+        "shutoutBrierNoWorse": true
+      },
+      "passes": false
+    },
+    "2016": {
+      "baseline": {
+        "score": {
+          "total": {
+            "crps": 7.501743526663631,
+            "mae": 10.45901107788086,
+            "bias": 0.501373291015625,
+            "coverage": 0.9140625
+          },
+          "margin": {
+            "crps": 6.978772341273725,
+            "mae": 9.643882751464844,
+            "bias": -0.08595085144042969,
+            "coverage": 0.9375
+          },
+          "home": {
+            "crps": 5.124630094738677,
+            "mae": 7.167197227478027,
+            "bias": 0.20771121978759766,
+            "coverage": 0.94140625
+          },
+          "away": {
+            "crps": 5.177451163297519,
+            "mae": 7.272046089172363,
+            "bias": 0.29366207122802734,
+            "coverage": 0.93359375
+          },
+          "shutouts": {
+            "brier": 0.011941327480599284,
+            "predicted": 0.02940654754638672,
+            "observed": 0.01171875
+          },
+          "joint": {
+            "energy": 8.073897015621798,
+            "tieRate": 0.0032415390014648438,
+            "observedTieRate": 0.0078125,
+            "onePointTeamRate": 0.0
+          }
+        },
+        "season": {
+          "meanTeamWinsSd": 2.770555016574555,
+          "meanTeamPointsSd": 54.337185996619645,
+          "sameTeamResidualCorrelation": 0.11058127090442142
+        }
+      },
+      "candidate": {
+        "score": {
+          "total": {
+            "crps": 7.54076557350345,
+            "mae": 10.473029136657715,
+            "bias": 0.5455789566040039,
+            "coverage": 0.9375
+          },
+          "margin": {
+            "crps": 7.092260477831587,
+            "mae": 9.642718315124512,
+            "bias": 0.0010023117065429688,
+            "coverage": 0.9609375
+          },
+          "home": {
+            "crps": 5.194068145938218,
+            "mae": 7.164464950561523,
+            "bias": 0.27329063415527344,
+            "coverage": 0.96484375
+          },
+          "away": {
+            "crps": 5.211076661245897,
+            "mae": 7.285126686096191,
+            "bias": 0.27228832244873047,
+            "coverage": 0.953125
+          },
+          "shutouts": {
+            "brier": 0.011737874010577798,
+            "predicted": 0.025549888610839844,
+            "observed": 0.01171875
+          },
+          "joint": {
+            "energy": 8.151026295297413,
+            "tieRate": 0.004019737243652344,
+            "observedTieRate": 0.0078125,
+            "onePointTeamRate": 1.239776611328125e-05
+          }
+        },
+        "season": {
+          "meanTeamWinsSd": 2.6912631763409456,
+          "meanTeamPointsSd": 59.626478088090195,
+          "sameTeamResidualCorrelation": 0.09345215249715882
+        }
+      },
+      "criteria": {
+        "totalCrpsImproves": false,
+        "otherCrps": {
+          "margin": false,
+          "home": false,
+          "away": true
+        },
+        "mae": {
+          "total": true,
+          "margin": true,
+          "home": true,
+          "away": true
+        },
+        "coverage": {
+          "total": false,
+          "margin": false,
+          "home": false,
+          "away": false
+        },
+        "dispersion": {
+          "meanTeamWinsSd": true,
+          "meanTeamPointsSd": false
+        },
+        "positiveSharedDependence": true,
+        "jointEnergyImproves": false,
+        "shutoutBrierNoWorse": true
+      },
+      "passes": false
+    },
+    "2017": {
+      "baseline": {
+        "score": {
+          "total": {
+            "crps": 8.04523816681467,
+            "mae": 11.419938087463379,
+            "bias": 2.1750001907348633,
+            "coverage": 0.88671875
+          },
+          "margin": {
+            "crps": 8.008946616435423,
+            "mae": 11.126151084899902,
+            "bias": 0.00017833709716796875,
+            "coverage": 0.890625
+          },
+          "home": {
+            "crps": 5.962522594258189,
+            "mae": 8.320013046264648,
+            "bias": 1.0875892639160156,
+            "coverage": 0.890625
+          },
+          "away": {
+            "crps": 5.426686664344743,
+            "mae": 7.644196510314941,
+            "bias": 1.0874109268188477,
+            "coverage": 0.9140625
+          },
+          "shutouts": {
+            "brier": 0.04133546119555831,
+            "predicted": 0.029535293579101562,
+            "observed": 0.04296875
+          },
+          "joint": {
+            "energy": 8.92150967680501,
+            "tieRate": 0.0031309127807617188,
+            "observedTieRate": 0.0,
+            "onePointTeamRate": 0.0
+          }
+        },
+        "season": {
+          "meanTeamWinsSd": 2.7852640641690347,
+          "meanTeamPointsSd": 53.73278127913878,
+          "sameTeamResidualCorrelation": 0.11012065076531212
+        }
+      },
+      "candidate": {
+        "score": {
+          "total": {
+            "crps": 8.021055084653199,
+            "mae": 11.445228576660156,
+            "bias": 2.2360267639160156,
+            "coverage": 0.8984375
+          },
+          "margin": {
+            "crps": 8.03585987072438,
+            "mae": 11.12197494506836,
+            "bias": 0.05734825134277344,
+            "coverage": 0.93359375
+          },
+          "home": {
+            "crps": 5.939639712451026,
+            "mae": 8.31982707977295,
+            "bias": 1.1466875076293945,
+            "coverage": 0.9140625
+          },
+          "away": {
+            "crps": 5.426685152342543,
+            "mae": 7.6594953536987305,
+            "bias": 1.089339256286621,
+            "coverage": 0.953125
+          },
+          "shutouts": {
+            "brier": 0.041547299129888415,
+            "predicted": 0.02368450164794922,
+            "observed": 0.04296875
+          },
+          "joint": {
+            "energy": 8.928835405574818,
+            "tieRate": 0.003920555114746094,
+            "observedTieRate": 0.0,
+            "onePointTeamRate": 2.4318695068359375e-05
+          }
+        },
+        "season": {
+          "meanTeamWinsSd": 2.7026194151906413,
+          "meanTeamPointsSd": 57.38030086319739,
+          "sameTeamResidualCorrelation": 0.09351805490232026
+        }
+      },
+      "criteria": {
+        "totalCrpsImproves": true,
+        "otherCrps": {
+          "margin": true,
+          "home": true,
+          "away": true
+        },
+        "mae": {
+          "total": true,
+          "margin": true,
+          "home": true,
+          "away": true
+        },
+        "coverage": {
+          "total": true,
+          "margin": false,
+          "home": true,
+          "away": false
+        },
+        "dispersion": {
+          "meanTeamWinsSd": true,
+          "meanTeamPointsSd": false
+        },
+        "positiveSharedDependence": true,
+        "jointEnergyImproves": false,
+        "shutoutBrierNoWorse": false
+      },
+      "passes": false
+    }
+  },
+  "decision": "Research only. Do not adopt."
+}

@@ -1,0 +1,63 @@
+diff --git a/lib/engine.ts b/lib/engine.ts
+index 86b2261..4f24f2f 100644
+--- a/lib/engine.ts
++++ b/lib/engine.ts
+@@ -328,9 +328,24 @@ function cpuPick(game: GameState, dataset: Dataset, models?: RuntimeModels): str
+         const group = positionGroup(dataset.prospects.find(x => x.id === s.prospectId)!.position);
+         counts[group] = (counts[group] ?? 0) + 1;
+     }
++    // Research-only candidate: sample a position from 2013–17 round-conditional
++    // empirical frequencies, then use the unchanged player utility in that group.
++    const prior = (models?.positionRoundPrior as Record<string, Record<string, number>> | undefined)?.[String(p.round)];
++    let chosenGroup: string | undefined;
++    if (prior) {
++        const availableGroups = new Set(dataset.prospects.filter(x => isPlayableProspect(x) && !selected.has(x.id)).map(x => positionGroup(x.position)));
++        let bestGroupScore = -Infinity;
++        for (const group of [...availableGroups].sort()) {
++            const weight = prior[group] ?? 0;
++            if (weight <= 0) continue;
++            const u = clamp(random(game.seed, 'position-round-prior', p.overall, group), 1e-9, 1-1e-9);
++            const score = Math.log(weight) - Math.log(-Math.log(u));
++            if (score > bestGroupScore) { chosenGroup = group; bestGroupScore = score; }
++        }
++    }
+     let best: string | null = null, bestU = -Infinity;
+     for (const prospect of dataset.prospects) {
+-        if (!isPlayableProspect(prospect) || selected.has(prospect.id))
++        if (!isPlayableProspect(prospect) || selected.has(prospect.id) || (chosenGroup !== undefined && positionGroup(prospect.position) !== chosenGroup))
+             continue;
+         const noise = -Math.log(-Math.log(clamp(random(game.seed, 'cpu-choice', p.overall, p.owner, prospect.id), 1e-9, 1 - 1e-9))) * 0.045;
+         const value = utilityFromCount(game, prospect, p.owner, counts[positionGroup(prospect.position)] ?? 0, models) + noise;
+diff --git a/research/cpu_behavior_audit.mjs b/research/cpu_behavior_audit.mjs
+index 5360721..cbea34a 100644
+--- a/research/cpu_behavior_audit.mjs
++++ b/research/cpu_behavior_audit.mjs
+@@ -24,13 +24,19 @@ const rawTrades=csv(fs.readFileSync(path.join(root,'data/raw/trades.csv'),'utf8'
+ const latestRecordedTradeDate=rawTrades.map(r=>r.trade_date).sort().at(-1);
+ function actualTrades(year){const groups=new Map();const [a,b]=windows[year].map(d=>`${year}-${d}`);for(const row of rawTrades){if(row.trade_date<a||row.trade_date>b)continue;if(!groups.has(row.trade_id))groups.set(row.trade_id,[]);groups.get(row.trade_id).push(row);}const transactions=[...groups.values()];const covered=latestRecordedTradeDate>=b;
+ return {status:covered?'observed-source-extends-past-window':'unavailable-source-ends-before-window',latestRecordedTradeDate,observedDistinctTransactions:transactions.length,distinctTransactions:covered?transactions.length:null,pickRelated:covered?transactions.filter(g=>g.some(r=>r.pick_season)).length:null,currentYearPicksOnly:covered?transactions.filter(g=>g.every(r=>r.pick_season===String(year))).length:null,anyFuturePick:covered?transactions.filter(g=>g.some(r=>Number(r.pick_season)>year)).length:null,withPlayerAsset:covered?transactions.filter(g=>g.some(r=>!r.pick_season)).length:null,windowStart:a,windowEnd:b};}
+-const sourceHashes=hashes();sourceHashes['data/raw/trades.csv']=crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'data/raw/trades.csv'))).digest('hex');
++const rawDrafts=csv(fs.readFileSync(path.join(root,'data/raw/draft_picks.csv'),'utf8'));
++const fitDrafts=rawDrafts.filter(r=>Number(r.season)>=2013&&Number(r.season)<=2017).map(r=>({...r,round:Number(r.round),position:engine.positionGroup(r.position)}));
++if(fitDrafts.length===0||fitDrafts.some(r=>Number(r.season)>=2018))throw Error('Invalid prior fit cohorts');
++const positionRoundPrior=Object.fromEntries(rounds.map(round=>[round,histogram(fitDrafts.filter(r=>r.round===round))]));
++const candidate=process.argv.includes('--candidate');
++const sourceHashes=hashes();sourceHashes['data/raw/draft_picks.csv']=crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'data/raw/draft_picks.csv'))).digest('hex');sourceHashes['data/raw/trades.csv']=crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'data/raw/trades.csv'))).digest('hex');
+ const classes=[],failures=[];
+ try{
+ for(let year=2018;year<=2026;year++){
+  const {dataset:d,models:m}=loadScenario(year), byId=new Map(d.prospects.map(p=>[p.id,p]));
+  const toRows=rows=>rows.map(s=>({...s,position:engine.positionGroup(byId.get(s.prospectId).position)}));
+  const actual=toRows(d.actualPicks), playableActual=actual.filter(s=>engine.isPlayableProspect(byId.get(s.prospectId)));
++ if(candidate)m.positionRoundPrior=positionRoundPrior;
+  const runs=[];const allDrafts=[];
+  for(let n=0;n<repetitions;n++){
+   const team=d.teams[n%d.teams.length].id,seed=`cpu-policy-audit-${n}`;
+@@ -45,6 +51,6 @@ for(let year=2018;year<=2026;year++){
+  classes.push({year,slots:d.picks.length,playablePool:d.prospects.filter(engine.isPlayableProspect).length,actualReferenceOnly:actual.length-playableActual.length,tradeArrivalRate:m.tradeArrivalRate??.10,actualTrades:actualTrades(year),metrics,actualFirstRoundQb:actual.filter(s=>s.round===1&&s.position==='QB').length,actualSpecialists:actual.filter(s=>['K','P','LS'].includes(s.position)).length,actualMeanEffectivePositions:rounded(mean(byFranchise.map(r=>r.actualEffectivePositions))),byRound,byFranchise,runs});
+  console.log(JSON.stringify({year,trades:metrics.trades,actualTrades:actualTrades(year),firstRoundTv:metrics.firstRoundPositionTv.mean,overallTv:metrics.overallPositionTv.mean,qb:[metrics.firstRoundQb.mean,actual.filter(s=>s.round===1&&s.position==='QB').length],specialists:[metrics.specialists.mean,actual.filter(s=>['K','P','LS'].includes(s.position)).length]}));
+ }
+-const output={asOf:'2026-11-20',purpose:'Descriptive behavior comparison of frozen production CPU policy against recorded draft outcomes; not a quality, causal or historical-information validation.',repetitionsPerClass:repetitions,totalDrafts:repetitions*classes.length,sourceHashes,definitions:{tv:'Total variation = one half the sum of absolute position-share differences; 0 equal, 1 disjoint. Per-round pooled counts compare average policy shares; individual-run TV also includes sampling noise.',effectivePositions:'exp(Shannon entropy of position shares), per franchise; 1 means single-position class, larger means more diverse. Does not estimate need or quality.',tradeBaseline:'Distinct transactions inside inclusive local draft date windows. Current-year-picks-only excludes player/future-pick assets, matching supported CPU assets more closely. Date-only windows can include off-clock transactions.',monteCarloSe:'Between-seed sample SD / sqrt(12); simulation sampling error only. Not model uncertainty or independent historic sample uncertainty.'},limitations:['12 fixed seeds and 12 rotating designated user franchises per class; auto-completion uses CPU picking for user picks but CPU trades exclude designated user franchise.','No human trades or board decisions; historical all-draftee and playable-only distributions differ because 19–83 actual draftees are reference-only.','Round shares and franchise statistics are descriptive, not a target to tune blindly toward; actual team needs, player quality and opportunity costs are not reconstructed.','Observed trade data need not be exhaustive; source extends only through 2026-04-17, making the 2026 draft trade comparator unavailable. Current-year-only scope misses genuine future-pick/player deals.','No policy tuning, calibration claim, significance test or player-to-wins quality inference is made.'],classes,failures};
++const output={policy:candidate?'pre2018-round-position-prior-v1':'current-production',priorFit:{cohorts:[2013,2017],rows:fitDrafts.length,positionRoundPrior},asOf:'2026-11-20',purpose:'Descriptive behavior comparison of frozen production CPU policy against recorded draft outcomes; not a quality, causal or historical-information validation.',repetitionsPerClass:repetitions,totalDrafts:repetitions*classes.length,sourceHashes,definitions:{tv:'Total variation = one half the sum of absolute position-share differences; 0 equal, 1 disjoint. Per-round pooled counts compare average policy shares; individual-run TV also includes sampling noise.',effectivePositions:'exp(Shannon entropy of position shares), per franchise; 1 means single-position class, larger means more diverse. Does not estimate need or quality.',tradeBaseline:'Distinct transactions inside inclusive local draft date windows. Current-year-picks-only excludes player/future-pick assets, matching supported CPU assets more closely. Date-only windows can include off-clock transactions.',monteCarloSe:'Between-seed sample SD / sqrt(12); simulation sampling error only. Not model uncertainty or independent historic sample uncertainty.'},limitations:['12 fixed seeds and 12 rotating designated user franchises per class; auto-completion uses CPU picking for user picks but CPU trades exclude designated user franchise.','No human trades or board decisions; historical all-draftee and playable-only distributions differ because 19–83 actual draftees are reference-only.','Round shares and franchise statistics are descriptive, not a target to tune blindly toward; actual team needs, player quality and opportunity costs are not reconstructed.','Observed trade data need not be exhaustive; source extends only through 2026-04-17, making the 2026 draft trade comparator unavailable. Current-year-only scope misses genuine future-pick/player deals.','No policy tuning, calibration claim, significance test or player-to-wins quality inference is made.'],classes,failures};
+ const idx=process.argv.indexOf('--output'),out=idx>=0?process.argv[idx+1]:path.join(root,'docs/audit/cpu_behavior_results.json');if(!out)throw Error('--output requires path');fs.writeFileSync(out,JSON.stringify(output,null,2)+'\n');process.exitCode=failures.length?1:0;
+ }finally{cleanup();}

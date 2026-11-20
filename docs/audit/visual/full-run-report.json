@@ -1,0 +1,24 @@
+{
+  "at": "2026-11-20T02:06:23.874Z",
+  "engine": "chromium",
+  "executablePath": "Playwright default",
+  "baseUrl": "http://127.0.0.1:4173",
+  "results": [
+    {
+      "mode": "historical",
+      "status": "passed",
+      "userPicks": 9,
+      "leaguePicks": 256,
+      "gameId": "76d8930a-3a50-4672-bd04-2ff1102455c8"
+    },
+    {
+      "mode": "daily",
+      "status": "passed",
+      "userPicks": 7,
+      "leaguePicks": 259,
+      "gameId": "5f19004c-a305-4f75-aab5-56029b143052",
+      "officialScore": 50
+    }
+  ],
+  "limitation": "390px mobile viewport is browser emulation, not a physical-device test. This suite uses full configured ensembles and can take several minutes. Screenshots require human review."
+}

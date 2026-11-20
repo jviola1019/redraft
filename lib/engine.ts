@@ -1,4 +1,5 @@
 import johnsonChart from '../data/processed/trade-values.json';
+import cpuCapital from '../analytics/cpu-position-capital-v1.json';
 import type { Dataset, GameMode, GameState, Prospect, Projection, TradeOffer, TradeEvaluation, PriorSeasonContextDataset, PriorUsagePolicy } from './types';
 export interface RuntimeModels {
     version?: string;
@@ -34,7 +35,12 @@ export interface RuntimeModels {
     };
     [key: string]: unknown;
 }
-export const RULE_VERSION = 'redraft-research-0.8-schedule-tiebreaks';
+export const LEGACY_RULE_VERSION = 'redraft-research-0.9-schedule-exposure';
+export const RULE_VERSION = 'redraft-research-0.10-team-cpu-prior';
+type EngineVersion = typeof RULE_VERSION | typeof LEGACY_RULE_VERSION;
+export function supportsEngineVersion(version: string): version is EngineVersion {
+    return version === RULE_VERSION || version === LEGACY_RULE_VERSION;
+}
 export const ENSEMBLE_SIZE = 256;
 export const SCORING_VERSION = 'research-score-v1';
 /** Fail closed on malformed or post-cutoff calibration metadata. */
@@ -110,6 +116,7 @@ export function createGame(config: {
     mode?: GameMode;
     now?: string;
     modelVersion?: string;
+    engineVersion?: EngineVersion;
 }, dataset: Dataset): GameState {
     const year = scenarioYear(dataset);
     if (config.year !== undefined && config.year !== year)
@@ -121,7 +128,7 @@ export function createGame(config: {
     if (dataset.prospects.filter(isPlayableProspect).length < dataset.picks.length)
         throw new Error('Playable prospect pool is too small for a complete draft.');
     const now = config.now ?? new Date().toISOString();
-    const state: GameState = { id: config.id ?? `run-${Math.floor(random(seed, now, team) * 1e12).toString(36)}`, year, team, mode: config.mode ?? 'historical', seed, status: 'drafting', cutoff: String(dataset.metadata.informationCutoff), datasetVersion: String(dataset.metadata.version ?? `dataset-${year}`), modelVersion: config.modelVersion ?? RULE_VERSION, engineVersion: RULE_VERSION, scoringVersion: SCORING_VERSION, ensembleSize: ENSEMBLE_SIZE, picks: dataset.picks.map(p => ({ ...p })).sort((a, b) => a.overall - b.overall), selections: [], trades: [], scouted: [], scoutingPoints: 12, board: [], createdAt: now, updatedAt: now, revision: 0 };
+    const state: GameState = { id: config.id ?? `run-${Math.floor(random(seed, now, team) * 1e12).toString(36)}`, year, team, mode: config.mode ?? 'historical', seed, status: 'drafting', cutoff: String(dataset.metadata.informationCutoff), datasetVersion: String(dataset.metadata.version ?? `dataset-${year}`), modelVersion: config.modelVersion ?? RULE_VERSION, engineVersion: config.engineVersion ?? RULE_VERSION, scoringVersion: SCORING_VERSION, ensembleSize: ENSEMBLE_SIZE, picks: dataset.picks.map(p => ({ ...p })).sort((a, b) => a.overall - b.overall), selections: [], trades: [], scouted: [], scoutingPoints: 12, board: [], createdAt: now, updatedAt: now, revision: 0 };
     validateGame(state, dataset);
     return state;
 }
@@ -312,15 +319,63 @@ export function rankLeaderboard<T extends { score: number }>(rows: T[]): (T & { 
         return { ...row, rank };
     });
 }
-function utilityFromCount(game: GameState, prospect: Prospect, team: string, count: number, models?: RuntimeModels): number {
+function utilityFromCount(game: GameState, prospect: Prospect, team: string, count: number, models?: RuntimeModels, roleScore = probability(prospect, models)): number {
     const group = positionGroup(prospect.position), limits: Record<string, number> = { QB: 1, RB: 1, WR: 2, TE: 1, OL: 3, DL: 2, LB: 2, DB: 3, K: 0.3, P: 0.3, LS: 0.1 };
     const balance = 0.16 * (1 - Math.min(3, count / (limits[group] ?? 1)));
     const premium = group === 'QB' ? 0.08 : ['OL', 'DL', 'DB', 'WR'].includes(group) ? 0.025 : ['K', 'P', 'LS'].includes(group) ? -0.22 : 0;
-    return probability(prospect, models) + balance + premium + (random(game.seed, 'cpu-style', team, group) - 0.5) * 0.12 + priorUsageAdjustment(game, prospect, team, models);
+    return roleScore + balance + premium + (random(game.seed, 'cpu-style', team, group) - 0.5) * 0.12 + priorUsageAdjustment(game, prospect, team, models);
 }
 export function draftUtility(game: GameState, prospect: Prospect, team: string, dataset: Dataset, models?: RuntimeModels): number {
     const group = positionGroup(prospect.position), count = game.selections.filter(s => s.team === team && positionGroup(dataset.prospects.find(p => p.id === s.prospectId)!.position) === group).length;
     return utilityFromCount(game, prospect, team, count, models);
+}
+const cpuRounds = Object.values(cpuCapital.counts);
+const cpuPositions = Object.keys(cpuRounds[0]) as (keyof typeof cpuRounds[number])[];
+const fitThrough = Math.max(...cpuCapital.fitSeasons);
+const capitalByRound = cpuRounds.map(counts => {
+    const roundTotal = Object.values(counts).reduce((sum, n) => sum + n, 0);
+    return new Map<string, number>(cpuPositions.map(group => {
+        const groupTotal = cpuRounds.reduce((sum, round) => sum + round[group], 0);
+        const roundShare = (counts[group] + 1) / (roundTotal + cpuPositions.length);
+        const overallShare = (groupTotal + cpuRounds.length) / (cpuCapital.rows + cpuPositions.length * cpuRounds.length);
+        return [group, Math.log(roundShare / overallShare)];
+    }));
+});
+const defaultCpuModel: RuntimeModels = {};
+type CpuRole = { id: string; probability: number; percentile?: number };
+const cpuRoleCache = new WeakMap<Dataset, WeakMap<RuntimeModels, Map<string, CpuRole>>>();
+/** Full playable classes are the reference, so drafting someone doesn't change peers' ranks. */
+function cpuRoles(dataset: Dataset, models = defaultCpuModel): Map<string, CpuRole> {
+    let byModel = cpuRoleCache.get(dataset);
+    if (!byModel) {
+        byModel = new WeakMap();
+        cpuRoleCache.set(dataset, byModel);
+    }
+    const cached = byModel.get(models);
+    if (cached) return cached;
+    const roles = new Map<string, CpuRole>();
+    const byGroup = new Map<string, CpuRole[]>();
+    for (const prospect of dataset.prospects.filter(isPlayableProspect)) {
+        const role = { id: prospect.id, probability: probability(prospect, models) };
+        roles.set(prospect.id, role);
+        const group = positionGroup(prospect.position);
+        if (['K', 'P', 'LS'].includes(group)) continue;
+        const entries = byGroup.get(group) ?? [];
+        entries.push(role);
+        byGroup.set(group, entries);
+    }
+    for (const entries of byGroup.values()) {
+        entries.sort((a, b) => a.probability - b.probability);
+        for (let start = 0; start < entries.length;) {
+            let end = start + 1;
+            while (end < entries.length && entries[end].probability === entries[start].probability) end++;
+            const midrank = (start + end) / (2 * entries.length);
+            for (let i = start; i < end; i++) entries[i].percentile = midrank;
+            start = end;
+        }
+    }
+    byModel.set(models, roles);
+    return roles;
 }
 function cpuPick(game: GameState, dataset: Dataset, models?: RuntimeModels): string {
     const p = currentPick(game)!, selected = new Set(game.selections.map(s => s.prospectId)), counts: Record<string, number> = {};
@@ -328,12 +383,21 @@ function cpuPick(game: GameState, dataset: Dataset, models?: RuntimeModels): str
         const group = positionGroup(dataset.prospects.find(x => x.id === s.prospectId)!.position);
         counts[group] = (counts[group] ?? 0) + 1;
     }
+    const usePrior = game.engineVersion === RULE_VERSION;
+    if (usePrior && (game.year <= fitThrough || Date.parse(game.cutoff) < Date.parse(cpuCapital.observedThrough)))
+        throw new Error('CPU position prior violates the historical cutoff.');
+    const capital = usePrior ? capitalByRound[p.round - 1] : undefined;
+    const roles = capital ? cpuRoles(dataset, models) : undefined;
     let best: string | null = null, bestU = -Infinity;
     for (const prospect of dataset.prospects) {
         if (!isPlayableProspect(prospect) || selected.has(prospect.id))
             continue;
         const noise = -Math.log(-Math.log(clamp(random(game.seed, 'cpu-choice', p.overall, p.owner, prospect.id), 1e-9, 1 - 1e-9))) * 0.045;
-        const value = utilityFromCount(game, prospect, p.owner, counts[positionGroup(prospect.position)] ?? 0, models) + noise;
+        const group = positionGroup(prospect.position);
+        const role = roles?.get(prospect.id);
+        const opportunity = role?.percentile === undefined ? 0 : 0.5 * (role.percentile - role.probability);
+        const value = utilityFromCount(game, prospect, p.owner, counts[group] ?? 0, models, role?.probability) + noise
+            + opportunity + 0.12 * (capital?.get(group) ?? 0);
         if (value > bestU) {
             bestU = value;
             best = prospect.id;

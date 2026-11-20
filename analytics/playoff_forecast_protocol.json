@@ -1,0 +1,15 @@
+{
+  "sourceCommit": "5e93390",
+  "origins": [2018,2019,2020,2021,2022,2023,2024,2025],
+  "replicatesPerOrigin": 64,
+  "seed": "historical-playoff-qualification-fixed-v1",
+  "maximumActualSeason": 2025,
+  "maximumHorizon": 5,
+  "estimand": "Probability each of all 32 franchises qualifies for playoffs in zero-intervention simulated actual-draft baseline",
+  "labels": "Membership in complete recorded season's postseason games, including teams with first-round byes; never reconstruct labels using simulated standings",
+  "comparator": "Constant season-specific playoff-slot prevalence, 12/32 in 2018-2019 and 14/32 thereafter",
+  "metrics": ["Brier", "Brier skill relative to prevalence", "Monte Carlo Brier bias estimate", "aggregate Brier MC standard error using independent origin-seed blocks"],
+  "exclusions": "No season after 2025 or incomplete observed season; do not replace absent outcomes with zero",
+  "decision": "Descriptive audit only; no tuning, adoption or gameplay changes based on these exposed outcomes",
+  "dependence": "Origins' horizons overlap actual team-seasons; aggregate row count is not independent sample size; seed Monte Carlo uncertainty is not generalization uncertainty"
+}

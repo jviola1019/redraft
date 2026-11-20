@@ -2,7 +2,7 @@
 
 The research release is **blocked**. This is a statistical evidence decision, separate from software test success.
 
-Counts: 33 pass; 9 fail; 7 unsupported; 0 stale.
+Counts: 40 pass; 6 fail; 7 unsupported; 0 stale.
 
 The criteria are disclosed engineering tolerances chosen after earlier results were reviewed. They are not a preregistered hypothesis test. The 2018 outcomes are reused backtests.
 
@@ -11,17 +11,21 @@ The criteria are disclosed engineering tolerances chosen after earlier results w
 | frozen_metrics_recompute | pass | Saved predictions reproduce metrics |
 | strict_label_cutoff | pass | Every five-season donor label complete before draft cutoff |
 | strict_independent_chronological_validation | unsupported | An independent pre2018 five-year chronological test |
-| forecast_source_analytics/five_year_strict_2018.json | pass | Exact audit matches source artifact |
 | forecast_source_analytics/five_year_frozen_2018_predictions.csv | pass | Exact audit matches source artifact |
+| forecast_source_analytics/five_year_strict_2018.json | pass | Exact audit matches source artifact |
+| forecast_source_analytics/forecast_audit.py | pass | Exact audit matches source artifact |
 | forecast_source_analytics/model.json | pass | Exact audit matches source artifact |
+| forecast_source_lib/engine.ts | pass | Exact audit matches source artifact |
+| forecast_source_lib/server-data.ts | pass | Exact audit matches source artifact |
+| forecast_source_lib/simulation.ts | pass | Exact audit matches source artifact |
 | conditional_support_DB | pass | At least10 donors in each conditional stratum; minimum screening rule, not proof of validity |
 | coverage95_DB_snaps | pass | Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes |
 | coverage95_DB_games | pass | Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes |
 | conditional_support_DL | pass | At least10 donors in each conditional stratum; minimum screening rule, not proof of validity |
 | coverage95_DL_snaps | pass | Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes |
-| coverage95_DL_games | fail | Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes |
+| coverage95_DL_games | pass | Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes |
 | conditional_support_LB | pass | At least10 donors in each conditional stratum; minimum screening rule, not proof of validity |
-| coverage95_LB_snaps | fail | Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes |
+| coverage95_LB_snaps | pass | Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes |
 | coverage95_LB_games | pass | Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes |
 | conditional_support_OL | pass | At least10 donors in each conditional stratum; minimum screening rule, not proof of validity |
 | coverage95_OL_snaps | pass | Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes |
@@ -34,7 +38,7 @@ The criteria are disclosed engineering tolerances chosen after earlier results w
 | coverage95_RB_games | pass | Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes |
 | conditional_support_TE | unsupported | At least10 donors in each conditional stratum; minimum screening rule, not proof of validity |
 | coverage95_TE_snaps | pass | Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes |
-| coverage95_TE_games | fail | Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes |
+| coverage95_TE_games | pass | Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes |
 | conditional_support_WR | pass | At least10 donors in each conditional stratum; minimum screening rule, not proof of validity |
 | coverage95_WR_snaps | pass | Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes |
 | coverage95_WR_games | pass | Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes |

@@ -728,8 +728,8 @@
   "sourceHashes": {
     "analytics/qb_transition_experiment.py": "62fc21ad077362381696329157b6bba847d380883966e7a34c47ec69c71c9f87",
     "analytics/five_year.py": "f66e57954eeafb6258f88ec558a643f4c02c1d8379fa72d5c1a58ccf9b7dc06e",
-    "analytics/forecast_audit.py": "0e7a1ad8a647b5bea9bf54d28da9e661773c9a6dfb9a60d6e6647f7ada2cb64f",
-    "data/raw/games.csv": "924d1b149d01b3aa6fc87c64116a489d44f50f4d8eac4bf8c8874bec6f1b75d3",
+    "analytics/forecast_audit.py": "152b7587d4c8255e6f51e7198a7136d3b2405ad83eb18ae8fcf9ad45f6488197",
+    "data/raw/games.csv": "369967042aac4f7b431c8644c197c6829e8428f7776058e4a058506ea4dece76",
     "data/raw/combine.csv": "5648886b1bb9de8a0c42b05ee7b1d9cbe58897676caaa2f6a4a3d3c9228235bb",
     "analytics/five_year_frozen_2018_predictions.csv": "a12e376e85bb09048b84f399da99d4b52e699922ac49023ab65e8c7de46d5094",
     "data/raw/snap_counts_2013.csv": "9d1fdd557875b9a2c71d88e583da24a739dfca671edf8223d6171e39a421000e",

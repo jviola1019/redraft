@@ -1,0 +1,105 @@
+{
+  "selected": "trailing3",
+  "validation": {
+    "expanding": {
+      "games": 512,
+      "observedRate": 0.017578125,
+      "predictedRate": 0.030269058295964116,
+      "brier": 0.017430194309406982,
+      "logLoss": 0.09167809785193469
+    },
+    "trailing3": {
+      "games": 512,
+      "observedRate": 0.017578125,
+      "predictedRate": 0.018229166666666668,
+      "brier": 0.017269558376736115,
+      "logLoss": 0.0884696607364627
+    },
+    "trailing5": {
+      "games": 512,
+      "observedRate": 0.017578125,
+      "predictedRate": 0.0234375,
+      "brier": 0.017303466796875,
+      "logLoss": 0.08927768489408895
+    },
+    "trailing10": {
+      "games": 512,
+      "observedRate": 0.017578125,
+      "predictedRate": 0.02578124999999999,
+      "brier": 0.017336425781249998,
+      "logLoss": 0.08996295704988028
+    }
+  },
+  "pre2018": {
+    "currentCorrelatedNormal": {
+      "games": 512,
+      "totalMAE": 10.893184661865234,
+      "marginMAE": 10.37130355834961,
+      "totalCRPS": 7.746606084518135,
+      "marginCRPS": 7.49884304124862,
+      "total80Coverage": 0.818359375,
+      "total90Coverage": 0.91015625,
+      "margin80Coverage": 0.837890625,
+      "margin90Coverage": 0.916015625,
+      "predictedShutoutRate": 0.03882032632827759,
+      "observedShutoutRate": 0.02734375,
+      "shutoutBrier": 0.026777467423016788,
+      "shutoutLogLoss": 0.12781637058033052,
+      "predictedTieRate": 0.00321197509765625,
+      "observedTieRate": 0.00390625
+    },
+    "twoPartHurdle": {
+      "games": 512,
+      "totalMAE": 10.894067764282227,
+      "marginMAE": 10.401214599609375,
+      "totalCRPS": 7.739049009047449,
+      "marginCRPS": 7.501258703880012,
+      "total80Coverage": 0.806640625,
+      "total90Coverage": 0.8984375,
+      "margin80Coverage": 0.833984375,
+      "margin90Coverage": 0.90625,
+      "predictedShutoutRate": 0.015625,
+      "observedShutoutRate": 0.02734375,
+      "shutoutBrier": 0.0267333984375,
+      "shutoutLogLoss": 0.1290371971429076,
+      "predictedTieRate": 0.003368377685546875,
+      "observedTieRate": 0.00390625
+    }
+  },
+  "2018_25": {
+    "currentCorrelatedNormal": {
+      "games": 2127,
+      "totalMAE": 10.994253799732604,
+      "marginMAE": 10.718705235146333,
+      "totalCRPS": 7.817901223827877,
+      "marginCRPS": 7.744041787552397,
+      "total80Coverage": 0.8194640338504936,
+      "total90Coverage": 0.9130230371415139,
+      "margin80Coverage": 0.8138222849083215,
+      "margin90Coverage": 0.9040902679830748,
+      "predictedShutoutRate": 0.03169226814560561,
+      "observedShutoutRate": 0.020686412787964268,
+      "shutoutBrier": 0.02038777431715709,
+      "shutoutLogLoss": 0.10299254697498574,
+      "predictedTieRate": 0.003296759300070522,
+      "observedTieRate": 0.0037611659614480487
+    },
+    "twoPartHurdle": {
+      "games": 2127,
+      "totalMAE": 10.993061906808299,
+      "marginMAE": 10.71451845873002,
+      "totalCRPS": 7.800318186306651,
+      "marginCRPS": 7.748274226226771,
+      "total80Coverage": 0.8119417019275975,
+      "total90Coverage": 0.9116125999059709,
+      "margin80Coverage": 0.8091208274565115,
+      "margin90Coverage": 0.9017395392571698,
+      "predictedShutoutRate": 0.02083333333333333,
+      "observedShutoutRate": 0.020686412787964268,
+      "shutoutBrier": 0.020258506699576864,
+      "shutoutLogLoss": 0.10069915178139728,
+      "predictedTieRate": 0.0032735734015044665,
+      "observedTieRate": 0.0037611659614480487
+    }
+  }
+}

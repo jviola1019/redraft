@@ -1,0 +1,148 @@
+{
+  "adoptionDecision": "Do not adopt in production; retain one explainable candidate as research only.",
+  "fitCohorts": [
+    2013,
+    2017
+  ],
+  "fitRows": 1272,
+  "developmentExposure": [
+    2018,
+    2021
+  ],
+  "laterExposedComparison": [
+    2022,
+    2026
+  ],
+  "classes": [
+    {
+      "year": 2018,
+      "currentRound1Tv": 0.341146,
+      "candidateRound1Tv": 0.210938,
+      "actualRound1Qb": 5,
+      "currentRound1Qb": 0,
+      "candidateRound1Qb": 2.833333,
+      "currentFranchiseDiversity": 5.428887,
+      "candidateFranchiseDiversity": 4.567455,
+      "actualFranchiseDiversity": 5.168372,
+      "currentFranchiseTv": 0.407824,
+      "candidateFranchiseTv": 0.481519
+    },
+    {
+      "year": 2019,
+      "currentRound1Tv": 0.424479,
+      "candidateRound1Tv": 0.257813,
+      "actualRound1Qb": 3,
+      "currentRound1Qb": 0,
+      "candidateRound1Qb": 2.833333,
+      "currentFranchiseDiversity": 5.280041,
+      "candidateFranchiseDiversity": 4.442542,
+      "actualFranchiseDiversity": 5.214469,
+      "currentFranchiseTv": 0.39569,
+      "candidateFranchiseTv": 0.477928
+    },
+    {
+      "year": 2020,
+      "currentRound1Tv": 0.4375,
+      "candidateRound1Tv": 0.203125,
+      "actualRound1Qb": 4,
+      "currentRound1Qb": 0,
+      "candidateRound1Qb": 2.833333,
+      "currentFranchiseDiversity": 5.389654,
+      "candidateFranchiseDiversity": 4.454214,
+      "actualFranchiseDiversity": 4.895022,
+      "currentFranchiseTv": 0.427187,
+      "candidateFranchiseTv": 0.48591
+    },
+    {
+      "year": 2021,
+      "currentRound1Tv": 0.395833,
+      "candidateRound1Tv": 0.200521,
+      "actualRound1Qb": 5,
+      "currentRound1Qb": 0,
+      "candidateRound1Qb": 2.833333,
+      "currentFranchiseDiversity": 5.086982,
+      "candidateFranchiseDiversity": 4.431709,
+      "actualFranchiseDiversity": 5.146765,
+      "currentFranchiseTv": 0.363518,
+      "candidateFranchiseTv": 0.464763
+    },
+    {
+      "year": 2022,
+      "currentRound1Tv": 0.385417,
+      "candidateRound1Tv": 0.197917,
+      "actualRound1Qb": 1,
+      "currentRound1Qb": 0,
+      "candidateRound1Qb": 2.833333,
+      "currentFranchiseDiversity": 5.469677,
+      "candidateFranchiseDiversity": 4.566587,
+      "actualFranchiseDiversity": 5.069645,
+      "currentFranchiseTv": 0.410686,
+      "candidateFranchiseTv": 0.470336
+    },
+    {
+      "year": 2023,
+      "currentRound1Tv": 0.537634,
+      "candidateRound1Tv": 0.22043,
+      "actualRound1Qb": 3,
+      "currentRound1Qb": 0.083333,
+      "candidateRound1Qb": 2.833333,
+      "currentFranchiseDiversity": 5.386507,
+      "candidateFranchiseDiversity": 4.510434,
+      "actualFranchiseDiversity": 5.312634,
+      "currentFranchiseTv": 0.393381,
+      "candidateFranchiseTv": 0.459923
+    },
+    {
+      "year": 2024,
+      "currentRound1Tv": 0.59375,
+      "candidateRound1Tv": 0.294271,
+      "actualRound1Qb": 6,
+      "currentRound1Qb": 0,
+      "candidateRound1Qb": 2.833333,
+      "currentFranchiseDiversity": 5.062258,
+      "candidateFranchiseDiversity": 4.458686,
+      "actualFranchiseDiversity": 5.0666,
+      "currentFranchiseTv": 0.383658,
+      "candidateFranchiseTv": 0.456833
+    },
+    {
+      "year": 2025,
+      "currentRound1Tv": 0.552083,
+      "candidateRound1Tv": 0.208333,
+      "actualRound1Qb": 2,
+      "currentRound1Qb": 0,
+      "candidateRound1Qb": 2.833333,
+      "currentFranchiseDiversity": 5.414102,
+      "candidateFranchiseDiversity": 4.54771,
+      "actualFranchiseDiversity": 5.308042,
+      "currentFranchiseTv": 0.39597,
+      "candidateFranchiseTv": 0.472959
+    },
+    {
+      "year": 2026,
+      "currentRound1Tv": 0.625,
+      "candidateRound1Tv": 0.25,
+      "actualRound1Qb": 2,
+      "currentRound1Qb": 0,
+      "candidateRound1Qb": 2.833333,
+      "currentFranchiseDiversity": 5.261402,
+      "candidateFranchiseDiversity": 4.508722,
+      "actualFranchiseDiversity": 5.309642,
+      "currentFranchiseTv": 0.37907,
+      "candidateFranchiseTv": 0.453855
+    }
+  ],
+  "meanRound1Tv": {
+    "current": 0.47698244444444443,
+    "candidate": 0.22703866666666667
+  },
+  "meanFranchiseTv": {
+    "current": 0.39522044444444443,
+    "candidate": 0.4693362222222222
+  },
+  "checks": {
+    "allDraftsCompleteAndPlayable": true,
+    "positionFitExcludes2018Plus": true,
+    "tradeCountsUnchanged": true
+  }
+}

@@ -2,6 +2,13 @@ import developmentModel from '../analytics/five_year_strict_2018.json';
 import { clamp, normal, positionGroup, probability, random, pickValue, scenarioYear, validateGame } from './engine';
 import type { RuntimeModels } from './engine';
 import type { Dataset, GameState, TeamSeason, SimGame, SeasonResult, PlayerSeason, Selection, SimWorld, ReplicateResult, SimulationResults, ScoreComponent } from './types';
+// Strict donors were observed in five 16-game seasons. Preserve their rates when
+// projecting schedule exposure; this is a deterministic assumption, not a refit.
+export function donorSeasonExposure(snaps: number, games: number, year: number) {
+    const scheduledGames = year >= 2021 ? 17 : 16;
+    return { snaps: snaps * scheduledGames / 16,
+        games: Math.min(scheduledGames, Math.round(games * scheduledGames / 16)) };
+}
 interface Fixture {
     home: string;
     away: string;
@@ -290,9 +297,9 @@ function cohort(selections: Selection[], dataset: Dataset, year: number, seed: s
         const pool = matched.length ? matched : available;
         // Draw a complete observed trajectory once. Yearly outcomes remain correlated.
         const donor = pool[Math.floor(random(seed, 'five-year-donor', p.id) * pool.length)];
-        const snaps = donor.snaps[age], games = Math.min(n, donor.games[age]);
+        const { snaps, games } = donorSeasonExposure(donor.snaps[age], donor.games[age], year);
         // Snap opportunity is observed; converting it to team strength remains a scenario assumption.
-        const contribution = clamp(snaps / 800, 0, 2.1);
+        const contribution = clamp(snaps / (800 * n / 16), 0, 2.1);
         return {prospectId:p.id,team:s.team,season:year,contribution,games,starts:0,group};
     });
     const capacity: Record<string, number> = { QB: 1, RB: 2, WR: 3, TE: 2, OL: 5, DL: 4, LB: 3, DB: 5, K: 1, P: 1, LS: 1 };
@@ -429,7 +436,7 @@ export function summarizeResults(game: GameState, replicates: ReplicateResult[],
             'Research alpha: the rookie snap model does not validate five-year player development or causal draft effects.',
             `The playable pool contains ${dataset.prospects.filter(p => p.eligibilitySource === 'combine-participant').length} recorded combine participants. The historical baseline also includes reference-only non-combine selections, so unequal prospect universes limit comparisons. Other eligible prospects and original publication timestamps are not fully reconstructed.`,
             'Future veterans, contracts, coaching, injuries, trades and draft intake are represented only through an aggregate team-strength process. Individual future roster transactions and league-wide MVP awards are not modeled.',
-            'Five-year participation trajectories are sampled from the complete pre-cutoff 2013 cohort. That single cohort cannot establish independent historical calibration; conversion from snaps to team-strength points remains an assumption. Ensemble intervals measure simulation randomness, not full model uncertainty.',
+            'Five-year participation trajectories are sampled from the complete pre-cutoff 2013 cohort, with snaps scaled by target schedule length / 16 and games scaled then rounded and capped at target schedule length. That single cohort cannot establish independent historical calibration; conversion from snaps to team-strength points remains an assumption. Ensemble intervals measure simulation randomness, not full model uncertainty.',
             `The ${game.year} season uses the recorded schedule when complete; otherwise a schedule is generated. Later seasons regenerate standings-dependent opponents using prior simulated division tiebreaks. If prior game records are unavailable, the initial generated schedule falls back to record and point differential. Week placement, home assignments and the 17th-opponent rotation are approximations. Tiebreaks implement score-level criteria through net points; unavailable net touchdowns and final tie resolution remain approximations.`,
             'Scores are rounded continuous draws, with one-point scores mapped to two, rather than possession-by-possession football scores. Overtime is simplified; individual football box scores are not generated.',
             'Trade pricing uses the published Johnson chart with a one-point extension after pick224. Trade frequency is checked against a prior-year count benchmark; acceptance, team styles and composite score weights remain heuristic. Future and conditional picks are unsupported.',

@@ -1,0 +1,1154 @@
+[
+  {
+    "cohort": 2016,
+    "pfrId": "AlleBr00",
+    "playerName": "Brandon Allen",
+    "actualAnnual": [
+      0,
+      0,
+      0,
+      176,
+      277
+    ],
+    "transition": {
+      "actual": 453.0,
+      "mean": 865.3724365234375,
+      "crps": 233.3686147481203,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 3097.0,
+      "intervalScore80": 3097.0,
+      "lower95": 0.0,
+      "upper95": 4843.0,
+      "intervalScore95": 4843.0
+    },
+    "persistence": {
+      "actual": 453.0,
+      "mean": 854.1766357421875,
+      "crps": 335.1320283263922,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 4210.0,
+      "intervalScore80": 4210.0,
+      "lower95": 0.0,
+      "upper95": 4945.0,
+      "intervalScore95": 4945.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "BoykTr00",
+    "playerName": "Trevone Boykin",
+    "actualAnnual": [
+      53,
+      0,
+      0,
+      0,
+      0
+    ],
+    "transition": {
+      "actual": 53.0,
+      "mean": 865.3724365234375,
+      "crps": 230.6076284199953,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 3097.0,
+      "intervalScore80": 3097.0,
+      "lower95": 0.0,
+      "upper95": 4843.0,
+      "intervalScore95": 4843.0
+    },
+    "persistence": {
+      "actual": 53.0,
+      "mean": 854.1766357421875,
+      "crps": 177.92792676389217,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 4210.0,
+      "intervalScore80": 4210.0,
+      "lower95": 0.0,
+      "upper95": 4945.0,
+      "intervalScore95": 4945.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "BrisJa00",
+    "playerName": "Jacoby Brissett",
+    "actualAnnual": [
+      156,
+      989,
+      18,
+      947,
+      47
+    ],
+    "transition": {
+      "actual": 2157.0,
+      "mean": 865.3724365234375,
+      "crps": 1134.6440053731203,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 3097.0,
+      "intervalScore80": 3097.0,
+      "lower95": 0.0,
+      "upper95": 4843.0,
+      "intervalScore95": 4843.0
+    },
+    "persistence": {
+      "actual": 2157.0,
+      "mean": 854.1766357421875,
+      "crps": 1391.0189912170172,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 4210.0,
+      "intervalScore80": 4210.0,
+      "lower95": 0.0,
+      "upper95": 4945.0,
+      "intervalScore95": 4945.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "CookCo00",
+    "playerName": "Connor Cook",
+    "actualAnnual": [
+      32,
+      0,
+      0,
+      0,
+      0
+    ],
+    "transition": {
+      "actual": 32.0,
+      "mean": 865.3724365234375,
+      "crps": 236.5536733418703,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 3097.0,
+      "intervalScore80": 3097.0,
+      "lower95": 0.0,
+      "upper95": 4843.0,
+      "intervalScore95": 4843.0
+    },
+    "persistence": {
+      "actual": 32.0,
+      "mean": 854.1766357421875,
+      "crps": 171.92865918576717,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 4210.0,
+      "intervalScore80": 4210.0,
+      "lower95": 0.0,
+      "upper95": 4945.0,
+      "intervalScore95": 4945.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "DougBr00",
+    "playerName": "Brandon Doughty",
+    "actualAnnual": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "transition": {
+      "actual": 0.0,
+      "mean": 865.3724365234375,
+      "crps": 247.8761831074953,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 3097.0,
+      "intervalScore80": 3097.0,
+      "lower95": 0.0,
+      "upper95": 4843.0,
+      "intervalScore95": 4843.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 854.1766357421875,
+      "crps": 164.04584668576717,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 4210.0,
+      "intervalScore80": 4210.0,
+      "lower95": 0.0,
+      "upper95": 4945.0,
+      "intervalScore95": 4945.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "DrisJe00",
+    "playerName": "Jeff Driskel",
+    "actualAnnual": [
+      0,
+      0,
+      372,
+      218,
+      115
+    ],
+    "transition": {
+      "actual": 705.0,
+      "mean": 865.3724365234375,
+      "crps": 303.9608999043703,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 3097.0,
+      "intervalScore80": 3097.0,
+      "lower95": 0.0,
+      "upper95": 4843.0,
+      "intervalScore95": 4843.0
+    },
+    "persistence": {
+      "actual": 705.0,
+      "mean": 854.1766357421875,
+      "crps": 483.9298798888922,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 4210.0,
+      "intervalScore80": 4210.0,
+      "lower95": 0.0,
+      "upper95": 4945.0,
+      "intervalScore95": 4945.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "GoffJa00",
+    "playerName": "Jared Goff",
+    "actualAnnual": [
+      392,
+      932,
+      1064,
+      1096,
+      1046
+    ],
+    "transition": {
+      "actual": 4530.0,
+      "mean": 865.3724365234375,
+      "crps": 3076.1479116231203,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 3097.0,
+      "intervalScore80": 17427.0,
+      "lower95": 0.0,
+      "upper95": 4843.0,
+      "intervalScore95": 4843.0
+    },
+    "persistence": {
+      "actual": 4530.0,
+      "mean": 854.1766357421875,
+      "crps": 3057.049997076392,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 4210.0,
+      "intervalScore80": 7410.0,
+      "lower95": 0.0,
+      "upper95": 4945.0,
+      "intervalScore95": 4945.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "HackCh01",
+    "playerName": "Christian Hackenberg",
+    "actualAnnual": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "transition": {
+      "actual": 0.0,
+      "mean": 865.3724365234375,
+      "crps": 247.8761831074953,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 3097.0,
+      "intervalScore80": 3097.0,
+      "lower95": 0.0,
+      "upper95": 4843.0,
+      "intervalScore95": 4843.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 854.1766357421875,
+      "crps": 164.04584668576717,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 4210.0,
+      "intervalScore80": 4210.0,
+      "lower95": 0.0,
+      "upper95": 4945.0,
+      "intervalScore95": 4945.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "HogaKe00",
+    "playerName": "Kevin Hogan",
+    "actualAnnual": [
+      50,
+      134,
+      0,
+      0,
+      0
+    ],
+    "transition": {
+      "actual": 184.0,
+      "mean": 865.3724365234375,
+      "crps": 210.0656362324953,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 3097.0,
+      "intervalScore80": 3097.0,
+      "lower95": 0.0,
+      "upper95": 4843.0,
+      "intervalScore95": 4843.0
+    },
+    "persistence": {
+      "actual": 184.0,
+      "mean": 854.1766357421875,
+      "crps": 220.68232129514217,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 4210.0,
+      "intervalScore80": 4210.0,
+      "lower95": 0.0,
+      "upper95": 4945.0,
+      "intervalScore95": 4945.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "JoneCa01",
+    "playerName": "Cardale Jones",
+    "actualAnnual": [
+      19,
+      0,
+      0,
+      0,
+      0
+    ],
+    "transition": {
+      "actual": 19.0,
+      "mean": 865.3724365234375,
+      "crps": 240.6086049824953,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 3097.0,
+      "intervalScore80": 3097.0,
+      "lower95": 0.0,
+      "upper95": 4843.0,
+      "intervalScore95": 4843.0
+    },
+    "persistence": {
+      "actual": 19.0,
+      "mean": 854.1766357421875,
+      "crps": 168.72626660764217,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 4210.0,
+      "intervalScore80": 4210.0,
+      "lower95": 0.0,
+      "upper95": 4945.0,
+      "intervalScore95": 4945.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "KessCo00",
+    "playerName": "Cody Kessler",
+    "actualAnnual": [
+      349,
+      48,
+      263,
+      0,
+      0
+    ],
+    "transition": {
+      "actual": 660.0,
+      "mean": 865.3724365234375,
+      "crps": 287.5031362324953,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 3097.0,
+      "intervalScore80": 3097.0,
+      "lower95": 0.0,
+      "upper95": 4843.0,
+      "intervalScore95": 4843.0
+    },
+    "persistence": {
+      "actual": 660.0,
+      "mean": 854.1766357421875,
+      "crps": 456.6288544982672,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 4210.0,
+      "intervalScore80": 4210.0,
+      "lower95": 0.0,
+      "upper95": 4945.0,
+      "intervalScore95": 4945.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "LyncPa00",
+    "playerName": "Paxton Lynch",
+    "actualAnnual": [
+      176,
+      98,
+      0,
+      0,
+      0
+    ],
+    "transition": {
+      "actual": 274.0,
+      "mean": 865.3724365234375,
+      "crps": 212.0524526387453,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 3097.0,
+      "intervalScore80": 3097.0,
+      "lower95": 0.0,
+      "upper95": 4843.0,
+      "intervalScore95": 4843.0
+    },
+    "persistence": {
+      "actual": 274.0,
+      "mean": 854.1766357421875,
+      "crps": 251.04853223264217,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 4210.0,
+      "intervalScore80": 4210.0,
+      "lower95": 0.0,
+      "upper95": 4945.0,
+      "intervalScore95": 4945.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "PresDa01",
+    "playerName": "Dak Prescott",
+    "actualAnnual": [
+      1011,
+      1050,
+      1070,
+      1116,
+      360
+    ],
+    "transition": {
+      "actual": 4607.0,
+      "mean": 865.3724365234375,
+      "crps": 3147.3302846699953,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 3097.0,
+      "intervalScore80": 18197.0,
+      "lower95": 0.0,
+      "upper95": 4843.0,
+      "intervalScore95": 4843.0
+    },
+    "persistence": {
+      "actual": 4607.0,
+      "mean": 854.1766357421875,
+      "crps": 3124.331002935767,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 4210.0,
+      "intervalScore80": 8180.000000000001,
+      "lower95": 0.0,
+      "upper95": 4945.0,
+      "intervalScore95": 4945.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "StavJo01",
+    "playerName": "Joel Stave",
+    "actualAnnual": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "transition": {
+      "actual": 0.0,
+      "mean": 865.3724365234375,
+      "crps": 247.8761831074953,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 3097.0,
+      "intervalScore80": 3097.0,
+      "lower95": 0.0,
+      "upper95": 4843.0,
+      "intervalScore95": 4843.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 854.1766357421875,
+      "crps": 164.04584668576717,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 4210.0,
+      "intervalScore80": 4210.0,
+      "lower95": 0.0,
+      "upper95": 4945.0,
+      "intervalScore95": 4945.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "SudfNa00",
+    "playerName": "Nate Sudfeld",
+    "actualAnnual": [
+      0,
+      40,
+      11,
+      0,
+      18
+    ],
+    "transition": {
+      "actual": 69.0,
+      "mean": 865.3724365234375,
+      "crps": 226.3371206074953,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 3097.0,
+      "intervalScore80": 3097.0,
+      "lower95": 0.0,
+      "upper95": 4843.0,
+      "intervalScore95": 4843.0
+    },
+    "persistence": {
+      "actual": 69.0,
+      "mean": 854.1766357421875,
+      "crps": 182.60370801389217,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 4210.0,
+      "intervalScore80": 4210.0,
+      "lower95": 0.0,
+      "upper95": 4945.0,
+      "intervalScore95": 4945.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "WentCa00",
+    "playerName": "Carson Wentz",
+    "actualAnnual": [
+      1125,
+      881,
+      724,
+      1148,
+      809
+    ],
+    "transition": {
+      "actual": 4687.0,
+      "mean": 865.3724365234375,
+      "crps": 3221.8017202168703,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 3097.0,
+      "intervalScore80": 18997.000000000004,
+      "lower95": 0.0,
+      "upper95": 4843.0,
+      "intervalScore95": 4843.0
+    },
+    "persistence": {
+      "actual": 4687.0,
+      "mean": 854.1766357421875,
+      "crps": 3194.233346685767,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 4210.0,
+      "intervalScore80": 8980.0,
+      "lower95": 0.0,
+      "upper95": 4945.0,
+      "intervalScore95": 4945.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "WoodJo01",
+    "playerName": "Josh Woodrum",
+    "actualAnnual": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "transition": {
+      "actual": 0.0,
+      "mean": 865.3724365234375,
+      "crps": 247.8761831074953,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 3097.0,
+      "intervalScore80": 3097.0,
+      "lower95": 0.0,
+      "upper95": 4843.0,
+      "intervalScore95": 4843.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 854.1766357421875,
+      "crps": 164.04584668576717,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 4210.0,
+      "intervalScore80": 4210.0,
+      "lower95": 0.0,
+      "upper95": 4945.0,
+      "intervalScore95": 4945.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "BeatC.00",
+    "playerName": "C.J. Beathard",
+    "actualAnnual": [
+      391,
+      341,
+      0,
+      186,
+      7
+    ],
+    "transition": {
+      "actual": 925.0,
+      "mean": 873.5756683349609,
+      "crps": 397.3053448572755,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 3162.0,
+      "intervalScore80": 3162.0,
+      "lower95": 0.0,
+      "upper95": 4904.0,
+      "intervalScore95": 4904.0
+    },
+    "persistence": {
+      "actual": 925.0,
+      "mean": 891.7675323486328,
+      "crps": 560.1213697586209,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 4262.625,
+      "intervalScore80": 4262.625,
+      "lower95": 0.0,
+      "upper95": 5518.125,
+      "intervalScore95": 5518.125
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "DobbJo00",
+    "playerName": "Joshua Dobbs",
+    "actualAnnual": [
+      0,
+      30,
+      0,
+      9,
+      0
+    ],
+    "transition": {
+      "actual": 39.0,
+      "mean": 873.5756683349609,
+      "crps": 237.92111328989267,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 3162.0,
+      "intervalScore80": 3162.0,
+      "lower95": 0.0,
+      "upper95": 4904.0,
+      "intervalScore95": 4904.0
+    },
+    "persistence": {
+      "actual": 39.0,
+      "mean": 891.7675323486328,
+      "crps": 184.83319226838648,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 4262.625,
+      "intervalScore80": 4262.625,
+      "lower95": 0.0,
+      "upper95": 5518.125,
+      "intervalScore95": 5518.125
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "EvanJe01",
+    "playerName": "Jerod Evans",
+    "actualAnnual": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "transition": {
+      "actual": 0.0,
+      "mean": 873.5756683349609,
+      "crps": 254.709519661963,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 3162.0,
+      "intervalScore80": 3162.0,
+      "lower95": 0.0,
+      "upper95": 4904.0,
+      "intervalScore95": 4904.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 891.7675323486328,
+      "crps": 179.7940382156521,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 4262.625,
+      "intervalScore80": 4262.625,
+      "lower95": 0.0,
+      "upper95": 5518.125,
+      "intervalScore95": 5518.125
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "KaayBr00",
+    "playerName": "Brad Kaaya",
+    "actualAnnual": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "transition": {
+      "actual": 0.0,
+      "mean": 873.5756683349609,
+      "crps": 254.709519661963,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 3162.0,
+      "intervalScore80": 3162.0,
+      "lower95": 0.0,
+      "upper95": 4904.0,
+      "intervalScore95": 4904.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 891.7675323486328,
+      "crps": 179.7940382156521,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 4262.625,
+      "intervalScore80": 4262.625,
+      "lower95": 0.0,
+      "upper95": 5518.125,
+      "intervalScore95": 5518.125
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "KizeDe00",
+    "playerName": "DeShone Kizer",
+    "actualAnnual": [
+      886,
+      62,
+      0,
+      0,
+      0
+    ],
+    "transition": {
+      "actual": 948.0,
+      "mean": 873.5756683349609,
+      "crps": 408.3819287195802,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 3162.0,
+      "intervalScore80": 3162.0,
+      "lower95": 0.0,
+      "upper95": 4904.0,
+      "intervalScore95": 4904.0
+    },
+    "persistence": {
+      "actual": 948.0,
+      "mean": 891.7675323486328,
+      "crps": 573.6540846023709,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 4262.625,
+      "intervalScore80": 4262.625,
+      "lower95": 0.0,
+      "upper95": 5518.125,
+      "intervalScore95": 5518.125
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "KnigTr00",
+    "playerName": "Trevor Knight",
+    "actualAnnual": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "transition": {
+      "actual": 0.0,
+      "mean": 873.5756683349609,
+      "crps": 254.709519661963,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 3162.0,
+      "intervalScore80": 3162.0,
+      "lower95": 0.0,
+      "upper95": 4904.0,
+      "intervalScore95": 4904.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 891.7675323486328,
+      "crps": 179.7940382156521,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 4262.625,
+      "intervalScore80": 4262.625,
+      "lower95": 0.0,
+      "upper95": 5518.125,
+      "intervalScore95": 5518.125
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "LeidMi00",
+    "playerName": "Mitch Leidner",
+    "actualAnnual": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "transition": {
+      "actual": 0.0,
+      "mean": 873.5756683349609,
+      "crps": 254.709519661963,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 3162.0,
+      "intervalScore80": 3162.0,
+      "lower95": 0.0,
+      "upper95": 4904.0,
+      "intervalScore95": 4904.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 891.7675323486328,
+      "crps": 179.7940382156521,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 4262.625,
+      "intervalScore80": 4262.625,
+      "lower95": 0.0,
+      "upper95": 5518.125,
+      "intervalScore95": 5518.125
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "LiufSe00",
+    "playerName": "Sefo Liufau",
+    "actualAnnual": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "transition": {
+      "actual": 0.0,
+      "mean": 873.5756683349609,
+      "crps": 254.709519661963,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 3162.0,
+      "intervalScore80": 3162.0,
+      "lower95": 0.0,
+      "upper95": 4904.0,
+      "intervalScore95": 4904.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 891.7675323486328,
+      "crps": 179.7940382156521,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 4262.625,
+      "intervalScore80": 4262.625,
+      "lower95": 0.0,
+      "upper95": 5518.125,
+      "intervalScore95": 5518.125
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "MahoPa00",
+    "playerName": "Patrick Mahomes",
+    "actualAnnual": [
+      62,
+      1032,
+      880,
+      1027,
+      1164
+    ],
+    "transition": {
+      "actual": 4165.0,
+      "mean": 873.5756683349609,
+      "crps": 2746.5894635096192,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 3162.0,
+      "intervalScore80": 13192.000000000002,
+      "lower95": 0.0,
+      "upper95": 4904.0,
+      "intervalScore95": 4904.0
+    },
+    "persistence": {
+      "actual": 4165.0,
+      "mean": 891.7675323486328,
+      "crps": 2748.8734144363552,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 4262.625,
+      "intervalScore80": 4262.625,
+      "lower95": 0.0,
+      "upper95": 5518.125,
+      "intervalScore95": 5518.125
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "PeteNa00",
+    "playerName": "Nathan Peterman",
+    "actualAnnual": [
+      98,
+      148,
+      0,
+      11,
+      4
+    ],
+    "transition": {
+      "actual": 261.0,
+      "mean": 873.5756683349609,
+      "crps": 199.88723877817392,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 3162.0,
+      "intervalScore80": 3162.0,
+      "lower95": 0.0,
+      "upper95": 4904.0,
+      "intervalScore95": 4904.0
+    },
+    "persistence": {
+      "actual": 261.0,
+      "mean": 891.7675323486328,
+      "crps": 234.2444776687771,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 4262.625,
+      "intervalScore80": 4262.625,
+      "lower95": 0.0,
+      "upper95": 5518.125,
+      "intervalScore95": 5518.125
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "RushCo00",
+    "playerName": "Cooper Rush",
+    "actualAnnual": [
+      15,
+      6,
+      5,
+      0,
+      113
+    ],
+    "transition": {
+      "actual": 139.0,
+      "mean": 873.5756683349609,
+      "crps": 210.1655285730958,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 3162.0,
+      "intervalScore80": 3162.0,
+      "lower95": 0.0,
+      "upper95": 4904.0,
+      "intervalScore95": 4904.0
+    },
+    "persistence": {
+      "actual": 139.0,
+      "mean": 891.7675323486328,
+      "crps": 203.8333448562771,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 4262.625,
+      "intervalScore80": 4262.625,
+      "lower95": 0.0,
+      "upper95": 5518.125,
+      "intervalScore95": 5518.125
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "RussSe00",
+    "playerName": "Seth Russell",
+    "actualAnnual": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "transition": {
+      "actual": 0.0,
+      "mean": 873.5756683349609,
+      "crps": 254.709519661963,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 3162.0,
+      "intervalScore80": 3162.0,
+      "lower95": 0.0,
+      "upper95": 4904.0,
+      "intervalScore95": 4904.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 891.7675323486328,
+      "crps": 179.7940382156521,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 4262.625,
+      "intervalScore80": 4262.625,
+      "lower95": 0.0,
+      "upper95": 5518.125,
+      "intervalScore95": 5518.125
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "TrubMi00",
+    "playerName": "Mitchell Trubisky",
+    "actualAnnual": [
+      724,
+      929,
+      942,
+      570,
+      33
+    ],
+    "transition": {
+      "actual": 3198.0,
+      "mean": 873.5756683349609,
+      "crps": 1926.6884930506349,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 3162.0,
+      "intervalScore80": 3522.0,
+      "lower95": 0.0,
+      "upper95": 4904.0,
+      "intervalScore95": 4904.0
+    },
+    "persistence": {
+      "actual": 3198.0,
+      "mean": 891.7675323486328,
+      "crps": 2042.8469099197537,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 4262.625,
+      "intervalScore80": 4262.625,
+      "lower95": 0.0,
+      "upper95": 5518.125,
+      "intervalScore95": 5518.125
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "WatsDe00",
+    "playerName": "Deshaun Watson",
+    "actualAnnual": [
+      464,
+      1093,
+      997,
+      978,
+      0
+    ],
+    "transition": {
+      "actual": 3532.0,
+      "mean": 873.5756683349609,
+      "crps": 2200.5211346521974,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 3162.0,
+      "intervalScore80": 6862.0,
+      "lower95": 0.0,
+      "upper95": 4904.0,
+      "intervalScore95": 4904.0
+    },
+    "persistence": {
+      "actual": 3532.0,
+      "mean": 891.7675323486328,
+      "crps": 2274.123094001785,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 4262.625,
+      "intervalScore80": 4262.625,
+      "lower95": 0.0,
+      "upper95": 5518.125,
+      "intervalScore95": 5518.125
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "WebbDa00",
+    "playerName": "Davis Webb",
+    "actualAnnual": [
+      0,
+      0,
+      0,
+      0,
+      4
+    ],
+    "transition": {
+      "actual": 4.0,
+      "mean": 873.5756683349609,
+      "crps": 252.721238411963,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 3162.0,
+      "intervalScore80": 3162.0,
+      "lower95": 0.0,
+      "upper95": 4904.0,
+      "intervalScore95": 4904.0
+    },
+    "persistence": {
+      "actual": 4.0,
+      "mean": 891.7675323486328,
+      "crps": 180.2989210281521,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 4262.625,
+      "intervalScore80": 4262.625,
+      "lower95": 0.0,
+      "upper95": 5518.125,
+      "intervalScore95": 5518.125
+    }
+  }
+]

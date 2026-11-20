@@ -1,0 +1,4194 @@
+{
+  "all": {
+    "players": 92,
+    "zeros": 18,
+    "benchmark": {
+      "crps": 465.3682841358145,
+      "absolute_error": 650.0163043478261,
+      "covered_80": 0.8043478260869565,
+      "below_support": 0,
+      "above_support": 5
+    },
+    "candidate": {
+      "crps": 316.83677713147955,
+      "absolute_error": 433.6141304347826,
+      "covered_80": 0.7391304347826086,
+      "below_support": 5,
+      "above_support": 8
+    },
+    "paired_crps": -148.53150700433497
+  },
+  "origins": {
+    "2011": {
+      "players": 12,
+      "zeros": 2,
+      "benchmark": {
+        "crps": 473.4892700675726,
+        "absolute_error": 676.0,
+        "covered_80": 0.6666666666666666,
+        "below_support": 0,
+        "above_support": 2
+      },
+      "candidate": {
+        "crps": 378.5199639461125,
+        "absolute_error": 508.2083333333333,
+        "covered_80": 0.6666666666666666,
+        "below_support": 0,
+        "above_support": 2
+      },
+      "paired_crps": -94.96930612146008,
+      "window_unattributed_attempts": 0
+    },
+    "2012": {
+      "players": 11,
+      "zeros": 2,
+      "benchmark": {
+        "crps": 693.8170462016617,
+        "absolute_error": 1035.0,
+        "covered_80": 0.5454545454545454,
+        "below_support": 0,
+        "above_support": 2
+      },
+      "candidate": {
+        "crps": 541.0736309780555,
+        "absolute_error": 713.3636363636364,
+        "covered_80": 0.5454545454545454,
+        "below_support": 0,
+        "above_support": 4
+      },
+      "paired_crps": -152.74341522360623,
+      "window_unattributed_attempts": 0
+    },
+    "2013": {
+      "players": 11,
+      "zeros": 3,
+      "benchmark": {
+        "crps": 228.62525252525253,
+        "absolute_error": 308.8181818181818,
+        "covered_80": 1.0,
+        "below_support": 0,
+        "above_support": 0
+      },
+      "candidate": {
+        "crps": 144.21291144920275,
+        "absolute_error": 208.5,
+        "covered_80": 0.9090909090909091,
+        "below_support": 0,
+        "above_support": 0
+      },
+      "paired_crps": -84.41234107604978,
+      "window_unattributed_attempts": 0
+    },
+    "2014": {
+      "players": 13,
+      "zeros": 2,
+      "benchmark": {
+        "crps": 442.0534412161703,
+        "absolute_error": 550.4615384615385,
+        "covered_80": 0.8461538461538461,
+        "below_support": 0,
+        "above_support": 1
+      },
+      "candidate": {
+        "crps": 371.854293945016,
+        "absolute_error": 482.7692307692308,
+        "covered_80": 0.7692307692307693,
+        "below_support": 1,
+        "above_support": 1
+      },
+      "paired_crps": -70.19914727115429,
+      "window_unattributed_attempts": 0
+    },
+    "2015": {
+      "players": 7,
+      "zeros": 1,
+      "benchmark": {
+        "crps": 506.8616937079541,
+        "absolute_error": 702.3571428571429,
+        "covered_80": 0.8571428571428571,
+        "below_support": 0,
+        "above_support": 0
+      },
+      "candidate": {
+        "crps": 310.94376155382645,
+        "absolute_error": 483.5,
+        "covered_80": 0.5714285714285714,
+        "below_support": 1,
+        "above_support": 0
+      },
+      "paired_crps": -195.91793215412764,
+      "window_unattributed_attempts": 0
+    },
+    "2016": {
+      "players": 15,
+      "zeros": 2,
+      "benchmark": {
+        "crps": 456.07218442932725,
+        "absolute_error": 613.9333333333333,
+        "covered_80": 0.8,
+        "below_support": 0,
+        "above_support": 0
+      },
+      "candidate": {
+        "crps": 362.93442084709596,
+        "absolute_error": 491.03333333333336,
+        "covered_80": 0.6666666666666666,
+        "below_support": 2,
+        "above_support": 1
+      },
+      "paired_crps": -93.13776358223129,
+      "window_unattributed_attempts": 0
+    },
+    "2017": {
+      "players": 10,
+      "zeros": 3,
+      "benchmark": {
+        "crps": 443.91717193244176,
+        "absolute_error": 654.4,
+        "covered_80": 0.9,
+        "below_support": 0,
+        "above_support": 0
+      },
+      "candidate": {
+        "crps": 181.1722996014791,
+        "absolute_error": 234.5,
+        "covered_80": 0.9,
+        "below_support": 1,
+        "above_support": 0
+      },
+      "paired_crps": -262.74487233096266,
+      "window_unattributed_attempts": 0
+    },
+    "2018": {
+      "players": 13,
+      "zeros": 3,
+      "benchmark": {
+        "crps": 493.0895797044446,
+        "absolute_error": 698.6153846153846,
+        "covered_80": 0.8461538461538461,
+        "below_support": 0,
+        "above_support": 0
+      },
+      "candidate": {
+        "crps": 215.5492693199763,
+        "absolute_error": 329.4230769230769,
+        "covered_80": 0.8461538461538461,
+        "below_support": 0,
+        "above_support": 0
+      },
+      "paired_crps": -277.5403103844683,
+      "window_unattributed_attempts": 0
+    }
+  },
+  "improved_origins": 8,
+  "conditional_paired_crps_95_interval": [
+    -218.97971349118086,
+    -80.5472134680332
+  ],
+  "advance_post_draft_research": true,
+  "eligible_qbs_by_cohort": {
+    "2001": 9,
+    "2002": 11,
+    "2003": 13,
+    "2004": 13,
+    "2005": 10,
+    "2006": 11,
+    "2007": 11,
+    "2008": 12,
+    "2009": 11,
+    "2010": 13,
+    "2011": 12,
+    "2012": 11,
+    "2013": 11,
+    "2014": 13,
+    "2015": 7,
+    "2016": 15,
+    "2017": 10,
+    "2018": 13
+  },
+  "excluded_unknown_identity": [
+    {
+      "season": 2001,
+      "position": "QB",
+      "round": 6,
+      "pick": 172,
+      "gsis_id": null,
+      "pfr_player_id": null,
+      "pfr_player_name": "Josh Booty"
+    },
+    {
+      "season": 2001,
+      "position": "QB",
+      "round": 6,
+      "pick": 177,
+      "gsis_id": null,
+      "pfr_player_id": null,
+      "pfr_player_name": "Josh Heupel"
+    },
+    {
+      "season": 2002,
+      "position": "QB",
+      "round": 5,
+      "pick": 163,
+      "gsis_id": null,
+      "pfr_player_id": null,
+      "pfr_player_name": "Brandon Doman"
+    },
+    {
+      "season": 2002,
+      "position": "QB",
+      "round": 6,
+      "pick": 205,
+      "gsis_id": null,
+      "pfr_player_id": null,
+      "pfr_player_name": "Steve Bellisari"
+    },
+    {
+      "season": 2002,
+      "position": "QB",
+      "round": 7,
+      "pick": 216,
+      "gsis_id": null,
+      "pfr_player_id": null,
+      "pfr_player_name": "Seth Burford"
+    },
+    {
+      "season": 2002,
+      "position": "QB",
+      "round": 7,
+      "pick": 236,
+      "gsis_id": null,
+      "pfr_player_id": null,
+      "pfr_player_name": "Wes Pate"
+    },
+    {
+      "season": 2004,
+      "position": "QB",
+      "round": 6,
+      "pick": 187,
+      "gsis_id": null,
+      "pfr_player_id": null,
+      "pfr_player_name": "Josh Harris"
+    },
+    {
+      "season": 2004,
+      "position": "QB",
+      "round": 6,
+      "pick": 201,
+      "gsis_id": null,
+      "pfr_player_id": null,
+      "pfr_player_name": "Jeff Smoker"
+    },
+    {
+      "season": 2004,
+      "position": "QB",
+      "round": 7,
+      "pick": 218,
+      "gsis_id": null,
+      "pfr_player_id": null,
+      "pfr_player_name": "Casey Bramlet"
+    },
+    {
+      "season": 2004,
+      "position": "QB",
+      "round": 7,
+      "pick": 248,
+      "gsis_id": null,
+      "pfr_player_id": null,
+      "pfr_player_name": "B.J. Symons"
+    },
+    {
+      "season": 2005,
+      "position": "QB",
+      "round": 3,
+      "pick": 85,
+      "gsis_id": null,
+      "pfr_player_id": null,
+      "pfr_player_name": "David Greene"
+    },
+    {
+      "season": 2005,
+      "position": "QB",
+      "round": 4,
+      "pick": 121,
+      "gsis_id": null,
+      "pfr_player_id": null,
+      "pfr_player_name": "Stefan Lefors"
+    },
+    {
+      "season": 2005,
+      "position": "QB",
+      "round": 5,
+      "pick": 152,
+      "gsis_id": null,
+      "pfr_player_id": null,
+      "pfr_player_name": "Adrian McPherson"
+    },
+    {
+      "season": 2005,
+      "position": "QB",
+      "round": 7,
+      "pick": 229,
+      "gsis_id": null,
+      "pfr_player_id": null,
+      "pfr_player_name": "James Kilian"
+    },
+    {
+      "season": 2006,
+      "position": "QB",
+      "round": 5,
+      "pick": 164,
+      "gsis_id": null,
+      "pfr_player_id": null,
+      "pfr_player_name": "Omar Jacobs"
+    },
+    {
+      "season": 2006,
+      "position": "QB",
+      "round": 7,
+      "pick": 223,
+      "gsis_id": null,
+      "pfr_player_id": null,
+      "pfr_player_name": "D.J. Shockley"
+    },
+    {
+      "season": 2008,
+      "position": "QB",
+      "round": 5,
+      "pick": 137,
+      "gsis_id": null,
+      "pfr_player_id": null,
+      "pfr_player_name": "John David Booty"
+    },
+    {
+      "season": 2014,
+      "position": "QB",
+      "round": 6,
+      "pick": 213,
+      "gsis_id": null,
+      "pfr_player_id": "BoydTa00",
+      "pfr_player_name": "Tajh Boyd"
+    }
+  ],
+  "season_coverage": {
+    "2001": {
+      "sha256": "c182b39556728729a5ec90b55ee4c186a90a2f112a9be6adfbe35631eb26a018",
+      "games": 248,
+      "attempts": 16181,
+      "unattributed_attempts": 1
+    },
+    "2002": {
+      "sha256": "4abf8d86f85c9ff382fc6d912f998c4841b61b78b9fbf63daab2f1050f51b31d",
+      "games": 256,
+      "attempts": 17291,
+      "unattributed_attempts": 0
+    },
+    "2003": {
+      "sha256": "67ce16be14e9668a774f25bc3c7108f6d5e8f8a1ede477f5b81f82720e37ebee",
+      "games": 256,
+      "attempts": 16498,
+      "unattributed_attempts": 0
+    },
+    "2004": {
+      "sha256": "ee6747059b3c599d4f01e4f0f31ca8be83a5d3a60f16c92bb384d988466c71ad",
+      "games": 256,
+      "attempts": 16357,
+      "unattributed_attempts": 0
+    },
+    "2005": {
+      "sha256": "c3d4a795ad94b71fa259f185b3cd9c01ed033436db7828e0b16d672e969bebb0",
+      "games": 256,
+      "attempts": 16471,
+      "unattributed_attempts": 0
+    },
+    "2006": {
+      "sha256": "d5a17b89c48bb92947b8f098f7b25a5be4d5dab4a45fcd730e560abde3c33e6a",
+      "games": 256,
+      "attempts": 16391,
+      "unattributed_attempts": 0
+    },
+    "2007": {
+      "sha256": "98bb1dcaa94db96d6276da10fa39e1d274c3d70b9dbb4d5d78691cf5f1464068",
+      "games": 256,
+      "attempts": 17051,
+      "unattributed_attempts": 0
+    },
+    "2008": {
+      "sha256": "f3e011a298685d5ed2053d35c34f45bd683f203df90575e740d8054520d18cfe",
+      "games": 256,
+      "attempts": 16535,
+      "unattributed_attempts": 0
+    },
+    "2009": {
+      "sha256": "8b6ea17a20cb270abc551d626570d38b1c0733abeeea1e8d63370b95b205f856",
+      "games": 256,
+      "attempts": 17035,
+      "unattributed_attempts": 0
+    },
+    "2010": {
+      "sha256": "f5fdc509e7dd715fd6737228825f5a72da7ea8e6d4fbd87df2cb35c82ef66dbf",
+      "games": 256,
+      "attempts": 17271,
+      "unattributed_attempts": 0
+    },
+    "2011": {
+      "sha256": "466a4959458f439b62b3365607566039aaea9b53d216f85c65948b4d264b267f",
+      "games": 256,
+      "attempts": 17419,
+      "unattributed_attempts": 0
+    },
+    "2012": {
+      "sha256": "9ff8fbbf5f1393a808b3ee7f20202ae73155f0fad04b8a2f2a97af999383c820",
+      "games": 256,
+      "attempts": 17786,
+      "unattributed_attempts": 0
+    },
+    "2013": {
+      "sha256": "67647c438e958905d0960166556dc73ee926591f6c36f5218c45857c2933fe1f",
+      "games": 256,
+      "attempts": 18132,
+      "unattributed_attempts": 0
+    },
+    "2014": {
+      "sha256": "78c932eea1b5c72fc7dd7ccfd409945ec8078173580c0ba86543427ad5592dc0",
+      "games": 256,
+      "attempts": 17878,
+      "unattributed_attempts": 0
+    },
+    "2015": {
+      "sha256": "3b8dae1b67cfb1ddd88858e3d4bbedf0237218b234e597b10b1c5e6789ec21a8",
+      "games": 256,
+      "attempts": 18298,
+      "unattributed_attempts": 0
+    },
+    "2016": {
+      "sha256": "093913c52f49f4e7d23080f2d7462d24d0cd952b8e3f9c936323ee51e1cd659f",
+      "games": 256,
+      "attempts": 18292,
+      "unattributed_attempts": 0
+    },
+    "2017": {
+      "sha256": "21ff41abc6043cce68829bad2f2cbae100cb41aa106ca6cf9c93b35856e51ab6",
+      "games": 256,
+      "attempts": 17487,
+      "unattributed_attempts": 0
+    },
+    "2018": {
+      "sha256": "f04d65f5993a0a982de4de5fbafd2fbf7c1649470f59de128fd17d924d38c5d3",
+      "games": 256,
+      "attempts": 17670,
+      "unattributed_attempts": 0
+    },
+    "2019": {
+      "sha256": "54396ede038f0b2c43f17be2ac550ac06ba21e4317f0da64c99e1e3bd4117681",
+      "games": 256,
+      "attempts": 17852,
+      "unattributed_attempts": 0
+    },
+    "2020": {
+      "sha256": "13704b508fcef4a127e363c7f280b04ea7b41efe2002e238d0a0de1ce1b7ef76",
+      "games": 256,
+      "attempts": 18018,
+      "unattributed_attempts": 0
+    },
+    "2021": {
+      "sha256": "0d0222bdfc56af39e43f82cff0d02f47e2b5311776daf59a89254dd12e5e9f20",
+      "games": 272,
+      "attempts": 18712,
+      "unattributed_attempts": 0
+    },
+    "2022": {
+      "sha256": "167dff9290b11a47822157443af586877b38de1b6a90e41f95ac52e524cf4bb3",
+      "games": 271,
+      "attempts": 18069,
+      "unattributed_attempts": 0
+    }
+  },
+  "source_sha256": {
+    "draft_picks.csv": "77c3a570ae70721c95c04965b233ed53b7e7e26592344ce199fbfac2b156838f",
+    "games.csv": "369967042aac4f7b431c8644c197c6829e8428f7776058e4a058506ea4dece76",
+    "PROTOCOL.md": "fc47a50b8e9a6ee0baa009d7b8deaac735a6f532592dacfea736b8909ae2cfe7"
+  },
+  "predictions": [
+    {
+      "origin": 2011,
+      "gsis_id": "00-0027939",
+      "pfr_id": "NewtCa00",
+      "player": "Cam Newton",
+      "round": 1,
+      "pick": 1,
+      "actual_annual": [
+        517,
+        485,
+        473,
+        448,
+        495
+      ],
+      "actual": 2418,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2010,
+      "benchmark": {
+        "crps": 1406.8574292715527,
+        "median": 492.0,
+        "absolute_error": 1926.0,
+        "lower_80": 2,
+        "upper_80": 1809,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": true,
+        "donors": 67
+      },
+      "candidate": {
+        "crps": 649.1604938271605,
+        "median": 1373.5,
+        "absolute_error": 1044.5,
+        "lower_80": 863,
+        "upper_80": 2207,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": true,
+        "donors": 18
+      }
+    },
+    {
+      "origin": 2011,
+      "gsis_id": "00-0027946",
+      "pfr_id": "LockJa00",
+      "player": "Jake Locker",
+      "round": 1,
+      "pick": 8,
+      "actual_annual": [
+        66,
+        314,
+        183,
+        146,
+        0
+      ],
+      "actual": 709,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2010,
+      "benchmark": {
+        "crps": 208.5439964357318,
+        "median": 492.0,
+        "absolute_error": 217.0,
+        "lower_80": 2,
+        "upper_80": 1809,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 67
+      },
+      "candidate": {
+        "crps": 492.4938271604938,
+        "median": 1373.5,
+        "absolute_error": 664.5,
+        "lower_80": 863,
+        "upper_80": 2207,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": false,
+        "donors": 18
+      }
+    },
+    {
+      "origin": 2011,
+      "gsis_id": "00-0027948",
+      "pfr_id": "GabbBl00",
+      "player": "Blaine Gabbert",
+      "round": 1,
+      "pick": 10,
+      "actual_annual": [
+        413,
+        278,
+        86,
+        7,
+        282
+      ],
+      "actual": 1066,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2010,
+      "benchmark": {
+        "crps": 340.4693695700601,
+        "median": 492.0,
+        "absolute_error": 574.0,
+        "lower_80": 2,
+        "upper_80": 1809,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 67
+      },
+      "candidate": {
+        "crps": 229.8271604938272,
+        "median": 1373.5,
+        "absolute_error": 307.5,
+        "lower_80": 863,
+        "upper_80": 2207,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 18
+      }
+    },
+    {
+      "origin": 2011,
+      "gsis_id": "00-0027950",
+      "pfr_id": "PondCh00",
+      "player": "Christian Ponder",
+      "round": 1,
+      "pick": 12,
+      "actual_annual": [
+        291,
+        483,
+        239,
+        44,
+        0
+      ],
+      "actual": 1057,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2010,
+      "benchmark": {
+        "crps": 336.0365337491647,
+        "median": 492.0,
+        "absolute_error": 565.0,
+        "lower_80": 2,
+        "upper_80": 1809,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 67
+      },
+      "candidate": {
+        "crps": 234.8271604938272,
+        "median": 1373.5,
+        "absolute_error": 316.5,
+        "lower_80": 863,
+        "upper_80": 2207,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 18
+      }
+    },
+    {
+      "origin": 2011,
+      "gsis_id": "00-0027973",
+      "pfr_id": "DaltAn00",
+      "player": "Andy Dalton",
+      "round": 2,
+      "pick": 35,
+      "actual_annual": [
+        516,
+        528,
+        586,
+        481,
+        386
+      ],
+      "actual": 2497,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2010,
+      "benchmark": {
+        "crps": 1485.8574292715527,
+        "median": 492.0,
+        "absolute_error": 2005.0,
+        "lower_80": 2,
+        "upper_80": 1809,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": true,
+        "donors": 67
+      },
+      "candidate": {
+        "crps": 1684.01775147929,
+        "median": 492.0,
+        "absolute_error": 2005.0,
+        "lower_80": 75,
+        "upper_80": 961,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": true,
+        "donors": 13
+      }
+    },
+    {
+      "origin": 2011,
+      "gsis_id": "00-0027974",
+      "pfr_id": "KaepCo00",
+      "player": "Colin Kaepernick",
+      "round": 2,
+      "pick": 36,
+      "actual_annual": [
+        5,
+        218,
+        416,
+        478,
+        244
+      ],
+      "actual": 1361,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2010,
+      "benchmark": {
+        "crps": 512.8126531521498,
+        "median": 492.0,
+        "absolute_error": 869.0,
+        "lower_80": 2,
+        "upper_80": 1809,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 67
+      },
+      "candidate": {
+        "crps": 616.9408284023668,
+        "median": 492.0,
+        "absolute_error": 869.0,
+        "lower_80": 75,
+        "upper_80": 961,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": false,
+        "donors": 13
+      }
+    },
+    {
+      "origin": 2011,
+      "gsis_id": "00-0028012",
+      "pfr_id": "MallRy00",
+      "player": "Ryan Mallett",
+      "round": 3,
+      "pick": 74,
+      "actual_annual": [
+        0,
+        4,
+        0,
+        75,
+        244
+      ],
+      "actual": 323,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2010,
+      "benchmark": {
+        "crps": 180.3350412118512,
+        "median": 492.0,
+        "absolute_error": 169.0,
+        "lower_80": 2,
+        "upper_80": 1809,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 67
+      },
+      "candidate": {
+        "crps": 122.47928994082844,
+        "median": 492.0,
+        "absolute_error": 169.0,
+        "lower_80": 75,
+        "upper_80": 961,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 13
+      }
+    },
+    {
+      "origin": 2011,
+      "gsis_id": "00-0028073",
+      "pfr_id": "StanRi00",
+      "player": "Ricky Stanzi",
+      "round": 5,
+      "pick": 135,
+      "actual_annual": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual": 0,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2010,
+      "benchmark": {
+        "crps": 286.0216083760303,
+        "median": 492.0,
+        "absolute_error": 492.0,
+        "lower_80": 2,
+        "upper_80": 1809,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": false,
+        "donors": 67
+      },
+      "candidate": {
+        "crps": 88.24305555555557,
+        "median": 111.5,
+        "absolute_error": 111.5,
+        "lower_80": 0,
+        "upper_80": 734,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 36
+      }
+    },
+    {
+      "origin": 2011,
+      "gsis_id": "00-0028090",
+      "pfr_id": "YateT.00",
+      "player": "T.J. Yates",
+      "round": 5,
+      "pick": 152,
+      "actual_annual": [
+        134,
+        10,
+        22,
+        4,
+        57
+      ],
+      "actual": 227,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2010,
+      "benchmark": {
+        "crps": 196.27533971931388,
+        "median": 492.0,
+        "absolute_error": 265.0,
+        "lower_80": 2,
+        "upper_80": 1809,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 67
+      },
+      "candidate": {
+        "crps": 90.74305555555557,
+        "median": 111.5,
+        "absolute_error": 115.5,
+        "lower_80": 0,
+        "upper_80": 734,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 36
+      }
+    },
+    {
+      "origin": 2011,
+      "gsis_id": "00-0028098",
+      "pfr_id": "EndeNa00",
+      "player": "Nathan Enderle",
+      "round": 5,
+      "pick": 160,
+      "actual_annual": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual": 0,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2010,
+      "benchmark": {
+        "crps": 286.0216083760303,
+        "median": 492.0,
+        "absolute_error": 492.0,
+        "lower_80": 2,
+        "upper_80": 1809,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": false,
+        "donors": 67
+      },
+      "candidate": {
+        "crps": 88.24305555555557,
+        "median": 111.5,
+        "absolute_error": 111.5,
+        "lower_80": 0,
+        "upper_80": 734,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 36
+      }
+    },
+    {
+      "origin": 2011,
+      "gsis_id": "00-0028118",
+      "pfr_id": "TaylTy00",
+      "player": "Tyrod Taylor",
+      "round": 6,
+      "pick": 180,
+      "actual_annual": [
+        1,
+        29,
+        5,
+        0,
+        380
+      ],
+      "actual": 415,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2010,
+      "benchmark": {
+        "crps": 178.06638449543328,
+        "median": 492.0,
+        "absolute_error": 77.0,
+        "lower_80": 2,
+        "upper_80": 1809,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 67
+      },
+      "candidate": {
+        "crps": 170.24305555555557,
+        "median": 111.5,
+        "absolute_error": 303.5,
+        "lower_80": 0,
+        "upper_80": 734,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 36
+      }
+    },
+    {
+      "origin": 2011,
+      "gsis_id": "00-0028146",
+      "pfr_id": "McElGr00",
+      "player": "Greg McElroy",
+      "round": 7,
+      "pick": 208,
+      "actual_annual": [
+        0,
+        31,
+        0,
+        0,
+        0
+      ],
+      "actual": 31,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2010,
+      "benchmark": {
+        "crps": 264.5738471820004,
+        "median": 492.0,
+        "absolute_error": 461.0,
+        "lower_80": 2,
+        "upper_80": 1809,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 67
+      },
+      "candidate": {
+        "crps": 75.02083333333331,
+        "median": 111.5,
+        "absolute_error": 80.5,
+        "lower_80": 0,
+        "upper_80": 734,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 36
+      }
+    },
+    {
+      "origin": 2012,
+      "gsis_id": "00-0029668",
+      "pfr_id": "LuckAn00",
+      "player": "Andrew Luck",
+      "round": 1,
+      "pick": 1,
+      "actual_annual": [
+        627,
+        570,
+        616,
+        293,
+        545
+      ],
+      "actual": 2651,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2011,
+      "benchmark": {
+        "crps": 1704.6002629848786,
+        "median": 348.0,
+        "absolute_error": 2303.0,
+        "lower_80": 1,
+        "upper_80": 1637,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": true,
+        "donors": 78
+      },
+      "candidate": {
+        "crps": 945.6475,
+        "median": 1326.5,
+        "absolute_error": 1324.5,
+        "lower_80": 594,
+        "upper_80": 2191,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": true,
+        "donors": 20
+      }
+    },
+    {
+      "origin": 2012,
+      "gsis_id": "00-0029665",
+      "pfr_id": "GrifRo01",
+      "player": "Robert Griffin III",
+      "round": 1,
+      "pick": 2,
+      "actual_annual": [
+        393,
+        456,
+        214,
+        0,
+        147
+      ],
+      "actual": 1210,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2011,
+      "benchmark": {
+        "crps": 452.1387245233399,
+        "median": 348.0,
+        "absolute_error": 862.0,
+        "lower_80": 1,
+        "upper_80": 1637,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 78
+      },
+      "candidate": {
+        "crps": 155.64749999999998,
+        "median": 1326.5,
+        "absolute_error": 116.5,
+        "lower_80": 594,
+        "upper_80": 2191,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 20
+      }
+    },
+    {
+      "origin": 2012,
+      "gsis_id": "00-0029701",
+      "pfr_id": "TannRy00",
+      "player": "Ryan Tannehill",
+      "round": 1,
+      "pick": 8,
+      "actual_annual": [
+        484,
+        588,
+        590,
+        586,
+        389
+      ],
+      "actual": 2637,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2011,
+      "benchmark": {
+        "crps": 1690.6002629848786,
+        "median": 348.0,
+        "absolute_error": 2289.0,
+        "lower_80": 1,
+        "upper_80": 1637,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": true,
+        "donors": 78
+      },
+      "candidate": {
+        "crps": 931.6475,
+        "median": 1326.5,
+        "absolute_error": 1310.5,
+        "lower_80": 594,
+        "upper_80": 2191,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": true,
+        "donors": 20
+      }
+    },
+    {
+      "origin": 2012,
+      "gsis_id": "00-0029677",
+      "pfr_id": "WeedBr00",
+      "player": "Brandon Weeden",
+      "round": 1,
+      "pick": 22,
+      "actual_annual": [
+        517,
+        267,
+        41,
+        140,
+        0
+      ],
+      "actual": 965,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2011,
+      "benchmark": {
+        "crps": 310.164365548981,
+        "median": 348.0,
+        "absolute_error": 617.0,
+        "lower_80": 1,
+        "upper_80": 1637,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 78
+      },
+      "candidate": {
+        "crps": 240.4475,
+        "median": 1326.5,
+        "absolute_error": 361.5,
+        "lower_80": 594,
+        "upper_80": 2191,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 20
+      }
+    },
+    {
+      "origin": 2012,
+      "gsis_id": "00-0029682",
+      "pfr_id": "OsweBr00",
+      "player": "Brock Osweiler",
+      "round": 2,
+      "pick": 57,
+      "actual_annual": [
+        4,
+        16,
+        10,
+        275,
+        510
+      ],
+      "actual": 815,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2011,
+      "benchmark": {
+        "crps": 244.26692965154507,
+        "median": 348.0,
+        "absolute_error": 467.0,
+        "lower_80": 1,
+        "upper_80": 1637,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 78
+      },
+      "candidate": {
+        "crps": 193.35640138408306,
+        "median": 492.0,
+        "absolute_error": 323.0,
+        "lower_80": 75,
+        "upper_80": 961,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 17
+      }
+    },
+    {
+      "origin": 2012,
+      "gsis_id": "00-0029263",
+      "pfr_id": "WilsRu00",
+      "player": "Russell Wilson",
+      "round": 3,
+      "pick": 75,
+      "actual_annual": [
+        393,
+        406,
+        452,
+        483,
+        546
+      ],
+      "actual": 2280,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2011,
+      "benchmark": {
+        "crps": 1333.7028270874425,
+        "median": 348.0,
+        "absolute_error": 1932.0,
+        "lower_80": 1,
+        "upper_80": 1637,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": false,
+        "donors": 78
+      },
+      "candidate": {
+        "crps": 1503.8858131487889,
+        "median": 492.0,
+        "absolute_error": 1788.0,
+        "lower_80": 75,
+        "upper_80": 961,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": true,
+        "donors": 17
+      }
+    },
+    {
+      "origin": 2012,
+      "gsis_id": "00-0029567",
+      "pfr_id": "FoleNi00",
+      "player": "Nick Foles",
+      "round": 3,
+      "pick": 88,
+      "actual_annual": [
+        265,
+        317,
+        311,
+        337,
+        55
+      ],
+      "actual": 1285,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2011,
+      "benchmark": {
+        "crps": 502.1387245233399,
+        "median": 348.0,
+        "absolute_error": 937.0,
+        "lower_80": 1,
+        "upper_80": 1637,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 78
+      },
+      "candidate": {
+        "crps": 570.5328719723183,
+        "median": 492.0,
+        "absolute_error": 793.0,
+        "lower_80": 75,
+        "upper_80": 961,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": false,
+        "donors": 17
+      }
+    },
+    {
+      "origin": 2012,
+      "gsis_id": "00-0029604",
+      "pfr_id": "CousKi00",
+      "player": "Kirk Cousins",
+      "round": 4,
+      "pick": 102,
+      "actual_annual": [
+        48,
+        155,
+        204,
+        543,
+        606
+      ],
+      "actual": 1556,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2011,
+      "benchmark": {
+        "crps": 704.343852728468,
+        "median": 348.0,
+        "absolute_error": 1208.0,
+        "lower_80": 1,
+        "upper_80": 1637,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 78
+      },
+      "candidate": {
+        "crps": 1140.3319452706721,
+        "median": 109.0,
+        "absolute_error": 1447.0,
+        "lower_80": 0,
+        "upper_80": 679,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": true,
+        "donors": 41
+      }
+    },
+    {
+      "origin": 2012,
+      "gsis_id": "00-0029531",
+      "pfr_id": "LindRy00",
+      "player": "Ryan Lindley",
+      "round": 6,
+      "pick": 185,
+      "actual_annual": [
+        171,
+        0,
+        93,
+        10,
+        0
+      ],
+      "actual": 274,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2011,
+      "benchmark": {
+        "crps": 164.06180144641684,
+        "median": 348.0,
+        "absolute_error": 74.0,
+        "lower_80": 1,
+        "upper_80": 1637,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 78
+      },
+      "candidate": {
+        "crps": 105.74657941701369,
+        "median": 109.0,
+        "absolute_error": 165.0,
+        "lower_80": 0,
+        "upper_80": 679,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 41
+      }
+    },
+    {
+      "origin": 2012,
+      "gsis_id": "00-0029219",
+      "pfr_id": "ColeB.00",
+      "player": "B.J. Coleman",
+      "round": 7,
+      "pick": 243,
+      "actual_annual": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual": 0,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2011,
+      "benchmark": {
+        "crps": 262.9848783694938,
+        "median": 348.0,
+        "absolute_error": 348.0,
+        "lower_80": 1,
+        "upper_80": 1637,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": false,
+        "donors": 78
+      },
+      "candidate": {
+        "crps": 82.28316478286735,
+        "median": 109.0,
+        "absolute_error": 109.0,
+        "lower_80": 0,
+        "upper_80": 679,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 41
+      }
+    },
+    {
+      "origin": 2012,
+      "gsis_id": "00-0029554",
+      "pfr_id": "HarnCh00",
+      "player": "Chandler Harnish",
+      "round": 7,
+      "pick": 253,
+      "actual_annual": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual": 0,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2011,
+      "benchmark": {
+        "crps": 262.9848783694938,
+        "median": 348.0,
+        "absolute_error": 348.0,
+        "lower_80": 1,
+        "upper_80": 1637,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": false,
+        "donors": 78
+      },
+      "candidate": {
+        "crps": 82.28316478286735,
+        "median": 109.0,
+        "absolute_error": 109.0,
+        "lower_80": 0,
+        "upper_80": 679,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 41
+      }
+    },
+    {
+      "origin": 2013,
+      "gsis_id": "00-0030526",
+      "pfr_id": "ManuEJ00",
+      "player": "EJ Manuel",
+      "round": 1,
+      "pick": 16,
+      "actual_annual": [
+        305,
+        131,
+        84,
+        26,
+        43
+      ],
+      "actual": 589,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2012,
+      "benchmark": {
+        "crps": 192.7444444444444,
+        "median": 318.0,
+        "absolute_error": 271.0,
+        "lower_80": 0,
+        "upper_80": 1637,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 90
+      },
+      "candidate": {
+        "crps": 557.6735537190082,
+        "median": 1373.5,
+        "absolute_error": 784.5,
+        "lower_80": 680,
+        "upper_80": 2284,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": false,
+        "donors": 22
+      }
+    },
+    {
+      "origin": 2013,
+      "gsis_id": "00-0030565",
+      "pfr_id": "SmitGe00",
+      "player": "Geno Smith",
+      "round": 2,
+      "pick": 39,
+      "actual_annual": [
+        443,
+        367,
+        42,
+        14,
+        36
+      ],
+      "actual": 902,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2012,
+      "benchmark": {
+        "crps": 304.76666666666665,
+        "median": 318.0,
+        "absolute_error": 584.0,
+        "lower_80": 0,
+        "upper_80": 1637,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 90
+      },
+      "candidate": {
+        "crps": 257.88250000000005,
+        "median": 412.5,
+        "absolute_error": 489.5,
+        "lower_80": 40,
+        "upper_80": 961,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 20
+      }
+    },
+    {
+      "origin": 2013,
+      "gsis_id": "00-0030520",
+      "pfr_id": "GlenMi00",
+      "player": "Mike Glennon",
+      "round": 3,
+      "pick": 73,
+      "actual_annual": [
+        416,
+        203,
+        0,
+        11,
+        140
+      ],
+      "actual": 770,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2012,
+      "benchmark": {
+        "crps": 251.47777777777776,
+        "median": 318.0,
+        "absolute_error": 452.0,
+        "lower_80": 0,
+        "upper_80": 1637,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 90
+      },
+      "candidate": {
+        "crps": 193.7825,
+        "median": 412.5,
+        "absolute_error": 357.5,
+        "lower_80": 40,
+        "upper_80": 961,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 20
+      }
+    },
+    {
+      "origin": 2013,
+      "gsis_id": "00-0030533",
+      "pfr_id": "BarkMa00",
+      "player": "Matt Barkley",
+      "round": 4,
+      "pick": 98,
+      "actual_annual": [
+        49,
+        1,
+        0,
+        216,
+        0
+      ],
+      "actual": 266,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2012,
+      "benchmark": {
+        "crps": 163.3888888888889,
+        "median": 318.0,
+        "absolute_error": 52.0,
+        "lower_80": 0,
+        "upper_80": 1637,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 90
+      },
+      "candidate": {
+        "crps": 108.26605902777777,
+        "median": 61.5,
+        "absolute_error": 204.5,
+        "lower_80": 0,
+        "upper_80": 679,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 48
+      }
+    },
+    {
+      "origin": 2013,
+      "gsis_id": "00-0030586",
+      "pfr_id": "NassRy00",
+      "player": "Ryan Nassib",
+      "round": 4,
+      "pick": 110,
+      "actual_annual": [
+        0,
+        5,
+        5,
+        0,
+        0
+      ],
+      "actual": 10,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2012,
+      "benchmark": {
+        "crps": 233.23333333333335,
+        "median": 318.0,
+        "absolute_error": 308.0,
+        "lower_80": 0,
+        "upper_80": 1637,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 90
+      },
+      "candidate": {
+        "crps": 63.55772569444443,
+        "median": 61.5,
+        "absolute_error": 51.5,
+        "lower_80": 0,
+        "upper_80": 679,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 48
+      }
+    },
+    {
+      "origin": 2013,
+      "gsis_id": "00-0030568",
+      "pfr_id": "WilsTy00",
+      "player": "Tyler Wilson",
+      "round": 4,
+      "pick": 112,
+      "actual_annual": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual": 0,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2012,
+      "benchmark": {
+        "crps": 240.0333333333333,
+        "median": 318.0,
+        "absolute_error": 318.0,
+        "lower_80": 0,
+        "upper_80": 1637,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 90
+      },
+      "candidate": {
+        "crps": 67.72439236111111,
+        "median": 61.5,
+        "absolute_error": 61.5,
+        "lower_80": 0,
+        "upper_80": 679,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 48
+      }
+    },
+    {
+      "origin": 2013,
+      "gsis_id": "00-0030524",
+      "pfr_id": "JoneLa02",
+      "player": "Landry Jones",
+      "round": 4,
+      "pick": 115,
+      "actual_annual": [
+        0,
+        0,
+        55,
+        86,
+        28
+      ],
+      "actual": 169,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2012,
+      "benchmark": {
+        "crps": 175.5,
+        "median": 318.0,
+        "absolute_error": 149.0,
+        "lower_80": 0,
+        "upper_80": 1637,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 90
+      },
+      "candidate": {
+        "crps": 70.72439236111111,
+        "median": 61.5,
+        "absolute_error": 107.5,
+        "lower_80": 0,
+        "upper_80": 679,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 48
+      }
+    },
+    {
+      "origin": 2013,
+      "gsis_id": "00-0030292",
+      "pfr_id": "SoreBr00",
+      "player": "Brad Sorensen",
+      "round": 7,
+      "pick": 221,
+      "actual_annual": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual": 0,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2012,
+      "benchmark": {
+        "crps": 240.0333333333333,
+        "median": 318.0,
+        "absolute_error": 318.0,
+        "lower_80": 0,
+        "upper_80": 1637,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 90
+      },
+      "candidate": {
+        "crps": 67.72439236111111,
+        "median": 61.5,
+        "absolute_error": 61.5,
+        "lower_80": 0,
+        "upper_80": 679,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 48
+      }
+    },
+    {
+      "origin": 2013,
+      "gsis_id": "00-0030394",
+      "pfr_id": "DyseZa00",
+      "player": "Zac Dysert",
+      "round": 7,
+      "pick": 234,
+      "actual_annual": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual": 0,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2012,
+      "benchmark": {
+        "crps": 240.0333333333333,
+        "median": 318.0,
+        "absolute_error": 318.0,
+        "lower_80": 0,
+        "upper_80": 1637,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 90
+      },
+      "candidate": {
+        "crps": 67.72439236111111,
+        "median": 61.5,
+        "absolute_error": 61.5,
+        "lower_80": 0,
+        "upper_80": 679,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 48
+      }
+    },
+    {
+      "origin": 2013,
+      "gsis_id": "00-0030120",
+      "pfr_id": "DaniB.00",
+      "player": "B.J. Daniels",
+      "round": 7,
+      "pick": 237,
+      "actual_annual": [
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "actual": 2,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2012,
+      "benchmark": {
+        "crps": 238.54444444444448,
+        "median": 318.0,
+        "absolute_error": 316.0,
+        "lower_80": 0,
+        "upper_80": 1637,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 90
+      },
+      "candidate": {
+        "crps": 66.68272569444443,
+        "median": 61.5,
+        "absolute_error": 59.5,
+        "lower_80": 0,
+        "upper_80": 679,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 48
+      }
+    },
+    {
+      "origin": 2013,
+      "gsis_id": "00-0030569",
+      "pfr_id": "RenfSe00",
+      "player": "Sean Renfree",
+      "round": 7,
+      "pick": 249,
+      "actual_annual": [
+        0,
+        0,
+        7,
+        0,
+        0
+      ],
+      "actual": 7,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2012,
+      "benchmark": {
+        "crps": 235.12222222222226,
+        "median": 318.0,
+        "absolute_error": 311.0,
+        "lower_80": 0,
+        "upper_80": 1637,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 90
+      },
+      "candidate": {
+        "crps": 64.59939236111111,
+        "median": 61.5,
+        "absolute_error": 54.5,
+        "lower_80": 0,
+        "upper_80": 679,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 48
+      }
+    },
+    {
+      "origin": 2014,
+      "gsis_id": "00-0031407",
+      "pfr_id": "BortBl00",
+      "player": "Blake Bortles",
+      "round": 1,
+      "pick": 3,
+      "actual_annual": [
+        475,
+        606,
+        625,
+        523,
+        403
+      ],
+      "actual": 2632,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2013,
+      "benchmark": {
+        "crps": 1653.9483383981963,
+        "median": 284.0,
+        "absolute_error": 2348.0,
+        "lower_80": 0,
+        "upper_80": 1866,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": false,
+        "donors": 101
+      },
+      "candidate": {
+        "crps": 698.0512,
+        "median": 1428.0,
+        "absolute_error": 1204.0,
+        "lower_80": 680,
+        "upper_80": 2489,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": false,
+        "donors": 25
+      }
+    },
+    {
+      "origin": 2014,
+      "gsis_id": "00-0031409",
+      "pfr_id": "ManzJo00",
+      "player": "Johnny Manziel",
+      "round": 1,
+      "pick": 22,
+      "actual_annual": [
+        35,
+        223,
+        0,
+        0,
+        0
+      ],
+      "actual": 258,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2013,
+      "benchmark": {
+        "crps": 165.27507107146351,
+        "median": 284.0,
+        "absolute_error": 26.0,
+        "lower_80": 0,
+        "upper_80": 1866,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 101
+      },
+      "candidate": {
+        "crps": 941.3312,
+        "median": 1428.0,
+        "absolute_error": 1170.0,
+        "lower_80": 680,
+        "upper_80": 2489,
+        "covered_80": false,
+        "below_support": true,
+        "above_support": false,
+        "donors": 25
+      }
+    },
+    {
+      "origin": 2014,
+      "gsis_id": "00-0031237",
+      "pfr_id": "BridTe00",
+      "player": "Teddy Bridgewater",
+      "round": 1,
+      "pick": 32,
+      "actual_annual": [
+        402,
+        447,
+        0,
+        2,
+        23
+      ],
+      "actual": 874,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2013,
+      "benchmark": {
+        "crps": 309.5919027546319,
+        "median": 284.0,
+        "absolute_error": 590.0,
+        "lower_80": 0,
+        "upper_80": 1866,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 101
+      },
+      "candidate": {
+        "crps": 405.8112,
+        "median": 1428.0,
+        "absolute_error": 554.0,
+        "lower_80": 680,
+        "upper_80": 2489,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 25
+      }
+    },
+    {
+      "origin": 2014,
+      "gsis_id": "00-0031280",
+      "pfr_id": "CarrDe02",
+      "player": "Derek Carr",
+      "round": 2,
+      "pick": 36,
+      "actual_annual": [
+        599,
+        573,
+        560,
+        515,
+        553
+      ],
+      "actual": 2800,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2013,
+      "benchmark": {
+        "crps": 1821.869130477404,
+        "median": 284.0,
+        "absolute_error": 2516.0,
+        "lower_80": 0,
+        "upper_80": 1866,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": true,
+        "donors": 101
+      },
+      "candidate": {
+        "crps": 2034.3537414965986,
+        "median": 333.0,
+        "absolute_error": 2467.0,
+        "lower_80": 40,
+        "upper_80": 961,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": true,
+        "donors": 21
+      }
+    },
+    {
+      "origin": 2014,
+      "gsis_id": "00-0031345",
+      "pfr_id": "GaroJi00",
+      "player": "Jimmy Garoppolo",
+      "round": 2,
+      "pick": 62,
+      "actual_annual": [
+        27,
+        4,
+        63,
+        178,
+        89
+      ],
+      "actual": 361,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2013,
+      "benchmark": {
+        "crps": 169.76021958631503,
+        "median": 284.0,
+        "absolute_error": 77.0,
+        "lower_80": 0,
+        "upper_80": 1866,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 101
+      },
+      "candidate": {
+        "crps": 118.68707482993199,
+        "median": 333.0,
+        "absolute_error": 28.0,
+        "lower_80": 40,
+        "upper_80": 961,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 21
+      }
+    },
+    {
+      "origin": 2014,
+      "gsis_id": "00-0031260",
+      "pfr_id": "ThomLo00",
+      "player": "Logan Thomas",
+      "round": 4,
+      "pick": 120,
+      "actual_annual": [
+        9,
+        0,
+        0,
+        0,
+        1
+      ],
+      "actual": 10,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2013,
+      "benchmark": {
+        "crps": 223.23546711106752,
+        "median": 284.0,
+        "absolute_error": 274.0,
+        "lower_80": 0,
+        "upper_80": 1866,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 101
+      },
+      "candidate": {
+        "crps": 55.681652892562,
+        "median": 59.0,
+        "absolute_error": 49.0,
+        "lower_80": 0,
+        "upper_80": 591,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 55
+      }
+    },
+    {
+      "origin": 2014,
+      "gsis_id": "00-0031064",
+      "pfr_id": "SavaTo00",
+      "player": "Tom Savage",
+      "round": 4,
+      "pick": 135,
+      "actual_annual": [
+        19,
+        0,
+        73,
+        223,
+        0
+      ],
+      "actual": 315,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2013,
+      "benchmark": {
+        "crps": 165.62160572492888,
+        "median": 284.0,
+        "absolute_error": 31.0,
+        "lower_80": 0,
+        "upper_80": 1866,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 101
+      },
+      "candidate": {
+        "crps": 138.09983471074378,
+        "median": 59.0,
+        "absolute_error": 256.0,
+        "lower_80": 0,
+        "upper_80": 591,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 55
+      }
+    },
+    {
+      "origin": 2014,
+      "gsis_id": "00-0031287",
+      "pfr_id": "MurrAa00",
+      "player": "Aaron Murray",
+      "round": 5,
+      "pick": 163,
+      "actual_annual": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual": 0,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2013,
+      "benchmark": {
+        "crps": 229.53249681403787,
+        "median": 284.0,
+        "absolute_error": 284.0,
+        "lower_80": 0,
+        "upper_80": 1866,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 101
+      },
+      "candidate": {
+        "crps": 59.2089256198347,
+        "median": 59.0,
+        "absolute_error": 59.0,
+        "lower_80": 0,
+        "upper_80": 591,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 55
+      }
+    },
+    {
+      "origin": 2014,
+      "gsis_id": "00-0031288",
+      "pfr_id": "McCaA.00",
+      "player": "A.J. McCarron",
+      "round": 5,
+      "pick": 164,
+      "actual_annual": [
+        0,
+        119,
+        0,
+        14,
+        3
+      ],
+      "actual": 136,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2013,
+      "benchmark": {
+        "crps": 178.36417998235464,
+        "median": 284.0,
+        "absolute_error": 148.0,
+        "lower_80": 0,
+        "upper_80": 1866,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 101
+      },
+      "candidate": {
+        "crps": 59.39074380165289,
+        "median": 59.0,
+        "absolute_error": 77.0,
+        "lower_80": 0,
+        "upper_80": 591,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 55
+      }
+    },
+    {
+      "origin": 2014,
+      "gsis_id": "00-0031266",
+      "pfr_id": "MettZa00",
+      "player": "Zach Mettenberger",
+      "round": 6,
+      "pick": 178,
+      "actual_annual": [
+        179,
+        166,
+        0,
+        0,
+        0
+      ],
+      "actual": 345,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2013,
+      "benchmark": {
+        "crps": 167.85922948730519,
+        "median": 284.0,
+        "absolute_error": 61.0,
+        "lower_80": 0,
+        "upper_80": 1866,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 101
+      },
+      "candidate": {
+        "crps": 156.09983471074378,
+        "median": 59.0,
+        "absolute_error": 286.0,
+        "lower_80": 0,
+        "upper_80": 591,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 55
+      }
+    },
+    {
+      "origin": 2014,
+      "gsis_id": "00-0031076",
+      "pfr_id": "FaleDa00",
+      "player": "David Fales",
+      "round": 6,
+      "pick": 183,
+      "actual_annual": [
+        0,
+        0,
+        5,
+        43,
+        0
+      ],
+      "actual": 48,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2013,
+      "benchmark": {
+        "crps": 204.64140770512694,
+        "median": 284.0,
+        "absolute_error": 236.0,
+        "lower_80": 0,
+        "upper_80": 1866,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 101
+      },
+      "candidate": {
+        "crps": 50.26347107438016,
+        "median": 59.0,
+        "absolute_error": 11.0,
+        "lower_80": 0,
+        "upper_80": 591,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 55
+      }
+    },
+    {
+      "origin": 2014,
+      "gsis_id": "00-0030998",
+      "pfr_id": "WennKe00",
+      "player": "Keith Wenning",
+      "round": 6,
+      "pick": 194,
+      "actual_annual": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual": 0,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2013,
+      "benchmark": {
+        "crps": 229.53249681403787,
+        "median": 284.0,
+        "absolute_error": 284.0,
+        "lower_80": 0,
+        "upper_80": 1866,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 101
+      },
+      "candidate": {
+        "crps": 59.2089256198347,
+        "median": 59.0,
+        "absolute_error": 59.0,
+        "lower_80": 0,
+        "upper_80": 591,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 55
+      }
+    },
+    {
+      "origin": 2014,
+      "gsis_id": "00-0031395",
+      "pfr_id": "GilbGa01",
+      "player": "Garrett Gilbert",
+      "round": 6,
+      "pick": 214,
+      "actual_annual": [
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      "actual": 3,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2013,
+      "benchmark": {
+        "crps": 227.4631898833448,
+        "median": 284.0,
+        "absolute_error": 281.0,
+        "lower_80": 0,
+        "upper_80": 1866,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 101
+      },
+      "candidate": {
+        "crps": 57.91801652892562,
+        "median": 59.0,
+        "absolute_error": 56.0,
+        "lower_80": 0,
+        "upper_80": 591,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 55
+      }
+    },
+    {
+      "origin": 2015,
+      "gsis_id": "00-0031503",
+      "pfr_id": "WinsJa00",
+      "player": "Jameis Winston",
+      "round": 1,
+      "pick": 1,
+      "actual_annual": [
+        535,
+        567,
+        442,
+        378,
+        626
+      ],
+      "actual": 2548,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2014,
+      "benchmark": {
+        "crps": 1617.85918744229,
+        "median": 255.5,
+        "absolute_error": 2292.5,
+        "lower_80": 0,
+        "upper_80": 1809,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": false,
+        "donors": 114
+      },
+      "candidate": {
+        "crps": 646.9368998628257,
+        "median": 1428.0,
+        "absolute_error": 1120.0,
+        "lower_80": 594,
+        "upper_80": 2489,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": false,
+        "donors": 27
+      }
+    },
+    {
+      "origin": 2015,
+      "gsis_id": "00-0032268",
+      "pfr_id": "MariMa01",
+      "player": "Marcus Mariota",
+      "round": 1,
+      "pick": 2,
+      "actual_annual": [
+        370,
+        451,
+        453,
+        331,
+        160
+      ],
+      "actual": 1765,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2014,
+      "benchmark": {
+        "crps": 918.3153277931672,
+        "median": 255.5,
+        "absolute_error": 1509.5,
+        "lower_80": 0,
+        "upper_80": 1809,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 114
+      },
+      "candidate": {
+        "crps": 213.04801097393693,
+        "median": 1428.0,
+        "absolute_error": 337.0,
+        "lower_80": 594,
+        "upper_80": 2489,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 27
+      }
+    },
+    {
+      "origin": 2015,
+      "gsis_id": "00-0032148",
+      "pfr_id": "GrayGa00",
+      "player": "Garrett Grayson",
+      "round": 3,
+      "pick": 75,
+      "actual_annual": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual": 0,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2014,
+      "benchmark": {
+        "crps": 208.03462603878114,
+        "median": 255.5,
+        "absolute_error": 255.5,
+        "lower_80": 0,
+        "upper_80": 1809,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 114
+      },
+      "candidate": {
+        "crps": 271.4971644612476,
+        "median": 347.0,
+        "absolute_error": 347.0,
+        "lower_80": 40,
+        "upper_80": 961,
+        "covered_80": false,
+        "below_support": true,
+        "above_support": false,
+        "donors": 23
+      }
+    },
+    {
+      "origin": 2015,
+      "gsis_id": "00-0032245",
+      "pfr_id": "MannSe00",
+      "player": "Sean Mannion",
+      "round": 3,
+      "pick": 89,
+      "actual_annual": [
+        7,
+        6,
+        37,
+        3,
+        21
+      ],
+      "actual": 74,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2014,
+      "benchmark": {
+        "crps": 178.06971375807944,
+        "median": 255.5,
+        "absolute_error": 181.5,
+        "lower_80": 0,
+        "upper_80": 1809,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 114
+      },
+      "candidate": {
+        "crps": 214.2797731568998,
+        "median": 347.0,
+        "absolute_error": 273.0,
+        "lower_80": 40,
+        "upper_80": 961,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 23
+      }
+    },
+    {
+      "origin": 2015,
+      "gsis_id": "00-0031568",
+      "pfr_id": "PettBr01",
+      "player": "Bryce Petty",
+      "round": 4,
+      "pick": 103,
+      "actual_annual": [
+        0,
+        133,
+        112,
+        0,
+        0
+      ],
+      "actual": 245,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2014,
+      "benchmark": {
+        "crps": 156.56094182825478,
+        "median": 255.5,
+        "absolute_error": 10.5,
+        "lower_80": 0,
+        "upper_80": 1809,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 114
+      },
+      "candidate": {
+        "crps": 110.093994140625,
+        "median": 38.5,
+        "absolute_error": 206.5,
+        "lower_80": 0,
+        "upper_80": 591,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 64
+      }
+    },
+    {
+      "origin": 2015,
+      "gsis_id": "00-0031589",
+      "pfr_id": "HundBr00",
+      "player": "Brett Hundley",
+      "round": 5,
+      "pick": 147,
+      "actual_annual": [
+        0,
+        10,
+        316,
+        0,
+        11
+      ],
+      "actual": 337,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2014,
+      "benchmark": {
+        "crps": 160.26269621421972,
+        "median": 255.5,
+        "absolute_error": 81.5,
+        "lower_80": 0,
+        "upper_80": 1809,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 114
+      },
+      "candidate": {
+        "crps": 163.218994140625,
+        "median": 38.5,
+        "absolute_error": 298.5,
+        "lower_80": 0,
+        "upper_80": 591,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 64
+      }
+    },
+    {
+      "origin": 2015,
+      "gsis_id": "00-0032156",
+      "pfr_id": "SiemTr00",
+      "player": "Trevor Siemian",
+      "round": 7,
+      "pick": 250,
+      "actual_annual": [
+        0,
+        486,
+        349,
+        0,
+        6
+      ],
+      "actual": 841,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2014,
+      "benchmark": {
+        "crps": 308.92936288088646,
+        "median": 255.5,
+        "absolute_error": 585.5,
+        "lower_80": 0,
+        "upper_80": 1809,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 114
+      },
+      "candidate": {
+        "crps": 557.531494140625,
+        "median": 38.5,
+        "absolute_error": 802.5,
+        "lower_80": 0,
+        "upper_80": 591,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": false,
+        "donors": 64
+      }
+    },
+    {
+      "origin": 2016,
+      "gsis_id": "00-0033106",
+      "pfr_id": "GoffJa00",
+      "player": "Jared Goff",
+      "round": 1,
+      "pick": 1,
+      "actual_annual": [
+        205,
+        477,
+        561,
+        626,
+        552
+      ],
+      "actual": 2421,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2015,
+      "benchmark": {
+        "crps": 1458.6012849584276,
+        "median": 285.0,
+        "absolute_error": 2136.0,
+        "lower_80": 0,
+        "upper_80": 1866,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": false,
+        "donors": 126
+      },
+      "candidate": {
+        "crps": 562.9344432882415,
+        "median": 1405.0,
+        "absolute_error": 1016.0,
+        "lower_80": 680,
+        "upper_80": 2418,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": false,
+        "donors": 31
+      }
+    },
+    {
+      "origin": 2016,
+      "gsis_id": "00-0032950",
+      "pfr_id": "WentCa00",
+      "player": "Carson Wentz",
+      "round": 1,
+      "pick": 2,
+      "actual_annual": [
+        607,
+        440,
+        401,
+        607,
+        437
+      ],
+      "actual": 2492,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2015,
+      "benchmark": {
+        "crps": 1525.1409674981105,
+        "median": 285.0,
+        "absolute_error": 2207.0,
+        "lower_80": 0,
+        "upper_80": 1866,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": false,
+        "donors": 126
+      },
+      "candidate": {
+        "crps": 620.3860561914671,
+        "median": 1405.0,
+        "absolute_error": 1087.0,
+        "lower_80": 680,
+        "upper_80": 2418,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": false,
+        "donors": 31
+      }
+    },
+    {
+      "origin": 2016,
+      "gsis_id": "00-0033108",
+      "pfr_id": "LyncPa00",
+      "player": "Paxton Lynch",
+      "round": 1,
+      "pick": 26,
+      "actual_annual": [
+        83,
+        45,
+        0,
+        0,
+        0
+      ],
+      "actual": 128,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2015,
+      "benchmark": {
+        "crps": 177.5377928949357,
+        "median": 285.0,
+        "absolute_error": 157.0,
+        "lower_80": 0,
+        "upper_80": 1866,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 126
+      },
+      "candidate": {
+        "crps": 992.7731529656608,
+        "median": 1405.0,
+        "absolute_error": 1277.0,
+        "lower_80": 680,
+        "upper_80": 2418,
+        "covered_80": false,
+        "below_support": true,
+        "above_support": false,
+        "donors": 31
+      }
+    },
+    {
+      "origin": 2016,
+      "gsis_id": "00-0032953",
+      "pfr_id": "HackCh01",
+      "player": "Christian Hackenberg",
+      "round": 2,
+      "pick": 51,
+      "actual_annual": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual": 0,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2015,
+      "benchmark": {
+        "crps": 222.09334845049136,
+        "median": 285.0,
+        "absolute_error": 285.0,
+        "lower_80": 0,
+        "upper_80": 1866,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 126
+      },
+      "candidate": {
+        "crps": 310.0488165680473,
+        "median": 419.5,
+        "absolute_error": 419.5,
+        "lower_80": 40,
+        "upper_80": 1374,
+        "covered_80": false,
+        "below_support": true,
+        "above_support": false,
+        "donors": 26
+      }
+    },
+    {
+      "origin": 2016,
+      "gsis_id": "00-0033119",
+      "pfr_id": "BrisJa00",
+      "player": "Jacoby Brissett",
+      "round": 3,
+      "pick": 91,
+      "actual_annual": [
+        55,
+        469,
+        4,
+        447,
+        8
+      ],
+      "actual": 983,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2015,
+      "benchmark": {
+        "crps": 367.5536659108087,
+        "median": 285.0,
+        "absolute_error": 698.0,
+        "lower_80": 0,
+        "upper_80": 1866,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 126
+      },
+      "candidate": {
+        "crps": 293.51035502958575,
+        "median": 419.5,
+        "absolute_error": 563.5,
+        "lower_80": 40,
+        "upper_80": 1374,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 26
+      }
+    },
+    {
+      "origin": 2016,
+      "gsis_id": "00-0033104",
+      "pfr_id": "KessCo00",
+      "player": "Cody Kessler",
+      "round": 3,
+      "pick": 93,
+      "actual_annual": [
+        195,
+        23,
+        131,
+        0,
+        0
+      ],
+      "actual": 349,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2015,
+      "benchmark": {
+        "crps": 165.37906273620558,
+        "median": 285.0,
+        "absolute_error": 64.0,
+        "lower_80": 0,
+        "upper_80": 1866,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 126
+      },
+      "candidate": {
+        "crps": 132.43343195266272,
+        "median": 419.5,
+        "absolute_error": 70.5,
+        "lower_80": 40,
+        "upper_80": 1374,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 26
+      }
+    },
+    {
+      "origin": 2016,
+      "gsis_id": "00-0032893",
+      "pfr_id": "CookCo00",
+      "player": "Connor Cook",
+      "round": 4,
+      "pick": 100,
+      "actual_annual": [
+        21,
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual": 21,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2015,
+      "benchmark": {
+        "crps": 210.60128495842787,
+        "median": 285.0,
+        "absolute_error": 264.0,
+        "lower_80": 0,
+        "upper_80": 1866,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 126
+      },
+      "candidate": {
+        "crps": 44.65889519008613,
+        "median": 33.0,
+        "absolute_error": 12.0,
+        "lower_80": 0,
+        "upper_80": 591,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 69
+      }
+    },
+    {
+      "origin": 2016,
+      "gsis_id": "00-0033077",
+      "pfr_id": "PresDa01",
+      "player": "Dak Prescott",
+      "round": 4,
+      "pick": 135,
+      "actual_annual": [
+        459,
+        490,
+        526,
+        596,
+        222
+      ],
+      "actual": 2293,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2015,
+      "benchmark": {
+        "crps": 1340.712396069539,
+        "median": 285.0,
+        "absolute_error": 2008.0,
+        "lower_80": 0,
+        "upper_80": 1866,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": false,
+        "donors": 126
+      },
+      "candidate": {
+        "crps": 1982.0791850451583,
+        "median": 33.0,
+        "absolute_error": 2260.0,
+        "lower_80": 0,
+        "upper_80": 591,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": true,
+        "donors": 69
+      }
+    },
+    {
+      "origin": 2016,
+      "gsis_id": "00-0033098",
+      "pfr_id": "JoneCa01",
+      "player": "Cardale Jones",
+      "round": 4,
+      "pick": 139,
+      "actual_annual": [
+        11,
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual": 11,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2015,
+      "benchmark": {
+        "crps": 215.58541194255486,
+        "median": 285.0,
+        "absolute_error": 274.0,
+        "lower_80": 0,
+        "upper_80": 1866,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 126
+      },
+      "candidate": {
+        "crps": 46.079185045158596,
+        "median": 33.0,
+        "absolute_error": 22.0,
+        "lower_80": 0,
+        "upper_80": 591,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 69
+      }
+    },
+    {
+      "origin": 2016,
+      "gsis_id": "00-0032784",
+      "pfr_id": "HogaKe00",
+      "player": "Kevin Hogan",
+      "round": 5,
+      "pick": 162,
+      "actual_annual": [
+        26,
+        75,
+        0,
+        0,
+        0
+      ],
+      "actual": 101,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2015,
+      "benchmark": {
+        "crps": 183.56953892668184,
+        "median": 285.0,
+        "absolute_error": 184.0,
+        "lower_80": 0,
+        "upper_80": 1866,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 126
+      },
+      "candidate": {
+        "crps": 52.74585171182525,
+        "median": 33.0,
+        "absolute_error": 68.0,
+        "lower_80": 0,
+        "upper_80": 591,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 69
+      }
+    },
+    {
+      "origin": 2016,
+      "gsis_id": "00-0032792",
+      "pfr_id": "SudfNa00",
+      "player": "Nate Sudfeld",
+      "round": 6,
+      "pick": 187,
+      "actual_annual": [
+        0,
+        23,
+        2,
+        0,
+        12
+      ],
+      "actual": 37,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2015,
+      "benchmark": {
+        "crps": 203.55366591080872,
+        "median": 285.0,
+        "absolute_error": 248.0,
+        "lower_80": 0,
+        "upper_80": 1866,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 126
+      },
+      "candidate": {
+        "crps": 44.079185045158596,
+        "median": 33.0,
+        "absolute_error": 4.0,
+        "lower_80": 0,
+        "upper_80": 591,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 69
+      }
+    },
+    {
+      "origin": 2016,
+      "gsis_id": "00-0032431",
+      "pfr_id": "RudoJa00",
+      "player": "Jake Rudock",
+      "round": 6,
+      "pick": 191,
+      "actual_annual": [
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "actual": 5,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2015,
+      "benchmark": {
+        "crps": 218.9187452758881,
+        "median": 285.0,
+        "absolute_error": 280.0,
+        "lower_80": 0,
+        "upper_80": 1866,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 126
+      },
+      "candidate": {
+        "crps": 47.52846040747744,
+        "median": 33.0,
+        "absolute_error": 28.0,
+        "lower_80": 0,
+        "upper_80": 591,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 69
+      }
+    },
+    {
+      "origin": 2016,
+      "gsis_id": "00-0032434",
+      "pfr_id": "AlleBr00",
+      "player": "Brandon Allen",
+      "round": 6,
+      "pick": 201,
+      "actual_annual": [
+        0,
+        0,
+        0,
+        84,
+        142
+      ],
+      "actual": 226,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2015,
+      "benchmark": {
+        "crps": 164.775888133031,
+        "median": 285.0,
+        "absolute_error": 59.0,
+        "lower_80": 0,
+        "upper_80": 1866,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 126
+      },
+      "candidate": {
+        "crps": 98.81831547994119,
+        "median": 33.0,
+        "absolute_error": 193.0,
+        "lower_80": 0,
+        "upper_80": 591,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 69
+      }
+    },
+    {
+      "origin": 2016,
+      "gsis_id": "00-0032436",
+      "pfr_id": "DrisJe00",
+      "player": "Jeff Driskel",
+      "round": 6,
+      "pick": 207,
+      "actual_annual": [
+        0,
+        0,
+        176,
+        105,
+        64
+      ],
+      "actual": 345,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2015,
+      "benchmark": {
+        "crps": 164.96636432350715,
+        "median": 285.0,
+        "absolute_error": 60.0,
+        "lower_80": 0,
+        "upper_80": 1866,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 126
+      },
+      "candidate": {
+        "crps": 166.74585171182528,
+        "median": 33.0,
+        "absolute_error": 312.0,
+        "lower_80": 0,
+        "upper_80": 591,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 69
+      }
+    },
+    {
+      "origin": 2016,
+      "gsis_id": "00-0032446",
+      "pfr_id": "DougBr00",
+      "player": "Brandon Doughty",
+      "round": 7,
+      "pick": 223,
+      "actual_annual": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual": 0,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2015,
+      "benchmark": {
+        "crps": 222.09334845049136,
+        "median": 285.0,
+        "absolute_error": 285.0,
+        "lower_80": 0,
+        "upper_80": 1866,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 126
+      },
+      "candidate": {
+        "crps": 49.1951270741441,
+        "median": 33.0,
+        "absolute_error": 33.0,
+        "lower_80": 0,
+        "upper_80": 591,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 69
+      }
+    },
+    {
+      "origin": 2017,
+      "gsis_id": "00-0033869",
+      "pfr_id": "TrubMi00",
+      "player": "Mitchell Trubisky",
+      "round": 1,
+      "pick": 2,
+      "actual_annual": [
+        330,
+        434,
+        516,
+        297,
+        8
+      ],
+      "actual": 1585,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2016,
+      "benchmark": {
+        "crps": 710.5580478448505,
+        "median": 319.0,
+        "absolute_error": 1266.0,
+        "lower_80": 0,
+        "upper_80": 2021,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 137
+      },
+      "candidate": {
+        "crps": 217.03918367346944,
+        "median": 1405.0,
+        "absolute_error": 180.0,
+        "lower_80": 680,
+        "upper_80": 2507,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 35
+      }
+    },
+    {
+      "origin": 2017,
+      "gsis_id": "00-0033873",
+      "pfr_id": "MahoPa00",
+      "player": "Patrick Mahomes",
+      "round": 1,
+      "pick": 10,
+      "actual_annual": [
+        35,
+        580,
+        484,
+        588,
+        658
+      ],
+      "actual": 2345,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2016,
+      "benchmark": {
+        "crps": 1319.171186530982,
+        "median": 319.0,
+        "absolute_error": 2026.0,
+        "lower_80": 0,
+        "upper_80": 2021,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": false,
+        "donors": 137
+      },
+      "candidate": {
+        "crps": 480.41061224489795,
+        "median": 1405.0,
+        "absolute_error": 940.0,
+        "lower_80": 680,
+        "upper_80": 2507,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 35
+      }
+    },
+    {
+      "origin": 2017,
+      "gsis_id": "00-0033537",
+      "pfr_id": "WatsDe00",
+      "player": "Deshaun Watson",
+      "round": 1,
+      "pick": 12,
+      "actual_annual": [
+        204,
+        505,
+        495,
+        544,
+        0
+      ],
+      "actual": 1748,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2016,
+      "benchmark": {
+        "crps": 829.966806968938,
+        "median": 319.0,
+        "absolute_error": 1429.0,
+        "lower_80": 0,
+        "upper_80": 2021,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 137
+      },
+      "candidate": {
+        "crps": 237.35346938775513,
+        "median": 1405.0,
+        "absolute_error": 343.0,
+        "lower_80": 680,
+        "upper_80": 2507,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 35
+      }
+    },
+    {
+      "origin": 2017,
+      "gsis_id": "00-0033899",
+      "pfr_id": "KizeDe00",
+      "player": "DeShone Kizer",
+      "round": 2,
+      "pick": 52,
+      "actual_annual": [
+        476,
+        42,
+        0,
+        0,
+        0
+      ],
+      "actual": 518,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2016,
+      "benchmark": {
+        "crps": 197.9668069689381,
+        "median": 319.0,
+        "absolute_error": 199.0,
+        "lower_80": 0,
+        "upper_80": 2021,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 137
+      },
+      "candidate": {
+        "crps": 150.38406658739598,
+        "median": 572.0,
+        "absolute_error": 54.0,
+        "lower_80": 40,
+        "upper_80": 1809,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 29
+      }
+    },
+    {
+      "origin": 2017,
+      "gsis_id": "00-0033550",
+      "pfr_id": "WebbDa00",
+      "player": "Davis Webb",
+      "round": 3,
+      "pick": 87,
+      "actual_annual": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual": 0,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2016,
+      "benchmark": {
+        "crps": 248.93031061857317,
+        "median": 319.0,
+        "absolute_error": 319.0,
+        "lower_80": 0,
+        "upper_80": 2021,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 137
+      },
+      "candidate": {
+        "crps": 361.4185493460166,
+        "median": 572.0,
+        "absolute_error": 572.0,
+        "lower_80": 40,
+        "upper_80": 1809,
+        "covered_80": false,
+        "below_support": true,
+        "above_support": false,
+        "donors": 29
+      }
+    },
+    {
+      "origin": 2017,
+      "gsis_id": "00-0033936",
+      "pfr_id": "BeatC.00",
+      "player": "C.J. Beathard",
+      "round": 3,
+      "pick": 104,
+      "actual_annual": [
+        224,
+        169,
+        0,
+        104,
+        2
+      ],
+      "actual": 499,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2016,
+      "benchmark": {
+        "crps": 195.36096755287969,
+        "median": 319.0,
+        "absolute_error": 180.0,
+        "lower_80": 0,
+        "upper_80": 2021,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 137
+      },
+      "candidate": {
+        "crps": 151.03923900118906,
+        "median": 572.0,
+        "absolute_error": 73.0,
+        "lower_80": 40,
+        "upper_80": 1809,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 29
+      }
+    },
+    {
+      "origin": 2017,
+      "gsis_id": "00-0033949",
+      "pfr_id": "DobbJo00",
+      "player": "Joshua Dobbs",
+      "round": 4,
+      "pick": 135,
+      "actual_annual": [
+        0,
+        12,
+        0,
+        5,
+        0
+      ],
+      "actual": 17,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2016,
+      "benchmark": {
+        "crps": 239.21498215141986,
+        "median": 319.0,
+        "absolute_error": 302.0,
+        "lower_80": 0,
+        "upper_80": 2021,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 137
+      },
+      "candidate": {
+        "crps": 47.68042784762619,
+        "median": 33.0,
+        "absolute_error": 16.0,
+        "lower_80": 0,
+        "upper_80": 591,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 73
+      }
+    },
+    {
+      "origin": 2017,
+      "gsis_id": "00-0033958",
+      "pfr_id": "PeteNa00",
+      "player": "Nathan Peterman",
+      "round": 5,
+      "pick": 171,
+      "actual_annual": [
+        48,
+        81,
+        0,
+        5,
+        0
+      ],
+      "actual": 134,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2016,
+      "benchmark": {
+        "crps": 200.1419894506899,
+        "median": 319.0,
+        "absolute_error": 185.0,
+        "lower_80": 0,
+        "upper_80": 2021,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 137
+      },
+      "candidate": {
+        "crps": 63.11878401200977,
+        "median": 33.0,
+        "absolute_error": 101.0,
+        "lower_80": 0,
+        "upper_80": 591,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 73
+      }
+    },
+    {
+      "origin": 2017,
+      "gsis_id": "00-0033585",
+      "pfr_id": "KaayBr00",
+      "player": "Brad Kaaya",
+      "round": 6,
+      "pick": 215,
+      "actual_annual": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual": 0,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2016,
+      "benchmark": {
+        "crps": 248.93031061857317,
+        "median": 319.0,
+        "absolute_error": 319.0,
+        "lower_80": 0,
+        "upper_80": 2021,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 137
+      },
+      "candidate": {
+        "crps": 51.639331957215234,
+        "median": 33.0,
+        "absolute_error": 33.0,
+        "lower_80": 0,
+        "upper_80": 591,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 73
+      }
+    },
+    {
+      "origin": 2017,
+      "gsis_id": "00-0033597",
+      "pfr_id": "KellCh00",
+      "player": "Chad Kelly",
+      "round": 7,
+      "pick": 253,
+      "actual_annual": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual": 0,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2016,
+      "benchmark": {
+        "crps": 248.93031061857317,
+        "median": 319.0,
+        "absolute_error": 319.0,
+        "lower_80": 0,
+        "upper_80": 2021,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 137
+      },
+      "candidate": {
+        "crps": 51.639331957215234,
+        "median": 33.0,
+        "absolute_error": 33.0,
+        "lower_80": 0,
+        "upper_80": 591,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 73
+      }
+    },
+    {
+      "origin": 2018,
+      "gsis_id": "00-0034855",
+      "pfr_id": "MayfBa00",
+      "player": "Baker Mayfield",
+      "round": 1,
+      "pick": 1,
+      "actual_annual": [
+        486,
+        534,
+        486,
+        418,
+        335
+      ],
+      "actual": 2259,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2017,
+      "benchmark": {
+        "crps": 1282.4055880204528,
+        "median": 285.0,
+        "absolute_error": 1974.0,
+        "lower_80": 0,
+        "upper_80": 1908,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": false,
+        "donors": 148
+      },
+      "candidate": {
+        "crps": 444.06250000000006,
+        "median": 1373.5,
+        "absolute_error": 885.5,
+        "lower_80": 594,
+        "upper_80": 2507,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 36
+      }
+    },
+    {
+      "origin": 2018,
+      "gsis_id": "00-0034869",
+      "pfr_id": "DarnSa00",
+      "player": "Sam Darnold",
+      "round": 1,
+      "pick": 3,
+      "actual_annual": [
+        414,
+        441,
+        364,
+        406,
+        140
+      ],
+      "actual": 1765,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2017,
+      "benchmark": {
+        "crps": 875.3650474799123,
+        "median": 285.0,
+        "absolute_error": 1480.0,
+        "lower_80": 0,
+        "upper_80": 1908,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 148
+      },
+      "candidate": {
+        "crps": 250.22916666666669,
+        "median": 1373.5,
+        "absolute_error": 391.5,
+        "lower_80": 594,
+        "upper_80": 2507,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 36
+      }
+    },
+    {
+      "origin": 2018,
+      "gsis_id": "00-0034857",
+      "pfr_id": "AlleJo02",
+      "player": "Josh Allen",
+      "round": 1,
+      "pick": 7,
+      "actual_annual": [
+        319,
+        461,
+        572,
+        646,
+        567
+      ],
+      "actual": 2565,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2017,
+      "benchmark": {
+        "crps": 1563.5542366691016,
+        "median": 285.0,
+        "absolute_error": 2280.0,
+        "lower_80": 0,
+        "upper_80": 1908,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": false,
+        "donors": 148
+      },
+      "candidate": {
+        "crps": 662.2847222222222,
+        "median": 1373.5,
+        "absolute_error": 1191.5,
+        "lower_80": 594,
+        "upper_80": 2507,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": false,
+        "donors": 36
+      }
+    },
+    {
+      "origin": 2018,
+      "gsis_id": "00-0034343",
+      "pfr_id": "RoseJo01",
+      "player": "Josh Rosen",
+      "round": 1,
+      "pick": 10,
+      "actual_annual": [
+        393,
+        109,
+        0,
+        11,
+        0
+      ],
+      "actual": 513,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2017,
+      "benchmark": {
+        "crps": 194.68937180423666,
+        "median": 285.0,
+        "absolute_error": 228.0,
+        "lower_80": 0,
+        "upper_80": 1908,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 148
+      },
+      "candidate": {
+        "crps": 621.8402777777778,
+        "median": 1373.5,
+        "absolute_error": 860.5,
+        "lower_80": 594,
+        "upper_80": 2507,
+        "covered_80": false,
+        "below_support": false,
+        "above_support": false,
+        "donors": 36
+      }
+    },
+    {
+      "origin": 2018,
+      "gsis_id": "00-0034796",
+      "pfr_id": "JackLa00",
+      "player": "Lamar Jackson",
+      "round": 1,
+      "pick": 32,
+      "actual_annual": [
+        170,
+        401,
+        376,
+        382,
+        326
+      ],
+      "actual": 1655,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2017,
+      "benchmark": {
+        "crps": 792.0542366691017,
+        "median": 285.0,
+        "absolute_error": 1370.0,
+        "lower_80": 0,
+        "upper_80": 1908,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 148
+      },
+      "candidate": {
+        "crps": 231.6180555555556,
+        "median": 1373.5,
+        "absolute_error": 281.5,
+        "lower_80": 594,
+        "upper_80": 2507,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 36
+      }
+    },
+    {
+      "origin": 2018,
+      "gsis_id": "00-0034771",
+      "pfr_id": "RudoMa00",
+      "player": "Mason Rudolph",
+      "round": 3,
+      "pick": 76,
+      "actual_annual": [
+        0,
+        283,
+        43,
+        58,
+        0
+      ],
+      "actual": 384,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2017,
+      "benchmark": {
+        "crps": 177.2704528853178,
+        "median": 285.0,
+        "absolute_error": 99.0,
+        "lower_80": 0,
+        "upper_80": 1908,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 148
+      },
+      "candidate": {
+        "crps": 169.28303850156084,
+        "median": 603.0,
+        "absolute_error": 219.0,
+        "lower_80": 52,
+        "upper_80": 1374,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 31
+      }
+    },
+    {
+      "origin": 2018,
+      "gsis_id": "00-0034369",
+      "pfr_id": "LaulKy00",
+      "player": "Kyle Lauletta",
+      "round": 4,
+      "pick": 108,
+      "actual_annual": [
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual": 5,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2017,
+      "benchmark": {
+        "crps": 228.28396639883124,
+        "median": 285.0,
+        "absolute_error": 280.0,
+        "lower_80": 0,
+        "upper_80": 1908,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 148
+      },
+      "candidate": {
+        "crps": 44.71894528273128,
+        "median": 27.0,
+        "absolute_error": 22.0,
+        "lower_80": 0,
+        "upper_80": 539,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 81
+      }
+    },
+    {
+      "origin": 2018,
+      "gsis_id": "00-0034401",
+      "pfr_id": "WhitMi01",
+      "player": "Mike White",
+      "round": 5,
+      "pick": 171,
+      "actual_annual": [
+        0,
+        0,
+        0,
+        132,
+        175
+      ],
+      "actual": 307,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2017,
+      "benchmark": {
+        "crps": 171.14883126369614,
+        "median": 285.0,
+        "absolute_error": 22.0,
+        "lower_80": 0,
+        "upper_80": 1908,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 148
+      },
+      "candidate": {
+        "crps": 146.27450083828685,
+        "median": 27.0,
+        "absolute_error": 280.0,
+        "lower_80": 0,
+        "upper_80": 539,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 81
+      }
+    },
+    {
+      "origin": 2018,
+      "gsis_id": "00-0034412",
+      "pfr_id": "FalkLu00",
+      "player": "Luke Falk",
+      "round": 6,
+      "pick": 199,
+      "actual_annual": [
+        0,
+        73,
+        0,
+        0,
+        0
+      ],
+      "actual": 73,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2017,
+      "benchmark": {
+        "crps": 201.89207450693937,
+        "median": 285.0,
+        "absolute_error": 212.0,
+        "lower_80": 0,
+        "upper_80": 1908,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 148
+      },
+      "candidate": {
+        "crps": 48.07696997408931,
+        "median": 27.0,
+        "absolute_error": 46.0,
+        "lower_80": 0,
+        "upper_80": 539,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 81
+      }
+    },
+    {
+      "origin": 2018,
+      "gsis_id": "00-0034416",
+      "pfr_id": "LeexTa00",
+      "player": "Tanner Lee",
+      "round": 6,
+      "pick": 203,
+      "actual_annual": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual": 0,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2017,
+      "benchmark": {
+        "crps": 231.35153396639885,
+        "median": 285.0,
+        "absolute_error": 285.0,
+        "lower_80": 0,
+        "upper_80": 1908,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 148
+      },
+      "candidate": {
+        "crps": 46.18808108520042,
+        "median": 27.0,
+        "absolute_error": 27.0,
+        "lower_80": 0,
+        "upper_80": 539,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 81
+      }
+    },
+    {
+      "origin": 2018,
+      "gsis_id": "00-0034423",
+      "pfr_id": "EtliDa00",
+      "player": "Danny Etling",
+      "round": 7,
+      "pick": 219,
+      "actual_annual": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual": 0,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2017,
+      "benchmark": {
+        "crps": 231.35153396639885,
+        "median": 285.0,
+        "absolute_error": 285.0,
+        "lower_80": 0,
+        "upper_80": 1908,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 148
+      },
+      "candidate": {
+        "crps": 46.18808108520042,
+        "median": 27.0,
+        "absolute_error": 27.0,
+        "lower_80": 0,
+        "upper_80": 539,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 81
+      }
+    },
+    {
+      "origin": 2018,
+      "gsis_id": "00-0034732",
+      "pfr_id": "McGoAl00",
+      "player": "Alex McGough",
+      "round": 7,
+      "pick": 220,
+      "actual_annual": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual": 0,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2017,
+      "benchmark": {
+        "crps": 231.35153396639885,
+        "median": 285.0,
+        "absolute_error": 285.0,
+        "lower_80": 0,
+        "upper_80": 1908,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 148
+      },
+      "candidate": {
+        "crps": 46.18808108520042,
+        "median": 27.0,
+        "absolute_error": 27.0,
+        "lower_80": 0,
+        "upper_80": 539,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 81
+      }
+    },
+    {
+      "origin": 2018,
+      "gsis_id": "00-0034438",
+      "pfr_id": "WoodLo00",
+      "player": "Logan Woodside",
+      "round": 7,
+      "pick": 249,
+      "actual_annual": [
+        0,
+        0,
+        3,
+        0,
+        0
+      ],
+      "actual": 3,
+      "candidate_uses_benchmark": false,
+      "latest_donor_season": 2017,
+      "benchmark": {
+        "crps": 229.44612856099343,
+        "median": 285.0,
+        "absolute_error": 282.0,
+        "lower_80": 0,
+        "upper_80": 1908,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 148
+      },
+      "candidate": {
+        "crps": 45.18808108520042,
+        "median": 27.0,
+        "absolute_error": 24.0,
+        "lower_80": 0,
+        "upper_80": 539,
+        "covered_80": true,
+        "below_support": false,
+        "above_support": false,
+        "donors": 81
+      }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+2012 public release SHA-256 960b78273fff475d3382b9708021860f9408136a68bef10ed6bddf8c86934eed
+2012 public release 23830 rows, 267 games
+2012 schedule match 256 regular-season and 11 postseason games; 22856 regular-season rows, 32 franchises, 512 team-games; 22851 unique identified rows, 5 anonymous linebacker rows
+2012 official comparisons: 3 positive player-game matches, 2 expected absent keys
+2012 combine QBs: 19 rows, 14 existing IDs, 9 existing IDs with positive 2012 source observations
+2013 official overlap: 6 players matched exactly on all three phases

@@ -16,13 +16,16 @@ ROOT = Path(__file__).resolve().parents[1]
 A = ROOT/'analytics'
 TEAMS = ['CLE','KC','NE','SF']
 REQUIRED_HASHES = ['lib/engine.ts','lib/simulation.ts','lib/scouting.ts',
-                   'analytics/model.json','analytics/five_year_strict_2018.json',
+                   'analytics/cpu-position-capital-v1.json','analytics/model.json','analytics/five_year_strict_2018.json',
                    'analytics/scoring_recalibration.json','data/processed/scenario-2018.json',
-                   'lib/server-data.ts','data/clean/team_context_2018.json',
+                   'lib/server-data.ts','lib/historical-draft-evidence.ts','data/clean/historical_compensatory_slots.json','data/clean/team_context_2018.json',
                    'data/clean/team_context_source_manifest.json']
 REQUIRED_HASHES = sorted(set(REQUIRED_HASHES +
     [str(p.relative_to(ROOT)) for p in (ROOT/'data/processed').glob('scenario-*.json')] +
     [str(p.relative_to(ROOT)) for p in A.glob('model-*.json')]))
+FORECAST_INPUTS = {'analytics/five_year_strict_2018.json', 'analytics/five_year_frozen_2018_predictions.csv',
+                   'analytics/model.json', 'analytics/forecast_audit.py', 'lib/simulation.ts',
+                   'lib/engine.ts', 'lib/server-data.ts'}
 POLICY = {'version':'research-release-gates-2026-11-04-v1',
     'minimumDonorsPerConditionalStratum':10,
     'minimumSubgroupNominal95Coverage':.90,
@@ -61,9 +64,11 @@ def run():
     add('strict_independent_chronological_validation',
         'pass' if strict['validation']['chronologicallyValidatedFor2018'] else 'unsupported',
         strict['validation']['reason'],'An independent pre2018 five-year chronological test','forecast-validity')
-    for filename, current in audit['sourceHashes'].items():
-        actual = digest(ROOT/filename)
-        add('forecast_source_'+filename,'pass' if current==actual else 'stale',
+    forecast_hashes = audit.get('sourceHashes', {})
+    for filename in sorted(FORECAST_INPUTS | forecast_hashes.keys()):
+        current = forecast_hashes.get(filename)
+        actual = digest(ROOT/filename) if (ROOT/filename).is_file() else None
+        add('forecast_source_'+filename,'pass' if actual and current==actual else 'stale',
             {'evaluated':current,'current':actual},'Exact audit matches source artifact','evidence-integrity')
     for position, row in audit['subgroups'].items():
         support = row['support']
@@ -80,8 +85,8 @@ def run():
     add('specialist_quality','unsupported',audit['specialists'],
         'Position-appropriate validated specialist quality target','forecast-validity')
     improvement = audit['pairedCrpsVsPositionBaseline']
-    add('forecast_distribution_skill',
-        'pass' if improvement['playerBootstrap95'][1]<0 else 'unsupported',improvement,
+    # This evaluation always reads the exposed 2018 predictions. Independent trials require their own evidence.
+    add('forecast_distribution_skill','unsupported',improvement,
         'Paired CRPS improvement confidence interval excludes zero on independent evidence; reused cohort only supports an audit','forecast-validity')
     add('counterfactual_snaps_to_wins','unsupported',
         'Participation forecasts precede unvalidated opportunity and snaps-to-wins transformations.',

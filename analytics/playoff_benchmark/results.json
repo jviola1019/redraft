@@ -1,0 +1,1611 @@
+{
+  "protocol": {
+    "id": "rolling-prior-point-margin-v1",
+    "status": "Fixed before benchmark result computation. Simulator outcomes and its prevalence comparison were already exposed.",
+    "simulator": "../playoff_forecast_results.json, existing 64-draw audit; evaluate exactly its 960 rows without rerunning or tuning.",
+    "source": "../../data/raw/games.csv, nflverse schedule snapshot; use only season, game type, date, teams and final scores.",
+    "origins": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "originCutoff": "April 1 at each origin. Require completed score dates strictly before cutoff and season strictly before origin for every training and feature input.",
+    "horizons": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "strength": "Mean points scored minus points allowed per regular-season game in the season immediately preceding the draft origin, divided by 7. No draft, future schedule, postseason scores as a strength feature, or player inputs.",
+    "training": "Fit separate horizon slopes at each origin. For each completed 32-franchise strength season from 2002, pair its strength with qualification at strength year plus horizon, only when the target year is also completed before the origin. Each training target year gets its own intercept constrained to match its observed slot count. Minimize summed logistic negative log likelihood plus 0.5 times slope squared. Fit signed slopes.",
+    "prediction": "Use the fitted slope and calibrate a single league-wide intercept to the number of playoff slots then approved at the origin, 12 through 2019 and 14 from 2020.",
+    "ruleSource": "https://www.nfl.com/news/owners-approve-expanding-postseason-to-14-teams-0ap3000001107961",
+    "sensitivity": "Also compute benchmark probabilities with realized target-year format as a hindsight-aligned comparison against the simulator, without changing fitted slopes. Report raw Brier and benchmark-relative skill, and separately the inherited simulator finite-draw adjustment and path-level MC SE.",
+    "dependence": "Keep every franchise and overlapping origin forecast in its actual-season block. Report raw paired Brier differences by horizon and by actual season, plus ranges after dropping one season or two consecutive seasons. Treat these as descriptive stability, without exchangeability assumptions, p-values, or generalization confidence intervals.",
+    "judgment": "Descriptive retrospective comparison. Raw simulator Brier minus benchmark Brier is the primary paired gap; positive favors the simple benchmark. No tuning, gameplay changes, or intervention claims."
+  },
+  "sourceHashes": {
+    "analytics/playoff_benchmark/benchmark.py": "c7811b3160c7c852bd03822c1de79a999d127aa5be6ae07a832d88de3a60c3a0",
+    "analytics/playoff_benchmark/protocol.json": "b1dda5975497d674dbaee67e025148e2aa3a93d5c297893c32ac94b439115e4e",
+    "data/raw/games.csv": "369967042aac4f7b431c8644c197c6829e8428f7776058e4a058506ea4dece76",
+    "analytics/playoff_forecast_results.json": "a0606eb2bba0cdc116b730a8381a0c1985a4e363671e13e3d05dd5ade94025a8"
+  },
+  "fitMetadata": {
+    "2018": {
+      "1": {
+        "slope": 0.6768674524500966,
+        "trainingTargetYears": [
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017
+        ],
+        "trainingRows": 480,
+        "latestFeatureSeason": 2017,
+        "latestSourceGameDate": "2018-02-04"
+      },
+      "2": {
+        "slope": 0.689060322009027,
+        "trainingTargetYears": [
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017
+        ],
+        "trainingRows": 448,
+        "latestFeatureSeason": 2017,
+        "latestSourceGameDate": "2018-02-04"
+      },
+      "3": {
+        "slope": 0.4434384824708104,
+        "trainingTargetYears": [
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017
+        ],
+        "trainingRows": 416,
+        "latestFeatureSeason": 2017,
+        "latestSourceGameDate": "2018-02-04"
+      },
+      "4": {
+        "slope": 0.2781636780127883,
+        "trainingTargetYears": [
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017
+        ],
+        "trainingRows": 384,
+        "latestFeatureSeason": 2017,
+        "latestSourceGameDate": "2018-02-04"
+      },
+      "5": {
+        "slope": 0.21179921459406614,
+        "trainingTargetYears": [
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017
+        ],
+        "trainingRows": 352,
+        "latestFeatureSeason": 2017,
+        "latestSourceGameDate": "2018-02-04"
+      }
+    },
+    "2019": {
+      "1": {
+        "slope": 0.6985124098137021,
+        "trainingTargetYears": [
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "trainingRows": 512,
+        "latestFeatureSeason": 2018,
+        "latestSourceGameDate": "2019-02-03"
+      },
+      "2": {
+        "slope": 0.6749485665932298,
+        "trainingTargetYears": [
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "trainingRows": 480,
+        "latestFeatureSeason": 2018,
+        "latestSourceGameDate": "2019-02-03"
+      },
+      "3": {
+        "slope": 0.3999929530546069,
+        "trainingTargetYears": [
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "trainingRows": 448,
+        "latestFeatureSeason": 2018,
+        "latestSourceGameDate": "2019-02-03"
+      },
+      "4": {
+        "slope": 0.3313627364113927,
+        "trainingTargetYears": [
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "trainingRows": 416,
+        "latestFeatureSeason": 2018,
+        "latestSourceGameDate": "2019-02-03"
+      },
+      "5": {
+        "slope": 0.24971468281000853,
+        "trainingTargetYears": [
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "trainingRows": 384,
+        "latestFeatureSeason": 2018,
+        "latestSourceGameDate": "2019-02-03"
+      }
+    },
+    "2020": {
+      "1": {
+        "slope": 0.7096681380644441,
+        "trainingTargetYears": [
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "trainingRows": 544,
+        "latestFeatureSeason": 2019,
+        "latestSourceGameDate": "2020-02-02"
+      },
+      "2": {
+        "slope": 0.6828810507431626,
+        "trainingTargetYears": [
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "trainingRows": 512,
+        "latestFeatureSeason": 2019,
+        "latestSourceGameDate": "2020-02-02"
+      },
+      "3": {
+        "slope": 0.40907979663461447,
+        "trainingTargetYears": [
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "trainingRows": 480,
+        "latestFeatureSeason": 2019,
+        "latestSourceGameDate": "2020-02-02"
+      },
+      "4": {
+        "slope": 0.3202056745067239,
+        "trainingTargetYears": [
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "trainingRows": 448,
+        "latestFeatureSeason": 2019,
+        "latestSourceGameDate": "2020-02-02"
+      },
+      "5": {
+        "slope": 0.2936226474121213,
+        "trainingTargetYears": [
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "trainingRows": 416,
+        "latestFeatureSeason": 2019,
+        "latestSourceGameDate": "2020-02-02"
+      }
+    },
+    "2021": {
+      "1": {
+        "slope": 0.7048013182356954,
+        "trainingTargetYears": [
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "trainingRows": 576,
+        "latestFeatureSeason": 2020,
+        "latestSourceGameDate": "2021-02-07"
+      },
+      "2": {
+        "slope": 0.7051513260230422,
+        "trainingTargetYears": [
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "trainingRows": 544,
+        "latestFeatureSeason": 2020,
+        "latestSourceGameDate": "2021-02-07"
+      },
+      "3": {
+        "slope": 0.37876742240041494,
+        "trainingTargetYears": [
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "trainingRows": 512,
+        "latestFeatureSeason": 2020,
+        "latestSourceGameDate": "2021-02-07"
+      },
+      "4": {
+        "slope": 0.28938340302556753,
+        "trainingTargetYears": [
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "trainingRows": 480,
+        "latestFeatureSeason": 2020,
+        "latestSourceGameDate": "2021-02-07"
+      },
+      "5": {
+        "slope": 0.2483451860025525,
+        "trainingTargetYears": [
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "trainingRows": 448,
+        "latestFeatureSeason": 2020,
+        "latestSourceGameDate": "2021-02-07"
+      }
+    },
+    "2022": {
+      "1": {
+        "slope": 0.7017064290121198,
+        "trainingTargetYears": [
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021
+        ],
+        "trainingRows": 608,
+        "latestFeatureSeason": 2021,
+        "latestSourceGameDate": "2022-02-13"
+      },
+      "2": {
+        "slope": 0.7070455839857459,
+        "trainingTargetYears": [
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021
+        ],
+        "trainingRows": 576,
+        "latestFeatureSeason": 2021,
+        "latestSourceGameDate": "2022-02-13"
+      },
+      "3": {
+        "slope": 0.3345433557406068,
+        "trainingTargetYears": [
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021
+        ],
+        "trainingRows": 544,
+        "latestFeatureSeason": 2021,
+        "latestSourceGameDate": "2022-02-13"
+      },
+      "4": {
+        "slope": 0.29294693004339933,
+        "trainingTargetYears": [
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021
+        ],
+        "trainingRows": 512,
+        "latestFeatureSeason": 2021,
+        "latestSourceGameDate": "2022-02-13"
+      }
+    },
+    "2023": {
+      "1": {
+        "slope": 0.698355064727366,
+        "trainingTargetYears": [
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022
+        ],
+        "trainingRows": 640,
+        "latestFeatureSeason": 2022,
+        "latestSourceGameDate": "2023-02-12"
+      },
+      "2": {
+        "slope": 0.668444368056953,
+        "trainingTargetYears": [
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022
+        ],
+        "trainingRows": 608,
+        "latestFeatureSeason": 2022,
+        "latestSourceGameDate": "2023-02-12"
+      },
+      "3": {
+        "slope": 0.34097542706876993,
+        "trainingTargetYears": [
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022
+        ],
+        "trainingRows": 576,
+        "latestFeatureSeason": 2022,
+        "latestSourceGameDate": "2023-02-12"
+      }
+    },
+    "2024": {
+      "1": {
+        "slope": 0.7129635727033019,
+        "trainingTargetYears": [
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023
+        ],
+        "trainingRows": 672,
+        "latestFeatureSeason": 2023,
+        "latestSourceGameDate": "2024-02-11"
+      },
+      "2": {
+        "slope": 0.6678900485858321,
+        "trainingTargetYears": [
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023
+        ],
+        "trainingRows": 640,
+        "latestFeatureSeason": 2023,
+        "latestSourceGameDate": "2024-02-11"
+      }
+    },
+    "2025": {
+      "1": {
+        "slope": 0.6999334180727601,
+        "trainingTargetYears": [
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "trainingRows": 704,
+        "latestFeatureSeason": 2024,
+        "latestSourceGameDate": "2025-02-09"
+      }
+    }
+  },
+  "overall": {
+    "rows": 960,
+    "actualSeasons": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "distinctActualTeamSeasons": 256,
+    "simulatorBrier": 0.24016215006510416,
+    "benchmarkBrier": 0.23774502153007598,
+    "realizedFormatBrier": 0.2369001288915715,
+    "realizedPrevalenceBrier": 0.244921875,
+    "pairedGap": 0.002417128535028179,
+    "realizedFormatPairedGap": 0.0032620211735326643,
+    "simulatorSkillVersusBenchmark": -0.010166894429469275,
+    "simulatorAdjustedBrier": 0.23644541583994708,
+    "simulatorAdjustedPairedGap": -0.0012996056901289077,
+    "simulatorMonteCarloSE": 0.0021132908409235867,
+    "blockSensitivity": {
+      "1": {
+        "minPairedGap": 0.0005369711213706052,
+        "maxPairedGap": 0.006289773928722264,
+        "byOmittedBlock": {
+          "2018": 0.0022422889116747724,
+          "2019": 0.0021952600814244827,
+          "2020": 0.0013113606364659192,
+          "2021": 0.0027628161435080123,
+          "2022": 0.0035799426950974267,
+          "2023": 0.0005369711213706052,
+          "2024": 0.0005478472436768189,
+          "2025": 0.006289773928722264
+        }
+      },
+      "2": {
+        "minPairedGap": -0.0022696698462330023,
+        "maxPairedGap": 0.004921333662956523,
+        "byOmittedBlock": {
+          "2018-2019": 0.0019992520247262002,
+          "2019-2020": 0.0009744065365448196,
+          "2020-2021": 0.00150983047238884,
+          "2021-2022": 0.004229425288466593,
+          "2022-2023": 0.0015204494680427227,
+          "2023-2024": -0.0022696698462330023,
+          "2024-2025": 0.004921333662956523
+        }
+      }
+    },
+    "byActualYear": {
+      "2018": {
+        "rows": 32,
+        "actualSeasons": [
+          2018
+        ],
+        "distinctActualTeamSeasons": 32,
+        "simulatorBrier": 0.2064361572265625,
+        "benchmarkBrier": 0.19894867961428483,
+        "realizedFormatBrier": 0.19894867961428483,
+        "realizedPrevalenceBrier": 0.234375,
+        "pairedGap": 0.007487477612277665,
+        "realizedFormatPairedGap": 0.007487477612277665,
+        "simulatorSkillVersusBenchmark": -0.03763522143898679
+      },
+      "2019": {
+        "rows": 64,
+        "actualSeasons": [
+          2019
+        ],
+        "distinctActualTeamSeasons": 32,
+        "simulatorBrier": 0.21551513671875,
+        "benchmarkBrier": 0.20999184983326988,
+        "realizedFormatBrier": 0.20999184983326988,
+        "realizedPrevalenceBrier": 0.234375,
+        "pairedGap": 0.005523286885480122,
+        "realizedFormatPairedGap": 0.005523286885480122,
+        "simulatorSkillVersusBenchmark": -0.02630238692532849
+      },
+      "2020": {
+        "rows": 96,
+        "actualSeasons": [
+          2020
+        ],
+        "distinctActualTeamSeasons": 32,
+        "simulatorBrier": 0.24616495768229166,
+        "benchmarkBrier": 0.23379591806020328,
+        "realizedFormatBrier": 0.2312824182506254,
+        "realizedPrevalenceBrier": 0.24609375,
+        "pairedGap": 0.01236903962208838,
+        "realizedFormatPairedGap": 0.014882539431666258,
+        "simulatorSkillVersusBenchmark": -0.05290528476593548
+      },
+      "2021": {
+        "rows": 128,
+        "actualSeasons": [
+          2021
+        ],
+        "distinctActualTeamSeasons": 32,
+        "simulatorBrier": 0.24062728881835938,
+        "benchmarkBrier": 0.24045712973845007,
+        "realizedFormatBrier": 0.23886375302489748,
+        "realizedPrevalenceBrier": 0.24609375,
+        "pairedGap": 0.00017015907990930446,
+        "realizedFormatPairedGap": 0.00176353579346189,
+        "simulatorSkillVersusBenchmark": -0.0007076483034393899
+      },
+      "2022": {
+        "rows": 160,
+        "actualSeasons": [
+          2022
+        ],
+        "distinctActualTeamSeasons": 32,
+        "simulatorBrier": 0.2420440673828125,
+        "benchmarkBrier": 0.24544100964813054,
+        "realizedFormatBrier": 0.24393550647106718,
+        "realizedPrevalenceBrier": 0.24609375,
+        "pairedGap": -0.0033969422653180315,
+        "realizedFormatPairedGap": -0.001891439088254676,
+        "simulatorSkillVersusBenchmark": 0.013840157641903272
+      },
+      "2023": {
+        "rows": 160,
+        "actualSeasons": [
+          2023
+        ],
+        "distinctActualTeamSeasons": 32,
+        "simulatorBrier": 0.2414520263671875,
+        "benchmarkBrier": 0.22963411076387133,
+        "realizedFormatBrier": 0.2288530593664965,
+        "realizedPrevalenceBrier": 0.24609375,
+        "pairedGap": 0.01181791560331616,
+        "realizedFormatPairedGap": 0.012598967000690992,
+        "simulatorSkillVersusBenchmark": -0.05146411203459356
+      },
+      "2024": {
+        "rows": 160,
+        "actualSeasons": [
+          2024
+        ],
+        "distinctActualTeamSeasons": 32,
+        "simulatorBrier": 0.2526092529296875,
+        "benchmarkBrier": 0.24084571793790246,
+        "realizedFormatBrier": 0.24084571793790246,
+        "realizedPrevalenceBrier": 0.24609375,
+        "pairedGap": 0.011763534991785035,
+        "realizedFormatPairedGap": 0.011763534991785035,
+        "simulatorSkillVersusBenchmark": -0.04884261631264719
+      },
+      "2025": {
+        "rows": 160,
+        "actualSeasons": [
+          2025
+        ],
+        "distinctActualTeamSeasons": 32,
+        "simulatorBrier": 0.2371734619140625,
+        "benchmarkBrier": 0.2541195603475046,
+        "realizedFormatBrier": 0.2541195603475046,
+        "realizedPrevalenceBrier": 0.24609375,
+        "pairedGap": -0.01694609843344211,
+        "realizedFormatPairedGap": -0.01694609843344211,
+        "simulatorSkillVersusBenchmark": 0.06668553341690253
+      }
+    }
+  },
+  "byHorizon": {
+    "1": {
+      "rows": 256,
+      "actualSeasons": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "distinctActualTeamSeasons": 256,
+      "simulatorBrier": 0.22521400451660156,
+      "benchmarkBrier": 0.225693029356666,
+      "realizedFormatBrier": 0.225693029356666,
+      "realizedPrevalenceBrier": 0.2431640625,
+      "pairedGap": -0.00047902484006442925,
+      "realizedFormatPairedGap": -0.00047902484006442925,
+      "simulatorSkillVersusBenchmark": 0.002122461829813127,
+      "simulatorAdjustedBrier": 0.2217436290922619,
+      "simulatorAdjustedPairedGap": -0.0039494002644041015,
+      "simulatorMonteCarloSE": 0.0036256150291350095,
+      "blockSensitivity": {
+        "1": {
+          "minPairedGap": -0.002911969235488421,
+          "maxPairedGap": 0.003677415519609095,
+          "byOmittedBlock": {
+            "2018": -0.0016170966189704428,
+            "2019": 0.00017100590798069248,
+            "2020": -0.0019741481466540034,
+            "2021": 0.00022435740051890418,
+            "2022": -0.002911969235488421,
+            "2023": -0.0013029241871060915,
+            "2024": -9.883936040508412e-05,
+            "2025": 0.003677415519609095
+          }
+        },
+        "2": {
+          "minPairedGap": -0.004278675872941035,
+          "maxPairedGap": 0.0048137053058238954,
+          "byOmittedBlock": {
+            "2018-2019": -0.0010484060427354835,
+            "2019-2020": -0.001464966158366332,
+            "2020-2021": -0.0014027227504050666,
+            "2021-2022": -0.002496847354045234,
+            "2022-2023": -0.004278675872941035,
+            "2023-2024": -0.0009966910186771372,
+            "2024-2025": 0.0048137053058238954
+          }
+        }
+      },
+      "byActualYear": {
+        "2018": {
+          "rows": 32,
+          "actualSeasons": [
+            2018
+          ],
+          "distinctActualTeamSeasons": 32,
+          "simulatorBrier": 0.2064361572265625,
+          "benchmarkBrier": 0.19894867961428483,
+          "realizedFormatBrier": 0.19894867961428483,
+          "realizedPrevalenceBrier": 0.234375,
+          "pairedGap": 0.007487477612277665,
+          "realizedFormatPairedGap": 0.007487477612277665,
+          "simulatorSkillVersusBenchmark": -0.03763522143898679
+        },
+        "2019": {
+          "rows": 32,
+          "actualSeasons": [
+            2019
+          ],
+          "distinctActualTeamSeasons": 32,
+          "simulatorBrier": 0.20367431640625,
+          "benchmarkBrier": 0.20870355648263017,
+          "realizedFormatBrier": 0.20870355648263017,
+          "realizedPrevalenceBrier": 0.234375,
+          "pairedGap": -0.00502924007638017,
+          "realizedFormatPairedGap": -0.00502924007638017,
+          "simulatorSkillVersusBenchmark": 0.024097529343246937
+        },
+        "2020": {
+          "rows": 32,
+          "actualSeasons": [
+            2020
+          ],
+          "distinctActualTeamSeasons": 32,
+          "simulatorBrier": 0.237060546875,
+          "benchmarkBrier": 0.22707370856893722,
+          "realizedFormatBrier": 0.22707370856893722,
+          "realizedPrevalenceBrier": 0.24609375,
+          "pairedGap": 0.009986838306062784,
+          "realizedFormatPairedGap": 0.009986838306062784,
+          "simulatorSkillVersusBenchmark": -0.04398060158087769
+        },
+        "2021": {
+          "rows": 32,
+          "actualSeasons": [
+            2021
+          ],
+          "distinctActualTeamSeasons": 32,
+          "simulatorBrier": 0.223602294921875,
+          "benchmarkBrier": 0.22900499544602268,
+          "realizedFormatBrier": 0.22900499544602268,
+          "realizedPrevalenceBrier": 0.24609375,
+          "pairedGap": -0.00540270052414768,
+          "realizedFormatPairedGap": -0.00540270052414768,
+          "simulatorSkillVersusBenchmark": 0.0235920640666597
+        },
+        "2022": {
+          "rows": 32,
+          "actualSeasons": [
+            2022
+          ],
+          "distinctActualTeamSeasons": 32,
+          "simulatorBrier": 0.2426605224609375,
+          "benchmarkBrier": 0.22610893653303388,
+          "realizedFormatBrier": 0.22610893653303388,
+          "realizedPrevalenceBrier": 0.24609375,
+          "pairedGap": 0.016551585927903623,
+          "realizedFormatPairedGap": 0.016551585927903623,
+          "simulatorSkillVersusBenchmark": -0.07320182112963725
+        },
+        "2023": {
+          "rows": 32,
+          "actualSeasons": [
+            2023
+          ],
+          "distinctActualTeamSeasons": 32,
+          "simulatorBrier": 0.22247314453125,
+          "benchmarkBrier": 0.21718487394202274,
+          "realizedFormatBrier": 0.21718487394202274,
+          "realizedPrevalenceBrier": 0.24609375,
+          "pairedGap": 0.005288270589227262,
+          "realizedFormatPairedGap": 0.005288270589227262,
+          "simulatorSkillVersusBenchmark": -0.02434916618842875
+        },
+        "2024": {
+          "rows": 32,
+          "actualSeasons": [
+            2024
+          ],
+          "distinctActualTeamSeasons": 32,
+          "simulatorBrier": 0.2383880615234375,
+          "benchmarkBrier": 0.24152838472111735,
+          "realizedFormatBrier": 0.24152838472111735,
+          "realizedPrevalenceBrier": 0.24609375,
+          "pairedGap": -0.003140323197679845,
+          "realizedFormatPairedGap": -0.003140323197679845,
+          "simulatorSkillVersusBenchmark": 0.013001880509016961
+        },
+        "2025": {
+          "rows": 32,
+          "actualSeasons": [
+            2025
+          ],
+          "distinctActualTeamSeasons": 32,
+          "simulatorBrier": 0.2274169921875,
+          "benchmarkBrier": 0.25699109954527893,
+          "realizedFormatBrier": 0.25699109954527893,
+          "realizedPrevalenceBrier": 0.24609375,
+          "pairedGap": -0.029574107357778934,
+          "realizedFormatPairedGap": -0.029574107357778934,
+          "simulatorSkillVersusBenchmark": 0.11507833310222604
+        }
+      }
+    },
+    "2": {
+      "rows": 224,
+      "actualSeasons": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "distinctActualTeamSeasons": 224,
+      "simulatorBrier": 0.23530360630580358,
+      "benchmarkBrier": 0.23592765472646013,
+      "realizedFormatBrier": 0.2353046165902403,
+      "realizedPrevalenceBrier": 0.24441964285714285,
+      "pairedGap": -0.0006240484206565533,
+      "realizedFormatPairedGap": -1.0102844367199104e-06,
+      "simulatorSkillVersusBenchmark": 0.0026450838134260968,
+      "simulatorAdjustedBrier": 0.23154274730725624,
+      "simulatorAdjustedPairedGap": -0.004384907419203887,
+      "simulatorMonteCarloSE": 0.0040743265374211185,
+      "blockSensitivity": {
+        "1": {
+          "minPairedGap": -0.005114958896096894,
+          "maxPairedGap": 0.008973428834590319,
+          "byOmittedBlock": {
+            "2019": -0.003407358798656057,
+            "2020": -0.005114958896096894,
+            "2021": -0.0038486257214008224,
+            "2022": 0.002633032029792509,
+            "2023": -0.004163529793509119,
+            "2024": 0.0005596734006842186,
+            "2025": 0.008973428834590319
+          }
+        },
+        "2": {
+          "minPairedGap": -0.009882633752078096,
+          "maxPairedGap": 0.012313390471248575,
+          "byOmittedBlock": {
+            "2019-2020": -0.009353113444784372,
+            "2020-2021": -0.009882633752078096,
+            "2021-2022": -0.000585044641010779,
+            "2022-2023": -0.0009629295275407901,
+            "2023-2024": -0.003450959882470711,
+            "2024-2025": 0.012313390471248575
+          }
+        }
+      },
+      "byActualYear": {
+        "2019": {
+          "rows": 32,
+          "actualSeasons": [
+            2019
+          ],
+          "distinctActualTeamSeasons": 32,
+          "simulatorBrier": 0.22735595703125,
+          "benchmarkBrier": 0.21128014318390956,
+          "realizedFormatBrier": 0.21128014318390956,
+          "realizedPrevalenceBrier": 0.234375,
+          "pairedGap": 0.016075813847340442,
+          "realizedFormatPairedGap": 0.016075813847340442,
+          "simulatorSkillVersusBenchmark": -0.07608767016665263
+        },
+        "2020": {
+          "rows": 32,
+          "actualSeasons": [
+            2020
+          ],
+          "distinctActualTeamSeasons": 32,
+          "simulatorBrier": 0.24053955078125,
+          "benchmarkBrier": 0.21421813634926454,
+          "realizedFormatBrier": 0.20985686939572576,
+          "realizedPrevalenceBrier": 0.24609375,
+          "pairedGap": 0.026321414431985463,
+          "realizedFormatPairedGap": 0.03068268138552424,
+          "simulatorSkillVersusBenchmark": -0.12287201672350756
+        },
+        "2021": {
+          "rows": 32,
+          "actualSeasons": [
+            2021
+          ],
+          "distinctActualTeamSeasons": 32,
+          "simulatorBrier": 0.238616943359375,
+          "benchmarkBrier": 0.21989352797556597,
+          "realizedFormatBrier": 0.21989352797556597,
+          "realizedPrevalenceBrier": 0.24609375,
+          "pairedGap": 0.018723415383809033,
+          "realizedFormatPairedGap": 0.018723415383809033,
+          "simulatorSkillVersusBenchmark": -0.08514764193464353
+        },
+        "2022": {
+          "rows": 32,
+          "actualSeasons": [
+            2022
+          ],
+          "distinctActualTeamSeasons": 32,
+          "simulatorBrier": 0.242034912109375,
+          "benchmarkBrier": 0.2622014432327259,
+          "realizedFormatBrier": 0.2622014432327259,
+          "realizedPrevalenceBrier": 0.24609375,
+          "pairedGap": -0.020166531123350873,
+          "realizedFormatPairedGap": -0.020166531123350873,
+          "simulatorSkillVersusBenchmark": 0.07691235744057812
+        },
+        "2023": {
+          "rows": 32,
+          "actualSeasons": [
+            2023
+          ],
+          "distinctActualTeamSeasons": 32,
+          "simulatorBrier": 0.24688720703125,
+          "benchmarkBrier": 0.2262743672147911,
+          "realizedFormatBrier": 0.2262743672147911,
+          "realizedPrevalenceBrier": 0.24609375,
+          "pairedGap": 0.020612839816458894,
+          "realizedFormatPairedGap": 0.020612839816458894,
+          "simulatorSkillVersusBenchmark": -0.09109666318011245
+        },
+        "2024": {
+          "rows": 32,
+          "actualSeasons": [
+            2024
+          ],
+          "distinctActualTeamSeasons": 32,
+          "simulatorBrier": 0.2412872314453125,
+          "benchmarkBrier": 0.24901361079401366,
+          "realizedFormatBrier": 0.24901361079401366,
+          "realizedPrevalenceBrier": 0.24609375,
+          "pairedGap": -0.007726379348701157,
+          "realizedFormatPairedGap": -0.007726379348701157,
+          "simulatorSkillVersusBenchmark": 0.03102793989478947
+        },
+        "2025": {
+          "rows": 32,
+          "actualSeasons": [
+            2025
+          ],
+          "distinctActualTeamSeasons": 32,
+          "simulatorBrier": 0.2104034423828125,
+          "benchmarkBrier": 0.2686123543349502,
+          "realizedFormatBrier": 0.2686123543349502,
+          "realizedPrevalenceBrier": 0.24609375,
+          "pairedGap": -0.058208911952137676,
+          "realizedFormatPairedGap": -0.058208911952137676,
+          "simulatorSkillVersusBenchmark": 0.21670228868011487
+        }
+      }
+    },
+    "3": {
+      "rows": 192,
+      "actualSeasons": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "distinctActualTeamSeasons": 192,
+      "simulatorBrier": 0.24662272135416666,
+      "benchmarkBrier": 0.24615550780247722,
+      "realizedFormatBrier": 0.2452444322140382,
+      "realizedPrevalenceBrier": 0.24609375,
+      "pairedGap": 0.00046721355168943823,
+      "realizedFormatPairedGap": 0.0013782891401284691,
+      "simulatorSkillVersusBenchmark": -0.0018980422411036812,
+      "simulatorAdjustedBrier": 0.24280753968253968,
+      "simulatorAdjustedPairedGap": -0.003347968119937539,
+      "simulatorMonteCarloSE": 0.004851194051210241,
+      "blockSensitivity": {
+        "1": {
+          "minPairedGap": -0.0010668063172792064,
+          "maxPairedGap": 0.004228720045876516,
+          "byOmittedBlock": {
+            "2020": 0.00040088303638396994,
+            "2021": 0.004228720045876516,
+            "2022": -0.000660363640746342,
+            "2023": -0.00040401558887764866,
+            "2024": -0.0010668063172792064,
+            "2025": 0.00030486377477945137
+          }
+        },
+        "2": {
+          "minPairedGap": -0.002539347710230233,
+          "maxPairedGap": 0.005086183525291416,
+          "byOmittedBlock": {
+            "2020-2021": 0.005086183525291416,
+            "2021-2022": 0.0037596251788785118,
+            "2022-2023": -0.0020312943645641734,
+            "2023-2024": -0.002539347710230233,
+            "2024-2025": -0.001653248505658872
+          }
+        }
+      },
+      "byActualYear": {
+        "2020": {
+          "rows": 32,
+          "actualSeasons": [
+            2020
+          ],
+          "distinctActualTeamSeasons": 32,
+          "simulatorBrier": 0.260894775390625,
+          "benchmarkBrier": 0.2600959092624081,
+          "realizedFormatBrier": 0.25691667678721325,
+          "realizedPrevalenceBrier": 0.24609375,
+          "pairedGap": 0.0007988661282168907,
+          "realizedFormatPairedGap": 0.0039780986034117505,
+          "simulatorSkillVersusBenchmark": -0.003071429037397655
+        },
+        "2021": {
+          "rows": 32,
+          "actualSeasons": [
+            2021
+          ],
+          "distinctActualTeamSeasons": 32,
+          "simulatorBrier": 0.2494049072265625,
+          "benchmarkBrier": 0.2677452261458083,
+          "realizedFormatBrier": 0.2654580050903691,
+          "realizedPrevalenceBrier": 0.24609375,
+          "pairedGap": -0.018340318919245813,
+          "realizedFormatPairedGap": -0.016053097863806598,
+          "simulatorSkillVersusBenchmark": 0.06849914444135807
+        },
+        "2022": {
+          "rows": 32,
+          "actualSeasons": [
+            2022
+          ],
+          "distinctActualTeamSeasons": 32,
+          "simulatorBrier": 0.241790771484375,
+          "benchmarkBrier": 0.23568567197050658,
+          "realizedFormatBrier": 0.23568567197050658,
+          "realizedPrevalenceBrier": 0.24609375,
+          "pairedGap": 0.006105099513868423,
+          "realizedFormatPairedGap": 0.006105099513868423,
+          "simulatorSkillVersusBenchmark": -0.025903566656493293
+        },
+        "2023": {
+          "rows": 32,
+          "actualSeasons": [
+            2023
+          ],
+          "distinctActualTeamSeasons": 32,
+          "simulatorBrier": 0.2311248779296875,
+          "benchmarkBrier": 0.2263015186751625,
+          "realizedFormatBrier": 0.2263015186751625,
+          "realizedPrevalenceBrier": 0.24609375,
+          "pairedGap": 0.0048233592545250115,
+          "realizedFormatPairedGap": 0.0048233592545250115,
+          "simulatorSkillVersusBenchmark": -0.02131386162480231
+        },
+        "2024": {
+          "rows": 32,
+          "actualSeasons": [
+            2024
+          ],
+          "distinctActualTeamSeasons": 32,
+          "simulatorBrier": 0.24951171875,
+          "benchmarkBrier": 0.24137440585346728,
+          "realizedFormatBrier": 0.24137440585346728,
+          "realizedPrevalenceBrier": 0.24609375,
+          "pairedGap": 0.008137312896532717,
+          "realizedFormatPairedGap": 0.008137312896532717,
+          "simulatorSkillVersusBenchmark": -0.033712409846272884
+        },
+        "2025": {
+          "rows": 32,
+          "actualSeasons": [
+            2025
+          ],
+          "distinctActualTeamSeasons": 32,
+          "simulatorBrier": 0.24700927734375,
+          "benchmarkBrier": 0.24573031490751052,
+          "realizedFormatBrier": 0.24573031490751052,
+          "realizedPrevalenceBrier": 0.24609375,
+          "pairedGap": 0.0012789624362394836,
+          "realizedFormatPairedGap": 0.0012789624362394836,
+          "simulatorSkillVersusBenchmark": -0.005204740150684506
+        }
+      }
+    },
+    "4": {
+      "rows": 160,
+      "actualSeasons": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "distinctActualTeamSeasons": 160,
+      "simulatorBrier": 0.2578826904296875,
+      "benchmarkBrier": 0.24347085190862708,
+      "realizedFormatBrier": 0.2419705009800228,
+      "realizedPrevalenceBrier": 0.24609375,
+      "pairedGap": 0.0144118385210604,
+      "realizedFormatPairedGap": 0.015912189449664688,
+      "simulatorSkillVersusBenchmark": -0.05919328087153963,
+      "simulatorAdjustedBrier": 0.2540457589285714,
+      "simulatorAdjustedPairedGap": 0.010574907019944318,
+      "simulatorMonteCarloSE": 0.005187512686734526,
+      "blockSensitivity": {
+        "1": {
+          "minPairedGap": 0.009286188545555435,
+          "maxPairedGap": 0.024017659533931063,
+          "byOmittedBlock": {
+            "2021": 0.016589738056520115,
+            "2022": 0.024017659533931063,
+            "2023": 0.00975096340099163,
+            "2024": 0.009286188545555435,
+            "2025": 0.012414643068303838
+          }
+        },
+        "2": {
+          "minPairedGap": 0.0013631383936287267,
+          "maxPairedGap": 0.03012346591883419,
+          "byOmittedBlock": {
+            "2021-2022": 0.03012346591883419,
+            "2022-2023": 0.021005099711462916,
+            "2023-2024": 0.0013631383936287267,
+            "2024-2025": 0.004914711283378337
+          }
+        }
+      },
+      "byActualYear": {
+        "2021": {
+          "rows": 32,
+          "actualSeasons": [
+            2021
+          ],
+          "distinctActualTeamSeasons": 32,
+          "simulatorBrier": 0.250885009765625,
+          "benchmarkBrier": 0.24518476938640332,
+          "realizedFormatBrier": 0.24109848358763222,
+          "realizedPrevalenceBrier": 0.24609375,
+          "pairedGap": 0.005700240379221677,
+          "realizedFormatPairedGap": 0.009786526177992777,
+          "simulatorSkillVersusBenchmark": -0.02324875396415127
+        },
+        "2022": {
+          "rows": 32,
+          "actualSeasons": [
+            2022
+          ],
+          "distinctActualTeamSeasons": 32,
+          "simulatorBrier": 0.235015869140625,
+          "benchmarkBrier": 0.25902731467104717,
+          "realizedFormatBrier": 0.25561184582679675,
+          "realizedPrevalenceBrier": 0.24609375,
+          "pairedGap": -0.02401144553042217,
+          "realizedFormatPairedGap": -0.020595976686171746,
+          "simulatorSkillVersusBenchmark": 0.0926985077265523
+        },
+        "2023": {
+          "rows": 32,
+          "actualSeasons": [
+            2023
+          ],
+          "distinctActualTeamSeasons": 32,
+          "simulatorBrier": 0.26220703125,
+          "benchmarkBrier": 0.2291516922486645,
+          "realizedFormatBrier": 0.2291516922486645,
+          "realizedPrevalenceBrier": 0.24609375,
+          "pairedGap": 0.033055339001335504,
+          "realizedFormatPairedGap": 0.033055339001335504,
+          "simulatorSkillVersusBenchmark": -0.14425090505317084
+        },
+        "2024": {
+          "rows": 32,
+          "actualSeasons": [
+            2024
+          ],
+          "distinctActualTeamSeasons": 32,
+          "simulatorBrier": 0.271148681640625,
+          "benchmarkBrier": 0.23623424321754466,
+          "realizedFormatBrier": 0.23623424321754466,
+          "realizedPrevalenceBrier": 0.24609375,
+          "pairedGap": 0.03491443842308034,
+          "realizedFormatPairedGap": 0.03491443842308034,
+          "simulatorSkillVersusBenchmark": -0.1477958400422421
+        },
+        "2025": {
+          "rows": 32,
+          "actualSeasons": [
+            2025
+          ],
+          "distinctActualTeamSeasons": 32,
+          "simulatorBrier": 0.2701568603515625,
+          "benchmarkBrier": 0.2477562400194758,
+          "realizedFormatBrier": 0.2477562400194758,
+          "realizedPrevalenceBrier": 0.24609375,
+          "pairedGap": 0.0224006203320867,
+          "realizedFormatPairedGap": 0.0224006203320867,
+          "simulatorSkillVersusBenchmark": -0.09041395014037112
+        }
+      }
+    },
+    "5": {
+      "rows": 128,
+      "actualSeasons": [
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "distinctActualTeamSeasons": 128,
+      "simulatorBrier": 0.2467193603515625,
+      "benchmarkBrier": 0.245256380401433,
+      "realizedFormatBrier": 0.2432520543944479,
+      "realizedPrevalenceBrier": 0.24609375,
+      "pairedGap": 0.001462979950129506,
+      "realizedFormatPairedGap": 0.0034673059571146136,
+      "simulatorSkillVersusBenchmark": -0.005965104547881239,
+      "simulatorAdjustedBrier": 0.24288504464285715,
+      "simulatorAdjustedPairedGap": -0.0023713357585758432,
+      "simulatorMonteCarloSE": 0.005665002909495052,
+      "blockSensitivity": {
+        "1": {
+          "minPairedGap": -0.0069269021283917265,
+          "maxPairedGap": 0.008826325142046038,
+          "byOmittedBlock": {
+            "2022": 0.00043844663836906106,
+            "2023": 0.0035140501484945963,
+            "2024": -0.0069269021283917265,
+            "2025": 0.008826325142046038
+          }
+        },
+        "2": {
+          "minPairedGap": -0.008045237870104666,
+          "maxPairedGap": 0.003002785280036502,
+          "byOmittedBlock": {
+            "2022-2023": 0.003002785280036502,
+            "2023-2024": -0.008045237870104666,
+            "2024-2025": -7.682537977751758e-05
+          }
+        }
+      },
+      "byActualYear": {
+        "2022": {
+          "rows": 32,
+          "actualSeasons": [
+            2022
+          ],
+          "distinctActualTeamSeasons": 32,
+          "simulatorBrier": 0.24871826171875,
+          "benchmarkBrier": 0.24418168183333921,
+          "realizedFormatBrier": 0.2400696347922728,
+          "realizedPrevalenceBrier": 0.24609375,
+          "pairedGap": 0.004536579885410785,
+          "realizedFormatPairedGap": 0.008648626926477193,
+          "simulatorSkillVersusBenchmark": -0.018578706852003357
+        },
+        "2023": {
+          "rows": 32,
+          "actualSeasons": [
+            2023
+          ],
+          "distinctActualTeamSeasons": 32,
+          "simulatorBrier": 0.24456787109375,
+          "benchmarkBrier": 0.24925810173871582,
+          "realizedFormatBrier": 0.24535284475184171,
+          "realizedPrevalenceBrier": 0.24609375,
+          "pairedGap": -0.00469023064496582,
+          "realizedFormatPairedGap": -0.0007849736580917144,
+          "simulatorSkillVersusBenchmark": 0.018816763075096943
+        },
+        "2024": {
+          "rows": 32,
+          "actualSeasons": [
+            2024
+          ],
+          "distinctActualTeamSeasons": 32,
+          "simulatorBrier": 0.2627105712890625,
+          "benchmarkBrier": 0.23607794510336938,
+          "realizedFormatBrier": 0.23607794510336938,
+          "realizedPrevalenceBrier": 0.24609375,
+          "pairedGap": 0.02663262618569312,
+          "realizedFormatPairedGap": 0.02663262618569312,
+          "simulatorSkillVersusBenchmark": -0.11281285159455168
+        },
+        "2025": {
+          "rows": 32,
+          "actualSeasons": [
+            2025
+          ],
+          "distinctActualTeamSeasons": 32,
+          "simulatorBrier": 0.2308807373046875,
+          "benchmarkBrier": 0.2515077929303076,
+          "realizedFormatBrier": 0.2515077929303076,
+          "realizedPrevalenceBrier": 0.24609375,
+          "pairedGap": -0.020627055625620117,
+          "realizedFormatPairedGap": -0.020627055625620117,
+          "simulatorSkillVersusBenchmark": 0.08201358449094198
+        }
+      }
+    }
+  }
+}

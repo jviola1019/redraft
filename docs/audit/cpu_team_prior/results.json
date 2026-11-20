@@ -1,0 +1,923 @@
+{
+  "qbFloor": 9,
+  "qbCounts": {
+    "baseline": 1,
+    "prior": 72,
+    "forced": 306
+  },
+  "classes": [
+    {
+      "year": 2018,
+      "actualQb": 5,
+      "actualDiversity": 5.168372,
+      "baseline": {
+        "firstRoundTv": 0.341146,
+        "firstRoundQb": 0,
+        "firstRoundQbError": 5,
+        "franchiseTv": 0.407824,
+        "franchiseDiversity": 5.428887,
+        "diversityError": 0.9191282499999999,
+        "wholeDraftTv": 0.051758,
+        "roundTv": [
+          0.341146,
+          0.273438,
+          0.314815,
+          0.193694,
+          0.27027,
+          0.176136,
+          0.27193
+        ]
+      },
+      "prior": {
+        "firstRoundTv": 0.28125,
+        "firstRoundQb": 0.333333,
+        "firstRoundQbError": 4.666667,
+        "franchiseTv": 0.42816,
+        "franchiseDiversity": 5.548954,
+        "diversityError": 1.0374136874999997,
+        "wholeDraftTv": 0.050781,
+        "roundTv": [
+          0.28125,
+          0.182292,
+          0.280093,
+          0.27027,
+          0.213964,
+          0.204545,
+          0.232456
+        ]
+      },
+      "forced": {
+        "firstRoundTv": 0.210938,
+        "firstRoundQb": 2.833333,
+        "firstRoundQbError": 2.166667,
+        "franchiseTv": 0.481519,
+        "franchiseDiversity": 4.567455,
+        "diversityError": 1.0468295625000001,
+        "wholeDraftTv": 0.095703,
+        "roundTv": [
+          0.210938,
+          0.263021,
+          0.231481,
+          0.261261,
+          0.261261,
+          0.238636,
+          0.29386
+        ]
+      }
+    },
+    {
+      "year": 2019,
+      "actualQb": 3,
+      "actualDiversity": 5.214469,
+      "baseline": {
+        "firstRoundTv": 0.424479,
+        "firstRoundQb": 0,
+        "firstRoundQbError": 3,
+        "franchiseTv": 0.39569,
+        "franchiseDiversity": 5.280041,
+        "diversityError": 0.7775228437499999,
+        "wholeDraftTv": 0.074147,
+        "roundTv": [
+          0.424479,
+          0.205729,
+          0.197368,
+          0.18287,
+          0.321429,
+          0.229675,
+          0.235417
+        ]
+      },
+      "prior": {
+        "firstRoundTv": 0.393229,
+        "firstRoundQb": 0.666667,
+        "firstRoundQbError": 2.333333,
+        "franchiseTv": 0.405447,
+        "franchiseDiversity": 5.39979,
+        "diversityError": 0.8273908750000003,
+        "wholeDraftTv": 0.06857,
+        "roundTv": [
+          0.393229,
+          0.304688,
+          0.177632,
+          0.217593,
+          0.335714,
+          0.237805,
+          0.247917
+        ]
+      },
+      "forced": {
+        "firstRoundTv": 0.257813,
+        "firstRoundQb": 2.833333,
+        "firstRoundQbError": 0.1666669999999999,
+        "franchiseTv": 0.477928,
+        "franchiseDiversity": 4.442542,
+        "diversityError": 0.9974591249999999,
+        "wholeDraftTv": 0.082021,
+        "roundTv": [
+          0.257813,
+          0.325521,
+          0.203947,
+          0.233796,
+          0.359524,
+          0.213415,
+          0.260417
+        ]
+      }
+    },
+    {
+      "year": 2020,
+      "actualQb": 4,
+      "actualDiversity": 4.895022,
+      "baseline": {
+        "firstRoundTv": 0.4375,
+        "firstRoundQb": 0,
+        "firstRoundQbError": 4,
+        "franchiseTv": 0.427187,
+        "franchiseDiversity": 5.389654,
+        "diversityError": 0.940371125,
+        "wholeDraftTv": 0.062092,
+        "roundTv": [
+          0.4375,
+          0.257813,
+          0.184524,
+          0.25625,
+          0.282828,
+          0.288095,
+          0.24187
+        ]
+      },
+      "prior": {
+        "firstRoundTv": 0.278646,
+        "firstRoundQb": 0.583333,
+        "firstRoundQbError": 3.416667,
+        "franchiseTv": 0.422128,
+        "franchiseDiversity": 5.57206,
+        "diversityError": 1.07917815625,
+        "wholeDraftTv": 0.057843,
+        "roundTv": [
+          0.278646,
+          0.252604,
+          0.236111,
+          0.295833,
+          0.270202,
+          0.259524,
+          0.23374
+        ]
+      },
+      "forced": {
+        "firstRoundTv": 0.203125,
+        "firstRoundQb": 2.833333,
+        "firstRoundQbError": 1.166667,
+        "franchiseTv": 0.48591,
+        "franchiseDiversity": 4.454214,
+        "diversityError": 0.9461013124999998,
+        "wholeDraftTv": 0.081046,
+        "roundTv": [
+          0.203125,
+          0.263021,
+          0.178571,
+          0.264583,
+          0.287879,
+          0.266667,
+          0.239837
+        ]
+      }
+    },
+    {
+      "year": 2021,
+      "actualQb": 5,
+      "actualDiversity": 5.146765,
+      "baseline": {
+        "firstRoundTv": 0.395833,
+        "firstRoundQb": 0,
+        "firstRoundQbError": 5,
+        "franchiseTv": 0.363518,
+        "franchiseDiversity": 5.086982,
+        "diversityError": 0.8699696874999999,
+        "wholeDraftTv": 0.051158,
+        "roundTv": [
+          0.395833,
+          0.268229,
+          0.152439,
+          0.173077,
+          0.252083,
+          0.270833,
+          0.30914
+        ]
+      },
+      "prior": {
+        "firstRoundTv": 0.34375,
+        "firstRoundQb": 0.25,
+        "firstRoundQbError": 4.75,
+        "franchiseTv": 0.386946,
+        "franchiseDiversity": 5.303353,
+        "diversityError": 0.8698960937499998,
+        "wholeDraftTv": 0.057272,
+        "roundTv": [
+          0.34375,
+          0.247396,
+          0.221545,
+          0.200855,
+          0.25625,
+          0.267045,
+          0.298387
+        ]
+      },
+      "forced": {
+        "firstRoundTv": 0.200521,
+        "firstRoundQb": 2.833333,
+        "firstRoundQbError": 2.166667,
+        "franchiseTv": 0.464763,
+        "franchiseDiversity": 4.431709,
+        "diversityError": 1.0615077187499997,
+        "wholeDraftTv": 0.093308,
+        "roundTv": [
+          0.200521,
+          0.278646,
+          0.156504,
+          0.237179,
+          0.29375,
+          0.236742,
+          0.276882
+        ]
+      }
+    },
+    {
+      "year": 2022,
+      "actualQb": 1,
+      "actualDiversity": 5.069645,
+      "baseline": {
+        "firstRoundTv": 0.385417,
+        "firstRoundQb": 0,
+        "firstRoundQbError": 1,
+        "franchiseTv": 0.410686,
+        "franchiseDiversity": 5.469677,
+        "diversityError": 1.04860803125,
+        "wholeDraftTv": 0.06902,
+        "roundTv": [
+          0.385417,
+          0.278646,
+          0.205285,
+          0.29386,
+          0.217593,
+          0.311508,
+          0.227642
+        ]
+      },
+      "prior": {
+        "firstRoundTv": 0.200521,
+        "firstRoundQb": 0.75,
+        "firstRoundQbError": 0.25,
+        "franchiseTv": 0.404603,
+        "franchiseDiversity": 5.682971,
+        "diversityError": 1.10531115625,
+        "wholeDraftTv": 0.05757,
+        "roundTv": [
+          0.200521,
+          0.195313,
+          0.168699,
+          0.359649,
+          0.194444,
+          0.246032,
+          0.272358
+        ]
+      },
+      "forced": {
+        "firstRoundTv": 0.197917,
+        "firstRoundQb": 2.833333,
+        "firstRoundQbError": 1.833333,
+        "franchiseTv": 0.470336,
+        "franchiseDiversity": 4.566587,
+        "diversityError": 1.0203359375,
+        "wholeDraftTv": 0.077608,
+        "roundTv": [
+          0.197917,
+          0.273438,
+          0.207317,
+          0.370614,
+          0.224537,
+          0.271825,
+          0.237805
+        ]
+      }
+    },
+    {
+      "year": 2023,
+      "actualQb": 3,
+      "actualDiversity": 5.312634,
+      "baseline": {
+        "firstRoundTv": 0.537634,
+        "firstRoundQb": 0.083333,
+        "firstRoundQbError": 2.916667,
+        "franchiseTv": 0.393381,
+        "franchiseDiversity": 5.386507,
+        "diversityError": 0.94048625,
+        "wholeDraftTv": 0.090412,
+        "roundTv": [
+          0.537634,
+          0.239583,
+          0.235043,
+          0.328283,
+          0.234127,
+          0.295833,
+          0.478175
+        ]
+      },
+      "prior": {
+        "firstRoundTv": 0.346774,
+        "firstRoundQb": 1.583333,
+        "firstRoundQbError": 1.416667,
+        "franchiseTv": 0.392661,
+        "franchiseDiversity": 5.502854,
+        "diversityError": 0.9527741250000001,
+        "wholeDraftTv": 0.083977,
+        "roundTv": [
+          0.346774,
+          0.174479,
+          0.275641,
+          0.343434,
+          0.248016,
+          0.327083,
+          0.339286
+        ]
+      },
+      "forced": {
+        "firstRoundTv": 0.22043,
+        "firstRoundQb": 2.833333,
+        "firstRoundQbError": 0.1666669999999999,
+        "franchiseTv": 0.459923,
+        "franchiseDiversity": 4.510434,
+        "diversityError": 1.0157593125,
+        "wholeDraftTv": 0.081725,
+        "roundTv": [
+          0.22043,
+          0.268229,
+          0.24359,
+          0.255051,
+          0.228175,
+          0.3,
+          0.376984
+        ]
+      }
+    },
+    {
+      "year": 2024,
+      "actualQb": 6,
+      "actualDiversity": 5.0666,
+      "baseline": {
+        "firstRoundTv": 0.59375,
+        "firstRoundQb": 0,
+        "firstRoundQbError": 6,
+        "franchiseTv": 0.383658,
+        "franchiseDiversity": 5.062258,
+        "diversityError": 0.619667375,
+        "wholeDraftTv": 0.07393,
+        "roundTv": [
+          0.59375,
+          0.315104,
+          0.291667,
+          0.252381,
+          0.270325,
+          0.285985,
+          0.502252
+        ]
+      },
+      "prior": {
+        "firstRoundTv": 0.421875,
+        "firstRoundQb": 0.083333,
+        "firstRoundQbError": 5.916667,
+        "franchiseTv": 0.37602,
+        "franchiseDiversity": 5.229917,
+        "diversityError": 0.6405867812499999,
+        "wholeDraftTv": 0.055123,
+        "roundTv": [
+          0.421875,
+          0.213542,
+          0.226852,
+          0.359524,
+          0.280488,
+          0.274621,
+          0.256757
+        ]
+      },
+      "forced": {
+        "firstRoundTv": 0.294271,
+        "firstRoundQb": 2.833333,
+        "firstRoundQbError": 3.166667,
+        "franchiseTv": 0.456833,
+        "franchiseDiversity": 4.458686,
+        "diversityError": 0.8124484687500001,
+        "wholeDraftTv": 0.071012,
+        "roundTv": [
+          0.294271,
+          0.231771,
+          0.226852,
+          0.333333,
+          0.333333,
+          0.270833,
+          0.313063
+        ]
+      }
+    },
+    {
+      "year": 2025,
+      "actualQb": 2,
+      "actualDiversity": 5.308042,
+      "baseline": {
+        "firstRoundTv": 0.552083,
+        "firstRoundQb": 0,
+        "firstRoundQbError": 2,
+        "franchiseTv": 0.39597,
+        "franchiseDiversity": 5.414102,
+        "diversityError": 1.0811422499999996,
+        "wholeDraftTv": 0.094034,
+        "roundTv": [
+          0.552083,
+          0.494792,
+          0.328947,
+          0.310185,
+          0.252193,
+          0.397917,
+          0.363821
+        ]
+      },
+      "prior": {
+        "firstRoundTv": 0.341146,
+        "firstRoundQb": 0.666667,
+        "firstRoundQbError": 1.333333,
+        "franchiseTv": 0.39432,
+        "franchiseDiversity": 5.513228,
+        "diversityError": 0.99887796875,
+        "wholeDraftTv": 0.060311,
+        "roundTv": [
+          0.341146,
+          0.184896,
+          0.285088,
+          0.231481,
+          0.162281,
+          0.275,
+          0.335366
+        ]
+      },
+      "forced": {
+        "firstRoundTv": 0.208333,
+        "firstRoundQb": 2.833333,
+        "firstRoundQbError": 0.8333330000000001,
+        "franchiseTv": 0.472959,
+        "franchiseDiversity": 4.54771,
+        "diversityError": 1.18180271875,
+        "wholeDraftTv": 0.090143,
+        "roundTv": [
+          0.208333,
+          0.21875,
+          0.252193,
+          0.314815,
+          0.247807,
+          0.2375,
+          0.22561
+        ]
+      }
+    },
+    {
+      "year": 2026,
+      "actualQb": 2,
+      "actualDiversity": 5.309642,
+      "baseline": {
+        "firstRoundTv": 0.625,
+        "firstRoundQb": 0,
+        "firstRoundQbError": 2,
+        "franchiseTv": 0.37907,
+        "franchiseDiversity": 5.261402,
+        "diversityError": 0.6373701874999997,
+        "wholeDraftTv": 0.046368,
+        "roundTv": [
+          0.625,
+          0.494792,
+          0.208333,
+          0.225,
+          0.223577,
+          0.471429,
+          0.410569
+        ]
+      },
+      "prior": {
+        "firstRoundTv": 0.361979,
+        "firstRoundQb": 1.083333,
+        "firstRoundQbError": 0.9166669999999999,
+        "franchiseTv": 0.382901,
+        "franchiseDiversity": 5.395339,
+        "diversityError": 0.6383275312499999,
+        "wholeDraftTv": 0.038262,
+        "roundTv": [
+          0.361979,
+          0.200521,
+          0.238426,
+          0.14375,
+          0.231707,
+          0.402381,
+          0.272358
+        ]
+      },
+      "forced": {
+        "firstRoundTv": 0.25,
+        "firstRoundQb": 2.833333,
+        "firstRoundQbError": 0.8333330000000001,
+        "franchiseTv": 0.453855,
+        "franchiseDiversity": 4.508722,
+        "diversityError": 0.8647574687499998,
+        "wholeDraftTv": 0.081388,
+        "roundTv": [
+          0.25,
+          0.320313,
+          0.233796,
+          0.214583,
+          0.213415,
+          0.385714,
+          0.380081
+        ]
+      }
+    }
+  ],
+  "windows": [
+    {
+      "years": [
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "averages": {
+        "baseline": {
+          "firstRoundTv": 0.3997395,
+          "firstRoundQb": 0,
+          "firstRoundQbError": 4.25,
+          "franchiseTv": 0.39855475,
+          "franchiseDiversity": 5.296391,
+          "diversityError": 0.8767479765624999,
+          "wholeDraftTv": 0.05978875
+        },
+        "prior": {
+          "firstRoundTv": 0.32421875,
+          "firstRoundQb": 0.45833325,
+          "firstRoundQbError": 3.79166675,
+          "franchiseTv": 0.41067025,
+          "franchiseDiversity": 5.456039250000001,
+          "diversityError": 0.9534697031249999,
+          "wholeDraftTv": 0.0586165
+        },
+        "forced": {
+          "firstRoundTv": 0.21809925000000002,
+          "firstRoundQb": 2.833333,
+          "firstRoundQbError": 1.416667,
+          "franchiseTv": 0.47753,
+          "franchiseDiversity": 4.47398,
+          "diversityError": 1.0129744296874998,
+          "wholeDraftTv": 0.0880195
+        }
+      },
+      "checks": {
+        "firstRoundTv": true,
+        "firstRoundQbError": true,
+        "franchiseTv": true,
+        "diversityError": true,
+        "wholeDraftTv": true,
+        "forcedFranchiseTv": true
+      }
+    },
+    {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "averages": {
+        "baseline": {
+          "firstRoundTv": 0.5387768000000001,
+          "firstRoundQb": 0.0166666,
+          "firstRoundQbError": 2.7833334,
+          "franchiseTv": 0.392553,
+          "franchiseDiversity": 5.318789199999999,
+          "diversityError": 0.8654548187499997,
+          "wholeDraftTv": 0.07475280000000001
+        },
+        "prior": {
+          "firstRoundTv": 0.334459,
+          "firstRoundQb": 0.8333332,
+          "firstRoundQbError": 1.9666668,
+          "franchiseTv": 0.390101,
+          "franchiseDiversity": 5.4648617999999995,
+          "diversityError": 0.8671755125,
+          "wholeDraftTv": 0.05904860000000001
+        },
+        "forced": {
+          "firstRoundTv": 0.23419020000000002,
+          "firstRoundQb": 2.833333,
+          "firstRoundQbError": 1.3666665999999998,
+          "franchiseTv": 0.46278119999999995,
+          "franchiseDiversity": 4.5184277999999996,
+          "diversityError": 0.9790207812499998,
+          "wholeDraftTv": 0.08037520000000001
+        }
+      },
+      "checks": {
+        "firstRoundTv": true,
+        "firstRoundQbError": true,
+        "franchiseTv": true,
+        "diversityError": true,
+        "wholeDraftTv": true,
+        "forcedFranchiseTv": true
+      }
+    }
+  ],
+  "invariants": [
+    {
+      "year": 2018,
+      "seed": "cpu-policy-audit-0",
+      "replayEqual": true,
+      "historyPoisonEqual": true,
+      "exactTradeReplays": 12
+    },
+    {
+      "year": 2019,
+      "seed": "cpu-policy-audit-0",
+      "replayEqual": true,
+      "historyPoisonEqual": true,
+      "exactTradeReplays": 12
+    },
+    {
+      "year": 2020,
+      "seed": "cpu-policy-audit-0",
+      "replayEqual": true,
+      "historyPoisonEqual": true,
+      "exactTradeReplays": 12
+    },
+    {
+      "year": 2021,
+      "seed": "cpu-policy-audit-0",
+      "replayEqual": true,
+      "historyPoisonEqual": true,
+      "exactTradeReplays": 12
+    },
+    {
+      "year": 2022,
+      "seed": "cpu-policy-audit-0",
+      "replayEqual": true,
+      "historyPoisonEqual": true,
+      "exactTradeReplays": 12
+    },
+    {
+      "year": 2023,
+      "seed": "cpu-policy-audit-0",
+      "replayEqual": true,
+      "historyPoisonEqual": true,
+      "exactTradeReplays": 12
+    },
+    {
+      "year": 2024,
+      "seed": "cpu-policy-audit-0",
+      "replayEqual": true,
+      "historyPoisonEqual": true,
+      "exactTradeReplays": 12
+    },
+    {
+      "year": 2025,
+      "seed": "cpu-policy-audit-0",
+      "replayEqual": true,
+      "historyPoisonEqual": true,
+      "exactTradeReplays": 12
+    },
+    {
+      "year": 2026,
+      "seed": "cpu-policy-audit-0",
+      "replayEqual": true,
+      "historyPoisonEqual": true,
+      "exactTradeReplays": 12
+    }
+  ],
+  "sourceHashes": {
+    "lib/engine.ts": "ae1aff02fe5ba83b07328d649967348d8322e2b16dd01c2151aff8f5e2f211e0",
+    "lib/simulation.ts": "e03f6afab57ae9c5288eaa343e58a9f977e2dee51c73ab77f06cdf6d75ac49ca",
+    "lib/scouting.ts": "751b61f9f77e62c64e1623831dc75144b48d691f63497eb78298a978e63b6ca8",
+    "lib/server-data.ts": "0ede48d68b376a2ad5adb3633680bfa0f067e3a2469aeff3d3b10338fb556be3",
+    "analytics/model.json": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0",
+    "analytics/five_year_strict_2018.json": "a717e2d683ab57c8f79f963d672598810593bae69945c8d00db82857d6c647e1",
+    "analytics/scoring_recalibration.json": "cd91ac43583c3186c18ec760fa860b5e3fae59aedaedf0cadb4b0cef90ec3377",
+    "data/clean/team_context_2018.json": "a2667b83e75fc20afb9318c362cfa1a28745e2db4d7864084533a19294497301",
+    "data/clean/team_context_source_manifest.json": "776ef8fd8b8200e9b9946e3ed014bd76061fc63586005d96142bf83f7656ec18",
+    "data/processed/scenario-2018.json": "b7895eef7862ccfb45cff5f2f4b6e347abd809c1905ed274883d55cc237f59d8",
+    "data/processed/scenario-2019.json": "88ef4b175bfc7ddf8c2d32541b1b8371836f09f6e961f4bb8a36b0db0bf5f28c",
+    "data/processed/scenario-2020.json": "527ff4f9770199052a6405d9d56cf503f150b998dddbcfbd947e686c060b624b",
+    "data/processed/scenario-2021.json": "37e217bfa4ca2ae97aa34a889b32b0dfef683f4884deefc6569e4b9e8eeaebc6",
+    "data/processed/scenario-2022.json": "ea6846602cddfe179544b1d845c811a1848c59de69084c210c03080ac4d46f63",
+    "data/processed/scenario-2023.json": "14587193998afcb61ca2c95c50ee641ba709246a5b3a9c8187855b94e894611f",
+    "data/processed/scenario-2024.json": "6a6d794cdf0747d7a03ba92549d4d8165b149a19b04eb32588b679e6c50e8323",
+    "data/processed/scenario-2025.json": "8f80dab73fa8b50a92a6b0ec499419dfd07eade6398ebda59b5117aac62b13b7",
+    "data/processed/scenario-2026.json": "c30d6a697573fc39488b13a91eb7c3863aa780c14a81f446e06dd0e3a86638ca",
+    "data/processed/scenario-coverage.json": "0d42970e685e510b6554c7fea7675e7f3a5aecb525aabb1c6b7e155ec0058ca3",
+    "analytics/model-2019.json": "2da02bcb4d6da178a635852e61c4ee7488f9551f346c9560f680ce99f13176cf",
+    "analytics/model-2020.json": "35d80e75ae50e8ada8c9ad96db2fd965e38f9dea06bc0f298b899f51497c3bdc",
+    "analytics/model-2021.json": "1e71a80b75350169b9c266185e773bbb7ab99a34df9d1698b7437b95ed21a649",
+    "analytics/model-2022.json": "9579d70620a4f20ede36008bdcc745d913f8ba1aa7f64b4276104561491b8457",
+    "analytics/model-2023.json": "3b7a67a1f83c32ba8461abe9608f3f2c18e8a17e34b60c20768099d9b23c78cb",
+    "analytics/model-2024.json": "1c4b07f22dc40575623920f108335d8990c07a53511db5e0c6bd740398102e9d",
+    "analytics/model-2025.json": "4b753663702af949cc2474da986eadbe1e23966ce58778928590353c0f774397",
+    "analytics/model-2026.json": "a4380ba61137af8813883ec3b021acfb73ee755fd51fdef1004d9f68d25f8ad4",
+    "data/raw/draft_picks.csv": "77c3a570ae70721c95c04965b233ed53b7e7e26592344ce199fbfac2b156838f",
+    "data/raw/trades.csv": "3180574aca356c5f89488ecce6babe88703967109f98775bce7c1620ef4c9f53"
+  },
+  "priorFit": {
+    "cohorts": [
+      2013,
+      2017
+    ],
+    "rows": 1272,
+    "positionRoundPrior": {
+      "1": {
+        "QB": 12,
+        "RB": 5,
+        "WR": 21,
+        "TE": 5,
+        "OL": 30,
+        "DL": 29,
+        "LB": 21,
+        "DB": 36,
+        "K": 0,
+        "P": 0,
+        "LS": 0
+      },
+      "2": {
+        "QB": 5,
+        "RB": 13,
+        "WR": 19,
+        "TE": 10,
+        "OL": 21,
+        "DL": 31,
+        "LB": 23,
+        "DB": 35,
+        "K": 1,
+        "P": 0,
+        "LS": 0
+      },
+      "3": {
+        "QB": 7,
+        "RB": 15,
+        "WR": 24,
+        "TE": 11,
+        "OL": 33,
+        "DL": 38,
+        "LB": 18,
+        "DB": 38,
+        "K": 0,
+        "P": 0,
+        "LS": 0
+      },
+      "4": {
+        "QB": 11,
+        "RB": 23,
+        "WR": 25,
+        "TE": 6,
+        "OL": 33,
+        "DL": 30,
+        "LB": 26,
+        "DB": 37,
+        "K": 0,
+        "P": 0,
+        "LS": 0
+      },
+      "5": {
+        "QB": 5,
+        "RB": 20,
+        "WR": 22,
+        "TE": 12,
+        "OL": 31,
+        "DL": 30,
+        "LB": 25,
+        "DB": 36,
+        "K": 2,
+        "P": 3,
+        "LS": 1
+      },
+      "6": {
+        "QB": 10,
+        "RB": 26,
+        "WR": 22,
+        "TE": 13,
+        "OL": 30,
+        "DL": 29,
+        "LB": 24,
+        "DB": 39,
+        "K": 1,
+        "P": 2,
+        "LS": 2
+      },
+      "7": {
+        "QB": 7,
+        "RB": 20,
+        "WR": 27,
+        "TE": 13,
+        "OL": 28,
+        "DL": 31,
+        "LB": 26,
+        "DB": 37,
+        "K": 4,
+        "P": 2,
+        "LS": 0
+      }
+    },
+    "teamRoundPrior": {
+      "1": {
+        "QB": 0.4773866932593591,
+        "RB": -0.9967325159761231,
+        "WR": 0.04436906009905493,
+        "TE": -0.48072553346813474,
+        "OL": 0.14401545793321516,
+        "DL": 0.05641739861522942,
+        "LB": 0.026564435465548326,
+        "DB": 0.10250850581549638,
+        "K": -0.6367297819447161,
+        "P": -0.5677369104577645,
+        "LS": -0.2312646738365515
+      },
+      "2": {
+        "QB": -0.2899034728469344,
+        "RB": -0.14353493346173102,
+        "WR": -0.045041397578081656,
+        "TE": 0.13130999222936898,
+        "OL": -0.19302957106642687,
+        "DL": 0.12685564187998877,
+        "LB": 0.11947553458236633,
+        "DB": 0.08100925375457015,
+        "K": 0.0623171207424175,
+        "P": -0.5618371883305762,
+        "LS": -0.22536495170936327
+      },
+      "3": {
+        "QB": -0.1453222440358268,
+        "RB": -0.15310438447788188,
+        "WR": 0.03500131009545467,
+        "TE": 0.07522052557832562,
+        "OL": 0.09918765655074542,
+        "DL": 0.18158054156923548,
+        "LB": -0.2572401602398121,
+        "DB": 0.017951117787433427,
+        "K": -0.773930903458201,
+        "P": -0.7049380319712495,
+        "LS": -0.3684657953500365
+      },
+      "4": {
+        "QB": 0.2248747252348795,
+        "RB": 0.21709258479282462,
+        "WR": 0.03895388441127814,
+        "TE": -0.49904411399181936,
+        "OL": 0.06391951771328752,
+        "DL": -0.08326203891272274,
+        "LB": 0.05888958776061859,
+        "DB": -0.043292507453285396,
+        "K": -0.809199042295659,
+        "P": -0.7402061708087074,
+        "LS": -0.4037339341874945
+      },
+      "5": {
+        "QB": -0.4482717886183961,
+        "RB": 0.10356185887497156,
+        "WR": -0.06364777097438476,
+        "TE": 0.13999576112107356,
+        "OL": 0.0232955626035223,
+        "DL": -0.0632613722060532,
+        "LB": 0.04114992648444105,
+        "DB": -0.04996008782877709,
+        "K": 0.30941391307912025,
+        "P": 0.6660888570178528,
+        "LS": 0.3094139130791204
+      },
+      "6": {
+        "QB": 0.10379679368164356,
+        "RB": 0.3008090658856018,
+        "WR": -0.11771499224466045,
+        "TE": 0.1600365120045197,
+        "OL": -0.06252035698133393,
+        "DL": -0.15011841629931988,
+        "LB": -0.05213800793911612,
+        "DB": -0.026065767629341034,
+        "K": -0.15011841629932002,
+        "P": 0.324339563295796,
+        "LS": 0.660811799917009
+      },
+      "7": {
+        "QB": -0.2001988542616612,
+        "RB": 0.06395272077992563,
+        "WR": 0.0934533851766236,
+        "TE": 0.17449459517974952,
+        "OL": -0.11475364830477627,
+        "DL": -0.07112181198651887,
+        "LB": 0.039281116372242186,
+        "DB": -0.06290097884166172,
+        "K": 0.7806303987500651,
+        "P": 0.338797646471026,
+        "LS": -0.42334240557587083
+      }
+    }
+  }
+}

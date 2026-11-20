@@ -1,0 +1,4642 @@
+[
+  {
+    "cohort": 2016,
+    "pfrId": "AlleBr00",
+    "age": 0,
+    "transition": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "AlleBr00",
+    "age": 1,
+    "transition": {
+      "actual": 0.0,
+      "mean": 188.9154052734375,
+      "crps": 40.75293864309788,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 927.0,
+      "intervalScore80": 927.0,
+      "lower95": 0.0,
+      "upper95": 1065.0,
+      "intervalScore95": 1065.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "AlleBr00",
+    "age": 2,
+    "transition": {
+      "actual": 0.0,
+      "mean": 178.537353515625,
+      "crps": 38.979332745075226,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 797.0,
+      "intervalScore80": 797.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "AlleBr00",
+    "age": 3,
+    "transition": {
+      "actual": 176.0,
+      "mean": 167.095703125,
+      "crps": 97.4035893380642,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 653.0,
+      "intervalScore80": 653.0,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 1055.0
+    },
+    "persistence": {
+      "actual": 176.0,
+      "mean": 170.8353271484375,
+      "crps": 118.02010683715343,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "AlleBr00",
+    "age": 4,
+    "transition": {
+      "actual": 277.0,
+      "mean": 159.9886474609375,
+      "crps": 152.52449275553226,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 551.0,
+      "intervalScore80": 551.0,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 1055.0
+    },
+    "persistence": {
+      "actual": 277.0,
+      "mean": 170.8353271484375,
+      "crps": 179.29574160277843,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "BoykTr00",
+    "age": 0,
+    "transition": {
+      "actual": 53.0,
+      "mean": 170.8353271484375,
+      "crps": 49.602382227778435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "persistence": {
+      "actual": 53.0,
+      "mean": 170.8353271484375,
+      "crps": 49.602382227778435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "BoykTr00",
+    "age": 1,
+    "transition": {
+      "actual": 0.0,
+      "mean": 188.9154052734375,
+      "crps": 40.75293864309788,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 927.0,
+      "intervalScore80": 927.0,
+      "lower95": 0.0,
+      "upper95": 1065.0,
+      "intervalScore95": 1065.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "BoykTr00",
+    "age": 2,
+    "transition": {
+      "actual": 0.0,
+      "mean": 178.537353515625,
+      "crps": 38.979332745075226,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 797.0,
+      "intervalScore80": 797.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "BoykTr00",
+    "age": 3,
+    "transition": {
+      "actual": 0.0,
+      "mean": 167.095703125,
+      "crps": 34.964624494314194,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 653.0,
+      "intervalScore80": 653.0,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 1055.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "BoykTr00",
+    "age": 4,
+    "transition": {
+      "actual": 0.0,
+      "mean": 159.9886474609375,
+      "crps": 33.005938068032265,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 551.0,
+      "intervalScore80": 551.0,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 1055.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "BrisJa00",
+    "age": 0,
+    "transition": {
+      "actual": 156.0,
+      "mean": 170.8353271484375,
+      "crps": 105.88631777465343,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "persistence": {
+      "actual": 156.0,
+      "mean": 170.8353271484375,
+      "crps": 105.88631777465343,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "BrisJa00",
+    "age": 1,
+    "transition": {
+      "actual": 989.0,
+      "mean": 188.9154052734375,
+      "crps": 662.3486417680979,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 927.0,
+      "intervalScore80": 1547.0,
+      "lower95": 0.0,
+      "upper95": 1065.0,
+      "intervalScore95": 1065.0
+    },
+    "persistence": {
+      "actual": 989.0,
+      "mean": 170.8353271484375,
+      "crps": 684.1084857434034,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 2312.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "BrisJa00",
+    "age": 2,
+    "transition": {
+      "actual": 18.0,
+      "mean": 178.537353515625,
+      "crps": 41.717125713825226,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 797.0,
+      "intervalScore80": 797.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 18.0,
+      "mean": 170.8353271484375,
+      "crps": 37.793300196528435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "BrisJa00",
+    "age": 3,
+    "transition": {
+      "actual": 947.0,
+      "mean": 167.095703125,
+      "crps": 661.2492924630642,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 653.0,
+      "intervalScore80": 3593.0000000000005,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 1055.0
+    },
+    "persistence": {
+      "actual": 947.0,
+      "mean": 170.8353271484375,
+      "crps": 647.2349505871534,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 1892.0000000000002,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "BrisJa00",
+    "age": 4,
+    "transition": {
+      "actual": 47.0,
+      "mean": 159.9886474609375,
+      "crps": 45.163164630532265,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 551.0,
+      "intervalScore80": 551.0,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 1055.0
+    },
+    "persistence": {
+      "actual": 47.0,
+      "mean": 170.8353271484375,
+      "crps": 47.577968165278435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "CookCo00",
+    "age": 0,
+    "transition": {
+      "actual": 32.0,
+      "mean": 170.8353271484375,
+      "crps": 42.516933009028435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "persistence": {
+      "actual": 32.0,
+      "mean": 170.8353271484375,
+      "crps": 42.516933009028435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "CookCo00",
+    "age": 1,
+    "transition": {
+      "actual": 0.0,
+      "mean": 188.9154052734375,
+      "crps": 40.75293864309788,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 927.0,
+      "intervalScore80": 927.0,
+      "lower95": 0.0,
+      "upper95": 1065.0,
+      "intervalScore95": 1065.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "CookCo00",
+    "age": 2,
+    "transition": {
+      "actual": 0.0,
+      "mean": 178.537353515625,
+      "crps": 38.979332745075226,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 797.0,
+      "intervalScore80": 797.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "CookCo00",
+    "age": 3,
+    "transition": {
+      "actual": 0.0,
+      "mean": 167.095703125,
+      "crps": 34.964624494314194,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 653.0,
+      "intervalScore80": 653.0,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 1055.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "CookCo00",
+    "age": 4,
+    "transition": {
+      "actual": 0.0,
+      "mean": 159.9886474609375,
+      "crps": 33.005938068032265,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 551.0,
+      "intervalScore80": 551.0,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 1055.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "DougBr00",
+    "age": 0,
+    "transition": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "DougBr00",
+    "age": 1,
+    "transition": {
+      "actual": 0.0,
+      "mean": 188.9154052734375,
+      "crps": 40.75293864309788,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 927.0,
+      "intervalScore80": 927.0,
+      "lower95": 0.0,
+      "upper95": 1065.0,
+      "intervalScore95": 1065.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "DougBr00",
+    "age": 2,
+    "transition": {
+      "actual": 0.0,
+      "mean": 178.537353515625,
+      "crps": 38.979332745075226,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 797.0,
+      "intervalScore80": 797.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "DougBr00",
+    "age": 3,
+    "transition": {
+      "actual": 0.0,
+      "mean": 167.095703125,
+      "crps": 34.964624494314194,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 653.0,
+      "intervalScore80": 653.0,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 1055.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "DougBr00",
+    "age": 4,
+    "transition": {
+      "actual": 0.0,
+      "mean": 159.9886474609375,
+      "crps": 33.005938068032265,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 551.0,
+      "intervalScore80": 551.0,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 1055.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "DrisJe00",
+    "age": 0,
+    "transition": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "DrisJe00",
+    "age": 1,
+    "transition": {
+      "actual": 0.0,
+      "mean": 188.9154052734375,
+      "crps": 40.75293864309788,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 927.0,
+      "intervalScore80": 927.0,
+      "lower95": 0.0,
+      "upper95": 1065.0,
+      "intervalScore95": 1065.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "DrisJe00",
+    "age": 2,
+    "transition": {
+      "actual": 372.0,
+      "mean": 178.537353515625,
+      "crps": 206.92952805757523,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 797.0,
+      "intervalScore80": 797.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 372.0,
+      "mean": 170.8353271484375,
+      "crps": 239.68661074340343,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "DrisJe00",
+    "age": 3,
+    "transition": {
+      "actual": 218.0,
+      "mean": 167.095703125,
+      "crps": 119.8493901193142,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 653.0,
+      "intervalScore80": 653.0,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 1055.0
+    },
+    "persistence": {
+      "actual": 218.0,
+      "mean": 170.8353271484375,
+      "crps": 143.50106386840343,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "DrisJe00",
+    "age": 4,
+    "transition": {
+      "actual": 115.0,
+      "mean": 159.9886474609375,
+      "crps": 69.15266658365726,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 551.0,
+      "intervalScore80": 551.0,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 1055.0
+    },
+    "persistence": {
+      "actual": 115.0,
+      "mean": 170.8353271484375,
+      "crps": 81.01205019652843,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "GoffJa00",
+    "age": 0,
+    "transition": {
+      "actual": 392.0,
+      "mean": 170.8353271484375,
+      "crps": 252.65536074340343,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "persistence": {
+      "actual": 392.0,
+      "mean": 170.8353271484375,
+      "crps": 252.65536074340343,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "GoffJa00",
+    "age": 1,
+    "transition": {
+      "actual": 932.0,
+      "mean": 188.9154052734375,
+      "crps": 616.0222257524729,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 927.0,
+      "intervalScore80": 977.0,
+      "lower95": 0.0,
+      "upper95": 1065.0,
+      "intervalScore95": 1065.0
+    },
+    "persistence": {
+      "actual": 932.0,
+      "mean": 170.8353271484375,
+      "crps": 634.1282611340284,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 1742.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "GoffJa00",
+    "age": 2,
+    "transition": {
+      "actual": 1064.0,
+      "mean": 178.537353515625,
+      "crps": 746.2581413388252,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 797.0,
+      "intervalScore80": 3467.0000000000005,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1297.9999999999998
+    },
+    "persistence": {
+      "actual": 1064.0,
+      "mean": 170.8353271484375,
+      "crps": 756.1604876965284,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 3062.0000000000005,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 3988.9999999999973
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "GoffJa00",
+    "age": 3,
+    "transition": {
+      "actual": 1096.0,
+      "mean": 167.095703125,
+      "crps": 796.7732182443142,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 653.0,
+      "intervalScore80": 5083.000000000001,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 2694.9999999999986
+    },
+    "persistence": {
+      "actual": 1096.0,
+      "mean": 170.8353271484375,
+      "crps": 787.1385150402784,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 3382.0000000000005,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 5268.999999999996
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "GoffJa00",
+    "age": 4,
+    "transition": {
+      "actual": 1046.0,
+      "mean": 159.9886474609375,
+      "crps": 760.2027154117823,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 551.0,
+      "intervalScore80": 5501.000000000001,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 1055.0
+    },
+    "persistence": {
+      "actual": 1046.0,
+      "mean": 170.8353271484375,
+      "crps": 738.8680072277784,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 2882.0000000000005,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 3268.999999999998
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "HackCh01",
+    "age": 0,
+    "transition": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "HackCh01",
+    "age": 1,
+    "transition": {
+      "actual": 0.0,
+      "mean": 188.9154052734375,
+      "crps": 40.75293864309788,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 927.0,
+      "intervalScore80": 927.0,
+      "lower95": 0.0,
+      "upper95": 1065.0,
+      "intervalScore95": 1065.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "HackCh01",
+    "age": 2,
+    "transition": {
+      "actual": 0.0,
+      "mean": 178.537353515625,
+      "crps": 38.979332745075226,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 797.0,
+      "intervalScore80": 797.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "HackCh01",
+    "age": 3,
+    "transition": {
+      "actual": 0.0,
+      "mean": 167.095703125,
+      "crps": 34.964624494314194,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 653.0,
+      "intervalScore80": 653.0,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 1055.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "HackCh01",
+    "age": 4,
+    "transition": {
+      "actual": 0.0,
+      "mean": 159.9886474609375,
+      "crps": 33.005938068032265,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 551.0,
+      "intervalScore80": 551.0,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 1055.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "HogaKe00",
+    "age": 0,
+    "transition": {
+      "actual": 50.0,
+      "mean": 170.8353271484375,
+      "crps": 48.590175196528435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "persistence": {
+      "actual": 50.0,
+      "mean": 170.8353271484375,
+      "crps": 48.590175196528435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "HogaKe00",
+    "age": 1,
+    "transition": {
+      "actual": 134.0,
+      "mean": 188.9154052734375,
+      "crps": 85.23365153372288,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 927.0,
+      "intervalScore80": 927.0,
+      "lower95": 0.0,
+      "upper95": 1065.0,
+      "intervalScore95": 1065.0
+    },
+    "persistence": {
+      "actual": 134.0,
+      "mean": 170.8353271484375,
+      "crps": 92.53914980590343,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "HogaKe00",
+    "age": 2,
+    "transition": {
+      "actual": 0.0,
+      "mean": 178.537353515625,
+      "crps": 38.979332745075226,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 797.0,
+      "intervalScore80": 797.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "HogaKe00",
+    "age": 3,
+    "transition": {
+      "actual": 0.0,
+      "mean": 167.095703125,
+      "crps": 34.964624494314194,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 653.0,
+      "intervalScore80": 653.0,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 1055.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "HogaKe00",
+    "age": 4,
+    "transition": {
+      "actual": 0.0,
+      "mean": 159.9886474609375,
+      "crps": 33.005938068032265,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 551.0,
+      "intervalScore80": 551.0,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 1055.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "JoneCa01",
+    "age": 0,
+    "transition": {
+      "actual": 19.0,
+      "mean": 170.8353271484375,
+      "crps": 38.130702540278435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "persistence": {
+      "actual": 19.0,
+      "mean": 170.8353271484375,
+      "crps": 38.130702540278435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "JoneCa01",
+    "age": 1,
+    "transition": {
+      "actual": 0.0,
+      "mean": 188.9154052734375,
+      "crps": 40.75293864309788,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 927.0,
+      "intervalScore80": 927.0,
+      "lower95": 0.0,
+      "upper95": 1065.0,
+      "intervalScore95": 1065.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "JoneCa01",
+    "age": 2,
+    "transition": {
+      "actual": 0.0,
+      "mean": 178.537353515625,
+      "crps": 38.979332745075226,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 797.0,
+      "intervalScore80": 797.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "JoneCa01",
+    "age": 3,
+    "transition": {
+      "actual": 0.0,
+      "mean": 167.095703125,
+      "crps": 34.964624494314194,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 653.0,
+      "intervalScore80": 653.0,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 1055.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "JoneCa01",
+    "age": 4,
+    "transition": {
+      "actual": 0.0,
+      "mean": 159.9886474609375,
+      "crps": 33.005938068032265,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 551.0,
+      "intervalScore80": 551.0,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 1055.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "KessCo00",
+    "age": 0,
+    "transition": {
+      "actual": 349.0,
+      "mean": 170.8353271484375,
+      "crps": 224.77254824340343,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "persistence": {
+      "actual": 349.0,
+      "mean": 170.8353271484375,
+      "crps": 224.77254824340343,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "KessCo00",
+    "age": 1,
+    "transition": {
+      "actual": 48.0,
+      "mean": 188.9154052734375,
+      "crps": 53.54419840872288,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 927.0,
+      "intervalScore80": 927.0,
+      "lower95": 0.0,
+      "upper95": 1065.0,
+      "intervalScore95": 1065.0
+    },
+    "persistence": {
+      "actual": 48.0,
+      "mean": 170.8353271484375,
+      "crps": 47.915370509028435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "KessCo00",
+    "age": 2,
+    "transition": {
+      "actual": 263.0,
+      "mean": 178.537353515625,
+      "crps": 141.21688157320023,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 797.0,
+      "intervalScore80": 797.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 263.0,
+      "mean": 170.8353271484375,
+      "crps": 170.80208925902843,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "KessCo00",
+    "age": 3,
+    "transition": {
+      "actual": 0.0,
+      "mean": 167.095703125,
+      "crps": 34.964624494314194,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 653.0,
+      "intervalScore80": 653.0,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 1055.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "KessCo00",
+    "age": 4,
+    "transition": {
+      "actual": 0.0,
+      "mean": 159.9886474609375,
+      "crps": 33.005938068032265,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 551.0,
+      "intervalScore80": 551.0,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 1055.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "LyncPa00",
+    "age": 0,
+    "transition": {
+      "actual": 176.0,
+      "mean": 170.8353271484375,
+      "crps": 118.02010683715343,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "persistence": {
+      "actual": 176.0,
+      "mean": 170.8353271484375,
+      "crps": 118.02010683715343,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "LyncPa00",
+    "age": 1,
+    "transition": {
+      "actual": 98.0,
+      "mean": 188.9154052734375,
+      "crps": 71.03809489309788,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 927.0,
+      "intervalScore80": 927.0,
+      "lower95": 0.0,
+      "upper95": 1065.0,
+      "intervalScore95": 1065.0
+    },
+    "persistence": {
+      "actual": 98.0,
+      "mean": 170.8353271484375,
+      "crps": 71.18709902465343,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "LyncPa00",
+    "age": 2,
+    "transition": {
+      "actual": 0.0,
+      "mean": 178.537353515625,
+      "crps": 38.979332745075226,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 797.0,
+      "intervalScore80": 797.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "LyncPa00",
+    "age": 3,
+    "transition": {
+      "actual": 0.0,
+      "mean": 167.095703125,
+      "crps": 34.964624494314194,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 653.0,
+      "intervalScore80": 653.0,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 1055.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "LyncPa00",
+    "age": 4,
+    "transition": {
+      "actual": 0.0,
+      "mean": 159.9886474609375,
+      "crps": 33.005938068032265,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 551.0,
+      "intervalScore80": 551.0,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 1055.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "PresDa01",
+    "age": 0,
+    "transition": {
+      "actual": 1011.0,
+      "mean": 170.8353271484375,
+      "crps": 705.2437396496534,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 2532.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 1868.999999999999
+    },
+    "persistence": {
+      "actual": 1011.0,
+      "mean": 170.8353271484375,
+      "crps": 705.2437396496534,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 2532.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 1868.999999999999
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "PresDa01",
+    "age": 1,
+    "transition": {
+      "actual": 1050.0,
+      "mean": 188.9154052734375,
+      "crps": 714.3525480180979,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 927.0,
+      "intervalScore80": 2157.0,
+      "lower95": 0.0,
+      "upper95": 1065.0,
+      "intervalScore95": 1065.0
+    },
+    "persistence": {
+      "actual": 1050.0,
+      "mean": 170.8353271484375,
+      "crps": 742.7107806652784,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 2922.0000000000005,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 3428.9999999999977
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "PresDa01",
+    "age": 2,
+    "transition": {
+      "actual": 1070.0,
+      "mean": 178.537353515625,
+      "crps": 752.0601432919502,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 797.0,
+      "intervalScore80": 3527.0000000000005,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1537.9999999999995
+    },
+    "persistence": {
+      "actual": 1070.0,
+      "mean": 170.8353271484375,
+      "crps": 761.9246478527784,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 3122.0000000000005,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 4228.999999999997
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "PresDa01",
+    "age": 3,
+    "transition": {
+      "actual": 1116.0,
+      "mean": 167.095703125,
+      "crps": 816.7732182443142,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 653.0,
+      "intervalScore80": 5283.000000000001,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 3494.9999999999977
+    },
+    "persistence": {
+      "actual": 1116.0,
+      "mean": 170.8353271484375,
+      "crps": 807.1385150402784,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 3582.0000000000005,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 6068.999999999995
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "PresDa01",
+    "age": 4,
+    "transition": {
+      "actual": 360.0,
+      "mean": 159.9886474609375,
+      "crps": 205.75740291178226,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 551.0,
+      "intervalScore80": 551.0,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 1055.0
+    },
+    "persistence": {
+      "actual": 360.0,
+      "mean": 170.8353271484375,
+      "crps": 231.90536074340343,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "StavJo01",
+    "age": 0,
+    "transition": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "StavJo01",
+    "age": 1,
+    "transition": {
+      "actual": 0.0,
+      "mean": 188.9154052734375,
+      "crps": 40.75293864309788,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 927.0,
+      "intervalScore80": 927.0,
+      "lower95": 0.0,
+      "upper95": 1065.0,
+      "intervalScore95": 1065.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "StavJo01",
+    "age": 2,
+    "transition": {
+      "actual": 0.0,
+      "mean": 178.537353515625,
+      "crps": 38.979332745075226,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 797.0,
+      "intervalScore80": 797.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "StavJo01",
+    "age": 3,
+    "transition": {
+      "actual": 0.0,
+      "mean": 167.095703125,
+      "crps": 34.964624494314194,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 653.0,
+      "intervalScore80": 653.0,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 1055.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "StavJo01",
+    "age": 4,
+    "transition": {
+      "actual": 0.0,
+      "mean": 159.9886474609375,
+      "crps": 33.005938068032265,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 551.0,
+      "intervalScore80": 551.0,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 1055.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "SudfNa00",
+    "age": 0,
+    "transition": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "SudfNa00",
+    "age": 1,
+    "transition": {
+      "actual": 40.0,
+      "mean": 188.9154052734375,
+      "crps": 50.87232340872288,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 927.0,
+      "intervalScore80": 927.0,
+      "lower95": 0.0,
+      "upper95": 1065.0,
+      "intervalScore95": 1065.0
+    },
+    "persistence": {
+      "actual": 40.0,
+      "mean": 170.8353271484375,
+      "crps": 45.216151759028435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "SudfNa00",
+    "age": 2,
+    "transition": {
+      "actual": 11.0,
+      "mean": 178.537353515625,
+      "crps": 40.339440166950226,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 797.0,
+      "intervalScore80": 797.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 11.0,
+      "mean": 170.8353271484375,
+      "crps": 35.702479884028435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "SudfNa00",
+    "age": 3,
+    "transition": {
+      "actual": 0.0,
+      "mean": 167.095703125,
+      "crps": 34.964624494314194,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 653.0,
+      "intervalScore80": 653.0,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 1055.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "SudfNa00",
+    "age": 4,
+    "transition": {
+      "actual": 18.0,
+      "mean": 159.9886474609375,
+      "crps": 36.187822833657265,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 551.0,
+      "intervalScore80": 551.0,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 1055.0
+    },
+    "persistence": {
+      "actual": 18.0,
+      "mean": 170.8353271484375,
+      "crps": 37.793300196528435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "WentCa00",
+    "age": 0,
+    "transition": {
+      "actual": 1125.0,
+      "mean": 170.8353271484375,
+      "crps": 816.1385150402784,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 3672.0000000000005,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 6428.999999999995
+    },
+    "persistence": {
+      "actual": 1125.0,
+      "mean": 170.8353271484375,
+      "crps": 816.1385150402784,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 3672.0000000000005,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 6428.999999999995
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "WentCa00",
+    "age": 1,
+    "transition": {
+      "actual": 881.0,
+      "mean": 188.9154052734375,
+      "crps": 575.7944425493479,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 927.0,
+      "intervalScore80": 927.0,
+      "lower95": 0.0,
+      "upper95": 1065.0,
+      "intervalScore95": 1065.0
+    },
+    "persistence": {
+      "actual": 881.0,
+      "mean": 170.8353271484375,
+      "crps": 590.2942767590284,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 1232.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "WentCa00",
+    "age": 2,
+    "transition": {
+      "actual": 724.0,
+      "mean": 178.537353515625,
+      "crps": 464.6328971982002,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 797.0,
+      "intervalScore80": 797.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 724.0,
+      "mean": 170.8353271484375,
+      "crps": 469.30623964965343,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "WentCa00",
+    "age": 3,
+    "transition": {
+      "actual": 1148.0,
+      "mean": 167.095703125,
+      "crps": 848.7732182443142,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 653.0,
+      "intervalScore80": 5603.000000000001,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 4774.999999999996
+    },
+    "persistence": {
+      "actual": 1148.0,
+      "mean": 170.8353271484375,
+      "crps": 839.1385150402784,
+      "outsideSupport": true,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 3902.0000000000005,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 7348.9999999999945
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "WentCa00",
+    "age": 4,
+    "transition": {
+      "actual": 809.0,
+      "mean": 159.9886474609375,
+      "crps": 555.0242486149073,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 551.0,
+      "intervalScore80": 3131.0000000000005,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 1055.0
+    },
+    "persistence": {
+      "actual": 809.0,
+      "mean": 170.8353271484375,
+      "crps": 532.3142962902784,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "WoodJo01",
+    "age": 0,
+    "transition": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "WoodJo01",
+    "age": 1,
+    "transition": {
+      "actual": 0.0,
+      "mean": 188.9154052734375,
+      "crps": 40.75293864309788,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 927.0,
+      "intervalScore80": 927.0,
+      "lower95": 0.0,
+      "upper95": 1065.0,
+      "intervalScore95": 1065.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "WoodJo01",
+    "age": 2,
+    "transition": {
+      "actual": 0.0,
+      "mean": 178.537353515625,
+      "crps": 38.979332745075226,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 797.0,
+      "intervalScore80": 797.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "WoodJo01",
+    "age": 3,
+    "transition": {
+      "actual": 0.0,
+      "mean": 167.095703125,
+      "crps": 34.964624494314194,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 653.0,
+      "intervalScore80": 653.0,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 1055.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2016,
+    "pfrId": "WoodJo01",
+    "age": 4,
+    "transition": {
+      "actual": 0.0,
+      "mean": 159.9886474609375,
+      "crps": 33.005938068032265,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 551.0,
+      "intervalScore80": 551.0,
+      "lower95": 0.0,
+      "upper95": 1055.0,
+      "intervalScore95": 1055.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 170.8353271484375,
+      "crps": 32.809169337153435,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 989.0,
+      "intervalScore95": 989.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "BeatC.00",
+    "age": 0,
+    "transition": {
+      "actual": 391.0,
+      "mean": 176.151611328125,
+      "crps": 237.31247916817665,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    },
+    "persistence": {
+      "actual": 391.0,
+      "mean": 176.151611328125,
+      "crps": 237.31247916817665,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "BeatC.00",
+    "age": 1,
+    "transition": {
+      "actual": 341.0,
+      "mean": 185.782958984375,
+      "crps": 192.61119547486305,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 927.0,
+      "intervalScore80": 927.0,
+      "lower95": 0.0,
+      "upper95": 1065.0,
+      "intervalScore95": 1065.0
+    },
+    "persistence": {
+      "actual": 341.0,
+      "mean": 176.151611328125,
+      "crps": 204.82322135567665,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "BeatC.00",
+    "age": 2,
+    "transition": {
+      "actual": 0.0,
+      "mean": 175.80859375,
+      "crps": 36.64786946773529,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 816.0,
+      "intervalScore80": 816.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "BeatC.00",
+    "age": 3,
+    "transition": {
+      "actual": 186.0,
+      "mean": 168.057373046875,
+      "crps": 103.97501313686371,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 758.0,
+      "intervalScore80": 758.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 186.0,
+      "mean": 176.151611328125,
+      "crps": 112.57346549630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "BeatC.00",
+    "age": 4,
+    "transition": {
+      "actual": 7.0,
+      "mean": 167.77513122558594,
+      "crps": 33.82552555017173,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 633.25,
+      "intervalScore80": 633.25,
+      "lower95": 0.0,
+      "upper95": 1120.9375,
+      "intervalScore95": 1120.9375
+    },
+    "persistence": {
+      "actual": 7.0,
+      "mean": 187.1610870361328,
+      "crps": 38.618096152320504,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1158.125,
+      "intervalScore95": 1158.125
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "DobbJo00",
+    "age": 0,
+    "transition": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "DobbJo00",
+    "age": 1,
+    "transition": {
+      "actual": 30.0,
+      "mean": 185.782958984375,
+      "crps": 46.01549234986305,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 927.0,
+      "intervalScore80": 927.0,
+      "lower95": 0.0,
+      "upper95": 1065.0,
+      "intervalScore95": 1065.0
+    },
+    "persistence": {
+      "actual": 30.0,
+      "mean": 176.151611328125,
+      "crps": 40.83274284005165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "DobbJo00",
+    "age": 2,
+    "transition": {
+      "actual": 0.0,
+      "mean": 175.80859375,
+      "crps": 36.64786946773529,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 816.0,
+      "intervalScore80": 816.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "DobbJo00",
+    "age": 3,
+    "transition": {
+      "actual": 9.0,
+      "mean": 168.057373046875,
+      "crps": 35.52384126186371,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 758.0,
+      "intervalScore80": 758.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 9.0,
+      "mean": 176.151611328125,
+      "crps": 36.71628776192665,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "DobbJo00",
+    "age": 4,
+    "transition": {
+      "actual": 0.0,
+      "mean": 167.77513122558594,
+      "crps": 32.65691593103111,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 633.25,
+      "intervalScore80": 633.25,
+      "lower95": 0.0,
+      "upper95": 1120.9375,
+      "intervalScore95": 1120.9375
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 187.1610870361328,
+      "crps": 37.734551230445504,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1158.125,
+      "intervalScore95": 1158.125
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "EvanJe01",
+    "age": 0,
+    "transition": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "EvanJe01",
+    "age": 1,
+    "transition": {
+      "actual": 0.0,
+      "mean": 185.782958984375,
+      "crps": 39.46764078736305,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 927.0,
+      "intervalScore80": 927.0,
+      "lower95": 0.0,
+      "upper95": 1065.0,
+      "intervalScore95": 1065.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "EvanJe01",
+    "age": 2,
+    "transition": {
+      "actual": 0.0,
+      "mean": 175.80859375,
+      "crps": 36.64786946773529,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 816.0,
+      "intervalScore80": 816.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "EvanJe01",
+    "age": 3,
+    "transition": {
+      "actual": 0.0,
+      "mean": 168.057373046875,
+      "crps": 34.26431977748871,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 758.0,
+      "intervalScore80": 758.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "EvanJe01",
+    "age": 4,
+    "transition": {
+      "actual": 0.0,
+      "mean": 167.77513122558594,
+      "crps": 32.65691593103111,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 633.25,
+      "intervalScore80": 633.25,
+      "lower95": 0.0,
+      "upper95": 1120.9375,
+      "intervalScore95": 1120.9375
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 187.1610870361328,
+      "crps": 37.734551230445504,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1158.125,
+      "intervalScore95": 1158.125
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "KaayBr00",
+    "age": 0,
+    "transition": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "KaayBr00",
+    "age": 1,
+    "transition": {
+      "actual": 0.0,
+      "mean": 185.782958984375,
+      "crps": 39.46764078736305,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 927.0,
+      "intervalScore80": 927.0,
+      "lower95": 0.0,
+      "upper95": 1065.0,
+      "intervalScore95": 1065.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "KaayBr00",
+    "age": 2,
+    "transition": {
+      "actual": 0.0,
+      "mean": 175.80859375,
+      "crps": 36.64786946773529,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 816.0,
+      "intervalScore80": 816.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "KaayBr00",
+    "age": 3,
+    "transition": {
+      "actual": 0.0,
+      "mean": 168.057373046875,
+      "crps": 34.26431977748871,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 758.0,
+      "intervalScore80": 758.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "KaayBr00",
+    "age": 4,
+    "transition": {
+      "actual": 0.0,
+      "mean": 167.77513122558594,
+      "crps": 32.65691593103111,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 633.25,
+      "intervalScore80": 633.25,
+      "lower95": 0.0,
+      "upper95": 1120.9375,
+      "intervalScore95": 1120.9375
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 187.1610870361328,
+      "crps": 37.734551230445504,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1158.125,
+      "intervalScore95": 1158.125
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "KizeDe00",
+    "age": 0,
+    "transition": {
+      "actual": 886.0,
+      "mean": 176.151611328125,
+      "crps": 593.6935826838017,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 1282.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    },
+    "persistence": {
+      "actual": 886.0,
+      "mean": 176.151611328125,
+      "crps": 593.6935826838017,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 1282.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "KizeDe00",
+    "age": 1,
+    "transition": {
+      "actual": 62.0,
+      "mean": 185.782958984375,
+      "crps": 56.48448649048805,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 927.0,
+      "intervalScore80": 927.0,
+      "lower95": 0.0,
+      "upper95": 1065.0,
+      "intervalScore95": 1065.0
+    },
+    "persistence": {
+      "actual": 62.0,
+      "mean": 176.151611328125,
+      "crps": 49.59519401192665,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "KizeDe00",
+    "age": 2,
+    "transition": {
+      "actual": 0.0,
+      "mean": 175.80859375,
+      "crps": 36.64786946773529,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 816.0,
+      "intervalScore80": 816.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "KizeDe00",
+    "age": 3,
+    "transition": {
+      "actual": 0.0,
+      "mean": 168.057373046875,
+      "crps": 34.26431977748871,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 758.0,
+      "intervalScore80": 758.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "KizeDe00",
+    "age": 4,
+    "transition": {
+      "actual": 0.0,
+      "mean": 167.77513122558594,
+      "crps": 32.65691593103111,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 633.25,
+      "intervalScore80": 633.25,
+      "lower95": 0.0,
+      "upper95": 1120.9375,
+      "intervalScore95": 1120.9375
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 187.1610870361328,
+      "crps": 37.734551230445504,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1158.125,
+      "intervalScore95": 1158.125
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "KnigTr00",
+    "age": 0,
+    "transition": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "KnigTr00",
+    "age": 1,
+    "transition": {
+      "actual": 0.0,
+      "mean": 185.782958984375,
+      "crps": 39.46764078736305,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 927.0,
+      "intervalScore80": 927.0,
+      "lower95": 0.0,
+      "upper95": 1065.0,
+      "intervalScore95": 1065.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "KnigTr00",
+    "age": 2,
+    "transition": {
+      "actual": 0.0,
+      "mean": 175.80859375,
+      "crps": 36.64786946773529,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 816.0,
+      "intervalScore80": 816.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "KnigTr00",
+    "age": 3,
+    "transition": {
+      "actual": 0.0,
+      "mean": 168.057373046875,
+      "crps": 34.26431977748871,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 758.0,
+      "intervalScore80": 758.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "KnigTr00",
+    "age": 4,
+    "transition": {
+      "actual": 0.0,
+      "mean": 167.77513122558594,
+      "crps": 32.65691593103111,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 633.25,
+      "intervalScore80": 633.25,
+      "lower95": 0.0,
+      "upper95": 1120.9375,
+      "intervalScore95": 1120.9375
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 187.1610870361328,
+      "crps": 37.734551230445504,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1158.125,
+      "intervalScore95": 1158.125
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "LeidMi00",
+    "age": 0,
+    "transition": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "LeidMi00",
+    "age": 1,
+    "transition": {
+      "actual": 0.0,
+      "mean": 185.782958984375,
+      "crps": 39.46764078736305,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 927.0,
+      "intervalScore80": 927.0,
+      "lower95": 0.0,
+      "upper95": 1065.0,
+      "intervalScore95": 1065.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "LeidMi00",
+    "age": 2,
+    "transition": {
+      "actual": 0.0,
+      "mean": 175.80859375,
+      "crps": 36.64786946773529,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 816.0,
+      "intervalScore80": 816.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "LeidMi00",
+    "age": 3,
+    "transition": {
+      "actual": 0.0,
+      "mean": 168.057373046875,
+      "crps": 34.26431977748871,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 758.0,
+      "intervalScore80": 758.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "LeidMi00",
+    "age": 4,
+    "transition": {
+      "actual": 0.0,
+      "mean": 167.77513122558594,
+      "crps": 32.65691593103111,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 633.25,
+      "intervalScore80": 633.25,
+      "lower95": 0.0,
+      "upper95": 1120.9375,
+      "intervalScore95": 1120.9375
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 187.1610870361328,
+      "crps": 37.734551230445504,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1158.125,
+      "intervalScore95": 1158.125
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "LiufSe00",
+    "age": 0,
+    "transition": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "LiufSe00",
+    "age": 1,
+    "transition": {
+      "actual": 0.0,
+      "mean": 185.782958984375,
+      "crps": 39.46764078736305,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 927.0,
+      "intervalScore80": 927.0,
+      "lower95": 0.0,
+      "upper95": 1065.0,
+      "intervalScore95": 1065.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "LiufSe00",
+    "age": 2,
+    "transition": {
+      "actual": 0.0,
+      "mean": 175.80859375,
+      "crps": 36.64786946773529,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 816.0,
+      "intervalScore80": 816.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "LiufSe00",
+    "age": 3,
+    "transition": {
+      "actual": 0.0,
+      "mean": 168.057373046875,
+      "crps": 34.26431977748871,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 758.0,
+      "intervalScore80": 758.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "LiufSe00",
+    "age": 4,
+    "transition": {
+      "actual": 0.0,
+      "mean": 167.77513122558594,
+      "crps": 32.65691593103111,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 633.25,
+      "intervalScore80": 633.25,
+      "lower95": 0.0,
+      "upper95": 1120.9375,
+      "intervalScore95": 1120.9375
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 187.1610870361328,
+      "crps": 37.734551230445504,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1158.125,
+      "intervalScore95": 1158.125
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "MahoPa00",
+    "age": 0,
+    "transition": {
+      "actual": 62.0,
+      "mean": 176.151611328125,
+      "crps": 49.59519401192665,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    },
+    "persistence": {
+      "actual": 62.0,
+      "mean": 176.151611328125,
+      "crps": 49.59519401192665,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "MahoPa00",
+    "age": 1,
+    "transition": {
+      "actual": 1032.0,
+      "mean": 185.782958984375,
+      "crps": 704.288929849863,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 927.0,
+      "intervalScore80": 1977.0000000000002,
+      "lower95": 0.0,
+      "upper95": 1065.0,
+      "intervalScore95": 1065.0
+    },
+    "persistence": {
+      "actual": 1032.0,
+      "mean": 176.151611328125,
+      "crps": 719.7516881525517,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 2742.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "MahoPa00",
+    "age": 2,
+    "transition": {
+      "actual": 880.0,
+      "mean": 175.80859375,
+      "crps": 593.8697932958603,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 816.0,
+      "intervalScore80": 1456.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 880.0,
+      "mean": 176.151611328125,
+      "crps": 588.8405553400517,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 1222.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "MahoPa00",
+    "age": 3,
+    "transition": {
+      "actual": 1027.0,
+      "mean": 168.057373046875,
+      "crps": 728.8541635274887,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 758.0,
+      "intervalScore80": 3448.0000000000005,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 1027.0,
+      "mean": 176.151611328125,
+      "crps": 715.0532018244267,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 2692.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "MahoPa00",
+    "age": 4,
+    "transition": {
+      "actual": 1164.0,
+      "mean": 167.77513122558594,
+      "crps": 861.4594519417733,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 633.25,
+      "intervalScore80": 5940.750000000001,
+      "lower95": 0.0,
+      "upper95": 1120.9375,
+      "intervalScore95": 2843.437499999998
+    },
+    "persistence": {
+      "actual": 1164.0,
+      "mean": 187.1610870361328,
+      "crps": 828.345024863258,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 3588.3750000000005,
+      "lower95": 0.0,
+      "upper95": 1158.125,
+      "intervalScore95": 1393.1249999999998
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "PeteNa00",
+    "age": 0,
+    "transition": {
+      "actual": 98.0,
+      "mean": 176.151611328125,
+      "crps": 65.85080924630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    },
+    "persistence": {
+      "actual": 98.0,
+      "mean": 176.151611328125,
+      "crps": 65.85080924630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "PeteNa00",
+    "age": 1,
+    "transition": {
+      "actual": 148.0,
+      "mean": 185.782958984375,
+      "crps": 88.71837320923805,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 927.0,
+      "intervalScore80": 927.0,
+      "lower95": 0.0,
+      "upper95": 1065.0,
+      "intervalScore95": 1065.0
+    },
+    "persistence": {
+      "actual": 148.0,
+      "mean": 176.151611328125,
+      "crps": 91.44846549630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "PeteNa00",
+    "age": 2,
+    "transition": {
+      "actual": 0.0,
+      "mean": 175.80859375,
+      "crps": 36.64786946773529,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 816.0,
+      "intervalScore80": 816.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "PeteNa00",
+    "age": 3,
+    "transition": {
+      "actual": 11.0,
+      "mean": 168.057373046875,
+      "crps": 35.91324555873871,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 758.0,
+      "intervalScore80": 758.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 11.0,
+      "mean": 176.151611328125,
+      "crps": 37.03415885567665,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "PeteNa00",
+    "age": 4,
+    "transition": {
+      "actual": 4.0,
+      "mean": 167.77513122558594,
+      "crps": 33.30257633142173,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 633.25,
+      "intervalScore80": 633.25,
+      "lower95": 0.0,
+      "upper95": 1120.9375,
+      "intervalScore95": 1120.9375
+    },
+    "persistence": {
+      "actual": 4.0,
+      "mean": 187.1610870361328,
+      "crps": 38.239434042945504,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1158.125,
+      "intervalScore95": 1158.125
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "RushCo00",
+    "age": 0,
+    "transition": {
+      "actual": 15.0,
+      "mean": 176.151611328125,
+      "crps": 37.66990104317665,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    },
+    "persistence": {
+      "actual": 15.0,
+      "mean": 176.151611328125,
+      "crps": 37.66990104317665,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "RushCo00",
+    "age": 1,
+    "transition": {
+      "actual": 6.0,
+      "mean": 185.782958984375,
+      "crps": 40.17613688111305,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 927.0,
+      "intervalScore80": 927.0,
+      "lower95": 0.0,
+      "upper95": 1065.0,
+      "intervalScore95": 1065.0
+    },
+    "persistence": {
+      "actual": 6.0,
+      "mean": 176.151611328125,
+      "crps": 36.27219596505165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "RushCo00",
+    "age": 2,
+    "transition": {
+      "actual": 5.0,
+      "mean": 175.80859375,
+      "crps": 37.32828938961029,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 816.0,
+      "intervalScore80": 816.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 5.0,
+      "mean": 176.151611328125,
+      "crps": 36.14597526192665,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "RushCo00",
+    "age": 3,
+    "transition": {
+      "actual": 0.0,
+      "mean": 168.057373046875,
+      "crps": 34.26431977748871,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 758.0,
+      "intervalScore80": 758.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "RushCo00",
+    "age": 4,
+    "transition": {
+      "actual": 113.0,
+      "mean": 167.77513122558594,
+      "crps": 71.77851322107017,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 633.25,
+      "intervalScore80": 633.25,
+      "lower95": 0.0,
+      "upper95": 1120.9375,
+      "intervalScore95": 1120.9375
+    },
+    "persistence": {
+      "actual": 113.0,
+      "mean": 187.1610870361328,
+      "crps": 74.28698042966425,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1158.125,
+      "intervalScore95": 1158.125
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "RussSe00",
+    "age": 0,
+    "transition": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "RussSe00",
+    "age": 1,
+    "transition": {
+      "actual": 0.0,
+      "mean": 185.782958984375,
+      "crps": 39.46764078736305,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 927.0,
+      "intervalScore80": 927.0,
+      "lower95": 0.0,
+      "upper95": 1065.0,
+      "intervalScore95": 1065.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "RussSe00",
+    "age": 2,
+    "transition": {
+      "actual": 0.0,
+      "mean": 175.80859375,
+      "crps": 36.64786946773529,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 816.0,
+      "intervalScore80": 816.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "RussSe00",
+    "age": 3,
+    "transition": {
+      "actual": 0.0,
+      "mean": 168.057373046875,
+      "crps": 34.26431977748871,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 758.0,
+      "intervalScore80": 758.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "RussSe00",
+    "age": 4,
+    "transition": {
+      "actual": 0.0,
+      "mean": 167.77513122558594,
+      "crps": 32.65691593103111,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 633.25,
+      "intervalScore80": 633.25,
+      "lower95": 0.0,
+      "upper95": 1120.9375,
+      "intervalScore95": 1120.9375
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 187.1610870361328,
+      "crps": 37.734551230445504,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1158.125,
+      "intervalScore95": 1158.125
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "TrubMi00",
+    "age": 0,
+    "transition": {
+      "actual": 724.0,
+      "mean": 176.151611328125,
+      "crps": 468.22410026192665,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    },
+    "persistence": {
+      "actual": 724.0,
+      "mean": 176.151611328125,
+      "crps": 468.22410026192665,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "TrubMi00",
+    "age": 1,
+    "transition": {
+      "actual": 929.0,
+      "mean": 185.782958984375,
+      "crps": 619.534779459238,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 927.0,
+      "intervalScore80": 947.0,
+      "lower95": 0.0,
+      "upper95": 1065.0,
+      "intervalScore95": 1065.0
+    },
+    "persistence": {
+      "actual": 929.0,
+      "mean": 176.151611328125,
+      "crps": 629.5370885431767,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 1712.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "TrubMi00",
+    "age": 2,
+    "transition": {
+      "actual": 942.0,
+      "mean": 175.80859375,
+      "crps": 644.1229671239853,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 816.0,
+      "intervalScore80": 2076.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 942.0,
+      "mean": 176.151611328125,
+      "crps": 640.4709264338017,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 1842.0000000000002,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "TrubMi00",
+    "age": 3,
+    "transition": {
+      "actual": 570.0,
+      "mean": 168.057373046875,
+      "crps": 358.1947396993637,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 758.0,
+      "intervalScore80": 758.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 570.0,
+      "mean": 176.151611328125,
+      "crps": 360.90818229317665,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "TrubMi00",
+    "age": 4,
+    "transition": {
+      "actual": 33.0,
+      "mean": 167.77513122558594,
+      "crps": 41.249918250367045,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 633.25,
+      "intervalScore80": 633.25,
+      "lower95": 0.0,
+      "upper95": 1120.9375,
+      "intervalScore95": 1120.9375
+    },
+    "persistence": {
+      "actual": 33.0,
+      "mean": 187.1610870361328,
+      "crps": 43.636650839820504,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1158.125,
+      "intervalScore95": 1158.125
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "WatsDe00",
+    "age": 0,
+    "transition": {
+      "actual": 464.0,
+      "mean": 176.151611328125,
+      "crps": 287.69675651192665,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    },
+    "persistence": {
+      "actual": 464.0,
+      "mean": 176.151611328125,
+      "crps": 287.69675651192665,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "WatsDe00",
+    "age": 1,
+    "transition": {
+      "actual": 1093.0,
+      "mean": 185.782958984375,
+      "crps": 761.386830240488,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 927.0,
+      "intervalScore80": 2587.0,
+      "lower95": 0.0,
+      "upper95": 1065.0,
+      "intervalScore95": 2184.999999999999
+    },
+    "persistence": {
+      "actual": 1093.0,
+      "mean": 176.151611328125,
+      "crps": 777.1647740900517,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 3352.0000000000005,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1210.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "WatsDe00",
+    "age": 2,
+    "transition": {
+      "actual": 997.0,
+      "mean": 175.80859375,
+      "crps": 689.9972347021103,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 816.0,
+      "intervalScore80": 2626.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 997.0,
+      "mean": 176.151611328125,
+      "crps": 687.3613072931767,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 2392.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "WatsDe00",
+    "age": 3,
+    "transition": {
+      "actual": 978.0,
+      "mean": 168.057373046875,
+      "crps": 686.3624643087387,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 758.0,
+      "intervalScore80": 2958.0000000000005,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 978.0,
+      "mean": 176.151611328125,
+      "crps": 670.7492467463017,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 2202.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "WatsDe00",
+    "age": 4,
+    "transition": {
+      "actual": 0.0,
+      "mean": 167.77513122558594,
+      "crps": 32.65691593103111,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 633.25,
+      "intervalScore80": 633.25,
+      "lower95": 0.0,
+      "upper95": 1120.9375,
+      "intervalScore95": 1120.9375
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 187.1610870361328,
+      "crps": 37.734551230445504,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1158.125,
+      "intervalScore95": 1158.125
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "WebbDa00",
+    "age": 0,
+    "transition": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "WebbDa00",
+    "age": 1,
+    "transition": {
+      "actual": 0.0,
+      "mean": 185.782958984375,
+      "crps": 39.46764078736305,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 927.0,
+      "intervalScore80": 927.0,
+      "lower95": 0.0,
+      "upper95": 1065.0,
+      "intervalScore95": 1065.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "WebbDa00",
+    "age": 2,
+    "transition": {
+      "actual": 0.0,
+      "mean": 175.80859375,
+      "crps": 36.64786946773529,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 816.0,
+      "intervalScore80": 816.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "WebbDa00",
+    "age": 3,
+    "transition": {
+      "actual": 0.0,
+      "mean": 168.057373046875,
+      "crps": 34.26431977748871,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 758.0,
+      "intervalScore80": 758.0,
+      "lower95": 0.0,
+      "upper95": 1058.0,
+      "intervalScore95": 1058.0
+    },
+    "persistence": {
+      "actual": 0.0,
+      "mean": 176.151611328125,
+      "crps": 35.51487174630165,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 842.0,
+      "intervalScore80": 842.0,
+      "lower95": 0.0,
+      "upper95": 1090.0,
+      "intervalScore95": 1090.0
+    }
+  },
+  {
+    "cohort": 2017,
+    "pfrId": "WebbDa00",
+    "age": 4,
+    "transition": {
+      "actual": 4.0,
+      "mean": 167.77513122558594,
+      "crps": 33.30257633142173,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 633.25,
+      "intervalScore80": 633.25,
+      "lower95": 0.0,
+      "upper95": 1120.9375,
+      "intervalScore95": 1120.9375
+    },
+    "persistence": {
+      "actual": 4.0,
+      "mean": 187.1610870361328,
+      "crps": 38.239434042945504,
+      "outsideSupport": false,
+      "lower80": 0.0,
+      "upper80": 894.625,
+      "intervalScore80": 894.625,
+      "lower95": 0.0,
+      "upper95": 1158.125,
+      "intervalScore95": 1158.125
+    }
+  }
+]

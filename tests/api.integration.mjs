@@ -17,7 +17,7 @@ const origin = 'https://redraft.integration.test', scratch = mkdtempSync(join(tm
 const context = new AsyncLocalStorage();
 globalThis.__redraftHeadersContext = context;
 globalThis.__redraftTestEnv = {};
-const tracked = ['app/api/game/route.ts', 'lib/scouting.ts', 'lib/engine.ts', 'lib/simulation.ts', 'lib/server-data.ts', 'analytics/model.json', 'analytics/five_year_strict_2018.json', 'analytics/scoring_recalibration.json', 'data/clean/team_context_2018.json', 'data/clean/team_context_source_manifest.json', 'data/processed/scenario-coverage.json', 'tests/api.integration.mjs',
+const tracked = ['app/api/game/route.ts', 'lib/scouting.ts', 'lib/score-sensitivity.ts', 'lib/engine.ts', 'lib/simulation.ts', 'lib/server-data.ts', 'analytics/model.json', 'analytics/cpu-position-capital-v1.json', 'analytics/five_year_strict_2018.json', 'analytics/scoring_recalibration.json', 'data/clean/team_context_2018.json', 'data/clean/team_context_source_manifest.json', 'data/processed/scenario-coverage.json', 'tests/api.integration.mjs',
     ...readdirSync('data/processed').filter(f => /^scenario-\d{4}\.json$/.test(f)).sort().map(f => 'data/processed/' + f),
     ...readdirSync('analytics').filter(f => /^model-\d{4}\.json$/.test(f)).sort().map(f => 'analytics/' + f),
     ...readdirSync('drizzle').filter(f => f.endsWith('.sql')).sort().map(f => 'drizzle/' + f)];
@@ -95,7 +95,8 @@ const scenarioMatrix = pinnedScenarios.years.map(year => {
     return { year, picks: scenario.picks.length, playableCandidates: scenario.metadata.playableProspectCount, modelVersion: bundle.models.version, teamContextAvailable: bundle.teamContexts.length > 0 };
 });
 const developmentModel = JSON.parse(readFileSync('analytics/five_year_strict_2018.json', 'utf8'));
-const { positionGroup } = await import(pathToFileURL(join(root, 'lib/engine.ts')).href);
+const { advance, LEGACY_RULE_VERSION, positionGroup, RULE_VERSION } = await import(pathToFileURL(join(root, 'lib/engine.ts')).href);
+const { decisionScoreSensitivity } = await import(pathToFileURL(join(root, 'lib/score-sensitivity.ts')).href);
 const cases = [], started = performance.now(), nativeDate = Date, quick = process.argv.includes('--quick');
 let requests = 0, maximumResponseBytes = 0;
 async function call(method, owner, { body, action = 'bootstrap', id, headers: extra = {}, rawBody } = {}) {
@@ -360,7 +361,7 @@ try {
             for (const player of full.alternate.seasons[0].players) {
                 const position = positionGroup(byId.get(player.prospectId).position), group = ['K', 'P', 'LS'].includes(position) ? 'ST' : position;
                 const trajectory = full.alternate.seasons.map(season => season.players.find(p => p.prospectId === player.prospectId).games);
-                assert.ok(developmentModel.donors.some(d => d.position === group && JSON.stringify(d.games) === JSON.stringify(trajectory)), 'Five-year availability must retain one whole observed donor trajectory.');
+                assert.ok(developmentModel.donors.some(d => d.position === group && JSON.stringify(d.games.map((games, age) => { const n = full.alternate.seasons[age].year >= 2021 ? 17 : 16; return Math.min(n, Math.round(games * n / 16)); })) === JSON.stringify(trajectory)), 'Five-year availability must retain one whole donor trajectory adjusted for schedule exposure.');
                 if (full.baseline.seasons[0].players.some(p => p.prospectId === player.prospectId))
                     assert.deepEqual(full.baseline.seasons.map(season => season.players.find(p => p.prospectId === player.prospectId).games), trajectory, 'Common players must retain paired availability random streams.');
             }
@@ -411,6 +412,14 @@ try {
             assertBlind(dailyB);
             assert.equal(dailyA.game.results.decisionScore, dailyB.game.results.decisionScore);
             assert.deepEqual(dailyA.game.results.summary, dailyB.game.results.summary);
+            const { decisionScore, scoreComponents } = stored(dailyA.game.id).results;
+            const officialTotal = scoreComponents.reduce((sum, c) => sum + c.weight * c.score, 0);
+            const alternatives = scoreComponents.flatMap(({ score, weight }) => [-0.5, 0.5].map(delta =>
+                Math.round((officialTotal + score * weight * delta) / (1 + weight * delta))));
+            const expectedRange = { low: Math.min(decisionScore, ...alternatives), high: Math.max(decisionScore, ...alternatives) };
+            assert.deepEqual(decisionScoreSensitivity(decisionScore, scoreComponents), expectedRange);
+            for (const { game: { results } } of [dailyA, dailyB])
+                assert.deepEqual(decisionScoreSensitivity(results.decisionScore, results.scoreComponents), expectedRange);
             for (const s of dailyA.game.results.replicates[0].baseline.seasons) {
                 assert.equal(s.players.length, 0, 'Actual baseline player allocation is sealed until close.');
                 assert.equal(s.starPicks.length, 0);
@@ -424,7 +433,9 @@ try {
             assert.equal(one('SELECT score FROM daily_leaderboard_entries WHERE owner=?', 'daily-a').score, dailyA.game.results.decisionScore);
             await expect('POST', 'daily-a', { body: { ...mutation(dailyA, 'save'), score: 100 } }, 400);
             const replay = await mutate('daily-a', dailyA, 'simulate');
-            assert.equal(replay.game.results.decisionScore, dailyA.game.results.decisionScore);
+            assert.equal(replay.game.results.decisionScore, decisionScore);
+            assert.deepEqual(replay.game.results.scoreComponents, scoreComponents);
+            assert.deepEqual(stored(dailyA.game.id).results.scoreComponents, scoreComponents);
             assert.equal(one('SELECT count(*) AS n FROM daily_leaderboard_entries WHERE owner=?', 'daily-a').n, 1);
         });
     await check('UTC rollover closes old attempts and reveals completed draft identities', async () => {
@@ -445,6 +456,31 @@ try {
         }
         finally {
             globalThis.Date = nativeDate;
+        }
+    });
+    await check('saved drafts and daily challenges retain their supported engine version', async () => {
+        const date = new nativeDate().toISOString().slice(0, 10);
+        const original = one('SELECT config FROM daily_challenges WHERE date=?', date).config;
+        const config = { ...JSON.parse(original), engineVersion: LEGACY_RULE_VERSION };
+        database.sql.prepare('UPDATE daily_challenges SET config=? WHERE date=?').run(JSON.stringify(config), date);
+        try {
+            const fresh = await expect('POST', 'versioned-engine-owner', { body: newPayload() }, 201);
+            assert.equal(fresh.game.engineVersion, RULE_VERSION);
+            const daily = await expect('POST', 'versioned-engine-owner', { body: newPayload('daily') }, 201);
+            assert.equal(daily.game.engineVersion, LEGACY_RULE_VERSION);
+            const saved = stored(daily.game.id);
+            const { dataset, models } = pinnedScenarios.getScenario(daily.game.year);
+            const expected = advance(saved, dataset, models, 'one');
+            const resumed = await load('versioned-engine-owner', daily.game.id);
+            assert.equal(resumed.compatibilityWarning, undefined);
+            await mutate('versioned-engine-owner', resumed, 'advance', { pace: 'one' });
+            const updated = stored(daily.game.id);
+            assert.equal(updated.engineVersion, LEGACY_RULE_VERSION);
+            assert.deepEqual(updated.selections, expected.selections);
+            assert.deepEqual(updated.trades, expected.trades);
+        }
+        finally {
+            database.sql.prepare('UPDATE daily_challenges SET config=? WHERE date=?').run(original, date);
         }
     });
     await check('frozen daily versions and rate limits are enforced', async () => {
@@ -476,7 +512,9 @@ try {
             assert.equal(source.picks.length, source.actualPicks.length);
             assert.equal(bundle.models.usagePolicy, undefined, `${year} must not borrow 2018's usage context.`);
             assert.ok(bundle.models.prospect.projections.some(p => p.supported === true));
-            assert.ok(bundle.models.version.includes(`redraft-${year}-pre2018-logistic-C10-v1`));
+            const artifact = JSON.parse(readFileSync(`analytics/model-${year}.json`, 'utf8'));
+            assert.ok(bundle.models.version.startsWith(artifact.version + '+'));
+            assert.ok(bundle.models.version.includes('five-year-2013-exposure-v2'));
             assert.equal(bundle.teamContexts.length, 0);
             assert.equal(bundle.teamContextMetadata.available, false);
             const priorSeason = year - 1;
@@ -489,6 +527,17 @@ try {
             let view = await expect('POST', owner, { body: newPayload('historical', { year, team: 'ARI', seed: `scenario-api-${year}` }) }, 201);
             assert.equal(view.game.year, year);
             assert.equal(view.game.modelVersion, bundle.models.version);
+            if (year === 2021) {
+                assert.equal(source.actualPicks.find(p => p.overall === 3).prospectId, 'p2021-4a3e07404f');
+                const current = stored(view.game.id);
+                restore(view.game.id, { ...current, datasetVersion: 'nflverse-2021-combine-pool-v1', modelVersion: 'redraft-2021-pre2018-logistic-C10-v1+blind-g5-v1+nflverse-2021-combine-pool-v1' });
+                const retired = await load(owner, view.game.id);
+                assert.match(retired.compatibilityWarning, /retired model or dataset/);
+                await expect('POST', owner, { body: mutation(retired, 'advance', { pace: 'one' }) }, 409);
+                restore(view.game.id, current);
+                view = await load(owner, view.game.id);
+                assert.equal(view.compatibilityWarning, undefined);
+            }
             assert.equal(view.game.picks.length, source.picks.length);
             assert.equal(view.prospects.length, source.metadata.playableProspectCount);
             view = await finishDraft(owner, view);

@@ -1,0 +1,4940 @@
+{
+  "evaluationStatus": "Pending complete and reconciled 2026 regular-season snap outcomes",
+  "targets": {
+    "annual5": {
+      "season": 2026
+    },
+    "cumulative5": {
+      "seasons": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    }
+  },
+  "scoreDefinitions": "Frozen in PROTOCOL.md; keep 2026 and five-season assessments out until complete.",
+  "commonSourceHashes": {
+    "analytics/qb_partial/study.py": "3ec0d41e21258405da74b233e1e9bc61e0221c7b15e9566906d01f8565851c29",
+    "analytics/qb_partial/runtime.ts": "4b298a909c683c9bc738386fcd97302eaa565a64b5271e2626852f19a265bdc5",
+    "analytics/qb_partial/runtime.mjs": "11211e227f7e0e329cd28ac24af07eac81cdfb5d3c0798437e0b7f4f9071b18b",
+    "analytics/qb_partial/PROTOCOL.md": "0025f623ba66ebbc3bfa8a8f87782ba6d6b5dfb2b5a8d4faa05a92c1ca67abab",
+    "analytics/qb_partial/identity_links.json": "4c1a3c236c75e3134002c131121172ef4d97a3b43ab4beae298bfefd8fd3d86d",
+    "analytics/qb_conditioned/review.py": "4efc9b7386f48a356ba8b493054e8c89e4c233c57a61d3db863347d7bc452752",
+    "analytics/forecast_audit.py": "152b7587d4c8255e6f51e7198a7136d3b2405ad83eb18ae8fcf9ad45f6488197",
+    "analytics/five_year.py": "f66e57954eeafb6258f88ec558a643f4c02c1d8379fa72d5c1a58ccf9b7dc06e",
+    "analytics/train_models.py": "e1821927ca475f22a3b5cb5aa7245c04058c477010bd3259a5217fc328570c6c",
+    "analytics/five_year_strict_2018.json": "a717e2d683ab57c8f79f963d672598810593bae69945c8d00db82857d6c647e1",
+    "analytics/model.json": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0",
+    "lib/server-data.ts": "0ede48d68b376a2ad5adb3633680bfa0f067e3a2469aeff3d3b10338fb556be3",
+    "lib/scouting.ts": "751b61f9f77e62c64e1623831dc75144b48d691f63497eb78298a978e63b6ca8",
+    "lib/engine.ts": "3ccb1d7fda59fa60ea691e154a89776896b24b347ec6ec2c2a596686e7cb3918",
+    "lib/simulation.ts": "e03f6afab57ae9c5288eaa343e58a9f977e2dee51c73ab77f06cdf6d75ac49ca",
+    "data/raw/combine.csv": "5648886b1bb9de8a0c42b05ee7b1d9cbe58897676caaa2f6a4a3d3c9228235bb",
+    "data/raw/games.csv": "369967042aac4f7b431c8644c197c6829e8428f7776058e4a058506ea4dece76"
+  },
+  "origin": {
+    "year": 2022,
+    "cutoff": "2022-04-28T23:59:00Z",
+    "modelVersion": "redraft-2022-pre2018-logistic-C10-v1+five-year-2013-exposure-v2+blind-g5-v1+nflverse-2022-combine-pool-v1",
+    "rookieModelFitThroughSeason": 2017,
+    "rookieFitLabelCutoff": "2018-04-26T00:00:00Z",
+    "sourceHashes": {
+      "analytics/model-2022.json": "9579d70620a4f20ede36008bdcc745d913f8ba1aa7f64b4276104561491b8457",
+      "data/processed/scenario-2022.json": "ea6846602cddfe179544b1d845c811a1848c59de69084c210c03080ac4d46f63"
+    },
+    "donorSourceCoverage": {
+      "2013": {
+        "expectedGames": 256,
+        "observedGames": 256,
+        "rows": 22821,
+        "sha256": "9d1fdd557875b9a2c71d88e583da24a739dfca671edf8223d6171e39a421000e"
+      },
+      "2014": {
+        "expectedGames": 256,
+        "observedGames": 256,
+        "rows": 22880,
+        "sha256": "84540709d9483552185c8ca3ef30b2f66fb94b30c3e6c21e7a27205f337f21d3"
+      },
+      "2015": {
+        "expectedGames": 256,
+        "observedGames": 256,
+        "rows": 22864,
+        "sha256": "841496252ada825c3c50d3ba9b4b26d3f4fabd0fedc5fb44f286ddaaa5bdb7e0"
+      },
+      "2016": {
+        "expectedGames": 256,
+        "observedGames": 256,
+        "rows": 22904,
+        "sha256": "a778e24e9eb665ffe8f16093b03c5a263dca0250b3aa92bd6002f61f534bea59"
+      },
+      "2017": {
+        "expectedGames": 256,
+        "observedGames": 256,
+        "rows": 22876,
+        "sha256": "eab2fad2df99249d4061ed9c5c34d312cdba07cf3159d027d255bdc9b6526917"
+      },
+      "2018": {
+        "expectedGames": 256,
+        "observedGames": 256,
+        "rows": 22895,
+        "sha256": "9a408b78a55f799110aed70de3564e157faf089ce9bed780d0368bf49ae13e0b"
+      },
+      "2019": {
+        "expectedGames": 256,
+        "observedGames": 256,
+        "rows": 22884,
+        "sha256": "0cd52be8fa57f18503b670cb8263246c4f548375b768cbcad1c7a7462c98970d"
+      },
+      "2020": {
+        "expectedGames": 256,
+        "observedGames": 256,
+        "rows": 23790,
+        "sha256": "512e35f17d076eb5d99b933c4a144eb95dcddf40c0320dbb397cae3c35683716"
+      },
+      "2021": {
+        "expectedGames": 272,
+        "observedGames": 272,
+        "rows": 25271,
+        "sha256": "8e4dae054a4749cf2d4919508d9161a6068fd67509979aefa385bfb3803d0ee5"
+      }
+    },
+    "donorManifest": [
+      {
+        "cohort": 2013,
+        "count": 15,
+        "rookieRole": 3,
+        "labelAvailableBy": "2018-03-01"
+      },
+      {
+        "cohort": 2014,
+        "count": 18,
+        "rookieRole": 4,
+        "labelAvailableBy": "2019-03-01"
+      },
+      {
+        "cohort": 2015,
+        "count": 12,
+        "rookieRole": 2,
+        "labelAvailableBy": "2020-03-01"
+      },
+      {
+        "cohort": 2016,
+        "count": 17,
+        "rookieRole": 4,
+        "labelAvailableBy": "2021-03-01"
+      },
+      {
+        "cohort": 2017,
+        "count": 15,
+        "rookieRole": 4,
+        "labelAvailableBy": "2022-03-01"
+      }
+    ],
+    "qbDonorIdentityRepairs": [],
+    "pools": {
+      "baseline": [
+        {
+          "rookieRole": false,
+          "cohort": 2013,
+          "snaps": [
+            80.75,
+            6.375,
+            0.0,
+            437.75,
+            0.0
+          ],
+          "games": [
+            3.0,
+            1.0,
+            0.0,
+            7.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2013,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            4.25
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2013,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2013,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": true,
+          "cohort": 2013,
+          "snaps": [
+            894.625,
+            386.75,
+            0.0,
+            15.9375,
+            280.5
+          ],
+          "games": [
+            14.0,
+            6.0,
+            0.0,
+            2.0,
+            4.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2013,
+          "snaps": [
+            115.8125,
+            166.8125,
+            27.625,
+            268.8125,
+            134.9375
+          ],
+          "games": [
+            13.0,
+            14.0,
+            4.0,
+            17.0,
+            17.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2013,
+          "snaps": [
+            0.0,
+            0.0,
+            115.8125,
+            171.0625,
+            74.375
+          ],
+          "games": [
+            0.0,
+            0.0,
+            7.0,
+            9.0,
+            3.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2013,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": true,
+          "cohort": 2013,
+          "snaps": [
+            737.375,
+            275.1875,
+            164.6875,
+            82.875,
+            80.75
+          ],
+          "games": [
+            11.0,
+            5.0,
+            6.0,
+            6.0,
+            2.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2013,
+          "snaps": [
+            0.0,
+            20.1875,
+            6.375,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            4.0,
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2013,
+          "snaps": [
+            0.0,
+            0.0,
+            25.5,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            2.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2013,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": true,
+          "cohort": 2013,
+          "snaps": [
+            1046.5625,
+            867.0,
+            69.0625,
+            35.0625,
+            70.125
+          ],
+          "games": [
+            17.0,
+            15.0,
+            1.0,
+            2.0,
+            2.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2013,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2013,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "candidate": [
+        {
+          "rookieRole": false,
+          "cohort": 2013,
+          "snaps": [
+            80.75,
+            6.375,
+            0.0,
+            437.75,
+            0.0
+          ],
+          "games": [
+            3.0,
+            1.0,
+            0.0,
+            7.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2013,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            4.25
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2013,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2013,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": true,
+          "cohort": 2013,
+          "snaps": [
+            894.625,
+            386.75,
+            0.0,
+            15.9375,
+            280.5
+          ],
+          "games": [
+            14.0,
+            6.0,
+            0.0,
+            2.0,
+            4.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2013,
+          "snaps": [
+            115.8125,
+            166.8125,
+            27.625,
+            268.8125,
+            134.9375
+          ],
+          "games": [
+            13.0,
+            14.0,
+            4.0,
+            17.0,
+            17.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2013,
+          "snaps": [
+            0.0,
+            0.0,
+            115.8125,
+            171.0625,
+            74.375
+          ],
+          "games": [
+            0.0,
+            0.0,
+            7.0,
+            9.0,
+            3.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2013,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": true,
+          "cohort": 2013,
+          "snaps": [
+            737.375,
+            275.1875,
+            164.6875,
+            82.875,
+            80.75
+          ],
+          "games": [
+            11.0,
+            5.0,
+            6.0,
+            6.0,
+            2.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2013,
+          "snaps": [
+            0.0,
+            20.1875,
+            6.375,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            4.0,
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2013,
+          "snaps": [
+            0.0,
+            0.0,
+            25.5,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            2.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2013,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": true,
+          "cohort": 2013,
+          "snaps": [
+            1046.5625,
+            867.0,
+            69.0625,
+            35.0625,
+            70.125
+          ],
+          "games": [
+            17.0,
+            15.0,
+            1.0,
+            2.0,
+            2.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2013,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2013,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": true,
+          "cohort": 2014,
+          "snaps": [
+            952.0,
+            1124.125,
+            1181.5,
+            1171.9375,
+            825.5625
+          ],
+          "games": [
+            15.0,
+            17.0,
+            17.0,
+            17.0,
+            14.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2014,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": true,
+          "cohort": 2014,
+          "snaps": [
+            843.625,
+            1054.0,
+            0.0,
+            9.5625,
+            75.4375
+          ],
+          "games": [
+            14.0,
+            17.0,
+            0.0,
+            1.0,
+            5.0
+          ]
+        },
+        {
+          "rookieRole": true,
+          "cohort": 2014,
+          "snaps": [
+            1050.8125,
+            1075.25,
+            1113.5,
+            990.25,
+            1094.375
+          ],
+          "games": [
+            17.0,
+            17.0,
+            16.0,
+            16.0,
+            17.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2014,
+          "snaps": [
+            0.0,
+            0.0,
+            9.5625,
+            75.4375,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            1.0,
+            2.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2014,
+          "snaps": [
+            73.3125,
+            13.8125,
+            153.0,
+            372.9375,
+            209.3125
+          ],
+          "games": [
+            6.0,
+            5.0,
+            6.0,
+            6.0,
+            3.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2014,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2014,
+          "snaps": [
+            80.75,
+            462.1875,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            5.0,
+            10.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2014,
+          "snaps": [
+            0.0,
+            273.0625,
+            2.125,
+            27.625,
+            12.75
+          ],
+          "games": [
+            0.0,
+            7.0,
+            1.0,
+            3.0,
+            2.0
+          ]
+        },
+        {
+          "rookieRole": true,
+          "cohort": 2014,
+          "snaps": [
+            325.125,
+            287.9375,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            7.0,
+            7.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2014,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2014,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2014,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2014,
+          "snaps": [
+            63.75,
+            0.0,
+            155.125,
+            446.25,
+            0.0
+          ],
+          "games": [
+            2.0,
+            0.0,
+            3.0,
+            9.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2014,
+          "snaps": [
+            69.0625,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2014,
+          "snaps": [
+            18.0625,
+            0.0,
+            0.0,
+            164.6875,
+            301.75
+          ],
+          "games": [
+            2.0,
+            0.0,
+            0.0,
+            13.0,
+            13.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2014,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2014,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2015,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2015,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2015,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2015,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2015,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2015,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2015,
+          "snaps": [
+            0.0,
+            23.375,
+            661.9375,
+            0.0,
+            42.5
+          ],
+          "games": [
+            0.0,
+            4.0,
+            12.0,
+            0.0,
+            3.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2015,
+          "snaps": [
+            7.4375,
+            17.0,
+            107.3125,
+            38.25,
+            57.375
+          ],
+          "games": [
+            1.0,
+            1.0,
+            5.0,
+            3.0,
+            3.0
+          ]
+        },
+        {
+          "rookieRole": true,
+          "cohort": 2015,
+          "snaps": [
+            778.8125,
+            1024.25,
+            1001.9375,
+            823.4375,
+            376.125
+          ],
+          "games": [
+            13.0,
+            16.0,
+            16.0,
+            15.0,
+            7.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2015,
+          "snaps": [
+            0.0,
+            260.3125,
+            230.5625,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            6.0,
+            4.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2015,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": true,
+          "cohort": 2015,
+          "snaps": [
+            1158.125,
+            1188.9375,
+            839.375,
+            731.0,
+            1198.5
+          ],
+          "games": [
+            17.0,
+            17.0,
+            14.0,
+            12.0,
+            17.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2016,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            187.0,
+            294.3125
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            3.0,
+            5.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2016,
+          "snaps": [
+            56.3125,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            5.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2016,
+          "snaps": [
+            165.75,
+            1050.8125,
+            19.125,
+            1006.1875,
+            49.9375
+          ],
+          "games": [
+            3.0,
+            17.0,
+            4.0,
+            16.0,
+            12.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2016,
+          "snaps": [
+            34.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2016,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2016,
+          "snaps": [
+            0.0,
+            0.0,
+            395.25,
+            231.625,
+            122.1875
+          ],
+          "games": [
+            0.0,
+            0.0,
+            10.0,
+            3.0,
+            3.0
+          ]
+        },
+        {
+          "rookieRole": true,
+          "cohort": 2016,
+          "snaps": [
+            416.5,
+            990.25,
+            1130.5,
+            1164.5,
+            1111.375
+          ],
+          "games": [
+            7.0,
+            16.0,
+            17.0,
+            17.0,
+            16.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2016,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2016,
+          "snaps": [
+            53.125,
+            142.375,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            4.0,
+            4.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2016,
+          "snaps": [
+            20.1875,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": true,
+          "cohort": 2016,
+          "snaps": [
+            370.8125,
+            51.0,
+            279.4375,
+            0.0,
+            0.0
+          ],
+          "games": [
+            10.0,
+            3.0,
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2016,
+          "snaps": [
+            187.0,
+            104.125,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            3.0,
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": true,
+          "cohort": 2016,
+          "snaps": [
+            1074.1875,
+            1115.625,
+            1136.875,
+            1185.75,
+            382.5
+          ],
+          "games": [
+            17.0,
+            17.0,
+            17.0,
+            17.0,
+            5.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2016,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2016,
+          "snaps": [
+            0.0,
+            42.5,
+            11.6875,
+            0.0,
+            19.125
+          ],
+          "games": [
+            0.0,
+            1.0,
+            2.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "rookieRole": true,
+          "cohort": 2016,
+          "snaps": [
+            1195.3125,
+            936.0625,
+            769.25,
+            1219.75,
+            859.5625
+          ],
+          "games": [
+            17.0,
+            14.0,
+            12.0,
+            17.0,
+            13.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2016,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": true,
+          "cohort": 2017,
+          "snaps": [
+            415.4375,
+            362.3125,
+            0.0,
+            197.625,
+            7.0
+          ],
+          "games": [
+            7.0,
+            6.0,
+            0.0,
+            6.0,
+            2.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2017,
+          "snaps": [
+            0.0,
+            31.875,
+            0.0,
+            9.5625,
+            0.0
+          ],
+          "games": [
+            0.0,
+            5.0,
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2017,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2017,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": true,
+          "cohort": 2017,
+          "snaps": [
+            941.375,
+            65.875,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            16.0,
+            3.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2017,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2017,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2017,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2017,
+          "snaps": [
+            65.875,
+            1096.5,
+            935.0,
+            1091.1875,
+            1164.0
+          ],
+          "games": [
+            1.0,
+            17.0,
+            15.0,
+            16.0,
+            17.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2017,
+          "snaps": [
+            104.125,
+            157.25,
+            0.0,
+            11.6875,
+            4.0
+          ],
+          "games": [
+            4.0,
+            4.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2017,
+          "snaps": [
+            15.9375,
+            6.375,
+            5.3125,
+            0.0,
+            113.0
+          ],
+          "games": [
+            2.0,
+            1.0,
+            2.0,
+            0.0,
+            5.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2017,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": true,
+          "cohort": 2017,
+          "snaps": [
+            769.25,
+            987.0625,
+            1000.875,
+            605.625,
+            33.0
+          ],
+          "games": [
+            13.0,
+            15.0,
+            16.0,
+            11.0,
+            6.0
+          ]
+        },
+        {
+          "rookieRole": true,
+          "cohort": 2017,
+          "snaps": [
+            493.0,
+            1161.3125,
+            1059.3125,
+            1039.125,
+            0.0
+          ],
+          "games": [
+            7.0,
+            17.0,
+            16.0,
+            17.0,
+            0.0
+          ]
+        },
+        {
+          "rookieRole": false,
+          "cohort": 2017,
+          "snaps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            4.0
+          ],
+          "games": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    "baselineExposureParity": true,
+    "sourceExclusions": [],
+    "runtimeProspectsOutsideSample": [],
+    "runtimePlayableQbs": 15
+  },
+  "forecasts": [
+    {
+      "cohort": 2022,
+      "pfrId": "CoanJa00",
+      "identitySource": "combine",
+      "prospectId": "p2022-f70f2b526f",
+      "name": "Jack Coan",
+      "school": "Notre Dame",
+      "probability": 0.15713380000000002,
+      "profile": "QB-1",
+      "profileTier": "other",
+      "arms": {
+        "baseline": {
+          "massInDonorOrder": [
+            0.07023885,
+            0.07023885,
+            0.07023885,
+            0.07023885,
+            0.05237793333333334,
+            0.07023885,
+            0.07023885,
+            0.07023885,
+            0.05237793333333334,
+            0.07023885,
+            0.07023885,
+            0.07023885,
+            0.05237793333333334,
+            0.07023885,
+            0.07023885
+          ],
+          "annual5": {
+            "snaps": {
+              "mean": 37.59491539479167,
+              "interval80": [
+                0.0,
+                134.9375
+              ],
+              "interval95": [
+                0.0,
+                280.5
+              ]
+            },
+            "games": {
+              "mean": 1.894039316666667,
+              "interval80": [
+                0.0,
+                4.0
+              ],
+              "interval95": [
+                0.0,
+                17.0
+              ]
+            }
+          },
+          "cumulative5": {
+            "snaps": {
+              "mean": 378.5763883302084,
+              "interval80": [
+                0.0,
+                1577.8125
+              ],
+              "interval95": [
+                0.0,
+                2087.8125
+              ]
+            },
+            "games": {
+              "mean": 12.105749350000002,
+              "interval80": [
+                0.0,
+                37.0
+              ],
+              "interval95": [
+                0.0,
+                65.0
+              ]
+            }
+          }
+        },
+        "candidate": {
+          "massInDonorOrder": [
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.009243164705882354,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.009243164705882354,
+            0.01404777
+          ],
+          "annual5": {
+            "snaps": {
+              "mean": 95.7422554038603,
+              "interval80": [
+                0.0,
+                294.3125
+              ],
+              "interval95": [
+                0.0,
+                1111.375
+              ]
+            },
+            "games": {
+              "mean": 2.2810474176470588,
+              "interval80": [
+                0.0,
+                12.0
+              ],
+              "interval95": [
+                0.0,
+                17.0
+              ]
+            }
+          },
+          "cumulative5": {
+            "snaps": {
+              "mean": 691.1243834894854,
+              "interval80": [
+                0.0,
+                2291.8125
+              ],
+              "interval95": [
+                0.0,
+                5115.9375
+              ]
+            },
+            "games": {
+              "mean": 13.97264060117647,
+              "interval80": [
+                0.0,
+                61.0
+              ],
+              "interval95": [
+                0.0,
+                77.0
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "cohort": 2022,
+      "pfrId": "CorrMa00",
+      "identitySource": "combine",
+      "prospectId": "p2022-616c4c7b17",
+      "name": "Matt Corral",
+      "school": "Mississippi",
+      "probability": 0.1275452,
+      "profile": "QB-0",
+      "profileTier": "lowest",
+      "arms": {
+        "baseline": {
+          "massInDonorOrder": [
+            0.07270456666666666,
+            0.07270456666666666,
+            0.07270456666666666,
+            0.07270456666666666,
+            0.042515066666666664,
+            0.07270456666666666,
+            0.07270456666666666,
+            0.07270456666666666,
+            0.042515066666666664,
+            0.07270456666666666,
+            0.07270456666666666,
+            0.07270456666666666,
+            0.042515066666666664,
+            0.07270456666666666,
+            0.07270456666666666
+          ],
+          "annual5": {
+            "snaps": {
+              "mean": 33.86690590208333,
+              "interval80": [
+                0.0,
+                134.9375
+              ],
+              "interval95": [
+                0.0,
+                280.5
+              ]
+            },
+            "games": {
+              "mean": 1.866916433333333,
+              "interval80": [
+                0.0,
+                4.0
+              ],
+              "interval95": [
+                0.0,
+                17.0
+              ]
+            }
+          },
+          "cumulative5": {
+            "snaps": {
+              "mean": 333.28225191458336,
+              "interval80": [
+                0.0,
+                1340.875
+              ],
+              "interval95": [
+                0.0,
+                2087.8125
+              ]
+            },
+            "games": {
+              "mean": 11.442471566666665,
+              "interval80": [
+                0.0,
+                37.0
+              ],
+              "interval95": [
+                0.0,
+                65.0
+              ]
+            }
+          }
+        },
+        "candidate": {
+          "massInDonorOrder": [
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.007502658823529412,
+            0.014540913333333332
+          ],
+          "annual5": {
+            "snaps": {
+              "mean": 85.8980719800245,
+              "interval80": [
+                0.0,
+                280.5
+              ],
+              "interval95": [
+                0.0,
+                1111.375
+              ]
+            },
+            "games": {
+              "mean": 2.1339746705882354,
+              "interval80": [
+                0.0,
+                7.0
+              ],
+              "interval95": [
+                0.0,
+                17.0
+              ]
+            }
+          },
+          "cumulative5": {
+            "snaps": {
+              "mean": 608.3591261871077,
+              "interval80": [
+                0.0,
+                2087.8125
+              ],
+              "interval95": [
+                0.0,
+                4979.9375
+              ]
+            },
+            "games": {
+              "mean": 12.716169404705882,
+              "interval80": [
+                0.0,
+                52.0
+              ],
+              "interval95": [
+                0.0,
+                73.0
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "cohort": 2022,
+      "pfrId": "CrumDu00",
+      "identitySource": "combine",
+      "prospectId": "p2022-2c7d0edb48",
+      "name": "Dustin Crum",
+      "school": "Kent St.",
+      "probability": 0.29496920000000004,
+      "profile": "QB-2",
+      "profileTier": "other",
+      "arms": {
+        "baseline": {
+          "massInDonorOrder": [
+            0.058752566666666665,
+            0.058752566666666665,
+            0.058752566666666665,
+            0.058752566666666665,
+            0.09832306666666668,
+            0.058752566666666665,
+            0.058752566666666665,
+            0.058752566666666665,
+            0.09832306666666668,
+            0.058752566666666665,
+            0.058752566666666665,
+            0.058752566666666665,
+            0.09832306666666668,
+            0.058752566666666665,
+            0.058752566666666665
+          ],
+          "annual5": {
+            "snaps": {
+              "mean": 54.96145790208333,
+              "interval80": [
+                0.0,
+                134.9375
+              ],
+              "interval95": [
+                0.0,
+                280.5
+              ]
+            },
+            "games": {
+              "mean": 2.0203884333333333,
+              "interval80": [
+                0.0,
+                4.0
+              ],
+              "interval95": [
+                0.0,
+                17.0
+              ]
+            }
+          },
+          "cumulative5": {
+            "snaps": {
+              "mean": 589.5743879145833,
+              "interval80": [
+                0.0,
+                1577.8125
+              ],
+              "interval95": [
+                0.0,
+                2087.8125
+              ]
+            },
+            "games": {
+              "mean": 15.19555956666667,
+              "interval80": [
+                0.0,
+                37.0
+              ],
+              "interval95": [
+                0.0,
+                65.0
+              ]
+            }
+          }
+        },
+        "candidate": {
+          "massInDonorOrder": [
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.01735112941176471,
+            0.011750513333333332
+          ],
+          "annual5": {
+            "snaps": {
+              "mean": 141.60035480355393,
+              "interval80": [
+                0.0,
+                382.5
+              ],
+              "interval95": [
+                0.0,
+                1164.0
+              ]
+            },
+            "games": {
+              "mean": 2.966170435294118,
+              "interval80": [
+                0.0,
+                13.0
+              ],
+              "interval95": [
+                0.0,
+                17.0
+              ]
+            }
+          },
+          "cumulative5": {
+            "snaps": {
+              "mean": 1076.6776826106372,
+              "interval80": [
+                0.0,
+                4813.125
+              ],
+              "interval95": [
+                0.0,
+                5255.125
+              ]
+            },
+            "games": {
+              "mean": 19.825780322352948,
+              "interval80": [
+                0.0,
+                73.0
+              ],
+              "interval95": [
+                0.0,
+                80.0
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "cohort": 2022,
+      "pfrId": "ElebKa00",
+      "identitySource": "combine",
+      "prospectId": "p2022-fae9925de7",
+      "name": "Kaleb Eleby",
+      "school": "Western Michigan",
+      "probability": 0.1275452,
+      "profile": "QB-0",
+      "profileTier": "lowest",
+      "arms": {
+        "baseline": {
+          "massInDonorOrder": [
+            0.07270456666666666,
+            0.07270456666666666,
+            0.07270456666666666,
+            0.07270456666666666,
+            0.042515066666666664,
+            0.07270456666666666,
+            0.07270456666666666,
+            0.07270456666666666,
+            0.042515066666666664,
+            0.07270456666666666,
+            0.07270456666666666,
+            0.07270456666666666,
+            0.042515066666666664,
+            0.07270456666666666,
+            0.07270456666666666
+          ],
+          "annual5": {
+            "snaps": {
+              "mean": 33.86690590208333,
+              "interval80": [
+                0.0,
+                134.9375
+              ],
+              "interval95": [
+                0.0,
+                280.5
+              ]
+            },
+            "games": {
+              "mean": 1.866916433333333,
+              "interval80": [
+                0.0,
+                4.0
+              ],
+              "interval95": [
+                0.0,
+                17.0
+              ]
+            }
+          },
+          "cumulative5": {
+            "snaps": {
+              "mean": 333.28225191458336,
+              "interval80": [
+                0.0,
+                1340.875
+              ],
+              "interval95": [
+                0.0,
+                2087.8125
+              ]
+            },
+            "games": {
+              "mean": 11.442471566666665,
+              "interval80": [
+                0.0,
+                37.0
+              ],
+              "interval95": [
+                0.0,
+                65.0
+              ]
+            }
+          }
+        },
+        "candidate": {
+          "massInDonorOrder": [
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.007502658823529412,
+            0.014540913333333332
+          ],
+          "annual5": {
+            "snaps": {
+              "mean": 85.8980719800245,
+              "interval80": [
+                0.0,
+                280.5
+              ],
+              "interval95": [
+                0.0,
+                1111.375
+              ]
+            },
+            "games": {
+              "mean": 2.1339746705882354,
+              "interval80": [
+                0.0,
+                7.0
+              ],
+              "interval95": [
+                0.0,
+                17.0
+              ]
+            }
+          },
+          "cumulative5": {
+            "snaps": {
+              "mean": 608.3591261871077,
+              "interval80": [
+                0.0,
+                2087.8125
+              ],
+              "interval95": [
+                0.0,
+                4979.9375
+              ]
+            },
+            "games": {
+              "mean": 12.716169404705882,
+              "interval80": [
+                0.0,
+                52.0
+              ],
+              "interval95": [
+                0.0,
+                73.0
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "cohort": 2022,
+      "pfrId": "HoweSa00",
+      "identitySource": "combine",
+      "prospectId": "p2022-5a0e514db8",
+      "name": "Sam Howell",
+      "school": "North Carolina",
+      "probability": 0.15713380000000002,
+      "profile": "QB-1",
+      "profileTier": "other",
+      "arms": {
+        "baseline": {
+          "massInDonorOrder": [
+            0.07023885,
+            0.07023885,
+            0.07023885,
+            0.07023885,
+            0.05237793333333334,
+            0.07023885,
+            0.07023885,
+            0.07023885,
+            0.05237793333333334,
+            0.07023885,
+            0.07023885,
+            0.07023885,
+            0.05237793333333334,
+            0.07023885,
+            0.07023885
+          ],
+          "annual5": {
+            "snaps": {
+              "mean": 37.59491539479167,
+              "interval80": [
+                0.0,
+                134.9375
+              ],
+              "interval95": [
+                0.0,
+                280.5
+              ]
+            },
+            "games": {
+              "mean": 1.894039316666667,
+              "interval80": [
+                0.0,
+                4.0
+              ],
+              "interval95": [
+                0.0,
+                17.0
+              ]
+            }
+          },
+          "cumulative5": {
+            "snaps": {
+              "mean": 378.5763883302084,
+              "interval80": [
+                0.0,
+                1577.8125
+              ],
+              "interval95": [
+                0.0,
+                2087.8125
+              ]
+            },
+            "games": {
+              "mean": 12.105749350000002,
+              "interval80": [
+                0.0,
+                37.0
+              ],
+              "interval95": [
+                0.0,
+                65.0
+              ]
+            }
+          }
+        },
+        "candidate": {
+          "massInDonorOrder": [
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.009243164705882354,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.009243164705882354,
+            0.01404777
+          ],
+          "annual5": {
+            "snaps": {
+              "mean": 95.7422554038603,
+              "interval80": [
+                0.0,
+                294.3125
+              ],
+              "interval95": [
+                0.0,
+                1111.375
+              ]
+            },
+            "games": {
+              "mean": 2.2810474176470588,
+              "interval80": [
+                0.0,
+                12.0
+              ],
+              "interval95": [
+                0.0,
+                17.0
+              ]
+            }
+          },
+          "cumulative5": {
+            "snaps": {
+              "mean": 691.1243834894854,
+              "interval80": [
+                0.0,
+                2291.8125
+              ],
+              "interval95": [
+                0.0,
+                5115.9375
+              ]
+            },
+            "games": {
+              "mean": 13.97264060117647,
+              "interval80": [
+                0.0,
+                61.0
+              ],
+              "interval95": [
+                0.0,
+                77.0
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "cohort": 2022,
+      "pfrId": null,
+      "identitySource": "identity_links.json",
+      "prospectId": "p2022-d1d8a2d4b1",
+      "name": "Cole Kelley",
+      "school": "Southeastern Louisiana",
+      "probability": 0.29496920000000004,
+      "profile": "QB-2",
+      "profileTier": "other",
+      "arms": {
+        "baseline": {
+          "massInDonorOrder": [
+            0.058752566666666665,
+            0.058752566666666665,
+            0.058752566666666665,
+            0.058752566666666665,
+            0.09832306666666668,
+            0.058752566666666665,
+            0.058752566666666665,
+            0.058752566666666665,
+            0.09832306666666668,
+            0.058752566666666665,
+            0.058752566666666665,
+            0.058752566666666665,
+            0.09832306666666668,
+            0.058752566666666665,
+            0.058752566666666665
+          ],
+          "annual5": {
+            "snaps": {
+              "mean": 54.96145790208333,
+              "interval80": [
+                0.0,
+                134.9375
+              ],
+              "interval95": [
+                0.0,
+                280.5
+              ]
+            },
+            "games": {
+              "mean": 2.0203884333333333,
+              "interval80": [
+                0.0,
+                4.0
+              ],
+              "interval95": [
+                0.0,
+                17.0
+              ]
+            }
+          },
+          "cumulative5": {
+            "snaps": {
+              "mean": 589.5743879145833,
+              "interval80": [
+                0.0,
+                1577.8125
+              ],
+              "interval95": [
+                0.0,
+                2087.8125
+              ]
+            },
+            "games": {
+              "mean": 15.19555956666667,
+              "interval80": [
+                0.0,
+                37.0
+              ],
+              "interval95": [
+                0.0,
+                65.0
+              ]
+            }
+          }
+        },
+        "candidate": {
+          "massInDonorOrder": [
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.01735112941176471,
+            0.011750513333333332
+          ],
+          "annual5": {
+            "snaps": {
+              "mean": 141.60035480355393,
+              "interval80": [
+                0.0,
+                382.5
+              ],
+              "interval95": [
+                0.0,
+                1164.0
+              ]
+            },
+            "games": {
+              "mean": 2.966170435294118,
+              "interval80": [
+                0.0,
+                13.0
+              ],
+              "interval95": [
+                0.0,
+                17.0
+              ]
+            }
+          },
+          "cumulative5": {
+            "snaps": {
+              "mean": 1076.6776826106372,
+              "interval80": [
+                0.0,
+                4813.125
+              ],
+              "interval95": [
+                0.0,
+                5255.125
+              ]
+            },
+            "games": {
+              "mean": 19.825780322352948,
+              "interval80": [
+                0.0,
+                73.0
+              ],
+              "interval95": [
+                0.0,
+                80.0
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "cohort": 2022,
+      "pfrId": "KingDE02",
+      "identitySource": "combine",
+      "prospectId": "p2022-074a960c22",
+      "name": "D'Eriq King",
+      "school": "Miami",
+      "probability": 0.1275452,
+      "profile": "QB-0",
+      "profileTier": "lowest",
+      "arms": {
+        "baseline": {
+          "massInDonorOrder": [
+            0.07270456666666666,
+            0.07270456666666666,
+            0.07270456666666666,
+            0.07270456666666666,
+            0.042515066666666664,
+            0.07270456666666666,
+            0.07270456666666666,
+            0.07270456666666666,
+            0.042515066666666664,
+            0.07270456666666666,
+            0.07270456666666666,
+            0.07270456666666666,
+            0.042515066666666664,
+            0.07270456666666666,
+            0.07270456666666666
+          ],
+          "annual5": {
+            "snaps": {
+              "mean": 33.86690590208333,
+              "interval80": [
+                0.0,
+                134.9375
+              ],
+              "interval95": [
+                0.0,
+                280.5
+              ]
+            },
+            "games": {
+              "mean": 1.866916433333333,
+              "interval80": [
+                0.0,
+                4.0
+              ],
+              "interval95": [
+                0.0,
+                17.0
+              ]
+            }
+          },
+          "cumulative5": {
+            "snaps": {
+              "mean": 333.28225191458336,
+              "interval80": [
+                0.0,
+                1340.875
+              ],
+              "interval95": [
+                0.0,
+                2087.8125
+              ]
+            },
+            "games": {
+              "mean": 11.442471566666665,
+              "interval80": [
+                0.0,
+                37.0
+              ],
+              "interval95": [
+                0.0,
+                65.0
+              ]
+            }
+          }
+        },
+        "candidate": {
+          "massInDonorOrder": [
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.007502658823529412,
+            0.014540913333333332
+          ],
+          "annual5": {
+            "snaps": {
+              "mean": 85.8980719800245,
+              "interval80": [
+                0.0,
+                280.5
+              ],
+              "interval95": [
+                0.0,
+                1111.375
+              ]
+            },
+            "games": {
+              "mean": 2.1339746705882354,
+              "interval80": [
+                0.0,
+                7.0
+              ],
+              "interval95": [
+                0.0,
+                17.0
+              ]
+            }
+          },
+          "cumulative5": {
+            "snaps": {
+              "mean": 608.3591261871077,
+              "interval80": [
+                0.0,
+                2087.8125
+              ],
+              "interval95": [
+                0.0,
+                4979.9375
+              ]
+            },
+            "games": {
+              "mean": 12.716169404705882,
+              "interval80": [
+                0.0,
+                52.0
+              ],
+              "interval95": [
+                0.0,
+                73.0
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "cohort": 2022,
+      "pfrId": null,
+      "identitySource": "identity_links.json",
+      "prospectId": "p2022-4781614a0c",
+      "name": "EJ Perry",
+      "school": "Brown",
+      "probability": 0.29496920000000004,
+      "profile": "QB-2",
+      "profileTier": "other",
+      "arms": {
+        "baseline": {
+          "massInDonorOrder": [
+            0.058752566666666665,
+            0.058752566666666665,
+            0.058752566666666665,
+            0.058752566666666665,
+            0.09832306666666668,
+            0.058752566666666665,
+            0.058752566666666665,
+            0.058752566666666665,
+            0.09832306666666668,
+            0.058752566666666665,
+            0.058752566666666665,
+            0.058752566666666665,
+            0.09832306666666668,
+            0.058752566666666665,
+            0.058752566666666665
+          ],
+          "annual5": {
+            "snaps": {
+              "mean": 54.96145790208333,
+              "interval80": [
+                0.0,
+                134.9375
+              ],
+              "interval95": [
+                0.0,
+                280.5
+              ]
+            },
+            "games": {
+              "mean": 2.0203884333333333,
+              "interval80": [
+                0.0,
+                4.0
+              ],
+              "interval95": [
+                0.0,
+                17.0
+              ]
+            }
+          },
+          "cumulative5": {
+            "snaps": {
+              "mean": 589.5743879145833,
+              "interval80": [
+                0.0,
+                1577.8125
+              ],
+              "interval95": [
+                0.0,
+                2087.8125
+              ]
+            },
+            "games": {
+              "mean": 15.19555956666667,
+              "interval80": [
+                0.0,
+                37.0
+              ],
+              "interval95": [
+                0.0,
+                65.0
+              ]
+            }
+          }
+        },
+        "candidate": {
+          "massInDonorOrder": [
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.01735112941176471,
+            0.011750513333333332
+          ],
+          "annual5": {
+            "snaps": {
+              "mean": 141.60035480355393,
+              "interval80": [
+                0.0,
+                382.5
+              ],
+              "interval95": [
+                0.0,
+                1164.0
+              ]
+            },
+            "games": {
+              "mean": 2.966170435294118,
+              "interval80": [
+                0.0,
+                13.0
+              ],
+              "interval95": [
+                0.0,
+                17.0
+              ]
+            }
+          },
+          "cumulative5": {
+            "snaps": {
+              "mean": 1076.6776826106372,
+              "interval80": [
+                0.0,
+                4813.125
+              ],
+              "interval95": [
+                0.0,
+                5255.125
+              ]
+            },
+            "games": {
+              "mean": 19.825780322352948,
+              "interval80": [
+                0.0,
+                73.0
+              ],
+              "interval95": [
+                0.0,
+                80.0
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "cohort": 2022,
+      "pfrId": "PickKe00",
+      "identitySource": "combine",
+      "prospectId": "p2022-15b10f0fac",
+      "name": "Kenny Pickett",
+      "school": "Pittsburgh",
+      "probability": 0.29496920000000004,
+      "profile": "QB-2",
+      "profileTier": "other",
+      "arms": {
+        "baseline": {
+          "massInDonorOrder": [
+            0.058752566666666665,
+            0.058752566666666665,
+            0.058752566666666665,
+            0.058752566666666665,
+            0.09832306666666668,
+            0.058752566666666665,
+            0.058752566666666665,
+            0.058752566666666665,
+            0.09832306666666668,
+            0.058752566666666665,
+            0.058752566666666665,
+            0.058752566666666665,
+            0.09832306666666668,
+            0.058752566666666665,
+            0.058752566666666665
+          ],
+          "annual5": {
+            "snaps": {
+              "mean": 54.96145790208333,
+              "interval80": [
+                0.0,
+                134.9375
+              ],
+              "interval95": [
+                0.0,
+                280.5
+              ]
+            },
+            "games": {
+              "mean": 2.0203884333333333,
+              "interval80": [
+                0.0,
+                4.0
+              ],
+              "interval95": [
+                0.0,
+                17.0
+              ]
+            }
+          },
+          "cumulative5": {
+            "snaps": {
+              "mean": 589.5743879145833,
+              "interval80": [
+                0.0,
+                1577.8125
+              ],
+              "interval95": [
+                0.0,
+                2087.8125
+              ]
+            },
+            "games": {
+              "mean": 15.19555956666667,
+              "interval80": [
+                0.0,
+                37.0
+              ],
+              "interval95": [
+                0.0,
+                65.0
+              ]
+            }
+          }
+        },
+        "candidate": {
+          "massInDonorOrder": [
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.01735112941176471,
+            0.011750513333333332
+          ],
+          "annual5": {
+            "snaps": {
+              "mean": 141.60035480355393,
+              "interval80": [
+                0.0,
+                382.5
+              ],
+              "interval95": [
+                0.0,
+                1164.0
+              ]
+            },
+            "games": {
+              "mean": 2.966170435294118,
+              "interval80": [
+                0.0,
+                13.0
+              ],
+              "interval95": [
+                0.0,
+                17.0
+              ]
+            }
+          },
+          "cumulative5": {
+            "snaps": {
+              "mean": 1076.6776826106372,
+              "interval80": [
+                0.0,
+                4813.125
+              ],
+              "interval95": [
+                0.0,
+                5255.125
+              ]
+            },
+            "games": {
+              "mean": 19.825780322352948,
+              "interval80": [
+                0.0,
+                73.0
+              ],
+              "interval95": [
+                0.0,
+                80.0
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "cohort": 2022,
+      "pfrId": "PurdBr00",
+      "identitySource": "combine",
+      "prospectId": "p2022-615a1b3847",
+      "name": "Brock Purdy",
+      "school": "Iowa St.",
+      "probability": 0.1275452,
+      "profile": "QB-0",
+      "profileTier": "lowest",
+      "arms": {
+        "baseline": {
+          "massInDonorOrder": [
+            0.07270456666666666,
+            0.07270456666666666,
+            0.07270456666666666,
+            0.07270456666666666,
+            0.042515066666666664,
+            0.07270456666666666,
+            0.07270456666666666,
+            0.07270456666666666,
+            0.042515066666666664,
+            0.07270456666666666,
+            0.07270456666666666,
+            0.07270456666666666,
+            0.042515066666666664,
+            0.07270456666666666,
+            0.07270456666666666
+          ],
+          "annual5": {
+            "snaps": {
+              "mean": 33.86690590208333,
+              "interval80": [
+                0.0,
+                134.9375
+              ],
+              "interval95": [
+                0.0,
+                280.5
+              ]
+            },
+            "games": {
+              "mean": 1.866916433333333,
+              "interval80": [
+                0.0,
+                4.0
+              ],
+              "interval95": [
+                0.0,
+                17.0
+              ]
+            }
+          },
+          "cumulative5": {
+            "snaps": {
+              "mean": 333.28225191458336,
+              "interval80": [
+                0.0,
+                1340.875
+              ],
+              "interval95": [
+                0.0,
+                2087.8125
+              ]
+            },
+            "games": {
+              "mean": 11.442471566666665,
+              "interval80": [
+                0.0,
+                37.0
+              ],
+              "interval95": [
+                0.0,
+                65.0
+              ]
+            }
+          }
+        },
+        "candidate": {
+          "massInDonorOrder": [
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.007502658823529412,
+            0.014540913333333332
+          ],
+          "annual5": {
+            "snaps": {
+              "mean": 85.8980719800245,
+              "interval80": [
+                0.0,
+                280.5
+              ],
+              "interval95": [
+                0.0,
+                1111.375
+              ]
+            },
+            "games": {
+              "mean": 2.1339746705882354,
+              "interval80": [
+                0.0,
+                7.0
+              ],
+              "interval95": [
+                0.0,
+                17.0
+              ]
+            }
+          },
+          "cumulative5": {
+            "snaps": {
+              "mean": 608.3591261871077,
+              "interval80": [
+                0.0,
+                2087.8125
+              ],
+              "interval95": [
+                0.0,
+                4979.9375
+              ]
+            },
+            "games": {
+              "mean": 12.716169404705882,
+              "interval80": [
+                0.0,
+                52.0
+              ],
+              "interval95": [
+                0.0,
+                73.0
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "cohort": 2022,
+      "pfrId": "RiddDe00",
+      "identitySource": "combine",
+      "prospectId": "p2022-906790ebe0",
+      "name": "Desmond Ridder",
+      "school": "Cincinnati",
+      "probability": 0.29496920000000004,
+      "profile": "QB-2",
+      "profileTier": "other",
+      "arms": {
+        "baseline": {
+          "massInDonorOrder": [
+            0.058752566666666665,
+            0.058752566666666665,
+            0.058752566666666665,
+            0.058752566666666665,
+            0.09832306666666668,
+            0.058752566666666665,
+            0.058752566666666665,
+            0.058752566666666665,
+            0.09832306666666668,
+            0.058752566666666665,
+            0.058752566666666665,
+            0.058752566666666665,
+            0.09832306666666668,
+            0.058752566666666665,
+            0.058752566666666665
+          ],
+          "annual5": {
+            "snaps": {
+              "mean": 54.96145790208333,
+              "interval80": [
+                0.0,
+                134.9375
+              ],
+              "interval95": [
+                0.0,
+                280.5
+              ]
+            },
+            "games": {
+              "mean": 2.0203884333333333,
+              "interval80": [
+                0.0,
+                4.0
+              ],
+              "interval95": [
+                0.0,
+                17.0
+              ]
+            }
+          },
+          "cumulative5": {
+            "snaps": {
+              "mean": 589.5743879145833,
+              "interval80": [
+                0.0,
+                1577.8125
+              ],
+              "interval95": [
+                0.0,
+                2087.8125
+              ]
+            },
+            "games": {
+              "mean": 15.19555956666667,
+              "interval80": [
+                0.0,
+                37.0
+              ],
+              "interval95": [
+                0.0,
+                65.0
+              ]
+            }
+          }
+        },
+        "candidate": {
+          "massInDonorOrder": [
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.011750513333333332,
+            0.01735112941176471,
+            0.01735112941176471,
+            0.011750513333333332
+          ],
+          "annual5": {
+            "snaps": {
+              "mean": 141.60035480355393,
+              "interval80": [
+                0.0,
+                382.5
+              ],
+              "interval95": [
+                0.0,
+                1164.0
+              ]
+            },
+            "games": {
+              "mean": 2.966170435294118,
+              "interval80": [
+                0.0,
+                13.0
+              ],
+              "interval95": [
+                0.0,
+                17.0
+              ]
+            }
+          },
+          "cumulative5": {
+            "snaps": {
+              "mean": 1076.6776826106372,
+              "interval80": [
+                0.0,
+                4813.125
+              ],
+              "interval95": [
+                0.0,
+                5255.125
+              ]
+            },
+            "games": {
+              "mean": 19.825780322352948,
+              "interval80": [
+                0.0,
+                73.0
+              ],
+              "interval95": [
+                0.0,
+                80.0
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "cohort": 2022,
+      "pfrId": "StroCa00",
+      "identitySource": "combine",
+      "prospectId": "p2022-e0289eb6fd",
+      "name": "Carson Strong",
+      "school": "Nevada",
+      "probability": 0.15713380000000002,
+      "profile": "QB-1",
+      "profileTier": "other",
+      "arms": {
+        "baseline": {
+          "massInDonorOrder": [
+            0.07023885,
+            0.07023885,
+            0.07023885,
+            0.07023885,
+            0.05237793333333334,
+            0.07023885,
+            0.07023885,
+            0.07023885,
+            0.05237793333333334,
+            0.07023885,
+            0.07023885,
+            0.07023885,
+            0.05237793333333334,
+            0.07023885,
+            0.07023885
+          ],
+          "annual5": {
+            "snaps": {
+              "mean": 37.59491539479167,
+              "interval80": [
+                0.0,
+                134.9375
+              ],
+              "interval95": [
+                0.0,
+                280.5
+              ]
+            },
+            "games": {
+              "mean": 1.894039316666667,
+              "interval80": [
+                0.0,
+                4.0
+              ],
+              "interval95": [
+                0.0,
+                17.0
+              ]
+            }
+          },
+          "cumulative5": {
+            "snaps": {
+              "mean": 378.5763883302084,
+              "interval80": [
+                0.0,
+                1577.8125
+              ],
+              "interval95": [
+                0.0,
+                2087.8125
+              ]
+            },
+            "games": {
+              "mean": 12.105749350000002,
+              "interval80": [
+                0.0,
+                37.0
+              ],
+              "interval95": [
+                0.0,
+                65.0
+              ]
+            }
+          }
+        },
+        "candidate": {
+          "massInDonorOrder": [
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.009243164705882354,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.009243164705882354,
+            0.01404777
+          ],
+          "annual5": {
+            "snaps": {
+              "mean": 95.7422554038603,
+              "interval80": [
+                0.0,
+                294.3125
+              ],
+              "interval95": [
+                0.0,
+                1111.375
+              ]
+            },
+            "games": {
+              "mean": 2.2810474176470588,
+              "interval80": [
+                0.0,
+                12.0
+              ],
+              "interval95": [
+                0.0,
+                17.0
+              ]
+            }
+          },
+          "cumulative5": {
+            "snaps": {
+              "mean": 691.1243834894854,
+              "interval80": [
+                0.0,
+                2291.8125
+              ],
+              "interval95": [
+                0.0,
+                5115.9375
+              ]
+            },
+            "games": {
+              "mean": 13.97264060117647,
+              "interval80": [
+                0.0,
+                61.0
+              ],
+              "interval95": [
+                0.0,
+                77.0
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "cohort": 2022,
+      "pfrId": "ThomSk00",
+      "identitySource": "combine",
+      "prospectId": "p2022-c8adb719ae",
+      "name": "Skylar Thompson",
+      "school": "Kansas St.",
+      "probability": 0.15713380000000002,
+      "profile": "QB-1",
+      "profileTier": "other",
+      "arms": {
+        "baseline": {
+          "massInDonorOrder": [
+            0.07023885,
+            0.07023885,
+            0.07023885,
+            0.07023885,
+            0.05237793333333334,
+            0.07023885,
+            0.07023885,
+            0.07023885,
+            0.05237793333333334,
+            0.07023885,
+            0.07023885,
+            0.07023885,
+            0.05237793333333334,
+            0.07023885,
+            0.07023885
+          ],
+          "annual5": {
+            "snaps": {
+              "mean": 37.59491539479167,
+              "interval80": [
+                0.0,
+                134.9375
+              ],
+              "interval95": [
+                0.0,
+                280.5
+              ]
+            },
+            "games": {
+              "mean": 1.894039316666667,
+              "interval80": [
+                0.0,
+                4.0
+              ],
+              "interval95": [
+                0.0,
+                17.0
+              ]
+            }
+          },
+          "cumulative5": {
+            "snaps": {
+              "mean": 378.5763883302084,
+              "interval80": [
+                0.0,
+                1577.8125
+              ],
+              "interval95": [
+                0.0,
+                2087.8125
+              ]
+            },
+            "games": {
+              "mean": 12.105749350000002,
+              "interval80": [
+                0.0,
+                37.0
+              ],
+              "interval95": [
+                0.0,
+                65.0
+              ]
+            }
+          }
+        },
+        "candidate": {
+          "massInDonorOrder": [
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.009243164705882354,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.009243164705882354,
+            0.01404777
+          ],
+          "annual5": {
+            "snaps": {
+              "mean": 95.7422554038603,
+              "interval80": [
+                0.0,
+                294.3125
+              ],
+              "interval95": [
+                0.0,
+                1111.375
+              ]
+            },
+            "games": {
+              "mean": 2.2810474176470588,
+              "interval80": [
+                0.0,
+                12.0
+              ],
+              "interval95": [
+                0.0,
+                17.0
+              ]
+            }
+          },
+          "cumulative5": {
+            "snaps": {
+              "mean": 691.1243834894854,
+              "interval80": [
+                0.0,
+                2291.8125
+              ],
+              "interval95": [
+                0.0,
+                5115.9375
+              ]
+            },
+            "games": {
+              "mean": 13.97264060117647,
+              "interval80": [
+                0.0,
+                61.0
+              ],
+              "interval95": [
+                0.0,
+                77.0
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "cohort": 2022,
+      "pfrId": "WillMa12",
+      "identitySource": "combine",
+      "prospectId": "p2022-efda9c04ab",
+      "name": "Malik Willis",
+      "school": "Liberty",
+      "probability": 0.15713380000000002,
+      "profile": "QB-1",
+      "profileTier": "other",
+      "arms": {
+        "baseline": {
+          "massInDonorOrder": [
+            0.07023885,
+            0.07023885,
+            0.07023885,
+            0.07023885,
+            0.05237793333333334,
+            0.07023885,
+            0.07023885,
+            0.07023885,
+            0.05237793333333334,
+            0.07023885,
+            0.07023885,
+            0.07023885,
+            0.05237793333333334,
+            0.07023885,
+            0.07023885
+          ],
+          "annual5": {
+            "snaps": {
+              "mean": 37.59491539479167,
+              "interval80": [
+                0.0,
+                134.9375
+              ],
+              "interval95": [
+                0.0,
+                280.5
+              ]
+            },
+            "games": {
+              "mean": 1.894039316666667,
+              "interval80": [
+                0.0,
+                4.0
+              ],
+              "interval95": [
+                0.0,
+                17.0
+              ]
+            }
+          },
+          "cumulative5": {
+            "snaps": {
+              "mean": 378.5763883302084,
+              "interval80": [
+                0.0,
+                1577.8125
+              ],
+              "interval95": [
+                0.0,
+                2087.8125
+              ]
+            },
+            "games": {
+              "mean": 12.105749350000002,
+              "interval80": [
+                0.0,
+                37.0
+              ],
+              "interval95": [
+                0.0,
+                65.0
+              ]
+            }
+          }
+        },
+        "candidate": {
+          "massInDonorOrder": [
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.009243164705882354,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.01404777,
+            0.009243164705882354,
+            0.009243164705882354,
+            0.01404777
+          ],
+          "annual5": {
+            "snaps": {
+              "mean": 95.7422554038603,
+              "interval80": [
+                0.0,
+                294.3125
+              ],
+              "interval95": [
+                0.0,
+                1111.375
+              ]
+            },
+            "games": {
+              "mean": 2.2810474176470588,
+              "interval80": [
+                0.0,
+                12.0
+              ],
+              "interval95": [
+                0.0,
+                17.0
+              ]
+            }
+          },
+          "cumulative5": {
+            "snaps": {
+              "mean": 691.1243834894854,
+              "interval80": [
+                0.0,
+                2291.8125
+              ],
+              "interval95": [
+                0.0,
+                5115.9375
+              ]
+            },
+            "games": {
+              "mean": 13.97264060117647,
+              "interval80": [
+                0.0,
+                61.0
+              ],
+              "interval95": [
+                0.0,
+                77.0
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "cohort": 2022,
+      "pfrId": "ZappBa00",
+      "identitySource": "combine",
+      "prospectId": "p2022-3462716dab",
+      "name": "Bailey Zappe",
+      "school": "Western Kentucky",
+      "probability": 0.1275452,
+      "profile": "QB-0",
+      "profileTier": "lowest",
+      "arms": {
+        "baseline": {
+          "massInDonorOrder": [
+            0.07270456666666666,
+            0.07270456666666666,
+            0.07270456666666666,
+            0.07270456666666666,
+            0.042515066666666664,
+            0.07270456666666666,
+            0.07270456666666666,
+            0.07270456666666666,
+            0.042515066666666664,
+            0.07270456666666666,
+            0.07270456666666666,
+            0.07270456666666666,
+            0.042515066666666664,
+            0.07270456666666666,
+            0.07270456666666666
+          ],
+          "annual5": {
+            "snaps": {
+              "mean": 33.86690590208333,
+              "interval80": [
+                0.0,
+                134.9375
+              ],
+              "interval95": [
+                0.0,
+                280.5
+              ]
+            },
+            "games": {
+              "mean": 1.866916433333333,
+              "interval80": [
+                0.0,
+                4.0
+              ],
+              "interval95": [
+                0.0,
+                17.0
+              ]
+            }
+          },
+          "cumulative5": {
+            "snaps": {
+              "mean": 333.28225191458336,
+              "interval80": [
+                0.0,
+                1340.875
+              ],
+              "interval95": [
+                0.0,
+                2087.8125
+              ]
+            },
+            "games": {
+              "mean": 11.442471566666665,
+              "interval80": [
+                0.0,
+                37.0
+              ],
+              "interval95": [
+                0.0,
+                65.0
+              ]
+            }
+          }
+        },
+        "candidate": {
+          "massInDonorOrder": [
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.014540913333333332,
+            0.007502658823529412,
+            0.007502658823529412,
+            0.014540913333333332
+          ],
+          "annual5": {
+            "snaps": {
+              "mean": 85.8980719800245,
+              "interval80": [
+                0.0,
+                280.5
+              ],
+              "interval95": [
+                0.0,
+                1111.375
+              ]
+            },
+            "games": {
+              "mean": 2.1339746705882354,
+              "interval80": [
+                0.0,
+                7.0
+              ],
+              "interval95": [
+                0.0,
+                17.0
+              ]
+            }
+          },
+          "cumulative5": {
+            "snaps": {
+              "mean": 608.3591261871077,
+              "interval80": [
+                0.0,
+                2087.8125
+              ],
+              "interval95": [
+                0.0,
+                4979.9375
+              ]
+            },
+            "games": {
+              "mean": 12.716169404705882,
+              "interval80": [
+                0.0,
+                52.0
+              ],
+              "interval95": [
+                0.0,
+                73.0
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}

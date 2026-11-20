@@ -1,11 +1,18 @@
 'use client';
+import {lazy,Suspense} from 'react';
 import {ExternalLink,Info} from 'lucide-react';
 import {Modal,ResearchNote} from './primitives';
 import {positionNames} from './guided-board';
 import type {PriorTeamContext} from './types';
-export default function TeamContext({context,teamName,onClose}:{context?:PriorTeamContext|null;teamName:string;onClose:()=>void}){
-  return <Modal title={`${teamName}: team snapshot`} eyebrow={context?`${context.priorSeason} regular season / Observed participation`:'Historical team context'} onClose={onClose} wide>
-    {!context?<ResearchNote>Prior-season participation is unavailable for this team. Missing records do not establish an empty position or a draft need.</ResearchNote>:<>
+import HistoricalPersonnel from './historical-personnel';
+import {getHistoricalPersonnel} from '@/lib/historical-personnel';
+const VeteranOutlook=lazy(()=>import('./veteran-outlook'));
+export default function TeamContext({context,teamName,draftYear,teamId,onClose}:{context?:PriorTeamContext|null;teamName:string;draftYear:number;teamId:string;onClose:()=>void}){
+  const hasPersonnel = Boolean(getHistoricalPersonnel(draftYear, teamId));
+  return <Modal title={`${teamName}: team snapshot`} eyebrow={hasPersonnel?`${draftYear} pre-draft personnel`:context?`${context.priorSeason} regular season / Observed participation`:'Historical team context'} onClose={onClose} wide>
+    <Suspense fallback={<p>Loading veteran outlook…</p>}><VeteranOutlook year={draftYear} team={teamId}/></Suspense>
+    {hasPersonnel&&<HistoricalPersonnel draftYear={draftYear} teamId={teamId}/>}
+    {!context?<ResearchNote>A named pre-draft roster and detailed prior-season snap breakdown are unavailable for this snapshot.</ResearchNote>:<>
       <p className="context-intro"><Info size={19}/><span><strong>Who played last season.</strong> These records describe {context.priorSeason} usage through {context.observedThrough}. They do not establish who remained on the roster at the {context.priorSeason+1} draft.</span></p>
       <div className="context-summary"><div><span className="eyebrow muted">Prior-season head coach</span><strong>{context.priorHeadCoaches.length?context.priorHeadCoaches.map(c=>`${c.name} (${c.games} games)`).join(' · '):'Unavailable'}</strong><p>Recorded for the prior season, not a verified draft-day appointment.</p></div><div><span className="eyebrow muted">Verified scheme fit</span><strong>Unavailable</strong><p>No offensive or defensive scheme is inferred from a coach’s name or a depth-chart label.</p></div></div>
       <p className="context-definition">A <strong>snap</strong> is a player’s participation in one play. Several teammates participate in the same play, so adding their snaps does not count unique team plays.</p>

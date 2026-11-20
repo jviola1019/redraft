@@ -1,6 +1,6 @@
 {
   "version": "redraft-all-year-distributions-v1",
-  "createdAt": "2026-11-12T23:16:50.436Z",
+  "createdAt": "2026-11-20T03:06:40.128Z",
   "frozenReviewDate": "2026-11-12T12:00:00.000Z",
   "scenarios": [
     2018,
@@ -33,29 +33,30 @@
     "Partial/future seasons are not compared with actual outcomes."
   ],
   "runtime": {
-    "elapsedSeconds": 47.491,
+    "elapsedSeconds": 48.311,
     "replicateWorlds": 2304,
-    "startedAt": "2026-11-12T23:16:02.944Z",
-    "node": "v24.22.1",
+    "startedAt": "2026-11-20T03:05:51.817Z",
+    "node": "v24.22.3",
     "platform": "linux",
     "architecture": "x64",
     "cpuModel": "AMD EPYC 9V74 80-Core Processor",
     "cpuCount": 9
   },
   "sourceHashesAtStart": {
-    "lib/engine.ts": "e38a8e91788b2663f0bf1ce35f2d905785ba9500296ab7b4a67acff3aabc322e",
-    "lib/simulation.ts": "4ea752092f4093d12125122455f30ecc87cb43ba9662134cf0ceaac9a15e86c3",
-    "lib/scouting.ts": "6a2850cb8f15f6effb6b12fd15f79602e5e0c6a20ff84951e7bdb2695aeba1d6",
-    "lib/server-data.ts": "64a7f0c5d75ce231805b9aba756d15bbd3d29de01e8d8bb473686f3811a767f1",
+    "lib/engine.ts": "3ccb1d7fda59fa60ea691e154a89776896b24b347ec6ec2c2a596686e7cb3918",
+    "lib/simulation.ts": "e03f6afab57ae9c5288eaa343e58a9f977e2dee51c73ab77f06cdf6d75ac49ca",
+    "lib/scouting.ts": "751b61f9f77e62c64e1623831dc75144b48d691f63497eb78298a978e63b6ca8",
+    "lib/server-data.ts": "0ede48d68b376a2ad5adb3633680bfa0f067e3a2469aeff3d3b10338fb556be3",
+    "analytics/cpu-position-capital-v1.json": "a871357b55b4ac780f2eb63a12980610b49666b146dae11f8eeeb94e63aac971",
     "analytics/model.json": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0",
     "analytics/five_year_strict_2018.json": "a717e2d683ab57c8f79f963d672598810593bae69945c8d00db82857d6c647e1",
-    "analytics/scoring_recalibration.json": "484c709f0e1687fa77e6fba118a267801b919e4a98dc8138ce3dea7dead64812",
-    "data/clean/team_context_2018.json": "f16356d6371a130b5310c6f035db434fcbad52464acb3b5b950d74430eb06de3",
-    "data/clean/team_context_source_manifest.json": "af8d90bda2e0030888c0c926c8d31f18057e93f5ab860e59401f7f695a79a499",
+    "analytics/scoring_recalibration.json": "cd91ac43583c3186c18ec760fa860b5e3fae59aedaedf0cadb4b0cef90ec3377",
+    "data/clean/team_context_2018.json": "a2667b83e75fc20afb9318c362cfa1a28745e2db4d7864084533a19294497301",
+    "data/clean/team_context_source_manifest.json": "776ef8fd8b8200e9b9946e3ed014bd76061fc63586005d96142bf83f7656ec18",
     "data/processed/scenario-2018.json": "b7895eef7862ccfb45cff5f2f4b6e347abd809c1905ed274883d55cc237f59d8",
     "data/processed/scenario-2019.json": "88ef4b175bfc7ddf8c2d32541b1b8371836f09f6e961f4bb8a36b0db0bf5f28c",
     "data/processed/scenario-2020.json": "527ff4f9770199052a6405d9d56cf503f150b998dddbcfbd947e686c060b624b",
-    "data/processed/scenario-2021.json": "16b574b788658ea916a48a61cdf4a24df76e72305dc16054f32971ec5ed4aec4",
+    "data/processed/scenario-2021.json": "37e217bfa4ca2ae97aa34a889b32b0dfef683f4884deefc6569e4b9e8eeaebc6",
     "data/processed/scenario-2022.json": "ea6846602cddfe179544b1d845c811a1848c59de69084c210c03080ac4d46f63",
     "data/processed/scenario-2023.json": "14587193998afcb61ca2c95c50ee641ba709246a5b3a9c8187855b94e894611f",
     "data/processed/scenario-2024.json": "6a6d794cdf0747d7a03ba92549d4d8165b149a19b04eb32588b679e6c50e8323",
@@ -64,7 +65,7 @@
     "data/processed/scenario-coverage.json": "0d42970e685e510b6554c7fea7675e7f3a5aecb525aabb1c6b7e155ec0058ca3",
     "analytics/model-2019.json": "2da02bcb4d6da178a635852e61c4ee7488f9551f346c9560f680ce99f13176cf",
     "analytics/model-2020.json": "35d80e75ae50e8ada8c9ad96db2fd965e38f9dea06bc0f298b899f51497c3bdc",
-    "analytics/model-2021.json": "c89d6915e04159845d48c0692fe899ff66430c404a2d30cafade478ba629a17b",
+    "analytics/model-2021.json": "1e71a80b75350169b9c266185e773bbb7ab99a34df9d1698b7437b95ed21a649",
     "analytics/model-2022.json": "9579d70620a4f20ede36008bdcc745d913f8ba1aa7f64b4276104561491b8457",
     "analytics/model-2023.json": "3b7a67a1f83c32ba8461abe9608f3f2c18e8a17e34b60c20768099d9b23c78cb",
     "analytics/model-2024.json": "1c4b07f22dc40575623920f108335d8990c07a53511db5e0c6bd740398102e9d",
@@ -73,19 +74,20 @@
     "analytics/all_year_diagnostics.mjs": "bab628b8a2f01030f54c127ef6f9f54e8a46762cec15ca93769bc7ac1ad92334"
   },
   "sourceHashesAtEnd": {
-    "lib/engine.ts": "e38a8e91788b2663f0bf1ce35f2d905785ba9500296ab7b4a67acff3aabc322e",
-    "lib/simulation.ts": "4ea752092f4093d12125122455f30ecc87cb43ba9662134cf0ceaac9a15e86c3",
-    "lib/scouting.ts": "6a2850cb8f15f6effb6b12fd15f79602e5e0c6a20ff84951e7bdb2695aeba1d6",
-    "lib/server-data.ts": "64a7f0c5d75ce231805b9aba756d15bbd3d29de01e8d8bb473686f3811a767f1",
+    "lib/engine.ts": "3ccb1d7fda59fa60ea691e154a89776896b24b347ec6ec2c2a596686e7cb3918",
+    "lib/simulation.ts": "e03f6afab57ae9c5288eaa343e58a9f977e2dee51c73ab77f06cdf6d75ac49ca",
+    "lib/scouting.ts": "751b61f9f77e62c64e1623831dc75144b48d691f63497eb78298a978e63b6ca8",
+    "lib/server-data.ts": "0ede48d68b376a2ad5adb3633680bfa0f067e3a2469aeff3d3b10338fb556be3",
+    "analytics/cpu-position-capital-v1.json": "a871357b55b4ac780f2eb63a12980610b49666b146dae11f8eeeb94e63aac971",
     "analytics/model.json": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0",
     "analytics/five_year_strict_2018.json": "a717e2d683ab57c8f79f963d672598810593bae69945c8d00db82857d6c647e1",
-    "analytics/scoring_recalibration.json": "484c709f0e1687fa77e6fba118a267801b919e4a98dc8138ce3dea7dead64812",
-    "data/clean/team_context_2018.json": "f16356d6371a130b5310c6f035db434fcbad52464acb3b5b950d74430eb06de3",
-    "data/clean/team_context_source_manifest.json": "af8d90bda2e0030888c0c926c8d31f18057e93f5ab860e59401f7f695a79a499",
+    "analytics/scoring_recalibration.json": "cd91ac43583c3186c18ec760fa860b5e3fae59aedaedf0cadb4b0cef90ec3377",
+    "data/clean/team_context_2018.json": "a2667b83e75fc20afb9318c362cfa1a28745e2db4d7864084533a19294497301",
+    "data/clean/team_context_source_manifest.json": "776ef8fd8b8200e9b9946e3ed014bd76061fc63586005d96142bf83f7656ec18",
     "data/processed/scenario-2018.json": "b7895eef7862ccfb45cff5f2f4b6e347abd809c1905ed274883d55cc237f59d8",
     "data/processed/scenario-2019.json": "88ef4b175bfc7ddf8c2d32541b1b8371836f09f6e961f4bb8a36b0db0bf5f28c",
     "data/processed/scenario-2020.json": "527ff4f9770199052a6405d9d56cf503f150b998dddbcfbd947e686c060b624b",
-    "data/processed/scenario-2021.json": "16b574b788658ea916a48a61cdf4a24df76e72305dc16054f32971ec5ed4aec4",
+    "data/processed/scenario-2021.json": "37e217bfa4ca2ae97aa34a889b32b0dfef683f4884deefc6569e4b9e8eeaebc6",
     "data/processed/scenario-2022.json": "ea6846602cddfe179544b1d845c811a1848c59de69084c210c03080ac4d46f63",
     "data/processed/scenario-2023.json": "14587193998afcb61ca2c95c50ee641ba709246a5b3a9c8187855b94e894611f",
     "data/processed/scenario-2024.json": "6a6d794cdf0747d7a03ba92549d4d8165b149a19b04eb32588b679e6c50e8323",
@@ -94,7 +96,7 @@
     "data/processed/scenario-coverage.json": "0d42970e685e510b6554c7fea7675e7f3a5aecb525aabb1c6b7e155ec0058ca3",
     "analytics/model-2019.json": "2da02bcb4d6da178a635852e61c4ee7488f9551f346c9560f680ce99f13176cf",
     "analytics/model-2020.json": "35d80e75ae50e8ada8c9ad96db2fd965e38f9dea06bc0f298b899f51497c3bdc",
-    "analytics/model-2021.json": "c89d6915e04159845d48c0692fe899ff66430c404a2d30cafade478ba629a17b",
+    "analytics/model-2021.json": "1e71a80b75350169b9c266185e773bbb7ab99a34df9d1698b7437b95ed21a649",
     "analytics/model-2022.json": "9579d70620a4f20ede36008bdcc745d913f8ba1aa7f64b4276104561491b8457",
     "analytics/model-2023.json": "3b7a67a1f83c32ba8461abe9608f3f2c18e8a17e34b60c20768099d9b23c78cb",
     "analytics/model-2024.json": "1c4b07f22dc40575623920f108335d8990c07a53511db5e0c6bd740398102e9d",
@@ -173,75 +175,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.05963134765625,
-              "median": 45.048828125,
-              "lower95": 43.33076171875,
-              "upper95": 47.0421875
+              "mean": 45.057708740234375,
+              "median": 45.0078125,
+              "lower95": 43.36064453125,
+              "upper95": 46.95693359375
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 2.26947021484375,
-              "median": 2.236328125,
-              "lower95": 1.0291015625,
-              "upper95": 3.75966796875
+              "mean": 2.267425537109375,
+              "median": 2.244140625,
+              "lower95": 1.02900390625,
+              "upper95": 3.7953125
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.029998779296875,
-              "median": 0.02734375,
+              "mean": 0.030029296875,
+              "median": 0.029296875,
               "lower95": 0.01171875,
               "upper95": 0.05078125
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.003509521484375,
+              "mean": 0.003204345703125,
               "median": 0.00390625,
               "lower95": 0,
-              "upper95": 0.01171875
+              "upper95": 0.0078125
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 8.374107360839844,
-              "median": 8.4365234375,
-              "lower95": 5.0740234375,
-              "upper95": 11.428979492187501
+              "mean": 8.350914001464844,
+              "median": 8.35888671875,
+              "lower95": 5.14619140625,
+              "upper95": 11.0974853515625
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": -0.00390625,
-              "median": -0.0078125,
-              "lower95": -0.1001953125,
-              "upper95": 0.11259765625000001
+              "mean": -0.005828857421875,
+              "median": -0.01171875,
+              "lower95": -0.09560546874999999,
+              "upper95": 0.08984375
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 0.00091552734375,
-              "median": -0.00390625,
-              "lower95": -0.09697265625,
-              "upper95": 0.09697265625000001
+              "mean": -0.001129150390625,
+              "median": 0,
+              "lower95": -0.09306640625,
+              "upper95": 0.08525390625000001
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": -0.000213623046875,
+              "mean": -0.00018310546875,
               "median": 0,
               "lower95": -0.0078125,
               "upper95": 0.0078125
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0006103515625,
+              "mean": 0.00030517578125,
               "median": 0,
-              "lower95": -0.00390625,
-              "upper95": 0.0078125
+              "lower95": -0.007128906249999999,
+              "upper95": 0.00390625
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": -0.1693115234375,
-              "median": -0.0625,
-              "lower95": -1.3814453125,
-              "upper95": 0.8237792968750004
+              "mean": -0.1925048828125,
+              "median": -0.20166015625,
+              "lower95": -1.5985107421875,
+              "upper95": 0.8640625000000002
             }
           },
           "winInvariance": {
@@ -312,75 +314,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.103759765625,
-              "median": 45.06640625,
-              "lower95": 43.4505859375,
-              "upper95": 46.5740234375
+              "mean": 45.10101318359375,
+              "median": 45.134765625,
+              "lower95": 43.47744140625,
+              "upper95": 46.7443359375
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 2.4508056640625,
-              "median": 2.412109375,
-              "lower95": 0.73544921875,
-              "upper95": 4.423046875
+              "mean": 2.41046142578125,
+              "median": 2.4296875,
+              "lower95": 0.7235351562500001,
+              "upper95": 4.4052734375
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.03363037109375,
-              "median": 0.03125,
+              "mean": 0.033905029296875,
+              "median": 0.033203125,
               "lower95": 0.015625,
-              "upper95": 0.0546875
+              "upper95": 0.05859375
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.00341796875,
+              "mean": 0.00347900390625,
               "median": 0.00390625,
               "lower95": 0,
-              "upper95": 0.011035156250000011
+              "upper95": 0.01171875
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 9.105972290039062,
-              "median": 8.9990234375,
-              "lower95": 6.0492919921875,
-              "upper95": 12.661450195312502
+              "mean": 9.054931640625,
+              "median": 8.8427734375,
+              "lower95": 5.9703125,
+              "upper95": 12.890527343750001
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": 0.016357421875,
-              "median": 0,
-              "lower95": -0.75234375,
-              "upper95": 0.7932617187500002
+              "mean": 0.01361083984375,
+              "median": 0.0234375,
+              "lower95": -0.8111328125,
+              "upper95": 0.7174804687500003
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 0.04754638671875,
-              "median": 0.037109375,
-              "lower95": -0.975,
-              "upper95": 1.6154296875000003
+              "mean": 0.0072021484375,
+              "median": 0,
+              "lower95": -0.94716796875,
+              "upper95": 1.2192382812500004
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": -0.0003662109375,
+              "mean": -0.000091552734375,
               "median": 0,
-              "lower95": -0.014941406249999999,
-              "upper95": 0.014941406250000011
+              "lower95": -0.01171875,
+              "upper95": 0.01171875
             },
             "tieRate": {
               "samples": 128,
-              "mean": -0.00018310546875,
+              "mean": -0.0001220703125,
               "median": 0,
               "lower95": -0.0078125,
               "upper95": 0.0078125
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 0.006591796875,
-              "median": 0,
-              "lower95": -1.7712890625,
-              "upper95": 1.76943359375
+              "mean": -0.0444488525390625,
+              "median": -0.125,
+              "lower95": -1.7715087890624999,
+              "upper95": 1.5515625000000002
             }
           },
           "winInvariance": {
@@ -453,75 +455,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 44.95697021484375,
-              "median": 44.826171875,
-              "lower95": 43.50947265625,
-              "upper95": 46.91162109375
+              "mean": 44.937286376953125,
+              "median": 44.787109375,
+              "lower95": 43.30869140625,
+              "upper95": 46.9267578125
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 1.74261474609375,
-              "median": 1.828125,
-              "lower95": -0.05361328124999991,
-              "upper95": 3.3424804687500003
+              "mean": 1.729461669921875,
+              "median": 1.830078125,
+              "lower95": 0.03632812500000004,
+              "upper95": 3.6791015625000005
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.031890869140625,
+              "mean": 0.031768798828125,
               "median": 0.03125,
-              "lower95": 0.015625,
+              "lower95": 0.012402343750000001,
               "upper95": 0.05078125
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.003204345703125,
+              "mean": 0.003143310546875,
               "median": 0.00390625,
               "lower95": 0,
               "upper95": 0.01171875
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 8.991401672363281,
-              "median": 8.7177734375,
-              "lower95": 6.13271484375,
-              "upper95": 12.741235351562501
+              "mean": 8.971931457519531,
+              "median": 8.8740234375,
+              "lower95": 5.8484130859375,
+              "upper95": 13.315600585937501
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": -0.048797607421875,
-              "median": -0.029296875,
-              "lower95": -1.0619140625,
-              "upper95": 0.8681640625000001
+              "mean": -0.0684814453125,
+              "median": -0.09765625,
+              "lower95": -0.9490234375,
+              "upper95": 0.9784179687500001
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 0.019805908203125,
-              "median": -0.001953125,
-              "lower95": -1.1744140625,
-              "upper95": 1.4736328125
+              "mean": 0.00665283203125,
+              "median": -0.025390625,
+              "lower95": -1.335546875,
+              "upper95": 1.2807617187500004
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.000762939453125,
+              "mean": 0.000640869140625,
               "median": 0,
               "lower95": -0.01171875,
               "upper95": 0.015625
             },
             "tieRate": {
               "samples": 128,
-              "mean": -0.00030517578125,
+              "mean": -0.0003662109375,
               "median": 0,
               "lower95": -0.0078125,
               "upper95": 0.0078125
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": -0.00604248046875,
-              "median": -0.01513671875,
-              "lower95": -2.20625,
-              "upper95": 2.1031250000000004
+              "mean": -0.0255126953125,
+              "median": 0,
+              "lower95": -2.1353515625,
+              "upper95": 1.8937500000000007
             }
           },
           "winInvariance": {
@@ -596,75 +598,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 44.98434627757354,
-              "median": 44.893382352941174,
-              "lower95": 43.43943014705882,
-              "upper95": 46.55965073529411
+              "mean": 45.07757927389704,
+              "median": 45.012867647058826,
+              "lower95": 43.566268382352945,
+              "upper95": 46.94512867647059
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 2.522317325367647,
-              "median": 2.5533088235294117,
-              "lower95": 0.8143382352941178,
-              "upper95": 4.130514705882353
+              "mean": 2.6052102481617654,
+              "median": 2.59375,
+              "lower95": 1.2249080882352943,
+              "upper95": 4.234375000000001
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.03326056985294118,
+              "mean": 0.03225528492647059,
               "median": 0.03308823529411765,
-              "lower95": 0.007996323529411766,
+              "lower95": 0.011029411764705883,
               "upper95": 0.05818014705882354
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0032743566176470567,
+              "mean": 0.0036764705882352923,
               "median": 0.003676470588235294,
               "lower95": 0,
-              "upper95": 0.011029411764705883
+              "upper95": 0.014705882352941176
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 10.040878295898438,
-              "median": 10.02685546875,
-              "lower95": 6.3766357421875,
-              "upper95": 14.025756835937502
+              "mean": 9.977279663085938,
+              "median": 10.03125,
+              "lower95": 6.7599609375,
+              "upper95": 13.7380859375
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": -0.03610409007352977,
-              "median": -0.003676470588235503,
-              "lower95": -1.0164522058823509,
-              "upper95": 0.738970588235297
+              "mean": 0.05712890624999989,
+              "median": -0.01102941176470651,
+              "lower95": -1.0222426470588237,
+              "upper95": 1.1795036764705884
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 0.013987821691176428,
-              "median": 0.040441176470588536,
-              "lower95": -1.2187499999999998,
-              "upper95": 1.2628676470588238
+              "mean": 0.09688074448529409,
+              "median": 0.07904411764705888,
+              "lower95": -0.920863970588235,
+              "upper95": 1.3050551470588243
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.0005457261029411767,
+              "mean": -0.0004595588235294089,
               "median": 0,
-              "lower95": -0.018382352941176468,
+              "lower95": -0.024448529411764702,
               "upper95": 0.014705882352941176
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.00020105698529411796,
+              "mean": 0.0006031709558823533,
               "median": 0,
-              "lower95": -0.007352941176470589,
-              "upper95": 0.007352941176470589
+              "lower95": -0.007352941176470588,
+              "upper95": 0.011029411764705881
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": -0.05377960205078125,
-              "median": -0.11767578125,
-              "lower95": -2.3758056640625,
-              "upper95": 3.203637695312502
+              "mean": -0.11737823486328125,
+              "median": -0.189453125,
+              "lower95": -2.55654296875,
+              "upper95": 3.3459228515625004
             }
           },
           "winInvariance": {
@@ -735,75 +737,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.05954159007353,
-              "median": 45.022058823529406,
-              "lower95": 43.603768382352946,
-              "upper95": 46.94797794117647
+              "mean": 45.099896599264724,
+              "median": 45.08272058823529,
+              "lower95": 43.60266544117647,
+              "upper95": 46.852757352941175
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 1.683392693014706,
-              "median": 1.7224264705882353,
-              "lower95": -0.18345588235294116,
-              "upper95": 3.4074448529411767
+              "mean": 1.778377757352941,
+              "median": 1.7794117647058822,
+              "lower95": -0.22233455882352943,
+              "upper95": 3.6675551470588243
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.031479779411764684,
+              "mean": 0.031020220588235267,
               "median": 0.029411764705882353,
               "lower95": 0.014705882352941176,
-              "upper95": 0.051470588235294115
+              "upper95": 0.05514705882352941
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0033030790441176453,
+              "mean": 0.0029009650735294097,
               "median": 0.003676470588235294,
               "lower95": 0,
-              "upper95": 0.01406250000000001
+              "upper95": 0.010386029411764718
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 9.653450012207031,
-              "median": 9.59375,
-              "lower95": 6.1357666015625,
-              "upper95": 13.319506835937501
+              "mean": 9.784736633300781,
+              "median": 9.6552734375,
+              "lower95": 6.6382568359375,
+              "upper95": 13.228125
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": -0.0631606158088237,
-              "median": 0.003676470588235503,
-              "lower95": -1.2590992647058858,
-              "upper95": 0.9255514705882362
+              "mean": -0.02280560661764719,
+              "median": 0.03125,
+              "lower95": -1.02922794117647,
+              "upper95": 0.9539522058823569
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 0.0043945312500002255,
-              "median": -0.0533088235294118,
-              "lower95": -1.2229779411764705,
-              "upper95": 1.5314338235294118
+              "mean": 0.09937959558823528,
+              "median": 0.12316176470588236,
+              "lower95": -1.386488970588235,
+              "upper95": 1.3776654411764706
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.00043083639705882384,
+              "mean": -0.000028722426470588052,
               "median": 0,
               "lower95": -0.01470588235294118,
-              "upper95": 0.01470588235294118
+              "upper95": 0.011029411764705885
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0004882812500000003,
+              "mean": 0.00008616727941176498,
               "median": 0,
               "lower95": -0.007352941176470588,
-              "upper95": 0.007352941176470589
+              "upper95": 0.007352941176470588
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": -0.05182647705078125,
-              "median": 0.0517578125,
-              "lower95": -2.22880859375,
-              "upper95": 2.1244873046875
+              "mean": 0.07946014404296875,
+              "median": 0.25048828125,
+              "lower95": -2.5549560546875,
+              "upper95": 2.3301025390625005
             }
           },
           "winInvariance": {
@@ -890,75 +892,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.19122314453125,
-              "median": 45.2421875,
-              "lower95": 43.46875,
-              "upper95": 46.7576171875
+              "mean": 45.194732666015625,
+              "median": 45.29296875,
+              "lower95": 43.44873046875,
+              "upper95": 46.71806640625
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 2.04534912109375,
-              "median": 1.955078125,
-              "lower95": 0.6720703125,
-              "upper95": 3.6706054687500003
+              "mean": 2.039581298828125,
+              "median": 1.947265625,
+              "lower95": 0.67724609375,
+              "upper95": 3.6250976562500004
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.03363037109375,
-              "median": 0.03125,
+              "mean": 0.033538818359375,
+              "median": 0.03515625,
               "lower95": 0.015625,
-              "upper95": 0.06113281250000002
+              "upper95": 0.06181640625000001
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0029296875,
+              "mean": 0.003143310546875,
               "median": 0.00390625,
               "lower95": 0,
               "upper95": 0.01171875
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 8.581222534179688,
-              "median": 8.51513671875,
-              "lower95": 5.78212890625,
-              "upper95": 11.626464843750002
+              "mean": 8.625312805175781,
+              "median": 8.685546875,
+              "lower95": 5.82275390625,
+              "upper95": 11.412402343750001
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": -0.003509521484375,
-              "median": -0.001953125,
-              "lower95": -0.1041015625,
-              "upper95": 0.08203125
+              "mean": 0,
+              "median": -0.00390625,
+              "lower95": -0.09306640625,
+              "upper95": 0.09238281250000002
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 0.006072998046875,
-              "median": 0.005859375,
-              "lower95": -0.07421875,
-              "upper95": 0.10478515625000001
+              "mean": 0.00030517578125,
+              "median": 0,
+              "lower95": -0.10595703125,
+              "upper95": 0.07744140625000001
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.00006103515625,
+              "mean": -0.000030517578125,
               "median": 0,
               "lower95": -0.0078125,
               "upper95": 0.0078125
             },
             "tieRate": {
               "samples": 128,
-              "mean": -0.000244140625,
+              "mean": -0.000030517578125,
               "median": 0,
               "lower95": -0.0078125,
-              "upper95": 0.00390625
+              "upper95": 0.0078125
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": -0.0805206298828125,
-              "median": -0.01416015625,
-              "lower95": -1.56318359375,
-              "upper95": 0.9890625000000002
+              "mean": -0.03643035888671875,
+              "median": 0.005859375,
+              "lower95": -1.2997070312499999,
+              "upper95": 1.0947265625
             }
           },
           "winInvariance": {
@@ -1031,75 +1033,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 44.94342041015625,
-              "median": 44.984375,
-              "lower95": 43.37451171875,
-              "upper95": 46.60185546875
+              "mean": 44.938690185546875,
+              "median": 44.91796875,
+              "lower95": 43.45390625,
+              "upper95": 46.5001953125
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 1.79144287109375,
-              "median": 1.841796875,
-              "lower95": -0.25947265624999993,
-              "upper95": 3.7275390625
+              "mean": 1.806243896484375,
+              "median": 1.78125,
+              "lower95": -0.191015625,
+              "upper95": 4.1234375000000005
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.030914306640625,
+              "mean": 0.030853271484375,
               "median": 0.03125,
               "lower95": 0.01171875,
-              "upper95": 0.0546875
+              "upper95": 0.05078125
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.003204345703125,
+              "mean": 0.003662109375,
               "median": 0.00390625,
               "lower95": 0,
               "upper95": 0.01171875
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 8.874229431152344,
-              "median": 8.935546875,
-              "lower95": 5.69775390625,
-              "upper95": 12.5703125
+              "mean": 8.88214111328125,
+              "median": 8.9052734375,
+              "lower95": 5.648828125,
+              "upper95": 12.2443603515625
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": -0.009063720703125,
-              "median": 0.029296875,
-              "lower95": -0.735546875,
-              "upper95": 0.6179687500000002
+              "mean": -0.0137939453125,
+              "median": -0.02734375,
+              "lower95": -0.78154296875,
+              "upper95": 0.7699218750000003
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 0.001190185546875,
-              "median": -0.001953125,
-              "lower95": -0.79736328125,
-              "upper95": 0.9998046875000001
+              "mean": 0.0159912109375,
+              "median": 0.029296875,
+              "lower95": -1.04599609375,
+              "upper95": 1.0036132812500003
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.00030517578125,
+              "mean": 0.000244140625,
               "median": 0,
-              "lower95": -0.0078125,
-              "upper95": 0.0078125
+              "lower95": -0.01171875,
+              "upper95": 0.014941406250000011
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.000091552734375,
+              "mean": 0.00054931640625,
               "median": 0,
-              "lower95": -0.0078125,
+              "lower95": -0.00390625,
               "upper95": 0.0078125
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 0.03075408935546875,
-              "median": 0,
-              "lower95": -1.853125,
-              "upper95": 2.1490478515625004
+              "mean": 0.038665771484375,
+              "median": -0.0302734375,
+              "lower95": -2.01943359375,
+              "upper95": 1.7624267578125004
             }
           },
           "winInvariance": {
@@ -1172,75 +1174,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 44.99414062499999,
-              "median": 44.943014705882355,
-              "lower95": 43.35919117647059,
-              "upper95": 46.77564338235294
+              "mean": 45.044835707720594,
+              "median": 45.049632352941174,
+              "lower95": 43.344485294117646,
+              "upper95": 46.83023897058823
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 2.450482536764706,
-              "median": 2.3988970588235294,
-              "lower95": 0.9338235294117647,
-              "upper95": 4.3018382352941185
+              "mean": 2.5807387408088243,
+              "median": 2.5275735294117645,
+              "lower95": 1.0950367647058823,
+              "upper95": 4.187775735294118
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.03239889705882352,
-              "median": 0.03308823529411765,
-              "lower95": 0.014705882352941176,
+              "mean": 0.03285845588235292,
+              "median": 0.029411764705882353,
+              "lower95": 0.01167279411764706,
               "upper95": 0.05514705882352941
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0028722426470588224,
+              "mean": 0.003245634191176466,
               "median": 0.003676470588235294,
               "lower95": 0,
-              "upper95": 0.011029411764705883
+              "upper95": 0.010386029411764718
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 9.8526611328125,
-              "median": 9.748046875,
-              "lower95": 6.0984375,
-              "upper95": 13.228125
+              "mean": 9.944725036621094,
+              "median": 10.06201171875,
+              "lower95": 6.2708984375,
+              "upper95": 13.62431640625
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": -0.03561580882352927,
-              "median": -0.04411764705882604,
-              "lower95": -0.9636948529411773,
-              "upper95": 0.9372242647058849
+              "mean": 0.01507927389705882,
+              "median": -0.011029411764702957,
+              "lower95": -0.8366727941176432,
+              "upper95": 1.097977941176472
             },
             "meanMargin": {
               "samples": 128,
-              "mean": -0.004997702205882554,
-              "median": -0.051470588235294046,
-              "lower95": -1.0124080882352942,
-              "upper95": 1.1948529411764712
+              "mean": 0.12525850183823536,
+              "median": 0.08639705882352922,
+              "lower95": -1.034191176470588,
+              "upper95": 1.3771139705882356
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": -0.0003733915441176467,
+              "mean": 0.00008616727941176519,
               "median": 0,
-              "lower95": -0.014705882352941176,
-              "upper95": 0.014062500000000009
+              "lower95": -0.014062500000000002,
+              "upper95": 0.01470588235294118
             },
             "tieRate": {
               "samples": 128,
-              "mean": -0.0006031709558823527,
+              "mean": -0.0002297794117647056,
               "median": 0,
-              "lower95": -0.010386029411764704,
+              "lower95": -0.007352941176470588,
               "upper95": 0.007352941176470588
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": -0.07671356201171875,
-              "median": 0.1298828125,
-              "lower95": -2.5076416015625,
-              "upper95": 2.433862304687501
+              "mean": 0.015350341796875,
+              "median": 0.125,
+              "lower95": -2.96796875,
+              "upper95": 2.3615234375000003
             }
           },
           "winInvariance": {
@@ -1311,75 +1313,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.11181640625,
-              "median": 45.11397058823529,
-              "lower95": 43.75340073529412,
-              "upper95": 46.54329044117647
+              "mean": 45.129250919117645,
+              "median": 45.143382352941174,
+              "lower95": 43.751654411764704,
+              "upper95": 46.5610294117647
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 1.804428998161765,
-              "median": 1.7904411764705883,
-              "lower95": -0.003676470588235294,
-              "upper95": 3.911856617647059
+              "mean": 1.7225413602941182,
+              "median": 1.6580882352941178,
+              "lower95": -0.21525735294117646,
+              "upper95": 3.64264705882353
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.032398897058823505,
-              "median": 0.03125,
-              "lower95": 0.011029411764705883,
-              "upper95": 0.05818014705882354
+              "mean": 0.031249999999999976,
+              "median": 0.029411764705882353,
+              "lower95": 0.01167279411764706,
+              "upper95": 0.051470588235294115
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0031020220588235284,
+              "mean": 0.003130744485294115,
               "median": 0.003676470588235294,
               "lower95": 0,
               "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 9.763031005859375,
-              "median": 9.68115234375,
-              "lower95": 6.57275390625,
-              "upper95": 13.20556640625
+              "mean": 9.724540710449219,
+              "median": 9.65234375,
+              "lower95": 6.38525390625,
+              "upper95": 14.229418945312503
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": -0.016113281249999944,
-              "median": -0.034926470588239056,
-              "lower95": -0.9629595588235256,
-              "upper95": 0.9288602941176466
+              "mean": 0.0013212316176469674,
+              "median": -0.023897058823528994,
+              "lower95": -0.9747242647058874,
+              "upper95": 1.0530330882352907
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 0.05362477022058819,
-              "median": 0.05882352941176472,
-              "lower95": -1.2529411764705884,
-              "upper95": 1.557169117647059
+              "mean": -0.02826286764705906,
+              "median": 0.005514705882352922,
+              "lower95": -1.5840992647058825,
+              "upper95": 1.559191176470589
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.0006606158088235297,
+              "mean": -0.0004882812500000002,
               "median": 0,
               "lower95": -0.014705882352941176,
-              "upper95": 0.018382352941176468
+              "upper95": 0.011029411764705885
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.00028722426470588263,
+              "mean": 0.00031594669117647093,
               "median": 0,
               "lower95": -0.007352941176470588,
               "upper95": 0.007352941176470589
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 0.006591796875,
-              "median": 0.1552734375,
-              "lower95": -3.2279541015625,
-              "upper95": 2.3640625
+              "mean": -0.03189849853515625,
+              "median": -0.18310546875,
+              "lower95": -2.5626220703125,
+              "upper95": 2.4041748046875004
             }
           },
           "winInvariance": {
@@ -1450,75 +1452,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.09406594669121,
-              "median": 45.075367647058826,
-              "lower95": 43.59623161764706,
-              "upper95": 46.61470588235294
+              "mean": 45.14088350183823,
+              "median": 45.10477941176471,
+              "lower95": 43.56341911764706,
+              "upper95": 46.653125
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 2.538229549632352,
-              "median": 2.4871323529411766,
-              "lower95": 0.5745404411764706,
-              "upper95": 4.181709558823529
+              "mean": 2.522317325367646,
+              "median": 2.4301470588235294,
+              "lower95": 0.5925551470588235,
+              "upper95": 4.5210477941176475
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.03150850183823527,
+              "mean": 0.03196806066176467,
               "median": 0.029411764705882353,
-              "lower95": 0.014705882352941176,
-              "upper95": 0.051470588235294115
+              "lower95": 0.011029411764705883,
+              "upper95": 0.05818014705882354
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0035041360294117605,
+              "mean": 0.0032743566176470563,
               "median": 0.003676470588235294,
               "lower95": 0,
               "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 9.880630493164062,
-              "median": 9.779296875,
-              "lower95": 6.4739990234375,
-              "upper95": 13.225000000000001
+              "mean": 9.7269287109375,
+              "median": 9.74609375,
+              "lower95": 6.3859375,
+              "upper95": 13.213793945312501
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": 0.07390280330882332,
-              "median": 0.09742647058823195,
-              "lower95": -1.0325367647058783,
-              "upper95": 1.1355698529411757
+              "mean": 0.12072035845588219,
+              "median": 0.08455882352941657,
+              "lower95": -0.8781250000000049,
+              "upper95": 1.1353860294117681
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 0.02001953124999999,
-              "median": -0.04227941176470584,
-              "lower95": -1.5579963235294114,
-              "upper95": 1.4760110294117648
+              "mean": 0.004107306985294025,
+              "median": 0.012867647058823595,
+              "lower95": -1.395863970588235,
+              "upper95": 1.445588235294118
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": -0.000229779411764705,
+              "mean": 0.00022977941176470612,
               "median": 0,
-              "lower95": -0.014705882352941173,
-              "upper95": 0.014705882352941175
+              "lower95": -0.011029411764705885,
+              "upper95": 0.017738970588235304
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.00034466911764705917,
+              "mean": 0.00011488970588235324,
               "median": 0,
-              "lower95": -0.011029411764705883,
+              "lower95": -0.007352941176470588,
               "upper95": 0.007352941176470588
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 0.158111572265625,
-              "median": 0.34130859375,
-              "lower95": -2.789990234375,
-              "upper95": 2.4235107421875
+              "mean": 0.0044097900390625,
+              "median": -0.03125,
+              "lower95": -2.9663818359375,
+              "upper95": 2.695825195312501
             }
           },
           "winInvariance": {
@@ -1603,75 +1605,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.026153564453125,
-              "median": 45.0859375,
-              "lower95": 43.1283203125,
-              "upper95": 46.482421875
+              "mean": 45.028106689453125,
+              "median": 45.111328125,
+              "lower95": 43.15693359375,
+              "upper95": 46.50380859375
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 2.148590087890625,
-              "median": 2.10546875,
-              "lower95": 0.883203125,
-              "upper95": 3.7912109375000007
+              "mean": 2.149017333984375,
+              "median": 2.080078125,
+              "lower95": 0.9353515625000001,
+              "upper95": 3.7609375000000003
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.03155517578125,
+              "mean": 0.031524658203125,
               "median": 0.03125,
               "lower95": 0.015625,
               "upper95": 0.05078125
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.003082275390625,
+              "mean": 0.00323486328125,
               "median": 0.00390625,
               "lower95": 0,
-              "upper95": 0.0078125
+              "upper95": 0.01171875
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 8.756294250488281,
-              "median": 8.67138671875,
-              "lower95": 5.9703125,
-              "upper95": 11.54833984375
+              "mean": 8.746139526367188,
+              "median": 8.748046875,
+              "lower95": 5.9843505859375,
+              "upper95": 11.862890625000002
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": -0.002105712890625,
-              "median": -0.00390625,
+              "mean": -0.000152587890625,
+              "median": -0.001953125,
               "lower95": -0.08984375,
-              "upper95": 0.11582031250000002
+              "upper95": 0.08134765625000001
             },
             "meanMargin": {
               "samples": 128,
-              "mean": -0.000885009765625,
-              "median": -0.001953125,
-              "lower95": -0.09375,
-              "upper95": 0.08916015625000001
+              "mean": -0.000457763671875,
+              "median": 0,
+              "lower95": -0.1015625,
+              "upper95": 0.09306640625000001
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": -0.00030517578125,
+              "mean": -0.000335693359375,
               "median": 0,
               "lower95": -0.0078125,
-              "upper95": 0.007128906250000011
+              "upper95": 0.0078125
             },
             "tieRate": {
               "samples": 128,
-              "mean": -0.000244140625,
+              "mean": -0.000091552734375,
               "median": 0,
               "lower95": -0.0078125,
-              "upper95": 0.007128906250000011
+              "upper95": 0.0078125
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": -0.160430908203125,
-              "median": -0.1552734375,
-              "lower95": -1.5985107421875,
-              "upper95": 1.0249755859375
+              "mean": -0.17058563232421875,
+              "median": -0.17236328125,
+              "lower95": -1.58896484375,
+              "upper95": 1.0406250000000004
             }
           },
           "winInvariance": {
@@ -1747,75 +1749,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.006749770220594,
-              "median": 44.94669117647059,
-              "lower95": 43.322610294117645,
-              "upper95": 46.646874999999994
+              "mean": 45.03458180147059,
+              "median": 45.02757352941177,
+              "lower95": 43.263786764705884,
+              "upper95": 46.71433823529412
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 2.4186293658088243,
-              "median": 2.4154411764705883,
-              "lower95": 0.6534926470588236,
-              "upper95": 4.262408088235294
+              "mean": 2.464039522058824,
+              "median": 2.4797794117647056,
+              "lower95": 0.527389705882353,
+              "upper95": 4.239246323529412
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.032657398897058806,
+              "mean": 0.032485064338235274,
               "median": 0.03308823529411765,
-              "lower95": 0.007996323529411766,
+              "lower95": 0.011029411764705883,
               "upper95": 0.05450367647058824
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0029584099264705855,
+              "mean": 0.003303079044117644,
               "median": 0.003676470588235294,
               "lower95": 0,
               "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 9.917640686035156,
-              "median": 9.90576171875,
-              "lower95": 6.3116943359375,
-              "upper95": 13.3748291015625
+              "mean": 10.066215515136719,
+              "median": 10.09326171875,
+              "lower95": 6.4990234375,
+              "upper95": 13.540625
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": 0.02277688419117646,
-              "median": -0.003676470588235503,
-              "lower95": -0.6853860294117629,
-              "upper95": 0.9496323529411772
+              "mean": 0.05060891544117618,
+              "median": 0.016544117647057988,
+              "lower95": -0.7470588235294128,
+              "upper95": 1.1977022058823523
             },
             "meanMargin": {
               "samples": 128,
-              "mean": -0.04190602022058833,
-              "median": 0.009191176470588203,
-              "lower95": -0.9408088235294115,
-              "upper95": 0.7537683823529413
+              "mean": 0.0035041360294117557,
+              "median": -2.220446049250313e-16,
+              "lower95": -0.8601102941176473,
+              "upper95": 0.9098345588235294
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": -0.0003733915441176461,
+              "mean": -0.0005457261029411759,
               "median": 0,
               "lower95": -0.011029411764705885,
-              "upper95": 0.011029411764705885
+              "upper95": 0.011029411764705881
             },
             "tieRate": {
               "samples": 128,
-              "mean": -0.00031594669117647033,
+              "mean": 0.00002872242647058854,
               "median": 0,
               "lower95": -0.007352941176470589,
               "upper95": 0.007352941176470588
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 0.01944732666015625,
-              "median": 0.09375,
-              "lower95": -1.8681884765625,
-              "upper95": 1.8046142578125002
+              "mean": 0.16802215576171875,
+              "median": 0.0576171875,
+              "lower95": -1.69072265625,
+              "upper95": 2.75673828125
             }
           },
           "winInvariance": {
@@ -1886,75 +1888,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.018899356617666,
-              "median": 45.07720588235294,
-              "lower95": 43.41691176470588,
-              "upper95": 46.40183823529412
+              "mean": 45.04776539522057,
+              "median": 45.00551470588235,
+              "lower95": 43.73722426470588,
+              "upper95": 46.30431985294118
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 1.6617072610294117,
-              "median": 1.645220588235294,
-              "lower95": -0.36185661764705884,
-              "upper95": 3.565165441176471
+              "mean": 1.7392290900735299,
+              "median": 1.8694852941176472,
+              "lower95": -0.12601102941176465,
+              "upper95": 3.745955882352942
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.033116957720588217,
+              "mean": 0.031968060661764684,
               "median": 0.03308823529411765,
               "lower95": 0.014705882352941176,
-              "upper95": 0.05818014705882354
+              "upper95": 0.05082720588235295
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0036190257352941156,
+              "mean": 0.0031020220588235292,
               "median": 0.003676470588235294,
               "lower95": 0,
               "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 9.77197265625,
-              "median": 9.87451171875,
-              "lower95": 6.25703125,
-              "upper95": 13.092187500000001
+              "mean": 9.721023559570312,
+              "median": 9.53076171875,
+              "lower95": 6.8857666015625,
+              "upper95": 13.1865234375
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": -0.07970473345588247,
-              "median": -0.09191176470588402,
-              "lower95": -1.128860294117652,
-              "upper95": 0.9625919117647044
+              "mean": -0.050838694852941346,
+              "median": -0.05147058823529349,
+              "lower95": -0.9414522058823515,
+              "upper95": 0.830055147058824
             },
             "meanMargin": {
               "samples": 128,
-              "mean": -0.093204273897059,
-              "median": -0.08272058823529416,
-              "lower95": -1.2627757352941176,
-              "upper95": 0.9390625
+              "mean": -0.015682444852941076,
+              "median": -0.007352941176470562,
+              "lower95": -1.2812499999999998,
+              "upper95": 1.3199448529411768
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.0011488970588235292,
+              "mean": -1.0842021724855044e-19,
               "median": 0,
-              "lower95": -0.011029411764705885,
-              "upper95": 0.014705882352941176
+              "lower95": -0.014062499999999999,
+              "upper95": 0.011029411764705885
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.00028722426470588263,
+              "mean": -0.0002297794117647056,
               "median": 0,
               "lower95": -0.007352941176470589,
               "upper95": 0.007352941176470589
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": -0.1296234130859375,
-              "median": -0.0625,
-              "lower95": -2.91630859375,
-              "upper95": 2.56474609375
+              "mean": -0.180572509765625,
+              "median": -0.15380859375,
+              "lower95": -2.8639892578125,
+              "upper95": 2.1140625
             }
           },
           "winInvariance": {
@@ -2025,75 +2027,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.023782169117645,
-              "median": 44.939338235294116,
-              "lower95": 43.475183823529406,
-              "upper95": 46.86084558823529
+              "mean": 45.00603170955884,
+              "median": 45.055147058823536,
+              "lower95": 43.392279411764704,
+              "upper95": 46.782812500000006
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 2.574793198529412,
-              "median": 2.5238970588235294,
-              "lower95": 0.9279411764705883,
-              "upper95": 4.661029411764706
+              "mean": 2.5589384191176467,
+              "median": 2.5919117647058822,
+              "lower95": 0.7235294117647059,
+              "upper95": 4.3140625
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.03214039522058823,
+              "mean": 0.03234145220588233,
               "median": 0.03308823529411765,
-              "lower95": 0.01167279411764706,
-              "upper95": 0.05818014705882354
+              "lower95": 0.011029411764705883,
+              "upper95": 0.05450367647058824
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0033605238970588203,
+              "mean": 0.003532858455882349,
               "median": 0.003676470588235294,
               "lower95": 0,
               "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 9.764533996582031,
-              "median": 9.779296875,
-              "lower95": 6.1679443359375,
-              "upper95": 14.047753906250001
+              "mean": 9.751716613769531,
+              "median": 9.68359375,
+              "lower95": 6.77119140625,
+              "upper95": 13.0513916015625
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": -0.014734604779411575,
-              "median": -0.0018382352941124225,
-              "lower95": -1.1623161764705903,
-              "upper95": 1.1724264705882386
+              "mean": -0.03248506433823528,
+              "median": -0.06801470588235503,
+              "lower95": -1.196783088235293,
+              "upper95": 1.0699448529411741
             },
             "meanMargin": {
               "samples": 128,
-              "mean": -0.021570542279411943,
-              "median": -0.07169117647058831,
-              "lower95": -1.3633272058823531,
-              "upper95": 1.1642463235294123
+              "mean": -0.037425321691176565,
+              "median": -0.005514705882353033,
+              "lower95": -1.2861213235294116,
+              "upper95": 1.1561580882352942
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": -0.000344669117647059,
+              "mean": -0.00014361213235294213,
               "median": 0,
-              "lower95": -0.011029411764705885,
-              "upper95": 0.011029411764705885
+              "lower95": -0.01838235294117647,
+              "upper95": 0.01470588235294118
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.000057444852941176754,
+              "mean": 0.0002297794117647062,
               "median": 0,
               "lower95": -0.007352941176470589,
               "upper95": 0.007352941176470588
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 0.0863800048828125,
-              "median": 0.06298828125,
-              "lower95": -2.2289794921875,
-              "upper95": 2.7774414062500004
+              "mean": 0.0735626220703125,
+              "median": 0.06201171875,
+              "lower95": -2.6615478515625,
+              "upper95": 2.2779541015625004
             }
           },
           "winInvariance": {
@@ -2164,75 +2166,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 44.99819048713236,
-              "median": 44.95404411764706,
-              "lower95": 43.41966911764706,
-              "upper95": 46.41378676470588
+              "mean": 44.950022977941174,
+              "median": 44.998161764705884,
+              "lower95": 43.36525735294118,
+              "upper95": 46.33547794117647
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 1.5524758731617645,
-              "median": 1.4613970588235294,
-              "lower95": -0.12104779411764703,
-              "upper95": 3.428768382352942
+              "mean": 1.5675551470588238,
+              "median": 1.5477941176470589,
+              "lower95": -0.34209558823529407,
+              "upper95": 3.3714154411764707
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.034782858455882346,
+              "mean": 0.033863740808823525,
               "median": 0.03308823529411765,
               "lower95": 0.014705882352941176,
-              "upper95": 0.06185661764705883
+              "upper95": 0.058823529411764705
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.003274356617647057,
-              "median": 0.003676470588235294,
+              "mean": 0.002843520220588235,
+              "median": 0.001838235294117647,
               "lower95": 0,
               "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 10.03399658203125,
-              "median": 9.9052734375,
-              "lower95": 6.7599609375,
-              "upper95": 13.8349365234375
+              "mean": 9.930213928222656,
+              "median": 9.9375,
+              "lower95": 6.87177734375,
+              "upper95": 13.796484375
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": -0.009564568014705843,
-              "median": 0.04779411764705799,
-              "lower95": -1.0024816176470597,
-              "upper95": 0.8955882352941166
+              "mean": -0.057732077205882526,
+              "median": -0.0625,
+              "lower95": -1.0623161764705917,
+              "upper95": 0.9035845588235282
             },
             "meanMargin": {
               "samples": 128,
-              "mean": -0.036391314338235316,
-              "median": 0.06801470588235281,
-              "lower95": -1.4154411764705888,
-              "upper95": 1.2303308823529415
+              "mean": -0.021312040441176433,
+              "median": -0.0533088235294118,
+              "lower95": -1.5355698529411765,
+              "upper95": 1.6180147058823535
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 1.0842021724855044e-19,
+              "mean": -0.0009191176470588258,
               "median": 0,
-              "lower95": -0.011029411764705885,
-              "upper95": 0.014705882352941178
+              "lower95": -0.01773897058823529,
+              "upper95": 0.011029411764705885
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.000028722426470588547,
+              "mean": -0.00040211397058823506,
               "median": 0,
               "lower95": -0.007352941176470588,
-              "upper95": 0.007352941176470589
+              "upper95": 0.007352941176470588
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 0.28946685791015625,
-              "median": 0.25,
-              "lower95": -2.736572265625,
-              "upper95": 2.85380859375
+              "mean": 0.1856842041015625,
+              "median": 0.21728515625,
+              "lower95": -2.6833984374999997,
+              "upper95": 2.4986328125
             }
           },
           "winInvariance": {
@@ -2255,7 +2257,7 @@
     },
     {
       "draftYear": 2021,
-      "datasetVersion": "nflverse-2021-combine-pool-v1",
+      "datasetVersion": "nflverse-2021-combine-pool-v2-trey-reference",
       "cutoff": "2021-04-29T23:59:00Z",
       "completedDraft": {
         "status": "ready",
@@ -2282,35 +2284,35 @@
           "baseline": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.04035500919118,
-              "median": 45.0625,
-              "lower95": 43.41369485294118,
+              "mean": 45.040642233455884,
+              "median": 45.06801470588235,
+              "lower95": 43.398529411764706,
               "upper95": 46.84411764705882
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 2.073845358455883,
-              "median": 2.0808823529411766,
+              "mean": 2.0753963694852944,
+              "median": 2.0900735294117645,
               "lower95": 0.5744485294117647,
-              "upper95": 3.5525735294117653
+              "upper95": 3.5506433823529417
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.03127872242647057,
+              "mean": 0.03133616727941174,
               "median": 0.029411764705882353,
               "lower95": 0.01167279411764706,
               "upper95": 0.05450367647058824
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0031594669117647033,
+              "mean": 0.0030732996323529385,
               "median": 0.003676470588235294,
               "lower95": 0,
               "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 9.882278442382812,
+              "mean": 9.898460388183594,
               "median": 9.99951171875,
               "lower95": 6.0216064453125,
               "upper95": 13.6953125
@@ -2319,75 +2321,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.03851677389706,
+              "mean": 45.03874655330881,
               "median": 45.07904411764706,
-              "lower95": 43.42362132352942,
-              "upper95": 46.85
+              "lower95": 43.345588235294116,
+              "upper95": 46.87316176470588
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 2.0644244025735294,
-              "median": 2.0606617647058822,
-              "lower95": 0.5024816176470589,
-              "upper95": 3.538970588235295
+              "mean": 2.070398667279412,
+              "median": 2.0845588235294117,
+              "lower95": 0.48216911764705894,
+              "upper95": 3.572058823529413
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.03199678308823526,
+              "mean": 0.03127872242647056,
               "median": 0.029411764705882353,
-              "lower95": 0.014705882352941176,
-              "upper95": 0.05514705882352941
+              "lower95": 0.011029411764705883,
+              "upper95": 0.05450367647058824
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.003590303308823526,
+              "mean": 0.0032743566176470554,
               "median": 0.003676470588235294,
               "lower95": 0,
               "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 9.937202453613281,
-              "median": 9.96826171875,
-              "lower95": 5.84462890625,
-              "upper95": 13.735766601562501
+              "mean": 9.915481567382812,
+              "median": 9.99951171875,
+              "lower95": 5.8890625000000005,
+              "upper95": 13.463281250000001
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": -0.0018382352941178626,
-              "median": -0.001838235294119528,
-              "lower95": -0.08694852941176841,
-              "upper95": 0.07591911764705961
+              "mean": -0.0018956801470591533,
+              "median": -0.003676470588239056,
+              "lower95": -0.09669117647058893,
+              "upper95": 0.09365808823529885
             },
             "meanMargin": {
               "samples": 128,
-              "mean": -0.00942095588235295,
-              "median": -0.011029411764705954,
-              "lower95": -0.11075367647058806,
-              "upper95": 0.07527573529411763
+              "mean": -0.004997702205882363,
+              "median": -0.005514705882353033,
+              "lower95": -0.09062499999999998,
+              "upper95": 0.08088235294117663
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.0007180606617647059,
+              "mean": -0.00005744485294117689,
               "median": 0,
-              "lower95": -0.007352941176470589,
-              "upper95": 0.00735294117647059
+              "lower95": -0.00735294117647059,
+              "upper95": 0.0073529411764705855
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0004308363970588239,
+              "mean": 0.00020105698529411775,
               "median": 0,
-              "lower95": -0.007352941176470588,
+              "lower95": -0.0067095588235294105,
               "upper95": 0.007352941176470588
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 0.05492401123046875,
-              "median": 0.0615234375,
-              "lower95": -1.25,
-              "upper95": 1.4289794921875
+              "mean": 0.01702117919921875,
+              "median": -0.02783203125,
+              "lower95": -1.3015625,
+              "upper95": 1.633618164062501
             }
           },
           "winInvariance": {
@@ -2421,112 +2423,112 @@
           "baseline": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.17687270220588,
-              "median": 45.1360294117647,
-              "lower95": 43.81590073529412,
-              "upper95": 46.51001838235294
+              "mean": 45.17850988051469,
+              "median": 45.137867647058826,
+              "lower95": 43.79669117647059,
+              "upper95": 46.51369485294118
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 1.7796989889705876,
-              "median": 1.9209558823529411,
-              "lower95": 0.004319852941176507,
-              "upper95": 3.3921875
+              "mean": 1.759679457720588,
+              "median": 1.8952205882352942,
+              "lower95": 0.06433823529411767,
+              "upper95": 3.3857536764705887
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.031594669117647044,
+              "mean": 0.03150850183823528,
               "median": 0.03308823529411765,
               "lower95": 0.014705882352941176,
               "upper95": 0.051470588235294115
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.003274356617647057,
+              "mean": 0.0033605238970588216,
               "median": 0.003676470588235294,
               "lower95": 0,
               "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 9.66583251953125,
-              "median": 9.435546875,
-              "lower95": 6.4482666015625,
-              "upper95": 13.4663818359375
+              "mean": 9.678993225097656,
+              "median": 9.43701171875,
+              "lower95": 6.4375,
+              "upper95": 13.5179443359375
             }
           },
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.188849954044116,
-              "median": 45.20220588235294,
-              "lower95": 43.9625,
-              "upper95": 46.577573529411765
+              "mean": 45.09805836397058,
+              "median": 45.14522058823529,
+              "lower95": 43.65818014705882,
+              "upper95": 46.46847426470588
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 1.778866038602942,
-              "median": 1.7720588235294117,
-              "lower95": 0.07500000000000001,
-              "upper95": 3.4935661764705883
+              "mean": 1.723345588235294,
+              "median": 1.713235294117647,
+              "lower95": -0.014705882352941138,
+              "upper95": 3.376011029411765
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.03162339154411762,
-              "median": 0.03125,
+              "mean": 0.031853170955882346,
+              "median": 0.03308823529411765,
               "lower95": 0.014705882352941176,
-              "upper95": 0.05082720588235295
+              "upper95": 0.05450367647058824
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.002958409926470585,
+              "mean": 0.0030732996323529407,
               "median": 0.003676470588235294,
               "lower95": 0,
-              "upper95": 0.010386029411764718
+              "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 9.810722351074219,
-              "median": 9.654296875,
-              "lower95": 6.5538818359375,
-              "upper95": 13.441918945312501
+              "mean": 9.801704406738281,
+              "median": 9.6875,
+              "lower95": 6.7521484375,
+              "upper95": 13.33984375
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": 0.011977251838234781,
-              "median": -0.003676470588235503,
-              "lower95": -0.6770220588235265,
-              "upper95": 0.6933823529411804
+              "mean": -0.08045151654411736,
+              "median": -0.06433823529411598,
+              "lower95": -0.8154411764705861,
+              "upper95": 0.512775735294119
             },
             "meanMargin": {
               "samples": 128,
-              "mean": -0.0008329503676470021,
-              "median": -0.011029411764705843,
-              "lower95": -0.9886029411764706,
-              "upper95": 1.1801470588235299
+              "mean": -0.03633386948529414,
+              "median": 0.009191176470588203,
+              "lower95": -1.197518382352941,
+              "upper95": 0.9167279411764712
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.00002872242647058881,
+              "mean": 0.0003446691176470592,
               "median": 0,
               "lower95": -0.011029411764705885,
-              "upper95": 0.011029411764705885
+              "upper95": 0.014705882352941173
             },
             "tieRate": {
               "samples": 128,
-              "mean": -0.00031594669117647033,
+              "mean": -0.0002872242647058821,
               "median": 0,
               "lower95": -0.007352941176470589,
-              "upper95": 0.007352941176470588
+              "upper95": 0.007352941176470589
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 0.14488983154296875,
-              "median": 0.12890625,
-              "lower95": -2.0507568359375,
-              "upper95": 2.313134765625
+              "mean": 0.122711181640625,
+              "median": 0.1875,
+              "lower95": -1.915625,
+              "upper95": 2.0322753906250006
             }
           },
           "winInvariance": {
@@ -2562,112 +2564,112 @@
           "baseline": {
             "meanTotal": {
               "samples": 128,
-              "mean": 44.993594898897065,
-              "median": 45,
-              "lower95": 43.372702205882355,
-              "upper95": 46.569761029411765
+              "mean": 44.98219209558824,
+              "median": 44.97610294117647,
+              "lower95": 43.36112132352942,
+              "upper95": 46.56204044117647
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 2.4752125459558822,
-              "median": 2.5441176470588234,
-              "lower95": 0.5471507352941177,
-              "upper95": 4.148253676470589
+              "mean": 2.497989430147059,
+              "median": 2.5349264705882355,
+              "lower95": 0.5615808823529412,
+              "upper95": 3.9989889705882358
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.031048943014705867,
+              "mean": 0.031048943014705857,
               "median": 0.029411764705882353,
               "lower95": 0.014705882352941176,
-              "upper95": 0.06185661764705883
+              "upper95": 0.058823529411764705
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.003159466911764704,
+              "mean": 0.003274356617647057,
               "median": 0.003676470588235294,
               "lower95": 0,
               "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 9.782135009765625,
-              "median": 9.68505859375,
-              "lower95": 6.117578125,
-              "upper95": 13.5693359375
+              "mean": 9.783035278320312,
+              "median": 9.74951171875,
+              "lower95": 6.1241943359375,
+              "upper95": 13.831079101562501
             }
           },
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.011259191176464,
-              "median": 45.071691176470594,
-              "lower95": 43.348897058823525,
-              "upper95": 46.341727941176465
+              "mean": 45.063677619485276,
+              "median": 44.966911764705884,
+              "lower95": 43.40193014705883,
+              "upper95": 46.71700367647059
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 2.526482077205882,
-              "median": 2.5716911764705883,
-              "lower95": 0.693014705882353,
-              "upper95": 4.169117647058824
+              "mean": 2.54248046875,
+              "median": 2.4724264705882355,
+              "lower95": 1.0391544117647058,
+              "upper95": 4.26139705882353
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.03159466911764703,
+              "mean": 0.030560661764705854,
               "median": 0.029411764705882353,
-              "lower95": 0.014705882352941176,
-              "upper95": 0.05818014705882354
+              "lower95": 0.01167279411764706,
+              "upper95": 0.05450367647058824
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.003446691176470584,
+              "mean": 0.003216911764705879,
               "median": 0.003676470588235294,
               "lower95": 0,
               "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 9.684417724609375,
-              "median": 9.81201171875,
-              "lower95": 6.2607666015625,
-              "upper95": 13.6240234375
+              "mean": 9.64300537109375,
+              "median": 9.6865234375,
+              "lower95": 5.9484375,
+              "upper95": 13.547460937500002
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": 0.017664292279411742,
-              "median": -0.03125,
-              "lower95": -0.9113970588235256,
-              "upper95": 0.9593749999999978
+              "mean": 0.08148552389705882,
+              "median": 0.02573529411764497,
+              "lower95": -0.5910845588235281,
+              "upper95": 0.9074448529411813
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 0.05126953125000007,
-              "median": 0.06617647058823539,
-              "lower95": -1.3685661764705883,
-              "upper95": 1.36764705882353
+              "mean": 0.04449103860294113,
+              "median": 0.06617647058823528,
+              "lower95": -1.1647977941176473,
+              "upper95": 1.4512867647058827
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.000545726102941177,
+              "mean": -0.0004882812499999998,
               "median": 0,
-              "lower95": -0.011029411764705885,
+              "lower95": -0.01470588235294118,
               "upper95": 0.014062500000000007
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0002872242647058827,
+              "mean": -0.00005744485294117617,
               "median": 0,
               "lower95": -0.007352941176470589,
               "upper95": 0.007352941176470588
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": -0.09771728515625,
-              "median": 0.00048828125,
-              "lower95": -2.6039306640625,
-              "upper95": 1.9262695312500002
+              "mean": -0.1400299072265625,
+              "median": -0.1259765625,
+              "lower95": -2.5718505859375,
+              "upper95": 2.3007080078125
             }
           },
           "winInvariance": {
@@ -2701,112 +2703,112 @@
           "baseline": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.02088120404413,
+              "mean": 45.00798483455882,
               "median": 44.955882352941174,
-              "lower95": 43.29577205882353,
-              "upper95": 46.66893382352941
+              "lower95": 43.28667279411764,
+              "upper95": 46.65992647058823
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 1.6943072150735294,
-              "median": 1.6893382352941178,
-              "lower95": -0.11865808823529408,
-              "upper95": 3.7464154411764707
+              "mean": 1.6485523897058825,
+              "median": 1.6047794117647058,
+              "lower95": -0.1362132352941176,
+              "upper95": 3.5724264705882356
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.033720128676470576,
-              "median": 0.03308823529411765,
-              "lower95": 0.014705882352941176,
-              "upper95": 0.061213235294117666
-            },
-            "tieRate": {
-              "samples": 128,
-              "mean": 0.00338924632352941,
-              "median": 0.003676470588235294,
-              "lower95": 0,
-              "upper95": 0.011029411764705883
-            },
-            "teamWinVariance": {
-              "samples": 128,
-              "mean": 9.725112915039062,
-              "median": 9.65576171875,
-              "lower95": 6.3960693359375,
-              "upper95": 13.7677734375
-            }
-          },
-          "alternate": {
-            "meanTotal": {
-              "samples": 128,
-              "mean": 44.94505399816176,
-              "median": 44.92830882352941,
-              "lower95": 43.40762867647059,
-              "upper95": 46.359926470588235
-            },
-            "meanMargin": {
-              "samples": 128,
-              "mean": 1.518583409926471,
-              "median": 1.4724264705882355,
-              "lower95": -0.17049632352941174,
-              "upper95": 3.5338235294117646
-            },
-            "shutoutRate": {
-              "samples": 128,
-              "mean": 0.034553079044117634,
+              "mean": 0.033949908088235274,
               "median": 0.03308823529411765,
               "lower95": 0.014705882352941176,
               "upper95": 0.06185661764705883
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0033892463235294075,
+              "mean": 0.0035903033088235266,
               "median": 0.003676470588235294,
               "lower95": 0,
               "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 9.654190063476562,
-              "median": 9.56201171875,
-              "lower95": 6.6578125,
-              "upper95": 13.5500732421875
+              "mean": 9.762596130371094,
+              "median": 9.685546875,
+              "lower95": 6.3960693359375,
+              "upper95": 13.966210937500001
+            }
+          },
+          "alternate": {
+            "meanTotal": {
+              "samples": 128,
+              "mean": 45.05793313419118,
+              "median": 45.088235294117645,
+              "lower95": 43.42012867647058,
+              "upper95": 46.53483455882353
+            },
+            "meanMargin": {
+              "samples": 128,
+              "mean": 1.6508214613970587,
+              "median": 1.6819852941176472,
+              "lower95": -0.21443014705882352,
+              "upper95": 3.5400735294117656
+            },
+            "shutoutRate": {
+              "samples": 128,
+              "mean": 0.03383501838235291,
+              "median": 0.03308823529411765,
+              "lower95": 0.014705882352941176,
+              "upper95": 0.0625
+            },
+            "tieRate": {
+              "samples": 128,
+              "mean": 0.003303079044117644,
+              "median": 0.003676470588235294,
+              "lower95": 0,
+              "upper95": 0.011029411764705883
+            },
+            "teamWinVariance": {
+              "samples": 128,
+              "mean": 9.754249572753906,
+              "median": 9.65576171875,
+              "lower95": 6.4365234375,
+              "upper95": 13.9375
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": -0.07582720588235292,
-              "median": -0.09191176470588047,
-              "lower95": -1.1123161764705911,
-              "upper95": 0.9533088235294092
+              "mean": 0.04994829963235281,
+              "median": -0.04044117647058698,
+              "lower95": -0.8432904411764693,
+              "upper95": 1.079687499999996
             },
             "meanMargin": {
               "samples": 128,
-              "mean": -0.1757238051470591,
-              "median": -0.20588235294117666,
-              "lower95": -1.4275735294117646,
-              "upper95": 1.035294117647059
+              "mean": 0.0022690716911765788,
+              "median": 6.938893903907228e-18,
+              "lower95": -1.1575367647058823,
+              "upper95": 1.0399816176470593
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.0008329503676470591,
+              "mean": -0.00011488970588235424,
               "median": 0,
-              "lower95": -0.011029411764705885,
-              "upper95": 0.01470588235294118
+              "lower95": -0.01470588235294118,
+              "upper95": 0.018382352941176468
             },
             "tieRate": {
               "samples": 128,
-              "mean": 2.981555974335137e-19,
+              "mean": -0.0002872242647058821,
               "median": 0,
               "lower95": -0.007352941176470589,
               "upper95": 0.007352941176470588
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": -0.0709228515625,
-              "median": 0,
-              "lower95": -3.1070068359375,
-              "upper95": 1.9895751953125003
+              "mean": -0.0083465576171875,
+              "median": -0.001953125,
+              "lower95": -2.4399169921875,
+              "upper95": 3.073706054687501
             }
           },
           "winInvariance": {
@@ -2842,112 +2844,112 @@
           "baseline": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.04845473345589,
-              "median": 45.03860294117647,
-              "lower95": 43.42738970588235,
-              "upper95": 46.52215073529412
+              "mean": 45.048368566176464,
+              "median": 45.117647058823536,
+              "lower95": 43.41433823529412,
+              "upper95": 46.465625
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 2.458496093750001,
-              "median": 2.5533088235294117,
-              "lower95": 0.6660845588235296,
-              "upper95": 3.900091911764706
+              "mean": 2.4736328125000004,
+              "median": 2.5569852941176467,
+              "lower95": 0.6470588235294118,
+              "upper95": 4.085845588235294
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.03225528492647056,
+              "mean": 0.03205422794117644,
               "median": 0.029411764705882353,
               "lower95": 0.014705882352941176,
-              "upper95": 0.05450367647058824
+              "upper95": 0.051470588235294115
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.002872242647058822,
+              "mean": 0.0030445772058823504,
               "median": 0.003676470588235294,
               "lower95": 0,
               "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 10.1798095703125,
-              "median": 10.27880859375,
-              "lower95": 6.6853759765625,
-              "upper95": 14.153710937500001
+              "mean": 10.187088012695312,
+              "median": 10.216796875,
+              "lower95": 6.7491943359375,
+              "upper95": 14.547460937500002
             }
           },
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.02381089154412,
-              "median": 45.00735294117647,
-              "lower95": 43.57113970588235,
-              "upper95": 46.709099264705884
+              "mean": 45.09788602941175,
+              "median": 45.158088235294116,
+              "lower95": 43.582996323529414,
+              "upper95": 46.55091911764706
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 2.6306583180147056,
-              "median": 2.577205882352941,
-              "lower95": 1.0161764705882352,
-              "upper95": 4.508915441176471
+              "mean": 2.611557904411765,
+              "median": 2.647058823529412,
+              "lower95": 0.8181985294117647,
+              "upper95": 4.297426470588235
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.033030790441176454,
+              "mean": 0.03285845588235293,
               "median": 0.03308823529411765,
               "lower95": 0.014705882352941176,
-              "upper95": 0.058823529411764705
+              "upper95": 0.05450367647058824
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0027860753676470567,
+              "mean": 0.003159466911764703,
               "median": 0.003676470588235294,
               "lower95": 0,
               "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 10.147697448730469,
-              "median": 10.1875,
-              "lower95": 6.3857666015625,
-              "upper95": 13.8638916015625
+              "mean": 10.095733642578125,
+              "median": 9.998046875,
+              "lower95": 6.6351318359375,
+              "upper95": 13.5701416015625
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": -0.02464384191176472,
-              "median": 0.009191176470586981,
-              "lower95": -1.1701286764705878,
-              "upper95": 1.3044117647058822
+              "mean": 0.04951746323529388,
+              "median": 0.005514705882351478,
+              "lower95": -1.0055147058823544,
+              "upper95": 1.1287683823529422
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 0.17216222426470587,
-              "median": 0.18014705882352933,
-              "lower95": -1.3906250000000002,
-              "upper95": 1.6229779411764709
+              "mean": 0.13792509191176489,
+              "median": 0.07720588235294135,
+              "lower95": -1.049356617647059,
+              "upper95": 1.4324448529411764
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.0007755055147058823,
+              "mean": 0.0008042279411764709,
               "median": 0,
-              "lower95": -0.014705882352941176,
-              "upper95": 0.014705882352941178
+              "lower95": -0.01470588235294118,
+              "upper95": 0.01470588235294118
             },
             "tieRate": {
               "samples": 128,
-              "mean": -0.0000861672794117644,
+              "mean": 0.00011488970588235325,
               "median": 0,
               "lower95": -0.007352941176470589,
-              "upper95": 0.007352941176470588
+              "upper95": 0.007352941176470589
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": -0.03211212158203125,
-              "median": -0.125,
-              "lower95": -3.0920166015625,
-              "upper95": 2.3635498046875
+              "mean": -0.0913543701171875,
+              "median": -0.18701171875,
+              "lower95": -2.26875,
+              "upper95": 2.8429931640625004
             }
           },
           "winInvariance": {
@@ -3032,75 +3034,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.226878446691195,
-              "median": 45.275735294117645,
-              "lower95": 43.86911764705883,
-              "upper95": 46.52279411764706
+              "mean": 45.220099954044116,
+              "median": 45.25735294117647,
+              "lower95": 43.84227941176471,
+              "upper95": 46.49871323529412
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 1.9139188878676476,
-              "median": 1.8658088235294117,
-              "lower95": -0.008547794117647039,
-              "upper95": 3.3886948529411764
+              "mean": 1.9175379136029413,
+              "median": 1.9099264705882353,
+              "lower95": 0.03152573529411765,
+              "upper95": 3.421783088235294
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.03202550551470586,
-              "median": 0.03125,
+              "mean": 0.032169117647058786,
+              "median": 0.03308823529411765,
               "lower95": 0.01167279411764706,
-              "upper95": 0.05450367647058824
+              "upper95": 0.051470588235294115
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.003475413602941175,
+              "mean": 0.0036477481617647038,
               "median": 0.003676470588235294,
               "lower95": 0,
               "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 9.907875061035156,
-              "median": 9.873046875,
-              "lower95": 6.80927734375,
-              "upper95": 14.28994140625
+              "mean": 9.851570129394531,
+              "median": 9.966796875,
+              "lower95": 6.7826416015625,
+              "upper95": 14.4265625
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": -0.0038200827205882026,
-              "median": -0.005514705882355031,
-              "lower95": -0.09126838235294218,
-              "upper95": 0.08759191176470439
+              "mean": -0.0105985753676468,
+              "median": -0.009191176470586981,
+              "lower95": -0.09430147058823479,
+              "upper95": 0.069852941176471
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 0.06057559742647059,
-              "median": 0.06801470588235292,
-              "lower95": -0.08455882352941205,
-              "upper95": 0.21930147058823501
+              "mean": 0.06419462316176469,
+              "median": 0.0716911764705882,
+              "lower95": -0.10294117647058831,
+              "upper95": 0.21562500000000007
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.00002872242647058846,
+              "mean": 0.00017233455882352978,
               "median": 0,
-              "lower95": -0.003676470588235295,
+              "lower95": -0.00735294117647059,
               "upper95": 0.00735294117647059
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.00031594669117647093,
+              "mean": 0.0004882812500000003,
               "median": 0,
               "lower95": -0.007352941176470588,
               "upper95": 0.007352941176470589
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": -0.05120086669921875,
-              "median": 0,
-              "lower95": -1.1671142578125,
-              "upper95": 1.1762695312500002
+              "mean": -0.10750579833984375,
+              "median": -0.03125,
+              "lower95": -1.8384521484375,
+              "upper95": 1.2188476562500006
             }
           },
           "winInvariance": {
@@ -3173,75 +3175,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 44.996582031249986,
-              "median": 45.08639705882353,
-              "lower95": 43.38373161764706,
-              "upper95": 46.52380514705882
+              "mean": 44.965877757352956,
+              "median": 45.071691176470594,
+              "lower95": 43.24632352941176,
+              "upper95": 46.44761029411765
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 2.570513556985294,
-              "median": 2.5441176470588234,
-              "lower95": 1.0362132352941176,
-              "upper95": 4.5205882352941185
+              "mean": 2.560374540441177,
+              "median": 2.5625,
+              "lower95": 0.822702205882353,
+              "upper95": 4.2042279411764705
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.031824448529411756,
+              "mean": 0.03297334558823527,
               "median": 0.03308823529411765,
               "lower95": 0.014705882352941176,
-              "upper95": 0.05753676470588237
+              "upper95": 0.05450367647058824
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.003446691176470585,
+              "mean": 0.0034466911764705847,
               "median": 0.003676470588235294,
               "lower95": 0,
               "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 9.854736328125,
-              "median": 9.84326171875,
-              "lower95": 6.3958984375,
-              "upper95": 13.2576416015625
+              "mean": 9.721969604492188,
+              "median": 9.5625,
+              "lower95": 5.9366943359375,
+              "upper95": 12.5513916015625
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": -0.018727022058823095,
-              "median": -0.029411764705884025,
-              "lower95": -0.5207720588235306,
-              "upper95": 0.717555147058824
+              "mean": -0.04943129595588219,
+              "median": -0.0349264705882355,
+              "lower95": -0.8666360294117649,
+              "upper95": 0.6867647058823544
             },
             "meanMargin": {
               "samples": 128,
-              "mean": -0.013039981617647101,
-              "median": 0.02941176470588225,
-              "lower95": -1.3386948529411764,
-              "upper95": 1.0186580882352942
+              "mean": -0.02317899816176481,
+              "median": -0.02389705882352955,
+              "lower95": -1.0261948529411764,
+              "upper95": 1.0226102941176478
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": -0.00037339154411764687,
+              "mean": 0.0007755055147058822,
               "median": 0,
               "lower95": -0.011029411764705885,
               "upper95": 0.011029411764705885
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.00020105698529411796,
+              "mean": 0.00020105698529411794,
               "median": 0,
-              "lower95": -0.010386029411764704,
-              "upper95": 0.007352941176470589
+              "lower95": -0.007352941176470588,
+              "upper95": 0.007352941176470588
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 0.15924835205078125,
-              "median": 0.125,
-              "lower95": -1.8015625,
-              "upper95": 2.3116455078125
+              "mean": 0.02648162841796875,
+              "median": 0.060546875,
+              "lower95": -2.1150390625,
+              "upper95": 2.05224609375
             }
           },
           "winInvariance": {
@@ -3312,75 +3314,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.03601792279411,
-              "median": 45.05882352941177,
-              "lower95": 43.55110294117647,
-              "upper95": 46.616636029411765
+              "mean": 44.96260340073531,
+              "median": 44.85477941176471,
+              "lower95": 43.58226102941176,
+              "upper95": 46.45487132352941
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 1.7015165441176467,
-              "median": 1.7058823529411764,
-              "lower95": 0.04669117647058824,
-              "upper95": 3.4851102941176477
+              "mean": 1.6057559742647063,
+              "median": 1.5257352941176472,
+              "lower95": -0.023161764705882312,
+              "upper95": 3.438419117647059
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.0331744025735294,
+              "mean": 0.034553079044117634,
               "median": 0.03308823529411765,
               "lower95": 0.014705882352941176,
-              "upper95": 0.058823529411764705
+              "upper95": 0.061213235294117666
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0026999080882352936,
-              "median": 0,
+              "mean": 0.002814797794117645,
+              "median": 0.003676470588235294,
               "lower95": 0,
               "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 9.820785522460938,
-              "median": 9.93310546875,
-              "lower95": 6.4921875,
-              "upper95": 13.518579101562501
+              "mean": 9.87274169921875,
+              "median": 9.71826171875,
+              "lower95": 6.3671875,
+              "upper95": 13.1125732421875
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": 0.07505170036764719,
-              "median": 0.11397058823529349,
-              "lower95": -0.8025735294117654,
-              "upper95": 1.018290441176469
+              "mean": 0.0016371783088237057,
+              "median": 0.029411764705884025,
+              "lower95": -0.8412683823529422,
+              "upper95": 0.831985294117647
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 0.10383157169117652,
-              "median": 0.03676470588235292,
-              "lower95": -1.0752757352941176,
-              "upper95": 1.312224264705883
+              "mean": 0.00807100183823514,
+              "median": -0.005514705882352949,
+              "lower95": -1.1990808823529413,
+              "upper95": 1.2355698529411765
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": -0.001321231617647058,
+              "mean": 0.0000574448529411764,
               "median": 0,
-              "lower95": -0.014705882352941173,
-              "upper95": 0.011029411764705885
+              "lower95": -0.014705882352941176,
+              "upper95": 0.01470588235294118
             },
             "tieRate": {
               "samples": 128,
-              "mean": -0.0004882812499999998,
+              "mean": -0.0003733915441176468,
               "median": 0,
-              "lower95": -0.007352941176470589,
+              "lower95": -0.010386029411764705,
               "upper95": 0.007352941176470588
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": -0.12923431396484375,
-              "median": -0.21435546875,
-              "lower95": -2.353125,
-              "upper95": 2.2508056640625
+              "mean": -0.07727813720703125,
+              "median": -0.15625,
+              "lower95": -2.47041015625,
+              "upper95": 2.2803710937500004
             }
           },
           "winInvariance": {
@@ -3454,75 +3456,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.077406939338246,
-              "median": 45.02022058823529,
-              "lower95": 43.125551470588235,
-              "upper95": 46.50670955882353
+              "mean": 45.04190602022057,
+              "median": 45.091911764705884,
+              "lower95": 43.43336397058824,
+              "upper95": 46.492095588235294
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 2.5164005055147065,
-              "median": 2.551470588235294,
-              "lower95": 0.705514705882353,
-              "upper95": 4.130238970588235
+              "mean": 2.56545840992647,
+              "median": 2.5716911764705883,
+              "lower95": 0.8777573529411765,
+              "upper95": 4.274908088235295
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.0326573988970588,
+              "mean": 0.03314568014705882,
               "median": 0.03308823529411765,
-              "lower95": 0.01167279411764706,
-              "upper95": 0.05514705882352941
+              "lower95": 0.011029411764705883,
+              "upper95": 0.05818014705882354
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.002527573529411761,
+              "mean": 0.0025850183823529394,
               "median": 0.003676470588235294,
               "lower95": 0,
-              "upper95": 0.007352941176470588
+              "upper95": 0.010386029411764718
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 10.205596923828125,
-              "median": 10.25,
-              "lower95": 5.6762939453125,
-              "upper95": 14.1755859375
+              "mean": 10.180465698242188,
+              "median": 10.4365234375,
+              "lower95": 6.3947509765625,
+              "upper95": 14.142260742187501
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": 0.037224264705882415,
-              "median": 0.016544117647057988,
-              "lower95": -0.9481617647058806,
-              "upper95": 1.0634191176470589
+              "mean": 0.0017233455882350035,
+              "median": -0.09191176470588047,
+              "lower95": -0.94659926470588,
+              "upper95": 0.9855698529411764
             },
             "meanMargin": {
               "samples": 128,
-              "mean": -0.004423253676470583,
-              "median": -0.03308823529411764,
-              "lower95": -1.4965992647058826,
-              "upper95": 1.3737132352941173
+              "mean": 0.04463465073529413,
+              "median": 0.06066176470588247,
+              "lower95": -1.6946691176470587,
+              "upper95": 1.63483455882353
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.0002585018382352948,
+              "mean": 0.0007467830882352936,
               "median": 0,
-              "lower95": -0.014062499999999997,
-              "upper95": 0.011029411764705885
+              "lower95": -0.014062499999999999,
+              "upper95": 0.017738970588235304
             },
             "tieRate": {
               "samples": 128,
-              "mean": -0.00008616727941176441,
+              "mean": -0.000028722426470587944,
               "median": 0,
               "lower95": -0.007352941176470589,
-              "upper95": 0.007352941176470588
+              "upper95": 0.010386029411764716
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 0.06284332275390625,
-              "median": 0.125,
-              "lower95": -2.7170166015625,
-              "upper95": 2.8500000000000014
+              "mean": 0.03771209716796875,
+              "median": -0.0625,
+              "lower95": -2.875,
+              "upper95": 3.0541503906250003
             }
           },
           "winInvariance": {
@@ -3587,75 +3589,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.069192325367666,
-              "median": 45.106617647058826,
-              "lower95": 43.35137867647059,
-              "upper95": 46.48143382352941
+              "mean": 45.039464613970615,
+              "median": 45.01102941176471,
+              "lower95": 43.580422794117645,
+              "upper95": 46.48933823529412
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 1.5635627297794124,
-              "median": 1.5625,
-              "lower95": -0.2342830882352941,
-              "upper95": 3.1800551470588236
+              "mean": 1.574793198529412,
+              "median": 1.6801470588235294,
+              "lower95": -0.11902573529411763,
+              "upper95": 3.299448529411765
             },
             "shutoutRate": {
               "samples": 128,
               "mean": 0.03288717830882351,
               "median": 0.03308823529411765,
-              "lower95": 0.011029411764705883,
-              "upper95": 0.058823529411764705
+              "lower95": 0.01167279411764706,
+              "upper95": 0.05514705882352941
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.002900965073529409,
+              "mean": 0.003676470588235291,
               "median": 0.003676470588235294,
               "lower95": 0,
-              "upper95": 0.010386029411764718
+              "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 9.811134338378906,
-              "median": 9.96875,
-              "lower95": 6.4592041015625,
-              "upper95": 12.77900390625
+              "mean": 9.865829467773438,
+              "median": 9.84130859375,
+              "lower95": 6.6216064453125,
+              "upper95": 13.231640625
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": -0.020737591911764663,
-              "median": -0.03676470588235503,
-              "lower95": -0.9449448529411739,
-              "upper95": 0.9971507352941161
+              "mean": -0.05046530330882332,
+              "median": -0.0349264705882355,
+              "lower95": -0.8579963235294114,
+              "upper95": 0.822518382352946
             },
             "meanMargin": {
               "samples": 128,
-              "mean": -0.08352481617647076,
-              "median": -0.051470588235294046,
-              "lower95": -1.7226102941176469,
-              "upper95": 1.4193014705882359
+              "mean": -0.0722943474264703,
+              "median": -0.00919117647058823,
+              "lower95": -1.4120404411764704,
+              "upper95": 1.1565257352941178
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": -0.00020105698529411775,
+              "mean": -0.0002010569852941182,
               "median": 0,
-              "lower95": -0.021415441176470585,
-              "upper95": 0.017738970588235307
+              "lower95": -0.018382352941176468,
+              "upper95": 0.014705882352941176
             },
             "tieRate": {
               "samples": 128,
-              "mean": -0.0006893382352941167,
+              "mean": 0.00008616727941176501,
               "median": 0,
-              "lower95": -0.007352941176470589,
-              "upper95": 0.007352941176470588
+              "lower95": -0.007352941176470588,
+              "upper95": 0.007352941176470589
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": -0.1583099365234375,
-              "median": -0.158203125,
-              "lower95": -2.9779541015625,
-              "upper95": 2.1050781250000004
+              "mean": -0.10361480712890625,
+              "median": -0.0625,
+              "lower95": -2.895654296875,
+              "upper95": 2.6845703125
             }
           },
           "winInvariance": {
@@ -3740,75 +3742,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 44.9251780790441,
-              "median": 45.01102941176471,
-              "lower95": 43.512316176470584,
-              "upper95": 46.423713235294116
+              "mean": 44.927016314338225,
+              "median": 45.02389705882353,
+              "lower95": 43.510569852941174,
+              "upper95": 46.37849264705882
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 2.058737362132353,
-              "median": 2.0680147058823533,
-              "lower95": 0.3447610294117648,
-              "upper95": 3.4733455882352944
+              "mean": 2.0501780790441178,
+              "median": 2.025735294117647,
+              "lower95": 0.3679227941176471,
+              "upper95": 3.5076286764705884
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.03047449448529409,
+              "mean": 0.030129825367647033,
               "median": 0.029411764705882353,
               "lower95": 0.01167279411764706,
               "upper95": 0.05450367647058824
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.003561580882352939,
+              "mean": 0.0034754136029411706,
               "median": 0.003676470588235294,
               "lower95": 0,
-              "upper95": 0.01406250000000001
+              "upper95": 0.007352941176470588
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 9.153152465820312,
-              "median": 8.99951171875,
-              "lower95": 5.2903564453125,
-              "upper95": 12.7498291015625
+              "mean": 9.150703430175781,
+              "median": 9.15576171875,
+              "lower95": 5.83115234375,
+              "upper95": 12.706079101562501
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": -0.004423253676470507,
-              "median": 0,
-              "lower95": -0.09862132352941444,
-              "upper95": 0.08088235294117396
+              "mean": -0.002585018382352866,
+              "median": -0.011029411764702957,
+              "lower95": -0.09494485294117538,
+              "upper95": 0.08455882352941302
             },
             "meanMargin": {
               "samples": 128,
-              "mean": -0.00723805147058822,
-              "median": -0.005514705882353033,
-              "lower95": -0.09126838235294107,
-              "upper95": 0.08023897058823524
+              "mean": -0.015797334558823505,
+              "median": -0.01654411764705868,
+              "lower95": -0.11268382352941159,
+              "upper95": 0.06185661764705884
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.000603170955882353,
+              "mean": 0.00025850183823529445,
               "median": 0,
-              "lower95": -0.0067095588235294105,
+              "lower95": -0.00735294117647059,
               "upper95": 0.00735294117647059
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.00037339154411764736,
+              "mean": 0.00028722426470588263,
               "median": 0,
-              "lower95": -0.007352941176470588,
-              "upper95": 0.007352941176470589
+              "lower95": -0.007352941176470589,
+              "upper95": 0.007352941176470588
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 0.04402923583984375,
-              "median": 0.00048828125,
-              "lower95": -1.4148193359374999,
-              "upper95": 1.7963867187500013
+              "mean": 0.0415802001953125,
+              "median": 0.00390625,
+              "lower95": -1.2305419921875,
+              "upper95": 1.5634765625000002
             }
           },
           "winInvariance": {
@@ -3879,75 +3881,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.010110294117624,
-              "median": 44.95772058823529,
-              "lower95": 43.6204044117647,
-              "upper95": 46.50202205882353
+              "mean": 45.0534237132353,
+              "median": 45.08455882352941,
+              "lower95": 43.60009191176471,
+              "upper95": 46.57012867647059
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 1.646024816176471,
-              "median": 1.5698529411764706,
-              "lower95": -0.20790441176470587,
-              "upper95": 3.419577205882353
+              "mean": 1.6587201286764703,
+              "median": 1.6194852941176472,
+              "lower95": -0.23759191176470582,
+              "upper95": 3.3764705882352946
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.03403607536764705,
+              "mean": 0.03357651654411762,
               "median": 0.03308823529411765,
               "lower95": 0.01167279411764706,
-              "upper95": 0.05450367647058824
+              "upper95": 0.05514705882352941
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0030158547794117635,
+              "mean": 0.0031020220588235275,
               "median": 0.003676470588235294,
               "lower95": 0,
-              "upper95": 0.01406250000000001
+              "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 9.565238952636719,
-              "median": 9.5615234375,
-              "lower95": 6.3933349609375,
-              "upper95": 13.19208984375
+              "mean": 9.849395751953125,
+              "median": 9.6240234375,
+              "lower95": 6.8342041015625,
+              "upper95": 13.6648193359375
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": 0.03228400735294107,
-              "median": 0.011029411764710062,
-              "lower95": -0.7147977941176457,
-              "upper95": 0.8876838235294069
+              "mean": 0.07559742647058815,
+              "median": 0.0625,
+              "lower95": -0.6356617647058806,
+              "upper95": 0.9270220588235261
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 0.059914981617647044,
-              "median": 0.011029411764705843,
-              "lower95": -0.8786764705882353,
-              "upper95": 1.3125
+              "mean": 0.07261029411764704,
+              "median": 0.03676470588235281,
+              "lower95": -0.878768382352941,
+              "upper95": 1.2855698529411768
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": -0.00020105698529411737,
+              "mean": -0.000660615808823529,
               "median": 0,
-              "lower95": -0.011029411764705885,
-              "upper95": 0.014705882352941176
+              "lower95": -0.014062499999999997,
+              "upper95": 0.011029411764705885
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.00020105698529411796,
+              "mean": 0.0002872242647058827,
               "median": 0,
-              "lower95": -0.007352941176470589,
+              "lower95": -0.007352941176470588,
               "upper95": 0.007352941176470589
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": -0.03551483154296875,
-              "median": -0.03125,
-              "lower95": -2.7806640625,
-              "upper95": 2.3010498046875
+              "mean": 0.2486419677734375,
+              "median": 0.21826171875,
+              "lower95": -1.7064208984375,
+              "upper95": 2.4717773437500004
             }
           },
           "winInvariance": {
@@ -4021,75 +4023,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.09828814338235,
-              "median": 45.16727941176471,
-              "lower95": 43.31029411764706,
-              "upper95": 47.035294117647055
+              "mean": 45.10816865808822,
+              "median": 45.060661764705884,
+              "lower95": 43.2936580882353,
+              "upper95": 46.83943014705882
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 2.6544117647058827,
-              "median": 2.5808823529411766,
-              "lower95": 0.9890625,
-              "upper95": 4.652297794117647
+              "mean": 2.5807100183823524,
+              "median": 2.6819852941176467,
+              "lower95": 0.9936580882352942,
+              "upper95": 4.463235294117647
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.03366268382352939,
+              "mean": 0.03357651654411764,
               "median": 0.03308823529411765,
-              "lower95": 0.014705882352941176,
-              "upper95": 0.05514705882352941
+              "lower95": 0.01167279411764706,
+              "upper95": 0.05818014705882354
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0032169117647058796,
+              "mean": 0.0030445772058823495,
               "median": 0.003676470588235294,
               "lower95": 0,
               "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 10.12445068359375,
-              "median": 10.0615234375,
-              "lower95": 6.34208984375,
-              "upper95": 14.00458984375
+              "mean": 10.037246704101562,
+              "median": 9.873046875,
+              "lower95": 6.4583984375,
+              "upper95": 13.3630859375
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": 0.050178079044117696,
-              "median": 0.07720588235294201,
-              "lower95": -0.944669117647057,
-              "upper95": 0.8856617647058866
+              "mean": 0.06005859375000017,
+              "median": 0.038602941176471006,
+              "lower95": -0.8566176470588189,
+              "upper95": 0.9286764705882313
             },
             "meanMargin": {
               "samples": 128,
-              "mean": -0.01375804227941182,
-              "median": -0.0753676470588236,
-              "lower95": -1.1568014705882352,
-              "upper95": 1.351102941176471
+              "mean": -0.08745978860294104,
+              "median": -0.19852941176470595,
+              "lower95": -1.256341911764706,
+              "upper95": 1.4823529411764707
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.0008903952205882341,
+              "mean": 0.0008042279411764701,
               "median": 0,
               "lower95": -0.011029411764705885,
-              "upper95": 0.014705882352941173
+              "upper95": 0.014062500000000012
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.000028722426470588526,
+              "mean": -0.00014361213235294088,
               "median": 0,
               "lower95": -0.007352941176470588,
-              "upper95": 0.007352941176470589
+              "upper95": 0.007352941176470588
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 0.01923370361328125,
-              "median": 0.09375,
-              "lower95": -2.665625,
-              "upper95": 2.3748291015625
+              "mean": -0.06797027587890625,
+              "median": -0.06201171875,
+              "lower95": -2.9673583984375,
+              "upper95": 2.8119873046875
             }
           },
           "winInvariance": {
@@ -4154,75 +4156,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.12660845588234,
-              "median": 45.185661764705884,
-              "lower95": 43.245588235294115,
-              "upper95": 46.487683823529416
+              "mean": 45.10256778492647,
+              "median": 45.09375,
+              "lower95": 43.43382352941176,
+              "upper95": 46.51470588235294
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 1.5742187499999998,
-              "median": 1.6599264705882353,
-              "lower95": -0.33391544117647054,
-              "upper95": 3.2131433823529414
+              "mean": 1.553280101102941,
+              "median": 1.5514705882352942,
+              "lower95": -0.3876838235294118,
+              "upper95": 3.261948529411765
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.03372012867647058,
+              "mean": 0.033720128676470576,
               "median": 0.03308823529411765,
               "lower95": 0.011029411764705883,
-              "upper95": 0.058823529411764705
+              "upper95": 0.05818014705882354
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0031020220588235258,
+              "mean": 0.0035041360294117627,
               "median": 0.003676470588235294,
               "lower95": 0,
-              "upper95": 0.010386029411764718
+              "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 9.777847290039062,
-              "median": 9.654296875,
-              "lower95": 6.7828125,
-              "upper95": 13.0391357421875
+              "mean": 9.6993408203125,
+              "median": 9.6240234375,
+              "lower95": 6.4177734375,
+              "upper95": 12.8734619140625
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": 0.03182444852941174,
-              "median": 0.04044117647058698,
-              "lower95": -0.9288602941176466,
-              "upper95": 0.9556985294117658
+              "mean": 0.007783777573529382,
+              "median": 0.02573529411764497,
+              "lower95": -1.190165441176469,
+              "upper95": 0.9994485294117684
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 0.054227941176470576,
-              "median": 0.04044117647058826,
-              "lower95": -1.0100183823529412,
-              "upper95": 1.3116727941176471
+              "mean": 0.033289292279411714,
+              "median": -0.018382352941176405,
+              "lower95": -1.217922794117647,
+              "upper95": 1.7216911764705882
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.0005170036764705887,
+              "mean": 0.0005170036764705886,
               "median": 0,
-              "lower95": -0.018382352941176468,
-              "upper95": 0.018382352941176468
+              "lower95": -0.01470588235294118,
+              "upper95": 0.014705882352941176
             },
             "tieRate": {
               "samples": 128,
-              "mean": -0.0003733915441176468,
+              "mean": 0.00002872242647058854,
               "median": 0,
               "lower95": -0.007352941176470588,
-              "upper95": 0.007352941176470588
+              "upper95": 0.007352941176470589
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": -0.01531219482421875,
-              "median": -0.21923828125,
-              "lower95": -2.7798583984375,
-              "upper95": 2.7395751953125003
+              "mean": -0.09381866455078125,
+              "median": -0.02587890625,
+              "lower95": -2.9383056640625,
+              "upper95": 2.5658935546875
             }
           },
           "winInvariance": {
@@ -4287,75 +4289,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.07976217830883,
-              "median": 45.033088235294116,
-              "lower95": 43.61194852941176,
-              "upper95": 46.548069852941175
+              "mean": 45.081744025735304,
+              "median": 45.09742647058823,
+              "lower95": 43.23924632352941,
+              "upper95": 46.360110294117646
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 2.5675838694852935,
-              "median": 2.5238970588235294,
-              "lower95": 0.7738970588235295,
-              "upper95": 4.278033088235294
+              "mean": 2.4994255514705874,
+              "median": 2.4558823529411766,
+              "lower95": 0.7081801470588235,
+              "upper95": 4.393933823529413
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.032284007352941166,
-              "median": 0.03308823529411765,
-              "lower95": 0.014705882352941176,
-              "upper95": 0.05450367647058824
+              "mean": 0.03173828124999998,
+              "median": 0.029411764705882353,
+              "lower95": 0.011029411764705883,
+              "upper95": 0.051470588235294115
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.00304457720588235,
+              "mean": 0.0031020220588235275,
               "median": 0.003676470588235294,
               "lower95": 0,
               "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 10.13189697265625,
-              "median": 10.12451171875,
-              "lower95": 7.1875,
-              "upper95": 13.7380859375
+              "mean": 9.951431274414062,
+              "median": 9.87255859375,
+              "lower95": 6.6875,
+              "upper95": 13.4443359375
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": 0.02007697610294118,
-              "median": 0.10294117647059053,
-              "lower95": -1.190349264705882,
-              "upper95": 1.001102941176473
+              "mean": 0.02205882352941202,
+              "median": 0.03125,
+              "lower95": -0.9435661764705886,
+              "upper95": 0.9678308823529371
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 0.09509995404411759,
-              "median": -0.003676470588235281,
-              "lower95": -1.3014705882352944,
-              "upper95": 1.7825367647058825
+              "mean": 0.026941636029411596,
+              "median": 0.03492647058823528,
+              "lower95": -1.0629595588235297,
+              "upper95": 1.280330882352942
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": -0.0003446691176470584,
+              "mean": -0.0008903952205882332,
               "median": 0,
-              "lower95": -0.014705882352941175,
-              "upper95": 0.014705882352941176
+              "lower95": -0.014705882352941176,
+              "upper95": 0.01470588235294118
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.000028722426470588533,
+              "mean": 0.00008616727941176501,
               "median": 0,
-              "lower95": -0.007352941176470588,
-              "upper95": 0.007352941176470588
+              "lower95": -0.010386029411764704,
+              "upper95": 0.007352941176470589
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": -0.03455352783203125,
-              "median": 0.029296875,
-              "lower95": -2.9348876953125,
-              "upper95": 2.4866455078125003
+              "mean": -0.21501922607421875,
+              "median": -0.189453125,
+              "lower95": -3.0189208984375,
+              "upper95": 2.515356445312501
             }
           },
           "winInvariance": {
@@ -4440,75 +4442,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.05342371323529,
-              "median": 45.04779411764706,
-              "lower95": 43.48262867647059,
-              "upper95": 46.61681985294118
+              "mean": 45.05305032169121,
+              "median": 45.05147058823529,
+              "lower95": 43.46727941176471,
+              "upper95": 46.617738970588235
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 2.0840992647058827,
-              "median": 2.119485294117647,
-              "lower95": 0.8353860294117648,
-              "upper95": 3.4989889705882353
+              "mean": 2.0824046415441178,
+              "median": 2.079044117647059,
+              "lower95": 0.8141544117647059,
+              "upper95": 3.530882352941177
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.03205422794117645,
+              "mean": 0.03231272977941174,
               "median": 0.03308823529411765,
               "lower95": 0.01167279411764706,
-              "upper95": 0.05514705882352941
+              "upper95": 0.05818014705882354
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0029296875,
+              "mean": 0.0030158547794117622,
               "median": 0.003676470588235294,
               "lower95": 0,
               "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 9.49456787109375,
-              "median": 9.34326171875,
-              "lower95": 5.6123291015625005,
-              "upper95": 13.102954101562501
+              "mean": 9.454643249511719,
+              "median": 9.4990234375,
+              "lower95": 5.7740234375,
+              "upper95": 12.966210937500001
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": 0.002585018382352533,
-              "median": 0,
-              "lower95": -0.08501838235293951,
-              "upper95": 0.08023897058823339
+              "mean": 0.002211626838234948,
+              "median": 0.007352941176471006,
+              "lower95": -0.08823529411764497,
+              "upper95": 0.09062500000000037
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 0.01792279411764706,
-              "median": 0.018382352941176627,
+              "mean": 0.016228170955882353,
+              "median": 0.016544117647058654,
               "lower95": -0.07720588235294112,
-              "upper95": 0.10661764705882355
+              "upper95": 0.127389705882353
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": -0.000574448529411765,
+              "mean": -0.00031594669117647033,
               "median": 0,
-              "lower95": -0.010386029411764707,
-              "upper95": 0.0067095588235294235
+              "lower95": -0.00735294117647059,
+              "upper95": 0.00735294117647059
             },
             "tieRate": {
               "samples": 128,
-              "mean": -0.00045955882352941154,
+              "mean": -0.0003733915441176468,
               "median": 0,
               "lower95": -0.007352941176470589,
-              "upper95": 0.007352941176470588
+              "upper95": 0.006709558823529423
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 0.0032806396484375,
-              "median": 0.0625,
-              "lower95": -1.3714599609375,
-              "upper95": 1.1883056640625
+              "mean": -0.03664398193359375,
+              "median": 0,
+              "lower95": -1.355078125,
+              "upper95": 1.0527587890625
             }
           },
           "winInvariance": {
@@ -4582,75 +4584,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.10116038602942,
-              "median": 45.17279411764706,
-              "lower95": 43.554779411764706,
-              "upper95": 46.57316176470588
+              "mean": 45.10529641544118,
+              "median": 45.174632352941174,
+              "lower95": 43.659375,
+              "upper95": 46.50110294117647
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 2.489889705882353,
-              "median": 2.6213235294117645,
-              "lower95": 0.6165441176470589,
-              "upper95": 4.27297794117647
+              "mean": 2.450539981617647,
+              "median": 2.4908088235294117,
+              "lower95": 0.5970588235294118,
+              "upper95": 4.227757352941176
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.03282973345588234,
-              "median": 0.03308823529411765,
+              "mean": 0.031853170955882325,
+              "median": 0.029411764705882353,
               "lower95": 0.01167279411764706,
               "upper95": 0.05514705882352941
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.003188189338235292,
+              "mean": 0.003130744485294115,
               "median": 0.003676470588235294,
               "lower95": 0,
               "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 10.211250305175781,
-              "median": 10.1875,
-              "lower95": 6.69775390625,
-              "upper95": 14.132128906250001
+              "mean": 10.192878723144531,
+              "median": 10.21826171875,
+              "lower95": 6.1982666015625,
+              "upper95": 13.5507568359375
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": -0.006117876838235059,
-              "median": 0.014705882352942012,
-              "lower95": -0.7600183823529401,
-              "upper95": 0.7260110294117628
+              "mean": -0.0019818474264701735,
+              "median": 0.009191176470590534,
+              "lower95": -0.7031250000000009,
+              "upper95": 0.7320772058823514
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 0.0549460018382352,
-              "median": 0.012867647058823484,
-              "lower95": -1.0191176470588235,
-              "upper95": 1.1546874999999999
+              "mean": 0.015596277573529424,
+              "median": 0.02573529411764708,
+              "lower95": -1.0844669117647057,
+              "upper95": 1.1032169117647066
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.0002297794117647062,
+              "mean": -0.0007467830882352935,
               "median": 0,
-              "lower95": -0.011029411764705885,
-              "upper95": 0.01470588235294118
+              "lower95": -0.01470588235294118,
+              "upper95": 0.011029411764705885
             },
             "tieRate": {
               "samples": 128,
-              "mean": -0.000057444852941176226,
+              "mean": -0.00011488970588235265,
               "median": 0,
-              "lower95": -0.010386029411764704,
-              "upper95": 0.007352941176470589
+              "lower95": -0.007352941176470589,
+              "upper95": 0.007352941176470588
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 0.0303955078125,
-              "median": 0.12451171875,
-              "lower95": -2.173974609375,
-              "upper95": 2.2796875000000005
+              "mean": 0.01202392578125,
+              "median": -0.0009765625,
+              "lower95": -1.8632568359375,
+              "upper95": 2.37265625
             }
           },
           "winInvariance": {
@@ -4715,75 +4717,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.08352481617648,
-              "median": 45.2610294117647,
-              "lower95": 43.18336397058823,
-              "upper95": 46.33051470588235
+              "mean": 45.08318014705882,
+              "median": 45.14522058823529,
+              "lower95": 43.3046875,
+              "upper95": 46.427389705882355
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 1.6129940257352948,
-              "median": 1.474264705882353,
-              "lower95": -0.3797794117647058,
-              "upper95": 3.7038602941176477
+              "mean": 1.6083409926470587,
+              "median": 1.5220588235294117,
+              "lower95": -0.5145220588235294,
+              "upper95": 3.37702205882353
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.033662683823529396,
-              "median": 0.03308823529411765,
-              "lower95": 0.01167279411764706,
+              "mean": 0.03277228860294114,
+              "median": 0.029411764705882353,
+              "lower95": 0.011029411764705883,
               "upper95": 0.058823529411764705
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0029584099264705855,
+              "mean": 0.00290096507352941,
               "median": 0.003676470588235294,
               "lower95": 0,
-              "upper95": 0.007352941176470588
+              "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 9.990333557128906,
-              "median": 9.998046875,
-              "lower95": 6.0320068359375,
-              "upper95": 13.342187500000001
+              "mean": 10.013801574707031,
+              "median": 9.7490234375,
+              "lower95": 6.7203125,
+              "upper95": 14.440698242187501
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": -0.003417968750000333,
-              "median": -0.06250000000000355,
-              "lower95": -0.8864889705882366,
-              "upper95": 1.0431066176470607
+              "mean": -0.0037626378676467453,
+              "median": -0.0073529411764674535,
+              "lower95": -0.9442095588235304,
+              "upper95": 1.009191176470589
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 0.0685604319852941,
-              "median": -0.03676470588235298,
-              "lower95": -1.1173713235294116,
-              "upper95": 1.5505514705882357
+              "mean": 0.06390739889705888,
+              "median": 0.047794117647058876,
+              "lower95": -1.044485294117647,
+              "upper95": 1.3468750000000012
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.0005744485294117642,
+              "mean": -0.0003159466911764705,
               "median": 0,
               "lower95": -0.014705882352941176,
-              "upper95": 0.014705882352941176
+              "upper95": 0.014705882352941175
             },
             "tieRate": {
               "samples": 128,
-              "mean": -0.0005744485294117644,
+              "mean": -0.0006318933823529409,
               "median": 0,
-              "lower95": -0.007352941176470589,
+              "lower95": -0.010386029411764704,
               "upper95": 0.007352941176470588
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 0.1005401611328125,
-              "median": -0.08935546875,
-              "lower95": -3.02265625,
-              "upper95": 2.6486328125000007
+              "mean": 0.1240081787109375,
+              "median": 0.21923828125,
+              "lower95": -2.6796142578125,
+              "upper95": 2.4734619140625007
             }
           },
           "winInvariance": {
@@ -4848,75 +4850,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.067526424632334,
-              "median": 45.08823529411765,
-              "lower95": 43.51709558823529,
-              "upper95": 46.57113970588235
+              "mean": 45.03874655330883,
+              "median": 45.04227941176471,
+              "lower95": 43.43832720588236,
+              "upper95": 46.78639705882353
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 2.466480928308824,
-              "median": 2.4246323529411766,
-              "lower95": 0.858547794117647,
-              "upper95": 4.503308823529411
+              "mean": 2.5060604319852935,
+              "median": 2.452205882352941,
+              "lower95": 0.7199448529411765,
+              "upper95": 4.496415441176471
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.030819163602941155,
-              "median": 0.029411764705882353,
-              "lower95": 0.014705882352941176,
-              "upper95": 0.05082720588235295
+              "mean": 0.0314797794117647,
+              "median": 0.03308823529411765,
+              "lower95": 0.011029411764705883,
+              "upper95": 0.05450367647058824
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.002872242647058823,
+              "mean": 0.002814797794117646,
               "median": 0.003676470588235294,
               "lower95": 0,
               "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 10.067474365234375,
-              "median": 9.84130859375,
-              "lower95": 6.5583740234375005,
-              "upper95": 13.790625
+              "mean": 10.068023681640625,
+              "median": 9.96826171875,
+              "lower95": 6.9991943359375,
+              "upper95": 14.08056640625
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": 0.04426125919117646,
-              "median": 0.038602941176471006,
-              "lower95": -1.0808823529411786,
-              "upper95": 1.097334558823525
+              "mean": 0.01548138786764719,
+              "median": -0.007352941176471006,
+              "lower95": -0.9521139705882368,
+              "upper95": 1.185477941176472
             },
             "meanMargin": {
               "samples": 128,
-              "mean": -0.054084329044117925,
-              "median": -0.06617647058823528,
-              "lower95": -1.7781249999999997,
-              "upper95": 1.4986213235294126
+              "mean": -0.014504825367646947,
+              "median": -0.06801470588235292,
+              "lower95": -1.5400735294117647,
+              "upper95": 1.3543198529411775
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": -0.0010052849264705866,
+              "mean": -0.0003446691176470585,
               "median": 0,
-              "lower95": -0.01773897058823529,
-              "upper95": 0.014062500000000012
+              "lower95": -0.018382352941176468,
+              "upper95": 0.014062500000000007
             },
             "tieRate": {
               "samples": 128,
-              "mean": -0.000488281249999999,
+              "mean": -0.0005457261029411758,
               "median": 0,
-              "lower95": -0.011029411764705883,
+              "lower95": -0.007352941176470589,
               "upper95": 0.007352941176470589
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 0.08477020263671875,
-              "median": 0.12451171875,
-              "lower95": -3.0735351562499997,
-              "upper95": 2.2943115234375
+              "mean": 0.08531951904296875,
+              "median": -0.06396484375,
+              "lower95": -2.4771484375,
+              "upper95": 2.8531250000000004
             }
           },
           "winInvariance": {
@@ -4981,75 +4983,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 44.95858226102942,
-              "median": 44.91360294117647,
-              "lower95": 43.775919117647064,
-              "upper95": 46.369025735294116
+              "mean": 44.940716911764696,
+              "median": 44.89522058823529,
+              "lower95": 43.645312499999996,
+              "upper95": 46.486397058823535
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 1.6272977941176479,
-              "median": 1.7426470588235294,
-              "lower95": -0.1374080882352941,
-              "upper95": 3.3406249999999997
+              "mean": 1.6738281250000002,
+              "median": 1.71875,
+              "lower95": -0.21847426470588235,
+              "upper95": 3.604136029411765
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.0321691176470588,
-              "median": 0.03125,
-              "lower95": 0.014705882352941176,
-              "upper95": 0.051470588235294115
+              "mean": 0.03208295036764702,
+              "median": 0.029411764705882353,
+              "lower95": 0.01167279411764706,
+              "upper95": 0.05450367647058824
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0035903033088235258,
+              "mean": 0.00275735294117647,
               "median": 0.003676470588235294,
               "lower95": 0,
               "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 10.099769592285156,
-              "median": 10.0302734375,
-              "lower95": 7.0718994140625,
-              "upper95": 13.87119140625
+              "mean": 10.049407958984375,
+              "median": 9.90625,
+              "lower95": 6.8052490234375,
+              "upper95": 13.76875
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": 0.09354894301470595,
-              "median": 0.117647058823529,
-              "lower95": -0.771231617647057,
-              "upper95": 0.8430147058823583
+              "mean": 0.07568359375000017,
+              "median": 0.08088235294117752,
+              "lower95": -0.8735294117647022,
+              "upper95": 1.208915441176471
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 0.02398322610294128,
-              "median": 0.012867647058823706,
-              "lower95": -1.199356617647059,
-              "upper95": 1.3850183823529414
+              "mean": 0.07051355698529421,
+              "median": 0.05882352941176472,
+              "lower95": -1.358823529411765,
+              "upper95": 1.6137867647058828
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": -0.00020105698529411734,
+              "mean": -0.00028722426470588177,
               "median": 0,
-              "lower95": -0.011029411764705885,
-              "upper95": 0.01470588235294118
+              "lower95": -0.014705882352941178,
+              "upper95": 0.014705882352941178
             },
             "tieRate": {
               "samples": 128,
-              "mean": -2.710505431213761e-20,
+              "mean": -0.0008329503676470572,
               "median": 0,
               "lower95": -0.007352941176470589,
-              "upper95": 0.010386029411764716
+              "upper95": 0.007352941176470589
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 0.238372802734375,
-              "median": 0.3115234375,
-              "lower95": -2.5087890625,
-              "upper95": 3.5810791015625005
+              "mean": 0.18801116943359375,
+              "median": 0.09423828125,
+              "lower95": -2.8015625,
+              "upper95": 3.2914306640625
             }
           },
           "winInvariance": {
@@ -5134,75 +5136,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.084329044117666,
-              "median": 45.117647058823536,
-              "lower95": 43.28538602941176,
-              "upper95": 46.69466911764706
+              "mean": 45.08269186580883,
+              "median": 45.10294117647059,
+              "lower95": 43.24365808823529,
+              "upper95": 46.725367647058825
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 2.10305606617647,
+              "mean": 2.1073357077205888,
               "median": 2.110294117647059,
-              "lower95": 0.8745404411764706,
-              "upper95": 3.3727022058823533
+              "lower95": 0.853125,
+              "upper95": 3.3897977941176474
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.03328929227941174,
+              "mean": 0.03351907169117644,
               "median": 0.03308823529411765,
               "lower95": 0.014705882352941176,
               "upper95": 0.05514705882352941
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0028722426470588224,
+              "mean": 0.0031020220588235275,
               "median": 0.003676470588235294,
               "lower95": 0,
               "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 9.885818481445312,
-              "median": 9.74951171875,
-              "lower95": 6.2141357421875005,
-              "upper95": 13.73583984375
+              "mean": 9.9530029296875,
+              "median": 9.9990234375,
+              "lower95": 6.3585693359375,
+              "upper95": 13.4765869140625
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": -0.003590303308823428,
+              "mean": -0.005227481617647023,
               "median": -0.007352941176471006,
-              "lower95": -0.09494485294117538,
-              "upper95": 0.1022977941176464
+              "lower95": -0.08759191176470438,
+              "upper95": 0.09172794117647587
             },
             "meanMargin": {
               "samples": 128,
-              "mean": -0.01002412683823531,
-              "median": -0.012867647058823595,
-              "lower95": -0.11268382352941159,
-              "upper95": 0.09862132352941169
+              "mean": -0.0057444852941176475,
+              "median": 0,
+              "lower95": -0.09558823529411767,
+              "upper95": 0.08823529411764715
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": -0.00008616727941176505,
+              "mean": 0.00014361213235294148,
               "median": 0,
               "lower95": -0.00735294117647059,
               "upper95": 0.00735294117647059
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0002585018382352942,
+              "mean": 0.0004882812500000001,
               "median": 0,
               "lower95": -0.003676470588235295,
-              "upper95": 0.003676470588235295
+              "upper95": 0.007352941176470588
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 0.03102874755859375,
-              "median": 0.0595703125,
-              "lower95": -1.1140625,
-              "upper95": 1.125
+              "mean": 0.09821319580078125,
+              "median": 0.02880859375,
+              "lower95": -1.16728515625,
+              "upper95": 1.2883789062500004
             }
           },
           "winInvariance": {
@@ -5267,75 +5269,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.0799632352941,
-              "median": 45.13419117647059,
-              "lower95": 43.27472426470588,
-              "upper95": 46.66875
+              "mean": 45.06574563419117,
+              "median": 45.08272058823529,
+              "lower95": 43.42012867647059,
+              "upper95": 46.478216911764704
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 1.644818474264706,
-              "median": 1.6764705882352942,
-              "lower95": -0.4686580882352941,
-              "upper95": 3.454595588235294
+              "mean": 1.6497874540441175,
+              "median": 1.5919117647058822,
+              "lower95": -0.06755514705882351,
+              "upper95": 3.6395220588235304
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.0329446231617647,
+              "mean": 0.0331744025735294,
               "median": 0.03308823529411765,
               "lower95": 0.011029411764705883,
-              "upper95": 0.058823529411764705
+              "upper95": 0.06185661764705883
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0032456341911764677,
+              "mean": 0.0032169117647058813,
               "median": 0.003676470588235294,
               "lower95": 0,
               "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 9.704978942871094,
-              "median": 9.6826171875,
-              "lower95": 5.9078125,
-              "upper95": 13.4443359375
+              "mean": 9.782470703125,
+              "median": 9.6875,
+              "lower95": 6.1349609375,
+              "upper95": 13.489624023437502
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": 0.002613740808823428,
-              "median": -0.003676470588235503,
-              "lower95": -0.7457720588235304,
-              "upper95": 0.9954044117647053
+              "mean": -0.011603860294117252,
+              "median": -0.012867647058822484,
+              "lower95": -0.8166360294117656,
+              "upper95": 0.7435661764705892
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 0.0072093290441176995,
-              "median": 0.02941176470588225,
-              "lower95": -1.011764705882353,
-              "upper95": 1.0382352941176474
+              "mean": 0.012178308823529388,
+              "median": -0.0018382352941173075,
+              "lower95": -0.964705882352941,
+              "upper95": 1.0666360294117652
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.0003159466911764714,
+              "mean": 0.0005457261029411754,
               "median": 0,
-              "lower95": -0.010386029411764702,
-              "upper95": 0.014705882352941173
+              "lower95": -0.011029411764705885,
+              "upper95": 0.014062500000000007
             },
             "tieRate": {
               "samples": 128,
-              "mean": -0.00014361213235294094,
+              "mean": -0.00017233455882352912,
               "median": 0,
-              "lower95": -0.007352941176470588,
-              "upper95": 0.007352941176470589
+              "lower95": -0.010386029411764704,
+              "upper95": 0.011029411764705881
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": -0.18595123291015625,
-              "median": -0.125,
-              "lower95": -2.5988525390625,
-              "upper95": 1.7494873046875
+              "mean": -0.10845947265625,
+              "median": -0.00048828125,
+              "lower95": -2.36083984375,
+              "upper95": 1.444921875
             }
           },
           "winInvariance": {
@@ -5400,75 +5402,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 44.957490808823536,
-              "median": 44.86029411764706,
-              "lower95": 43.34420955882353,
-              "upper95": 46.60376838235294
+              "mean": 44.98988970588239,
+              "median": 45.00367647058823,
+              "lower95": 43.161305147058826,
+              "upper95": 46.65
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 2.4452550551470598,
-              "median": 2.422794117647059,
-              "lower95": 0.6634191176470589,
-              "upper95": 4.614889705882353
+              "mean": 2.4594439338235294,
+              "median": 2.5238970588235294,
+              "lower95": 0.4977941176470589,
+              "upper95": 4.454136029411765
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.03205422794117646,
-              "median": 0.03308823529411765,
+              "mean": 0.032226562499999986,
+              "median": 0.029411764705882353,
               "lower95": 0.014705882352941176,
               "upper95": 0.05450367647058824
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0032169117647058796,
+              "mean": 0.003303079044117644,
               "median": 0.003676470588235294,
               "lower95": 0,
-              "upper95": 0.01406250000000001
+              "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 10.14532470703125,
-              "median": 10.029296875,
-              "lower95": 6.95615234375,
-              "upper95": 14.2140625
+              "mean": 10.112556457519531,
+              "median": 10.12451171875,
+              "lower95": 6.3857666015625,
+              "upper95": 14.02646484375
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": -0.09599034926470579,
-              "median": -0.07720588235294201,
-              "lower95": -1.2784926470588227,
-              "upper95": 0.922702205882353
+              "mean": -0.06359145220588208,
+              "median": -0.055147058823528994,
+              "lower95": -1.0106617647058793,
+              "upper95": 1.2506433823529457
             },
             "meanMargin": {
               "samples": 128,
-              "mean": -0.12798713235294115,
-              "median": -0.13786764705882343,
-              "lower95": -1.6556985294117648,
-              "upper95": 1.3177389705882356
+              "mean": -0.11379825367647058,
+              "median": -0.09007352941176472,
+              "lower95": -1.3890625,
+              "upper95": 1.1015625000000002
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.0010052849264705888,
+              "mean": 0.0011776194852941189,
               "median": 0,
-              "lower95": -0.014062499999999999,
-              "upper95": 0.017738970588235304
+              "lower95": -0.011029411764705885,
+              "upper95": 0.018382352941176475
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.00043083639705882384,
+              "mean": 0.0005170036764705886,
               "median": 0,
               "lower95": -0.007352941176470589,
-              "upper95": 0.010386029411764716
+              "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 0.11483001708984375,
-              "median": 0.09423828125,
-              "lower95": -2.3574462890625,
-              "upper95": 2.2906250000000004
+              "mean": 0.082061767578125,
+              "median": 0.03076171875,
+              "lower95": -2.3852294921875,
+              "upper95": 2.7564453125
             }
           },
           "winInvariance": {
@@ -5533,75 +5535,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 44.9669117647059,
-              "median": 44.919117647058826,
-              "lower95": 43.571507352941175,
-              "upper95": 46.54476102941177
+              "mean": 44.940027573529406,
+              "median": 44.97426470588235,
+              "lower95": 43.30661764705883,
+              "upper95": 46.407904411764704
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 1.6472311580882355,
-              "median": 1.6213235294117647,
-              "lower95": -0.11875,
-              "upper95": 3.5035845588235297
+              "mean": 1.6947954963235297,
+              "median": 1.6948529411764706,
+              "lower95": 0.18832720588235297,
+              "upper95": 3.620588235294118
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.03133616727941175,
-              "median": 0.029411764705882353,
-              "lower95": 0.01167279411764706,
-              "upper95": 0.05450367647058824
+              "mean": 0.03185317095588233,
+              "median": 0.03308823529411765,
+              "lower95": 0.014705882352941176,
+              "upper95": 0.05082720588235295
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0032743566176470537,
+              "mean": 0.00304457720588235,
               "median": 0.003676470588235294,
               "lower95": 0,
-              "upper95": 0.010386029411764718
+              "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 9.925369262695312,
-              "median": 9.8427734375,
-              "lower95": 6.5318359375,
-              "upper95": 13.985131835937501
+              "mean": 10.016677856445312,
+              "median": 9.81201171875,
+              "lower95": 6.88525390625,
+              "upper95": 13.7872314453125
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": 0.0415613511029409,
-              "median": 0.05698529411764497,
-              "lower95": -0.8246323529411772,
-              "upper95": 0.9278492647058826
+              "mean": 0.014677159926470451,
+              "median": -0.05698529411764497,
+              "lower95": -0.9991727941176488,
+              "upper95": 1.1069852941176475
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 0.1498448988970587,
-              "median": 0.16727941176470584,
-              "lower95": -1.4373161764705882,
-              "upper95": 1.4299632352941176
+              "mean": 0.19740923713235303,
+              "median": 0.19485294117647062,
+              "lower95": -0.9362132352941176,
+              "upper95": 1.7325367647058825
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": -0.00031594669117647,
+              "mean": 0.0002010569852941184,
               "median": 0,
-              "lower95": -0.014705882352941175,
-              "upper95": 0.01470588235294118
+              "lower95": -0.014062499999999999,
+              "upper95": 0.014705882352941176
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0002872242647058827,
+              "mean": 0.000057444852941176775,
               "median": 0,
               "lower95": -0.007352941176470588,
               "upper95": 0.007352941176470588
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": -0.1519012451171875,
-              "median": 0.06201171875,
-              "lower95": -3.1953125,
-              "upper95": 2.507812500000001
+              "mean": -0.0605926513671875,
+              "median": -0.095703125,
+              "lower95": -2.9723388671875,
+              "upper95": 2.4139648437500005
             }
           },
           "winInvariance": {
@@ -5666,75 +5668,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.027343749999986,
-              "median": 44.970588235294116,
-              "lower95": 43.60358455882353,
-              "upper95": 46.45119485294118
+              "mean": 45.08519071691176,
+              "median": 45.095588235294116,
+              "lower95": 43.596875,
+              "upper95": 46.659650735294115
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 2.380859375,
-              "median": 2.420955882352941,
-              "lower95": 0.5434742647058824,
-              "upper95": 4.128768382352941
+              "mean": 2.412396599264706,
+              "median": 2.386029411764706,
+              "lower95": 0.41636029411764713,
+              "upper95": 4.091544117647059
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.03251378676470587,
-              "median": 0.029411764705882353,
+              "mean": 0.03268612132352939,
+              "median": 0.03308823529411765,
               "lower95": 0.014705882352941176,
-              "upper95": 0.061213235294117666
+              "upper95": 0.05450367647058824
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0030158547794117635,
+              "mean": 0.0033318014705882343,
               "median": 0.003676470588235294,
               "lower95": 0,
               "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 10.072715759277344,
-              "median": 9.90576171875,
-              "lower95": 6.88271484375,
-              "upper95": 14.1875
+              "mean": 9.861099243164062,
+              "median": 9.65185546875,
+              "lower95": 6.7703369140625,
+              "upper95": 13.852954101562501
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": -0.04213579963235292,
-              "median": -0.005514705882355031,
-              "lower95": -1.0294117647058827,
-              "upper95": 0.8771139705882364
+              "mean": 0.01571116727941141,
+              "median": 0.02573529411764852,
+              "lower95": -0.9870404411764728,
+              "upper95": 0.9656250000000016
             },
             "meanMargin": {
               "samples": 128,
-              "mean": -0.004337086397058857,
-              "median": 0.06433823529411775,
-              "lower95": -1.396139705882353,
-              "upper95": 1.3282169117647062
+              "mean": 0.02720013786764704,
+              "median": 0.02573529411764719,
+              "lower95": -1.2547794117647058,
+              "upper95": 1.494393382352942
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.0005170036764705872,
+              "mean": 0.0006893382352941177,
               "median": 0,
-              "lower95": -0.01470588235294118,
-              "upper95": 0.018382352941176468
+              "lower95": -0.017738970588235294,
+              "upper95": 0.0214154411764706
             },
             "tieRate": {
               "samples": 128,
-              "mean": -0.00008616727941176443,
+              "mean": 0.0002297794117647062,
               "median": 0,
               "lower95": -0.007352941176470589,
-              "upper95": 0.007352941176470588
+              "upper95": 0.007352941176470589
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 0.27689361572265625,
-              "median": 0.25,
-              "lower95": -2.6164794921875,
-              "upper95": 2.7427978515625
+              "mean": 0.065277099609375,
+              "median": 0.0283203125,
+              "lower95": -2.7798583984375,
+              "upper95": 3.3327880859375005
             }
           },
           "winInvariance": {
@@ -5813,75 +5815,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.16228170955885,
-              "median": 45.20404411764706,
-              "lower95": 43.52647058823529,
-              "upper95": 46.64623161764706
+              "mean": 45.169031479779434,
+              "median": 45.20772058823529,
+              "lower95": 43.55680147058823,
+              "upper95": 46.65386029411764
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 1.7849264705882353,
-              "median": 1.8125,
-              "lower95": -0.19099264705882346,
-              "upper95": 3.768841911764706
+              "mean": 1.7556008731617643,
+              "median": 1.7959558823529411,
+              "lower95": -0.3177389705882352,
+              "upper95": 3.7561580882352943
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.03222656249999997,
-              "median": 0.03308823529411765,
+              "mean": 0.03185317095588233,
+              "median": 0.029411764705882353,
               "lower95": 0.011029411764705883,
               "upper95": 0.058823529411764705
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0029584099264705873,
-              "median": 0.003676470588235294,
+              "mean": 0.0025275735294117635,
+              "median": 0,
               "lower95": 0,
-              "upper95": 0.011029411764705883
+              "upper95": 0.007352941176470588
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 9.716804504394531,
-              "median": 9.3740234375,
-              "lower95": 6.5938232421875,
-              "upper95": 13.6648193359375
+              "mean": 9.711257934570312,
+              "median": 9.5615234375,
+              "lower95": 6.24150390625,
+              "upper95": 13.602954101562501
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": -0.00396369485294118,
-              "median": -0.007352941176471006,
-              "lower95": -0.08933823529411918,
-              "upper95": 0.08088235294117982
+              "mean": 0.002786075367647245,
+              "median": 0,
+              "lower95": -0.08501838235293951,
+              "upper95": 0.10597426470587835
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 0.015510110294117632,
-              "median": 0.014705882352941124,
-              "lower95": -0.12068014705882354,
-              "upper95": 0.1464154411764705
+              "mean": -0.013815487132352961,
+              "median": -0.007352941176470562,
+              "lower95": -0.16112132352941166,
+              "upper95": 0.12178308823529423
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.00008616727941176494,
+              "mean": -0.00028722426470588274,
               "median": 0,
               "lower95": -0.00735294117647059,
-              "upper95": 0.007352941176470589
+              "upper95": 0.006709558823529417
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.000028722426470588547,
+              "mean": -0.00040211397058823506,
               "median": 0,
               "lower95": -0.007352941176470588,
-              "upper95": 0.007352941176470589
+              "upper95": 0.007352941176470588
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 0.04520416259765625,
-              "median": 0.0625,
-              "lower95": -1.2399169921875,
-              "upper95": 1.3741455078125
+              "mean": 0.0396575927734375,
+              "median": 0.0615234375,
+              "lower95": -1.4267333984375,
+              "upper95": 1.4782958984375003
             }
           },
           "winInvariance": {
@@ -5946,75 +5948,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.09090647977941,
-              "median": 45.2610294117647,
-              "lower95": 43.23547794117647,
-              "upper95": 46.27490808823529
+              "mean": 45.097455193014724,
+              "median": 45.15625,
+              "lower95": 43.451286764705884,
+              "upper95": 46.36470588235294
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 2.4138614430147056,
-              "median": 2.4172794117647056,
-              "lower95": 0.5313419117647059,
-              "upper95": 4.262867647058823
+              "mean": 2.4508559283088234,
+              "median": 2.4007352941176467,
+              "lower95": 0.5321691176470589,
+              "upper95": 4.129779411764706
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.0314797794117647,
-              "median": 0.03125,
+              "mean": 0.03058938419117645,
+              "median": 0.029411764705882353,
               "lower95": 0.014705882352941176,
-              "upper95": 0.05514705882352941
+              "upper95": 0.05450367647058824
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.003274356617647057,
+              "mean": 0.0033318014705882347,
               "median": 0.003676470588235294,
               "lower95": 0,
-              "upper95": 0.01406250000000001
+              "upper95": 0.014705882352941176
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 10.149002075195312,
-              "median": 9.99951171875,
-              "lower95": 6.19521484375,
-              "upper95": 13.6757568359375
+              "mean": 10.13037109375,
+              "median": 10.09375,
+              "lower95": 6.0635498046875,
+              "upper95": 14.743652343750002
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": -0.002441406250000333,
-              "median": 0.01102941176470651,
-              "lower95": -1.0369485294117657,
-              "upper95": 0.8724264705882352
+              "mean": 0.004107306985293657,
+              "median": 0.007352941176471006,
+              "lower95": -0.8443014705882395,
+              "upper95": 0.789430147058823
             },
             "meanMargin": {
               "samples": 128,
-              "mean": -0.015079273897058673,
-              "median": -0.018382352941176405,
-              "lower95": -0.9397977941176472,
-              "upper95": 1.0076286764705886
+              "mean": 0.021915211397058938,
+              "median": -0.003676470588235281,
+              "lower95": -0.8990808823529413,
+              "upper95": 1.0058823529411767
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": -0.00037339154411764806,
+              "mean": -0.0012637867647058822,
               "median": 0,
-              "lower95": -0.014705882352941176,
-              "upper95": 0.011029411764705885
+              "lower95": -0.014062500000000002,
+              "upper95": 0.011029411764705881
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.00020105698529411796,
+              "mean": 0.0002585018382352944,
               "median": 0,
               "lower95": -0.007352941176470588,
               "upper95": 0.007352941176470589
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 0.14551544189453125,
-              "median": 0.18701171875,
-              "lower95": -1.80087890625,
-              "upper95": 2.3947265625000007
+              "mean": 0.12688446044921875,
+              "median": 0.12451171875,
+              "lower95": -1.7277587890625,
+              "upper95": 2.0715820312500006
             }
           },
           "winInvariance": {
@@ -6079,75 +6081,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 44.935747931985276,
-              "median": 44.86397058823529,
-              "lower95": 43.51580882352941,
-              "upper95": 46.400091911764704
+              "mean": 44.91653262867648,
+              "median": 44.955882352941174,
+              "lower95": 43.5108455882353,
+              "upper95": 46.34227941176471
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 1.5702263327205888,
-              "median": 1.542279411764706,
-              "lower95": -0.21433823529411766,
-              "upper95": 3.1435661764705887
+              "mean": 1.5619829963235294,
+              "median": 1.4761029411764706,
+              "lower95": 0.18722426470588235,
+              "upper95": 3.1206801470588235
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.03231272977941174,
+              "mean": 0.032284007352941166,
               "median": 0.03308823529411765,
-              "lower95": 0.014705882352941176,
-              "upper95": 0.051470588235294115
+              "lower95": 0.011029411764705883,
+              "upper95": 0.05450367647058824
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0029009650735294075,
+              "mean": 0.0036764705882352893,
               "median": 0.003676470588235294,
               "lower95": 0,
-              "upper95": 0.007352941176470588
+              "upper95": 0.014705882352941176
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 9.937736511230469,
-              "median": 9.96484375,
-              "lower95": 6.8443359375,
-              "upper95": 13.227954101562501
+              "mean": 10.097091674804688,
+              "median": 10.0927734375,
+              "lower95": 6.0868164062500005,
+              "upper95": 14.240356445312502
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": 0.01958869485294129,
-              "median": 0.023897058823528994,
-              "lower95": -0.9980698529411804,
-              "upper95": 0.8747242647058809
+              "mean": 0.0003733915441175295,
+              "median": 0.009191176470590534,
+              "lower95": -0.9480698529411812,
+              "upper95": 0.9526654411764686
             },
             "meanMargin": {
               "samples": 128,
-              "mean": -0.053940716911764774,
-              "median": 0.03860294117647067,
-              "lower95": -1.2989889705882351,
-              "upper95": 0.9978860294117649
+              "mean": -0.062184053308823345,
+              "median": 0.014705882352941235,
+              "lower95": -1.0692095588235295,
+              "upper95": 0.9863970588235293
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.0008042279411764705,
+              "mean": 0.0007755055147058821,
               "median": 0,
-              "lower95": -0.014705882352941173,
+              "lower95": -0.011029411764705883,
               "upper95": 0.014705882352941176
             },
             "tieRate": {
               "samples": 128,
-              "mean": -0.00017233455882352912,
+              "mean": 0.0006031709558823533,
               "median": 0,
               "lower95": -0.007352941176470588,
-              "upper95": 0.007352941176470588
+              "upper95": 0.010386029411764716
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 0.058746337890625,
-              "median": 0.15673828125,
-              "lower95": -2.9190185546875,
-              "upper95": 2.6648193359375005
+              "mean": 0.21810150146484375,
+              "median": 0.15625,
+              "lower95": -2.28037109375,
+              "upper95": 2.9779541015625
             }
           },
           "winInvariance": {
@@ -6212,75 +6214,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.063763786764724,
-              "median": 45,
-              "lower95": 43.45,
-              "upper95": 46.71194852941177
+              "mean": 45.07240923713234,
+              "median": 44.998161764705884,
+              "lower95": 43.58465073529412,
+              "upper95": 46.61636029411765
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 2.4159007352941178,
-              "median": 2.4246323529411766,
-              "lower95": 0.5780330882352942,
-              "upper95": 4.13704044117647
+              "mean": 2.382956112132352,
+              "median": 2.4172794117647056,
+              "lower95": 0.7045036764705882,
+              "upper95": 4.099448529411765
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.03248506433823528,
-              "median": 0.03308823529411765,
-              "lower95": 0.014705882352941176,
-              "upper95": 0.06185661764705883
+              "mean": 0.03191061580882351,
+              "median": 0.029411764705882353,
+              "lower95": 0.01838235294117647,
+              "upper95": 0.05514705882352941
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.003159466911764704,
+              "mean": 0.003102022058823525,
               "median": 0.003676470588235294,
               "lower95": 0,
-              "upper95": 0.011029411764705883
+              "upper95": 0.007352941176470588
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 9.93695068359375,
-              "median": 9.748046875,
-              "lower95": 6.4966064453125,
-              "upper95": 13.2356689453125
+              "mean": 10.002456665039062,
+              "median": 9.80859375,
+              "lower95": 6.7601318359375,
+              "upper95": 13.6132568359375
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": -0.06321806066176483,
-              "median": -0.04779411764705799,
-              "lower95": -1.0759191176470595,
-              "upper95": 0.8062499999999961
+              "mean": -0.05457261029411731,
+              "median": -0.09742647058823195,
+              "lower95": -1.0932904411764695,
+              "upper95": 0.9005514705882368
             },
             "meanMargin": {
               "samples": 128,
-              "mean": -0.012321920955882337,
-              "median": 0.04227941176470584,
-              "lower95": -1.6220588235294113,
-              "upper95": 1.3413602941176472
+              "mean": -0.04526654411764702,
+              "median": -0.06617647058823528,
+              "lower95": -1.3265625,
+              "upper95": 1.3114889705882353
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.0005170036764705877,
+              "mean": -0.000057444852941176267,
               "median": 0,
               "lower95": -0.014705882352941176,
-              "upper95": 0.014705882352941176
+              "upper95": 0.011029411764705885
             },
             "tieRate": {
               "samples": 128,
-              "mean": -0.00031594669117647033,
+              "mean": -0.00037339154411764703,
               "median": 0,
-              "lower95": -0.010386029411764705,
+              "lower95": -0.011029411764705883,
               "upper95": 0.007352941176470588
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 0.08162689208984375,
-              "median": 0,
-              "lower95": -2.303564453125,
-              "upper95": 3.1731689453125003
+              "mean": 0.14713287353515625,
+              "median": 0.19140625,
+              "lower95": -2.302880859375,
+              "upper95": 2.54130859375
             }
           },
           "winInvariance": {
@@ -6345,75 +6347,75 @@
           "alternate": {
             "meanTotal": {
               "samples": 128,
-              "mean": 45.00649126838236,
-              "median": 45.044117647058826,
-              "lower95": 43.13409926470588,
-              "upper95": 46.74411764705882
+              "mean": 44.94088924632353,
+              "median": 44.89705882352941,
+              "lower95": 43.03336397058824,
+              "upper95": 46.64816176470588
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 1.734375,
-              "median": 1.6470588235294117,
-              "lower95": 0.046599264705882375,
-              "upper95": 3.8472426470588252
+              "mean": 1.667221966911765,
+              "median": 1.6966911764705883,
+              "lower95": 0.06433823529411767,
+              "upper95": 3.370863970588236
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": 0.03257123161764706,
-              "median": 0.029411764705882353,
-              "lower95": 0.011029411764705883,
-              "upper95": 0.06185661764705883
+              "mean": 0.03326056985294116,
+              "median": 0.03308823529411765,
+              "lower95": 0.01167279411764706,
+              "upper95": 0.058823529411764705
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0034179687499999987,
+              "mean": 0.003015854779411763,
               "median": 0.003676470588235294,
               "lower95": 0,
               "upper95": 0.011029411764705883
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": 9.815544128417969,
-              "median": 9.61865234375,
-              "lower95": 6.0718994140625,
-              "upper95": 13.5507568359375
+              "mean": 9.997566223144531,
+              "median": 9.78076171875,
+              "lower95": 6.57275390625,
+              "upper95": 13.7140625
             }
           },
           "pairedDelta": {
             "meanTotal": {
               "samples": 128,
-              "mean": 0.04716222426470601,
-              "median": 0.08455882352941302,
-              "lower95": -1.1336397058823524,
-              "upper95": 1.068198529411765
+              "mean": -0.018439797794117196,
+              "median": -0.04595588235293846,
+              "lower95": -1.035753676470585,
+              "upper95": 1.1475183823529447
             },
             "meanMargin": {
               "samples": 128,
-              "mean": 0.029296875,
-              "median": 0.005514705882352908,
-              "lower95": -1.1247242647058824,
-              "upper95": 1.3853860294117648
+              "mean": -0.0378561580882353,
+              "median": -0.06066176470588236,
+              "lower95": -1.0558823529411765,
+              "upper95": 1.030514705882353
             },
             "shutoutRate": {
               "samples": 128,
-              "mean": -0.0005170036764705876,
+              "mean": 0.00017233455882352972,
               "median": 0,
-              "lower95": -0.01470588235294118,
-              "upper95": 0.014705882352941173
+              "lower95": -0.014705882352941176,
+              "upper95": 0.01470588235294118
             },
             "tieRate": {
               "samples": 128,
-              "mean": 0.0004595588235294121,
+              "mean": 0.00005744485294117677,
               "median": 0,
-              "lower95": -0.007352941176470588,
+              "lower95": -0.010386029411764705,
               "upper95": 0.007352941176470589
             },
             "teamWinVariance": {
               "samples": 128,
-              "mean": -0.1112823486328125,
-              "median": -0.28466796875,
-              "lower95": -2.5633056640625,
-              "upper95": 2.9017333984375018
+              "mean": 0.07073974609375,
+              "median": 0.18798828125,
+              "lower95": -2.6711914062499997,
+              "upper95": 2.4748291015625012
             }
           },
           "winInvariance": {

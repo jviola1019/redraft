@@ -36,6 +36,14 @@ Generalized display bands contain the true observed value. Suppression is labele
 
 ## Multi-year scenario metadata (November 12)
 
-`metadata.draftYear`/`informationCutoff` control the scenario, independent of runtime calendar date. `eligibilitySource=combine-participant` is the legacy engine enum for source-recorded combine participants or official invitees; `eligibilityProvenance` distinguishes the source. `playable`/baseline-only status must not be inferred from actual draft position. `scenario-coverage.json` records slot counts, identity gaps, ownership evidence, unavailable compensatory flags and full-release status. `model-YYYY.json` pins the scenario SHA-256, training cutoff, missing-measurement and unsupported-position fallbacks.
+`metadata.draftYear`/`informationCutoff` control the scenario, independent of runtime calendar date. `eligibilitySource=combine-participant` is the legacy engine enum for source-recorded combine participants or official invitees; `eligibilityProvenance` distinguishes the source. `playable`/baseline-only status must not be inferred from actual draft position. `scenario-coverage.json` records slot counts, identity gaps, ownership evidence and full-release status for the archived scenario files. `model-YYYY.json` pins the scenario SHA-256, training cutoff, missing-measurement and unsupported-position fallbacks.
 
 Franchise IDs persist across relocation; source-year display names change explicitly. Prior-season schedules use 16/17 games as applicable, including the recorded 2022 BUF/CIN exception. Incomplete future actuals are null, never zero wins.
+
+### Historical draft evidence at runtime
+
+The 2019 and 2021 scenario bundles classify all slots using `data/clean/historical_compensatory_slots.json`. The evidence identifies 32 compensatory slots in 2019 and 37 in 2021, including the special hiring selections. The runtime joins by overall pick and validates round, slot count, and source scenario version. Initial owners and actual selecting teams come from their original scenario fields. A trade changes the current owner while the compensatory flag follows the slot.
+
+Runtime coverage reports the source links and verification date. Archived scenario files, model inputs, and saved states retain their original bytes and versions. New runs carry the verified flags, and saved runs created earlier can still be loaded with their original pick data. The flags do not enter selection logic, pick pricing, or scoring.
+
+The 2020 scenario uses the April 15 order and information cutoff. The NFL Draft opened April 23. New England and Tampa Bay exchanged picks 139 and 241 on April 21, so the April 15 ownership of those picks differs from the opening-day order.

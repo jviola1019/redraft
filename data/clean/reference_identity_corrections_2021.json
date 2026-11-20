@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "version": "trey-lance-reference-regeneration-v1",
+  "baseCommit": "2c632fb",
+  "auditedOn": "2026-11-20",
+  "aliasArtifact": {
+    "path": "data/clean/audited_postdraft_reference_aliases.json",
+    "url": "audited postdraft reference identity only; never pre-draft features",
+    "sha256": "298527099e2e6ef4c69d34d6c5d5b919ae8cba0bf83b6abedcae2cc5ea596387"
+  },
+  "oldScenarioSha256": "16b574b788658ea916a48a61cdf4a24df76e72305dc16054f32971ec5ed4aec4",
+  "scenarioVersion": "nflverse-2021-combine-pool-v2-trey-reference",
+  "scenarioSha256": "37e217bfa4ca2ae97aa34a889b32b0dfef683f4884deefc6569e4b9e8eeaebc6",
+  "oldModelSha256": "c89d6915e04159845d48c0692fe899ff66430c404a2d30cafade478ba629a17b",
+  "modelVersion": "redraft-2021-pre2018-logistic-C10-v2-trey-reference",
+  "modelSha256": "1e71a80b75350169b9c266185e773bbb7ab99a34df9d1698b7437b95ed21a649",
+  "correctedOverall": 3,
+  "fromProspectId": "p2021-ref-e9aacb6df1",
+  "toCanonicalProspectId": "p2021-4a3e07404f",
+  "playableProspects": 323,
+  "referenceOnlyProspects": 82,
+  "scoutingFeaturesChanged": false,
+  "otherYearsChanged": false,
+  "sourceRebuildLimitations": [
+    "Original2021 order and invitee webtext captures are unavailable locally.",
+    "Full current raw-source rebuild also changes unrelated games/source hashes; this correction preserves the audited base snapshot."
+  ],
+  "regenerationMethod": "Exact audited alias at the reference join boundary, reproduced as a hash-guarded minimal change from the immutable prior scenario/model. Numeric model predictions are preserved.",
+  "invariants": {
+    "playableProspectsSha256": "734b971356278e1f6d43dd8685a8b37b0afe45332879b17eabcfa3e33a1a2d62",
+    "otherReferenceProspectsSha256": "febb034b7b3e390fd47435a21b90745e9728d55074e8e12062a49261cbebc5ee",
+    "otherActualPicksSha256": "311fb9e3f76f7349c0601be7362eb5cbfeb4691ea5ba378ceda8761d916c4bb9",
+    "teamsSha256": "8ea3fa01a58c87c4d2535bf46188616f0e85eb83a739574da1b8c380dadee3c3",
+    "picksSha256": "a8ba1160919f8438f01b313cff397114e92850e1a2c6e9d1c26f835c26c35c06",
+    "gamesSha256": "bfd0dcbe5bfba994660b9896132dff21d1d39027bd8b74415cc6bc13fc854a2f",
+    "projectionValuesSha256": "ec55cb5841638596890696a36ece0a39d26703c109f3aa532275b89de31c6b54",
+    "otherYearFiles": {
+      "data/processed/scenario-2018.json": "b7895eef7862ccfb45cff5f2f4b6e347abd809c1905ed274883d55cc237f59d8",
+      "analytics/model.json": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0",
+      "data/processed/scenario-2019.json": "88ef4b175bfc7ddf8c2d32541b1b8371836f09f6e961f4bb8a36b0db0bf5f28c",
+      "analytics/model-2019.json": "2da02bcb4d6da178a635852e61c4ee7488f9551f346c9560f680ce99f13176cf",
+      "data/processed/scenario-2020.json": "527ff4f9770199052a6405d9d56cf503f150b998dddbcfbd947e686c060b624b",
+      "analytics/model-2020.json": "35d80e75ae50e8ada8c9ad96db2fd965e38f9dea06bc0f298b899f51497c3bdc",
+      "data/processed/scenario-2022.json": "ea6846602cddfe179544b1d845c811a1848c59de69084c210c03080ac4d46f63",
+      "analytics/model-2022.json": "9579d70620a4f20ede36008bdcc745d913f8ba1aa7f64b4276104561491b8457",
+      "data/processed/scenario-2023.json": "14587193998afcb61ca2c95c50ee641ba709246a5b3a9c8187855b94e894611f",
+      "analytics/model-2023.json": "3b7a67a1f83c32ba8461abe9608f3f2c18e8a17e34b60c20768099d9b23c78cb",
+      "data/processed/scenario-2024.json": "6a6d794cdf0747d7a03ba92549d4d8165b149a19b04eb32588b679e6c50e8323",
+      "analytics/model-2024.json": "1c4b07f22dc40575623920f108335d8990c07a53511db5e0c6bd740398102e9d",
+      "data/processed/scenario-2025.json": "8f80dab73fa8b50a92a6b0ec499419dfd07eade6398ebda59b5117aac62b13b7",
+      "analytics/model-2025.json": "4b753663702af949cc2474da986eadbe1e23966ce58778928590353c0f774397",
+      "data/processed/scenario-2026.json": "c30d6a697573fc39488b13a91eb7c3863aa780c14a81f446e06dd0e3a86638ca",
+      "analytics/model-2026.json": "a4380ba61137af8813883ec3b021acfb73ee755fd51fdef1004d9f68d25f8ad4"
+    }
+  }
+}

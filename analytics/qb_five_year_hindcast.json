@@ -1,0 +1,933 @@
+{
+  "version": "qb-five-year-chronological-hindcast-v1",
+  "asOf": "2026-11-20",
+  "runtimeChanged": false,
+  "status": "Previously exposed historical cohorts; research only, no new untouched test or production promotion.",
+  "protocol": {
+    "selected": "state:shrink0",
+    "variant": [
+      "state",
+      0
+    ],
+    "selectionTrainingEnds": 2014,
+    "selectionLabels": 2015,
+    "selectionLabelAvailableBy": "2016-03-01",
+    "selectionMetric": "exact annual CRPS",
+    "selectionPoisoningPassed": true,
+    "draws": 8192,
+    "seed": 20261120,
+    "rookieInitialization": "Unconditional empirical QB rookie snaps available before each origin; identical sampled rookie values for both candidates. No later-selected combine classifier.",
+    "persistence": "Repeat sampled rookie snap count across all five future seasons, then apply the common schedule-exposure multiplier. Does not condition on target rookie actual.",
+    "exposure": "Both candidates scale annual snaps by target scheduled games/16; only 2021 in the 2017 horizon is scaled.",
+    "parameterSelection": "Reuse existing 2015-selected candidate; no hindcast outcome selects states, shrinkage, or initialization."
+  },
+  "origins": [
+    {
+      "cohort": 2016,
+      "informationCutoff": "2016-04-28T00:00:00Z",
+      "latestFitOutcomeSeason": 2015,
+      "latestFitLabelAvailableBy": "2016-03-01",
+      "panelRows": 227,
+      "transitionRows": 122,
+      "uniqueTransitionPlayers": 77,
+      "rookieRows": 45,
+      "rookieRoleProbability": 0.2,
+      "testPlayers": 17,
+      "outcomeSeasons": [
+        2016,
+        2020
+      ],
+      "fiveYearLabelAvailableBy": "2021-03-01",
+      "futureOutcomePoisoningPassed": true
+    },
+    {
+      "cohort": 2017,
+      "informationCutoff": "2017-04-27T00:00:00Z",
+      "latestFitOutcomeSeason": 2016,
+      "latestFitLabelAvailableBy": "2017-03-01",
+      "panelRows": 303,
+      "transitionRows": 181,
+      "uniqueTransitionPlayers": 89,
+      "rookieRows": 62,
+      "rookieRoleProbability": 0.20967741935483872,
+      "testPlayers": 15,
+      "outcomeSeasons": [
+        2017,
+        2021
+      ],
+      "fiveYearLabelAvailableBy": "2022-03-01",
+      "futureOutcomePoisoningPassed": true
+    }
+  ],
+  "overall": {
+    "transition": {
+      "n": 32,
+      "mae": 1187.9134459495544,
+      "rmse": 1588.1691711862902,
+      "meanCrps": 745.6539069761056,
+      "outsideDonorSupport": 0,
+      "interval80": {
+        "coverage": 0.8125,
+        "covered": 26,
+        "wilson95": [
+          0.6469084479862404,
+          0.9111045531043405
+        ],
+        "meanWidth": 3127.46875,
+        "meanIntervalScore": 4984.34375
+      },
+      "interval95": {
+        "coverage": 1.0,
+        "covered": 32,
+        "wilson95": [
+          0.8928208017449293,
+          1.0
+        ],
+        "meanWidth": 4871.59375,
+        "meanIntervalScore": 4871.59375
+      }
+    },
+    "persistence": {
+      "n": 32,
+      "mae": 1187.607105731964,
+      "rmse": 1589.01952639934,
+      "meanCrps": 748.5318106032792,
+      "outsideDonorSupport": 0,
+      "interval80": {
+        "coverage": 0.90625,
+        "covered": 29,
+        "wilson95": [
+          0.7578184527161212,
+          0.9675984487016337
+        ],
+        "meanWidth": 4234.66796875,
+        "meanIntervalScore": 4607.79296875
+      },
+      "interval95": {
+        "coverage": 1.0,
+        "covered": 32,
+        "wilson95": [
+          0.8928208017449293,
+          1.0
+        ],
+        "meanWidth": 5213.65234375,
+        "meanIntervalScore": 5213.65234375
+      }
+    },
+    "pairedCrps": {
+      "meanCrpsDifference": -2.8779036271735094,
+      "playerBootstrap95": [
+        -38.36043540121754,
+        29.607409216149215
+      ],
+      "resamples": 5000,
+      "stratifiedByCohort": true,
+      "limitation": "Player resampling conditions on fitted empirical models; two cohorts cannot estimate between-era, team, or parameter uncertainty."
+    }
+  },
+  "byCohort": {
+    "2016": {
+      "transition": {
+        "n": 17,
+        "mae": 1254.1383487477021,
+        "rmse": 1722.76864559131,
+        "meanCrps": 808.969789495363,
+        "outsideDonorSupport": 0,
+        "interval80": {
+          "coverage": 0.8235294117647058,
+          "covered": 14,
+          "wilson95": [
+            0.5897054143116588,
+            0.9380887336237901
+          ],
+          "meanWidth": 3097.0,
+          "meanIntervalScore": 5763.470588235294
+        },
+        "interval95": {
+          "coverage": 1.0,
+          "covered": 17,
+          "wilson95": [
+            0.8156818649911483,
+            1.0
+          ],
+          "meanWidth": 4843.0,
+          "meanIntervalScore": 4843.0
+        }
+      },
+      "persistence": {
+        "n": 17,
+        "mae": 1248.211160098805,
+        "rmse": 1724.2259735271543,
+        "meanCrps": 815.9661706747378,
+        "outsideDonorSupport": 0,
+        "interval80": {
+          "coverage": 0.8235294117647058,
+          "covered": 14,
+          "wilson95": [
+            0.5897054143116588,
+            0.9380887336237901
+          ],
+          "meanWidth": 4210.0,
+          "meanIntervalScore": 4912.35294117647
+        },
+        "interval95": {
+          "coverage": 1.0,
+          "covered": 17,
+          "wilson95": [
+            0.8156818649911483,
+            1.0
+          ],
+          "meanWidth": 4945.0,
+          "meanIntervalScore": 4945.0
+        }
+      },
+      "pairedCrps": {
+        "meanCrpsDifference": -6.996381179374807,
+        "playerBootstrap95": [
+          -59.25913357769742,
+          38.54256930316185
+        ],
+        "resamples": 5000,
+        "stratifiedByCohort": true,
+        "limitation": "Player resampling conditions on fitted empirical models; two cohorts cannot estimate between-era, team, or parameter uncertainty."
+      }
+    },
+    "2017": {
+      "transition": {
+        "n": 15,
+        "mae": 1112.8585561116536,
+        "rmse": 1420.2854505546122,
+        "meanCrps": 673.8959067876141,
+        "outsideDonorSupport": 0,
+        "interval80": {
+          "coverage": 0.8,
+          "covered": 12,
+          "wilson95": [
+            0.5481455128483065,
+            0.9295245065301844
+          ],
+          "meanWidth": 3162.0,
+          "meanIntervalScore": 4101.333333333333
+        },
+        "interval95": {
+          "coverage": 1.0,
+          "covered": 15,
+          "wilson95": [
+            0.7961166989641515,
+            1.0
+          ],
+          "meanWidth": 4904.0,
+          "meanIntervalScore": 4904.0
+        }
+      },
+      "persistence": {
+        "n": 15,
+        "mae": 1118.9225107828777,
+        "rmse": 1420.310276818695,
+        "meanCrps": 672.1062025222927,
+        "outsideDonorSupport": 0,
+        "interval80": {
+          "coverage": 1.0,
+          "covered": 15,
+          "wilson95": [
+            0.7961166989641515,
+            1.0
+          ],
+          "meanWidth": 4262.625,
+          "meanIntervalScore": 4262.625
+        },
+        "interval95": {
+          "coverage": 1.0,
+          "covered": 15,
+          "wilson95": [
+            0.7961166989641515,
+            1.0
+          ],
+          "meanWidth": 5518.125,
+          "meanIntervalScore": 5518.125
+        }
+      },
+      "pairedCrps": {
+        "meanCrpsDifference": 1.7897042653212945,
+        "playerBootstrap95": [
+          -45.057440510069334,
+          43.900211442038405
+        ],
+        "resamples": 5000,
+        "stratifiedByCohort": true,
+        "limitation": "Player resampling conditions on fitted empirical models; two cohorts cannot estimate between-era, team, or parameter uncertainty."
+      }
+    }
+  },
+  "annualByAge": {
+    "1": {
+      "transition": {
+        "n": 32,
+        "mae": 233.18464279174805,
+        "rmse": 316.1635745258133,
+        "meanCrps": 145.48071135999635,
+        "outsideDonorSupport": 1,
+        "interval80": {
+          "coverage": 0.90625,
+          "covered": 29,
+          "wilson95": [
+            0.7578184527161212,
+            0.9675984487016337
+          ],
+          "meanWidth": 842.0,
+          "meanIntervalScore": 997.0
+        },
+        "interval95": {
+          "coverage": 0.9375,
+          "covered": 30,
+          "wilson95": [
+            0.7985287685584542,
+            0.982689432968359
+          ],
+          "meanWidth": 1036.34375,
+          "meanIntervalScore": 1233.84375
+        }
+      },
+      "persistence": {
+        "n": 32,
+        "mae": 233.18464279174805,
+        "rmse": 316.1635745258133,
+        "meanCrps": 145.48071135999635,
+        "outsideDonorSupport": 1,
+        "interval80": {
+          "coverage": 0.90625,
+          "covered": 29,
+          "wilson95": [
+            0.7578184527161212,
+            0.9675984487016337
+          ],
+          "meanWidth": 842.0,
+          "meanIntervalScore": 997.0
+        },
+        "interval95": {
+          "coverage": 0.9375,
+          "covered": 30,
+          "wilson95": [
+            0.7985287685584542,
+            0.982689432968359
+          ],
+          "meanWidth": 1036.34375,
+          "meanIntervalScore": 1233.84375
+        }
+      },
+      "pairedCrps": {
+        "meanCrpsDifference": 0.0,
+        "playerBootstrap95": [
+          0.0,
+          0.0
+        ],
+        "resamples": 5000,
+        "stratifiedByCohort": true,
+        "limitation": "Player resampling conditions on fitted empirical models; two cohorts cannot estimate between-era, team, or parameter uncertainty."
+      }
+    },
+    "2": {
+      "transition": {
+        "n": 32,
+        "mae": 302.5537300109863,
+        "rmse": 403.80264690628616,
+        "meanCrps": 186.92100886208937,
+        "outsideDonorSupport": 0,
+        "interval80": {
+          "coverage": 0.8125,
+          "covered": 26,
+          "wilson95": [
+            0.6469084479862404,
+            0.9111045531043405
+          ],
+          "meanWidth": 927.0,
+          "meanIntervalScore": 1071.6875
+        },
+        "interval95": {
+          "coverage": 0.96875,
+          "covered": 31,
+          "wilson95": [
+            0.8425573617998744,
+            0.9944621398359969
+          ],
+          "meanWidth": 1065.0,
+          "meanIntervalScore": 1100.0
+        }
+      },
+      "persistence": {
+        "n": 32,
+        "mae": 295.3618507385254,
+        "rmse": 406.045868030055,
+        "meanCrps": 187.54411162855104,
+        "outsideDonorSupport": 0,
+        "interval80": {
+          "coverage": 0.78125,
+          "covered": 25,
+          "wilson95": [
+            0.6124500635075647,
+            0.8897616374739581
+          ],
+          "meanWidth": 842.0,
+          "meanIntervalScore": 1158.25
+        },
+        "interval95": {
+          "coverage": 0.9375,
+          "covered": 30,
+          "wilson95": [
+            0.7985287685584542,
+            0.982689432968359
+          ],
+          "meanWidth": 1036.34375,
+          "meanIntervalScore": 1116.34375
+        }
+      },
+      "pairedCrps": {
+        "meanCrpsDifference": -0.6231027664616704,
+        "playerBootstrap95": [
+          -4.425845343060791,
+          2.7800121245905745
+        ],
+        "resamples": 5000,
+        "stratifiedByCohort": true,
+        "limitation": "Player resampling conditions on fitted empirical models; two cohorts cannot estimate between-era, team, or parameter uncertainty."
+      }
+    },
+    "3": {
+      "transition": {
+        "n": 32,
+        "mae": 284.68871307373047,
+        "rmse": 371.64746573060506,
+        "meanCrps": 160.9810104202479,
+        "outsideDonorSupport": 0,
+        "interval80": {
+          "coverage": 0.84375,
+          "covered": 27,
+          "wilson95": [
+            0.682458504024696,
+            0.9313557971749429
+          ],
+          "meanWidth": 805.90625,
+          "meanIntervalScore": 1090.59375
+        },
+        "interval95": {
+          "coverage": 0.9375,
+          "covered": 30,
+          "wilson95": [
+            0.7985287685584542,
+            0.982689432968359
+          ],
+          "meanWidth": 1058.0,
+          "meanIntervalScore": 1080.5
+        }
+      },
+      "persistence": {
+        "n": 32,
+        "mae": 283.10036849975586,
+        "rmse": 371.99968751751453,
+        "meanCrps": 160.71718444349244,
+        "outsideDonorSupport": 0,
+        "interval80": {
+          "coverage": 0.84375,
+          "covered": 27,
+          "wilson95": [
+            0.682458504024696,
+            0.9313557971749429
+          ],
+          "meanWidth": 842.0,
+          "meanIntervalScore": 1074.1875
+        },
+        "interval95": {
+          "coverage": 0.9375,
+          "covered": 30,
+          "wilson95": [
+            0.7985287685584542,
+            0.982689432968359
+          ],
+          "meanWidth": 1036.34375,
+          "meanIntervalScore": 1231.3437499999998
+        }
+      },
+      "pairedCrps": {
+        "meanCrpsDifference": 0.26382597675547004,
+        "playerBootstrap95": [
+          -3.1097902418114245,
+          3.0481336473487315
+        ],
+        "resamples": 5000,
+        "stratifiedByCohort": true,
+        "limitation": "Player resampling conditions on fitted empirical models; two cohorts cannot estimate between-era, team, or parameter uncertainty."
+      }
+    },
+    "4": {
+      "transition": {
+        "n": 32,
+        "mae": 295.43375396728516,
+        "rmse": 414.7036915795846,
+        "meanCrps": 186.95734817441553,
+        "outsideDonorSupport": 3,
+        "interval80": {
+          "coverage": 0.8125,
+          "covered": 26,
+          "wilson95": [
+            0.6469084479862404,
+            0.9111045531043405
+          ],
+          "meanWidth": 702.21875,
+          "meanIntervalScore": 1384.71875
+        },
+        "interval95": {
+          "coverage": 0.90625,
+          "covered": 29,
+          "wilson95": [
+            0.7578184527161212,
+            0.9675984487016337
+          ],
+          "meanWidth": 1056.40625,
+          "meanIntervalScore": 1300.1562499999998
+        }
+      },
+      "persistence": {
+        "n": 32,
+        "mae": 297.7886848449707,
+        "rmse": 414.06626498583813,
+        "meanCrps": 186.1169036817737,
+        "outsideDonorSupport": 3,
+        "interval80": {
+          "coverage": 0.8125,
+          "covered": 26,
+          "wilson95": [
+            0.6469084479862404,
+            0.9111045531043405
+          ],
+          "meanWidth": 842.0,
+          "meanIntervalScore": 1235.75
+        },
+        "interval95": {
+          "coverage": 0.90625,
+          "covered": 29,
+          "wilson95": [
+            0.7578184527161212,
+            0.9675984487016337
+          ],
+          "meanWidth": 1036.34375,
+          "meanIntervalScore": 1527.5937499999995
+        }
+      },
+      "pairedCrps": {
+        "meanCrpsDifference": 0.8404444926418364,
+        "playerBootstrap95": [
+          -1.981567836459726,
+          3.48237183028832
+        ],
+        "resamples": 5000,
+        "stratifiedByCohort": true,
+        "limitation": "Player resampling conditions on fitted empirical models; two cohorts cannot estimate between-era, team, or parameter uncertainty."
+      }
+    },
+    "5": {
+      "transition": {
+        "n": 32,
+        "mae": 216.74920415878296,
+        "rmse": 300.8997566915895,
+        "meanCrps": 110.09070935711497,
+        "outsideDonorSupport": 0,
+        "interval80": {
+          "coverage": 0.90625,
+          "covered": 29,
+          "wilson95": [
+            0.7578184527161212,
+            0.9675984487016337
+          ],
+          "meanWidth": 589.5546875,
+          "meanIntervalScore": 990.7265625
+        },
+        "interval95": {
+          "coverage": 0.96875,
+          "covered": 31,
+          "wilson95": [
+            0.8425573617998744,
+            0.9944621398359969
+          ],
+          "meanWidth": 1085.908203125,
+          "meanIntervalScore": 1139.736328125
+        }
+      },
+      "persistence": {
+        "n": 32,
+        "mae": 227.675377368927,
+        "rmse": 303.7359704380256,
+        "meanCrps": 111.807343726221,
+        "outsideDonorSupport": 0,
+        "interval80": {
+          "coverage": 0.9375,
+          "covered": 30,
+          "wilson95": [
+            0.7985287685584542,
+            0.982689432968359
+          ],
+          "meanWidth": 866.66796875,
+          "meanIntervalScore": 1014.59765625
+        },
+        "interval95": {
+          "coverage": 0.9375,
+          "covered": 30,
+          "wilson95": [
+            0.7985287685584542,
+            0.982689432968359
+          ],
+          "meanWidth": 1068.27734375,
+          "meanIntervalScore": 1146.87109375
+        }
+      },
+      "pairedCrps": {
+        "meanCrpsDifference": -1.716634369106032,
+        "playerBootstrap95": [
+          -5.300219321460463,
+          2.1173765299608918
+        ],
+        "resamples": 5000,
+        "stratifiedByCohort": true,
+        "limitation": "Player resampling conditions on fitted empirical models; two cohorts cannot estimate between-era, team, or parameter uncertainty."
+      }
+    }
+  },
+  "trajectoryDependence": {
+    "2016": {
+      "observedAnnualPearson": [
+        [
+          0.9999999999999999,
+          0.7724116075278165,
+          0.8095901311470397,
+          0.7961251504629637,
+          0.6670264364369856
+        ],
+        [
+          0.7724116075278165,
+          0.9999999999999999,
+          0.7690455891280777,
+          0.9743657391608218,
+          0.7077708952799299
+        ],
+        [
+          0.8095901311470398,
+          0.7690455891280777,
+          1.0,
+          0.8269401890202243,
+          0.83724064735805
+        ],
+        [
+          0.7961251504629637,
+          0.9743657391608218,
+          0.8269401890202243,
+          1.0,
+          0.8037503237477329
+        ],
+        [
+          0.6670264364369856,
+          0.7077708952799299,
+          0.8372406473580501,
+          0.8037503237477329,
+          1.0
+        ]
+      ],
+      "transitionAnnualPearson": [
+        [
+          0.9999999999999998,
+          0.8282352932617351,
+          0.6509276131453753,
+          0.4938665568503165,
+          0.36310363766779813
+        ],
+        [
+          0.8282352932617351,
+          1.0,
+          0.7767694761684506,
+          0.5826065557161666,
+          0.42990472449626543
+        ],
+        [
+          0.6509276131453753,
+          0.7767694761684506,
+          1.0,
+          0.7507685076917066,
+          0.5535107707643945
+        ],
+        [
+          0.4938665568503165,
+          0.5826065557161667,
+          0.7507685076917064,
+          1.0,
+          0.7362686960909469
+        ],
+        [
+          0.3631036376677981,
+          0.4299047244962654,
+          0.5535107707643945,
+          0.7362686960909469,
+          1.0
+        ]
+      ],
+      "persistenceAnnualPearson": [
+        [
+          0.9999999999999998,
+          0.9999999999999998,
+          0.9999999999999998,
+          0.9999999999999998,
+          0.9999999999999998
+        ],
+        [
+          0.9999999999999998,
+          0.9999999999999998,
+          0.9999999999999998,
+          0.9999999999999998,
+          0.9999999999999998
+        ],
+        [
+          0.9999999999999998,
+          0.9999999999999998,
+          0.9999999999999998,
+          0.9999999999999998,
+          0.9999999999999998
+        ],
+        [
+          0.9999999999999998,
+          0.9999999999999998,
+          0.9999999999999998,
+          0.9999999999999998,
+          0.9999999999999998
+        ],
+        [
+          0.9999999999999998,
+          0.9999999999999998,
+          0.9999999999999998,
+          0.9999999999999998,
+          0.9999999999999998
+        ]
+      ],
+      "limitation": "Observed matrices have only 15 or 17 careers. Simulated rows recombine people; matching correlations alone cannot establish joint calibration."
+    },
+    "2017": {
+      "observedAnnualPearson": [
+        [
+          1.0,
+          0.471453925395049,
+          0.4350846822705082,
+          0.341081973035936,
+          -0.1067906334045465
+        ],
+        [
+          0.471453925395049,
+          1.0,
+          0.9725380107906503,
+          0.9745282213829667,
+          0.5292866688906736
+        ],
+        [
+          0.4350846822705082,
+          0.9725380107906502,
+          1.0,
+          0.9531619599207244,
+          0.4946029719649858
+        ],
+        [
+          0.341081973035936,
+          0.9745282213829667,
+          0.9531619599207244,
+          1.0,
+          0.6364509855585045
+        ],
+        [
+          -0.1067906334045465,
+          0.5292866688906736,
+          0.4946029719649858,
+          0.6364509855585045,
+          0.9999999999999998
+        ]
+      ],
+      "transitionAnnualPearson": [
+        [
+          1.0,
+          0.7924918741593737,
+          0.6165982510747146,
+          0.4645642943492576,
+          0.3521300552359369
+        ],
+        [
+          0.7924918741593737,
+          1.0,
+          0.7575579652951017,
+          0.5617241245454218,
+          0.4319901433805927
+        ],
+        [
+          0.6165982510747147,
+          0.7575579652951017,
+          1.0,
+          0.746003901308612,
+          0.555575102387217
+        ],
+        [
+          0.46456429434925767,
+          0.5617241245454216,
+          0.7460039013086119,
+          1.0,
+          0.728271317081664
+        ],
+        [
+          0.3521300552359369,
+          0.4319901433805927,
+          0.5555751023872169,
+          0.728271317081664,
+          1.0
+        ]
+      ],
+      "persistenceAnnualPearson": [
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.9999999999999926
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.9999999999999926
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.9999999999999926
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.9999999999999926
+        ],
+        [
+          0.9999999999999927,
+          0.9999999999999927,
+          0.9999999999999927,
+          0.9999999999999927,
+          0.9999999999999999
+        ]
+      ],
+      "limitation": "Observed matrices have only 15 or 17 careers. Simulated rows recombine people; matching correlations alone cannot establish joint calibration."
+    }
+  },
+  "additionalSeeds": [
+    {
+      "cohort": 2016,
+      "seed": 20263236,
+      "transitionCrps": 810.5190764016965,
+      "persistenceCrps": 814.4977065552683
+    },
+    {
+      "cohort": 2016,
+      "seed": 20263336,
+      "transitionCrps": 811.9799972641117,
+      "persistenceCrps": 817.7198669060189
+    },
+    {
+      "cohort": 2016,
+      "seed": 20263436,
+      "transitionCrps": 810.0931954638046,
+      "persistenceCrps": 815.7497205497588
+    },
+    {
+      "cohort": 2017,
+      "seed": 20263237,
+      "transitionCrps": 674.4301501449819,
+      "persistenceCrps": 671.1696100883186
+    },
+    {
+      "cohort": 2017,
+      "seed": 20263337,
+      "transitionCrps": 674.362599572353,
+      "persistenceCrps": 673.0388706664866
+    },
+    {
+      "cohort": 2017,
+      "seed": 20263437,
+      "transitionCrps": 673.5769449158882,
+      "persistenceCrps": 671.7307421259582
+    }
+  ],
+  "excludedUnknownTargetIds": [
+    {
+      "season": 2016,
+      "player_name": "Vernon Adams"
+    }
+  ],
+  "sourceCoverage": {
+    "2016": {
+      "expectedGames": 256,
+      "observedGames": 256,
+      "rows": 22904,
+      "sha256": "a778e24e9eb665ffe8f16093b03c5a263dca0250b3aa92bd6002f61f534bea59"
+    },
+    "2017": {
+      "expectedGames": 256,
+      "observedGames": 256,
+      "rows": 22876,
+      "sha256": "eab2fad2df99249d4061ed9c5c34d312cdba07cf3159d027d255bdc9b6526917"
+    },
+    "2018": {
+      "expectedGames": 256,
+      "observedGames": 256,
+      "rows": 22895,
+      "sha256": "9a408b78a55f799110aed70de3564e157faf089ce9bed780d0368bf49ae13e0b"
+    },
+    "2019": {
+      "expectedGames": 256,
+      "observedGames": 256,
+      "rows": 22884,
+      "sha256": "0cd52be8fa57f18503b670cb8263246c4f548375b768cbcad1c7a7462c98970d"
+    },
+    "2020": {
+      "expectedGames": 256,
+      "observedGames": 256,
+      "rows": 23790,
+      "sha256": "512e35f17d076eb5d99b933c4a144eb95dcddf40c0320dbb397cae3c35683716"
+    },
+    "2021": {
+      "expectedGames": 272,
+      "observedGames": 272,
+      "rows": 25271,
+      "sha256": "8e4dae054a4749cf2d4919508d9161a6068fd67509979aefa385bfb3803d0ee5"
+    }
+  },
+  "limitations": [
+    "Only two small, previously exposed cohorts; hypothesis motivated by exposed 2018 failures.",
+    "First-order state transitions recombine players and lose latent ability and higher-order dependence.",
+    "Empirical rookie initialization is unconditional within QB; does not establish personalized rookie forecast quality.",
+    "Known-ID combine selection bias remains; known-ID absence in complete annual files is zero recorded snaps, not proven retirement or injury.",
+    "Original source publication timestamps are unavailable; March 1 label dates and combine event availability are reconstructed.",
+    "No contemporaneous complete five-year donor comparator exists at 2016/2017 origins; later donor careers would leak future labels.",
+    "Finite empirical-draw distributions are numerical approximations; seed checks do not capture parameter uncertainty.",
+    "No causal wins validation, gate change, or runtime model promotion."
+  ],
+  "sourceHashes": {
+    "analytics/qb_transition_experiment.py": "62fc21ad077362381696329157b6bba847d380883966e7a34c47ec69c71c9f87",
+    "analytics/five_year.py": "f66e57954eeafb6258f88ec558a643f4c02c1d8379fa72d5c1a58ccf9b7dc06e",
+    "analytics/forecast_audit.py": "152b7587d4c8255e6f51e7198a7136d3b2405ad83eb18ae8fcf9ad45f6488197",
+    "data/raw/combine.csv": "5648886b1bb9de8a0c42b05ee7b1d9cbe58897676caaa2f6a4a3d3c9228235bb",
+    "data/raw/games.csv": "369967042aac4f7b431c8644c197c6829e8428f7776058e4a058506ea4dece76",
+    "data/raw/snap_counts_2013.csv": "9d1fdd557875b9a2c71d88e583da24a739dfca671edf8223d6171e39a421000e",
+    "data/raw/snap_counts_2014.csv": "84540709d9483552185c8ca3ef30b2f66fb94b30c3e6c21e7a27205f337f21d3",
+    "data/raw/snap_counts_2015.csv": "841496252ada825c3c50d3ba9b4b26d3f4fabd0fedc5fb44f286ddaaa5bdb7e0",
+    "data/raw/snap_counts_2016.csv": "a778e24e9eb665ffe8f16093b03c5a263dca0250b3aa92bd6002f61f534bea59",
+    "data/raw/snap_counts_2017.csv": "eab2fad2df99249d4061ed9c5c34d312cdba07cf3159d027d255bdc9b6526917",
+    "data/raw/snap_counts_2018.csv": "9a408b78a55f799110aed70de3564e157faf089ce9bed780d0368bf49ae13e0b",
+    "data/raw/snap_counts_2019.csv": "0cd52be8fa57f18503b670cb8263246c4f548375b768cbcad1c7a7462c98970d",
+    "data/raw/snap_counts_2020.csv": "512e35f17d076eb5d99b933c4a144eb95dcddf40c0320dbb397cae3c35683716",
+    "data/raw/snap_counts_2021.csv": "8e4dae054a4749cf2d4919508d9161a6068fd67509979aefa385bfb3803d0ee5"
+  },
+  "scriptSha256": "7c31d21145f7c03c85f361f8205c9e3e04fd314e173bef39b3f5f24eb3df6d64"
+}

@@ -1,4 +1,6 @@
-> **Current status:** playable research alpha for 2018–2026. Source is restored, fresh structural checks pass, and hosted desktop/phone browser smoke tests pass. Full statistical release remains blocked. See [current evidence](docs/release/CURRENT_RELEASE.md).
+> The [latest fixture and Pages review](docs/release/FIXTURE_REVIEW.md) supersedes the earlier CPU, test and delivery status below.
+
+> **November 19 review build.** Playable research alpha covering 2018–2026. The frozen audit passed structural verification and recorded 40 passing, six failing and seven unsupported statistical checks. [Results, experiments and release limits](docs/release/CURRENT_RELEASE.md).
 
 # REDRAFT — The NFL Draft Time Machine
 

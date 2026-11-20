@@ -1,0 +1,526 @@
+{
+  "protocolSha256": "9d587bcbb43a44905fd7a055812c03dd274ec83a35907decb6bc3d72f11cbb62",
+  "gamesSha256": "369967042aac4f7b431c8644c197c6829e8428f7776058e4a058506ea4dece76",
+  "source": {
+    "2010": {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2010.parquet",
+      "sha256": "f5fdc509e7dd715fd6737228825f5a72da7ea8e6d4fbd87df2cb35c82ef66dbf",
+      "scheduled": 256,
+      "valid": 251,
+      "losses": {
+        "invalid_clock": 4,
+        "final_score_mismatch": 1
+      },
+      "drives": 5898
+    },
+    "2011": {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2011.parquet",
+      "sha256": "466a4959458f439b62b3365607566039aaea9b53d216f85c65948b4d264b267f",
+      "scheduled": 256,
+      "valid": 251,
+      "losses": {
+        "final_score_mismatch": 4,
+        "invalid_clock": 1
+      },
+      "drives": 5949
+    },
+    "2012": {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2012.parquet",
+      "sha256": "9ff8fbbf5f1393a808b3ee7f20202ae73155f0fad04b8a2f2a97af999383c820",
+      "scheduled": 256,
+      "valid": 250,
+      "losses": {
+        "invalid_clock": 1,
+        "final_score_mismatch": 5
+      },
+      "drives": 5833
+    },
+    "2013": {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2013.parquet",
+      "sha256": "67647c438e958905d0960166556dc73ee926591f6c36f5218c45857c2933fe1f",
+      "scheduled": 256,
+      "valid": 248,
+      "losses": {
+        "final_score_mismatch": 7,
+        "invalid_clock": 1
+      },
+      "drives": 5950
+    },
+    "2014": {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2014.parquet",
+      "sha256": "78c932eea1b5c72fc7dd7ccfd409945ec8078173580c0ba86543427ad5592dc0",
+      "scheduled": 256,
+      "valid": 250,
+      "losses": {
+        "final_score_mismatch": 4,
+        "invalid_clock": 1,
+        "nonmonotone_score": 1
+      },
+      "drives": 5795
+    },
+    "2015": {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2015.parquet",
+      "sha256": "3b8dae1b67cfb1ddd88858e3d4bbedf0237218b234e597b10b1c5e6789ec21a8",
+      "scheduled": 256,
+      "valid": 250,
+      "losses": {
+        "final_score_mismatch": 5,
+        "invalid_clock": 1
+      },
+      "drives": 5823
+    },
+    "2016": {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2016.parquet",
+      "sha256": "093913c52f49f4e7d23080f2d7462d24d0cd952b8e3f9c936323ee51e1cd659f",
+      "scheduled": 256,
+      "valid": 252,
+      "losses": {
+        "final_score_mismatch": 2,
+        "invalid_clock": 2
+      },
+      "drives": 5761
+    },
+    "2017": {
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2017.parquet",
+      "sha256": "21ff41abc6043cce68829bad2f2cbae100cb41aa106ca6cf9c93b35856e51ab6",
+      "scheduled": 256,
+      "valid": 248,
+      "losses": {
+        "final_score_mismatch": 7,
+        "invalid_clock": 1
+      },
+      "drives": 5717
+    }
+  },
+  "bootstrapSeed": 20261120,
+  "windows": [
+    {
+      "years": [
+        2013,
+        2014,
+        2015
+      ],
+      "games": 748,
+      "baseline": {
+        "mse": 5.5723543570305685,
+        "rmse": 2.3605834780898065,
+        "mae": 1.7627804614169922
+      },
+      "candidate": {
+        "mse": 5.573087889162651,
+        "rmse": 2.3607388439136274,
+        "mae": 1.7618922181379353
+      },
+      "delta": {
+        "mse": 0.0007335321320827148,
+        "rmse": 0.0001553658238209188,
+        "mae": -0.0008882432790568995
+      },
+      "pairedWeekBootstrap95": {
+        "mse": [
+          -0.012312138487373742,
+          0.014800055298854174
+        ],
+        "mae": [
+          -0.004043444429353476,
+          0.002595233907896559
+        ]
+      },
+      "clockBands": [
+        {
+          "clockSeconds": [
+            0,
+            299
+          ],
+          "games": 729,
+          "drives": 1885,
+          "stateDrives": {
+            "trailing": 516,
+            "close": 894,
+            "leading": 475
+          },
+          "baseline": {
+            "mse": 0.6125805759954542,
+            "rmse": 0.7826752685472145,
+            "mae": 0.5893561944645912
+          },
+          "candidate": {
+            "mse": 0.5609044259662017,
+            "rmse": 0.7489355285778622,
+            "mae": 0.5623334226905903
+          }
+        },
+        {
+          "clockSeconds": [
+            300,
+            599
+          ],
+          "games": 707,
+          "drives": 1283,
+          "stateDrives": {
+            "trailing": 398,
+            "close": 557,
+            "leading": 328
+          },
+          "baseline": {
+            "mse": 1.4913256630802105,
+            "rmse": 1.2211984536021205,
+            "mae": 0.9791888115793719
+          },
+          "candidate": {
+            "mse": 1.463296959572251,
+            "rmse": 1.2096681195982024,
+            "mae": 0.9646521359235384
+          }
+        },
+        {
+          "clockSeconds": [
+            600,
+            1799
+          ],
+          "games": 748,
+          "drives": 5277,
+          "stateDrives": {
+            "trailing": 1532,
+            "close": 2494,
+            "leading": 1251
+          },
+          "baseline": {
+            "mse": 3.5213132705847836,
+            "rmse": 1.8765162590781843,
+            "mae": 1.4958552738217836
+          },
+          "candidate": {
+            "mse": 3.5232727040094183,
+            "rmse": 1.8770382798465828,
+            "mae": 1.4961543249420566
+          }
+        },
+        {
+          "clockSeconds": [
+            1800,
+            3600
+          ],
+          "games": 748,
+          "drives": 9123,
+          "stateDrives": {
+            "trailing": 1372,
+            "close": 6844,
+            "leading": 907
+          },
+          "baseline": {
+            "mse": 8.36003661057555,
+            "rmse": 2.8913727899694206,
+            "mae": 2.273769677887549
+          },
+          "candidate": {
+            "mse": 8.370522790779948,
+            "rmse": 2.8931855783513,
+            "mae": 2.2781376360955607
+          }
+        }
+      ],
+      "passes": false
+    },
+    {
+      "years": [
+        2016,
+        2017
+      ],
+      "games": 500,
+      "baseline": {
+        "mse": 4.778389473672288,
+        "rmse": 2.185952761079774,
+        "mae": 1.6510502504198261
+      },
+      "candidate": {
+        "mse": 4.766035662541132,
+        "rmse": 2.1831252054202324,
+        "mae": 1.6467114410020585
+      },
+      "delta": {
+        "mse": -0.012353811131156078,
+        "rmse": -0.002827555659541847,
+        "mae": -0.004338809417767653
+      },
+      "pairedWeekBootstrap95": {
+        "mse": [
+          -0.022867454851089465,
+          -0.0014906065214862262
+        ],
+        "mae": [
+          -0.007533673362409267,
+          -0.0011302735884355477
+        ]
+      },
+      "clockBands": [
+        {
+          "clockSeconds": [
+            0,
+            299
+          ],
+          "games": 488,
+          "drives": 1277,
+          "stateDrives": {
+            "trailing": 337,
+            "close": 647,
+            "leading": 293
+          },
+          "baseline": {
+            "mse": 0.634812400446486,
+            "rmse": 0.7967511534014156,
+            "mae": 0.5989712954452934
+          },
+          "candidate": {
+            "mse": 0.6093061639694914,
+            "rmse": 0.7805806582086771,
+            "mae": 0.5850465142909452
+          }
+        },
+        {
+          "clockSeconds": [
+            300,
+            599
+          ],
+          "games": 478,
+          "drives": 855,
+          "stateDrives": {
+            "trailing": 276,
+            "close": 356,
+            "leading": 223
+          },
+          "baseline": {
+            "mse": 1.5665446011388973,
+            "rmse": 1.25161679484533,
+            "mae": 0.9826349454093711
+          },
+          "candidate": {
+            "mse": 1.5292232591107457,
+            "rmse": 1.2366176689303552,
+            "mae": 0.9706150197002326
+          }
+        },
+        {
+          "clockSeconds": [
+            600,
+            1799
+          ],
+          "games": 500,
+          "drives": 3360,
+          "stateDrives": {
+            "trailing": 960,
+            "close": 1626,
+            "leading": 774
+          },
+          "baseline": {
+            "mse": 3.3402949621032185,
+            "rmse": 1.8276473845091723,
+            "mae": 1.4315979532752374
+          },
+          "candidate": {
+            "mse": 3.324556365383711,
+            "rmse": 1.8233366023265456,
+            "mae": 1.4259964177642754
+          }
+        },
+        {
+          "clockSeconds": [
+            1800,
+            3600
+          ],
+          "games": 500,
+          "drives": 5986,
+          "stateDrives": {
+            "trailing": 846,
+            "close": 4556,
+            "leading": 584
+          },
+          "baseline": {
+            "mse": 7.023894788030114,
+            "rmse": 2.6502631544867605,
+            "mae": 2.1065073060278237
+          },
+          "candidate": {
+            "mse": 7.019480408344467,
+            "rmse": 2.6494302044674565,
+            "mae": 2.10546206525576
+          }
+        }
+      ],
+      "passes": true
+    }
+  ],
+  "byYear": {
+    "2013": {
+      "games": 248,
+      "drives": 5950,
+      "baseline": {
+        "mse": 6.32821532815694,
+        "rmse": 2.515594428392013,
+        "mae": 1.8461493939623068
+      },
+      "candidate": {
+        "mse": 6.335042103725194,
+        "rmse": 2.5169509537782404,
+        "mae": 1.8471170444598477
+      },
+      "stateVsClose": [
+        {
+          "seconds": 300,
+          "reference": 2.387141642953677,
+          "trailing": -0.25570266743321657,
+          "leading": -0.5116656335895191
+        },
+        {
+          "seconds": 600,
+          "reference": 3.9390933497006784,
+          "trailing": -0.19020005348308944,
+          "leading": -0.3012996058401103
+        },
+        {
+          "seconds": 1800,
+          "reference": 11.322095206956865,
+          "trailing": -0.2794166035402217,
+          "leading": -0.5179082909278545
+        }
+      ]
+    },
+    "2014": {
+      "games": 250,
+      "drives": 5795,
+      "baseline": {
+        "mse": 5.778291439948743,
+        "rmse": 2.403807696124784,
+        "mae": 1.812497882276516
+      },
+      "candidate": {
+        "mse": 5.792589768500479,
+        "rmse": 2.4067799584715837,
+        "mae": 1.8134602060322302
+      },
+      "stateVsClose": [
+        {
+          "seconds": 300,
+          "reference": 2.4147013354262574,
+          "trailing": -0.22936181971753644,
+          "leading": -0.5196901630902389
+        },
+        {
+          "seconds": 600,
+          "reference": 3.8637383157576615,
+          "trailing": -0.09140708891436411,
+          "leading": -0.2034212777497757
+        },
+        {
+          "seconds": 1800,
+          "reference": 11.316442194290135,
+          "trailing": -0.12280028950969246,
+          "leading": -0.28297807400504027
+        }
+      ]
+    },
+    "2015": {
+      "games": 250,
+      "drives": 5823,
+      "baseline": {
+        "mse": 4.616603190755034,
+        "rmse": 2.1486282113839597,
+        "mae": 1.6303610594725169
+      },
+      "candidate": {
+        "mse": 4.5977274289787795,
+        "rmse": 2.144231197650752,
+        "mae": 1.6257812025323037
+      },
+      "stateVsClose": [
+        {
+          "seconds": 300,
+          "reference": 2.36572992303897,
+          "trailing": -0.17951550412359518,
+          "leading": -0.3960976569940533
+        },
+        {
+          "seconds": 600,
+          "reference": 3.8524219440672165,
+          "trailing": -0.08020629413552083,
+          "leading": -0.3084528471526147
+        },
+        {
+          "seconds": 1800,
+          "reference": 11.103336822648652,
+          "trailing": 0.09171707359275239,
+          "leading": 0.08364938827633495
+        }
+      ]
+    },
+    "2016": {
+      "games": 252,
+      "drives": 5761,
+      "baseline": {
+        "mse": 4.510922182848976,
+        "rmse": 2.123893166533801,
+        "mae": 1.6032182939820525
+      },
+      "candidate": {
+        "mse": 4.504518549307819,
+        "rmse": 2.1223851086237433,
+        "mae": 1.600000780790196
+      },
+      "stateVsClose": [
+        {
+          "seconds": 300,
+          "reference": 2.3774503608265825,
+          "trailing": -0.1835255245342844,
+          "leading": -0.42080843124494227
+        },
+        {
+          "seconds": 600,
+          "reference": 3.957530196833261,
+          "trailing": -0.15788846654576894,
+          "leading": -0.3077950868576025
+        },
+        {
+          "seconds": 1800,
+          "reference": 11.120070361122009,
+          "trailing": 0.026961502846639007,
+          "leading": 0.008381372538359244
+        }
+      ]
+    },
+    "2017": {
+      "games": 248,
+      "drives": 5717,
+      "baseline": {
+        "mse": 5.050170753057266,
+        "rmse": 2.2472584971598764,
+        "mae": 1.6996536900259511
+      },
+      "candidate": {
+        "mse": 5.03177079372982,
+        "rmse": 2.2431608934113085,
+        "mae": 1.6941754989592737
+      },
+      "stateVsClose": [
+        {
+          "seconds": 300,
+          "reference": 2.3617324949371628,
+          "trailing": -0.18051204414736066,
+          "leading": -0.393965873896748
+        },
+        {
+          "seconds": 600,
+          "reference": 3.990803359969354,
+          "trailing": -0.23607874508369964,
+          "leading": -0.33085263729669157
+        },
+        {
+          "seconds": 1800,
+          "reference": 10.960468238481958,
+          "trailing": -0.04426663978749801,
+          "leading": -0.05483316261536686
+        }
+      ]
+    }
+  },
+  "decision": "Reproducible gain did not meet the fixed evidence threshold."
+}

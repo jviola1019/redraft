@@ -1,0 +1,443 @@
+{
+  "runId": "2026-11-20T04-26-02-092Z-clearance-review-13b6d3a3",
+  "startedAt": "2026-11-20T04:26:02.092Z",
+  "finishedAt": "2026-11-20T04:30:43.904Z",
+  "runtime": {
+    "node": "v24.22.3",
+    "python": {
+      "status": 0,
+      "output": "Python 3.12.14"
+    },
+    "platform": "linux",
+    "architecture": "x64",
+    "cpu": "AMD EPYC 9V74 80-Core Processor",
+    "logicalCpus": 9,
+    "memoryBytes": 10451427328
+  },
+  "git": {
+    "head": "dfe3ee3b09b902da7bf529a883e40200e5334895",
+    "status": "?? data/raw\n?? node_modules"
+  },
+  "sourceDigestBefore": "6104f3aed0daae4e65084bb937b901e27cefef129d71da4b8d3edfb4150be68a",
+  "sourceDigestAfter": "6104f3aed0daae4e65084bb937b901e27cefef129d71da4b8d3edfb4150be68a",
+  "sourceDrift": [],
+  "coverage": {
+    "expectedSteps": 22,
+    "completedSteps": 22,
+    "finiteMatrix": "All registered classes: 32 teams \u00d7 3 draft seeds \u00d7 2 paired replicates, plus one deterministic replay per team; separate default-class matrix retained",
+    "productionBrowser": "not run",
+    "humanRecognitionStudy": "not run",
+    "publicLoadAndAbuseTest": "not run"
+  },
+  "matrix": {
+    "status": "passed",
+    "actual": {
+      "draftCases": 96,
+      "passedCases": 96,
+      "failedCases": 0,
+      "pairedReplicates": 192,
+      "replayPairs": 32,
+      "assertions": 5763817,
+      "worlds": 384,
+      "seasons": 1920,
+      "regularGames": 503808,
+      "postseasonGames": 23424
+    }
+  },
+  "scoreSensitivity": {
+    "artifact": "artifacts/analytics/score_sensitivity.json",
+    "topRankChanges": 2,
+    "minRankCorrelation": 0.3333333333333333
+  },
+  "structuralStatus": "passed",
+  "statisticalStatus": "not-passed",
+  "exitCode": 2,
+  "manifestSha256": "c3544b6cbb2bf6954d59a29cd6f575a4d8dd89aa370ecc083e61fa3b17e73ab1",
+  "steps": [
+    {
+      "id": "data",
+      "command": [
+        "python3",
+        "research/test_data.py"
+      ],
+      "exitCode": 0,
+      "durationMs": 1507.310451
+    },
+    {
+      "id": "team-context",
+      "command": [
+        "python3",
+        "research/test_team_context.py"
+      ],
+      "exitCode": 0,
+      "durationMs": 188.3814359999999
+    },
+    {
+      "id": "warehouse",
+      "command": [
+        "python3",
+        "tests/warehouse_test.py"
+      ],
+      "exitCode": 0,
+      "durationMs": 110.21804400000019
+    },
+    {
+      "id": "domain",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "tests/run.mjs"
+      ],
+      "exitCode": 0,
+      "durationMs": 2063.0209480000003
+    },
+    {
+      "id": "model",
+      "command": [
+        "python3",
+        "analytics/test_models.py"
+      ],
+      "exitCode": 0,
+      "durationMs": 2846.9314140000006
+    },
+    {
+      "id": "five-year-model",
+      "command": [
+        "python3",
+        "analytics/five_year_tests.py"
+      ],
+      "exitCode": 0,
+      "durationMs": 291.51563799999985
+    },
+    {
+      "id": "forecast-audit",
+      "command": [
+        "python3",
+        "analytics/forecast_audit.py"
+      ],
+      "exitCode": 0,
+      "durationMs": 541.9335719999999
+    },
+    {
+      "id": "scoring-backtest",
+      "command": [
+        "python3",
+        "analytics/scoring_recalibration.py"
+      ],
+      "exitCode": 0,
+      "durationMs": 411.6919790000002
+    },
+    {
+      "id": "typecheck",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit"
+      ],
+      "exitCode": 0,
+      "durationMs": 9758.193733000002
+    },
+    {
+      "id": "api",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "tests/api.integration.mjs"
+      ],
+      "exitCode": 0,
+      "durationMs": 46166.022333999994
+    },
+    {
+      "id": "league-matrix",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "tests/league-matrix.mjs",
+        "/tmp/redraft-clearance-review/tests/results/gauntlet/2026-11-20T04-26-02-092Z-clearance-review-13b6d3a3/league-matrix.json"
+      ],
+      "exitCode": 0,
+      "durationMs": 27251.661362
+    },
+    {
+      "id": "all-year-matrix",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "tests/all-years.mjs",
+        "/tmp/redraft-clearance-review/tests/results/gauntlet/2026-11-20T04-26-02-092Z-clearance-review-13b6d3a3/all-years"
+      ],
+      "exitCode": 0,
+      "durationMs": 67751.182005
+    },
+    {
+      "id": "playoff-backtest",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "tests/playoff-backtest.mjs"
+      ],
+      "exitCode": 0,
+      "durationMs": 810.9519189999846
+    },
+    {
+      "id": "all-year-distributions",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "analytics/all_year_diagnostics.mjs"
+      ],
+      "exitCode": 0,
+      "durationMs": 48472.23431300002
+    },
+    {
+      "id": "distribution-cle",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "analytics/simulation_diagnostics.mjs",
+        "256",
+        "CLE"
+      ],
+      "exitCode": 0,
+      "durationMs": 12566.053538000007
+    },
+    {
+      "id": "distribution-ne",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "analytics/simulation_diagnostics.mjs",
+        "256",
+        "NE"
+      ],
+      "exitCode": 0,
+      "durationMs": 12377.896623000008
+    },
+    {
+      "id": "distribution-kc",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "analytics/simulation_diagnostics.mjs",
+        "256",
+        "KC"
+      ],
+      "exitCode": 0,
+      "durationMs": 12424.656695000012
+    },
+    {
+      "id": "distribution-sf",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "analytics/simulation_diagnostics.mjs",
+        "256",
+        "SF"
+      ],
+      "exitCode": 0,
+      "durationMs": 12863.542392999982
+    },
+    {
+      "id": "rank-sensitivity-tests",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "analytics/test_rank_sensitivity.mjs"
+      ],
+      "exitCode": 0,
+      "durationMs": 74.12814500002423
+    },
+    {
+      "id": "score-sensitivity",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "analytics/score_sensitivity.mjs"
+      ],
+      "exitCode": 0,
+      "durationMs": 21910.381509000028
+    },
+    {
+      "id": "statistical-integrity-tests",
+      "command": [
+        "python3",
+        "analytics/test_statistical_gates.py"
+      ],
+      "exitCode": 0,
+      "durationMs": 705.079870000016
+    },
+    {
+      "id": "statistical-gates",
+      "command": [
+        "python3",
+        "analytics/statistical_gates.py"
+      ],
+      "exitCode": 2,
+      "durationMs": 280.5507949999883
+    }
+  ],
+  "gameplayGateCounts": {
+    "pass": 40,
+    "fail": 6,
+    "unsupported": 7,
+    "stale": 0
+  },
+  "allYears": {
+    "at": "2026-11-20T04:28:41.230Z",
+    "years": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "results": [
+      {
+        "year": 2018,
+        "exitCode": 0,
+        "status": "passed",
+        "actual": {
+          "draftCases": 96,
+          "passedCases": 96,
+          "failedCases": 0,
+          "pairedReplicates": 192,
+          "replayPairs": 32,
+          "assertions": 5763817,
+          "worlds": 384,
+          "seasons": 1920,
+          "regularGames": 503808,
+          "postseasonGames": 23424
+        }
+      },
+      {
+        "year": 2019,
+        "exitCode": 0,
+        "status": "passed",
+        "actual": {
+          "draftCases": 96,
+          "passedCases": 96,
+          "failedCases": 0,
+          "pairedReplicates": 192,
+          "replayPairs": 32,
+          "assertions": 5768363,
+          "worlds": 384,
+          "seasons": 1920,
+          "regularGames": 509952,
+          "postseasonGames": 24192
+        }
+      },
+      {
+        "year": 2020,
+        "exitCode": 0,
+        "status": "passed",
+        "actual": {
+          "draftCases": 96,
+          "passedCases": 96,
+          "failedCases": 0,
+          "pairedReplicates": 192,
+          "replayPairs": 32,
+          "assertions": 5801013,
+          "worlds": 384,
+          "seasons": 1920,
+          "regularGames": 516096,
+          "postseasonGames": 24960
+        }
+      },
+      {
+        "year": 2021,
+        "exitCode": 0,
+        "status": "passed",
+        "actual": {
+          "draftCases": 96,
+          "passedCases": 96,
+          "failedCases": 0,
+          "pairedReplicates": 192,
+          "replayPairs": 32,
+          "assertions": 5870897,
+          "worlds": 384,
+          "seasons": 1920,
+          "regularGames": 522240,
+          "postseasonGames": 24960
+        }
+      },
+      {
+        "year": 2022,
+        "exitCode": 0,
+        "status": "passed",
+        "actual": {
+          "draftCases": 96,
+          "passedCases": 96,
+          "failedCases": 0,
+          "pairedReplicates": 192,
+          "replayPairs": 32,
+          "assertions": 5907197,
+          "worlds": 384,
+          "seasons": 1920,
+          "regularGames": 522240,
+          "postseasonGames": 24960
+        }
+      },
+      {
+        "year": 2023,
+        "exitCode": 0,
+        "status": "passed",
+        "actual": {
+          "draftCases": 96,
+          "passedCases": 96,
+          "failedCases": 0,
+          "pairedReplicates": 192,
+          "replayPairs": 32,
+          "assertions": 5878987,
+          "worlds": 384,
+          "seasons": 1920,
+          "regularGames": 522240,
+          "postseasonGames": 24960
+        }
+      },
+      {
+        "year": 2024,
+        "exitCode": 0,
+        "status": "passed",
+        "actual": {
+          "draftCases": 96,
+          "passedCases": 96,
+          "failedCases": 0,
+          "pairedReplicates": 192,
+          "replayPairs": 32,
+          "assertions": 5846501,
+          "worlds": 384,
+          "seasons": 1920,
+          "regularGames": 522240,
+          "postseasonGames": 24960
+        }
+      },
+      {
+        "year": 2025,
+        "exitCode": 0,
+        "status": "passed",
+        "actual": {
+          "draftCases": 96,
+          "passedCases": 96,
+          "failedCases": 0,
+          "pairedReplicates": 192,
+          "replayPairs": 32,
+          "assertions": 5854309,
+          "worlds": 384,
+          "seasons": 1920,
+          "regularGames": 522240,
+          "postseasonGames": 24960
+        }
+      },
+      {
+        "year": 2026,
+        "exitCode": 0,
+        "status": "passed",
+        "actual": {
+          "draftCases": 96,
+          "passedCases": 96,
+          "failedCases": 0,
+          "pairedReplicates": 192,
+          "replayPairs": 32,
+          "assertions": 5859099,
+          "worlds": 384,
+          "seasons": 1920,
+          "regularGames": 522240,
+          "postseasonGames": 24960
+        }
+      }
+    ],
+    "limitation": "Structural consistency only; does not establish statistical calibration or historical completeness."
+  }
+}

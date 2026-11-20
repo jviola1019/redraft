@@ -1,0 +1,181 @@
+{
+  "protocol_sha256": "c1a5c6e9490ea943e7e6ddbb864b12ae98e9fb1b8cd79803c70e9c42fcd2d46d",
+  "snap_sha256": {
+    "2020": "512e35f17d076eb5d99b933c4a144eb95dcddf40c0320dbb397cae3c35683716",
+    "2021": "8e4dae054a4749cf2d4919508d9161a6068fd67509979aefa385bfb3803d0ee5",
+    "2022": "0018a4833fbf0f825286c1c27450c6254391b548d6c55bcde728e93e4816815a",
+    "2023": "303b61aa5c33ffda863f93a750fc14483f397f9187ad502b1ce71e9b516a64c0",
+    "2024": "a2aa58efe093f8aa0ad5aadf09f81d8ec690a1183bd2dde68d20e7f109a9c335"
+  },
+  "cohorts": {
+    "2022": {
+      "archive_snapshot_rows": 2000,
+      "matched_fraction": 0.8424124513618677,
+      "cohort_counts": {
+        "ambiguous_archive_name": 2,
+        "ambiguous_snap_name": 22,
+        "eligible": 2056,
+        "matched": 1732,
+        "special_teams_only": 241,
+        "unmatched": 300
+      }
+    },
+    "2023": {
+      "archive_snapshot_rows": 2000,
+      "matched_fraction": 0.8561991869918699,
+      "cohort_counts": {
+        "ambiguous_archive_name": 1,
+        "ambiguous_snap_name": 25,
+        "eligible": 1968,
+        "matched": 1685,
+        "special_teams_only": 226,
+        "unmatched": 257
+      }
+    },
+    "2024": {
+      "archive_snapshot_rows": 1992,
+      "matched_fraction": 0.8746763335059554,
+      "cohort_counts": {
+        "ambiguous_archive_name": 2,
+        "ambiguous_snap_name": 16,
+        "eligible": 1931,
+        "matched": 1689,
+        "special_teams_only": 211,
+        "unmatched": 224
+      }
+    }
+  },
+  "evaluation": {
+    "2023": {
+      "status": "retrospective_archive_sensitivity",
+      "train_origins": [
+        2022
+      ],
+      "train_count": 1732,
+      "overall": {
+        "count": 1685,
+        "positive_count": 611,
+        "metrics": {
+          "brier": {
+            "baseline": 0.1588821431588994,
+            "augmented": 0.1433305268547256,
+            "augmented_minus_baseline": -0.015551616304173827,
+            "player_bootstrap_95_interval": [
+              -0.01996299118952447,
+              -0.011273671099637348
+            ]
+          },
+          "log_loss": {
+            "baseline": 0.493113661501822,
+            "augmented": 0.4478186806371348,
+            "augmented_minus_baseline": -0.04529498086468726,
+            "player_bootstrap_95_interval": [
+              -0.058101472748151486,
+              -0.032461313696507225
+            ]
+          }
+        },
+        "auc": {
+          "baseline": 0.8335512500495266,
+          "augmented": 0.860713121024544
+        },
+        "passes_statistical_screen": true
+      },
+      "qb_descriptive": {
+        "count": 78,
+        "positive_count": 26,
+        "metrics": {
+          "brier": {
+            "baseline": 0.1716907675545643,
+            "augmented": 0.14956123878158273,
+            "augmented_minus_baseline": -0.022129528772981587,
+            "player_bootstrap_95_interval": [
+              -0.040196523847293386,
+              -0.0025317049738864143
+            ]
+          },
+          "log_loss": {
+            "baseline": 0.5210789871377562,
+            "augmented": 0.4663034347176125,
+            "augmented_minus_baseline": -0.054775552420143724,
+            "player_bootstrap_95_interval": [
+              -0.1136075060881777,
+              0.01694865471460908
+            ]
+          }
+        },
+        "auc": {
+          "baseline": 0.8128698224852071,
+          "augmented": 0.8550295857988166
+        },
+        "passes_statistical_screen": false
+      }
+    },
+    "2024": {
+      "status": "primary",
+      "train_origins": [
+        2022,
+        2023
+      ],
+      "train_count": 3417,
+      "overall": {
+        "count": 1689,
+        "positive_count": 611,
+        "metrics": {
+          "brier": {
+            "baseline": 0.1654723693364649,
+            "augmented": 0.15271434221905406,
+            "augmented_minus_baseline": -0.01275802711741084,
+            "player_bootstrap_95_interval": [
+              -0.0177728890614886,
+              -0.007868167008536256
+            ]
+          },
+          "log_loss": {
+            "baseline": 0.5063777426280938,
+            "augmented": 0.4680993863088562,
+            "augmented_minus_baseline": -0.038278356319237546,
+            "player_bootstrap_95_interval": [
+              -0.05275827363767149,
+              -0.024304239184560344
+            ]
+          }
+        },
+        "auc": {
+          "baseline": 0.8190244406049877,
+          "augmented": 0.843682153712549
+        },
+        "passes_statistical_screen": true
+      },
+      "qb_descriptive": {
+        "count": 81,
+        "positive_count": 27,
+        "metrics": {
+          "brier": {
+            "baseline": 0.1569259384164268,
+            "augmented": 0.10788043985973601,
+            "augmented_minus_baseline": -0.04904549855669075,
+            "player_bootstrap_95_interval": [
+              -0.06606481550748936,
+              -0.03372519569231508
+            ]
+          },
+          "log_loss": {
+            "baseline": 0.5268793420661683,
+            "augmented": 0.35077092378488606,
+            "augmented_minus_baseline": -0.17610841828128215,
+            "player_bootstrap_95_interval": [
+              -0.2900058734481529,
+              -0.10339988032472748
+            ]
+          }
+        },
+        "auc": {
+          "baseline": 0.8443072702331962,
+          "augmented": 0.9101508916323731
+        },
+        "passes_statistical_screen": true
+      }
+    }
+  }
+}

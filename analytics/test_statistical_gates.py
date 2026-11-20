@@ -3,6 +3,9 @@ import contextlib
 import io
 import json
 import unittest
+from pathlib import Path
+from tempfile import TemporaryDirectory
+from unittest.mock import patch
 import numpy as np
 import pandas as pd
 import forecast_audit as fa
@@ -65,8 +68,44 @@ class StatisticalAuditChecks(unittest.TestCase):
         self.assertEqual(statuses['strict_label_cutoff'],'pass')
         self.assertEqual(statuses['strict_independent_chronological_validation'],'unsupported')
         self.assertEqual(statuses['coverage95_QB_snaps'],'fail')
-        self.assertEqual(statuses['coverage95_LB_snaps'],'fail')
+        rows=pd.read_csv(fa.A/'forecast_audit_predictions.csv')
+        lb=rows[rows.position=='LB']
+        covered=lb.snaps_actual.between(lb.snaps_lower95,lb.snaps_upper95).mean()
+        self.assertEqual(statuses['coverage95_LB_snaps'], 'pass' if covered>=.90 else 'fail')
         self.assertEqual(result['releaseStatus'],'blocked')
+
+    def altered_evidence_status(self, file, alter, gate):
+        with TemporaryDirectory() as directory:
+            path = Path(directory)
+            for source in gates.A.iterdir():
+                if source.is_file() and source.name not in ('statistical_gates.json', 'STATISTICAL_GATES.md', file):
+                    (path / source.name).symlink_to(source)
+            evidence = json.loads((gates.A / file).read_text())
+            alter(evidence)
+            (path / file).write_text(json.dumps(evidence))
+            with patch.object(gates, 'A', path), contextlib.redirect_stdout(io.StringIO()):
+                result = gates.run()
+            return next((r['status'] for r in result['gates'] if r['id'] == gate), None)
+
+    def test_reused_sample_cannot_clear_distribution_skill(self):
+        def favorable(audit):
+            audit['pairedCrpsVsPositionBaseline']['playerBootstrap95'] = [-80, -20]
+        self.assertEqual(self.altered_evidence_status('forecast_audit.json', favorable,
+                         'forecast_distribution_skill'), 'unsupported')
+
+    def test_missing_forecast_hash_is_stale(self):
+        name = 'lib/simulation.ts'
+        self.assertEqual(self.altered_evidence_status('forecast_audit.json',
+                         lambda audit: audit['sourceHashes'].pop(name), 'forecast_source_' + name), 'stale')
+
+    def test_missing_forecast_manifest_is_stale(self):
+        self.assertEqual(self.altered_evidence_status('forecast_audit.json',
+                         lambda audit: audit.pop('sourceHashes'), 'forecast_source_lib/simulation.ts'), 'stale')
+
+    def test_cpu_policy_hash_is_required(self):
+        self.assertEqual(self.altered_evidence_status('simulation_diagnostics.json',
+                         lambda audit: audit['sourceHashes'].pop('analytics/cpu-position-capital-v1.json'),
+                         'simulation_fresh_CLE'), 'stale')
 
     def test_exact_forecast_metrics_from_saved_rows(self):
         data=pd.read_csv(fa.A/'forecast_audit_predictions.csv')

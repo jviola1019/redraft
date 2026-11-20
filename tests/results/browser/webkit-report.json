@@ -1,0 +1,15 @@
+{
+  "at": "2026-11-20T01:35:02.049Z",
+  "engine": "webkit",
+  "executablePath": "Playwright default",
+  "baseUrl": "http://127.0.0.1:4173",
+  "results": [
+    {
+      "engine": "webkit",
+      "stage": "browser launch",
+      "status": "failed",
+      "message": "browserType.launch: Executable doesn't exist at /home/agent/.cache/ms-playwright/webkit-2336/pw_run.sh\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝"
+    }
+  ],
+  "limitation": "Phone viewport/device emulation is not a physical iPhone test. Screenshots require human review; no approved visual regression baseline exists."
+}

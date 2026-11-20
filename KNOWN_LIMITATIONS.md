@@ -1,3 +1,7 @@
+> The [statistical clearance review](docs/audit/CLEARANCE_REVIEW.md) reproduces the 40/6/7 decision, documents the evidence behind each blocker and repairs three permissive audit checks.
+
+> November 19, 2026 review evidence and remaining blockers are in [the current release report](docs/release/CURRENT_RELEASE.md). Earlier dated results below describe their own revisions.
+
 # Known limitations and release acceptance
 
 ## Current verified checkpoint

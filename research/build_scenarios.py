@@ -20,6 +20,7 @@ sys.path.insert(0, str(ROOT / "research"))
 from clean import TEAMS, college, height, norm, num, position, tid  # noqa: E402
 import audit_expansion  # noqa: E402
 from audit_expansion import reverse_ownership  # noqa: E402
+from reference_aliases import ALIAS_PATH, VERSION_2021, load_aliases, resolve_alias  # noqa: E402
 
 audit_expansion.DRAFT_DATES[2026] = ("04-23", "04-25")
 SCENARIO_CUTOFFS = {
@@ -29,6 +30,7 @@ SCENARIO_CUTOFFS = {
     2026: "2026-04-22T23:59:00Z",
 }
 SCENARIO_VERSIONS = {year: f"nflverse-{year}-combine-pool-v1" for year in SCENARIO_CUTOFFS}
+SCENARIO_VERSIONS[2021] = VERSION_2021
 RAIDERS_RELEASE = "https://static.clubs.nfl.com/image/upload/raiders/zsb8qfkli33h2k8oqf1t.pdf"
 COMBINE_SOURCE = "https://github.com/nflverse/nflverse-data/releases/tag/combine"
 DRAFT_SOURCE = "https://github.com/nflverse/nflverse-data/releases/tag/draft_picks"
@@ -262,6 +264,7 @@ def build_scenario(year: int) -> tuple[dict[str, object], dict[str, object]]:
     actual: list[dict[str, object]] = []
     seen_pfr: set[str] = set()
     used_ids = {p["id"] for p in prospects}
+    reference_aliases = load_aliases(year)
     for row in draft_rows:
         pfr = row["pfr_player_id"]
         if not pfr:
@@ -274,6 +277,8 @@ def build_scenario(year: int) -> tuple[dict[str, object], dict[str, object]]:
             candidates = by_name_school.get((norm(row["pfr_player_name"]), school_match_key(year, row["college"])), [])
             if len(candidates) == 1:
                 ident = candidates[0]
+        if ident is None:
+            ident = resolve_alias(year, row, prospects, reference_aliases)
         if ident is None:
             if year == 2021:
                 # Keep an identity unresolved when a school alias would be needed
@@ -330,6 +335,8 @@ def build_scenario(year: int) -> tuple[dict[str, object], dict[str, object]]:
             "url": invitee_audit["url"], "cacheSha256": invitee_audit["cacheSha256"],
             "cacheFormat": invitee_audit["cacheFormat"], "parsedInvitees": invitee_audit["parsedCount"]}
         file_sources["data/clean/additional_order_sources.json"] = "normalized official invitee and order audit artifact"
+    if reference_aliases:
+        file_sources[str(ALIAS_PATH.relative_to(ROOT))] = "audited postdraft reference identity only; never pre-draft features"
     metadata = {
         "version": version, "draftYear": year, "informationCutoff": cutoff,
         "verifiedDate": datetime.now(timezone.utc).date().isoformat(),
@@ -389,6 +396,8 @@ def build_scenario(year: int) -> tuple[dict[str, object], dict[str, object]]:
         metadata["officialInviteeAudit"] = "NFL source reports 319 invitees; nflverse has 319 combine rows. Counts agree, but individual name/school matches are not stored."
     dataset = {"metadata": metadata, "teams": teams, "prospects": prospects,
                "picks": picks, "actualPicks": actual, "games": games}
+    if reference_aliases:
+        metadata["referenceIdentityCorrection"] = {"version": "trey-lance-reference-v1", "auditedOn": "2026-11-20", "aliasArtifact": str(ALIAS_PATH.relative_to(ROOT)), "aliasesApplied": 1, "scope": "Postdraft historical identity references only; eligible pool and all scouting features unchanged."}
     checks = {
         "draftSlots": len(picks), "slotNumbersSequential": [p["overall"] for p in picks] == list(range(1, len(picks) + 1)),
         "reversedOwnershipIssues": len(ownership["issues"]),

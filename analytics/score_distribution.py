@@ -17,17 +17,17 @@ from scipy.special import expit
 ROOT = Path(__file__).resolve().parents[1]
 A = ROOT/'analytics'; RAW = ROOT/'data/raw/games.csv'; MODEL = A/'model.json'
 SEED=20261112; N_BASE=32768; N_FORECAST=2048
-ALIASES={'OAK':'LV','SD':'LAC','STL':'LA'}
+ALIASES={'OAK':'LV','SD':'LAC','STL':'LAR','LA':'LAR','WSH':'WAS','JAC':'JAX'}
 
 
 def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
 
-def nfl_scores(total, margin, tie_u):
+def nfl_scores(total, margin, tie_u, winner_u):
     hs=np.maximum(0,np.floor((total+margin)/2+0.5)).astype(int)
     aws=np.maximum(0,np.floor((total-margin)/2+0.5)).astype(int)
     hs=np.where(hs==1,2,hs); aws=np.where(aws==1,2,aws)
     tied=hs==aws; break_tie=tied & (tie_u>.12)
-    home_win=tie_u <= 1/(1+np.exp(-margin/8))
+    home_win=winner_u < 1/(1+np.exp(-margin/8))
     hs=hs+(break_tie & home_win)*3; aws=aws+(break_tie & ~home_win)*3
     return hs,aws
 
@@ -59,7 +59,7 @@ def fit_score_law(g, through):
     corr=float(np.corrcoef(rm,rt)[0,1])
     return {'homeAdvantage':float(coef[0]),'strengthCoefficient':float(coef[1]),
             'meanTotal':float(tr.total.mean()),'marginSd':float(rm.std(ddof=2)),
-            'totalSd':float(rt.std(ddof=1)),'rho':corr,'fitThroughSeason':int(through)}
+            'totalSd':float(rt.std(ddof=1)),'rho':corr,'seasonShockSd':0.,'fitThroughSeason':int(through)}
 
 def expected_margin(df, law):
     return law['homeAdvantage']+law['strengthCoefficient']*(df.home_prior.to_numpy()-df.away_prior.to_numpy())
@@ -83,15 +83,20 @@ def event_metrics(y,p):
 
 def base_draw(row,law,rng,n):
     z1,z2=rng.standard_normal((2,n)); rho=law['rho']
-    m=law['homeAdvantage']+law['strengthCoefficient']*(row.home_prior-row.away_prior)+z1*law['marginSd']
+    # Independent home/away season shocks give this exact per-game marginal.
+    # Draws are marginal forecasts; they do not represent a jointly simulated season.
+    shock=rng.standard_normal(n)*math.sqrt(2)*law.get('seasonShockSd',0.)
+    m=law['homeAdvantage']+law['strengthCoefficient']*(row.home_prior-row.away_prior)+shock+z1*law['marginSd']
     t=np.maximum(6,law['meanTotal']+(rho*z1+math.sqrt(max(0,1-rho*rho))*z2)*law['totalSd'])
-    hs,aws=nfl_scores(t,m,rng.random(n))
+    hs,aws=nfl_scores(t,m,rng.random(n),rng.random(n))
     return hs,aws
 
 def score_forecast(df,law,hurdle,method,seed):
-    rng=np.random.default_rng(seed); rows=[]
+    rows=[]
     ps=predict_p(df,law,hurdle) if method=='hurdle' else None
     for j,row in enumerate(df.itertuples(index=False)):
+        # Matching base draws isolate the hurdle change from simulation noise.
+        rng=np.random.default_rng(np.random.SeedSequence([seed,j]))
         bh,ba=base_draw(row,law,rng,N_BASE)
         if method=='normal':
             hs,aws=bh[:N_FORECAST],ba[:N_FORECAST]
@@ -129,8 +134,10 @@ def summarize(rows):
 
 def runtime_score_law():
     t=json.loads(MODEL.read_text())['team']
+    recalibration=json.loads((A/'scoring_recalibration.json').read_text())
     return {'homeAdvantage':t['homeAdvantage'],'strengthCoefficient':t['strengthCoefficient'],
-      'meanTotal':t['meanTotal'],'marginSd':t['gameMarginSd'],
+      'meanTotal':recalibration['proposedOverride']['meanTotal'],'marginSd':t['gameMarginSd'],
+      'seasonShockSd':t['seasonShockSd'],
       'totalSd':t['residualTotalSd'],'rho':t['residualCorrelation'],
       'fitThroughSeason':int(t['fitThroughSeason'])}
 
@@ -151,10 +158,11 @@ def evaluated(g, train_through, test_years, selected_window, law_override=None):
 
 def run():
     raw=pd.read_csv(RAW,low_memory=False)
-    g=raw[(raw.game_type=='REG')&(raw.season>=2000)&(raw.season<=2025)].dropna(subset=['home_score','away_score']).copy()
+    g=raw[(raw.game_type=='REG')&(raw.season>=1999)&(raw.season<=2025)].dropna(subset=['home_score','away_score']).copy()
     for c in ['home_score','away_score']: g[c]=g[c].astype(int)
     g['home_team']=g.home_team.astype(str).replace(ALIASES); g['away_team']=g.away_team.astype(str).replace(ALIASES)
     g=add_prior_context(g)
+    g=g[g.season>=2000].copy()
     # Select an intercept-only recency window on 2014-15; nothing later is consulted.
     val_law=fit_score_law(g,2013); val_train=g[(g.season>=2000)&(g.season<=2013)]; val=g[g.season.isin([2014,2015])]
     variant_scores={}
@@ -167,14 +175,14 @@ def run():
     retrospective=evaluated(g,2017,list(range(2018,2026)),selected_window or 18,law_override=runtime_score_law())
     gameplay_law=fit_score_law(g,2017); gameplay_h=fit_hurdle(g[g.season<=2017],selected_window or 18)
     # Fit selected hurdle on all pre-cutoff scores for proposed runtime parameters.
-    return {'version':'score-distribution-shutout-hurdle-v1','asOf':'2026-11-12',
+    return {'version':'score-distribution-shutout-hurdle-v2','asOf':'2026-11-20',
       'protocol':{'formSelectionTrainSeasons':[2000,2013],'formSelectionValidationSeasons':[2014,2015],
        'finalPre2018TrainSeasons':[2000,2015],'finalPre2018TestSeasons':[2016,2017],
        'gameplayFitSeasons':[2000,2017],'retrospectiveKnownExposedTestSeasons':list(range(2018,2026)),
        'excludedIncompleteSeason':2026,'noPost2017Tuning':True},
       'data':{'source':'nflverse schedules/games.csv archived at data/raw/games.csv','sourceSha256':sha(RAW),
        'rowsBySeason':{str(y):int((g.season==y).sum()) for y in range(2000,2026)},
-       'modelArtifactSha256':sha(MODEL)},
+       'modelArtifactSha256':sha(MODEL),'scoringRecalibrationSha256':sha(A/'scoring_recalibration.json')},
       'research':{'hurdleReference':{'citation':'Mullahy, J. (1986), Specification and testing of some modified count data models, Journal of Econometrics 33(3), 341–365.','url':'https://doi.org/10.1016/0304-4076(86)90002-3','relevance':'A two-part model separates threshold-crossing probability from the conditional positive distribution.'},
        'footballScoreReference':{'citation':'Baker, R. D. and McHale, I. G. (2013), Forecasting exact scores in National Football League games, International Journal of Forecasting 29(1), 122–130.','url':'https://doi.org/10.1016/j.ijforecast.2012.07.002','relevance':'NFL exact scores arise from multiple discrete scoring events; their paper models scoring as a point process.'},
        'probabilityEvaluationReference':{'citation':'Gneiting, T. and Raftery, A. E. (2007), Strictly Proper Scoring Rules, Prediction, and Estimation, JASA 102(477), 359–378.','url':'https://doi.org/10.1198/016214506000001437','relevance':'Use Brier/log loss for the shutout event and CRPS/interval coverage for predictive score distributions.'}},
@@ -182,10 +190,10 @@ def run():
       'validationFormComparison':variant_scores,'selectedWindow':selected,
       'finalPre2018Test':final_pre,'retrospectiveKnownExposedTest':retrospective,
       'proposedGameplayParameters':{'fitThroughSeason':2017,'scoreLaw':runtime_score_law(),'shutoutHurdle':gameplay_h,'monteCarloDrawsPerObservedGameInAudit':N_FORECAST,'baseDrawsForConditionalSamplingInAudit':N_BASE,
-       'conditionalScoreDistribution':'Current analytics/model.json correlated-normal margin/total draw and NFL score transform, conditioned on the fitted shutout branch. On the shutout branch, sample from baseline draws with either score zero; on the positive branch, sample from baseline draws with both scores positive. The hurdle probability chooses the branch.',
+       'conditionalScoreDistribution':'Current runtime model plus scoring-recalibration override and integrated team-season shocks; correlated-normal margin/total draw and NFL score transform, conditioned on the fitted shutout branch. On the shutout branch, sample from baseline draws with either score zero; on the positive branch, sample from baseline draws with both scores positive. The hurdle probability chooses the branch.',
        'seedRecommendation':'keyed by seed, season, matchup, game type, component=shutout-hurdle or score-conditional'},
-      'decision':'The three-season intercept-only hurdle wins 2014–15 Brier selection. On the 2016–17 final test its shutout Brier is slightly better but log loss is worse than the normal law; the exposed 2018–25 diagnostic improves shutout probability scores and lowers predicted shutouts toward observed frequency. Score-distribution gains are small/mixed, and this known-exposed diagnostic is not independent evidence. Keep it a candidate for review; no adoption claim.',
-      'limitations':['Post-2017 outcomes have been inspected in prior project diagnostics; chronology prevents leakage but does not make them an untouched test.','2016–17 final pre-2018 evaluation has only two seasons and low shutout counts.','Conditional distributions inherit the existing normal score model and its limitations.','A fit to 2000–2017 assumes the shutout relationship is stable; future NFL scoring regimes may differ.','No causal draft effect or alternate-history truth is identified.']}
+      'decision':'Candidate remains research-only. Compare the frozen 2016–17 metrics below; known-exposed 2018–25 results cannot justify adoption. The retrospective comparator now uses the runtime total override, independent season shocks, and independent tie-resolution/winner draws. No runtime or threshold changes.',
+      'limitations':['The candidate has no team/season shutout covariates and no position or draft treatment effect.','Per-game prior-strength forecasts condition on the actual preceding season, not a frozen five-year simulated path; season-shared dependence does not affect these marginal game metrics.','Pre-2018 assessment uses a historically refitted residual-normal comparator; the exposed diagnostic uses the deployed runtime score law with team-season shocks integrated out.','Post-2017 outcomes have been inspected in prior project diagnostics; chronology prevents leakage but does not make them an untouched test.','The 2016–17 assessment was previously reported; this comparator repair is a rerun of a time-separated test, not a new untouched holdout. It has only two seasons and low shutout counts.','Conditional distributions inherit the existing normal score model and its limitations.','A fit to 2000–2017 assumes the shutout relationship is stable; future NFL scoring regimes may differ.','No causal draft effect or alternate-history truth is identified.']}
 
 
 def write_report(r):
@@ -200,10 +208,11 @@ def write_report(r):
             lines.append(f"| {model} | {v['games']} | {v['totalMAE']:.3f} | {v['marginMAE']:.3f} | {v['totalCRPS']:.3f} | {v['marginCRPS']:.3f} | {v['shutoutBrier']:.5f} | {v['predictedShutoutRate']:.3%} / {v['observedShutoutRate']:.3%} | {v['total90Coverage']:.1%} | {v['margin90Coverage']:.1%} |")
         ev=r[key]['eventForecastMetrics']; lines += ['',f"Shutout probability-only Brier: {ev['brier']:.5f}; log loss: {ev['logLoss']:.5f}."]
     lines += ['', '## Gameplay parameters','',
-      'The proposed runtime parameters are recorded in `score_distribution.json`: the current score-law parameters fitted through 2017 plus a shutout rate of 2.083% estimated from 2015–17. Sampling uses one keyed Bernoulli shutout decision, then draws from the current bivariate normal score law conditional on the selected branch. In exact engine form, reject and redraw score-law samples until either one team scores zero (shutout branch) or both score positive (non-shutout branch). The evaluation uses Monte Carlo draws; no runtime changes are included here.', '',
+      'The research-only parameters are recorded in `score_distribution.json`. The deployed comparator uses the 44.87109375 mean-total override, independent team-season shocks, and independent tie-resolution and overtime-winner draws. Historical assessment laws are refitted using only scores through the stated cutoff. Sampling uses one keyed Bernoulli shutout decision, then draws from the current bivariate normal score law conditional on the selected branch. In exact engine form, reject and redraw score-law samples until either one team scores zero (shutout branch) or both score positive (non-shutout branch). The evaluation uses Monte Carlo draws; no runtime changes are included here.', '',
       '## Decision and limits','',r['decision'],'',
       'NFL score forecasting research models scoring events because multiple football scoring outcomes produce a discrete score distribution ([Baker & McHale, 2013](https://doi.org/10.1016/j.ijforecast.2012.07.002)). Two-part count models separate threshold probability from the conditional positive distribution ([Mullahy, 1986](https://doi.org/10.1016/0304-4076(86)90002-3)). Proper scoring rules support evaluating event probabilities with Brier/log loss and outcome distributions with CRPS and interval coverage ([Gneiting & Raftery, 2007](https://doi.org/10.1198/016214506000001437)).', '',
-      'The post-2017 results are retrospective because they have already been examined elsewhere in this project. The final pre-2018 test contains only two seasons and 14 shutouts. In 2018–25, the source has 2,127 regular-season games because the 2022 Bills–Bengals game was canceled and not replayed. Neither test proves future calibration, causality, or alternate-history accuracy. No release threshold was changed.']
+      'The post-2017 results are retrospective because they have already been examined elsewhere in this project. The final pre-2018 test contains only two seasons and few shutouts. In 2018–25, the source has 2,127 regular-season games because the 2022 Bills–Bengals game was canceled and not replayed. Neither test proves future calibration, causality, or alternate-history accuracy. No release threshold was changed.']
+    lines += ['', 'Additional limits:', ''] + ['- '+item for item in r['limitations']]
     (A/'score_distribution.md').write_text('\n'.join(lines)+'\n')
 
 def main():

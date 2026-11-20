@@ -2,8 +2,14 @@
 import { spawn } from 'node:child_process';
 import { mkdirSync, writeFileSync, createWriteStream, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
-import { supportedYears, cleanup } from '../analytics/runtime_loader.mjs';
+import {validateMatrixReceipt, validateReleaseYears} from './matrix-receipt.mjs';
+import { engine, loadScenario, supportedYears, cleanup } from '../analytics/runtime_loader.mjs';
 const years = [...supportedYears];
+validateReleaseYears(years);
+const expected = new Map(years.map(year => {
+  const {dataset, models} = loadScenario(year);
+  return [year, {year, teams: dataset.teams.map(team => team.id), datasetVersion: dataset.metadata.version, engineVersion: engine.RULE_VERSION, modelVersion: models.version}];
+}));
 cleanup();
 const output = resolve(process.argv[2] || `tests/results/all-years-${new Date().toISOString().replace(/[:.]/g, '-')}`);
 mkdirSync(output, { recursive: true });
@@ -20,10 +26,15 @@ async function worker() {
       child.on('error', reject);
       child.on('close', code => { log.end(); done(code); });
     });
-    let report;
-    try { report = JSON.parse(readFileSync(`${output}/${year}.json`, 'utf8')); } catch {}
-    const passed = code === 0 && report?.status === 'passed' && !report.sourceChanged && report.actual.draftCases === 96 && report.actual.pairedReplicates === 192 && report.actual.replayPairs === 32;
-    results.push({ year, exitCode: code, status: passed ? 'passed' : 'failed', actual: report?.actual });
+    let report, validationError;
+    try {
+      report = JSON.parse(readFileSync(`${output}/${year}.json`, 'utf8'));
+      validateMatrixReceipt(report, expected.get(year));
+    } catch (error) {
+      validationError = error.message;
+    }
+    const passed = code === 0 && validationError === undefined;
+    results.push({ year, exitCode: code, status: passed ? 'passed' : 'failed', actual: report?.actual, validationError });
     console.log(`${year}: ${passed ? 'passed' : 'failed'}`);
   }
 }

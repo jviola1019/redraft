@@ -1,0 +1,21 @@
+{
+  "2022:Cole Kelley": {
+    "name": "Cole Kelley",
+    "school": "Southeastern Louisiana",
+    "pfrId": null,
+    "identitySource": "https://www.nfl.com/_amp/2022-nfl-scouting-combine-invited-prospects-by-position"
+  },
+  "2022:EJ Perry": {
+    "name": "EJ Perry",
+    "school": "Brown",
+    "pfrId": null,
+    "identitySource": "https://www.nfl.com/_amp/2022-nfl-scouting-combine-invited-prospects-by-position",
+    "nflCareerSource": "https://www.nfl.com/players/ej-perry/stats/"
+  },
+  "2023:Tyson Bagent": {
+    "name": "Tyson Bagent",
+    "school": "Shepherd",
+    "pfrId": "BageTy00",
+    "identitySource": "https://www.pro-football-reference.com/players/B/BageTy00.htm"
+  }
+}

@@ -1,0 +1,539 @@
+{
+  "trainingAudit": {
+    "rows": 1519,
+    "cohorts": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017
+    ],
+    "latestDeclaredLabelAvailability": "2018-03-01",
+    "archivalFeatureTimestamps": 0
+  },
+  "audit": "Independent eligibility, declared availability, coverage and history-poisoning audit",
+  "asOf": "2026-11-20",
+  "scope": "Local artifacts; 2 deterministic complete drafts per class. No network or archival-source verification.",
+  "sourceHashes": {
+    "lib/engine.ts": "e5e0bb35be07a01ea133331a200a15593b706772cf625c523e48e96d9b9b37f3",
+    "lib/simulation.ts": "e03f6afab57ae9c5288eaa343e58a9f977e2dee51c73ab77f06cdf6d75ac49ca",
+    "lib/scouting.ts": "751b61f9f77e62c64e1623831dc75144b48d691f63497eb78298a978e63b6ca8",
+    "lib/server-data.ts": "0ede48d68b376a2ad5adb3633680bfa0f067e3a2469aeff3d3b10338fb556be3",
+    "analytics/model.json": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0",
+    "analytics/five_year_strict_2018.json": "a717e2d683ab57c8f79f963d672598810593bae69945c8d00db82857d6c647e1",
+    "analytics/scoring_recalibration.json": "cd91ac43583c3186c18ec760fa860b5e3fae59aedaedf0cadb4b0cef90ec3377",
+    "data/clean/team_context_2018.json": "a2667b83e75fc20afb9318c362cfa1a28745e2db4d7864084533a19294497301",
+    "data/clean/team_context_source_manifest.json": "776ef8fd8b8200e9b9946e3ed014bd76061fc63586005d96142bf83f7656ec18",
+    "data/processed/scenario-2018.json": "b7895eef7862ccfb45cff5f2f4b6e347abd809c1905ed274883d55cc237f59d8",
+    "data/processed/scenario-2019.json": "88ef4b175bfc7ddf8c2d32541b1b8371836f09f6e961f4bb8a36b0db0bf5f28c",
+    "data/processed/scenario-2020.json": "527ff4f9770199052a6405d9d56cf503f150b998dddbcfbd947e686c060b624b",
+    "data/processed/scenario-2021.json": "37e217bfa4ca2ae97aa34a889b32b0dfef683f4884deefc6569e4b9e8eeaebc6",
+    "data/processed/scenario-2022.json": "ea6846602cddfe179544b1d845c811a1848c59de69084c210c03080ac4d46f63",
+    "data/processed/scenario-2023.json": "14587193998afcb61ca2c95c50ee641ba709246a5b3a9c8187855b94e894611f",
+    "data/processed/scenario-2024.json": "6a6d794cdf0747d7a03ba92549d4d8165b149a19b04eb32588b679e6c50e8323",
+    "data/processed/scenario-2025.json": "8f80dab73fa8b50a92a6b0ec499419dfd07eade6398ebda59b5117aac62b13b7",
+    "data/processed/scenario-2026.json": "c30d6a697573fc39488b13a91eb7c3863aa780c14a81f446e06dd0e3a86638ca",
+    "data/processed/scenario-coverage.json": "0d42970e685e510b6554c7fea7675e7f3a5aecb525aabb1c6b7e155ec0058ca3",
+    "analytics/model-2019.json": "2da02bcb4d6da178a635852e61c4ee7488f9551f346c9560f680ce99f13176cf",
+    "analytics/model-2020.json": "35d80e75ae50e8ada8c9ad96db2fd965e38f9dea06bc0f298b899f51497c3bdc",
+    "analytics/model-2021.json": "1e71a80b75350169b9c266185e773bbb7ab99a34df9d1698b7437b95ed21a649",
+    "analytics/model-2022.json": "9579d70620a4f20ede36008bdcc745d913f8ba1aa7f64b4276104561491b8457",
+    "analytics/model-2023.json": "3b7a67a1f83c32ba8461abe9608f3f2c18e8a17e34b60c20768099d9b23c78cb",
+    "analytics/model-2024.json": "1c4b07f22dc40575623920f108335d8990c07a53511db5e0c6bd740398102e9d",
+    "analytics/model-2025.json": "4b753663702af949cc2474da986eadbe1e23966ce58778928590353c0f774397",
+    "analytics/model-2026.json": "a4380ba61137af8813883ec3b021acfb73ee755fd51fdef1004d9f68d25f8ad4",
+    "research/independent_integrity_audit.mjs": "c002c1a7c13b61bd8dcd8c2fff887e1fd7505b0bd1f995506d5872e1754aba7d",
+    "analytics/train_models.py": "e1821927ca475f22a3b5cb5aa7245c04058c477010bd3259a5217fc328570c6c",
+    "analytics/project_scenarios.py": "070464e966c32e22ad4315fbd1d0f70103e292c5cf0456a2f5b95db33e778d0b",
+    "analytics/features/combine_model_features.csv": "6c97111e98445a69f1bf3b483f2c97dcc36ad11582cb82f54b8d45d0b71c1c19",
+    "analytics/outcomes/rookie_snap_labels.csv": "bd5be961e835e63f9a4a0792f5695bac73f94f1c21f127655d971d02c926c429"
+  },
+  "classes": [
+    {
+      "year": 2018,
+      "cutoff": "2018-04-26T23:59:00Z",
+      "playable": 336,
+      "referenceOnly": 39,
+      "picks": 256,
+      "actualDrafteesPlayable": 217,
+      "allMeasurementsMissing": 0,
+      "measurementMissingCells": 613,
+      "lateAvailability": 0,
+      "fitThrough": 2017,
+      "minimumBlindGroup": 5,
+      "observedRegularGames": [
+        {
+          "season": 2018,
+          "count": 256
+        },
+        {
+          "season": 2019,
+          "count": 256
+        },
+        {
+          "season": 2020,
+          "count": 256
+        },
+        {
+          "season": 2021,
+          "count": 272
+        },
+        {
+          "season": 2022,
+          "count": 271
+        }
+      ],
+      "orderWarning": "Current NFL article was modified after cutoff. Independently audited transaction reconstruction supports ownership; original publication timestamps remain incomplete.",
+      "cutoffConfidence": "reconstructed-not-fully-archival",
+      "runs": [
+        {
+          "seed": "integrity-a",
+          "selections": 256,
+          "trades": 28,
+          "signature": "d050ef6e3f1a97b53d31ccdeb69a8d1d374751c820d131ea1848e4f198786f28",
+          "poisonInvariant": true
+        },
+        {
+          "seed": "integrity-b",
+          "selections": 256,
+          "trades": 31,
+          "signature": "3f05769fe327cce9fedd29b7595216505e02b30a3d018550c36ba020deccdd0a",
+          "poisonInvariant": true
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "cutoff": "2019-04-25T23:59:00Z",
+      "playable": 336,
+      "referenceOnly": 35,
+      "picks": 254,
+      "actualDrafteesPlayable": 219,
+      "allMeasurementsMissing": 0,
+      "measurementMissingCells": 554,
+      "lateAvailability": 0,
+      "fitThrough": 2017,
+      "minimumBlindGroup": 5,
+      "contextAvailable": false,
+      "observedRegularGames": [
+        {
+          "season": 2019,
+          "count": 256
+        },
+        {
+          "season": 2020,
+          "count": 256
+        },
+        {
+          "season": 2021,
+          "count": 272
+        },
+        {
+          "season": 2022,
+          "count": 271
+        },
+        {
+          "season": 2023,
+          "count": 272
+        }
+      ],
+      "orderWarning": "2019 owners are reconstructed from nflverse transactions without a complete leaguewide primary-order row check.",
+      "cutoffConfidence": "reconstructed; original combine measurement timestamps unavailable",
+      "runs": [
+        {
+          "seed": "integrity-a",
+          "selections": 254,
+          "trades": 29,
+          "signature": "a52b8d9d43bf0b2d5aed70eef898f0e4981e4c447e171ad6451a7e83f4aeea4d",
+          "poisonInvariant": true
+        },
+        {
+          "seed": "integrity-b",
+          "selections": 254,
+          "trades": 31,
+          "signature": "3da988aa71d40e2a876fd65aaa828645b06af4866257e1328b861907a754281f",
+          "poisonInvariant": true
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "cutoff": "2020-04-15T23:59:00Z",
+      "playable": 337,
+      "referenceOnly": 25,
+      "picks": 255,
+      "actualDrafteesPlayable": 230,
+      "allMeasurementsMissing": 0,
+      "measurementMissingCells": 736,
+      "lateAvailability": 0,
+      "fitThrough": 2017,
+      "minimumBlindGroup": 5,
+      "contextAvailable": false,
+      "observedRegularGames": [
+        {
+          "season": 2020,
+          "count": 256
+        },
+        {
+          "season": 2021,
+          "count": 272
+        },
+        {
+          "season": 2022,
+          "count": 271
+        },
+        {
+          "season": 2023,
+          "count": 272
+        },
+        {
+          "season": 2024,
+          "count": 272
+        }
+      ],
+      "orderWarning": "PDF title, order table, and footer say as of April 15, 2020; press release says FOR IMMEDIATE RELEASE — APRIL 16, 2020.",
+      "cutoffConfidence": "reconstructed; original combine measurement timestamps unavailable",
+      "runs": [
+        {
+          "seed": "integrity-a",
+          "selections": 255,
+          "trades": 26,
+          "signature": "9c97f1b707ee139c2c3b79a9133009bdf7d6719d9c6c18ac45fa0e3ec64e48d3",
+          "poisonInvariant": true
+        },
+        {
+          "seed": "integrity-b",
+          "selections": 255,
+          "trades": 30,
+          "signature": "6f60fe357943c51bbb6c01a810448caabe80bf67cae4c3066ac4e42ded11c2d9",
+          "poisonInvariant": true
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "cutoff": "2021-04-29T23:59:00Z",
+      "playable": 323,
+      "referenceOnly": 82,
+      "picks": 259,
+      "actualDrafteesPlayable": 177,
+      "allMeasurementsMissing": 144,
+      "measurementMissingCells": 1429,
+      "lateAvailability": 0,
+      "fitThrough": 2017,
+      "minimumBlindGroup": 5,
+      "contextAvailable": false,
+      "observedRegularGames": [
+        {
+          "season": 2021,
+          "count": 272
+        },
+        {
+          "season": 2022,
+          "count": 271
+        },
+        {
+          "season": 2023,
+          "count": 272
+        },
+        {
+          "season": 2024,
+          "count": 272
+        },
+        {
+          "season": 2025,
+          "count": 272
+        }
+      ],
+      "orderWarning": "Reverse-transaction ownership is audited with zero unresolved issues; no strict archived pre-draft order snapshot is available. An NFL.com page published March 19 contains a later trade and is explicitly excluded as an as-of source.",
+      "cutoffConfidence": "reconstructed; original combine measurement timestamps unavailable",
+      "runs": [
+        {
+          "seed": "integrity-a",
+          "selections": 259,
+          "trades": 26,
+          "signature": "240a13bfaf9d8392e66a383e01e3693b243ad820282b73bea3c5697e24e25613",
+          "poisonInvariant": true
+        },
+        {
+          "seed": "integrity-b",
+          "selections": 259,
+          "trades": 32,
+          "signature": "5f77012659336dee0f447b845322460b74c033bd94dcbb65cd5c34b2ef36d19d",
+          "poisonInvariant": true
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "cutoff": "2022-04-28T23:59:00Z",
+      "playable": 324,
+      "referenceOnly": 39,
+      "picks": 262,
+      "actualDrafteesPlayable": 223,
+      "allMeasurementsMissing": 0,
+      "measurementMissingCells": 1002,
+      "lateAvailability": 0,
+      "fitThrough": 2017,
+      "minimumBlindGroup": 5,
+      "contextAvailable": false,
+      "observedRegularGames": [
+        {
+          "season": 2022,
+          "count": 271
+        },
+        {
+          "season": 2023,
+          "count": 272
+        },
+        {
+          "season": 2024,
+          "count": 272
+        },
+        {
+          "season": 2025,
+          "count": 272
+        },
+        {
+          "season": 2026,
+          "count": 136
+        }
+      ],
+      "orderWarning": "Editor's note: information below reflects the order entering Day 1 of the draft.",
+      "cutoffConfidence": "reconstructed; original combine measurement timestamps unavailable",
+      "runs": [
+        {
+          "seed": "integrity-a",
+          "selections": 262,
+          "trades": 28,
+          "signature": "d153248dba8969045a554e9a8c1cd6b4317ac3228446db9f8c39039ca75db484",
+          "poisonInvariant": true
+        },
+        {
+          "seed": "integrity-b",
+          "selections": 262,
+          "trades": 31,
+          "signature": "666e800978981ceaa3c555006f5fc47f74fed528802201922717dd342535d4ea",
+          "poisonInvariant": true
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "cutoff": "2023-04-27T23:59:00Z",
+      "playable": 319,
+      "referenceOnly": 42,
+      "picks": 259,
+      "actualDrafteesPlayable": 217,
+      "allMeasurementsMissing": 0,
+      "measurementMissingCells": 954,
+      "lateAvailability": 0,
+      "fitThrough": 2017,
+      "minimumBlindGroup": 5,
+      "contextAvailable": false,
+      "observedRegularGames": [
+        {
+          "season": 2023,
+          "count": 272
+        },
+        {
+          "season": 2024,
+          "count": 272
+        },
+        {
+          "season": 2025,
+          "count": 272
+        },
+        {
+          "season": 2026,
+          "count": 136
+        },
+        {
+          "season": 2027,
+          "count": 0
+        }
+      ],
+      "orderWarning": "Page states picks are accurate as of the beginning of Round 1; Published and Updated fields are blank in the captured page.",
+      "cutoffConfidence": "reconstructed; original combine measurement timestamps unavailable",
+      "runs": [
+        {
+          "seed": "integrity-a",
+          "selections": 259,
+          "trades": 28,
+          "signature": "b9cce628369c3712244edd0ef18acbe1d1435e590147fa5989b27cd8cd5fdc3f",
+          "poisonInvariant": true
+        },
+        {
+          "seed": "integrity-b",
+          "selections": 259,
+          "trades": 31,
+          "signature": "a26fc05395115126e71c77a84295486f1c699647f3fc44db35680acf3850ee7c",
+          "poisonInvariant": true
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "cutoff": "2024-04-25T23:59:00Z",
+      "playable": 321,
+      "referenceOnly": 31,
+      "picks": 257,
+      "actualDrafteesPlayable": 226,
+      "allMeasurementsMissing": 0,
+      "measurementMissingCells": 1018,
+      "lateAvailability": 0,
+      "fitThrough": 2017,
+      "minimumBlindGroup": 5,
+      "contextAvailable": false,
+      "observedRegularGames": [
+        {
+          "season": 2024,
+          "count": 272
+        },
+        {
+          "season": 2025,
+          "count": 272
+        },
+        {
+          "season": 2026,
+          "count": 136
+        },
+        {
+          "season": 2027,
+          "count": 0
+        },
+        {
+          "season": 2028,
+          "count": 0
+        }
+      ],
+      "orderWarning": "Page states picks are accurate as of the beginning of Round 1; page Updated timestamp is 13 minutes after Round 1 start.",
+      "cutoffConfidence": "reconstructed; original combine measurement timestamps unavailable",
+      "runs": [
+        {
+          "seed": "integrity-a",
+          "selections": 257,
+          "trades": 29,
+          "signature": "7d1e9eed5f5fe7f173948aab60481e8fe3e827165799d2e1f123960b59548913",
+          "poisonInvariant": true
+        },
+        {
+          "seed": "integrity-b",
+          "selections": 257,
+          "trades": 30,
+          "signature": "775b35d5f9bb337d21a04b7cd133fc73a6184f6abb5de7889ed3aeff277a72ff",
+          "poisonInvariant": true
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "cutoff": "2025-04-24T23:59:00Z",
+      "playable": 329,
+      "referenceOnly": 19,
+      "picks": 257,
+      "actualDrafteesPlayable": 238,
+      "allMeasurementsMissing": 0,
+      "measurementMissingCells": 1141,
+      "lateAvailability": 0,
+      "fitThrough": 2017,
+      "minimumBlindGroup": 5,
+      "contextAvailable": false,
+      "observedRegularGames": [
+        {
+          "season": 2025,
+          "count": 272
+        },
+        {
+          "season": 2026,
+          "count": 136
+        },
+        {
+          "season": 2027,
+          "count": 0
+        },
+        {
+          "season": 2028,
+          "count": 0
+        },
+        {
+          "season": 2029,
+          "count": 0
+        }
+      ],
+      "orderWarning": "Owners are the NFL.com primary order as of Round 1; trade data mismatches are retained in audit metadata.",
+      "cutoffConfidence": "reconstructed; original combine measurement timestamps unavailable",
+      "runs": [
+        {
+          "seed": "integrity-a",
+          "selections": 257,
+          "trades": 28,
+          "signature": "4462be84c249b811fd85f83d79dcd3cde43612ff45612823691468209f637107",
+          "poisonInvariant": true
+        },
+        {
+          "seed": "integrity-b",
+          "selections": 257,
+          "trades": 32,
+          "signature": "1e3d57cf5056416408be6341b0137a9d4cb9e4d91c353ef815cabaa70a2fd1ef",
+          "poisonInvariant": true
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "cutoff": "2026-04-22T23:59:00Z",
+      "playable": 319,
+      "referenceOnly": 34,
+      "picks": 257,
+      "actualDrafteesPlayable": 223,
+      "allMeasurementsMissing": 0,
+      "measurementMissingCells": 1204,
+      "lateAvailability": 0,
+      "fitThrough": 2017,
+      "minimumBlindGroup": 5,
+      "contextAvailable": false,
+      "observedRegularGames": [
+        {
+          "season": 2026,
+          "count": 136
+        },
+        {
+          "season": 2027,
+          "count": 0
+        },
+        {
+          "season": 2028,
+          "count": 0
+        },
+        {
+          "season": 2029,
+          "count": 0
+        },
+        {
+          "season": 2030,
+          "count": 0
+        }
+      ],
+      "orderWarning": "Owners are the NFL Football Operations primary order as of April 22; trade-data mismatches are retained in audit metadata.",
+      "cutoffConfidence": "reconstructed; original combine measurement timestamps unavailable",
+      "runs": [
+        {
+          "seed": "integrity-a",
+          "selections": 257,
+          "trades": 27,
+          "signature": "d6ac6c831854d1a82e64cc256f0b6fd9d1df3eaf2487a210c44b16e3652a29bc",
+          "poisonInvariant": true
+        },
+        {
+          "seed": "integrity-b",
+          "selections": 257,
+          "trades": 31,
+          "signature": "b945af512125fd0e818e8bca81e5737270efebf7047adb1ca8c88f5a974a80b6",
+          "poisonInvariant": true
+        }
+      ]
+    }
+  ],
+  "failures": []
+}

@@ -1,4 +1,4 @@
-"""Exact finite-donor forecast audit; does not refit or change production forecasts.
+"""Exact finite-donor forecast audit; matches production schedule exposure without refitting donor forecasts.
 
 All 2018 labels here are evaluation-only. They were already examined before this
 audit: these results are reused historical backtests, not a new untouched test.
@@ -78,6 +78,16 @@ def summarize(rows):
     return result
 
 
+def donor_total(donor, kind, cohort=2018):
+    """Match runtime exposure, including JS Math.round for nonnegative games."""
+    total = 0.
+    for age, value in enumerate(donor[kind]):
+        scheduled = 17 if cohort + age >= 2021 else 16
+        projected = value * scheduled / 16
+        total += min(scheduled, math.floor(projected + .5)) if kind == 'games' else projected
+    return total
+
+
 def run():
     strict = json.loads((A / 'five_year_strict_2018.json').read_text())
     frame = pd.read_csv(A / 'five_year_frozen_2018_predictions.csv')
@@ -89,13 +99,13 @@ def run():
         record = {'prospectId': player['prospectId'], 'position': player['position']}
         base = dict(record)
         for kind in ['snaps', 'games']:
-            values = np.array([sum(d[kind]) for d in pool], dtype=float)
+            values = np.array([donor_total(d, kind) for d in pool], dtype=float)
             actual = sum(player[f'{kind}{i}'] for i in range(1, 6))
             record[kind] = evaluate_distribution(values, w, actual)
             base[kind] = evaluate_distribution(values, baseline_w, actual)
         records.append(record)
         baseline_records.append(base)
-        pools.append((np.array([sum(d['snaps']) for d in pool], dtype=float), w))
+        pools.append((np.array([donor_total(d, 'snaps') for d in pool], dtype=float), w))
     by_position = {}
     for pos in sorted(frame.position.unique()):
         indices = [i for i, r in enumerate(records) if r['position'] == pos]
@@ -123,11 +133,12 @@ def run():
     delta = np.array([r['snaps']['crps']-b['snaps']['crps'] for r,b in zip(records,baseline_records)])
     rng = np.random.default_rng(20261104)
     bootstrap = [delta[rng.integers(0,len(delta),len(delta))].mean() for _ in range(2000)]
-    result = {'version': 'exact-donor-audit-v1', 'asOf': '2026-11-04',
+    result = {'version': 'exact-donor-audit-v2-schedule-exposure', 'asOf': '2026-11-04',
         'evaluationStatus': 'Reused 2018 historical backtest; no new untouched test claim.',
-        'runtimeArtifactChanged': False, 'cohort': 2018, 'outcomeSeasons': [2018,2022],
+        'runtimeArtifactChanged': True, 'cohort': 2018, 'outcomeSeasons': [2018,2022],
         'strictCutoff': strict['cutoff'], 'donorCohorts': strict['cohorts'],
-        'methods': {'quantiles': 'left inverse of exact weighted empirical CDF',
+        'methods': {'scheduleExposure': 'Donor snaps scale by target scheduled games / 16; games scale, round half up, and cap at target schedule length. Actual outcomes unchanged.',
+                    'quantiles': 'left inverse of exact weighted empirical CDF',
                     'distributionScore': 'CRPS, exact finite mixture; lower is better',
                     'intervalScore': 'proper interval score includes misses and width; lower is better',
                     'coverageUncertainty': 'Wilson 95%; descriptive, approximate independent-player assumption'},
@@ -139,12 +150,12 @@ def run():
         'subgroups': by_position, 'finiteEnsembleSeeds': finite,
         'specialists': {'status':'unsupported quality target; no specialist outcome coverage claim',
                         'support':strict['supportByPosition']['ST']},
-        'sourceHashes': {str(p.relative_to(ROOT)):sha(p) for p in [A/'five_year_strict_2018.json',A/'five_year_frozen_2018_predictions.csv',A/'model.json']},
+        'sourceHashes': {str(p.relative_to(ROOT)):sha(p) for p in [A/'five_year_strict_2018.json',A/'five_year_frozen_2018_predictions.csv',A/'model.json', Path(__file__), ROOT/'lib/simulation.ts', ROOT/'lib/engine.ts', ROOT/'lib/server-data.ts']},
         'limitations': ['2013 is the only fully observed strict donor cohort; no independent pre2018 five-year chronological validation exists.',
             'Exact integration removes Monte Carlo noise from this audit; it does not broaden donor support or fix undercoverage.',
             'Games means games with recorded snaps, not official appearances or starts.',
             'Forecasts precede capacity/opportunity transformations and are not validated causal wins.',
-            'A 17-game future season changes exposure; strict donors all come from 16-game seasons.',
+            'Strict donors come from 16-game seasons; deterministic 17/16 exposure scaling is an assumption and does not validate future-era transfer.',
             'No parameter, source revision, selection bias, or counterfactual model uncertainty is captured.']}
     (A/'forecast_audit.json').write_text(json.dumps(result,indent=2)+'\n')
     pd.DataFrame([{**{'prospectId':r['prospectId'],'position':r['position']},
