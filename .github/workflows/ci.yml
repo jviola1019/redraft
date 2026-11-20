@@ -32,6 +32,10 @@ jobs:
       - run: pnpm run db:local-init
       - run: node tests/local-http.mjs
       - run: pnpm exec playwright install --with-deps chromium webkit
+      - name: Check the offline scouting study forms and response export
+        run: |
+          python3 -m unittest discover -s research/recognition_trial
+          node research/recognition_trial/browser.mjs
       - name: Chromium desktop and phone viewport
         run: node tests/browser.mjs --start-server
       - name: WebKit desktop and phone viewport

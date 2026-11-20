@@ -1,0 +1,931 @@
+{
+  "protocolSha256": "93dffa8433c5e6c1fe422b0fa1b73fb71333cdf179204a042d04b289e7064a24",
+  "fixtureSha256": "a53d62c9fc9ac783c1203a568159937491ef779db5f6ab3482a606f6a8af088f",
+  "sourceHashes": {
+    "lib/engine.ts": "3ccb1d7fda59fa60ea691e154a89776896b24b347ec6ec2c2a596686e7cb3918",
+    "lib/simulation.ts": "e03f6afab57ae9c5288eaa343e58a9f977e2dee51c73ab77f06cdf6d75ac49ca",
+    "lib/scouting.ts": "751b61f9f77e62c64e1623831dc75144b48d691f63497eb78298a978e63b6ca8",
+    "lib/server-data.ts": "0ede48d68b376a2ad5adb3633680bfa0f067e3a2469aeff3d3b10338fb556be3",
+    "analytics/cpu-position-capital-v1.json": "a871357b55b4ac780f2eb63a12980610b49666b146dae11f8eeeb94e63aac971",
+    "analytics/model.json": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0",
+    "analytics/five_year_strict_2018.json": "a717e2d683ab57c8f79f963d672598810593bae69945c8d00db82857d6c647e1",
+    "analytics/scoring_recalibration.json": "cd91ac43583c3186c18ec760fa860b5e3fae59aedaedf0cadb4b0cef90ec3377",
+    "data/clean/team_context_2018.json": "a2667b83e75fc20afb9318c362cfa1a28745e2db4d7864084533a19294497301",
+    "data/clean/team_context_source_manifest.json": "776ef8fd8b8200e9b9946e3ed014bd76061fc63586005d96142bf83f7656ec18",
+    "data/processed/scenario-2018.json": "b7895eef7862ccfb45cff5f2f4b6e347abd809c1905ed274883d55cc237f59d8",
+    "data/processed/scenario-2019.json": "88ef4b175bfc7ddf8c2d32541b1b8371836f09f6e961f4bb8a36b0db0bf5f28c",
+    "data/processed/scenario-2020.json": "527ff4f9770199052a6405d9d56cf503f150b998dddbcfbd947e686c060b624b",
+    "data/processed/scenario-2021.json": "37e217bfa4ca2ae97aa34a889b32b0dfef683f4884deefc6569e4b9e8eeaebc6",
+    "data/processed/scenario-2022.json": "ea6846602cddfe179544b1d845c811a1848c59de69084c210c03080ac4d46f63",
+    "data/processed/scenario-2023.json": "14587193998afcb61ca2c95c50ee641ba709246a5b3a9c8187855b94e894611f",
+    "data/processed/scenario-2024.json": "6a6d794cdf0747d7a03ba92549d4d8165b149a19b04eb32588b679e6c50e8323",
+    "data/processed/scenario-2025.json": "8f80dab73fa8b50a92a6b0ec499419dfd07eade6398ebda59b5117aac62b13b7",
+    "data/processed/scenario-2026.json": "c30d6a697573fc39488b13a91eb7c3863aa780c14a81f446e06dd0e3a86638ca",
+    "data/processed/scenario-coverage.json": "0d42970e685e510b6554c7fea7675e7f3a5aecb525aabb1c6b7e155ec0058ca3",
+    "analytics/model-2019.json": "2da02bcb4d6da178a635852e61c4ee7488f9551f346c9560f680ce99f13176cf",
+    "analytics/model-2020.json": "35d80e75ae50e8ada8c9ad96db2fd965e38f9dea06bc0f298b899f51497c3bdc",
+    "analytics/model-2021.json": "1e71a80b75350169b9c266185e773bbb7ab99a34df9d1698b7437b95ed21a649",
+    "analytics/model-2022.json": "9579d70620a4f20ede36008bdcc745d913f8ba1aa7f64b4276104561491b8457",
+    "analytics/model-2023.json": "3b7a67a1f83c32ba8461abe9608f3f2c18e8a17e34b60c20768099d9b23c78cb",
+    "analytics/model-2024.json": "1c4b07f22dc40575623920f108335d8990c07a53511db5e0c6bd740398102e9d",
+    "analytics/model-2025.json": "4b753663702af949cc2474da986eadbe1e23966ce58778928590353c0f774397",
+    "analytics/model-2026.json": "a4380ba61137af8813883ec3b021acfb73ee755fd51fdef1004d9f68d25f8ad4",
+    "./audit.mjs": "ee7f143f61e92b5974c3652d15b521f20c8a8f81045d03295737a7273aa716b0",
+    "../../app/api/game/route.ts": "062855594a0b8a2001793384878afda9689b8666348753932920bdff4694d513",
+    "../runtime_loader.mjs": "3a12906701c5c5d5164aafcf0fa091d31e54a41c7e6861447fde0cec5963765c",
+    "../rubric_multiday/audit.mjs": "d5b2459e18dab73723bb4812a48c0aba3d9b91f1d0fdfd3b8a1f48e14be2085a",
+    "../rubric_multiday/runtime.mjs": "02b73df589d3c31f6f74c75f04156a07e3fdbc175bdc38407af4b97dbff43c17",
+    "../../data/clean/johnson-values.json": "cfc86c071618d003d0409cec72075934c4905b0bbcae24e4c3ca0f5414992db6"
+  },
+  "summary": {
+    "up": {
+      "executed": 6,
+      "totalDates": 6,
+      "structural": 2872,
+      "withinRatioCap": 2794,
+      "approved": 291,
+      "declined": 2503
+    },
+    "down": {
+      "executed": 6,
+      "totalDates": 6,
+      "structural": 4913,
+      "withinRatioCap": 2819,
+      "approved": 1081,
+      "declined": 1738
+    }
+  },
+  "days": [
+    {
+      "date": "2026-11-01",
+      "team": "CIN",
+      "year": 2026,
+      "markets": {
+        "up": {
+          "atPick": 1,
+          "selectionCount": 0,
+          "counts": {
+            "structural": 672,
+            "aboveRatioCap": 31,
+            "withinRatioCap": 641,
+            "approved": 67,
+            "declined": 574
+          },
+          "declinesByReason": {
+            "Declined: insufficient available compensation.": 294,
+            "Declined. The team requests additional draft capital.": 280
+          },
+          "exampleDecline": {
+            "offer": {
+              "target": "HOU",
+              "give": [
+                41,
+                72,
+                221
+              ],
+              "receive": [
+                28
+              ]
+            },
+            "evaluation": {
+              "accepted": false,
+              "giveValue": 723,
+              "receiveValue": 660,
+              "ratio": 1.0954545454545455,
+              "reason": "Declined. The team requests additional draft capital.",
+              "counter": {
+                "target": "HOU",
+                "give": [
+                  41,
+                  72,
+                  221,
+                  226,
+                  199
+                ],
+                "receive": [
+                  28
+                ]
+              }
+            }
+          },
+          "chosen": {
+            "offer": {
+              "target": "CLE",
+              "give": [
+                41,
+                72,
+                110
+              ],
+              "receive": [
+                24
+              ]
+            },
+            "evaluation": {
+              "accepted": true,
+              "giveValue": 794,
+              "receiveValue": 740,
+              "ratio": 1.072972972972973,
+              "reason": "Accepted: the offer clears this team’s value premium.",
+              "counter": null
+            },
+            "move": 17
+          }
+        },
+        "down": {
+          "atPick": 41,
+          "selectionCount": 40,
+          "counts": {
+            "structural": 662,
+            "aboveRatioCap": 194,
+            "withinRatioCap": 468,
+            "approved": 178,
+            "declined": 290
+          },
+          "declinesByReason": {
+            "Declined. The team requests additional draft capital.": 284,
+            "Declined: insufficient available compensation.": 6
+          },
+          "exampleDecline": {
+            "offer": {
+              "target": "NE",
+              "give": [
+                41
+              ],
+              "receive": [
+                63,
+                95,
+                131
+              ]
+            },
+            "evaluation": {
+              "accepted": false,
+              "giveValue": 490,
+              "receiveValue": 437,
+              "ratio": 1.1212814645308924,
+              "reason": "Declined. The team requests additional draft capital.",
+              "counter": {
+                "target": "NE",
+                "give": [
+                  41,
+                  226,
+                  221,
+                  199
+                ],
+                "receive": [
+                  63,
+                  95,
+                  131
+                ]
+              }
+            }
+          },
+          "chosen": {
+            "offer": {
+              "target": "BAL",
+              "give": [
+                41
+              ],
+              "receive": [
+                45,
+                211,
+                250
+              ]
+            },
+            "evaluation": {
+              "accepted": true,
+              "giveValue": 490,
+              "receiveValue": 458,
+              "ratio": 1.0698689956331877,
+              "reason": "Accepted: the offer clears this team’s value premium.",
+              "counter": null
+            },
+            "move": 4
+          }
+        }
+      }
+    },
+    {
+      "date": "2026-11-02",
+      "team": "KC",
+      "year": 2020,
+      "markets": {
+        "up": {
+          "atPick": 1,
+          "selectionCount": 0,
+          "counts": {
+            "structural": 310,
+            "aboveRatioCap": 10,
+            "withinRatioCap": 300,
+            "approved": 33,
+            "declined": 267
+          },
+          "declinesByReason": {
+            "Declined: insufficient available compensation.": 170,
+            "Declined. The team requests additional draft capital.": 97
+          },
+          "exampleDecline": {
+            "offer": {
+              "target": "NE",
+              "give": [
+                32,
+                63,
+                138
+              ],
+              "receive": [
+                23
+              ]
+            },
+            "evaluation": {
+              "accepted": false,
+              "giveValue": 863,
+              "receiveValue": 760,
+              "ratio": 1.1355263157894737,
+              "reason": "Declined. The team requests additional draft capital.",
+              "counter": {
+                "target": "NE",
+                "give": [
+                  32,
+                  63,
+                  138,
+                  177
+                ],
+                "receive": [
+                  23
+                ]
+              }
+            }
+          },
+          "chosen": {
+            "offer": {
+              "target": "JAX",
+              "give": [
+                32,
+                63,
+                96
+              ],
+              "receive": [
+                20
+              ]
+            },
+            "evaluation": {
+              "accepted": true,
+              "giveValue": 942,
+              "receiveValue": 850,
+              "ratio": 1.108235294117647,
+              "reason": "Accepted: the offer clears this team’s value premium.",
+              "counter": null
+            },
+            "move": 12
+          }
+        },
+        "down": {
+          "atPick": 32,
+          "selectionCount": 31,
+          "counts": {
+            "structural": 771,
+            "aboveRatioCap": 191,
+            "withinRatioCap": 580,
+            "approved": 160,
+            "declined": 420
+          },
+          "declinesByReason": {
+            "Declined. The team requests additional draft capital.": 407,
+            "Declined: insufficient available compensation.": 13
+          },
+          "exampleDecline": {
+            "offer": {
+              "target": "JAX",
+              "give": [
+                32
+              ],
+              "receive": [
+                42,
+                189
+              ]
+            },
+            "evaluation": {
+              "accepted": false,
+              "giveValue": 550,
+              "receiveValue": 495.8,
+              "ratio": 1.1093182734973779,
+              "reason": "Declined. The team requests additional draft capital.",
+              "counter": {
+                "target": "JAX",
+                "give": [
+                  32,
+                  177
+                ],
+                "receive": [
+                  42,
+                  189
+                ]
+              }
+            }
+          },
+          "chosen": {
+            "offer": {
+              "target": "HOU",
+              "give": [
+                32
+              ],
+              "receive": [
+                40,
+                240,
+                248
+              ]
+            },
+            "evaluation": {
+              "accepted": true,
+              "giveValue": 550,
+              "receiveValue": 502,
+              "ratio": 1.095617529880478,
+              "reason": "Accepted: the offer clears this team’s value premium.",
+              "counter": null
+            },
+            "move": 8
+          }
+        }
+      }
+    },
+    {
+      "date": "2026-11-03",
+      "team": "DEN",
+      "year": 2025,
+      "markets": {
+        "up": {
+          "atPick": 1,
+          "selectionCount": 0,
+          "counts": {
+            "structural": 399,
+            "aboveRatioCap": 15,
+            "withinRatioCap": 384,
+            "approved": 40,
+            "declined": 344
+          },
+          "declinesByReason": {
+            "Declined: insufficient available compensation.": 147,
+            "Declined. The team requests additional draft capital.": 197
+          },
+          "exampleDecline": {
+            "offer": {
+              "target": "SF",
+              "give": [
+                20,
+                51,
+                85
+              ],
+              "receive": [
+                11
+              ]
+            },
+            "evaluation": {
+              "accepted": false,
+              "giveValue": 1405,
+              "receiveValue": 1250,
+              "ratio": 1.124,
+              "reason": "Declined. The team requests additional draft capital.",
+              "counter": {
+                "target": "SF",
+                "give": [
+                  20,
+                  51,
+                  85,
+                  208,
+                  197
+                ],
+                "receive": [
+                  11
+                ]
+              }
+            }
+          },
+          "chosen": {
+            "offer": {
+              "target": "CHI",
+              "give": [
+                20,
+                51,
+                85
+              ],
+              "receive": [
+                10
+              ]
+            },
+            "evaluation": {
+              "accepted": true,
+              "giveValue": 1405,
+              "receiveValue": 1300,
+              "ratio": 1.0807692307692307,
+              "reason": "Accepted: the offer clears this team’s value premium.",
+              "counter": null
+            },
+            "move": 10
+          }
+        },
+        "down": {
+          "atPick": 20,
+          "selectionCount": 19,
+          "counts": {
+            "structural": 871,
+            "aboveRatioCap": 360,
+            "withinRatioCap": 511,
+            "approved": 236,
+            "declined": 275
+          },
+          "declinesByReason": {
+            "Declined. The team requests additional draft capital.": 274,
+            "Declined: insufficient available compensation.": 1
+          },
+          "exampleDecline": {
+            "offer": {
+              "target": "GB",
+              "give": [
+                20
+              ],
+              "receive": [
+                23,
+                237
+              ]
+            },
+            "evaluation": {
+              "accepted": false,
+              "giveValue": 850,
+              "receiveValue": 761,
+              "ratio": 1.1169513797634691,
+              "reason": "Declined. The team requests additional draft capital.",
+              "counter": {
+                "target": "GB",
+                "give": [
+                  20,
+                  208,
+                  197
+                ],
+                "receive": [
+                  23,
+                  237
+                ]
+              }
+            }
+          },
+          "chosen": {
+            "offer": {
+              "target": "LAC",
+              "give": [
+                20
+              ],
+              "receive": [
+                22,
+                199
+              ]
+            },
+            "evaluation": {
+              "accepted": true,
+              "giveValue": 850,
+              "receiveValue": 791.8,
+              "ratio": 1.0735034099520082,
+              "reason": "Accepted: the offer clears this team’s value premium.",
+              "counter": null
+            },
+            "move": 2
+          }
+        }
+      }
+    },
+    {
+      "date": "2026-11-04",
+      "team": "CLE",
+      "year": 2025,
+      "markets": {
+        "up": {
+          "atPick": 1,
+          "selectionCount": 0,
+          "counts": {
+            "structural": 28,
+            "aboveRatioCap": 0,
+            "withinRatioCap": 28,
+            "approved": 7,
+            "declined": 21
+          },
+          "declinesByReason": {
+            "Declined. The team requests additional draft capital.": 21
+          },
+          "exampleDecline": {
+            "offer": {
+              "target": "TEN",
+              "give": [
+                2,
+                67,
+                94
+              ],
+              "receive": [
+                1
+              ]
+            },
+            "evaluation": {
+              "accepted": false,
+              "giveValue": 2979,
+              "receiveValue": 3000,
+              "ratio": 0.993,
+              "reason": "Declined. The team requests additional draft capital.",
+              "counter": {
+                "target": "TEN",
+                "give": [
+                  2,
+                  67,
+                  94,
+                  200,
+                  192,
+                  166,
+                  104,
+                  33
+                ],
+                "receive": [
+                  1
+                ]
+              }
+            }
+          },
+          "chosen": {
+            "offer": {
+              "target": "TEN",
+              "give": [
+                2,
+                33
+              ],
+              "receive": [
+                1
+              ]
+            },
+            "evaluation": {
+              "accepted": true,
+              "giveValue": 3180,
+              "receiveValue": 3000,
+              "ratio": 1.06,
+              "reason": "Accepted: the offer clears this team’s value premium.",
+              "counter": null
+            },
+            "move": 1
+          }
+        },
+        "down": {
+          "atPick": 2,
+          "selectionCount": 1,
+          "counts": {
+            "structural": 919,
+            "aboveRatioCap": 829,
+            "withinRatioCap": 90,
+            "approved": 65,
+            "declined": 25
+          },
+          "declinesByReason": {
+            "Declined. The team requests additional draft capital.": 25
+          },
+          "exampleDecline": {
+            "offer": {
+              "target": "NE",
+              "give": [
+                2
+              ],
+              "receive": [
+                4,
+                38
+              ]
+            },
+            "evaluation": {
+              "accepted": false,
+              "giveValue": 2600,
+              "receiveValue": 2320,
+              "ratio": 1.1206896551724137,
+              "reason": "Declined. The team requests additional draft capital.",
+              "counter": {
+                "target": "NE",
+                "give": [
+                  2,
+                  200
+                ],
+                "receive": [
+                  4,
+                  38
+                ]
+              }
+            }
+          },
+          "chosen": {
+            "offer": {
+              "target": "NYG",
+              "give": [
+                2
+              ],
+              "receive": [
+                3,
+                99,
+                154
+              ]
+            },
+            "evaluation": {
+              "accepted": true,
+              "giveValue": 2600,
+              "receiveValue": 2333.8,
+              "ratio": 1.1140629017053731,
+              "reason": "Accepted: the offer clears this team’s value premium.",
+              "counter": null
+            },
+            "move": 1
+          }
+        }
+      }
+    },
+    {
+      "date": "2026-11-05",
+      "team": "DET",
+      "year": 2025,
+      "markets": {
+        "up": {
+          "atPick": 1,
+          "selectionCount": 0,
+          "counts": {
+            "structural": 567,
+            "aboveRatioCap": 18,
+            "withinRatioCap": 549,
+            "approved": 49,
+            "declined": 500
+          },
+          "declinesByReason": {
+            "Declined: insufficient available compensation.": 315,
+            "Declined. The team requests additional draft capital.": 185
+          },
+          "exampleDecline": {
+            "offer": {
+              "target": "SEA",
+              "give": [
+                28,
+                60,
+                196
+              ],
+              "receive": [
+                18
+              ]
+            },
+            "evaluation": {
+              "accepted": false,
+              "giveValue": 973,
+              "receiveValue": 900,
+              "ratio": 1.0811111111111111,
+              "reason": "Declined. The team requests additional draft capital.",
+              "counter": {
+                "target": "SEA",
+                "give": [
+                  28,
+                  60,
+                  196,
+                  244,
+                  228,
+                  130
+                ],
+                "receive": [
+                  18
+                ]
+              }
+            }
+          },
+          "chosen": {
+            "offer": {
+              "target": "CIN",
+              "give": [
+                28,
+                60,
+                102
+              ],
+              "receive": [
+                17
+              ]
+            },
+            "evaluation": {
+              "accepted": true,
+              "giveValue": 1052,
+              "receiveValue": 950,
+              "ratio": 1.1073684210526316,
+              "reason": "Accepted: the offer clears this team’s value premium.",
+              "counter": null
+            },
+            "move": 11
+          }
+        },
+        "down": {
+          "atPick": 28,
+          "selectionCount": 27,
+          "counts": {
+            "structural": 1039,
+            "aboveRatioCap": 322,
+            "withinRatioCap": 717,
+            "approved": 295,
+            "declined": 422
+          },
+          "declinesByReason": {
+            "Declined. The team requests additional draft capital.": 399,
+            "Declined: insufficient available compensation.": 23
+          },
+          "exampleDecline": {
+            "offer": {
+              "target": "JAX",
+              "give": [
+                28
+              ],
+              "receive": [
+                36,
+                142,
+                182
+              ]
+            },
+            "evaluation": {
+              "accepted": false,
+              "giveValue": 660,
+              "receiveValue": 593.6,
+              "ratio": 1.1118598382749325,
+              "reason": "Declined. The team requests additional draft capital.",
+              "counter": {
+                "target": "JAX",
+                "give": [
+                  28,
+                  244,
+                  228,
+                  196
+                ],
+                "receive": [
+                  36,
+                  142,
+                  182
+                ]
+              }
+            }
+          },
+          "chosen": {
+            "offer": {
+              "target": "BAL",
+              "give": [
+                28
+              ],
+              "receive": [
+                30,
+                243
+              ]
+            },
+            "evaluation": {
+              "accepted": true,
+              "giveValue": 660,
+              "receiveValue": 621,
+              "ratio": 1.0628019323671498,
+              "reason": "Accepted: the offer clears this team’s value premium.",
+              "counter": null
+            },
+            "move": 2
+          }
+        }
+      }
+    },
+    {
+      "date": "2026-11-06",
+      "team": "HOU",
+      "year": 2021,
+      "markets": {
+        "up": {
+          "atPick": 1,
+          "selectionCount": 0,
+          "counts": {
+            "structural": 896,
+            "aboveRatioCap": 4,
+            "withinRatioCap": 892,
+            "approved": 95,
+            "declined": 797
+          },
+          "declinesByReason": {
+            "Declined: insufficient available compensation.": 448,
+            "Declined. The team requests additional draft capital.": 349
+          },
+          "exampleDecline": {
+            "offer": {
+              "target": "LAR",
+              "give": [
+                67,
+                109,
+                147
+              ],
+              "receive": [
+                57
+              ]
+            },
+            "evaluation": {
+              "accepted": false,
+              "giveValue": 363.6,
+              "receiveValue": 330,
+              "ratio": 1.1018181818181818,
+              "reason": "Declined. The team requests additional draft capital.",
+              "counter": {
+                "target": "LAR",
+                "give": [
+                  67,
+                  109,
+                  147,
+                  233,
+                  212
+                ],
+                "receive": [
+                  57
+                ]
+              }
+            }
+          },
+          "chosen": {
+            "offer": {
+              "target": "KC",
+              "give": [
+                67,
+                109,
+                212
+              ],
+              "receive": [
+                58
+              ]
+            },
+            "evaluation": {
+              "accepted": true,
+              "giveValue": 337.6,
+              "receiveValue": 320,
+              "ratio": 1.0550000000000002,
+              "reason": "Accepted: the offer clears this team’s value premium.",
+              "counter": null
+            },
+            "move": 9
+          }
+        },
+        "down": {
+          "atPick": 67,
+          "selectionCount": 66,
+          "counts": {
+            "structural": 651,
+            "aboveRatioCap": 198,
+            "withinRatioCap": 453,
+            "approved": 147,
+            "declined": 306
+          },
+          "declinesByReason": {
+            "Declined. The team requests additional draft capital.": 269,
+            "Declined: insufficient available compensation.": 37
+          },
+          "exampleDecline": {
+            "offer": {
+              "target": "MIN",
+              "give": [
+                67
+              ],
+              "receive": [
+                78,
+                168
+              ]
+            },
+            "evaluation": {
+              "accepted": false,
+              "giveValue": 255,
+              "receiveValue": 224.2,
+              "ratio": 1.137377341659233,
+              "reason": "Declined. The team requests additional draft capital.",
+              "counter": {
+                "target": "MIN",
+                "give": [
+                  67,
+                  233
+                ],
+                "receive": [
+                  78,
+                  168
+                ]
+              }
+            }
+          },
+          "chosen": {
+            "offer": {
+              "target": "DEN",
+              "give": [
+                67
+              ],
+              "receive": [
+                71,
+                237,
+                239
+              ]
+            },
+            "evaluation": {
+              "accepted": true,
+              "giveValue": 255,
+              "receiveValue": 237,
+              "ratio": 1.0759493670886076,
+              "reason": "Accepted: the offer clears this team’s value premium.",
+              "counter": null
+            },
+            "move": 4
+          }
+        }
+      }
+    }
+  ]
+}

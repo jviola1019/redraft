@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>REDRAFT scouting study</title>
+<style>
+*{box-sizing:border-box}body{max-width:620px;margin:2rem auto;padding:0 16px;background:#f6f4ed;color:#193b30;font:17px/1.5 system-ui}h1{font-size:2rem;line-height:1.1}fieldset{margin:1rem 0;border:1px solid #86958a;padding:1rem}legend{font-weight:700}button,select,input[type=text]{font:inherit;padding:.65rem}button{color:white;background:#193b30;border:0}label{display:block;margin:.5rem 0}input[type=text]{width:100%}[hidden]{display:none}
+</style><main><h1>2018 scouting study</h1><section id="intro"><p>You’ll compare eight pairs of players. Choose whom you would scout first and guess either name if you recognize the player. You can leave a guess blank. Please work without outside lookups.</p><p>Your answers stay on this device. At the end you can download your responses to share with the study organizer. Closing or refreshing the page discards unsaved answers.</p>
+<label>How closely do you follow the NFL draft? <select id="experience"><option value="">Select one</option><option value="closely">Closely</option><option value="occasionally">Occasionally or never</option></select></label><button id="start">Begin</button></section>
+<form id="trial" hidden><h2 id="heading" aria-live="polite" tabindex="-1"></h2><p id="facts"></p><fieldset><legend>Who would you scout first?</legend><label><input type="radio" name="choice" value="0" required> Player A <span id="schoolA"></span></label><label><input type="radio" name="choice" value="1" required> Player B <span id="schoolB"></span></label></fieldset><label>Player A full name (optional)<input type="text" maxlength="85" id="guessA" autocomplete="off"></label><label>Player B full name (optional)<input type="text" maxlength="85" id="guessB" autocomplete="off"></label><button type="submit">Save answer and continue</button></form>
+<section hidden id="finish"><h2>Eight pairs completed</h2><p>Download your responses if you wish to share them with the organizer.</p><button id="save">Download responses</button></section></main>
+<script>
+const config=/*STUDY_DATA*/null;
+const by=id=>document.getElementById(id);
+const responses=[];
+const draw=()=>crypto.getRandomValues(new Uint32Array(1))[0];
+const participant=Array.from(crypto.getRandomValues(new Uint8Array(16)),v=>v.toString(16).padStart(2,'0')).join('');
+const order=config.items.slice();
+for(let i=order.length-1;i>0;i--){const j=Math.floor(draw()/4294967296*(i+1));[order[i],order[j]]=[order[j],order[i]];}
+function show(){
+ const pair=order[responses.length];by('trial').reset();
+ by('heading').textContent='Pair '+(responses.length+1)+' of 8 · '+pair.position;
+ by('facts').textContent='Both players share this scouting profile. Height: '+pair.height+'. Weight: '+pair.weight+'. Group chance of 200 rookie snaps: '+pair.range+'.';
+ by('schoolA').textContent=pair.colleges?'· '+pair.colleges[0]:'· School hidden';
+ by('schoolB').textContent=pair.colleges?'· '+pair.colleges[1]:'· School hidden';
+ by('heading').focus();
+}
+by('start').onclick=()=>{if(!by('experience').value){by('experience').focus();return;}by('intro').hidden=true;by('trial').hidden=false;show();};
+by('trial').onsubmit=event=>{event.preventDefault();responses.push({item:order[responses.length].item,choice:Number(new FormData(by('trial')).get('choice')),guesses:[by('guessA').value.trim(),by('guessB').value.trim()]});if(responses.length<order.length){show();return;}by('trial').hidden=true;by('finish').hidden=false;by('save').focus();};
+by('save').onclick=()=>{const payload={study:config.study,keyId:config.keyId,form:config.form,participant,experience:by('experience').value,responses};const url=URL.createObjectURL(new Blob([JSON.stringify(payload)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='recognition-'+participant+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
+</script></html>

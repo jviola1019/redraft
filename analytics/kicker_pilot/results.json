@@ -1,0 +1,314 @@
+{
+  "all": {
+    "made": 0.842643391521197,
+    "baseline": 0.8410877776484301,
+    "candidate": 0.8541917419251692,
+    "baseline_loss": 0.37350695628795544,
+    "candidate_loss": 0.37278232119099636,
+    "paired_loss": -0.0007246350969590978,
+    "baseline_brier": 0.11640501222824744,
+    "candidate_brier": 0.1161817378447981,
+    "attempts": 4010,
+    "kickers": 56
+  },
+  "seasons": {
+    "2014": {
+      "made": 0.839918946301925,
+      "baseline": 0.8348528854936165,
+      "candidate": 0.8511007893136661,
+      "baseline_loss": 0.37017800188085986,
+      "candidate_loss": 0.3694342682367875,
+      "paired_loss": -0.0007437336440723415,
+      "baseline_brier": 0.11564403243501101,
+      "candidate_brier": 0.11580979296735194,
+      "attempts": 987,
+      "kickers": 37
+    },
+    "2015": {
+      "made": 0.8449848024316109,
+      "baseline": 0.8358620357700536,
+      "candidate": 0.8483507102196015,
+      "baseline_loss": 0.36794842538235106,
+      "candidate_loss": 0.3676851669234584,
+      "paired_loss": -0.0002632584588926556,
+      "baseline_brier": 0.115162654924984,
+      "candidate_brier": 0.11535015500478832,
+      "attempts": 987,
+      "kickers": 38
+    },
+    "2016": {
+      "made": 0.8424182358771061,
+      "baseline": 0.8483597934655965,
+      "candidate": 0.8612042148576187,
+      "baseline_loss": 0.36702033518094085,
+      "candidate_loss": 0.3667480758187674,
+      "paired_loss": -0.00027225936217347736,
+      "baseline_brier": 0.11328937409235204,
+      "candidate_brier": 0.1132889010491227,
+      "attempts": 1009,
+      "kickers": 36
+    },
+    "2017": {
+      "made": 0.8432327166504382,
+      "baseline": 0.8449574775814757,
+      "candidate": 0.8558862729204056,
+      "baseline_loss": 0.38842121987180417,
+      "candidate_loss": 0.3868270856588086,
+      "paired_loss": -0.0015941342129956095,
+      "baseline_brier": 0.1213913536044537,
+      "candidate_brier": 0.12018052478147338,
+      "attempts": 1027,
+      "kickers": 41
+    }
+  },
+  "distance_buckets": {
+    "17\u201329": {
+      "made": 0.97534516765286,
+      "baseline": 0.9714438701134624,
+      "candidate": 0.9740950241807966,
+      "baseline_loss": 0.11171870576775908,
+      "candidate_loss": 0.11192183069607564,
+      "paired_loss": 0.0002031249283165552,
+      "baseline_brier": 0.023852991766016032,
+      "candidate_brier": 0.023883599478095256,
+      "attempts": 1014,
+      "kickers": 54
+    },
+    "30\u201339": {
+      "made": 0.9033078880407125,
+      "baseline": 0.8992251547487091,
+      "candidate": 0.9072974226792185,
+      "baseline_loss": 0.3122249043351136,
+      "candidate_loss": 0.312291310005137,
+      "paired_loss": 6.640567002342887e-05,
+      "baseline_brier": 0.08639023093176013,
+      "candidate_brier": 0.08647077090927897,
+      "attempts": 1179,
+      "kickers": 54
+    },
+    "40\u201349": {
+      "made": 0.7798165137614679,
+      "baseline": 0.7818143038331251,
+      "candidate": 0.7994130412060811,
+      "baseline_loss": 0.5178564948454434,
+      "candidate_loss": 0.5154974538648373,
+      "paired_loss": -0.0023590409806061386,
+      "baseline_brier": 0.16864697011845944,
+      "candidate_brier": 0.1679785454296069,
+      "attempts": 1199,
+      "kickers": 55
+    },
+    "50\u201359": {
+      "made": 0.6465661641541038,
+      "baseline": 0.6445072123880536,
+      "candidate": 0.6758195483119396,
+      "baseline_loss": 0.645626864214508,
+      "candidate_loss": 0.6447054528870325,
+      "paired_loss": -0.0009214113274754373,
+      "baseline_brier": 0.22669219267444515,
+      "candidate_brier": 0.22618804556634547,
+      "attempts": 597,
+      "kickers": 51
+    },
+    "60\u201375": {
+      "made": 0.19047619047619047,
+      "baseline": 0.25549002546860927,
+      "candidate": 0.2815410720706383,
+      "baseline_loss": 0.4770375999689004,
+      "candidate_loss": 0.4860149807866624,
+      "paired_loss": 0.008977380817762106,
+      "baseline_brier": 0.1523869960623881,
+      "candidate_brier": 0.156248610076425,
+      "attempts": 21,
+      "kickers": 16
+    }
+  },
+  "history": {
+    "no_prior_attempts": {
+      "made": 0.8121827411167513,
+      "baseline": 0.8482475067261134,
+      "candidate": 0.8482475067261134,
+      "baseline_loss": 0.43294640675794316,
+      "candidate_loss": 0.43294640675794316,
+      "paired_loss": 0.0,
+      "baseline_brier": 0.13885566847166433,
+      "candidate_brier": 0.13885566847166433,
+      "attempts": 591,
+      "kickers": 25
+    },
+    "prior_attempts": {
+      "made": 0.8479087452471483,
+      "baseline": 0.8398501643448587,
+      "candidate": 0.8552192479218472,
+      "baseline_loss": 0.36323239787094386,
+      "candidate_loss": 0.36238250411873385,
+      "paired_loss": -0.0008498937522099975,
+      "baseline_brier": 0.11252424655411483,
+      "candidate_brier": 0.11226237750537782,
+      "attempts": 3419,
+      "kickers": 43
+    }
+  },
+  "paired_log_loss_kicker_cluster_95_percent_interval": [
+    -0.003308498745504563,
+    0.0017060586330576075
+  ],
+  "improved_seasons": 4,
+  "advance_research_candidate": false,
+  "source_audit": {
+    "2001": {
+      "sha256": "c182b39556728729a5ec90b55ee4c186a90a2f112a9be6adfbe35631eb26a018",
+      "recorded_regular_season_attempts": 959,
+      "duplicate": 0,
+      "invalid_result": 0,
+      "invalid_distance": 0,
+      "missing_kicker_id": 0,
+      "retained": 959
+    },
+    "2002": {
+      "sha256": "4abf8d86f85c9ff382fc6d912f998c4841b61b78b9fbf63daab2f1050f51b31d",
+      "recorded_regular_season_attempts": 951,
+      "duplicate": 0,
+      "invalid_result": 0,
+      "invalid_distance": 0,
+      "missing_kicker_id": 0,
+      "retained": 951
+    },
+    "2003": {
+      "sha256": "67ce16be14e9668a774f25bc3c7108f6d5e8f8a1ede477f5b81f82720e37ebee",
+      "recorded_regular_season_attempts": 954,
+      "duplicate": 0,
+      "invalid_result": 0,
+      "invalid_distance": 0,
+      "missing_kicker_id": 0,
+      "retained": 954
+    },
+    "2004": {
+      "sha256": "ee6747059b3c599d4f01e4f0f31ca8be83a5d3a60f16c92bb384d988466c71ad",
+      "recorded_regular_season_attempts": 870,
+      "duplicate": 0,
+      "invalid_result": 0,
+      "invalid_distance": 0,
+      "missing_kicker_id": 0,
+      "retained": 870
+    },
+    "2005": {
+      "sha256": "c3d4a795ad94b71fa259f185b3cd9c01ed033436db7828e0b16d672e969bebb0",
+      "recorded_regular_season_attempts": 967,
+      "duplicate": 0,
+      "invalid_result": 0,
+      "invalid_distance": 0,
+      "missing_kicker_id": 0,
+      "retained": 967
+    },
+    "2006": {
+      "sha256": "d5a17b89c48bb92947b8f098f7b25a5be4d5dab4a45fcd730e560abde3c33e6a",
+      "recorded_regular_season_attempts": 942,
+      "duplicate": 0,
+      "invalid_result": 0,
+      "invalid_distance": 0,
+      "missing_kicker_id": 0,
+      "retained": 942
+    },
+    "2007": {
+      "sha256": "98bb1dcaa94db96d6276da10fa39e1d274c3d70b9dbb4d5d78691cf5f1464068",
+      "recorded_regular_season_attempts": 960,
+      "duplicate": 0,
+      "invalid_result": 0,
+      "invalid_distance": 0,
+      "missing_kicker_id": 0,
+      "retained": 960
+    },
+    "2008": {
+      "sha256": "f3e011a298685d5ed2053d35c34f45bd683f203df90575e740d8054520d18cfe",
+      "recorded_regular_season_attempts": 1000,
+      "duplicate": 0,
+      "invalid_result": 0,
+      "invalid_distance": 1,
+      "missing_kicker_id": 0,
+      "retained": 999
+    },
+    "2009": {
+      "sha256": "8b6ea17a20cb270abc551d626570d38b1c0733abeeea1e8d63370b95b205f856",
+      "recorded_regular_season_attempts": 930,
+      "duplicate": 0,
+      "invalid_result": 0,
+      "invalid_distance": 0,
+      "missing_kicker_id": 0,
+      "retained": 930
+    },
+    "2010": {
+      "sha256": "f5fdc509e7dd715fd6737228825f5a72da7ea8e6d4fbd87df2cb35c82ef66dbf",
+      "recorded_regular_season_attempts": 964,
+      "duplicate": 0,
+      "invalid_result": 0,
+      "invalid_distance": 0,
+      "missing_kicker_id": 0,
+      "retained": 964
+    },
+    "2011": {
+      "sha256": "466a4959458f439b62b3365607566039aaea9b53d216f85c65948b4d264b267f",
+      "recorded_regular_season_attempts": 1011,
+      "duplicate": 0,
+      "invalid_result": 0,
+      "invalid_distance": 0,
+      "missing_kicker_id": 0,
+      "retained": 1011
+    },
+    "2012": {
+      "sha256": "9ff8fbbf5f1393a808b3ee7f20202ae73155f0fad04b8a2f2a97af999383c820",
+      "recorded_regular_season_attempts": 1016,
+      "duplicate": 0,
+      "invalid_result": 0,
+      "invalid_distance": 0,
+      "missing_kicker_id": 0,
+      "retained": 1016
+    },
+    "2013": {
+      "sha256": "67647c438e958905d0960166556dc73ee926591f6c36f5218c45857c2933fe1f",
+      "recorded_regular_season_attempts": 998,
+      "duplicate": 0,
+      "invalid_result": 0,
+      "invalid_distance": 0,
+      "missing_kicker_id": 0,
+      "retained": 998
+    },
+    "2014": {
+      "sha256": "78c932eea1b5c72fc7dd7ccfd409945ec8078173580c0ba86543427ad5592dc0",
+      "recorded_regular_season_attempts": 987,
+      "duplicate": 0,
+      "invalid_result": 0,
+      "invalid_distance": 0,
+      "missing_kicker_id": 0,
+      "retained": 987
+    },
+    "2015": {
+      "sha256": "3b8dae1b67cfb1ddd88858e3d4bbedf0237218b234e597b10b1c5e6789ec21a8",
+      "recorded_regular_season_attempts": 987,
+      "duplicate": 0,
+      "invalid_result": 0,
+      "invalid_distance": 0,
+      "missing_kicker_id": 0,
+      "retained": 987
+    },
+    "2016": {
+      "sha256": "093913c52f49f4e7d23080f2d7462d24d0cd952b8e3f9c936323ee51e1cd659f",
+      "recorded_regular_season_attempts": 1009,
+      "duplicate": 0,
+      "invalid_result": 0,
+      "invalid_distance": 0,
+      "missing_kicker_id": 0,
+      "retained": 1009
+    },
+    "2017": {
+      "sha256": "21ff41abc6043cce68829bad2f2cbae100cb41aa106ca6cf9c93b35856e51ab6",
+      "recorded_regular_season_attempts": 1027,
+      "duplicate": 0,
+      "invalid_result": 0,
+      "invalid_distance": 0,
+      "missing_kicker_id": 0,
+      "retained": 1027
+    }
+  },
+  "protocol_sha256": "b1227fbf222cab89f3b19884da323a722c328720bdd0d9752ab1c52b55252016"
+}

@@ -1,0 +1,21 @@
+{
+  "availability_basis": "Event-date reconstruction; one independently corroborated passing line",
+  "cutoff": "2018-04-26T23:59:00+00:00",
+  "exact_eligible_joins": 4,
+  "game_date": "2017-11-18",
+  "identity_exposure": {
+    "pool": 336,
+    "position_exact_sample_profile_singletons": 5,
+    "position_school_singletons": 265,
+    "position_singletons": 1,
+    "profile_bearing_exact_profile_singletons": 4,
+    "profile_bearing_position_school_singletons": 4,
+    "profile_bearing_position_singletons": 0
+  },
+  "reviewed_rows": 4,
+  "rows_passing_game_day_negative_control": 0,
+  "rows_passing_scenario_date_gate": 4,
+  "scenario_sha256": "b7895eef7862ccfb45cff5f2f4b6e347abd809c1905ed274883d55cc237f59d8",
+  "source": "https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/soonersports.com/documents/2017/11/28/5462974.pdf?timestamp=20190624105857",
+  "source_sha256": "cb450eb33093c58263982b01514c76b784ffff62160832f505ca8935ae8e1da8"
+}
