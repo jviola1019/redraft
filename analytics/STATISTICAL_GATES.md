@@ -11,13 +11,13 @@ The criteria are disclosed engineering tolerances chosen after earlier results w
 | frozen_metrics_recompute | pass | Saved predictions reproduce metrics |
 | strict_label_cutoff | pass | Every five-season donor label complete before draft cutoff |
 | strict_independent_chronological_validation | unsupported | An independent pre2018 five-year chronological test |
-| forecast_source_analytics/five_year_strict_2018.json | pass | Exact audit matches source artifact |
 | forecast_source_analytics/five_year_frozen_2018_predictions.csv | pass | Exact audit matches source artifact |
-| forecast_source_analytics/model.json | pass | Exact audit matches source artifact |
+| forecast_source_analytics/five_year_strict_2018.json | pass | Exact audit matches source artifact |
 | forecast_source_analytics/forecast_audit.py | pass | Exact audit matches source artifact |
-| forecast_source_lib/simulation.ts | pass | Exact audit matches source artifact |
+| forecast_source_analytics/model.json | pass | Exact audit matches source artifact |
 | forecast_source_lib/engine.ts | pass | Exact audit matches source artifact |
 | forecast_source_lib/server-data.ts | pass | Exact audit matches source artifact |
+| forecast_source_lib/simulation.ts | pass | Exact audit matches source artifact |
 | conditional_support_DB | pass | At least10 donors in each conditional stratum; minimum screening rule, not proof of validity |
 | coverage95_DB_snaps | pass | Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes |
 | coverage95_DB_games | pass | Nominal95% empirical interval covers at least90% of reused2018 subgroup outcomes |

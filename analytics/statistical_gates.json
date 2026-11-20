@@ -48,16 +48,6 @@
       "evidence": "2012 snap source is header-only. Only2013 has all five annual outcomes observable before2018 draft."
     },
     {
-      "id": "forecast_source_analytics/five_year_strict_2018.json",
-      "status": "pass",
-      "scope": "evidence-integrity",
-      "requirement": "Exact audit matches source artifact",
-      "evidence": {
-        "evaluated": "a717e2d683ab57c8f79f963d672598810593bae69945c8d00db82857d6c647e1",
-        "current": "a717e2d683ab57c8f79f963d672598810593bae69945c8d00db82857d6c647e1"
-      }
-    },
-    {
       "id": "forecast_source_analytics/five_year_frozen_2018_predictions.csv",
       "status": "pass",
       "scope": "evidence-integrity",
@@ -68,13 +58,13 @@
       }
     },
     {
-      "id": "forecast_source_analytics/model.json",
+      "id": "forecast_source_analytics/five_year_strict_2018.json",
       "status": "pass",
       "scope": "evidence-integrity",
       "requirement": "Exact audit matches source artifact",
       "evidence": {
-        "evaluated": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0",
-        "current": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0"
+        "evaluated": "a717e2d683ab57c8f79f963d672598810593bae69945c8d00db82857d6c647e1",
+        "current": "a717e2d683ab57c8f79f963d672598810593bae69945c8d00db82857d6c647e1"
       }
     },
     {
@@ -88,13 +78,13 @@
       }
     },
     {
-      "id": "forecast_source_lib/simulation.ts",
+      "id": "forecast_source_analytics/model.json",
       "status": "pass",
       "scope": "evidence-integrity",
       "requirement": "Exact audit matches source artifact",
       "evidence": {
-        "evaluated": "e03f6afab57ae9c5288eaa343e58a9f977e2dee51c73ab77f06cdf6d75ac49ca",
-        "current": "e03f6afab57ae9c5288eaa343e58a9f977e2dee51c73ab77f06cdf6d75ac49ca"
+        "evaluated": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0",
+        "current": "d75e7f84b2e4190ed3a93d8cd5373f9861346993f5e8d50252d98cb7e58e70f0"
       }
     },
     {
@@ -115,6 +105,16 @@
       "evidence": {
         "evaluated": "0ede48d68b376a2ad5adb3633680bfa0f067e3a2469aeff3d3b10338fb556be3",
         "current": "0ede48d68b376a2ad5adb3633680bfa0f067e3a2469aeff3d3b10338fb556be3"
+      }
+    },
+    {
+      "id": "forecast_source_lib/simulation.ts",
+      "status": "pass",
+      "scope": "evidence-integrity",
+      "requirement": "Exact audit matches source artifact",
+      "evidence": {
+        "evaluated": "e03f6afab57ae9c5288eaa343e58a9f977e2dee51c73ab77f06cdf6d75ac49ca",
+        "current": "e03f6afab57ae9c5288eaa343e58a9f977e2dee51c73ab77f06cdf6d75ac49ca"
       }
     },
     {

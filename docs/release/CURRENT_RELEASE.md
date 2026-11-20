@@ -1,3 +1,5 @@
+> The [statistical clearance review](../audit/CLEARANCE_REVIEW.md) reproduces the 40/6/7 decision, documents the evidence behind each blocker and repairs three permissive audit checks.
+
 > The [latest fixture and Pages review](FIXTURE_REVIEW.md) supersedes the earlier CPU, test and delivery status below.
 
 # REDRAFT review · November 19, 2026, Chicago
