@@ -1,0 +1,32 @@
+{
+  "archive_release": "https://github.com/blnkpagelabs/nflscraPy/releases/tag/MaddenRatings",
+  "archive_metadata": "https://api.github.com/repos/blnkpagelabs/nflscraPy/releases/tags/MaddenRatings",
+  "official_database": "https://www.ea.com/games/madden-nfl/ratings",
+  "nflverse_snap_counts": "https://nflreadr.nflverse.com/reference/load_snap_counts.html",
+  "snapshot_metadata": {
+    "2022": {
+      "draft_start": "2022-04-28",
+      "rating_season": 2021,
+      "rating_date": "2022-02-15",
+      "asset_uploaded": "2023-05-07T02:17:38Z",
+      "asset_updated": "2023-05-07T02:17:46Z",
+      "sha256": "465fb29e794f5fa8bc640ccf491075e0d1764032672a412ef9d30ccafe1e7984"
+    },
+    "2023": {
+      "draft_start": "2023-04-27",
+      "rating_season": 2022,
+      "rating_date": "2023-02-15",
+      "asset_uploaded": "2023-05-07T02:17:46Z",
+      "asset_updated": "2023-05-07T02:17:50Z",
+      "sha256": "1d000932d1870953c757a04cabc1f72610f71afcce3bac622f8ad6588d9bc998"
+    },
+    "2024": {
+      "draft_start": "2024-04-25",
+      "rating_season": 2023,
+      "rating_date": "2024-02-15",
+      "asset_uploaded": "2024-02-16T01:36:05Z",
+      "asset_updated": "2024-02-16T01:36:09Z",
+      "sha256": "74e723e978c4bb8cf2f5192e5046b7fc0353bc5012a9f108e9ad2711e7ef63dc"
+    }
+  }
+}

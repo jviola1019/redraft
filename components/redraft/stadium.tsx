@@ -1,34 +1,79 @@
 'use client';
 import {useEffect,useRef,useState} from 'react';
 
-type Props={scene:'welcome'|'draft'|'simulation'|'season';teamLabel?:string;pick?:number;round?:number;pickCount?:number;tradeCount?:number;selectedName?:string;tradeLabel?:string;progress?:number;total?:number;year?:number;record?:string;champion?:boolean};
+type Props={scene:'welcome'|'setup'|'simulation'|'season';teamLabel?:string;progress?:number;total?:number;year?:number;record?:string;champion?:boolean};
 const glyphs:Record<string,string[]>={R:['11110','10001','10001','11110','10100','10010','10001'],E:['11111','10000','10000','11110','10000','10000','11111'],D:['11110','10001','10001','10001','10001','10001','11110'],A:['01110','10001','10001','11111','10001','10001','10001'],F:['11111','10000','10000','11110','10000','10000','10000'],T:['11111','00100','00100','00100','00100','00100','00100']};
 export function PixelLogo(){return <svg viewBox="0 0 41 7" width="164" height="28" fill="currentColor" aria-hidden="true" shapeRendering="crispEdges">{'REDRAFT'.split('').flatMap((c,i)=>glyphs[c].flatMap((row,y)=>row.split('').map((v,x)=>v==='1'?<rect key={`${i}-${x}-${y}`} x={i*6+x} y={y} width="1" height="1"/>:null)))}</svg>}
 function Player({x=0,y=0,shirt='#d65236',mirror=false}:{x?:number;y?:number;shirt?:string;mirror?:boolean}){return <g transform={`translate(${x} ${y}) ${mirror?'scale(-1 1)':''}`} shapeRendering="crispEdges"><rect x="8" y="0" width="24" height="8" fill="#173b48"/><rect x="4" y="8" width="32" height="16" fill="#fff0c4"/><rect x="4" y="8" width="8" height="12" fill="#173b48"/><rect x="28" y="12" width="8" height="4" fill="#173b48"/><rect x="12" y="24" width="16" height="4" fill="#edb77f"/><rect x="8" y="28" width="24" height="28" fill={shirt}/><rect x="0" y="32" width="8" height="20" fill={shirt}/><rect x="32" y="32" width="8" height="20" fill={shirt}/><rect x="0" y="52" width="8" height="8" fill="#edb77f"/><rect x="32" y="52" width="8" height="8" fill="#edb77f"/><rect x="12" y="32" width="12" height="4" fill="#fff0c4"/><rect x="8" y="56" width="24" height="8" fill="#fff0c4"/><g className="pixel-legs"><rect x="8" y="64" width="8" height="16" fill="#173b48"/><rect x="24" y="64" width="8" height="16" fill="#173b48"/><rect x="4" y="80" width="12" height="4" fill="#173b48"/><rect x="24" y="80" width="12" height="4" fill="#173b48"/></g></g>}
-export default function PixelStadium(p:Props){
-  const previous=useRef({picks:p.pickCount||0,trades:p.tradeCount||0,progress:p.progress||0,year:p.year});
-  const [event,setEvent]=useState<'idle'|'pick'|'trade'|'progress'>('idle');
-  const [eventKey,setEventKey]=useState(0);
-  useEffect(()=>{let next:'idle'|'pick'|'trade'|'progress'='idle';if((p.tradeCount||0)>previous.current.trades)next='trade';else if((p.pickCount||0)>previous.current.picks)next='pick';else if((p.progress||0)>previous.current.progress||p.year!==previous.current.year)next='progress';previous.current={picks:p.pickCount||0,trades:p.tradeCount||0,progress:p.progress||0,year:p.year};if(next!=='idle'){setEvent(next);setEventKey(k=>k+1);const timer=setTimeout(()=>setEvent('idle'),2200);return()=>clearTimeout(timer)}},[p.pickCount,p.tradeCount,p.progress,p.year]);
-  const title=p.scene==='welcome'?'THE PICK IS YOURS':p.scene==='draft'?`ROUND ${p.round||1} / PICK ${p.pick||1}`:p.scene==='season'?`${p.year} SEASON`:'EXPLORING THE FUTURE';
-  const sub=p.scene==='welcome'?'SCOUT / DRAFT / REWRITE':p.scene==='draft'?(p.teamLabel||'DRAFT ROOM'):p.scene==='season'?`${p.teamLabel||'YOUR TEAM'} / ${p.record||''}`:`${p.progress||0} OF ${p.total||256} PAIRED RUNS`;
-  const caption=event==='trade'?`Trade completed${p.tradeLabel?`: ${p.tradeLabel}`:''}.`:event==='pick'?`Pick completed${p.selectedName?`: ${p.selectedName}`:''}.`:p.scene==='draft'?`${p.teamLabel||'A team'} is choosing. Round ${p.round||1}, pick ${p.pick||1}.`:p.scene==='simulation'?`${p.progress||0} of ${p.total||256} paired simulations saved.`:p.scene==='season'?`${p.year}: ${p.record}. ${p.champion?'Simulated champion.':'One simulated season.'}`:'An original pixel football stadium. Your choices drive the story.';
-  const progress=Math.max(0,Math.min(1,(p.progress||0)/(p.total||256)));
-  return <figure className={`pixel-stadium scene-${p.scene} event-${event}`} style={{margin:0}}><svg viewBox="0 0 720 244" role="img" aria-label={caption} shapeRendering="crispEdges">
-    <rect width="720" height="244" fill="#dcebdc"/><rect y="8" width="720" height="16" fill="#cedfcb"/><path d="M0 60H76V42H132V50H192V60H720V168H0Z" fill="#a7c2ad"/>
-    <rect x="22" y="34" width="8" height="132" fill="#526c66"/><rect x="4" y="28" width="44" height="12" fill="#fff8d9"/><rect x="682" y="34" width="8" height="132" fill="#526c66"/><rect x="664" y="28" width="44" height="12" fill="#fff8d9"/>
-    {[0,1,2].map(row=><g key={row}><rect x="0" y={91+row*24} width="720" height="6" fill="#698c78"/>{Array.from({length:30},(_,i)=><g key={i}><rect x={i*24+3} y={76+row*24} width="8" height="8" fill={(i+row)%3===0?'#ce7150':(i+row)%3===1?'#385b56':'#e1d3a6'}/><rect x={i*24} y={84+row*24} width="14" height="7" fill={(i+row)%2?'#668a7b':'#dbb171'}/></g>)}</g>)}
-    <rect x="182" y="16" width="356" height="92" fill="#173b48"/><rect x="190" y="24" width="340" height="76" fill="#234d4b"/><rect x="198" y="32" width="324" height="3" fill="#a8bd8d"/>
-    <text x="360" y="59" textAnchor="middle" fill="#fff3c8" fontFamily="monospace" fontWeight="bold" fontSize="22">{title}</text><text x="360" y="85" textAnchor="middle" fill="#c5dcad" fontFamily="monospace" fontSize="15">{sub.slice(0,37)}</text>
-    <rect y="155" width="720" height="13" fill="#f4e9bf"/><rect y="168" width="720" height="76" fill="#4b8559"/><rect y="172" width="720" height="4" fill="#dbe6b6"/>
-    {[56,132,208,284,360,436,512,588,664].map(x=><g key={x}><rect x={x} y="184" width="3" height="50" fill="#9fc68a"/><rect x={x-4} y="201" width="11" height="3" fill="#dbe6b6"/></g>)}
-    <rect x="0" y="233" width="720" height="4" fill="#dbe6b6"/>
-    <g className={event==='pick'?'pick-walk':event==='progress'?'season-run':''} key={`player-${eventKey}`}><Player x={p.scene==='welcome'?102:126} y={121} shirt="#c94c36"/></g>
-    <Player x={588} y={121} shirt="#2c5964"/>
-    <rect x="559" y="185" width="64" height="25" fill="#193f4a"/><rect x="551" y="181" width="80" height="8" fill="#f2ce75"/><rect x="574" y="193" width="34" height="5" fill="#b9d89a"/>
-    {event==='trade'&&<g className="trade-envelope" key={`trade-${eventKey}`}><rect x="178" y="148" width="32" height="22" fill="#fff3c8"/><path d="M178 148L194 160L210 148" fill="none" stroke="#bd663f" strokeWidth="3"/></g>}
-    {p.scene==='simulation'&&<><rect x="218" y="122" width="284" height="16" fill="#173b48"/><rect x="222" y="126" width={276*progress} height="8" fill="#eab761"/></>}
-    {p.champion&&<g transform="translate(324 126)"><rect x="12" width="48" height="8" fill="#f5cc63"/><rect x="16" y="8" width="40" height="20" fill="#f5cc63"/><rect x="24" y="28" width="24" height="8" fill="#e3a43d"/><rect x="32" y="36" width="8" height="16" fill="#f5cc63"/><rect x="20" y="52" width="32" height="8" fill="#e3a43d"/><rect x="4" y="8" width="8" height="20" fill="#f5cc63"/><rect x="60" y="8" width="8" height="20" fill="#f5cc63"/></g>}
-    {event==='pick'&&<g className="pixel-pick-label"><rect x="276" y="122" width="212" height="28" fill="#fff3c8"/><text x="382" y="141" textAnchor="middle" fontFamily="monospace" fontSize="14" fontWeight="bold" fill="#173b48">{(p.selectedName||'PICK COMPLETE').slice(0,22)}</text></g>}
-  </svg><figcaption aria-live="polite">{caption}</figcaption></figure>
+export const stadiumColors = {
+  sky: '#183742', horizon: '#284a50', stands: '#335a58', rail: '#a4bd9b',
+  turf: '#39734e', stripe: '#316646', chalk: '#d8e8ba', gold: '#efc875',
+  crowd: ['#a5bc98', '#dda76e', '#759f89', '#c9745c'],
+};
+
+export default function PixelStadium({ scene, teamLabel, progress = 0, total = 256, year, record, champion }: Props) {
+  const previous = useRef({ progress, year });
+  const [motion, setMotion] = useState(0);
+  useEffect(() => {
+    if (progress > previous.current.progress || (scene === 'season' && year !== previous.current.year)) {
+      setMotion(value => value + 1);
+    }
+    previous.current = { progress, year };
+  }, [progress, scene, year]);
+
+  const title = scene === 'welcome' ? 'THE PICK IS YOURS'
+    : scene === 'setup' ? year ? `${year} NFL DRAFT` : 'HISTORICAL DRAFT'
+    : scene === 'season' ? `${year} SEASON` : 'SIMULATING SEASONS';
+  const sub = scene === 'season' ? `${teamLabel || 'YOUR TEAM'} / ${record || ''}`
+    : scene === 'simulation' ? `${progress} OF ${total} PAIRED RUNS` : '';
+  const caption = scene === 'simulation' ? `${progress} of ${total} paired simulations saved.`
+    : scene === 'season' ? `${year}: ${record}. ${champion ? 'Simulated champion.' : 'One simulated season.'}` : '';
+  const fraction = total > 0 ? Math.max(0, Math.min(1, progress / total)) : 0;
+  const c = stadiumColors;
+
+  return <figure className={`pixel-stadium scene-${scene}`}>
+    <svg viewBox="0 0 720 376" role={caption ? 'img' : undefined} aria-label={caption || undefined} aria-hidden={!caption} shapeRendering="crispEdges">
+      <rect width="720" height="376" fill={c.sky}/>
+      <path d="M0 89H40V66H64V44H108V56H126V88H168V72H211V101H512V75H553V57H602V38H643V64H683V54H709V83H720V182H0Z" fill={c.horizon}/>
+      <path d="M0 122H720V251H0Z" fill={c.stands}/>
+      {[0, 1, 2, 3].map(row => <g key={row}>
+        <rect y={150 + row * 23} width="720" height="3" fill={c.rail} opacity=".45"/>
+        {Array.from({length: 38}, (_, i) => <path key={i} d={`M${i * 19 + row % 2 * 5} ${137 + row * 23}h5v5h3v6h-11v-6h3z`} fill={c.crowd[(i * (row + 1) + i % 5 + row) % c.crowd.length]}/>)}
+      </g>)}
+      {[56, 664].map(x => <g key={x} transform={`translate(${x} 0)`}>
+        <path d="M-3 59H3V224H-3ZM-34 43H34V63H-34Z" fill="#101f29"/>
+        <path d="M-30 47H30V59H-30Z" fill={c.gold}/>
+        <path d="M-19 47V59M-7 47V59M7 47V59M19 47V59" stroke="#586964" strokeWidth="3"/>
+      </g>)}
+      <path d="M159 17H561V120H159Z" fill="#111f28"/>
+      <path d="M166 23H554V113H166Z" fill="#557368"/>
+      <path d="M172 30H548V106H172Z" fill="#142d36"/>
+      <path d="M180 37H540V40H180ZM180 97H540V100H180Z" fill="#426459"/>
+      <path d="M182 50h8v8h-8zM530 50h8v8h-8z" fill={c.gold}/>
+      <text x="360" y={sub ? 66 : 79} textAnchor="middle" fill="#fff1c8" fontFamily="monospace" fontWeight="bold" fontSize="25">{title}</text>
+      {sub && <text x="360" y="89" textAnchor="middle" fill="#c5dcad" fontFamily="monospace" fontSize="15">{sub.slice(0, 39)}</text>}
+      <rect y="224" width="720" height="12" fill="#172e34"/>
+      <path d="M0 228H720" stroke={c.gold} strokeWidth="3" strokeDasharray="11 4"/>
+      <rect y="236" width="720" height="140" fill={c.turf}/>
+      {[0, 160, 320, 480, 640].map(x => <rect key={x} x={x} y="242" width="80" height="124" fill={c.stripe}/>)}
+      <path d="M0 244H720M0 365H720" stroke={c.chalk} strokeWidth="3"/>
+      {[0, 80, 160, 240, 320, 400, 480, 560, 640, 720].map(x => <g key={x}>
+        <path d={`M${x} 245V365`} stroke={c.chalk} strokeWidth="2" opacity=".62"/>
+        <path d={`M${x - 4} 281h9m-9 47h9`} stroke={c.chalk} strokeWidth="2"/>
+      </g>)}
+      <path d="M307 283H413V338H307Z" fill="#244c3a"/>
+      <path d="M309 281H411V335H309Z" fill="#38624a" stroke={c.chalk} strokeWidth="2"/>
+      <path d="M339 309H346V302H353V295H370V302H377V309H370V316H363V323H346V316H339Z" fill="#96664e"/>
+      <path d="M351 315l13-13m-12 5l5 5m0-9l5 5" stroke="#fff1c8" strokeWidth="2"/>
+      <path d="M42 212V242h31v-30m-15 30v43h-12" fill="none" stroke={c.gold} strokeWidth="5"/>
+      <path d="M647 212V242h31v-30m-15 30v43h12" fill="none" stroke={c.gold} strokeWidth="5"/>
+      <g className={motion ? 'season-run' : undefined} key={motion}><Player x={133} y={242} shirt="#c94c36"/></g>
+      <Player x={601} y={240} shirt="#bf9951" mirror/>
+      <path d="M568 305H625V330H568ZM562 299H631V306H562Z" fill="#172e34"/>
+      <path d="M562 298H631V304H562Z" fill={c.gold}/>
+      {scene === 'simulation' && <><rect x="214" y="131" width="292" height="14" fill="#132b32"/><rect className="stadium-progress" x="218" y="135" width={284 * fraction} height="6" fill={c.gold}/></>}
+    {champion&&<g transform="translate(324 165)"><rect x="12" width="48" height="8" fill="#f5cc63"/><rect x="16" y="8" width="40" height="20" fill="#f5cc63"/><rect x="24" y="28" width="24" height="8" fill="#e3a43d"/><rect x="32" y="36" width="8" height="16" fill="#f5cc63"/><rect x="20" y="52" width="32" height="8" fill="#e3a43d"/><rect x="4" y="8" width="8" height="20" fill="#f5cc63"/><rect x="60" y="8" width="8" height="20" fill="#f5cc63"/></g>}
+    </svg>
+    {caption && <figcaption aria-live="polite">{caption}</figcaption>}
+  </figure>;
 }

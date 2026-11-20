@@ -10,7 +10,7 @@ fs.mkdirSync(path.join(dir,'lib'));
 fs.symlinkSync(path.join(root,'analytics'),path.join(dir,'analytics'),'dir');
 fs.symlinkSync(path.join(root,'data'),path.join(dir,'data'),'dir');
 fs.writeFileSync(path.join(dir,'package.json'),JSON.stringify({type:'commonjs'}));
-for(const name of ['types','engine','simulation','scouting','server-data']) {
+for(const name of ['types','engine','simulation','scouting','historical-draft-evidence','server-data']) {
   fs.writeFileSync(path.join(dir,'lib',name+'.js'),ts.transpileModule(fs.readFileSync(path.join(root,'lib',name+'.ts'),'utf8').replaceAll("'@/", "'"+root+"/"),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true}}).outputText);
 }
 const require=createRequire(import.meta.url);
@@ -23,7 +23,7 @@ export const loadScenario=registry.getScenario;
 export const supportedYears=registry.years;
 export function cleanup(){fs.rmSync(dir,{recursive:true,force:true});}
 export function hashes(){return Object.fromEntries([
-  'lib/engine.ts','lib/simulation.ts','lib/scouting.ts','lib/server-data.ts',
+  'lib/engine.ts','lib/simulation.ts','lib/scouting.ts','lib/server-data.ts','lib/historical-draft-evidence.ts','data/clean/historical_compensatory_slots.json',
   'analytics/cpu-position-capital-v1.json','analytics/model.json','analytics/five_year_strict_2018.json','analytics/scoring_recalibration.json',
   'data/clean/team_context_2018.json','data/clean/team_context_source_manifest.json',
   ...fs.readdirSync(path.join(root,'data/processed')).filter(p=>/^scenario-.*\.json$/.test(p)).map(p=>'data/processed/'+p),

@@ -25,16 +25,17 @@ import contextManifest from '@/data/clean/team_context_source_manifest.json';
 import type { Dataset, PriorSeasonContextDataset, PriorSeasonTeamContext } from './types';
 import { createUsagePolicy, validateScoringRecalibration, type RuntimeModels } from './engine';
 import { BLIND_POLICY_VERSION, createScoutingPolicy } from './scouting';
+import { withHistoricalDraftEvidence, orderSnapshot2020 } from './historical-draft-evidence';
 
-const dataset2018 = source2018 as unknown as Dataset;
-const dataset2019 = source2019 as unknown as Dataset;
-const dataset2020 = source2020 as unknown as Dataset;
-const dataset2021 = source2021 as unknown as Dataset;
-const dataset2022 = source2022 as unknown as Dataset;
-const dataset2023 = source2023 as unknown as Dataset;
-const dataset2024 = source2024 as unknown as Dataset;
-const dataset2025 = source2025 as unknown as Dataset;
-const dataset2026 = source2026 as unknown as Dataset;
+const dataset2018 = withHistoricalDraftEvidence(source2018 as unknown as Dataset);
+const dataset2019 = withHistoricalDraftEvidence(source2019 as unknown as Dataset);
+const dataset2020 = withHistoricalDraftEvidence(source2020 as unknown as Dataset);
+const dataset2021 = withHistoricalDraftEvidence(source2021 as unknown as Dataset);
+const dataset2022 = withHistoricalDraftEvidence(source2022 as unknown as Dataset);
+const dataset2023 = withHistoricalDraftEvidence(source2023 as unknown as Dataset);
+const dataset2024 = withHistoricalDraftEvidence(source2024 as unknown as Dataset);
+const dataset2025 = withHistoricalDraftEvidence(source2025 as unknown as Dataset);
+const dataset2026 = withHistoricalDraftEvidence(source2026 as unknown as Dataset);
 const context2018 = contextSource as unknown as PriorSeasonContextDataset;
 const raw = rawModels as unknown as RuntimeModels;
 const meanTotal = scoringRecalibration.proposedOverride.meanTotal;
@@ -212,7 +213,15 @@ export const scenarioBundles: Record<number, ScenarioBundle> = {
     2026: { year: 2026, dataset: dataset2026, models: models2026, scoutingPolicy: base2026Policy, teamContexts: [], teamContextMetadata: unavailable2026Context, selectedTeamContext: () => null },
 };
 export const years = Object.keys(scenarioBundles).map(Number).sort((a, b) => a - b);
-export const coverage = (coverageSource as { scenarios: { year: number; status: string; blockers?: string[]; dataset?: string }[] }).scenarios;
+export const coverage = coverageSource.scenarios.map(record => {
+    const metadata = scenarioBundles[record.year].dataset.metadata;
+    return {
+        ...record,
+        blockers: record.blockers.filter(blocker => blocker !== source2019.metadata.compensatoryClassification),
+        ...(metadata.compensatoryEvidence ? { compensatoryEvidence: metadata.compensatoryEvidence } : {}),
+        ...(record.year === 2020 ? { orderSnapshot: orderSnapshot2020 } : {}),
+    };
+});
 export function getScenario(year: number): ScenarioBundle {
     const bundle = scenarioBundles[year];
     if (!bundle) throw new Error(`Unsupported or unaudited draft year: ${year}`);

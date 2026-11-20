@@ -128,6 +128,7 @@ try {
     }
     await page.getByRole('button',{name:'Your draft class',exact:true}).click();
     await page.getByRole('heading',{name:'The class you built',exact:true}).waitFor();
+    await page.getByRole('heading',{name:'Player development',exact:true}).waitFor();
     assert.deepEqual(errors,[],'No browser runtime errors throughout complete journey');
     await page.screenshot({path:`${out}/${latestGame.mode}-complete.png`,fullPage:false,animations:'disabled'});
     return latestGame.id;
@@ -137,6 +138,12 @@ try {
   await page.getByRole('button',{name:'Start a draft',exact:true}).click();
   await page.getByLabel('Historical franchise').selectOption('CLE');
   await page.getByLabel('Draft class',{exact:true}).selectOption('2025');
+  await page.getByRole('button',{name:'View pre-draft personnel'}).click();
+  const snapshot=page.getByRole('dialog');
+  await snapshot.getByRole('heading',{name:'Who could carry a workload again?'}).waitFor();
+  await snapshot.getByText('Explore last season’s position groups').click();
+  assert.ok(await snapshot.getByRole('table').first().isVisible());
+  await snapshot.getByRole('button',{name:'Close dialog'}).click();
   await page.getByLabel('Run seed').fill('browser-full-seven-rounds');
   await clickAction(page.getByRole('button',{name:'Enter the draft room'}),'new');
   const historical=await finishDraft();

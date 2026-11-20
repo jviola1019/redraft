@@ -1,0 +1,40 @@
+{
+  "version": "historical-compensatory-slots-v1",
+  "auditedOn": "2026-11-20",
+  "scenarios": [
+    {
+      "year": 2019,
+      "scenarioVersion": "nflverse-2019-combine-pool-v1",
+      "slotCount": 254,
+      "slotCountCompensatory": 32,
+      "byRound": [
+        {"round": 3, "overall": [96, 97, 98, 99, 100, 101, 102]},
+        {"round": 4, "overall": [135, 136, 137, 138]},
+        {"round": 5, "overall": [171, 172, 173]},
+        {"round": 6, "overall": [205, 206, 207, 208, 209, 210, 211, 212, 213, 214]},
+        {"round": 7, "overall": [247, 248, 249, 250, 251, 252, 253, 254]}
+      ],
+      "sources": [
+        {"title": "Miami Dolphins 2019 NFL Draft Guide, page 15", "url": "https://media.miamidolphins.com/wp-content/uploads/2019/04/2019-NFL-Draft-Guide-1.pdf"},
+        {"title": "NFL announcement of 32 compensatory choices", "url": "https://www.nfl.com/news/nfl-announces-list-of-32-compensatory-draft-choices-0ap3000001018652"},
+        {"title": "CBS Sports transcription of all 32 announced overall slots", "url": "https://www.cbssports.com/nfl/news/2019-nfl-draft-compensatory-picks-patriots-rams-are-big-winners-as-nfl-hands-out-32-additional-picks/"}
+      ]
+    },
+    {
+      "year": 2021,
+      "scenarioVersion": "nflverse-2021-combine-pool-v2-trey-reference",
+      "slotCount": 259,
+      "slotCountCompensatory": 37,
+      "byRound": [
+        {"round": 3, "overall": [96, 97, 98, 99, 100, 101, 102, 103, 104, 105]},
+        {"round": 4, "overall": [138, 139, 140, 141, 142, 143, 144]},
+        {"round": 5, "overall": [177, 178, 179, 180, 181, 182, 183, 184]},
+        {"round": 6, "overall": [217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228]}
+      ],
+      "sources": [
+        {"title": "NFL announcement of all 37 compensatory slots, including special hiring awards", "url": "https://www.nfl.com/news/nfl-announces-36-compensatory-picks-in-2021-nfl-draft-for-17-teams"},
+        {"title": "2021 NFL Draft Notes, page 1", "url": "https://static.clubs.nfl.com/image/upload/v1619557257/panthers/jfrrnudssakvjxsbcuvf.pdf"}
+      ]
+    }
+  ]
+}

@@ -18,7 +18,7 @@ TEAMS = ['CLE','KC','NE','SF']
 REQUIRED_HASHES = ['lib/engine.ts','lib/simulation.ts','lib/scouting.ts',
                    'analytics/cpu-position-capital-v1.json','analytics/model.json','analytics/five_year_strict_2018.json',
                    'analytics/scoring_recalibration.json','data/processed/scenario-2018.json',
-                   'lib/server-data.ts','data/clean/team_context_2018.json',
+                   'lib/server-data.ts','lib/historical-draft-evidence.ts','data/clean/historical_compensatory_slots.json','data/clean/team_context_2018.json',
                    'data/clean/team_context_source_manifest.json']
 REQUIRED_HASHES = sorted(set(REQUIRED_HASHES +
     [str(p.relative_to(ROOT)) for p in (ROOT/'data/processed').glob('scenario-*.json')] +
